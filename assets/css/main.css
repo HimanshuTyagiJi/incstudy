@@ -1931,10 +1931,10 @@ body.home-page::before {
   color: var(--muted);
 }
 
-/* 6-Semester Roadmap Grid (Shared Color Tokens + Layered Elevation + SVG Footer Arrow) */
+/* Active BCA Semester Hubs Grid (Balanced 2-Column Responsive Layout) */
 .roadmap-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 20px;
   margin-bottom: 34px;
 }
