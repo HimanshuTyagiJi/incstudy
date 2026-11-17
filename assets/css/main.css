@@ -1104,10 +1104,10 @@
   background: #1b3158;
 }
 
-/* 6-Column Pastel Tile Grid (Shared Token System + Crisp Circular SVG Arrow) */
+/* Pastel Tile Grid (Responsive Auto-Fit Token System) */
 .pastel-tile-grid {
   display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 16px;
 }
 .pastel-tile {

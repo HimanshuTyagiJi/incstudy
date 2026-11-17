@@ -39,7 +39,7 @@
           {% endfor %}
         </ul>
         <a href="{{ item.url | relative_url }}" class="roadmap-link">
-          <span>Open {{ item.sem }} Hub</span>
+          <span>{% if item.url contains 'semester-' %}Open {{ item.sem }} Solved Hub{% else %}View {{ item.sem }} Syllabus &amp; Codes{% endif %}</span>
           <span class="roadmap-link-arrow" aria-hidden="true">
             {% include ui/icon.html name="arrow-right" size=14 %}
           </span>

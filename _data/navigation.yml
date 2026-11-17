@@ -1,5 +1,5 @@
 # IncStudy Master Navigation Configuration
-# Phase 1: Focused Clean Header (Home, Important, About, Contact)
+# Focused Clean Header (Home, Important Questions, Notes, Syllabus, About, Contact)
 
 brand_tagline: "Learn Today. Grow Tomorrow."
 
@@ -7,7 +7,11 @@ header_nav:
   - label: Home
     url: /
   - label: Important Questions
-    url: /ccsu/bca/semester-1/
+    url: /courses/bca/important-questions/
+  - label: Study Notes
+    url: /courses/bca/notes/
+  - label: Syllabus
+    url: /courses/bca/syllabus/
   - label: About
     url: /about/
   - label: Contact
@@ -30,7 +34,11 @@ courses:
       - label: Home
         url: /
       - label: Important Questions
-        url: /ccsu/bca/semester-1/
+        url: /courses/bca/important-questions/
+      - label: Study Notes
+        url: /courses/bca/notes/
+      - label: Syllabus
+        url: /courses/bca/syllabus/
       - label: About
         url: /about/
       - label: Contact
