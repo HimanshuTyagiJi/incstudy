@@ -1,8 +1,51 @@
 ---
 layout: full-width
-title: Search
-description: Search IncStudy study resources.
+title: Search IncStudy Academic Library
+description: Search across all BCA subject study notes, 10-year authentic university question papers, syllabus guides, and solved examination notebooks on IncStudy.
 permalink: /search/
-eyebrow: FIND STUDY MATERIAL
+eyebrow: KNOWLEDGE BASE SEARCH
 ---
-<form class="search-box search-page-form" data-search-form><span class="search-symbol">⌕</span><input type="search" name="q" data-search-input placeholder="Search notes, subjects or topics..." aria-label="Search study material"><button type="submit">Search</button></form><div class="search-results" data-search-results aria-live="polite"><p>Enter a keyword to search the resources available on this starter website.</p></div><script src="{{ '/assets/js/search.js' | relative_url }}" defer></script>
+
+<div class="intro-copy" style="max-width: 850px; margin-bottom: 24px;">
+  <p style="font-size: 16px; line-height: 1.8; color: var(--muted);">
+    Looking for a specific BCA topic, programming algorithm, mathematical proof, or university paper code? Use the search bar below to instantly search our verified academic repository.
+  </p>
+</div>
+
+<form class="search-box search-page-form" data-search-form style="margin-bottom: 25px;">
+  <span class="search-symbol">&#x2315;</span>
+  <input type="search" name="q" data-search-input placeholder="Search notes, subjects (e.g. BCA-102, Data Structures, C++)..." aria-label="Search study material">
+  <button type="submit">Search Library</button>
+</form>
+
+<div class="search-results" data-search-results aria-live="polite">
+  <p style="color: var(--muted); font-size: 14px;">Enter a subject name, topic title, or university paper code above to search live study materials.</p>
+</div>
+
+<script src="{{ '/assets/js/search.js' | relative_url }}" defer></script>
+
+<div class="prose" style="max-width: 850px; line-height: 1.8; font-size: 14px; margin-top: 40px; border-top: 1px solid var(--border); padding-top: 25px;">
+
+  <h3 style="font-size: 1.15rem; margin-top: 0;">Popular Subject &amp; Topic Searches</h3>
+  
+  <div style="display: flex; flex-wrap: wrap; gap: 10px; margin: 15px 0;">
+    <a href="{{ '/ccsu/bca/semester-1/c-programming-important-questions/' | relative_url }}" class="button button-outline" style="font-size: 12px; padding: 6px 12px;">BCA-102: C Programming</a>
+    <a href="{{ '/ccsu/bca/semester-1/mathematics-1-important-questions/' | relative_url }}" class="button button-outline" style="font-size: 12px; padding: 6px 12px;">BCA-101: Mathematics-I</a>
+    <a href="{{ '/ccsu/bca/semester-1/computer-fundamentals-important-questions/' | relative_url }}" class="button button-outline" style="font-size: 12px; padding: 6px 12px;">BCA-105: Computer Fundamentals</a>
+    <a href="{{ '/ccsu/bca/semester-3/c-plus-plus-important-questions/' | relative_url }}" class="button button-outline" style="font-size: 12px; padding: 6px 12px;">BCA-301: OOP with C++</a>
+    <a href="{{ '/ccsu/bca/semester-3/data-structures-important-questions/' | relative_url }}" class="button button-outline" style="font-size: 12px; padding: 6px 12px;">BCA-302: Data Structures</a>
+    <a href="{{ '/ccsu/bca/semester-3/computer-architecture-important-questions/' | relative_url }}" class="button button-outline" style="font-size: 12px; padding: 6px 12px;">BCA-303: Computer Architecture</a>
+    <a href="{{ '/ccsu/bca/semester-3/business-economics-important-questions/' | relative_url }}" class="button button-outline" style="font-size: 12px; padding: 6px 12px;">BCA-304: Business Economics</a>
+    <a href="{{ '/ccsu/bca/semester-3/elements-of-statistics-important-questions/' | relative_url }}" class="button button-outline" style="font-size: 12px; padding: 6px 12px;">BCA-305: Elements of Statistics</a>
+    <a href="{{ '/courses/bca/previous-papers/' | relative_url }}" class="button button-outline" style="font-size: 12px; padding: 6px 12px;">10-Year Question Papers Archive</a>
+    <a href="{{ '/courses/bca/syllabus/' | relative_url }}" class="button button-outline" style="font-size: 12px; padding: 6px 12px;">Full 6-Semester Syllabus Guide</a>
+  </div>
+
+  <h3 style="font-size: 1.15rem; margin-top: 25px;">Search Tips for Faster Exam Revision</h3>
+  <ul style="color: var(--muted); padding-left: 20px;">
+    <li><strong>Search by Official Paper Code:</strong> Type codes like <code>BCA-101</code>, <code>BCA-102</code>, <code>BCA-301</code>, or <code>BCA-305</code> for immediate direct subject access.</li>
+    <li><strong>Search by Concept Keyword:</strong> Keywords like <em>Pointers</em>, <em>Binary Search Tree</em>, <em>Eigenvalues</em>, <em>Cache Mapping</em>, or <em>Normal Distribution</em> will match corresponding unit solutions.</li>
+    <li><strong>Browse Solved Hubs Directly:</strong> If you are revising an entire semester, visit the <a href="{{ '/ccsu/bca/semester-1/' | relative_url }}">BCA 1st Semester Hub</a> or <a href="{{ '/ccsu/bca/semester-3/' | relative_url }}">BCA 3rd Semester Hub</a> to view all 5 core subjects organized sequentially.</li>
+  </ul>
+
+</div>

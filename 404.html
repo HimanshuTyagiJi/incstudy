@@ -4,4 +4,15 @@ title: Page not found
 permalink: /404.html
 eyebrow: ERROR 404
 ---
-<div class="empty-state"><span class="empty-state-icon">404</span><h2>This page could not be found.</h2><p>The link may be outdated or the page may have moved.</p><a class="button button-primary" href="{{ '/' | relative_url }}">Back to home</a></div>
+<div class="empty-state">
+  <span class="empty-state-icon">404</span>
+  <h2>This page could not be found.</h2>
+  <p>The link you followed may be outdated, moved, or misspelled. Use the navigation links below to find what you're looking for:</p>
+  <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 18px;">
+    <a class="button button-primary" href="{{ '/' | relative_url }}">Back to Home</a>
+    <a class="button button-outline" href="{{ '/courses/bca/important-questions/' | relative_url }}">Important Questions</a>
+    <a class="button button-outline" href="{{ '/courses/bca/notes/' | relative_url }}">BCA Study Notes</a>
+    <a class="button button-outline" href="{{ '/courses/bca/syllabus/' | relative_url }}">Syllabus Guide</a>
+    <a class="button button-outline" href="{{ '/search/' | relative_url }}">Search Library</a>
+  </div>
+</div>

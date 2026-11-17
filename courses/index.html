@@ -7,21 +7,26 @@ eyebrow: COURSE DIRECTORY
 ---
 
 <div class="intro-copy" style="max-width: 850px; margin-bottom: 28px;">
-  <p style="font-size: 15px; line-height: 1.7; color: var(--muted);">
-    Welcome to the <strong>IncStudy Course Directory</strong>. Access verified semester study materials, official syllabi, and 10-year examination archives tailored for computer science and applications students.
+  <p style="font-size: 16px; line-height: 1.8; color: var(--muted);">
+    Welcome to the <strong>IncStudy Course Directory</strong>. We provide structured, verified semester study materials, official university syllabi, and 10-year examination archives tailored for computer science and applications students across Indian universities.
+  </p>
+  <p style="font-size: 14px; color: var(--muted); margin-top: 8px;">
+    Our curriculum is structured unit-by-unit around official university guidelines, featuring line-by-line question solutions, executable C and C++ source code, KaTeX mathematical proofs, and high-resolution architecture diagrams.
   </p>
 </div>
 
+<!-- Degree Programs Grid -->
 <div class="app-card-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; margin-bottom: 35px;">
-  <!-- BCA Card -->
+
+  <!-- BCA Master Card -->
   <a class="app-card app-card-purple" href="{{ '/courses/bca/' | relative_url }}" style="text-decoration: none;">
     <div class="app-card-content">
-      <span class="app-card-badge">3-Year Undergraduate · Full Curriculum</span>
+      <span class="app-card-badge">3-Year Undergraduate · 6 Semesters</span>
       <h3 class="app-card-title">Bachelor of Computer Applications (BCA)</h3>
-      <p class="app-card-desc">Comprehensive semester guides, C/C++ programming notebooks, Data Structures, Computer Architecture, and 10-year university question papers.</p>
+      <p class="app-card-desc">Comprehensive semester guides, C/C++ programming notebooks, Data Structures, Computer Architecture, Mathematics-I, Statistics, and 10-year authentic university question papers.</p>
     </div>
     <div class="app-card-footer" style="display: flex; align-items: center; justify-content: space-between; margin-top: 18px; font-weight: 600; color: #7c3aed;">
-      <span>Explore BCA Resources</span>
+      <span>Explore BCA Degree Hub</span>
       <span>&rarr;</span>
     </div>
   </a>
@@ -29,13 +34,99 @@ eyebrow: COURSE DIRECTORY
   <!-- Solved Question Banks Card -->
   <a class="app-card app-card-emerald" href="{{ '/courses/bca/important-questions/' | relative_url }}" style="text-decoration: none;">
     <div class="app-card-content">
-      <span class="app-card-badge">High Scoring · 10 Subjects Solved</span>
-      <h3 class="app-card-title">Solved Question Banks</h3>
-      <p class="app-card-desc">Line-by-line university solutions covering 2011 to 2023 exam papers with vector architecture diagrams and dry-run code explanations.</p>
+      <span class="app-card-badge">High-Yield Exam Archive · 400+ Qs Solved</span>
+      <h3 class="app-card-title">Important Solved Questions Hub</h3>
+      <p class="app-card-desc">Line-by-line university solutions covering recurring exam questions from 2011 to 2023 with vector architecture diagrams, dry-run tables, and scoring breakdowns.</p>
     </div>
     <div class="app-card-footer" style="display: flex; align-items: center; justify-content: space-between; margin-top: 18px; font-weight: 600; color: #059669;">
       <span>View Solved Question Banks</span>
       <span>&rarr;</span>
     </div>
   </a>
+
+</div>
+
+<div class="prose" style="max-width: 900px; line-height: 1.8; font-size: 15px;">
+
+  <h2>Core Academic Disciplines Covered on IncStudy</h2>
+  <p>
+    Our study material is organized into five foundational pillars of computer science and software development:
+  </p>
+
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin: 24px 0;">
+    
+    <div style="background: var(--surface); border: 1.5px solid var(--border); border-radius: 14px; padding: 20px;">
+      <h3 style="margin-top: 0; font-size: 1.15rem; color: var(--text);">1. Procedural &amp; OOP Coding</h3>
+      <p style="font-size: 14px; color: var(--muted); margin-bottom: 8px;">
+        Master algorithmic thinking through C programming (pointers, dynamic memory, structs, file I/O) and Object-Oriented design in C++ (classes, virtual base classes, inheritance, polymorphism, and operator overloading).
+      </p>
+      <a href="{{ '/ccsu/bca/semester-1/c-programming-important-questions/' | relative_url }}" style="font-size: 13px; font-weight: 600; color: #2563eb;">View C Programming Solved &rarr;</a>
+    </div>
+
+    <div style="background: var(--surface); border: 1.5px solid var(--border); border-radius: 14px; padding: 20px;">
+      <h3 style="margin-top: 0; font-size: 1.15rem; color: var(--text);">2. Data Structures &amp; Algorithms</h3>
+      <p style="font-size: 14px; color: var(--muted); margin-bottom: 8px;">
+        Linear and non-linear memory structures: singly/doubly linked lists, circular queues, stack expression evaluation (infix to postfix), binary search trees, AVL tree rotations, and Big-O complexity proofs.
+      </p>
+      <a href="{{ '/ccsu/bca/semester-3/data-structures-important-questions/' | relative_url }}" style="font-size: 13px; font-weight: 600; color: #059669;">View Data Structures Solved &rarr;</a>
+    </div>
+
+    <div style="background: var(--surface); border: 1.5px solid var(--border); border-radius: 14px; padding: 20px;">
+      <h3 style="margin-top: 0; font-size: 1.15rem; color: var(--text);">3. Computer Architecture &amp; Hardware</h3>
+      <p style="font-size: 14px; color: var(--muted); margin-bottom: 8px;">
+        Internal CPU organization, register transfer language (RTL), common bus architecture, instruction cycle timing, memory hierarchy, cache mapping (direct, associative), and interrupt processing.
+      </p>
+      <a href="{{ '/ccsu/bca/semester-3/computer-architecture-important-questions/' | relative_url }}" style="font-size: 13px; font-weight: 600; color: #7c3aed;">View Architecture Solved &rarr;</a>
+    </div>
+
+    <div style="background: var(--surface); border: 1.5px solid var(--border); border-radius: 14px; padding: 20px;">
+      <h3 style="margin-top: 0; font-size: 1.15rem; color: var(--text);">4. Applied Mathematics &amp; Statistics</h3>
+      <p style="font-size: 14px; color: var(--muted); margin-bottom: 8px;">
+        Matrix algebra, Cayley-Hamilton theorem, successive differentiation, Maclaurin expansions, vectors, probability distributions (Binomial, Poisson, Normal), regression lines, and SQC control charts.
+      </p>
+      <a href="{{ '/ccsu/bca/semester-3/elements-of-statistics-important-questions/' | relative_url }}" style="font-size: 13px; font-weight: 600; color: #d97706;">View Statistics Solved &rarr;</a>
+    </div>
+
+  </div>
+
+  <h2>Why Structured University Mappings Matter</h2>
+  <p>
+    Unlike generic programming blogs that present detached code snippets, IncStudy designs every course guide around the exact university examination blueprint. We provide:
+  </p>
+  <ul>
+    <li><strong>Authentic Paper Archives:</strong> Real question papers from 2011 to 2023 so students understand how university examiners test theoretical concepts;</li>
+    <li><strong>Structured Marking Allocations:</strong> Answers formatted for 3-mark definitions, 7.5-mark analytical answers, and 15-mark comprehensive program essays;</li>
+    <li><strong>Zero Cost &amp; Zero Friction:</strong> 100% free access for all students with zero subscription walls or forced registration.</li>
+  </ul>
+
+  <h2>Direct Course Navigation Links</h2>
+  <div class="resource-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin: 20px 0;">
+    <a class="resource-card" href="{{ '/courses/bca/notes/' | relative_url }}">
+      <span class="resource-icon icon-blue">NOTE</span>
+      <span>
+        <strong>BCA Study Notes</strong>
+        <small>Subject-Wise Unit Summaries</small>
+      </span>
+      <span class="resource-arrow">&rarr;</span>
+    </a>
+
+    <a class="resource-card" href="{{ '/courses/bca/syllabus/' | relative_url }}">
+      <span class="resource-icon icon-purple">SYL</span>
+      <span>
+        <strong>Complete Syllabus Guide</strong>
+        <small>6-Semester Marking &amp; Paper Codes</small>
+      </span>
+      <span class="resource-arrow">&rarr;</span>
+    </a>
+
+    <a class="resource-card" href="{{ '/courses/bca/previous-papers/' | relative_url }}">
+      <span class="resource-icon icon-pink">PYQ</span>
+      <span>
+        <strong>10-Year Previous Papers</strong>
+        <small>2011–2023 Authentic Archive</small>
+      </span>
+      <span class="resource-arrow">&rarr;</span>
+    </a>
+  </div>
+
 </div>

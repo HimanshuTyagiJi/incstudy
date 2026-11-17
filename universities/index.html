@@ -1,8 +1,79 @@
 ---
 layout: full-width
-title: Universities
-description: Select your university to explore course and semester resources.
+title: University Directories & Syllabus Mappings
+description: Explore university-specific BCA course resources, semester hubs, exam patterns, and syllabus mappings on IncStudy.
 permalink: /universities/
-eyebrow: FIND YOUR UNIVERSITY
+eyebrow: HIGHER EDUCATION DIRECTORY
 ---
-<div class="intro-copy"><p>Choose a university to find course resources mapped to its syllabus. University availability and syllabus coverage will expand as verified material is added.</p></div><div class="card-grid university-grid">{% for university in site.data.universities %}{% if university.active %}{% include university-card.html university=university %}{% endif %}{% endfor %}</div>
+
+<div class="intro-copy" style="max-width: 850px; margin-bottom: 28px;">
+  <p style="font-size: 16px; line-height: 1.8; color: var(--muted);">
+    Welcome to the <strong>IncStudy University Directory</strong>. Academic curricula in Indian higher education are established and periodically updated by respective state and central universities in accordance with University Grants Commission (UGC) standards.
+  </p>
+  <p style="font-size: 14px; color: var(--muted); margin-top: 8px;">
+    IncStudy provides curriculum mappings, authentic examination question paper archives, and line-by-line solved notebooks structured around specific university guidelines so college students study exactly what their university prescribes.
+  </p>
+</div>
+
+<!-- Active Universities Grid -->
+<div class="card-grid university-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; margin-bottom: 35px;">
+
+  <!-- CCSU Active Card -->
+  <a class="app-card app-card-purple" href="{{ '/ccsu/bca/' | relative_url }}" style="text-decoration: none;">
+    <div class="app-card-content">
+      <span class="app-card-badge">State University · Uttar Pradesh · Active Hub</span>
+      <h3 class="app-card-title">Chaudhary Charan Singh University (CCSU)</h3>
+      <p class="app-card-desc">Complete academic portal for CCSU Meerut BCA students: Semester 1 and Semester 3 fully solved notebooks, 2011–2023 authentic PYQs, and 75-mark exam blueprints.</p>
+    </div>
+    <div class="app-card-footer" style="display: flex; align-items: center; justify-content: space-between; margin-top: 18px; font-weight: 600; color: #7c3aed;">
+      <span>Explore CCSU BCA Portal</span>
+      <span>&rarr;</span>
+    </div>
+  </a>
+
+  <!-- CCSU 6-Semester Syllabus Card -->
+  <a class="app-card app-card-emerald" href="{{ '/courses/bca/syllabus/' | relative_url }}" style="text-decoration: none;">
+    <div class="app-card-content">
+      <span class="app-card-badge">Official Blueprint · 6 Semesters</span>
+      <h3 class="app-card-title">CCSU Full Syllabus &amp; Course Codes</h3>
+      <p class="app-card-desc">Detailed subject breakdown from BCA-101 to BCA-604, credit weighting, marks distribution, and evaluation criteria for odd and even university semester exams.</p>
+    </div>
+    <div class="app-card-footer" style="display: flex; align-items: center; justify-content: space-between; margin-top: 18px; font-weight: 600; color: #059669;">
+      <span>View Complete Syllabus</span>
+      <span>&rarr;</span>
+    </div>
+  </a>
+
+</div>
+
+<div class="prose" style="max-width: 900px; line-height: 1.8; font-size: 15px;">
+
+  <h2>Understanding State University Curriculum Mappings</h2>
+  <p>
+    Undergraduate computer science programs in India, particularly the <strong>Bachelor of Computer Applications (BCA)</strong>, share a standard core curriculum covering programming principles, data structures, discrete mathematics, computer architecture, and database management. However, individual universities introduce specific differences:
+  </p>
+  <ul>
+    <li><strong>Subject Ordering by Semester:</strong> Some universities teach C Programming in Semester 1 and C++ in Semester 2, whereas others (such as CCSU Meerut) place C Programming in Semester 1 (BCA-102), Advanced C in Semester 2 (BCA-202), and OOP with C++ in Semester 3 (BCA-301).</li>
+    <li><strong>Examination Paper Codes &amp; Section Weightages:</strong> While universities like CCSU Meerut follow a structured 75-mark external theory paper (Section A: 15 Marks, Section B: 15 Marks, Section C: 45 Marks) plus 25 marks sessional assessment, other state universities may utilize an 80/20 or 70/30 distribution.</li>
+    <li><strong>Practical Lab Examination Ratios:</strong> Lab subjects typically carry separate marks evaluated via external viva voce, code execution on university computers, and certified practical record files.</li>
+  </ul>
+
+  <h2>Spotlight: Chaudhary Charan Singh University (CCSU), Meerut</h2>
+  <p>
+    Chaudhary Charan Singh University (formerly Meerut University) is a premier state university established in 1965 in Meerut, Uttar Pradesh. It oversees hundreds of affiliated colleges across western Uttar Pradesh offering professional degree programs in Computer Applications, Management, and Science.
+  </p>
+  <p>
+    IncStudy's primary active curriculum is specifically mapped to the official CCSU BCA syllabus:
+  </p>
+  <ul>
+    <li><strong>Semester 1 (Odd):</strong> BCA-101 (Mathematics-I), BCA-102 (C Programming &amp; Algorithms), BCA-103 (Principles of Management), BCA-104 (Business Communication), BCA-105 (Computer Fundamentals &amp; Office Automation).</li>
+    <li><strong>Semester 3 (Odd):</strong> BCA-301 (Object-Oriented Programming with C++), BCA-302 (Data Structures Using C &amp; C++), BCA-303 (Computer Architecture &amp; Assembly), BCA-304 (Business Economics), BCA-305 (Elements of Statistics).</li>
+    <li><strong>10-Year Exam Archives:</strong> Authentic university question papers from 2011 to 2023 solved line-by-line with step-by-step algorithms, dry-run memory traces, and vector diagrams.</li>
+  </ul>
+
+  <h2>Upcoming University Syllabi Additions</h2>
+  <p>
+    We are actively preparing verified curriculum mappings and question paper archives for additional Indian technical and state universities, including Dr. A.P.J. Abdul Kalam Technical University (AKTU) and other regional institutions. Students wishing to contribute question papers or request syllabus mapping for their university may contact our editorial desk via our <a href="{{ '/contact/' | relative_url }}">Contact Page</a>.
+  </p>
+
+</div>

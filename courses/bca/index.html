@@ -1,8 +1,154 @@
 ---
 layout: full-width
-title: BCA Study Material
-description: Browse BCA study resources, semester pages and university-specific syllabus mapping.
+title: Bachelor of Computer Applications (BCA) Complete Study Portal
+description: Comprehensive academic portal for BCA students featuring semester-by-semester subject notes, 10-year solved examination questions, university syllabi, and coding notebooks.
 permalink: /courses/bca/
-eyebrow: COURSE LIBRARY
+eyebrow: COURSE DIRECTORY
+course_id: bca
 ---
-<div class="intro-copy"><p>Choose your university to view BCA resources mapped to its syllabus. Common topics can be reused while each university keeps its own syllabus structure.</p></div><div class="card-grid university-grid">{% for university in site.data.universities %}{% if university.active %}{% include university-card.html university=university %}{% endif %}{% endfor %}</div>
+
+<div class="intro-copy" style="max-width: 850px; margin-bottom: 28px;">
+  <p style="font-size: 16px; line-height: 1.8; color: var(--muted);">
+    The <strong>Bachelor of Computer Applications (BCA)</strong> is a comprehensive three-year undergraduate program designed to bridge theoretical computer science principles with practical software engineering skills. <strong>IncStudy</strong> provides an authoritative, open-access study repository mapped to university curriculum standards.
+  </p>
+  <p style="font-size: 14px; color: var(--muted); margin-top: 8px;">
+    Explore active semester portals, line-by-line solved question archives, verified C and C++ programs, KaTeX mathematical proofs, and official university exam blueprints below.
+  </p>
+</div>
+
+<!-- Primary Master Resources Grid -->
+<div class="app-card-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 35px;">
+
+  <!-- Card 1: 1st Semester Hub -->
+  <a class="app-card app-card-purple" href="{{ '/ccsu/bca/semester-1/' | relative_url }}" style="text-decoration: none;">
+    <div class="app-card-content">
+      <span class="app-card-badge">Year 1 · 5 Core Subjects</span>
+      <h3 class="app-card-title">BCA 1st Semester Hub</h3>
+      <p class="app-card-desc">C Programming (BCA-102), Mathematics-I (BCA-101), Computer Fundamentals (BCA-105), Management &amp; Communication with 10-Year Solved PYQs.</p>
+    </div>
+    <div class="app-card-footer" style="display: flex; align-items: center; justify-content: space-between; margin-top: 16px; font-weight: 600; color: #7c3aed;">
+      <span>Open 1st Sem Hub</span>
+      <span>&rarr;</span>
+    </div>
+  </a>
+
+  <!-- Card 2: 3rd Semester Hub -->
+  <a class="app-card app-card-emerald" href="{{ '/ccsu/bca/semester-3/' | relative_url }}" style="text-decoration: none;">
+    <div class="app-card-content">
+      <span class="app-card-badge">Year 2 · 5 Core Subjects</span>
+      <h3 class="app-card-title">BCA 3rd Semester Hub</h3>
+      <p class="app-card-desc">OOP with C++ (BCA-301), Data Structures (BCA-302), Computer Architecture (BCA-303), Economics (BCA-304) &amp; Statistics (BCA-305) with 40 SVG Visuals.</p>
+    </div>
+    <div class="app-card-footer" style="display: flex; align-items: center; justify-content: space-between; margin-top: 16px; font-weight: 600; color: #059669;">
+      <span>Open 3rd Sem Hub</span>
+      <span>&rarr;</span>
+    </div>
+  </a>
+
+  <!-- Card 3: Solved Question Banks -->
+  <a class="app-card app-card-amber" href="{{ '/courses/bca/important-questions/' | relative_url }}" style="text-decoration: none;">
+    <div class="app-card-content">
+      <span class="app-card-badge">High Scoring · 400+ Qs</span>
+      <h3 class="app-card-title">Important Solved Questions</h3>
+      <p class="app-card-desc">Recurring university examination questions solved line-by-line across 10 core subjects with complete working code dry runs and marking allocations.</p>
+    </div>
+    <div class="app-card-footer" style="display: flex; align-items: center; justify-content: space-between; margin-top: 16px; font-weight: 600; color: #d97706;">
+      <span>Explore Solved Banks</span>
+      <span>&rarr;</span>
+    </div>
+  </a>
+
+  <!-- Card 4: Previous Year Question Papers Archive -->
+  <a class="app-card app-card-pink" href="{{ '/courses/bca/previous-papers/' | relative_url }}" style="text-decoration: none;">
+    <div class="app-card-content">
+      <span class="app-card-badge">2011–2023 · Authentic Papers</span>
+      <h3 class="app-card-title">10-Year Previous Papers</h3>
+      <p class="app-card-desc">Complete authentic question papers archive for university semester exams, detailing recurring question patterns and Section C 15-mark questions.</p>
+    </div>
+    <div class="app-card-footer" style="display: flex; align-items: center; justify-content: space-between; margin-top: 16px; font-weight: 600; color: #db2777;">
+      <span>View Past Papers</span>
+      <span>&rarr;</span>
+    </div>
+  </a>
+
+</div>
+
+<div class="prose" style="max-width: 900px; line-height: 1.8; font-size: 15px;">
+
+  <h2>Understanding the BCA Curriculum Architecture</h2>
+  <p>
+    The standard Indian university Bachelor of Computer Applications curriculum (modeled after UGC and state university guidelines such as CCSU Meerut) spans <strong>six academic semesters (3 years)</strong> totaling 3,600 marks. The curriculum is partitioned into three progressive stages of mastery:
+  </p>
+
+  <h3>1. Year 1: Foundational Programming &amp; Digital Logic</h3>
+  <p>
+    The opening year establishes the intellectual groundwork for computer science. Students transition from high school mathematics into collegiate calculus, matrices, and differential equations (Mathematics-I &amp; II). On the technical side, procedural programming is mastered through <strong>C Language</strong> (variables, control structures, pointers, arrays, memory management, and file handling). Hardware foundations are introduced via Digital Electronics &amp; Computer Organization (logic gates, Boolean algebra, K-maps, flip-flops, and counters), complemented by principles of management and business communication.
+  </p>
+
+  <h3>2. Year 2: Software Systems, OOP &amp; Data Structures</h3>
+  <p>
+    The second year shifts from procedural problem-solving into systems engineering and abstract data types:
+  </p>
+  <ul>
+    <li><strong>Object-Oriented Programming with C++ (BCA-301):</strong> Encapsulation, class design, constructors, inheritance hierarchies, virtual functions, polymorphism, operator overloading, and generic templates.</li>
+    <li><strong>Data Structures Using C &amp; C++ (BCA-302):</strong> Asymptotic Big-O analysis, linear lists, stack evaluation, queue variants, binary trees, AVL trees, and sorting algorithms (QuickSort, MergeSort).</li>
+    <li><strong>Computer Architecture &amp; Assembly (BCA-303):</strong> Instruction register formats, addressing modes, micro-operations, ALU design, memory hierarchy, cache hit/miss ratios, and 8085/8086 assembly programming.</li>
+    <li><strong>Business Economics (BCA-304) &amp; Elements of Statistics (BCA-305):</strong> Demand elasticity, production functions, cost analysis, probability laws, central tendency, linear regression, and statistical quality control (SQC) charts.</li>
+  </ul>
+
+  <h3>3. Year 3: Enterprise Technologies &amp; Capstone Project</h3>
+  <p>
+    The final year prepares graduates for software engineering roles through Database Management Systems (relational schema design, SQL, 3NF/BCNF normalization, transaction ACID properties), Java Programming (JVM architecture, multithreading, exception handling, Swing/AWT), Computer Networks (OSI 7 layers, TCP/IP, IP addressing, routing protocols, cryptography), and a comprehensive practical Major Project.
+  </p>
+
+  <h2>Official University Examination Marking Pattern</h2>
+  <p>
+    In most state universities (including CCSU Meerut), theory examinations are evaluated out of <strong>100 marks per paper</strong>:
+  </p>
+  <div style="background: var(--surface); border: 1.5px solid var(--border); border-radius: 14px; padding: 20px 24px; margin: 20px 0;">
+    <ul style="margin: 0; padding-left: 20px;">
+      <li><strong>External University Examination (75 Marks · 3 Hours):</strong>
+        <ul>
+          <li><strong>Section A (15 Marks):</strong> 5 compulsory short questions (3 marks each, ~75 words). Covers definitions, syntax rules, and truth tables.</li>
+          <li><strong>Section B (15 Marks):</strong> Attempt 2 out of 3 analytical questions (7.5 marks each). Involves flowcharts, dry runs, and circuit diagrams.</li>
+          <li><strong>Section C (45 Marks):</strong> Attempt 3 out of 5 comprehensive long questions (15 marks each). Involves complete programs, mathematical proofs, and system designs.</li>
+        </ul>
+      </li>
+      <li><strong>Internal College Sessional Assessment (25 Marks):</strong> Comprises midterm tests, classroom attendance, assignments, and faculty evaluation.</li>
+    </ul>
+  </div>
+
+  <h2>Active University Syllabus Guides on IncStudy</h2>
+  <p>
+    IncStudy provides dedicated university-specific syllabus mappings to ensure students only study what is officially prescribed for their current academic session:
+  </p>
+  <div class="resource-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin: 20px 0;">
+    <a class="resource-card" href="{{ '/ccsu/bca/' | relative_url }}">
+      <span class="resource-icon icon-blue">CCSU</span>
+      <span>
+        <strong>CCSU Meerut BCA Portal</strong>
+        <small>Active Semester Hubs, Verified PYQs, Marking Schemes</small>
+      </span>
+      <span class="resource-arrow">&rarr;</span>
+    </a>
+
+    <a class="resource-card" href="{{ '/courses/bca/syllabus/' | relative_url }}">
+      <span class="resource-icon icon-purple">SYL</span>
+      <span>
+        <strong>6-Semester Full Syllabus Guide</strong>
+        <small>Subject Codes, Marks Distribution &amp; Course Blueprints</small>
+      </span>
+      <span class="resource-arrow">&rarr;</span>
+    </a>
+
+    <a class="resource-card" href="{{ '/courses/bca/notes/' | relative_url }}">
+      <span class="resource-icon icon-emerald">NOTE</span>
+      <span>
+        <strong>BCA Subject Study Notes</strong>
+        <small>Comprehensive Unit Guides &amp; Key Concept Explanations</small>
+      </span>
+      <span class="resource-arrow">&rarr;</span>
+    </a>
+  </div>
+
+</div>
