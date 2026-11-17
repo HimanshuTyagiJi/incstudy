@@ -1,0 +1,2634 @@
+---
+layout: exam
+title: "CCSU BCA 3rd Sem Object Oriented Programming with C++ (BCA-301) Most Important Questions & Solved Exam Notebook"
+seo_title: "CCSU BCA 3rd Sem OOP with C++ (BCA-301) Solved Exam Notebook"
+breadcrumb_title: "OOP with C++ (BCA-301)"
+eyebrow: "⚡ CCSU Meerut · BCA 3rd Semester · Exam Preparation"
+title_subject: "Object Oriented Programming with C++"
+title_code: "BCA-301"
+title_highlight: "Most Important Questions & Solved Exam Notebook"
+description: "Master chapter-wise solved notebook of recurring CCSU examination questions (2017–2022) for Object Oriented Programming with C++ (BCA-301) with diamond problem virtual base class, vtable/vptr runtime polymorphism, operator overloading, file streams, templates, and vector SVG diagrams."
+permalink: /ccsu/bca/semester-3/c-plus-plus-important-questions/
+course_name: "CCSU BCA Semester 3 · Object Oriented Programming with C++ (BCA-301)"
+math: true
+---
+
+<!-- Navigation & Actions Bar -->
+<div class="exam-actions-bar">
+  <a href="{{ '/ccsu/bca/semester-3/' | relative_url }}" class="text-link">&larr; Back to Semester 3 Hub</a>
+  <button class="print-btn" onclick="triggerMathPrint()">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+    Save as PDF / Print Solved Notebook
+  </button>
+</div>
+
+<script>
+function triggerMathPrint() {
+  if (typeof renderMathInElement === 'function' && document.body) {
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false},
+        {left: '\\(', right: '\\)', display: false},
+        {left: '\\[', right: '\\]', display: true}
+      ],
+      throwOnError: false
+    });
+  }
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(function() {
+      window.print();
+    });
+  } else {
+    window.print();
+  }
+}
+</script>
+
+<!-- Header Strip -->
+<div class="exam-header-strip">
+  <span class="strip-pill">📚 Subject Code: BCA-301</span>
+  <span class="strip-pill">🏛️ CCSU Meerut University Pattern</span>
+  <span class="strip-pill">📄 3M, 7.5M &amp; 15M Exam Blueprint</span>
+  <span class="strip-pill">⭐ 2017–2022 Recurring University Exam Archive</span>
+</div>
+
+<!-- Quick Jump Nav -->
+<div class="exam-jump-nav">
+  <span class="exam-jump-label">⚡ Quick Jump:</span>
+  <a href="#section-a" class="jump-pill jump-pill-emerald">Section A (3 Marks · 18 Questions)</a>
+  <a href="#section-b" class="jump-pill jump-pill-cyan">Section B (7.5 Marks · 10 Questions)</a>
+  <a href="#section-c" class="jump-pill jump-pill-purple">⭐ Section C (15 Marks · 12 Solved Master Problems &amp; SVG Diagrams)</a>
+</div>
+
+<div class="notice-box" style="margin-bottom: 28px;">
+  <strong>Exam Scoring Architecture for BCA-301 (Object Oriented Programming with C++):</strong>
+  The university theory examination carries <strong>75 Marks</strong> with a 3-hour duration, structured into 
+  <strong>Section A (5 questions &times; 3M = 15M compulsory)</strong>, 
+  <strong>Section B (attempt 2 of 3 questions &times; 7.5M = 15M)</strong>, and 
+  <strong>Section C (attempt 3 of 5 questions &times; 15M = 45M)</strong>.
+  In this master solved notebook, every recurring question from 2017, 2018, 2019, 2020, 2021, and 2022 is solved with working compilable C++ code, UML architectures, memory layouts (stack vs heap, vtable/vptr dispatch, virtual base classes), and custom vector SVG diagrams.
+</div>
+\n
+<!-- =========================================================================
+     SECTION A : 3 MARKS VERY SHORT ANSWER QUESTIONS (COMPULSORY)
+     ========================================================================= -->
+<div class="exam-section-card" id="section-a">
+  <div class="exam-section-header exam-section-header-emerald">
+    <div class="exam-section-header-inner">
+      <span class="exam-section-badge badge-emerald">SECTION A &bull; 3 MARKS EACH</span>
+      <h3 class="exam-section-title">Very Short Answer Questions &amp; Core OOP Concepts</h3>
+      <p class="exam-section-rule">CCSU Examination Blueprint: 5 Questions Compulsory &bull; Total 15 Marks (75 Words Limit)</p>
+    </div>
+  </div>
+
+  <div class="exam-section-body">
+
+    <!-- A1: Object and Class -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q1.</span> What is an Object and a Class? How do they relate to each other?</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2017, 2018, 2019, 2021, 2022</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>A <strong>Class</strong> is a user-defined blueprint or prototype that bundles data members (attributes) and member functions (behaviors) together into a single unit. It acts as a logical construct and consumes <em>no physical memory</em> when declared.</p>
+        <p>An <strong>Object</strong> is a real-world, concrete instance of a class. When an object is instantiated, the system allocates physical memory for all non-static data members defined in the class.</p>
+        <div class="callout-box">
+          <strong>Key Relationship:</strong> If <code>class Car</code> is the architectural blueprint, then <code>Car myCar;</code> is the physical vehicle manufactured from that blueprint.
+        </div>
+      </div>
+    </div>
+
+    <!-- A2: Four Core Pillars of OOP -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q2.</span> State the four fundamental pillars of Object-Oriented Programming (OOP).</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2017, 2019, 2020, 2022</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <ul>
+          <li><strong>1. Encapsulation:</strong> Binding data members and the functions that manipulate them into a single unit (class) while restricting direct outside access via private access specifiers.</li>
+          <li><strong>2. Data Abstraction:</strong> Displaying only essential features and interface methods to the outside world while hiding underlying complex implementation details.</li>
+          <li><strong>3. Inheritance:</strong> The mechanism by which a new class (derived class) inherits properties and behaviors from an existing class (base class), promoting code reusability and hierarchical classification.</li>
+          <li><strong>4. Polymorphism:</strong> The ability of a message, function, or operator to take on multiple forms depending on the context (Compile-time via overloading; Run-time via virtual functions).</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- A3: Scope Resolution Operator -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q3.</span> What is the Scope Resolution Operator (<code>::</code>)? State its three distinct uses in C++.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2017, 2018, 2021</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>The <strong>Scope Resolution Operator (<code>::</code>)</strong> is used to explicitly qualify the scope of an identifier (variable, class, or namespace). Its three primary uses are:</p>
+        <ol>
+          <li><strong>Accessing Global Variables:</strong> Accesses a hidden global variable when a local variable with the exact same identifier exists in current block: <code>cout &lt;&lt; ::globalVar;</code></li>
+          <li><strong>Defining Member Functions Outside Class:</strong> Connects a member function definition back to its enclosing class header: <code>void Student::display() { ... }</code></li>
+          <li><strong>Resolving Namespace &amp; Class Ambiguity:</strong> Accesses static members or nested classes: <code>std::cout</code> or <code>BaseClass::variable</code>.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- A4: Reference Variables -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q4.</span> What is a Reference Variable in C++? Contrast it with a Pointer variable.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2017, 2019, 2021</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>A <strong>Reference Variable</strong> provides an alternative alias (secondary name) for an existing variable. It is declared using the <code>&amp;</code> symbol: <code>int a = 10; int &amp;ref = a;</code>. Any operation performed on <code>ref</code> directly alters <code>a</code> because both share the exact same physical memory address.</p>
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>Reference Variable (<code>&amp;ref</code>)</th>
+                <th>Pointer Variable (<code>*ptr</code>)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Memory Address</strong></td>
+                <td>Shares the same address as the target variable (no separate storage).</td>
+                <td>Holds the memory address of another variable in its own memory slot.</td>
+              </tr>
+              <tr>
+                <td><strong>Initialization</strong></td>
+                <td>Must be initialized at the time of declaration. Cannot be uninitialized.</td>
+                <td>Can be declared without initialization and initialized anytime later.</td>
+              </tr>
+              <tr>
+                <td><strong>Reassignment &amp; NULL</strong></td>
+                <td>Cannot be reassigned to bind to another variable; cannot be <code>NULL</code>.</td>
+                <td>Can point to different variables dynamically; can be <code>NULL</code> or <code>nullptr</code>.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- A5: new/delete vs malloc/free -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q5.</span> Differentiate between Dynamic Memory Allocation in C (<code>malloc/free</code>) and C++ (<code>new/delete</code>).</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2018, 2019, 2020, 2021</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Criteria</th>
+                <th><code>new</code> / <code>delete</code> (C++)</th>
+                <th><code>malloc()</code> / <code>free()</code> (C)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Nature</strong></td>
+                <td>Language operators (keywords).</td>
+                <td>Library runtime functions (<code>&lt;cstdlib&gt;</code>).</td>
+              </tr>
+              <tr>
+                <td><strong>Constructor / Destructor</strong></td>
+                <td>Automatically invokes class <strong>constructors</strong> on allocation and <strong>destructors</strong> on deallocation.</td>
+                <td>Allocates/frees raw uninitialized byte storage; never invokes constructors or destructors.</td>
+              </tr>
+              <tr>
+                <td><strong>Return Type</strong></td>
+                <td>Returns the exact typed pointer (e.g. <code>int*</code>, <code>Node*</code>). No typecasting required.</td>
+                <td>Returns a generic <code>void*</code> pointer; explicit typecast is necessary in C++.</td>
+              </tr>
+              <tr>
+                <td><strong>Size Calculation</strong></td>
+                <td>Compiler automatically computes size: <code>p = new int[10];</code></td>
+                <td>Programmer manually calculates bytes: <code>p = (int*)malloc(10 * sizeof(int));</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- A6: Inline Functions -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q6.</span> What is an Inline Function? Under what conditions does the C++ compiler ignore the <code>inline</code> request?</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2017, 2019, 2021, 2022</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>An <strong>Inline Function</strong> is defined using the <code>inline</code> keyword. When an inline function is invoked, the compiler replaces the function call with the actual body code of the function at compile-time, eliminating the runtime overhead of stack frame creation, parameter pushing, and return jumps.</p>
+        <p><strong>Conditions where compiler ignores the <code>inline</code> request (treated as normal function):</strong></p>
+        <ul>
+          <li>If the function contains loops (<code>for</code>, <code>while</code>, <code>do-while</code>).</li>
+          <li>If the function contains <code>switch</code> or <code>goto</code> statements.</li>
+          <li>If the function is recursive (calls itself).</li>
+          <li>If the function contains static local variables or its address is taken via a function pointer.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- A7: Default Arguments -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q7.</span> What are Default Arguments in C++? State the key rules for declaring them in function prototypes.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2018, 2020, 2022</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>A <strong>Default Argument</strong> is a value assigned in the function prototype that is automatically used if the calling program omits the corresponding argument during the function invocation: <code>float calcInterest(float p, int t, float r = 8.5);</code>.</p>
+        <p><strong>Fundamental Rules:</strong></p>
+        <ol>
+          <li><strong>Right-to-Left Trailing Rule:</strong> Default arguments must always be provided from right to left in the parameter list. A parameter cannot have a default value unless all parameters appearing to its right also have default values (e.g. <code>void func(int a, int b = 5, int c = 10);</code> is valid, but <code>void func(int a = 5, int b);</code> is a syntax error).</li>
+          <li><strong>Prototype Specification:</strong> Default values should be declared in the function declaration (prototype), not repeated in the definition.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- A8: Access Specifiers -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q8.</span> Explain the visibility and access rules for <code>private</code>, <code>protected</code>, and <code>public</code> access specifiers.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2017, 2019, 2020</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <ul>
+          <li><strong><code>private</code>:</strong> Accessible only by member functions and declared friend functions of the same class. Completely hidden from derived classes and outside object access. (Default visibility in classes).</li>
+          <li><strong><code>protected</code>:</strong> Inaccessible to outside object scopes (acts private to outside world), but <em>accessible directly by derived/child classes</em> during inheritance.</li>
+          <li><strong><code>public</code>:</strong> Accessible from any part of the program where the object is in scope. Forms the public interface of the class.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- A9: Destructors -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q9.</span> What is a Destructor? State three essential characteristics of a destructor in C++.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2018, 2020, 2021</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>A <strong>Destructor</strong> is a special member function that is automatically executed when an object goes out of scope or is explicitly deleted via <code>delete</code>. Its primary role is deallocating dynamic heap memory, closing file handles, and releasing system resources.</p>
+        <p><strong>Three Key Characteristics:</strong></p>
+        <ol>
+          <li>Its name is preceded by a tilde (<code>~</code>) and matches the exact class name: <code>~ClassName();</code>.</li>
+          <li>It takes <strong>no arguments</strong> and returns <strong>no value</strong> (not even <code>void</code>).</li>
+          <li>Because it accepts no arguments, a destructor <strong>cannot be overloaded</strong>; there can only be exactly one destructor per class.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- A10: Copy Constructor -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q10.</span> What is a Copy Constructor? When is it implicitly invoked by the C++ compiler?</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2017, 2018, 2019, 2021, 2022</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>A <strong>Copy Constructor</strong> is an overloaded constructor used to initialize a new object using an existing object of the exact same class. Its declaration syntax uses a constant reference: <code>ClassName(const ClassName &amp;source);</code>.</p>
+        <p><strong>It is automatically invoked in three specific scenarios:</strong></p>
+        <ul>
+          <li>When an object is initialized from another existing object at creation: <code>Student s2 = s1;</code> or <code>Student s2(s1);</code>.</li>
+          <li>When an object is passed to a function <strong>by value</strong>: <code>void process(Student s);</code>.</li>
+          <li>When an object is returned from a function <strong>by value</strong>: <code>Student createStudent() { ... return s; }</code>.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- A11: this Pointer -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q11.</span> Explain the purpose and role of the <code>this</code> pointer in C++ with a short syntax example.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2018, 2019, 2021</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>The <strong><code>this</code> pointer</strong> is an implicit, hidden constant pointer automatically passed into all non-static member functions. It holds the physical memory address of the invoking object (the object upon which the member function was called).</p>
+        <p><strong>Primary Use Cases:</strong></p>
+        <ul>
+          <li><strong>Resolving Identifier Shadowing:</strong> Differentiates between member variables and parameter variables sharing identical names:
+            <pre><code class="language-cpp">void setDimensions(int length, int width) {
+    this-&gt;length = length; // this-&gt;length is member, length is parameter
+    this-&gt;width = width;
+}</code></pre>
+          </li>
+          <li><strong>Method Chaining:</strong> Returning the current object reference to allow chained calls: <code>return *this;</code>.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- A12: Operators that cannot be overloaded -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q12.</span> Which operators cannot be overloaded in C++? State the technical reason why.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2017, 2019, 2020, 2022</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>The following five operators <strong>cannot</strong> be overloaded in C++:</p>
+        <ol>
+          <li><code>.</code> (Class member access / dot operator)</li>
+          <li><code>.*</code> (Pointer-to-member operator)</li>
+          <li><code>::</code> (Scope resolution operator)</li>
+          <li><code>?:</code> (Conditional / ternary operator)</li>
+          <li><code>sizeof</code> (Size-of operator)</li>
+        </ol>
+        <div class="callout-box">
+          <strong>Technical Reason:</strong> Overloading these operators would break core language semantics. For example, if the dot operator (<code>.</code>) could be overloaded, the compiler would lose the guaranteed syntactic mechanism to access members of an object, creating syntactic ambiguity in basic language operations.
+        </div>
+      </div>
+    </div>
+
+    <!-- A13: Pure Virtual Function & Abstract Class -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q13.</span> What is a Pure Virtual Function and an Abstract Base Class? Give syntax.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2017, 2018, 2019, 2021, 2022</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>A <strong>Pure Virtual Function</strong> is a virtual function that has no definition in the base class and is equated to zero in its declaration: <code>virtual void draw() = 0;</code>. It acts as a mandatory contract forcing derived classes to provide their own implementation.</p>
+        <p>An <strong>Abstract Base Class</strong> is any class containing at least one pure virtual function. Abstract classes <em>cannot be instantiated</em> directly (i.e. <code>Shape s;</code> produces a compiler error), but pointers and references of abstract class types can be created to achieve runtime polymorphism.</p>
+      </div>
+    </div>
+
+    <!-- A14: Early Binding vs Late Binding -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q14.</span> Differentiate between Early Binding (Static Binding) and Late Binding (Dynamic Binding).</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2019, 2020, 2021</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>Early Binding (Static Binding)</th>
+                <th>Late Binding (Dynamic Binding)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Resolution Time</strong></td>
+                <td>Resolved by the compiler at compile-time.</td>
+                <td>Resolved by the runtime engine during program execution.</td>
+              </tr>
+              <tr>
+                <td><strong>Mechanism</strong></td>
+                <td>Matches function name and parameters directly based on pointer/reference type.</td>
+                <td>Uses the Virtual Table (<code>vtable</code>) and Virtual Pointer (<code>vptr</code>) based on actual pointed-to object.</td>
+              </tr>
+              <tr>
+                <td><strong>Speed</strong></td>
+                <td>Extremely fast; zero runtime pointer indirection overhead.</td>
+                <td>Slight runtime overhead due to <code>vtable</code> lookup indirection.</td>
+              </tr>
+              <tr>
+                <td><strong>Examples</strong></td>
+                <td>Normal member functions, function overloading, operator overloading.</td>
+                <td>Virtual functions invoked via base class pointers or references.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- A15: Virtual Destructor -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q15.</span> Why should a Base Class Destructor always be declared as <code>virtual</code>?</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2020, 2021, 2022</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>When a derived class object is deleted through a base class pointer (e.g. <code>Base *b = new Derived(); delete b;</code>):</p>
+        <ul>
+          <li><strong>If Base destructor is NOT virtual:</strong> The compiler performs early binding and invokes <em>only the Base destructor</em>. The Derived class destructor is completely skipped, causing memory leaks if the derived class allocated dynamic heap memory.</li>
+          <li><strong>If Base destructor is declared <code>virtual ~Base();</code>:</strong> Late binding ensures that the <strong>Derived destructor executes first</strong>, freeing derived resources, followed automatically by the Base destructor.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- A16: ios::app vs ios::ate -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q16.</span> Differentiate between File Opening Modes <code>ios::app</code> (append) and <code>ios::ate</code> (at-end).</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2018, 2020, 2021</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Mode</th>
+                <th>Initial File Pointer Position</th>
+                <th>Repositioning Capability</th>
+                <th>Writing Behavior</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong><code>ios::app</code> (Append)</strong></td>
+                <td>End of file (EOF).</td>
+                <td><strong>Locked:</strong> File write pointer cannot be moved to any other location using <code>seekp()</code>.</td>
+                <td>All output operations are strictly appended to the very end of the file.</td>
+              </tr>
+              <tr>
+                <td><strong><code>ios::ate</code> (At End)</strong></td>
+                <td>End of file (EOF).</td>
+                <td><strong>Flexible:</strong> File pointer can be freely repositioned anywhere (to beginning or middle) using <code>seekg()</code> or <code>seekp()</code>.</td>
+                <td>Allows reading and writing anywhere in the file after moving the pointer.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- A17: I/O Manipulators -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q17.</span> What are C++ Stream Manipulators? Explain <code>setw()</code> and <code>setprecision()</code> from <code>&lt;iomanip&gt;</code>.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2019, 2021, 2022</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p><strong>Manipulators</strong> are special formatting helper functions used with the insertion (<code>&lt;&lt;</code>) and extraction (<code>&gt;&gt;</code>) operators to format data display on output streams. Defined in header <code>&lt;iomanip&gt;</code>.</p>
+        <ul>
+          <li><strong><code>setw(int n)</code>:</strong> Sets the field width for the immediately succeeding output value to <code>n</code> characters (right-aligned by default). It affects only the next output item.
+            <pre><code class="language-cpp">cout &lt;&lt; setw(10) &lt;&lt; 123; // Displays "       123"</code></pre>
+          </li>
+          <li><strong><code>setprecision(int n)</code>:</strong> Sets the floating-point precision to <code>n</code> digits. When combined with <code>fixed</code>, it fixes the exact number of decimal places:
+            <pre><code class="language-cpp">cout &lt;&lt; fixed &lt;&lt; setprecision(2) &lt;&lt; 3.14159; // Displays "3.14"</code></pre>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- A18: Overloading vs Overriding -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q18.</span> Differentiate between Function Overloading (Compile-Time) and Function Overriding (Run-Time).</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2017, 2018, 2020, 2022</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Criteria</th>
+                <th>Function Overloading</th>
+                <th>Function Overriding</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Scope</strong></td>
+                <td>Occurs within the <strong>same class</strong> scope.</td>
+                <td>Occurs across <strong>base and derived classes</strong> in an inheritance hierarchy.</td>
+              </tr>
+              <tr>
+                <td><strong>Signature</strong></td>
+                <td>Function names are identical, but parameter list <strong>must differ</strong> (in count, types, or order).</td>
+                <td>Function name, parameters, and return type <strong>must be strictly identical</strong>.</td>
+              </tr>
+              <tr>
+                <td><strong>Polymorphism Type</strong></td>
+                <td>Compile-time (Static binding).</td>
+                <td>Run-time (Dynamic binding via <code>virtual</code> keyword).</td>
+              </tr>
+              <tr>
+                <td><strong>Keyword Requirement</strong></td>
+                <td>No special keyword required.</td>
+                <td>Requires <code>virtual</code> in the base class.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /.exam-section-body -->
+</div><!-- /#section-a -->
+\n
+<!-- =========================================================================
+     SECTION B : 7.5 MARKS SHORT ANSWER QUESTIONS (ATTEMPT 2 OF 3)
+     ========================================================================= -->
+<div class="exam-section-card" id="section-b">
+  <div class="exam-section-header exam-section-header-cyan">
+    <div class="exam-section-header-inner">
+      <span class="exam-section-badge badge-cyan">SECTION B &bull; 7.5 MARKS EACH</span>
+      <h3 class="exam-section-title">Core Analytical Concepts, Working Programs &amp; Design Patterns</h3>
+      <p class="exam-section-rule">CCSU Examination Blueprint: Attempt Any 2 of 3 Questions &bull; Total 15 Marks (~200 Words + Working Code)</p>
+    </div>
+  </div>
+
+  <div class="exam-section-body">
+
+    <!-- B1: POP vs OOP -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q1.</span> Differentiate between Procedure Oriented Programming (POP) and Object Oriented Programming (OOP) in detail with a structured comparison matrix.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2017, 2018, 2019, 2021, 2022</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>In traditional <strong>Procedure Oriented Programming (POP)</strong>, the problem is viewed as a sequence of procedural steps or functions that execute actions on data. In contrast, <strong>Object Oriented Programming (OOP)</strong> models programs around discrete real-world entities called <em>objects</em> that encapsulate both data and the operations that act upon that data.</p>
+        
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Comparison Parameter</th>
+                <th>Procedure Oriented Programming (POP)</th>
+                <th>Object Oriented Programming (OOP)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Primary Focus</strong></td>
+                <td>Focuses on algorithms, step-by-step procedures, and doing things (functions).</td>
+                <td>Focuses on the data being operated upon and binding it to behaviors (objects).</td>
+              </tr>
+              <tr>
+                <td><strong>Program Decomposition</strong></td>
+                <td>Program is divided into small modular blocks called <strong>functions</strong>.</td>
+                <td>Program is divided into self-contained entities called <strong>classes and objects</strong>.</td>
+              </tr>
+              <tr>
+                <td><strong>Design Approach</strong></td>
+                <td><strong>Top-Down Approach:</strong> High-level problem broken sequentially down into smaller functions.</td>
+                <td><strong>Bottom-Up Approach:</strong> Lower-level objects designed first and assembled to form the application.</td>
+              </tr>
+              <tr>
+                <td><strong>Data Security &amp; Access</strong></td>
+                <td>Global data flows freely between functions; data is vulnerable to unintended modification.</td>
+                <td>Data is hidden via <code>private</code> access specifiers; accessible only through member functions (Data Hiding).</td>
+              </tr>
+              <tr>
+                <td><strong>Inheritance &amp; Reuse</strong></td>
+                <td>No built-in inheritance mechanism. Code reuse requires copying or library functions.</td>
+                <td>Robust <strong>Inheritance</strong> enables derived classes to reuse and extend base class code seamlessly.</td>
+              </tr>
+              <tr>
+                <td><strong>Polymorphism</strong></td>
+                <td>Not supported. Every function must possess a unique identifier name.</td>
+                <td>Supported via <strong>Function Overloading, Operator Overloading, and Virtual Functions</strong>.</td>
+              </tr>
+              <tr>
+                <td><strong>Memory Management</strong></td>
+                <td>Manual byte-based allocation via <code>malloc()</code> and <code>free()</code>.</td>
+                <td>Typed allocation via <code>new</code> and <code>delete</code> with automated constructor/destructor lifecycle.</td>
+              </tr>
+              <tr>
+                <td><strong>Standard Examples</strong></td>
+                <td>C, Pascal, FORTRAN, BASIC.</td>
+                <td>C++, Java, C#, Python, Smalltalk.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- B2: Static Data Members and Static Functions -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q2.</span> Explain Static Data Members and Static Member Functions with a complete C++ program demonstrating shared class-level state.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2017, 2018, 2020, 2021</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>Normally, each object receives its own independent copy of all data members. However, a <strong>Static Data Member</strong> is shared among all objects of that class. Only a single copy exists in memory throughout the lifetime of the program.</p>
+        <p><strong>Key Rules:</strong></p>
+        <ul>
+          <li>Static data members are initialized to <code>0</code> by default and <em>must be defined outside the class</em> using the scope resolution operator (<code>::</code>).</li>
+          <li>A <strong>Static Member Function</strong> can only access static data members and static functions of the class. It does not possess a <code>this</code> pointer and can be invoked directly using the class name without creating an object: <code>ClassName::staticFunction();</code>.</li>
+        </ul>
+
+        <pre><code class="language-cpp">#include &lt;iostream&gt;
+using namespace std;
+
+class UserTracker {
+private:
+    int userId;
+    static int activeCount; // Static data member declaration
+
+public:
+    UserTracker(int id) {
+        userId = id;
+        activeCount++;
+        cout &lt;&lt; "User #" &lt;&lt; userId &lt;&lt; " created. Active: " &lt;&lt; activeCount &lt;&lt; endl;
+    }
+
+    ~UserTracker() {
+        activeCount--;
+        cout &lt;&lt; "User #" &lt;&lt; userId &lt;&lt; " destroyed. Active: " &lt;&lt; activeCount &lt;&lt; endl;
+    }
+
+    // Static member function
+    static void displayActiveUsers() {
+        cout &lt;&lt; "--- Total Active Users Currently: " &lt;&lt; activeCount &lt;&lt; " ---" &lt;&lt; endl;
+    }
+};
+
+// Definition and memory allocation outside class
+int UserTracker::activeCount = 0;
+
+int main() {
+    UserTracker::displayActiveUsers(); // Invocation without object
+
+    UserTracker u1(101);
+    UserTracker u2(102);
+    UserTracker::displayActiveUsers();
+
+    {
+        UserTracker u3(103); // Local block scope
+        UserTracker::displayActiveUsers();
+    } // u3 destroyed here
+
+    UserTracker::displayActiveUsers();
+    return 0;
+}</code></pre>
+      </div>
+    </div>
+
+    <!-- B3: Friend Function Bridging Two Classes -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q3.</span> What is a Friend Function? Write a complete C++ program to find the maximum of two private numbers belonging to two distinct classes.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2017, 2018, 2019, 2022</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>A <strong>Friend Function</strong> is a non-member function granted special permission to access the <code>private</code> and <code>protected</code> members of a class. It is declared inside the class using the keyword <code>friend</code>.</p>
+        <p><strong>Characteristics:</strong> It is not in the scope of the class, cannot be called using the member access dot operator (<code>obj.friendFunc()</code>), and usually accepts objects of the classes as value or reference arguments.</p>
+
+        <pre><code class="language-cpp">#include &lt;iostream&gt;
+using namespace std;
+
+// Forward declaration of class Beta
+class Beta;
+
+class Alpha {
+private:
+    int valA;
+public:
+    Alpha(int a) : valA(a) {}
+    // Declaring external function as friend
+    friend void findMax(Alpha a, Beta b);
+};
+
+class Beta {
+private:
+    int valB;
+public:
+    Beta(int b) : valB(b) {}
+    // Declaring the same function as friend
+    friend void findMax(Alpha a, Beta b);
+};
+
+// Non-member friend function definition bridging both classes
+void findMax(Alpha a, Beta b) {
+    cout &lt;&lt; "Alpha Value = " &lt;&lt; a.valA &lt;&lt; ", Beta Value = " &lt;&lt; b.valB &lt;&lt; endl;
+    if (a.valA &gt; b.valB) {
+        cout &lt;&lt; "Maximum Value is in Alpha: " &lt;&lt; a.valA &lt;&lt; endl;
+    } else if (b.valB &gt; a.valA) {
+        cout &lt;&lt; "Maximum Value is in Beta: " &lt;&lt; b.valB &lt;&lt; endl;
+    } else {
+        cout &lt;&lt; "Both values are equal: " &lt;&lt; a.valA &lt;&lt; endl;
+    }
+}
+
+int main() {
+    Alpha objA(85);
+    Beta objB(120);
+
+    findMax(objA, objB); // Invoked like a standard global function
+    return 0;
+}</code></pre>
+      </div>
+    </div>
+
+    <!-- B4: Constructor Overloading -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q4.</span> Explain Constructor Overloading. Demonstrate Default, Parameterized, and Copy Constructors in a single class <code>Rectangle</code>.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2017, 2019, 2021, 2022</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p><strong>Constructor Overloading</strong> is the concept of defining multiple constructors in the same class, each having the same name (the class name) but differing in the number, types, or order of their arguments. The compiler automatically resolves which constructor to invoke based on the arguments supplied at instantiation.</p>
+
+        <pre><code class="language-cpp">#include &lt;iostream&gt;
+using namespace std;
+
+class Rectangle {
+private:
+    double length;
+    double breadth;
+
+public:
+    // 1. Default Constructor: Initializes default state
+    Rectangle() {
+        length = 0.0;
+        breadth = 0.0;
+        cout &lt;&lt; "Default Constructor Invoked (0x0)" &lt;&lt; endl;
+    }
+
+    // 2. Parameterized Constructor: Custom dimensions
+    Rectangle(double l, double b) {
+        length = l;
+        breadth = b;
+        cout &lt;&lt; "Parameterized Constructor Invoked (" &lt;&lt; l &lt;&lt; "x" &lt;&lt; b &lt;&lt; ")" &lt;&lt; endl;
+    }
+
+    // 3. Copy Constructor: Initializes from an existing Rectangle
+    Rectangle(const Rectangle &amp;r) {
+        length = r.length;
+        breadth = r.breadth;
+        cout &lt;&lt; "Copy Constructor Invoked (Cloned)" &lt;&lt; endl;
+    }
+
+    double calculateArea() const {
+        return length * breadth;
+    }
+};
+
+int main() {
+    Rectangle r1;                    // Calls Default Constructor
+    Rectangle r2(12.5, 8.0);         // Calls Parameterized Constructor
+    Rectangle r3 = r2;               // Calls Copy Constructor
+
+    cout &lt;&lt; "Area of r1: " &lt;&lt; r1.calculateArea() &lt;&lt; endl;
+    cout &lt;&lt; "Area of r2: " &lt;&lt; r2.calculateArea() &lt;&lt; endl;
+    cout &lt;&lt; "Area of r3: " &lt;&lt; r3.calculateArea() &lt;&lt; endl;
+    return 0;
+}</code></pre>
+      </div>
+    </div>
+
+    <!-- B5: Shallow Copy vs Deep Copy -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q5.</span> Explain Shallow Copy vs Deep Copy in C++ with dynamic memory allocation, illustrating why a custom copy constructor is necessary.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2018, 2019, 2020, 2022</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>When an object contains raw pointers to dynamic heap memory, the difference between shallow and deep copy is critical:</p>
+        <ul>
+          <li><strong>Shallow Copy (Default):</strong> The compiler copies member variables bit-by-bit. If the class has a pointer <code>int *ptr</code>, both objects end up pointing to the <em>exact same heap memory address</em>. When the first object is destroyed, its destructor frees the memory. When the second object is later destroyed, it attempts to free the already-freed pointer, causing an undefined behavior <strong>double-free crash</strong>.</li>
+          <li><strong>Deep Copy (Custom Copy Constructor):</strong> Allocates a brand-new, separate heap memory block for the new object and copies the actual values from the source buffer. Each object manages its own distinct memory.</li>
+        </ul>
+
+        <pre><code class="language-cpp">#include &lt;iostream&gt;
+using namespace std;
+
+class DeepBuffer {
+private:
+    int *data;
+    int size;
+
+public:
+    DeepBuffer(int sz, int val) {
+        size = sz;
+        data = new int[size];
+        for (int i = 0; i &lt; size; i++) data[i] = val;
+    }
+
+    // User-Defined Deep Copy Constructor
+    DeepBuffer(const DeepBuffer &amp;src) {
+        size = src.size;
+        data = new int[size]; // Separate heap buffer allocation
+        for (int i = 0; i &lt; size; i++) {
+            data[i] = src.data[i]; // Copy buffer values
+        }
+    }
+
+    ~DeepBuffer() {
+        delete[] data; // Safe: each object deletes its own buffer
+    }
+
+    void modify(int index, int val) { data[index] = val; }
+    void print() const {
+        for (int i = 0; i &lt; size; i++) cout &lt;&lt; data[i] &lt;&lt; " ";
+        cout &lt;&lt; endl;
+    }
+};
+
+int main() {
+    DeepBuffer b1(3, 10);
+    DeepBuffer b2 = b1; // Deep copy executed safely
+
+    b2.modify(0, 99);   // Only b2 changes; b1 remains unaffected
+    cout &lt;&lt; "Buffer 1: "; b1.print(); // 10 10 10
+    cout &lt;&lt; "Buffer 2: "; b2.print(); // 99 10 10
+    return 0;
+}</code></pre>
+      </div>
+    </div>
+
+    <!-- B6: Unary Operator Overloading -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q6.</span> Write a complete C++ program to overload the unary increment operator (<code>++</code>) in both prefix (<code>++c</code>) and postfix (<code>c++</code>) forms for a <code>Counter</code> class.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2017, 2018, 2020, 2021</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>In C++, the compiler distinguishes between prefix and postfix unary operator overloading through the parameter signature:</p>
+        <ul>
+          <li><strong>Prefix (<code>++obj</code>):</strong> Declared as <code>Counter operator++()</code> with no arguments. Increments the state and returns the updated object.</li>
+          <li><strong>Postfix (<code>obj++</code>):</strong> Declared with a dummy integer parameter: <code>Counter operator++(int)</code>. Stores the original state in a temporary object, increments the current object, and returns the temporary copy.</li>
+        </ul>
+
+        <pre><code class="language-cpp">#include &lt;iostream&gt;
+using namespace std;
+
+class Counter {
+private:
+    int count;
+
+public:
+    Counter(int c = 0) : count(c) {}
+
+    // Overloading Prefix Increment (++c)
+    Counter operator++() {
+        ++count;          // Increment first
+        return *this;     // Return updated object
+    }
+
+    // Overloading Postfix Increment (c++) with dummy int
+    Counter operator++(int) {
+        Counter temp = *this; // Save original state
+        count++;              // Increment current object
+        return temp;          // Return original state
+    }
+
+    void display() const {
+        cout &lt;&lt; "Count = " &lt;&lt; count &lt;&lt; endl;
+    }
+};
+
+int main() {
+    Counter c1(5);
+
+    cout &lt;&lt; "Initial: "; c1.display();
+
+    Counter c2 = ++c1; // Prefix: c1 increments to 6, c2 receives 6
+    cout &lt;&lt; "After ++c1: "; c1.display();
+    cout &lt;&lt; "Value in c2: "; c2.display();
+
+    Counter c3 = c1++; // Postfix: c3 receives 6, c1 increments to 7
+    cout &lt;&lt; "After c1++: "; c1.display();
+    cout &lt;&lt; "Value in c3: "; c3.display();
+
+    return 0;
+}</code></pre>
+      </div>
+    </div>
+
+    <!-- B7: Array of Objects Employee Record -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q7.</span> Write a C++ program using an Array of Objects for an <code>Employee</code> class to accept records of 5 employees and display the details of the highest-paid employee.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2018, 2020, 2022</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>An <strong>Array of Objects</strong> allows managing collections of complex structured instances where each element occupies contiguous memory and encapsulates its own data members and member functions.</p>
+
+        <pre><code class="language-cpp">#include &lt;iostream&gt;
+#include &lt;string&gt;
+using namespace std;
+
+class Employee {
+private:
+    int empId;
+    string name;
+    double salary;
+
+public:
+    void inputData(int id, string n, double s) {
+        empId = id;
+        name = n;
+        salary = s;
+    }
+
+    double getSalary() const { return salary; }
+
+    void display() const {
+        cout &lt;&lt; "ID: " &lt;&lt; empId &lt;&lt; " | Name: " &lt;&lt; name &lt;&lt; " | Salary: Rs. " &lt;&lt; salary &lt;&lt; endl;
+    }
+};
+
+int main() {
+    const int NUM = 5;
+    Employee staff[NUM];
+
+    // Populating array of objects
+    staff[0].inputData(101, "Vikram Sharma", 48000.0);
+    staff[1].inputData(102, "Pooja Verma",   72500.0);
+    staff[2].inputData(103, "Amit Malik",    54000.0);
+    staff[3].inputData(104, "Neha Gupta",    89000.0);
+    staff[4].inputData(105, "Rajesh Kumar",  61000.0);
+
+    cout &lt;&lt; "=== All Employee Records ===" &lt;&lt; endl;
+    for (int i = 0; i &lt; NUM; i++) {
+        staff[i].display();
+    }
+
+    // Finding highest salaried employee
+    int maxIndex = 0;
+    for (int i = 1; i &lt; NUM; i++) {
+        if (staff[i].getSalary() &gt; staff[maxIndex].getSalary()) {
+            maxIndex = i;
+        }
+    }
+
+    cout &lt;&lt; "\n*** Highest Salaried Employee ***" &lt;&lt; endl;
+    staff[maxIndex].display();
+
+    return 0;
+}</code></pre>
+      </div>
+    </div>
+
+    <!-- B8: Function Templates vs Macros -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q8.</span> Explain Function Templates vs Preprocessor Macros. Write a function template to swap two variables of any data type (<code>int</code>, <code>float</code>, <code>char</code>).</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2018, 2019, 2021, 2022</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>A <strong>Function Template</strong> is a generic blueprint from which the C++ compiler automatically generates type-specific functions during compilation (template instantiation). Unlike preprocessor macros (<code>#define</code>), templates provide <strong>strict type-checking</strong>, adhere to proper scoping rules, and do not cause macro side-effects (such as double-evaluation of <code>++x</code>).</p>
+
+        <pre><code class="language-cpp">#include &lt;iostream&gt;
+using namespace std;
+
+// Generic Swap Function Template
+template &lt;typename T&gt;
+void swapValues(T &amp;a, T &amp;b) {
+    T temp = a;
+    a = b;
+    b = temp;
+}
+
+int main() {
+    // 1. Swapping integers
+    int x = 10, y = 20;
+    cout &lt;&lt; "Before int swap: x=" &lt;&lt; x &lt;&lt; ", y=" &lt;&lt; y &lt;&lt; endl;
+    swapValues(x, y); // Compiler instantiates swapValues&lt;int&gt;
+    cout &lt;&lt; "After int swap:  x=" &lt;&lt; x &lt;&lt; ", y=" &lt;&lt; y &lt;&lt; endl;
+
+    // 2. Swapping floats
+    float f1 = 3.14f, f2 = 9.81f;
+    swapValues(f1, f2); // Instantiates swapValues&lt;float&gt;
+    cout &lt;&lt; "After float swap: f1=" &lt;&lt; f1 &lt;&lt; ", f2=" &lt;&lt; f2 &lt;&lt; endl;
+
+    // 3. Swapping characters
+    char c1 = 'A', c2 = 'Z';
+    swapValues(c1, c2); // Instantiates swapValues&lt;char&gt;
+    cout &lt;&lt; "After char swap:  c1=" &lt;&lt; c1 &lt;&lt; ", c2=" &lt;&lt; c2 &lt;&lt; endl;
+
+    return 0;
+}</code></pre>
+      </div>
+    </div>
+
+    <!-- B9: Exception Handling Divide by Zero -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q9.</span> Write a complete C++ program demonstrating Exception Handling with <code>try</code>, <code>catch</code>, and <code>throw</code> blocks for divide-by-zero, including multiple catch handlers and a catch-all block.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2017, 2019, 2020, 2021</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>C++ Exception handling transfers control from a point where an anomaly occurs to a designated handler using three keywords: <code>try</code> (monitored code), <code>throw</code> (raises exception), and <code>catch</code> (handles exception).</p>
+
+        <pre><code class="language-cpp">#include &lt;iostream&gt;
+using namespace std;
+
+void safeDivide(double num, double den) {
+    if (den == 0.0) {
+        throw "Arithmetic Error: Division by zero is undefined!"; // Throw const char*
+    } else if (den &lt; 0.0) {
+        throw -1; // Throw int error code for negative denominator
+    }
+    cout &lt;&lt; "Result: " &lt;&lt; num &lt;&lt; " / " &lt;&lt; den &lt;&lt; " = " &lt;&lt; (num / den) &lt;&lt; endl;
+}
+
+int main() {
+    double pairs[3][2] = { {50.0, 5.0}, {20.0, 0.0}, {40.0, -4.0} };
+
+    for (int i = 0; i &lt; 3; i++) {
+        try {
+            cout &lt;&lt; "\nEvaluating test case #" &lt;&lt; (i + 1) &lt;&lt; ":" &lt;&lt; endl;
+            safeDivide(pairs[i][0], pairs[i][1]);
+        }
+        catch (const char* msg) { // Handler 1: String literal
+            cout &lt;&lt; "[Caught String Exception] " &lt;&lt; msg &lt;&lt; endl;
+        }
+        catch (int code) {         // Handler 2: Integer error code
+            cout &lt;&lt; "[Caught Integer Exception] Error Code: " &lt;&lt; code 
+                 &lt;&lt; " (Negative divisor rejected)" &lt;&lt; endl;
+        }
+        catch (...) {              // Handler 3: Catch-All fallback
+            cout &lt;&lt; "[Caught Unknown Exception] Generic error caught!" &lt;&lt; endl;
+        }
+    }
+    return 0;
+}</code></pre>
+      </div>
+    </div>
+
+    <!-- B10: File Pointers and Random Access -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q10.</span> Explain File Pointers and Random Access Functions (<code>seekg()</code>, <code>seekp()</code>, <code>tellg()</code>, <code>tellp()</code>) with stream seek offsets.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2018, 2019, 2021</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>In C++ file handling, every file stream maintains two internal byte pointers: the <strong>Get Pointer</strong> (associated with input stream <code>ifstream</code> to track the next byte to read) and the <strong>Put Pointer</strong> (associated with output stream <code>ofstream</code> to track the next byte to write).</p>
+        
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Function</th>
+                <th>Stream Association</th>
+                <th>Operation</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>tellg()</code></td>
+                <td>Input Stream (<code>ifstream</code>)</td>
+                <td>Returns the current byte position of the <strong>Get</strong> pointer.</td>
+              </tr>
+              <tr>
+                <td><code>seekg(offset, dir)</code></td>
+                <td>Input Stream (<code>ifstream</code>)</td>
+                <td>Moves the <strong>Get</strong> pointer by <code>offset</code> bytes relative to <code>dir</code>.</td>
+              </tr>
+              <tr>
+                <td><code>tellp()</code></td>
+                <td>Output Stream (<code>ofstream</code>)</td>
+                <td>Returns the current byte position of the <strong>Put</strong> pointer.</td>
+              </tr>
+              <tr>
+                <td><code>seekp(offset, dir)</code></td>
+                <td>Output Stream (<code>ofstream</code>)</td>
+                <td>Moves the <strong>Put</strong> pointer by <code>offset</code> bytes relative to <code>dir</code>.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p><strong>Seek Direction Flags (<code>dir</code>):</strong></p>
+        <ul>
+          <li><code>ios::beg</code>: Beginning of the file.</li>
+          <li><code>ios::cur</code>: Current position of the file pointer.</li>
+          <li><code>ios::end</code>: End of the file. (Example: <code>file.seekg(0, ios::end); int size = file.tellg();</code> computes the exact byte size of a file).</li>
+        </ul>
+      </div>
+    </div>
+
+  </div><!-- /.exam-section-body -->
+</div><!-- /#section-b -->
+\n
+<!-- =========================================================================
+     SECTION C : 15 MARKS DETAILED LONG ANSWER & MASTER PROBLEMS (ATTEMPT 3 OF 5)
+     ========================================================================= -->
+<div class="exam-section-card" id="section-c">
+  <div class="exam-section-header exam-section-header-purple">
+    <div class="exam-section-header-inner">
+      <span class="exam-section-badge badge-purple">SECTION C &bull; 15 MARKS EACH</span>
+      <h3 class="exam-section-title">Master Long Answer Questions, Architectural Blueprints &amp; SVG Diagrams</h3>
+      <p class="exam-section-rule">CCSU Examination Blueprint: Attempt Any 3 of 5 Questions &bull; Total 45 Marks (~500+ Words + Working Code + Diagrams)</p>
+    </div>
+  </div>
+
+  <div class="exam-section-body">
+
+    <!-- C1: Fundamentals and Principles of OOP vs POP -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q1.</span> Explain the Object-Oriented Programming (OOP) paradigm in detail. Discuss its core principles (Encapsulation, Abstraction, Inheritance, and Polymorphism) and illustrate how OOP addresses the limitations of Procedural Programming.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2017, 2018, 2019, 2020, 2021, 2022</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        
+        <h5>1. Limitations of Procedure Oriented Programming (POP)</h5>
+        <p>In procedural languages like C, programs are organized around linear functions operating on global and local data. Major limitations include:</p>
+        <ul>
+          <li><strong>Data Insecurity:</strong> Global variables are freely accessible and modifiable by any function in the program, making debugging complex in large systems.</li>
+          <li><strong>Tight Coupling:</strong> Changes to data structures necessitate modifications to all functions interacting with that data.</li>
+          <li><strong>Poor Real-World Modeling:</strong> Real-world entities inherently possess state (data) and behavior (operations), which procedural decomposition separates unnaturally.</li>
+          <li><strong>Code Duplication:</strong> Lack of inheritance forces programmers to rewrite common logic repeatedly.</li>
+        </ul>
+
+        <h5>2. The Four Pillars of OOP Architecture</h5>
+        <div class="svg-tree-container" style="background: #0f172a; padding: 22px; border-radius: 12px; margin: 18px 0; border: 1px solid #334155; text-align: center;">
+          <div style="font-weight: 700; color: #38bdf8; margin-bottom: 14px; font-size: 15px;">OOP ARCHITECTURE: THE FOUR CORE PILLARS</div>
+          <svg viewBox="0 0 740 280" width="100%" height="280" xmlns="http://www.w3.org/2000/svg">
+            <!-- Background Grids & Cards -->
+            <!-- Quadrant 1: Encapsulation -->
+            <rect x="20" y="20" width="330" height="115" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+            <rect x="35" y="32" width="28" height="28" rx="6" fill="#0284c7"/>
+            <text x="49" y="51" font-size="14" font-weight="900" fill="#ffffff" text-anchor="middle">1</text>
+            <text x="75" y="52" font-size="16" font-weight="700" fill="#38bdf8">ENCAPSULATION</text>
+            <text x="35" y="80" font-size="12" fill="#cbd5e1">Binds private data members and public methods.</text>
+            <text x="35" y="98" font-size="12" fill="#94a3b8">Prevents direct unauthorized external data mutation.</text>
+            <rect x="35" y="108" width="120" height="18" rx="4" fill="#0f172a"/>
+            <text x="42" y="121" font-size="10" font-weight="700" fill="#38bdf8">&bull; Data Hiding &amp; Safety</text>
+
+            <!-- Quadrant 2: Abstraction -->
+            <rect x="390" y="20" width="330" height="115" rx="8" fill="#1e293b" stroke="#818cf8" stroke-width="2"/>
+            <rect x="405" y="32" width="28" height="28" rx="6" fill="#4f46e5"/>
+            <text x="419" y="51" font-size="14" font-weight="900" fill="#ffffff" text-anchor="middle">2</text>
+            <text x="445" y="52" font-size="16" font-weight="700" fill="#818cf8">DATA ABSTRACTION</text>
+            <text x="405" y="80" font-size="12" fill="#cbd5e1">Presents essential public interface to user.</text>
+            <text x="405" y="98" font-size="12" fill="#94a3b8">Hides internal hardware and algorithm mechanics.</text>
+            <rect x="405" y="108" width="130" height="18" rx="4" fill="#0f172a"/>
+            <text x="412" y="121" font-size="10" font-weight="700" fill="#818cf8">&bull; Abstract Classes / API</text>
+
+            <!-- Quadrant 3: Inheritance -->
+            <rect x="20" y="150" width="330" height="115" rx="8" fill="#1e293b" stroke="#34d399" stroke-width="2"/>
+            <rect x="35" y="162" width="28" height="28" rx="6" fill="#059669"/>
+            <text x="49" y="181" font-size="14" font-weight="900" fill="#ffffff" text-anchor="middle">3</text>
+            <text x="75" y="182" font-size="16" font-weight="700" fill="#34d399">INHERITANCE</text>
+            <text x="35" y="210" font-size="12" fill="#cbd5e1">Derives specialized child classes from base.</text>
+            <text x="35" y="228" font-size="12" fill="#94a3b8">Eliminates code duplication; models IS-A hierarchy.</text>
+            <rect x="35" y="238" width="125" height="18" rx="4" fill="#0f172a"/>
+            <text x="42" y="251" font-size="10" font-weight="700" fill="#34d399">&bull; Code Reusability</text>
+
+            <!-- Quadrant 4: Polymorphism -->
+            <rect x="390" y="150" width="330" height="115" rx="8" fill="#1e293b" stroke="#f472b6" stroke-width="2"/>
+            <rect x="405" y="162" width="28" height="28" rx="6" fill="#db2777"/>
+            <text x="419" y="181" font-size="14" font-weight="900" fill="#ffffff" text-anchor="middle">4</text>
+            <text x="445" y="182" font-size="16" font-weight="700" fill="#f472b6">POLYMORPHISM</text>
+            <text x="405" y="210" font-size="12" fill="#cbd5e1">Same interface exhibiting multiple behaviors.</text>
+            <text x="405" y="228" font-size="12" fill="#94a3b8">Compile-time (Overload) &amp; Runtime (Virtual).</text>
+            <rect x="405" y="238" width="135" height="18" rx="4" fill="#0f172a"/>
+            <text x="412" y="251" font-size="10" font-weight="700" fill="#f472b6">&bull; Dynamic Dispatch</text>
+          </svg>
+        </div>
+
+        <h5>3. Dynamic Binding and Message Passing</h5>
+        <ul>
+          <li><strong>Dynamic Binding:</strong> Linking a procedure call to the specific code block to be executed at runtime (based on the real object type rather than the pointer type).</li>
+          <li><strong>Message Passing:</strong> Objects communicate by sending and receiving information via function invocations: <code>employee.calculateBonus(2024);</code> where <code>employee</code> is the object receiver, <code>calculateBonus</code> is the message, and <code>2024</code> is the argument data.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- C2: Operator Overloading Blueprint & Complex Program -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q2.</span> What is Operator Overloading? State the fundamental rules and limitations of operator overloading in C++. Write a complete C++ program to overload binary addition (<code>+</code>), subtraction (<code>-</code>), and stream operators (<code>&lt;&lt;</code> and <code>&gt;&gt;</code>) for a <code>Complex</code> number class.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2017, 2018, 2019, 2020, 2021, 2022</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        
+        <h5>1. Concept &amp; Strict Rules of Operator Overloading</h5>
+        <p><strong>Operator Overloading</strong> is the compile-time polymorphism feature in C++ that allows existing built-in operators to be redefined to operate on user-defined types (classes), imparting natural mathematical syntax.</p>
+        <p><strong>Universal Rules:</strong></p>
+        <ol>
+          <li>Only existing C++ operators can be overloaded. New operators (such as <code>**</code> or <code>%%</code>) <strong>cannot be invented</strong>.</li>
+          <li>The <strong>precedence, associativity, and arity</strong> (number of operands) of the operator cannot be changed.</li>
+          <li>At least one of the operands must be a user-defined class type. Built-in types (e.g. <code>int + int</code>) cannot be rewired.</li>
+          <li>Cannot overload: <code>.</code> (member access), <code>.*</code> (pointer-to-member), <code>::</code> (scope resolution), <code>?:</code> (ternary conditional), and <code>sizeof</code>.</li>
+          <li>When overloading binary operators via member functions, the left operand implicitly becomes the calling object (<code>*this</code>), requiring exactly 1 explicit argument. When overloaded via friend functions, 2 explicit arguments are required.</li>
+        </ol>
+
+        <h5>2. Complete Compilable C++ Implementation</h5>
+        <pre><code class="language-cpp">#include &lt;iostream&gt;
+using namespace std;
+
+class Complex {
+private:
+    double real;
+    double imag;
+
+public:
+    // Constructors
+    Complex(double r = 0.0, double i = 0.0) : real(r), imag(i) {}
+
+    // Overloading Binary + using Member Function
+    Complex operator+(const Complex &amp;c) const {
+        return Complex(real + c.real, imag + c.imag);
+    }
+
+    // Overloading Binary - using Member Function
+    Complex operator-(const Complex &amp;c) const {
+        return Complex(real - c.real, imag - c.imag);
+    }
+
+    // Overloading Relational == Operator
+    bool operator==(const Complex &amp;c) const {
+        return (real == c.real &amp;&amp; imag == c.imag);
+    }
+
+    // Overloading Stream Insertion Operator (&lt;&lt;) via Friend Function
+    friend ostream&amp; operator&lt;&lt;(ostream &amp;out, const Complex &amp;c) {
+        if (c.imag &gt;= 0)
+            out &lt;&lt; c.real &lt;&lt; " + " &lt;&lt; c.imag &lt;&lt; "i";
+        else
+            out &lt;&lt; c.real &lt;&lt; " - " &lt;&lt; (-c.imag) &lt;&lt; "i";
+        return out; // Enables cascaded output: cout &lt;&lt; c1 &lt;&lt; c2;
+    }
+
+    // Overloading Stream Extraction Operator (&gt;&gt;) via Friend Function
+    friend istream&amp; operator&gt;&gt;(istream &amp;in, Complex &amp;c) {
+        cout &lt;&lt; "Enter Real Part: ";
+        in &gt;&gt; c.real;
+        cout &lt;&lt; "Enter Imaginary Part: ";
+        in &gt;&gt; c.imag;
+        return in;
+    }
+};
+
+int main() {
+    Complex c1(4.5, 3.2);
+    Complex c2(1.5, -5.7);
+
+    cout &lt;&lt; "c1 = " &lt;&lt; c1 &lt;&lt; endl;
+    cout &lt;&lt; "c2 = " &lt;&lt; c2 &lt;&lt; endl;
+
+    Complex cSum = c1 + c2; // Invokes c1.operator+(c2)
+    cout &lt;&lt; "c1 + c2 = " &lt;&lt; cSum &lt;&lt; endl;
+
+    Complex cDiff = c1 - c2; // Invokes c1.operator-(c2)
+    cout &lt;&lt; "c1 - c2 = " &lt;&lt; cDiff &lt;&lt; endl;
+
+    if (c1 == c2) {
+        cout &lt;&lt; "c1 and c2 are identical" &lt;&lt; endl;
+    } else {
+        cout &lt;&lt; "c1 and c2 are different complex numbers" &lt;&lt; endl;
+    }
+
+    return 0;
+}</code></pre>
+      </div>
+    </div>
+
+    <!-- C3: Inheritance Taxonomy & Access Matrix -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q3.</span> Explain the five forms of inheritance supported in C++ with UML diagrams. Construct the complete Access Specifier Derivation Matrix (<code>public</code>, <code>protected</code>, <code>private</code>) and explain why protected inheritance is utilized.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2017, 2019, 2020, 2021, 2022</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        
+        <h5>1. Complete UML Inheritance Taxonomy</h5>
+        <div class="svg-tree-container" style="background: #0f172a; padding: 20px; border-radius: 12px; margin: 18px 0; border: 1px solid #334155; text-align: center;">
+          <div style="font-weight: 700; color: #38bdf8; margin-bottom: 12px; font-size: 14px;">FIVE TYPES OF INHERITANCE IN C++</div>
+          <svg viewBox="0 0 740 210" width="100%" height="210" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <marker id="arrTax" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto">
+                <polygon points="0 0, 7 3.5, 0 7" fill="#38bdf8"/>
+              </marker>
+            </defs>
+
+            <!-- 1. Single -->
+            <rect x="15" y="15" width="115" height="180" rx="8" fill="#1e293b" stroke="#334155"/>
+            <text x="72" y="35" font-size="11" font-weight="700" fill="#38bdf8" text-anchor="middle">1. SINGLE</text>
+            <rect x="35" y="55" width="75" height="30" rx="4" fill="#0369a1"/>
+            <text x="72" y="74" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">Base A</text>
+            <line x1="72" y1="85" x2="72" y2="125" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrTax)"/>
+            <rect x="35" y="130" width="75" height="30" rx="4" fill="#1d4ed8"/>
+            <text x="72" y="149" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">Derived B</text>
+
+            <!-- 2. Multilevel -->
+            <rect x="145" y="15" width="125" height="180" rx="8" fill="#1e293b" stroke="#334155"/>
+            <text x="207" y="35" font-size="11" font-weight="700" fill="#38bdf8" text-anchor="middle">2. MULTILEVEL</text>
+            <rect x="170" y="50" width="75" height="26" rx="4" fill="#0369a1"/>
+            <text x="207" y="67" font-size="10" font-weight="700" fill="#ffffff" text-anchor="middle">Class A</text>
+            <line x1="207" y1="76" x2="207" y2="98" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrTax)"/>
+            <rect x="170" y="102" width="75" height="26" rx="4" fill="#1d4ed8"/>
+            <text x="207" y="119" font-size="10" font-weight="700" fill="#ffffff" text-anchor="middle">Class B</text>
+            <line x1="207" y1="128" x2="207" y2="150" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrTax)"/>
+            <rect x="170" y="154" width="75" height="26" rx="4" fill="#4338ca"/>
+            <text x="207" y="171" font-size="10" font-weight="700" fill="#ffffff" text-anchor="middle">Class C</text>
+
+            <!-- 3. Multiple -->
+            <rect x="285" y="15" width="145" height="180" rx="8" fill="#1e293b" stroke="#334155"/>
+            <text x="357" y="35" font-size="11" font-weight="700" fill="#38bdf8" text-anchor="middle">3. MULTIPLE</text>
+            <rect x="295" y="55" width="55" height="28" rx="4" fill="#0369a1"/>
+            <text x="322" y="73" font-size="10" font-weight="700" fill="#ffffff" text-anchor="middle">Base A</text>
+            <rect x="365" y="55" width="55" height="28" rx="4" fill="#0369a1"/>
+            <text x="392" y="73" font-size="10" font-weight="700" fill="#ffffff" text-anchor="middle">Base B</text>
+            <line x1="322" y1="83" x2="345" y2="125" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrTax)"/>
+            <line x1="392" y1="83" x2="368" y2="125" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrTax)"/>
+            <rect x="315" y="130" width="85" height="30" rx="4" fill="#1d4ed8"/>
+            <text x="357" y="149" font-size="10" font-weight="700" fill="#ffffff" text-anchor="middle">Derived C</text>
+
+            <!-- 4. Hierarchical -->
+            <rect x="445" y="15" width="145" height="180" rx="8" fill="#1e293b" stroke="#334155"/>
+            <text x="517" y="35" font-size="11" font-weight="700" fill="#38bdf8" text-anchor="middle">4. HIERARCHICAL</text>
+            <rect x="475" y="55" width="85" height="28" rx="4" fill="#0369a1"/>
+            <text x="517" y="73" font-size="10" font-weight="700" fill="#ffffff" text-anchor="middle">Base A</text>
+            <line x1="500" y1="83" x2="475" y2="125" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrTax)"/>
+            <line x1="535" y1="83" x2="560" y2="125" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrTax)"/>
+            <rect x="455" y="130" width="55" height="28" rx="4" fill="#1d4ed8"/>
+            <text x="482" y="148" font-size="10" font-weight="700" fill="#ffffff" text-anchor="middle">Child B</text>
+            <rect x="525" y="130" width="55" height="28" rx="4" fill="#1d4ed8"/>
+            <text x="552" y="148" font-size="10" font-weight="700" fill="#ffffff" text-anchor="middle">Child C</text>
+
+            <!-- 5. Hybrid -->
+            <rect x="605" y="15" width="120" height="180" rx="8" fill="#1e293b" stroke="#334155"/>
+            <text x="665" y="35" font-size="11" font-weight="700" fill="#38bdf8" text-anchor="middle">5. HYBRID</text>
+            <rect x="640" y="48" width="50" height="24" rx="4" fill="#0369a1"/>
+            <text x="665" y="64" font-size="9" font-weight="700" fill="#ffffff" text-anchor="middle">Class A</text>
+            <line x1="652" y1="72" x2="630" y2="92" stroke="#38bdf8" stroke-width="1.5" marker-end="url(#arrTax)"/>
+            <line x1="678" y1="72" x2="700" y2="92" stroke="#38bdf8" stroke-width="1.5" marker-end="url(#arrTax)"/>
+            <rect x="612" y="96" width="45" height="24" rx="4" fill="#1d4ed8"/>
+            <text x="634" y="112" font-size="9" font-weight="700" fill="#ffffff" text-anchor="middle">Class B</text>
+            <rect x="678" y="96" width="45" height="24" rx="4" fill="#1d4ed8"/>
+            <text x="700" y="112" font-size="9" font-weight="700" fill="#ffffff" text-anchor="middle">Class C</text>
+            <line x1="634" y1="120" x2="652" y2="142" stroke="#38bdf8" stroke-width="1.5" marker-end="url(#arrTax)"/>
+            <line x1="700" y1="120" x2="678" y2="142" stroke="#38bdf8" stroke-width="1.5" marker-end="url(#arrTax)"/>
+            <rect x="640" y="146" width="50" height="24" rx="4" fill="#4338ca"/>
+            <text x="665" y="162" font-size="9" font-weight="700" fill="#ffffff" text-anchor="middle">Class D</text>
+          </svg>
+        </div>
+
+        <h5>2. Access Specifier Derivation Matrix</h5>
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Base Class Member Access</th>
+                <th><code>public</code> Derivation</th>
+                <th><code>protected</code> Derivation</th>
+                <th><code>private</code> Derivation</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong><code>private</code> Members</strong></td>
+                <td><strong>Inaccessible</strong> directly in Derived</td>
+                <td><strong>Inaccessible</strong> directly in Derived</td>
+                <td><strong>Inaccessible</strong> directly in Derived</td>
+              </tr>
+              <tr>
+                <td><strong><code>protected</code> Members</strong></td>
+                <td>Remains <strong><code>protected</code></strong></td>
+                <td>Remains <strong><code>protected</code></strong></td>
+                <td>Becomes <strong><code>private</code></strong> in Derived</td>
+              </tr>
+              <tr>
+                <td><strong><code>public</code> Members</strong></td>
+                <td>Remains <strong><code>public</code></strong></td>
+                <td>Becomes <strong><code>protected</code></strong></td>
+                <td>Becomes <strong><code>private</code></strong> in Derived</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- C4: The Diamond Problem & Virtual Base Class Solution -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q4.</span> What is the "Diamond Problem" (Multipath Inheritance) in C++? Why does it cause compilation errors? Explain how Virtual Base Classes solve this ambiguity and provide a complete working C++ program.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2017, 2018, 2019, 2020, 2021, 2022</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        
+        <h5>1. Nature of the Ambiguity</h5>
+        <p>The <strong>Diamond Problem</strong> occurs in hybrid / multipath inheritance when a derived class <code>D</code> inherits from two intermediate classes <code>B</code> and <code>C</code>, both of which in turn inherit from a common ancestor base class <code>A</code>.</p>
+        <p><strong>The Compilation Error:</strong> By default, class <code>B</code> receives one full copy of class <code>A</code>'s data members, and class <code>C</code> receives another completely separate copy. When class <code>D</code> inherits from both <code>B</code> and <code>C</code>, it inherits <strong>two duplicate copies of class A's members</strong>. When code in <code>D</code> calls <code>rollNumber</code> or <code>display()</code>, the compiler halts with error: <code>error: request for member 'rollNumber' is ambiguous</code>.</p>
+
+        <h5>2. Architectural Comparison: Duplication vs Virtual Base Class</h5>
+        <div class="svg-tree-container" style="background: #0f172a; padding: 22px; border-radius: 12px; margin: 18px 0; border: 1px solid #334155; text-align: center;">
+          <div style="font-weight: 700; color: #38bdf8; margin-bottom: 12px; font-size: 14px;">DIAMOND INHERITANCE: AMBIGUOUS DUPLICATION VS VIRTUAL BASE RESOLUTION</div>
+          <svg viewBox="0 0 740 260" width="100%" height="260" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <marker id="arrRed" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+                <path d="M0,1 L7,4 L0,7 Z" fill="#ef4444"/>
+              </marker>
+              <marker id="arrGrn" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+                <path d="M0,1 L7,4 L0,7 Z" fill="#10b981"/>
+              </marker>
+            </defs>
+
+            <!-- LEFT: Problem (Duplicate) -->
+            <rect x="20" y="15" width="330" height="230" rx="10" fill="#1e293b" stroke="#ef4444" stroke-dasharray="4 4"/>
+            <text x="185" y="38" font-size="13" font-weight="700" fill="#ef4444" text-anchor="middle">&times; WITHOUT VIRTUAL: TWO DUPLICATE COPIES</text>
+
+            <rect x="135" y="55" width="100" height="30" rx="6" fill="#7f1d1d" stroke="#ef4444"/>
+            <text x="185" y="75" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">Student (rollNo)</text>
+
+            <line x1="160" y1="85" x2="105" y2="120" stroke="#ef4444" stroke-width="2" marker-end="url(#arrRed)"/>
+            <line x1="210" y1="85" x2="265" y2="120" stroke="#ef4444" stroke-width="2" marker-end="url(#arrRed)"/>
+
+            <rect x="55" y="125" width="95" height="34" rx="6" fill="#1e293b" stroke="#f87171"/>
+            <text x="102" y="142" font-size="11" font-weight="700" fill="#fca5a5" text-anchor="middle">Test Marks</text>
+            <text x="102" y="154" font-size="9" fill="#94a3b8" text-anchor="middle">[Copy #1 rollNo]</text>
+
+            <rect x="220" y="125" width="95" height="34" rx="6" fill="#1e293b" stroke="#f87171"/>
+            <text x="267" y="142" font-size="11" font-weight="700" fill="#fca5a5" text-anchor="middle">Sports Score</text>
+            <text x="267" y="154" font-size="9" fill="#94a3b8" text-anchor="middle">[Copy #2 rollNo]</text>
+
+            <line x1="102" y1="159" x2="160" y2="190" stroke="#ef4444" stroke-width="2" marker-end="url(#arrRed)"/>
+            <line x1="267" y1="159" x2="210" y2="190" stroke="#ef4444" stroke-width="2" marker-end="url(#arrRed)"/>
+
+            <rect x="125" y="195" width="120" height="35" rx="6" fill="#991b1b" stroke="#ef4444"/>
+            <text x="185" y="213" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">Result Class</text>
+            <text x="185" y="225" font-size="9" fill="#fecaca" text-anchor="middle">AMBIGUITY ERROR!</text>
+
+            <!-- RIGHT: Solution (Virtual Base) -->
+            <rect x="390" y="15" width="330" height="230" rx="10" fill="#1e293b" stroke="#10b981"/>
+            <text x="555" y="38" font-size="13" font-weight="700" fill="#10b981" text-anchor="middle">&check; WITH VIRTUAL: SINGLE SHARED SUB-OBJECT</text>
+
+            <rect x="505" y="55" width="100" height="30" rx="6" fill="#064e3b" stroke="#10b981"/>
+            <text x="555" y="75" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">virtual Student</text>
+
+            <line x1="530" y1="85" x2="475" y2="120" stroke="#10b981" stroke-width="2" marker-end="url(#arrGrn)"/>
+            <line x1="580" y1="85" x2="635" y2="120" stroke="#10b981" stroke-width="2" marker-end="url(#arrGrn)"/>
+
+            <rect x="425" y="125" width="95" height="34" rx="6" fill="#1e293b" stroke="#34d399"/>
+            <text x="472" y="142" font-size="11" font-weight="700" fill="#6ee7b7" text-anchor="middle">Test Marks</text>
+            <text x="472" y="154" font-size="9" fill="#94a3b8" text-anchor="middle">[vptr -&gt; Student]</text>
+
+            <rect x="590" y="125" width="95" height="34" rx="6" fill="#1e293b" stroke="#34d399"/>
+            <text x="637" y="142" font-size="11" font-weight="700" fill="#6ee7b7" text-anchor="middle">Sports Score</text>
+            <text x="637" y="154" font-size="9" fill="#94a3b8" text-anchor="middle">[vptr -&gt; Student]</text>
+
+            <line x1="472" y1="159" x2="530" y2="190" stroke="#10b981" stroke-width="2" marker-end="url(#arrGrn)"/>
+            <line x1="637" y1="159" x2="580" y2="190" stroke="#10b981" stroke-width="2" marker-end="url(#arrGrn)"/>
+
+            <rect x="495" y="195" width="120" height="35" rx="6" fill="#065f46" stroke="#10b981"/>
+            <text x="555" y="213" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">Result Class</text>
+            <text x="555" y="225" font-size="9" fill="#a7f3d0" text-anchor="middle">Single Unified rollNo!</text>
+          </svg>
+        </div>
+
+        <h5>3. Complete Compilable Solution Code</h5>
+        <pre><code class="language-cpp">#include &lt;iostream&gt;
+using namespace std;
+
+// Base Ancestor Class
+class Student {
+protected:
+    int rollNumber;
+public:
+    void setRoll(int r) { rollNumber = r; }
+    void printRoll() const { cout &lt;&lt; "Roll Number: " &lt;&lt; rollNumber &lt;&lt; endl; }
+};
+
+// Intermediate Class 1: Virtual Inheritance
+class Test : virtual public Student {
+protected:
+    float part1, part2;
+public:
+    void setMarks(float m1, float m2) { part1 = m1; part2 = m2; }
+    void printMarks() const {
+        cout &lt;&lt; "Marks Obtained: Term1 = " &lt;&lt; part1 &lt;&lt; ", Term2 = " &lt;&lt; part2 &lt;&lt; endl;
+    }
+};
+
+// Intermediate Class 2: Virtual Inheritance
+class Sports : virtual public Student {
+protected:
+    float score;
+public:
+    void setScore(float s) { score = s; }
+    void printScore() const { cout &lt;&lt; "Sports Grace Score = " &lt;&lt; score &lt;&lt; endl; }
+};
+
+// Derived Leaf Class inheriting from both Test and Sports
+class Result : public Test, public Sports {
+private:
+    float grandTotal;
+public:
+    void displayResult() {
+        grandTotal = part1 + part2 + score;
+        printRoll();  // Zero Ambiguity! Calls single shared Student subobject
+        printMarks();
+        printScore();
+        cout &lt;&lt; "--------------------------------" &lt;&lt; endl;
+        cout &lt;&lt; "Grand Total Score = " &lt;&lt; grandTotal &lt;&lt; " / 200.0" &lt;&lt; endl;
+    }
+};
+
+int main() {
+    Result studentResult;
+    studentResult.setRoll(210834);          // Direct call without ambiguity
+    studentResult.setMarks(78.5f, 84.0f);
+    studentResult.setScore(15.0f);
+
+    cout &lt;&lt; "=== Official CCSU Student Academic Record ===" &lt;&lt; endl;
+    studentResult.displayResult();
+    return 0;
+}</code></pre>
+      </div>
+    </div>
+
+    <!-- C5: Virtual Functions & Dynamic Polymorphism -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q5.</span> What are Virtual Functions and Pure Virtual Functions? Explain the concept of Dynamic Binding with a complete C++ program modeling an abstract base class <code>Shape</code> with derived classes <code>Circle</code>, <code>Rectangle</code>, and <code>Triangle</code>.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2017, 2018, 2019, 2021, 2022</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        
+        <h5>1. Pure Virtual Functions and Abstract Base Classes</h5>
+        <p>A function declared with <code>virtual</code> in a base class and assigned <code>= 0</code> is a <strong>Pure Virtual Function</strong>. It has no implementation in the base class and mandates every derived class to override it. A class containing at least one pure virtual function is an <strong>Abstract Class</strong>.</p>
+
+        <h5>2. Dynamic Dispatch Architecture Diagram</h5>
+        <div class="svg-tree-container" style="background: #0f172a; padding: 20px; border-radius: 12px; margin: 18px 0; border: 1px solid #334155; text-align: center;">
+          <div style="font-weight: 700; color: #38bdf8; margin-bottom: 12px; font-size: 14px;">DYNAMIC DISPATCH: SHAPE ABSTRACT INTERFACE</div>
+          <svg viewBox="0 0 740 180" width="100%" height="180" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <marker id="arrPoly" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto">
+                <polygon points="0 0, 7 3.5, 0 7" fill="#38bdf8"/>
+              </marker>
+            </defs>
+
+            <!-- Abstract Base Shape -->
+            <rect x="250" y="15" width="240" height="55" rx="8" fill="#1e1b4b" stroke="#818cf8" stroke-width="2"/>
+            <text x="370" y="35" font-size="12" font-weight="800" fill="#a5b4fc" text-anchor="middle">&laquo;Abstract Base Class&raquo; Shape</text>
+            <text x="370" y="55" font-size="11" fill="#c7d2fe" text-anchor="middle">+ virtual double area() = 0;</text>
+
+            <!-- Dispatch Arrows -->
+            <line x1="320" y1="70" x2="130" y2="115" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrPoly)"/>
+            <line x1="370" y1="70" x2="370" y2="115" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrPoly)"/>
+            <line x1="420" y1="70" x2="610" y2="115" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrPoly)"/>
+
+            <!-- Derived Circle -->
+            <rect x="40" y="120" width="180" height="48" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+            <text x="130" y="140" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">Circle</text>
+            <text x="130" y="156" font-size="10" fill="#94a3b8" text-anchor="middle">area() = &pi; &times; r&sup2;</text>
+
+            <!-- Derived Rectangle -->
+            <rect x="280" y="120" width="180" height="48" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+            <text x="370" y="140" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">Rectangle</text>
+            <text x="370" y="156" font-size="10" fill="#94a3b8" text-anchor="middle">area() = L &times; W</text>
+
+            <!-- Derived Triangle -->
+            <rect x="520" y="120" width="180" height="48" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+            <text x="610" y="140" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">Triangle</text>
+            <text x="610" y="156" font-size="10" fill="#94a3b8" text-anchor="middle">area() = 0.5 &times; B &times; H</text>
+          </svg>
+        </div>
+
+        <h5>3. Complete Compilable Program</h5>
+        <pre><code class="language-cpp">#include &lt;iostream&gt;
+#include &lt;cmath&gt;
+using namespace std;
+
+// Abstract Base Class
+class Shape {
+public:
+    virtual double area() const = 0; // Pure virtual function
+    virtual void display() const = 0; // Pure virtual function
+    virtual ~Shape() { cout &lt;&lt; "Shape Base Destructor" &lt;&lt; endl; }
+};
+
+class Circle : public Shape {
+private:
+    double radius;
+public:
+    Circle(double r) : radius(r) {}
+    double area() const override { return 3.14159265 * radius * radius; }
+    void display() const override {
+        cout &lt;&lt; "Circle (r=" &lt;&lt; radius &lt;&lt; ") -&gt; Area = " &lt;&lt; area() &lt;&lt; endl;
+    }
+    ~Circle() override { cout &lt;&lt; "Circle Destructor" &lt;&lt; endl; }
+};
+
+class Rectangle : public Shape {
+private:
+    double length, breadth;
+public:
+    Rectangle(double l, double b) : length(l), breadth(b) {}
+    double area() const override { return length * breadth; }
+    void display() const override {
+        cout &lt;&lt; "Rectangle (" &lt;&lt; length &lt;&lt; "x" &lt;&lt; breadth &lt;&lt; ") -&gt; Area = " &lt;&lt; area() &lt;&lt; endl;
+    }
+    ~Rectangle() override { cout &lt;&lt; "Rectangle Destructor" &lt;&lt; endl; }
+};
+
+class Triangle : public Shape {
+private:
+    double base, height;
+public:
+    Triangle(double b, double h) : base(b), height(h) {}
+    double area() const override { return 0.5 * base * height; }
+    void display() const override {
+        cout &lt;&lt; "Triangle (b=" &lt;&lt; base &lt;&lt; ", h=" &lt;&lt; height &lt;&lt; ") -&gt; Area = " &lt;&lt; area() &lt;&lt; endl;
+    }
+    ~Triangle() override { cout &lt;&lt; "Triangle Destructor" &lt;&lt; endl; }
+};
+
+int main() {
+    // Array of Base Class Pointers holding diverse derived objects
+    Shape* shapes[3];
+    shapes[0] = new Circle(7.0);
+    shapes[1] = new Rectangle(10.0, 5.0);
+    shapes[2] = new Triangle(8.0, 12.0);
+
+    cout &lt;&lt; "=== Polymorphic Dynamic Dispatch Loop ===" &lt;&lt; endl;
+    for (int i = 0; i &lt; 3; i++) {
+        shapes[i]-&gt;display(); // Runtime Late Binding via vtable!
+    }
+
+    // Safe deletion triggering virtual destructors in reverse order
+    for (int i = 0; i &lt; 3; i++) {
+        delete shapes[i];
+    }
+    return 0;
+}</code></pre>
+      </div>
+    </div>
+
+    <!-- C6: Internal Mechanism of Virtual Functions (vtable and vptr) -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q6.</span> Explain the internal compiler mechanism of Virtual Functions using Virtual Table (<code>vtable</code>) and Virtual Pointer (<code>vptr</code>). Draw detailed memory layouts demonstrating how dynamic dispatch executes.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2018, 2019, 2020, 2021</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        
+        <h5>1. How the C++ Compiler Implements Dynamic Binding</h5>
+        <p>Dynamic polymorphism does not happen by magic; the C++ compiler injects two low-level components into the program:</p>
+        <ul>
+          <li><strong>1. Virtual Table (<code>vtable</code>):</strong> For every class that declares or inherits virtual functions, the compiler generates a static lookup table stored in the <strong>Read-Only Data Segment (.rodata)</strong>. The table is an array of function pointers storing the addresses of the virtual functions belonging to that specific class. Exactly <em>one vtable exists per class</em>.</li>
+          <li><strong>2. Virtual Table Pointer (<code>vptr</code>):</strong> For every object of a class containing virtual functions, the compiler injects an internal hidden pointer (usually at offset <code>0</code>). When the object constructor executes, it initializes <code>vptr</code> to point to its class's specific <code>vtable</code>.</li>
+        </ul>
+
+        <h5>2. Detailed Memory Architecture Diagram</h5>
+        <div class="svg-tree-container" style="background: #0f172a; padding: 22px; border-radius: 12px; margin: 18px 0; border: 1px solid #334155; text-align: center;">
+          <div style="font-weight: 700; color: #38bdf8; margin-bottom: 12px; font-size: 14px;">INTERNAL MEMORY ARCHITECTURE: VPTR &amp; VTABLE RUNTIME RESOLUTION</div>
+          <svg viewBox="0 0 740 250" width="100%" height="250" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <marker id="arrVp" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+                <path d="M0,1 L7,4 L0,7 Z" fill="#38bdf8"/>
+              </marker>
+              <marker id="arrFn" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+                <path d="M0,1 L7,4 L0,7 Z" fill="#a855f7"/>
+              </marker>
+            </defs>
+
+            <!-- Column 1: Stack Pointer -->
+            <rect x="20" y="40" width="140" height="90" rx="8" fill="#1e293b" stroke="#64748b"/>
+            <text x="90" y="65" font-size="12" font-weight="700" fill="#94a3b8" text-anchor="middle">STACK MEMORY</text>
+            <rect x="35" y="80" width="110" height="36" rx="4" fill="#0369a1"/>
+            <text x="90" y="103" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">Base* bPtr</text>
+
+            <!-- Pointer from Stack to Heap Object -->
+            <line x1="145" y1="98" x2="220" y2="98" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrVp)"/>
+
+            <!-- Column 2: Heap Object Instance -->
+            <rect x="220" y="25" width="180" height="180" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+            <text x="310" y="48" font-size="12" font-weight="700" fill="#38bdf8" text-anchor="middle">Derived Object in Heap</text>
+            
+            <!-- vptr slot at offset 0 -->
+            <rect x="235" y="60" width="150" height="38" rx="4" fill="#0f766e" stroke="#2dd4bf"/>
+            <text x="310" y="83" font-size="11" font-weight="800" fill="#ffffff" text-anchor="middle">*vptr [Offset 0]</text>
+            
+            <!-- Other Member Variables -->
+            <rect x="235" y="106" width="150" height="30" rx="4" fill="#334155"/>
+            <text x="310" y="126" font-size="11" fill="#cbd5e1" text-anchor="middle">int memberA</text>
+            <rect x="235" y="142" width="150" height="30" rx="4" fill="#334155"/>
+            <text x="310" y="162" font-size="11" fill="#cbd5e1" text-anchor="middle">double memberB</text>
+
+            <!-- Pointer from vptr to vtable -->
+            <line x1="385" y1="79" x2="470" y2="79" stroke="#2dd4bf" stroke-width="2" marker-end="url(#arrVp)"/>
+
+            <!-- Column 3: Read-Only Data Segment (vtable) -->
+            <rect x="470" y="25" width="250" height="190" rx="8" fill="#1e1b4b" stroke="#a855f7" stroke-width="2"/>
+            <text x="595" y="48" font-size="12" font-weight="700" fill="#c084fc" text-anchor="middle">Derived::vtable (.rodata)</text>
+
+            <rect x="485" y="62" width="220" height="34" rx="4" fill="#581c87"/>
+            <text x="595" y="83" font-size="11" font-weight="700" fill="#f3e8ff" text-anchor="middle">[0] &amp;Derived::functionOne()</text>
+
+            <rect x="485" y="104" width="220" height="34" rx="4" fill="#581c87"/>
+            <text x="595" y="125" font-size="11" font-weight="700" fill="#f3e8ff" text-anchor="middle">[1] &amp;Derived::functionTwo()</text>
+
+            <rect x="485" y="146" width="220" height="34" rx="4" fill="#581c87"/>
+            <text x="595" y="167" font-size="11" font-weight="700" fill="#f3e8ff" text-anchor="middle">[2] &amp;Derived::~Destructor()</text>
+          </svg>
+        </div>
+
+        <h5>3. Step-by-Step Execution Sequence for <code>bPtr-&gt;functionOne()</code></h5>
+        <ol>
+          <li>CPU dereferences <code>bPtr</code> to fetch the object located in heap memory.</li>
+          <li>CPU extracts the <code>vptr</code> stored at offset <code>0</code> of the object.</li>
+          <li>CPU indexes into the pointed-to <code>vtable</code> at slot <code>[0]</code>.</li>
+          <li>CPU retrieves function pointer <code>&amp;Derived::functionOne</code> and jumps directly to that memory instruction address.</li>
+        </ol>
+      </div>
+    </div>
+\n
+    <!-- C7: Friend Function and Friend Class Cross-Boundary Architecture -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q7.</span> Explain the concept of Friend Functions and Friend Classes. Why does C++ support friend functions despite the principle of Data Encapsulation? Illustrate with an architectural SVG diagram and a complete program analyzing accounts across two distinct banking classes.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2017, 2018, 2019, 2020, 2022</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        
+        <h5>1. Purpose &amp; Pragmatism of Friend Functions</h5>
+        <p>While <strong>Data Encapsulation</strong> enforces that private data can only be manipulated by member functions of its own class, practical real-world operations frequently require coordinated actions across two unrelated classes (such as matrix multiplication between two different dimension classes, or joint financial auditing across distinct account types).</p>
+        <p>A <strong>Friend Function</strong> is an external non-member function granted authorized access to private and protected members of a class. The class maintains control because friendship is <em>granted by the class itself</em> through the <code>friend</code> keyword in its declaration.</p>
+        
+        <div class="callout-box">
+          <strong>Crucial Friendship Properties:</strong>
+          <ul>
+            <li><strong>Friendship is NOT Mutual:</strong> If Class A is a friend of Class B, Class B is not automatically a friend of Class A.</li>
+            <li><strong>Friendship is NOT Inherited:</strong> A friend of a base class does not become a friend of its derived classes.</li>
+            <li><strong>Friendship is NOT Transitive:</strong> If A is a friend of B, and B is a friend of C, A is not a friend of C.</li>
+          </ul>
+        </div>
+
+        <h5>2. Friend Function Cross-Class Bridge Architecture</h5>
+        <div class="svg-tree-container" style="background: #0f172a; padding: 22px; border-radius: 12px; margin: 18px 0; border: 1px solid #334155; text-align: center;">
+          <div style="font-weight: 700; color: #38bdf8; margin-bottom: 12px; font-size: 14px;">FRIEND FUNCTION: CROSS-CLASS DATA BRIDGE ARCHITECTURE</div>
+          <svg viewBox="0 0 740 220" width="100%" height="220" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <marker id="arrFr" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+                <path d="M0,1 L7,4 L0,7 Z" fill="#38bdf8"/>
+              </marker>
+            </defs>
+
+            <!-- Class 1: SavingsAccount -->
+            <rect x="25" y="25" width="220" height="165" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+            <rect x="25" y="25" width="220" height="35" rx="8" fill="#0369a1"/>
+            <text x="135" y="48" font-size="13" font-weight="800" fill="#ffffff" text-anchor="middle">class SavingsAccount</text>
+            <rect x="40" y="70" width="190" height="38" rx="4" fill="#0f172a" stroke="#475569"/>
+            <text x="135" y="94" font-size="11" fill="#f87171" text-anchor="middle">- double savingsBal (PRIVATE)</text>
+            <rect x="40" y="118" width="190" height="35" rx="4" fill="#0f766e"/>
+            <text x="135" y="140" font-size="10" font-weight="700" fill="#a7f3d0" text-anchor="middle">+ friend void auditPortfolio(...)</text>
+
+            <!-- Central Bridge: Non-Member Friend Function -->
+            <rect x="280" y="55" width="180" height="110" rx="10" fill="#1e1b4b" stroke="#a855f7" stroke-width="2"/>
+            <text x="370" y="80" font-size="12" font-weight="800" fill="#c084fc" text-anchor="middle">&laquo;Non-Member Function&raquo;</text>
+            <text x="370" y="102" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">auditPortfolio()</text>
+            <text x="370" y="125" font-size="10" fill="#e9d5ff" text-anchor="middle">Direct Private Read Access</text>
+            <text x="370" y="145" font-size="10" fill="#38bdf8" text-anchor="middle">Total = S.bal + C.bal</text>
+
+            <!-- Bridges (Arrows piercing encapsulation) -->
+            <line x1="230" y1="90" x2="280" y2="90" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrFr)"/>
+            <line x1="510" y1="90" x2="460" y2="90" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrFr)"/>
+
+            <!-- Class 2: CurrentAccount -->
+            <rect x="495" y="25" width="220" height="165" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+            <rect x="495" y="25" width="220" height="35" rx="8" fill="#0369a1"/>
+            <text x="605" y="48" font-size="13" font-weight="800" fill="#ffffff" text-anchor="middle">class CurrentAccount</text>
+            <rect x="510" y="70" width="190" height="38" rx="4" fill="#0f172a" stroke="#475569"/>
+            <text x="605" y="94" font-size="11" fill="#f87171" text-anchor="middle">- double currentBal (PRIVATE)</text>
+            <rect x="510" y="118" width="190" height="35" rx="4" fill="#0f766e"/>
+            <text x="605" y="140" font-size="10" font-weight="700" fill="#a7f3d0" text-anchor="middle">+ friend void auditPortfolio(...)</text>
+          </svg>
+        </div>
+
+        <h5>3. Complete Compilable Solution</h5>
+        <pre><code class="language-cpp">#include &lt;iostream&gt;
+#include &lt;string&gt;
+using namespace std;
+
+// Forward declaration of CurrentAccount
+class CurrentAccount;
+
+class SavingsAccount {
+private:
+    string accountNo;
+    double balance;
+
+public:
+    SavingsAccount(string acc, double bal) : accountNo(acc), balance(bal) {}
+    
+    // Declaring friend function
+    friend void auditPortfolio(const SavingsAccount &amp;sa, const CurrentAccount &amp;ca);
+};
+
+class CurrentAccount {
+private:
+    string accountNo;
+    double balance;
+
+public:
+    CurrentAccount(string acc, double bal) : accountNo(acc), balance(bal) {}
+    
+    // Declaring the exact same friend function
+    friend void auditPortfolio(const SavingsAccount &amp;sa, const CurrentAccount &amp;ca);
+};
+
+// Global friend function accessing private members of both classes
+void auditPortfolio(const SavingsAccount &amp;sa, const CurrentAccount &amp;ca) {
+    cout &lt;&lt; "--- Financial Audit Report ---" &lt;&lt; endl;
+    cout &lt;&lt; "Savings Account [" &lt;&lt; sa.accountNo &lt;&lt; "] Balance : Rs. " &lt;&lt; sa.balance &lt;&lt; endl;
+    cout &lt;&lt; "Current Account [" &lt;&lt; ca.accountNo &lt;&lt; "] Balance : Rs. " &lt;&lt; ca.balance &lt;&lt; endl;
+
+    double combinedTotal = sa.balance + ca.balance;
+    cout &lt;&lt; "Combined Net Liquidity                : Rs. " &lt;&lt; combinedTotal &lt;&lt; endl;
+
+    if (combinedTotal &gt;= 100000.0) {
+        cout &lt;&lt; "Credit Assessment                     : APPROVED for Premium Commercial Credit Line" &lt;&lt; endl;
+    } else {
+        cout &lt;&lt; "Credit Assessment                     : Standard Banking Tier" &lt;&lt; endl;
+    }
+}
+
+int main() {
+    SavingsAccount personal("SB-9921", 64500.0);
+    CurrentAccount business("CA-4108", 85000.0);
+
+    auditPortfolio(personal, business);
+    return 0;
+}</code></pre>
+      </div>
+    </div>
+
+    <!-- C8: Order of Constructor & Destructor Execution in Inheritance -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q8.</span> Explain the order of Constructor and Destructor invocation in Multiple and Multilevel Inheritance. How are arguments passed to base class constructors from a derived class constructor? Provide full traceable code.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2018, 2020, 2021, 2022</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        
+        <h5>1. Universal Constructor &amp; Destructor Order Rules</h5>
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Phase</th>
+                <th>Order of Execution</th>
+                <th>Underlying Reason</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Constructor Phase (Initialization)</strong></td>
+                <td><strong>Top-Down (Base to Derived):</strong><br>
+                1. Virtual Base class constructors first.<br>
+                2. Non-virtual base constructors in order of declaration: <code>class D : public B1, public B2</code>.<br>
+                3. Member object constructors.<br>
+                4. Derived class constructor body last.</td>
+                <td>A derived class depends on inherited state; hence the foundation (base) must exist before derived extensions can be initialized.</td>
+              </tr>
+              <tr>
+                <td><strong>Destructor Phase (Destruction)</strong></td>
+                <td><strong>Bottom-Up (Exact Reverse):</strong><br>
+                1. Derived class destructor body first.<br>
+                2. Member object destructors.<br>
+                3. Non-virtual base destructors in reverse declaration order.<br>
+                4. Virtual base destructors last.</td>
+                <td>Prevents derived teardown code from referencing base resources after they have already been released.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h5>2. Complete Traceable Code</h5>
+        <pre><code class="language-cpp">#include &lt;iostream&gt;
+using namespace std;
+
+class BaseOne {
+protected:
+    int val1;
+public:
+    BaseOne(int v1) : val1(v1) {
+        cout &lt;&lt; "[1] BaseOne Parameterized Constructor (val1 = " &lt;&lt; val1 &lt;&lt; ")" &lt;&lt; endl;
+    }
+    virtual ~BaseOne() {
+        cout &lt;&lt; "[~1] BaseOne Destructor Executed" &lt;&lt; endl;
+    }
+};
+
+class BaseTwo {
+protected:
+    int val2;
+public:
+    BaseTwo(int v2) : val2(v2) {
+        cout &lt;&lt; "[2] BaseTwo Parameterized Constructor (val2 = " &lt;&lt; val2 &lt;&lt; ")" &lt;&lt; endl;
+    }
+    virtual ~BaseTwo() {
+        cout &lt;&lt; "[~2] BaseTwo Destructor Executed" &lt;&lt; endl;
+    }
+};
+
+// Derived from BaseOne first, then BaseTwo
+class DerivedComposite : public BaseOne, public BaseTwo {
+private:
+    int derivedVal;
+public:
+    // Base constructor initialization list passing arguments
+    DerivedComposite(int a, int b, int c) : BaseOne(a), BaseTwo(b), derivedVal(c) {
+        cout &lt;&lt; "[3] DerivedComposite Constructor (derivedVal = " &lt;&lt; derivedVal &lt;&lt; ")" &lt;&lt; endl;
+    }
+
+    ~DerivedComposite() override {
+        cout &lt;&lt; "[~3] DerivedComposite Destructor Executed" &lt;&lt; endl;
+    }
+
+    void displayAll() const {
+        cout &lt;&lt; "State: val1=" &lt;&lt; val1 &lt;&lt; ", val2=" &lt;&lt; val2 &lt;&lt; ", derivedVal=" &lt;&lt; derivedVal &lt;&lt; endl;
+    }
+};
+
+int main() {
+    cout &lt;&lt; "--- Creating DerivedComposite Object ---" &lt;&lt; endl;
+    DerivedComposite* obj = new DerivedComposite(10, 20, 30);
+    obj-&gt;displayAll();
+
+    cout &lt;&lt; "\n--- Destroying DerivedComposite Object ---" &lt;&lt; endl;
+    delete obj; // Notice the exact reverse sequence in console output
+    return 0;
+}</code></pre>
+      </div>
+    </div>
+
+    <!-- C9: C++ Stream Class Hierarchy & Binary File Handling System -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q9.</span> Explain the C++ Stream Class Hierarchy with a clean architectural SVG diagram. Write a complete, compilable C++ program implementing a Bank Account binary file management system capable of adding records, displaying all records, searching by account number, and updating balances in-place.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2017, 2018, 2019, 2020, 2021</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        
+        <h5>1. C++ Stream Class Hierarchy Architecture</h5>
+        <div class="svg-tree-container" style="background: #0f172a; padding: 22px; border-radius: 12px; margin: 18px 0; border: 1px solid #334155; text-align: center;">
+          <div style="font-weight: 700; color: #38bdf8; margin-bottom: 12px; font-size: 14px;">C++ I/O STREAM CLASS INHERITANCE HIERARCHY</div>
+          <svg viewBox="0 0 740 240" width="100%" height="240" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <marker id="arrStrm" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto">
+                <polygon points="0 0, 7 3.5, 0 7" fill="#38bdf8"/>
+              </marker>
+            </defs>
+
+            <!-- Top Root: ios_base -->
+            <rect x="290" y="10" width="160" height="32" rx="6" fill="#0f172a" stroke="#64748b" stroke-width="1.5"/>
+            <text x="370" y="31" font-size="12" font-weight="700" fill="#94a3b8" text-anchor="middle">ios_base (Root Base)</text>
+
+            <line x1="370" y1="42" x2="370" y2="60" stroke="#38bdf8" stroke-width="1.5" marker-end="url(#arrStrm)"/>
+
+            <!-- Second Tier: ios -->
+            <rect x="290" y="60" width="160" height="32" rx="6" fill="#0369a1"/>
+            <text x="370" y="81" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">ios (Stream State &amp; Buffers)</text>
+
+            <!-- Branches to istream and ostream -->
+            <line x1="330" y1="92" x2="180" y2="120" stroke="#38bdf8" stroke-width="1.5" marker-end="url(#arrStrm)"/>
+            <line x1="410" y1="92" x2="560" y2="120" stroke="#38bdf8" stroke-width="1.5" marker-end="url(#arrStrm)"/>
+
+            <!-- istream & ostream -->
+            <rect x="100" y="120" width="160" height="32" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+            <text x="180" y="141" font-size="12" font-weight="700" fill="#38bdf8" text-anchor="middle">istream (cin, &gt;&gt;)</text>
+
+            <rect x="480" y="120" width="160" height="32" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+            <text x="560" y="141" font-size="12" font-weight="700" fill="#38bdf8" text-anchor="middle">ostream (cout, &lt;&lt;)</text>
+
+            <!-- Merging to iostream -->
+            <line x1="200" y1="152" x2="330" y2="175" stroke="#38bdf8" stroke-width="1.5" marker-end="url(#arrStrm)"/>
+            <line x1="540" y1="152" x2="410" y2="175" stroke="#38bdf8" stroke-width="1.5" marker-end="url(#arrStrm)"/>
+            <rect x="290" y="170" width="160" height="30" rx="6" fill="#4338ca"/>
+            <text x="370" y="190" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">iostream (Input/Output)</text>
+
+            <!-- File Stream Tier -->
+            <line x1="180" y1="152" x2="100" y2="185" stroke="#34d399" stroke-width="1.5" marker-end="url(#arrStrm)"/>
+            <rect x="20" y="185" width="150" height="32" rx="6" fill="#064e3b" stroke="#34d399"/>
+            <text x="95" y="206" font-size="11" font-weight="700" fill="#a7f3d0" text-anchor="middle">ifstream (File Read)</text>
+
+            <line x1="560" y1="152" x2="640" y2="185" stroke="#34d399" stroke-width="1.5" marker-end="url(#arrStrm)"/>
+            <rect x="570" y="185" width="150" height="32" rx="6" fill="#064e3b" stroke="#34d399"/>
+            <text x="645" y="206" font-size="11" font-weight="700" fill="#a7f3d0" text-anchor="middle">ofstream (File Write)</text>
+
+            <line x1="370" y1="200" x2="370" y2="215" stroke="#34d399" stroke-width="1.5"/>
+            <rect x="290" y="212" width="160" height="25" rx="4" fill="#064e3b" stroke="#34d399"/>
+            <text x="370" y="229" font-size="10" font-weight="700" fill="#a7f3d0" text-anchor="middle">fstream (File R/W)</text>
+          </svg>
+        </div>
+
+        <h5>2. Complete Binary File Management Program</h5>
+        <pre><code class="language-cpp">#include &lt;iostream&gt;
+#include &lt;fstream&gt;
+#include &lt;cstring&gt;
+using namespace std;
+
+class BankAccount {
+private:
+    int accountNo;
+    char holderName[30];
+    double balance;
+
+public:
+    BankAccount() : accountNo(0), balance(0.0) { holderName[0] = '\0'; }
+    
+    BankAccount(int acc, const char* name, double bal) {
+        accountNo = acc;
+        strncpy(holderName, name, 29);
+        holderName[29] = '\0';
+        balance = bal;
+    }
+
+    int getAccountNo() const { return accountNo; }
+    void updateBalance(double newBal) { balance = newBal; }
+
+    void display() const {
+        cout &lt;&lt; "Acc #" &lt;&lt; accountNo &lt;&lt; " | Holder: " &lt;&lt; holderName 
+             &lt;&lt; " | Balance: Rs. " &lt;&lt; balance &lt;&lt; endl;
+    }
+};
+
+// 1. Add Record using write()
+void addAccount(const char* filename, const BankAccount &amp;acc) {
+    ofstream outFile(filename, ios::binary | ios::app);
+    outFile.write(reinterpret_cast&lt;const char*&gt;(&amp;acc), sizeof(BankAccount));
+    outFile.close();
+}
+
+// 2. Read and Display All Records using read()
+void displayAllAccounts(const char* filename) {
+    ifstream inFile(filename, ios::binary);
+    if (!inFile) {
+        cout &lt;&lt; "File could not be opened!" &lt;&lt; endl;
+        return;
+    }
+    BankAccount acc;
+    cout &lt;&lt; "\n--- Registered Bank Accounts in Database ---" &lt;&lt; endl;
+    while (inFile.read(reinterpret_cast&lt;char*&gt;(&amp;acc), sizeof(BankAccount))) {
+        acc.display();
+    }
+    inFile.close();
+}
+
+// 3. Search and In-Place Modify Record using seekp()
+bool modifyBalance(const char* filename, int searchAccNo, double newBalance) {
+    fstream file(filename, ios::binary | ios::in | ios::out);
+    if (!file) return false;
+
+    BankAccount acc;
+    bool found = false;
+
+    while (file.read(reinterpret_cast&lt;char*&gt;(&amp;acc), sizeof(BankAccount))) {
+        if (acc.getAccountNo() == searchAccNo) {
+            acc.updateBalance(newBalance);
+            // Move write pointer back by sizeof(BankAccount) bytes
+            file.seekp(-static_cast&lt;int&gt;(sizeof(BankAccount)), ios::cur);
+            file.write(reinterpret_cast&lt;const char*&gt;(&amp;acc), sizeof(BankAccount));
+            found = true;
+            break;
+        }
+    }
+    file.close();
+    return found;
+}
+
+int main() {
+    const char* dbFile = "accounts.dat";
+
+    // Adding initial seed records
+    addAccount(dbFile, BankAccount(1001, "Aarav Sharma", 45000.0));
+    addAccount(dbFile, BankAccount(1002, "Sneha Patel", 82000.0));
+    addAccount(dbFile, BankAccount(1003, "Rohan Verma", 19500.0));
+
+    displayAllAccounts(dbFile);
+
+    // Modifying Sneha Patel's balance in-place
+    cout &lt;&lt; "\nUpdating Account 1002 balance to Rs. 95000.0..." &lt;&lt; endl;
+    if (modifyBalance(dbFile, 1002, 95000.0)) {
+        cout &lt;&lt; "Record successfully updated in binary file!" &lt;&lt; endl;
+    }
+
+    displayAllAccounts(dbFile);
+    return 0;
+}</code></pre>
+      </div>
+    </div>
+
+    <!-- C10: Generic Programming & Class Templates (Generic Stack) -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q10.</span> Explain Generic Programming and Class Templates in C++. Implement a fully functional Generic <code>Stack&lt;T&gt;</code> class template supporting <code>push()</code>, <code>pop()</code>, <code>peek()</code>, and <code>isEmpty()</code>, and demonstrate its use with multiple data types.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2018, 2019, 2021, 2022</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        
+        <h5>1. Principles of Generic Programming</h5>
+        <p><strong>Generic Programming</strong> is a software development paradigm that designs algorithms and data structures without specifying concrete data types. In C++, this is realized via <strong>Templates</strong>:</p>
+        <ul>
+          <li>The data type becomes a parameter represented by a placeholder (e.g. <code>template &lt;typename T&gt;</code>).</li>
+          <li>The compiler generates specific class code (template instantiation) only when a concrete type is specified: <code>Stack&lt;int&gt;</code> or <code>Stack&lt;string&gt;</code>.</li>
+          <li>Provides compile-time type safety while eliminating code duplication across types.</li>
+        </ul>
+
+        <h5>2. Complete Compilable Generic Stack Program</h5>
+        <pre><code class="language-cpp">#include &lt;iostream&gt;
+#include &lt;string&gt;
+using namespace std;
+
+template &lt;typename T&gt;
+class Stack {
+private:
+    T* arr;
+    int topIndex;
+    int capacity;
+
+public:
+    Stack(int cap = 10) : capacity(cap), topIndex(-1) {
+        arr = new T[capacity];
+    }
+
+    ~Stack() {
+        delete[] arr;
+    }
+
+    bool isFull() const { return topIndex == capacity - 1; }
+    bool isEmpty() const { return topIndex == -1; }
+
+    void push(const T &amp;item) {
+        if (isFull()) {
+            cout &lt;&lt; "Stack Overflow! Cannot push item." &lt;&lt; endl;
+            return;
+        }
+        arr[++topIndex] = item;
+    }
+
+    T pop() {
+        if (isEmpty()) {
+            cout &lt;&lt; "Stack Underflow! Returning default." &lt;&lt; endl;
+            return T();
+        }
+        return arr[topIndex--];
+    }
+
+    T peek() const {
+        if (isEmpty()) return T();
+        return arr[topIndex];
+    }
+
+    void display() const {
+        if (isEmpty()) { cout &lt;&lt; "[Empty Stack]" &lt;&lt; endl; return; }
+        cout &lt;&lt; "Top -&gt; ";
+        for (int i = topIndex; i &gt;= 0; i--) {
+            cout &lt;&lt; "[" &lt;&lt; arr[i] &lt;&lt; "] ";
+        }
+        cout &lt;&lt; endl;
+    }
+};
+
+int main() {
+    // 1. Integer Stack Demonstration
+    cout &lt;&lt; "=== Testing Generic Stack with Integers ===" &lt;&lt; endl;
+    Stack&lt;int&gt; intStack(5);
+    intStack.push(10);
+    intStack.push(20);
+    intStack.push(30);
+    intStack.display();
+    cout &lt;&lt; "Popped: " &lt;&lt; intStack.pop() &lt;&lt; endl;
+    intStack.display();
+
+    // 2. String Stack Demonstration
+    cout &lt;&lt; "\n=== Testing Generic Stack with Strings ===" &lt;&lt; endl;
+    Stack&lt;string&gt; strStack(5);
+    strStack.push("CCSU");
+    strStack.push("BCA-301");
+    strStack.push("Object-Oriented");
+    strStack.display();
+    cout &lt;&lt; "Peeked top element: " &lt;&lt; strStack.peek() &lt;&lt; endl;
+    cout &lt;&lt; "Popped: " &lt;&lt; strStack.pop() &lt;&lt; endl;
+    strStack.display();
+
+    return 0;
+}</code></pre>
+      </div>
+    </div>
+
+    <!-- C11: Type Conversions in C++ -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q11.</span> Explain User-Defined Type Conversions in C++: Basic to Class type, Class to Basic type, and Class to Class type. Provide clear rules and a complete working program.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2018, 2019, 2021, 2022</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        
+        <h5>1. Three Categories of Type Conversions in C++</h5>
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Conversion Category</th>
+                <th>Syntax Mechanism</th>
+                <th>Key Rules</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>1. Basic to Class Type</strong></td>
+                <td><strong>Constructor with Single Argument:</strong><br><code>Distance(float meters) { ... }</code></td>
+                <td>The single argument of primitive type is passed to the class constructor to initialize the object.</td>
+              </tr>
+              <tr>
+                <td><strong>2. Class to Basic Type</strong></td>
+                <td><strong>Casting Operator Function:</strong><br><code>operator float() const { ... }</code></td>
+                <td>Must be a member function; must take <strong>no arguments</strong>; must specify <strong>no return type</strong> (the return type is implicit in the operator name).</td>
+              </tr>
+              <tr>
+                <td><strong>3. Class to Class Type</strong></td>
+                <td><strong>Conversion Constructor (in Destination) OR Casting Operator (in Source)</strong></td>
+                <td>Translates between two custom objects (e.g. converting 24-Hour time format to 12-Hour AM/PM format).</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h5>2. Complete Compilable Solution</h5>
+        <pre><code class="language-cpp">#include &lt;iostream&gt;
+using namespace std;
+
+// Class Distance with Feet &amp; Inches
+class Distance {
+private:
+    int feet;
+    float inches;
+
+public:
+    Distance() : feet(0), inches(0.0f) {}
+
+    // Type 1: Basic to Class Type (Single-argument constructor converting meters)
+    Distance(float meters) {
+        float totalInches = meters * 39.3701f;
+        feet = static_cast&lt;int&gt;(totalInches / 12);
+        inches = totalInches - (feet * 12);
+    }
+
+    // Type 2: Class to Basic Type (Casting operator function converting to meters)
+    operator float() const {
+        float totalInches = (feet * 12) + inches;
+        return totalInches / 39.3701f;
+    }
+
+    void display() const {
+        cout &lt;&lt; feet &lt;&lt; " ft " &lt;&lt; inches &lt;&lt; " in";
+    }
+};
+
+int main() {
+    // 1. Basic to Class conversion
+    float inputMeters = 2.5f;
+    Distance d1 = inputMeters; // Invokes Distance(float) constructor
+    cout &lt;&lt; inputMeters &lt;&lt; " meters converted to Distance object: ";
+    d1.display();
+    cout &lt;&lt; endl;
+
+    // 2. Class to Basic conversion
+    float outputMeters = d1; // Invokes operator float()
+    cout &lt;&lt; "Distance object converted back to basic float meters: " &lt;&lt; outputMeters &lt;&lt; " m" &lt;&lt; endl;
+
+    return 0;
+}</code></pre>
+      </div>
+    </div>
+
+    <!-- C12: Exception Handling Model & Stack Unwinding -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q12.</span> Explain the complete Exception Handling Model in C++. What is "Stack Unwinding"? Discuss standard exception classes and write a complete program illustrating a user-defined custom exception class.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2017, 2019, 2020, 2022</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        
+        <h5>1. Exception Lifecycle &amp; Stack Unwinding</h5>
+        <p><strong>Stack Unwinding</strong> is the automated process by which the runtime environment cleans up the call stack when an exception is thrown:</p>
+        <ul>
+          <li>When an exception is thrown via <code>throw</code>, the runtime immediately suspends execution of the current function.</li>
+          <li>It unwinds the stack frames backward until a matching <code>catch</code> block is found.</li>
+          <li>During this unwinding, the <strong>destructors of all fully constructed local objects</strong> in intermediate frames are guaranteed to be executed, preventing memory leaks and resource locks.</li>
+        </ul>
+
+        <h5>2. Complete Program with Custom User-Defined Exception Class</h5>
+        <pre><code class="language-cpp">#include &lt;iostream&gt;
+#include &lt;exception&gt;
+#include &lt;string&gt;
+using namespace std;
+
+// User-Defined Custom Exception Class derived from std::exception
+class InsufficientFundsException : public exception {
+private:
+    string errorMsg;
+    double deficit;
+
+public:
+    InsufficientFundsException(double currentBal, double withdrawAmt) {
+        deficit = withdrawAmt - currentBal;
+        errorMsg = "Transaction Failed: Deficit of Rs. " + to_string(deficit) + " exceeds account balance!";
+    }
+
+    // Overriding std::exception virtual what() method
+    const char* what() const noexcept override {
+        return errorMsg.c_str();
+    }
+
+    double getDeficit() const { return deficit; }
+};
+
+class BankAccount {
+private:
+    int accNum;
+    double balance;
+
+public:
+    BankAccount(int num, double bal) : accNum(num), balance(bal) {}
+
+    void withdraw(double amount) {
+        cout &lt;&lt; "Attempting withdrawal of Rs. " &lt;&lt; amount &lt;&lt; " from Acc #" &lt;&lt; accNum &lt;&lt; " (Bal: Rs. " &lt;&lt; balance &lt;&lt; ")..." &lt;&lt; endl;
+        if (amount &gt; balance) {
+            throw InsufficientFundsException(balance, amount); // Throw custom exception
+        }
+        balance -= amount;
+        cout &lt;&lt; "Withdrawal Successful! Remaining Balance: Rs. " &lt;&lt; balance &lt;&lt; endl;
+    }
+};
+
+int main() {
+    BankAccount myAccount(50124, 15000.0);
+
+    try {
+        myAccount.withdraw(5000.0);   // Valid transaction
+        myAccount.withdraw(12000.0);  // Triggers InsufficientFundsException
+    }
+    catch (const InsufficientFundsException &amp;ex) {
+        cout &lt;&lt; "[Custom Exception Caught] " &lt;&lt; ex.what() &lt;&lt; endl;
+        cout &lt;&lt; "Please deposit at least Rs. " &lt;&lt; ex.getDeficit() &lt;&lt; " to complete transaction." &lt;&lt; endl;
+    }
+    catch (const exception &amp;stdEx) {
+        cout &lt;&lt; "[Standard Exception Caught] " &lt;&lt; stdEx.what() &lt;&lt; endl;
+    }
+    catch (...) {
+        cout &lt;&lt; "[Unknown Exception] Generic safety trap." &lt;&lt; endl;
+    }
+
+    return 0;
+}</code></pre>
+      </div>
+    </div>
+
+  </div><!-- /.exam-section-body -->
+</div><!-- /#section-c -->
+
+<!-- Quick Revision Summary Table -->
+<div class="exam-section-card" style="margin-top: 32px;">
+  <div class="exam-section-header" style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);">
+    <div class="exam-section-header-inner">
+      <span class="exam-section-badge" style="background: #e11d48; color: #ffffff;">EXAM SCORE BOOSTER</span>
+      <h3 class="exam-section-title">BCA-301 High-Frequency Formula &amp; Syntax Summary</h3>
+      <p class="exam-section-rule">Instant 5-Minute Pre-Examination Cheat Sheet</p>
+    </div>
+  </div>
+  <div class="exam-section-body">
+    <div class="table-wrap">
+      <table class="exam-table">
+        <thead>
+          <tr>
+            <th>Concept / Mechanism</th>
+            <th>Canonical C++ Syntax</th>
+            <th>University Exam Rule</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Virtual Base Class (Diamond Problem)</strong></td>
+            <td><code>class B : virtual public A { ... };</code></td>
+            <td>Guarantees only one shared instance of Base A exists in derived Class D.</td>
+          </tr>
+          <tr>
+            <td><strong>Pure Virtual Function &amp; Abstract Class</strong></td>
+            <td><code>virtual void display() = 0;</code></td>
+            <td>Cannot instantiate base class directly; mandatory override in derived.</td>
+          </tr>
+          <tr>
+            <td><strong>Virtual Destructor in Base</strong></td>
+            <td><code>virtual ~Base() { ... }</code></td>
+            <td>Mandatory when deleting derived objects via base pointers to prevent memory leaks.</td>
+          </tr>
+          <tr>
+            <td><strong>Binary Operator Overload (Member)</strong></td>
+            <td><code>Complex operator+(const Complex &amp;c);</code></td>
+            <td>Calling object is left operand (<code>*this</code>); accepts 1 explicit argument.</td>
+          </tr>
+          <tr>
+            <td><strong>Binary Operator Overload (Friend)</strong></td>
+            <td><code>friend Complex operator+(Complex a, Complex b);</code></td>
+            <td>Accepts 2 explicit arguments; enables symmetric conversions (e.g. <code>5 + c1</code>).</td>
+          </tr>
+          <tr>
+            <td><strong>Class to Basic Conversion</strong></td>
+            <td><code>operator float() const { return val; }</code></td>
+            <td>No return type specified; no arguments; must be a member function.</td>
+          </tr>
+          <tr>
+            <td><strong>File Random Access Position</strong></td>
+            <td><code>file.seekg(0, ios::end); int sz = file.tellg();</code></td>
+            <td><code>seekg</code> moves get pointer; <code>tellg</code> returns current byte offset.</td>
+          </tr>
+          <tr>
+            <td><strong>Generic Class Template</strong></td>
+            <td><code>template &lt;typename T&gt; class Stack { ... };</code></td>
+            <td>Instantiated per type at compile-time: <code>Stack&lt;int&gt; s;</code></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- Related Semester 3 Archives Navigation -->
+<div class="next-prev-nav" style="margin-top: 36px; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px;">
+  <a href="{{ '/ccsu/bca/semester-3/data-structures-important-questions/' | relative_url }}" class="jump-pill jump-pill-emerald" style="padding: 16px; border-radius: 10px; display: block; text-align: left; text-decoration: none;">
+    <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; opacity: 0.85;">&larr; Previous Subject</div>
+    <div style="font-size: 15px; font-weight: 700; margin-top: 4px;">Data Structures Using C &amp; C++ (BCA-302)</div>
+    <div style="font-size: 12px; opacity: 0.85; margin-top: 2px;">38 Questions &bull; 7 SVG Trees &bull; 2018–2021 Solved</div>
+  </a>
+  <a href="{{ '/ccsu/bca/semester-3/computer-architecture-important-questions/' | relative_url }}" class="jump-pill jump-pill-purple" style="padding: 16px; border-radius: 10px; display: block; text-align: right; text-decoration: none;">
+    <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; opacity: 0.85;">Next Subject &rarr;</div>
+    <div style="font-size: 15px; font-weight: 700; margin-top: 4px;">Computer Architecture &amp; Assembly (BCA-303)</div>
+    <div style="font-size: 12px; opacity: 0.85; margin-top: 2px;">40 Questions &bull; 10 SVG Diagrams &bull; 2017–2021 Solved</div>
+  </a>
+</div>
+
+<!-- Structured Data (JSON-LD) for SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "CCSU BCA 3rd Sem Object Oriented Programming with C++ (BCA-301) Most Important Questions & Solved Exam Notebook",
+  "description": "Exhaustive university examination preparation guide and solved notebook for CCSU BCA-301 OOP with C++ featuring 40 recurring questions across 2017–2022 papers with diamond problem virtual base class, vtable/vptr runtime polymorphism, operator overloading, and stream hierarchies.",
+  "author": {
+    "@type": "Organization",
+    "name": "IncStudy Academic Team",
+    "url": "https://incstudy.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "IncStudy",
+    "url": "https://incstudy.com"
+  },
+  "inLanguage": "en-US",
+  "educationalLevel": "BCA Semester 3",
+  "about": [
+    "Object Oriented Programming with C++",
+    "Virtual Functions",
+    "Operator Overloading",
+    "Diamond Problem Virtual Inheritance",
+    "C++ Streams File Handling",
+    "Templates and Exception Handling"
+  ]
+}
+</script>

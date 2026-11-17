@@ -1,0 +1,24 @@
+{% assign cta = site.data.homepage.cta_banner %}
+<section class="home-section home-section-bottom">
+  <div class="home-container">
+    <div class="bottom-cta-banner">
+      <div class="bottom-cta-left">
+        <span class="cta-target-badge" aria-hidden="true">
+          {% include ui/icon.html name="target" size=26 %}
+        </span>
+        <div>
+          <h2>{{ cta.title }}</h2>
+          <p>{{ cta.description }}</p>
+        </div>
+      </div>
+
+      <div class="bottom-cta-right">
+        <a href="{{ cta.cta_url | relative_url }}" class="hero-primary-btn">
+          <span>{{ cta.cta_label }}</span>
+          {% include ui/icon.html name="arrow-right" size=16 %}
+        </a>
+        <span class="cta-micro-copy">{{ cta.highlights }}</span>
+      </div>
+    </div>
+  </div>
+</section>

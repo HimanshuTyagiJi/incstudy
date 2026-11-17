@@ -1,0 +1,555 @@
+# ==============================================================================
+# CCSU BCA-305 (Elements of Statistics) Question Bank Archive
+# Curated from authentic university examination papers (2017, 2018, 2019, 2020, 2021, 2022)
+# ==============================================================================
+
+course: "BCA"
+semester: 3
+subject_code: "BCA-305"
+subject_name: "Elements of Statistics"
+university: "CCSU Meerut"
+total_papers: 6
+total_questions: 78
+
+recurring_topics:
+  - name: "Measures of Central Tendency (Mean, Median, Mode & Empirical Relation)"
+    frequency: 6
+    appearances: [2017, 2018, 2019, 2020, 2021, 2022]
+  - name: "Measures of Dispersion (Standard Deviation, Variance & Coefficient of Variation)"
+    frequency: 6
+    appearances: [2017, 2018, 2019, 2020, 2021, 2022]
+  - name: "Karl Pearson & Spearman Rank Correlation Coefficient"
+    frequency: 6
+    appearances: [2017, 2018, 2019, 2020, 2021, 2022]
+  - name: "Two Regression Equations & Properties of Regression Coefficients"
+    frequency: 6
+    appearances: [2017, 2018, 2019, 2020, 2021, 2022]
+  - name: "Probability Theorems (Addition, Multiplication & Bayes' Theorem)"
+    frequency: 6
+    appearances: [2017, 2018, 2019, 2020, 2021, 2022]
+  - name: "Theoretical Distributions (Binomial, Poisson & Normal Distribution)"
+    frequency: 5
+    appearances: [2017, 2018, 2019, 2021, 2022]
+  - name: "Fisher's Ideal Index Number & Time / Factor Reversal Tests"
+    frequency: 5
+    appearances: [2017, 2018, 2019, 2020, 2022]
+  - name: "Components of Time Series & Least Squares Trend Fitting"
+    frequency: 5
+    appearances: [2017, 2018, 2020, 2021, 2022]
+  - name: "Statistical Quality Control (SQC) & X-bar / R Control Charts"
+    frequency: 4
+    appearances: [2018, 2019, 2021, 2022]
+  - name: "Skewness, Kurtosis & Ogive Curves for Median Determination"
+    frequency: 4
+    appearances: [2017, 2019, 2020, 2021]
+  - name: "Primary vs Secondary Data Collection Methods"
+    frequency: 4
+    appearances: [2017, 2018, 2020, 2021]
+  - name: "Permutations & Combinations in Probability"
+    frequency: 3
+    appearances: [2018, 2019, 2022]
+
+papers:
+  - year: 2017
+    session: "December 2017"
+    max_marks: 75
+    time: "3 Hours"
+    questions:
+      - id: "2017-A-Q1"
+        section: "A"
+        q_no: "Q1"
+        marks: 3
+        topic: "Scope of Statistics"
+        question: "Define Statistics. Mention any three important applications of statistics in computer science."
+      - id: "2017-A-Q2"
+        section: "A"
+        q_no: "Q2"
+        marks: 3
+        topic: "Empirical Formula"
+        question: "State the empirical relationship between Mean, Median, and Mode in a moderately skewed distribution."
+      - id: "2017-A-Q3"
+        section: "A"
+        q_no: "Q3"
+        marks: 3
+        topic: "Coefficient of Variation"
+        question: "What is Coefficient of Variation (C.V.)? State its formula."
+      - id: "2017-A-Q4"
+        section: "A"
+        q_no: "Q4"
+        marks: 3
+        topic: "Correlation Range"
+        question: "State the limits of Karl Pearson's coefficient of correlation. What does r = 0 signify?"
+      - id: "2017-A-Q5"
+        section: "A"
+        q_no: "Q5"
+        marks: 3
+        topic: "Mutually Exclusive Events"
+        question: "Define mutually exclusive events and independent events in probability."
+      - id: "2017-B-Q6"
+        section: "B"
+        q_no: "Q6"
+        marks: 7.5
+        topic: "Median from Ogives"
+        question: "Explain the method of graphic location of Median using 'Less than' and 'More than' Ogive curves."
+      - id: "2017-B-Q7"
+        section: "B"
+        q_no: "Q7"
+        marks: 7.5
+        topic: "Rank Correlation"
+        question: "Calculate Spearman's rank correlation coefficient for ranks awarded by two judges in a music contest."
+      - id: "2017-B-Q8"
+        section: "B"
+        q_no: "Q8"
+        marks: 7.5
+        topic: "Addition Theorem"
+        question: "State and prove the Addition Theorem of Probability for any two events A and B."
+      - id: "2017-C-Q9"
+        section: "C"
+        q_no: "Q9"
+        marks: 15
+        topic: "Standard Deviation Calculation"
+        question: "Calculate Arithmetic Mean, Standard Deviation, and Coefficient of Variation for continuous grouped frequency distribution of marks."
+      - id: "2017-C-Q10"
+        section: "C"
+        q_no: "Q10"
+        marks: 15
+        topic: "Regression Equations"
+        question: "Obtain the two regression equations (Y on X and X on Y) from bivariate data. If the two regression equations are 3X + 2Y = 26 and 6X + Y = 31, find the means of X and Y and correlation coefficient r."
+      - id: "2017-C-Q11"
+        section: "C"
+        q_no: "Q11"
+        marks: 15
+        topic: "Fisher's Ideal Index"
+        question: "Why is Fisher's Index Number called an 'Ideal Index Number'? Prove that Fisher's index satisfies both Time Reversal Test and Factor Reversal Test."
+      - id: "2017-C-Q12"
+        section: "C"
+        q_no: "Q12"
+        marks: 15
+        topic: "Normal Distribution"
+        question: "Discuss the properties of the Normal Distribution curve. In a normal distribution of 1000 students, the mean marks are 60 and standard deviation is 10. Find the number of students scoring above 75."
+      - id: "2017-C-Q13"
+        section: "C"
+        q_no: "Q13"
+        marks: 15
+        topic: "Bayes Theorem"
+        question: "State and prove Bayes' Theorem of inverse probability. Solve a standard three-machine defective bolts production problem."
+
+  - year: 2018
+    session: "December 2018"
+    max_marks: 75
+    time: "3 Hours"
+    questions:
+      - id: "2018-A-Q1"
+        section: "A"
+        q_no: "Q1"
+        marks: 3
+        topic: "Primary vs Secondary Data"
+        question: "Distinguish between Primary Data and Secondary Data."
+      - id: "2018-A-Q2"
+        section: "A"
+        q_no: "Q2"
+        marks: 3
+        topic: "Harmonic Mean"
+        question: "What is Harmonic Mean? When is it the most appropriate average?"
+      - id: "2018-A-Q3"
+        section: "A"
+        q_no: "Q3"
+        marks: 3
+        topic: "Regression Coefficients"
+        question: "State the mathematical relationship between correlation coefficient r and the two regression coefficients byx and bxy."
+      - id: "2018-A-Q4"
+        section: "A"
+        q_no: "Q4"
+        marks: 3
+        topic: "Binomial Conditions"
+        question: "State the essential conditions for applying the Binomial Probability Distribution."
+      - id: "2018-A-Q5"
+        section: "A"
+        q_no: "Q5"
+        marks: 3
+        topic: "SQC Concept"
+        question: "What is Statistical Quality Control (SQC)? Distinguish between chance and assignable causes of variation."
+      - id: "2018-B-Q6"
+        section: "B"
+        q_no: "Q6"
+        marks: 7.5
+        topic: "Properties of Arithmetic Mean"
+        question: "State and prove three mathematical properties of the Arithmetic Mean."
+      - id: "2018-B-Q7"
+        section: "B"
+        q_no: "Q7"
+        marks: 7.5
+        topic: "Time Series Components"
+        question: "Explain the four components of a Time Series: Trend, Seasonal, Cyclical, and Irregular variations."
+      - id: "2018-B-Q8"
+        section: "B"
+        q_no: "Q8"
+        marks: 7.5
+        topic: "Conditional Probability"
+        question: "Define Conditional Probability. State and prove the Multiplication Theorem of Probability."
+      - id: "2018-C-Q9"
+        section: "C"
+        q_no: "Q9"
+        marks: 15
+        topic: "Karl Pearson Correlation"
+        question: "Calculate Karl Pearson's coefficient of correlation between age of husbands and wives from given bivariate frequency data."
+      - id: "2018-C-Q10"
+        section: "C"
+        q_no: "Q10"
+        marks: 15
+        topic: "Least Squares Linear Trend"
+        question: "Fit a straight line trend by the method of least squares to the given annual production figures and estimate output for the year 2025."
+      - id: "2018-C-Q11"
+        section: "C"
+        q_no: "Q11"
+        marks: 15
+        topic: "X-bar and R Charts"
+        question: "Explain the construction and interpretation of Mean (X-bar) and Range (R) control charts with control limits formulas."
+      - id: "2018-C-Q12"
+        section: "C"
+        q_no: "Q12"
+        marks: 15
+        topic: "Poisson Distribution"
+        question: "State the probability mass function of the Poisson distribution. Derive its mean and variance. Solve a telephone exchange arrival numerical."
+      - id: "2018-C-Q13"
+        section: "C"
+        q_no: "Q13"
+        marks: 15
+        topic: "Index Numbers Laspeyre and Paasche"
+        question: "Calculate Laspeyre's, Paasche's, and Fisher's price index numbers for given base year and current year price-quantity data."
+
+  - year: 2019
+    session: "December 2019"
+    max_marks: 75
+    time: "3 Hours"
+    questions:
+      - id: "2019-A-Q1"
+        section: "A"
+        q_no: "Q1"
+        marks: 3
+        topic: "Geometric Mean"
+        question: "Define Geometric Mean. Where is geometric mean preferred over arithmetic mean?"
+      - id: "2019-A-Q2"
+        section: "A"
+        q_no: "Q2"
+        marks: 3
+        topic: "Quartile Deviation"
+        question: "What is Quartile Deviation (Semi-Interquartile Range)? State its formula."
+      - id: "2019-A-Q3"
+        section: "A"
+        q_no: "Q3"
+        marks: 3
+        topic: "Correlation vs Regression"
+        question: "State two differences between correlation and regression analysis."
+      - id: "2019-A-Q4"
+        section: "A"
+        q_no: "Q4"
+        marks: 3
+        topic: "Axiomatic Probability"
+        question: "State the three Kolmogorov axioms of probability."
+      - id: "2019-A-Q5"
+        section: "A"
+        q_no: "Q5"
+        marks: 3
+        topic: "Control Limits"
+        question: "What are 3-sigma control limits in Statistical Quality Control?"
+      - id: "2019-B-Q6"
+        section: "B"
+        q_no: "Q6"
+        marks: 7.5
+        topic: "Skewness Measures"
+        question: "Explain Karl Pearson's and Bowley's coefficient of skewness with formulas."
+      - id: "2019-B-Q7"
+        section: "B"
+        q_no: "Q7"
+        marks: 7.5
+        topic: "Factor Reversal Test"
+        question: "Explain the Factor Reversal Test for an index number and verify it for Fisher's ideal formula."
+      - id: "2019-B-Q8"
+        section: "B"
+        q_no: "Q8"
+        marks: 7.5
+        topic: "Binomial Mean and Variance"
+        question: "Prove that for a Binomial distribution with parameters n and p, Mean = np and Variance = npq."
+      - id: "2019-C-Q9"
+        section: "C"
+        q_no: "Q9"
+        marks: 15
+        topic: "Combined Mean and Dispersion"
+        question: "Calculate the combined mean and combined standard deviation of two groups of students with given sizes, means, and variances."
+      - id: "2019-C-Q10"
+        section: "C"
+        q_no: "Q10"
+        marks: 15
+        topic: "Regression Line Angle"
+        question: "Prove that the acute angle theta between the two regression lines is given by tan theta = ((1 - r^2)/|r|) * ((sigma_x * sigma_y)/(sigma_x^2 + sigma_y^2)). What happens when r = 0 and r = +/- 1?"
+      - id: "2019-C-Q11"
+        section: "C"
+        q_no: "Q11"
+        marks: 15
+        topic: "Bayes Theorem Application"
+        question: "A doctor examines a patient for a rare disease. Use Bayes' theorem to compute the posterior probability given false positive and sensitivity rates."
+      - id: "2019-C-Q12"
+        section: "C"
+        q_no: "Q12"
+        marks: 15
+        topic: "Normal Distribution Area"
+        question: "Explain the area properties of the standard normal distribution curve Z. Solve a practical business manufacturing tolerance problem."
+      - id: "2019-C-Q13"
+        section: "C"
+        q_no: "Q13"
+        marks: 15
+        topic: "Time Series Moving Averages"
+        question: "Explain the method of Moving Averages for trend determination. Calculate 3-yearly moving averages for the given annual data."
+
+  - year: 2020
+    session: "Special / Pandemic Session 2020"
+    max_marks: 75
+    time: "3 Hours"
+    questions:
+      - id: "2020-A-Q1"
+        section: "A"
+        q_no: "Q1"
+        marks: 3
+        topic: "Requisites of Good Average"
+        question: "State any three essential requisites of a good measure of central tendency."
+      - id: "2020-A-Q2"
+        section: "A"
+        q_no: "Q2"
+        marks: 3
+        topic: "Variance"
+        question: "Define Variance. Why is variance always non-negative?"
+      - id: "2020-A-Q3"
+        section: "A"
+        q_no: "Q3"
+        marks: 3
+        topic: "Scatter Diagram"
+        question: "Draw scatter diagrams showing perfect positive and perfect negative correlation."
+      - id: "2020-A-Q4"
+        section: "A"
+        q_no: "Q4"
+        marks: 3
+        topic: "Probability Odds"
+        question: "If odds in favor of an event are 3:5, find the probability of its occurrence and non-occurrence."
+      - id: "2020-A-Q5"
+        section: "A"
+        q_no: "Q5"
+        marks: 3
+        topic: "Consumer Price Index"
+        question: "What is the Consumer Price Index (CPI)? How is it constructed?"
+      - id: "2020-B-Q6"
+        section: "B"
+        q_no: "Q6"
+        marks: 7.5
+        topic: "Median and Mode Comparison"
+        question: "Compare Median and Mode with respect to extreme values and mathematical tractability."
+      - id: "2020-B-Q7"
+        section: "B"
+        q_no: "Q7"
+        marks: 7.5
+        topic: "Properties of Regression Coefficients"
+        question: "State and prove that the arithmetic mean of the two regression coefficients is greater than or equal to the correlation coefficient r."
+      - id: "2020-B-Q8"
+        section: "B"
+        q_no: "Q8"
+        marks: 7.5
+        topic: "Fraction Defective Chart"
+        question: "Explain the construction of the p-chart (fraction defective) in statistical quality control."
+      - id: "2020-C-Q9"
+        section: "C"
+        q_no: "Q9"
+        marks: 15
+        topic: "Continuous Median and Mode"
+        question: "Calculate Median and Mode from a continuous frequency table with unequal class intervals."
+      - id: "2020-C-Q10"
+        section: "C"
+        q_no: "Q10"
+        marks: 15
+        topic: "Bivariate Regression Analysis"
+        question: "Find the two regression lines for advertising expenditure (X) and sales revenue (Y). Predict sales when advertising expenditure is Rs. 10 Lakhs."
+      - id: "2020-C-Q11"
+        section: "C"
+        q_no: "Q11"
+        marks: 15
+        topic: "Time Reversal and Factor Reversal"
+        question: "Define Time Reversal Test and Factor Reversal Test. Prove that Laspeyre's and Paasche's formulas fail these tests while Fisher's formula satisfies both."
+      - id: "2020-C-Q12"
+        section: "C"
+        q_no: "Q12"
+        marks: 15
+        topic: "Binomial Fitting"
+        question: "Fit a Binomial distribution to the observed data of tossing 5 fair coins 320 times and calculate theoretical frequencies."
+      - id: "2020-C-Q13"
+        section: "C"
+        q_no: "Q13"
+        marks: 15
+        topic: "Time Series Least Squares"
+        question: "Fit a parabolic trend Y = a + bX + cX^2 to the given sales data using the method of least squares."
+
+  - year: 2021
+    session: "December 2021"
+    max_marks: 75
+    time: "3 Hours"
+    questions:
+      - id: "2021-A-Q1"
+        section: "A"
+        q_no: "Q1"
+        marks: 3
+        topic: "Frequency Density"
+        question: "What is frequency density in a histogram with unequal class intervals?"
+      - id: "2021-A-Q2"
+        section: "A"
+        q_no: "Q2"
+        marks: 3
+        topic: "Combined Mean Formula"
+        question: "State the mathematical formula for the combined arithmetic mean of two series."
+      - id: "2021-A-Q3"
+        section: "A"
+        q_no: "Q3"
+        marks: 3
+        topic: "Standard Deviation Best Measure"
+        question: "Why is Standard Deviation considered the most reliable and best measure of dispersion?"
+      - id: "2021-A-Q4"
+        section: "A"
+        q_no: "Q4"
+        marks: 3
+        topic: "Regression Origin Independence"
+        question: "Explain why regression coefficients are independent of change of origin but not of scale."
+      - id: "2021-A-Q5"
+        section: "A"
+        q_no: "Q5"
+        marks: 3
+        topic: "Total Probability Rule"
+        question: "State the Law of Total Probability."
+      - id: "2021-B-Q6"
+        section: "B"
+        q_no: "Q6"
+        marks: 7.5
+        topic: "Mean Deviation vs Standard Deviation"
+        question: "Differentiate between Mean Deviation and Standard Deviation. Why does Mean Deviation ignore algebraic signs?"
+      - id: "2021-B-Q7"
+        section: "B"
+        q_no: "Q7"
+        marks: 7.5
+        topic: "Spearman Tied Ranks"
+        question: "Explain the correction factor m(m^2 - 1)/12 added to Spearman's rank formula when tied ranks occur."
+      - id: "2021-B-Q8"
+        section: "B"
+        q_no: "Q8"
+        marks: 7.5
+        topic: "Poisson Distribution Properties"
+        question: "State five important mathematical and empirical properties of the Poisson distribution."
+      - id: "2021-C-Q9"
+        section: "C"
+        q_no: "Q9"
+        marks: 15
+        topic: "Comprehensive Dispersion Numerical"
+        question: "Two factories A and B report weekly wages. Factory A: N1=50, Mean=Rs. 300, Var=25. Factory B: N2=100, Mean=Rs. 250, Var=36. Which factory has a greater wage bill, and which factory has greater consistency in wages?"
+      - id: "2021-C-Q10"
+        section: "C"
+        q_no: "Q10"
+        marks: 15
+        topic: "Karl Pearson Bivariate Table"
+        question: "Compute Karl Pearson's correlation coefficient from a bivariate correlation table of scores in Mathematics and Statistics."
+      - id: "2021-C-Q11"
+        section: "C"
+        q_no: "Q11"
+        marks: 15
+        topic: "Least Squares Straight Line"
+        question: "Fit a straight line trend Y = a + bX to the given census population data of India (1971 to 2021) and estimate population for 2031."
+      - id: "2021-C-Q12"
+        section: "C"
+        q_no: "Q12"
+        marks: 15
+        topic: "Bayes Theorem Diagnostic Test"
+        question: "Derive Bayes' theorem formula and solve a standard medical diagnostics problem involving sensitivity, specificity, and base rate."
+      - id: "2021-C-Q13"
+        section: "C"
+        q_no: "Q13"
+        marks: 15
+        topic: "Control Charts for Attributes"
+        question: "Explain the statistical theory behind p-charts and c-charts. Draw control limits and discuss action criteria for out-of-control processes."
+
+  - year: 2022
+    session: "December 2022"
+    max_marks: 75
+    time: "3 Hours"
+    questions:
+      - id: "2022-A-Q1"
+        section: "A"
+        q_no: "Q1"
+        marks: 3
+        topic: "Qualitative vs Quantitative"
+        question: "Differentiate between qualitative attributes and quantitative variables with examples."
+      - id: "2022-A-Q2"
+        section: "A"
+        q_no: "Q2"
+        marks: 3
+        topic: "Root Mean Square Deviation"
+        question: "Prove that root mean square deviation is minimum when measured about the arithmetic mean."
+      - id: "2022-A-Q3"
+        section: "A"
+        q_no: "Q3"
+        marks: 3
+        topic: "Regression Intersection"
+        question: "At what coordinates do the two regression lines intersect?"
+      - id: "2022-A-Q4"
+        section: "A"
+        q_no: "Q4"
+        marks: 3
+        topic: "Normal Curve Area"
+        question: "What percentage of area lies under the standard normal curve between mu - 2*sigma and mu + 2*sigma?"
+      - id: "2022-A-Q5"
+        section: "A"
+        q_no: "Q5"
+        marks: 3
+        topic: "Price Index Base Year"
+        question: "What is the importance of choosing a normal base year in index number construction?"
+      - id: "2022-B-Q6"
+        section: "B"
+        q_no: "Q6"
+        marks: 7.5
+        topic: "Geometric Mean Properties"
+        question: "State and prove that the geometric mean of the ratios of two series is equal to the ratio of their geometric means."
+      - id: "2022-B-Q7"
+        section: "B"
+        q_no: "Q7"
+        marks: 7.5
+        topic: "Properties of Correlation Coefficient"
+        question: "Prove that Karl Pearson's correlation coefficient r lies between -1 and +1 inclusive."
+      - id: "2022-B-Q8"
+        section: "B"
+        q_no: "Q8"
+        marks: 7.5
+        topic: "Time Series Additive vs Multiplicative"
+        question: "Differentiate between the Additive model (Y = T + S + C + I) and Multiplicative model (Y = T * S * C * I) of Time Series."
+      - id: "2022-C-Q9"
+        section: "C"
+        q_no: "Q9"
+        marks: 15
+        topic: "Combined Statistics and Outliers"
+        question: "The mean and standard deviation of 100 observations were calculated as 40 and 5.1. Later it was found that one observation 50 was misread as 40. Find the correct mean and standard deviation."
+      - id: "2022-C-Q10"
+        section: "C"
+        q_no: "Q10"
+        marks: 15
+        topic: "Master Regression Problem"
+        question: "From the given data of heights of fathers and sons, calculate: (i) Correlation coefficient, (ii) Both regression equations, (iii) Expected height of son when father's height is 68 inches."
+      - id: "2022-C-Q11"
+        section: "C"
+        q_no: "Q11"
+        marks: 15
+        topic: "Fisher's Tests Demonstration"
+        question: "From the given commodity data, construct Fisher's Ideal Index Number and demonstrate step-by-step verification of Time Reversal and Factor Reversal tests."
+      - id: "2022-C-Q12"
+        section: "C"
+        q_no: "Q12"
+        marks: 15
+        topic: "Normal Distribution Probability"
+        question: "State the equation of the normal curve. A manufacturing process produces bolts with mean diameter 0.502 inch and SD 0.005 inch. Tolerances are 0.500 +/- 0.010 inch. What percentage of bolts will be rejected?"
+      - id: "2022-C-Q13"
+        section: "C"
+        q_no: "Q13"
+        marks: 15
+        topic: "X-bar and R Chart Numerical"
+        question: "Given 10 samples of size 5 each, compute the control limits for Mean (X-bar) and Range (R) charts. Draw the charts and state whether the process is under statistical control."

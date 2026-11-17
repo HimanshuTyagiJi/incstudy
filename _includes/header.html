@@ -1,0 +1,23 @@
+<a class="skip-link" href="#main-content">Skip to content</a>
+
+<header class="site-header" id="mainHeader">
+  <div class="header-inner">
+    {% include header/brand.html %}
+
+    <!-- Desktop Primary Navigation -->
+    <nav class="primary-navigation" id="primary-navigation" aria-label="Main navigation">
+      {% include header/menu-links.html %}
+    </nav>
+
+    <!-- Desktop Right Utility Actions (Search + Theme + CTA Pill) -->
+    <div class="header-desktop-actions">
+      {% include header/search-bar.html label="Search study notes" %}
+      {% include header/theme-toggle.html %}
+      {% include header/cta-btn.html %}
+    </div>
+
+    {% include header/mobile-actions.html %}
+  </div>
+</header>
+
+{% include header/mobile-drawer.html %}

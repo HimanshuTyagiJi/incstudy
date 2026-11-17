@@ -1,0 +1,9 @@
+course:
+  - label: BCA overview
+    url: /courses/bca/
+  - label: CCSU BCA
+    url: /ccsu/bca/
+  - label: Semester 1
+    url: /ccsu/bca/semester-1/
+  - label: All universities
+    url: /universities/

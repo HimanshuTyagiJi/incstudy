@@ -1,0 +1,8 @@
+---
+layout: full-width
+title: Universities
+description: Select your university to explore course and semester resources.
+permalink: /universities/
+eyebrow: FIND YOUR UNIVERSITY
+---
+<div class="intro-copy"><p>Choose a university to find course resources mapped to its syllabus. University availability and syllabus coverage will expand as verified material is added.</p></div><div class="card-grid university-grid">{% for university in site.data.universities %}{% if university.active %}{% include university-card.html university=university %}{% endif %}{% endfor %}</div>

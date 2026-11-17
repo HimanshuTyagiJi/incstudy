@@ -1,0 +1,561 @@
+# ==============================================================================
+# CCSU BCA-301 (Object Oriented Programming with C++) Question Bank Archive
+# Curated from authentic university examination papers (2017, 2018, 2019, 2020, 2021, 2022)
+# ==============================================================================
+
+course: "BCA"
+semester: 3
+subject_code: "BCA-301"
+subject_name: "Object Oriented Programming with C++"
+university: "CCSU Meerut"
+total_papers: 6
+total_questions: 78
+
+recurring_topics:
+  - name: "Pillars of OOP vs Procedural Programming"
+    frequency: 6
+    appearances: [2017, 2018, 2019, 2020, 2021, 2022]
+  - name: "Constructors & Destructors (Default, Parameterized, Copy)"
+    frequency: 6
+    appearances: [2017, 2018, 2019, 2020, 2021, 2022]
+  - name: "Operator Overloading (Unary & Binary Complex Addition)"
+    frequency: 6
+    appearances: [2017, 2018, 2019, 2020, 2021, 2022]
+  - name: "Inheritance Types & The Diamond Problem (Virtual Base Class)"
+    frequency: 6
+    appearances: [2017, 2018, 2019, 2020, 2021, 2022]
+  - name: "Virtual Functions, Pure Virtual Functions & Abstract Classes"
+    frequency: 5
+    appearances: [2017, 2018, 2019, 2021, 2022]
+  - name: "Friend Functions and Friend Classes"
+    frequency: 5
+    appearances: [2017, 2018, 2019, 2020, 2022]
+  - name: "File Handling & C++ Streams (ifstream, ofstream, seekg, tellg)"
+    frequency: 5
+    appearances: [2017, 2018, 2019, 2020, 2021]
+  - name: "Templates (Function & Class Templates)"
+    frequency: 4
+    appearances: [2018, 2019, 2021, 2022]
+  - name: "Exception Handling Mechanism (try, catch, throw)"
+    frequency: 4
+    appearances: [2017, 2019, 2020, 2022]
+  - name: "Static Data Members & Static Member Functions"
+    frequency: 4
+    appearances: [2017, 2018, 2020, 2021]
+  - name: "Inline Functions vs Macros"
+    frequency: 4
+    appearances: [2017, 2019, 2021, 2022]
+  - name: "Dynamic Memory Management (new/delete vs malloc/free)"
+    frequency: 4
+    appearances: [2018, 2019, 2020, 2021]
+  - name: "Function Overloading vs Overriding"
+    frequency: 4
+    appearances: [2017, 2018, 2020, 2022]
+  - name: "this Pointer & Object Pointers"
+    frequency: 3
+    appearances: [2018, 2019, 2021]
+
+papers:
+  - year: 2017
+    session: "December 2017"
+    max_marks: 75
+    time: "3 Hours"
+    questions:
+      - id: "2017-A-Q1"
+        section: "A"
+        q_no: "Q1"
+        marks: 3
+        topic: "OOP Basics"
+        question: "What is an object? How is it different from a class?"
+      - id: "2017-A-Q2"
+        section: "A"
+        q_no: "Q2"
+        marks: 3
+        topic: "Inline Functions"
+        question: "What is an inline function? When is a function not inlined by the compiler?"
+      - id: "2017-A-Q3"
+        section: "A"
+        q_no: "Q3"
+        marks: 3
+        topic: "Scope Resolution"
+        question: "State the uses of the Scope Resolution Operator (::) in C++."
+      - id: "2017-A-Q4"
+        section: "A"
+        q_no: "Q4"
+        marks: 3
+        topic: "Reference Variables"
+        question: "What is a reference variable? How does it differ from a pointer variable?"
+      - id: "2017-A-Q5"
+        section: "A"
+        q_no: "Q5"
+        marks: 3
+        topic: "Access Specifiers"
+        question: "Explain the role of public, private, and protected visibility modes in C++."
+      - id: "2017-B-Q6"
+        section: "B"
+        q_no: "Q6"
+        marks: 7.5
+        topic: "Friend Function"
+        question: "What is a friend function? Write a C++ program to find the largest of two private numbers of two different classes using a friend function."
+      - id: "2017-B-Q7"
+        section: "B"
+        q_no: "Q7"
+        marks: 7.5
+        topic: "Static Members"
+        question: "Explain static data members and static member functions with a suitable programming example."
+      - id: "2017-B-Q8"
+        section: "B"
+        q_no: "Q8"
+        marks: 7.5
+        topic: "Constructor Overloading"
+        question: "What is constructor overloading? Illustrate default, parameterized, and copy constructors with code."
+      - id: "2017-C-Q9"
+        section: "C"
+        q_no: "Q9"
+        marks: 15
+        topic: "Operator Overloading"
+        question: "What is operator overloading? Write a complete C++ program to overload the binary '+' operator to add two Complex numbers. Explain rules for operator overloading."
+      - id: "2017-C-Q10"
+        section: "C"
+        q_no: "Q10"
+        marks: 15
+        topic: "Virtual Functions & Polymorphism"
+        question: "What is dynamic binding? Explain the concept of virtual functions and pure virtual functions. Explain the vtable/vptr mechanism with an abstract class example."
+      - id: "2017-C-Q11"
+        section: "C"
+        q_no: "Q11"
+        marks: 15
+        topic: "Inheritance & Diamond Problem"
+        question: "Explain the various types of inheritance supported in C++. What is the diamond problem (multipath inheritance)? How is it resolved using virtual base classes?"
+      - id: "2017-C-Q12"
+        section: "C"
+        q_no: "Q12"
+        marks: 15
+        topic: "File Handling"
+        question: "Explain the C++ stream class hierarchy. Write a C++ program to write student records to a binary file and read them back using read() and write() functions."
+      - id: "2017-C-Q13"
+        section: "C"
+        q_no: "Q13"
+        marks: 15
+        topic: "Exception Handling"
+        question: "Explain the exception handling mechanism in C++ using try, throw, and catch blocks. How can multiple catch statements and a catch-all block be used?"
+
+  - year: 2018
+    session: "December 2018"
+    max_marks: 75
+    time: "3 Hours"
+    questions:
+      - id: "2018-A-Q1"
+        section: "A"
+        q_no: "Q1"
+        marks: 3
+        topic: "Data Hiding"
+        question: "What is data encapsulation and data abstraction? How are they achieved in C++?"
+      - id: "2018-A-Q2"
+        section: "A"
+        q_no: "Q2"
+        marks: 3
+        topic: "Memory Management"
+        question: "Differentiate between 'new' / 'delete' operators and 'malloc()' / 'free()' functions."
+      - id: "2018-A-Q3"
+        section: "A"
+        q_no: "Q3"
+        marks: 3
+        topic: "Destructor"
+        question: "What is a destructor? When is it called? Can a destructor be overloaded?"
+      - id: "2018-A-Q4"
+        section: "A"
+        q_no: "Q4"
+        marks: 3
+        topic: "this Pointer"
+        question: "Explain the significance of 'this' pointer with a short code snippet."
+      - id: "2018-A-Q5"
+        section: "A"
+        q_no: "Q5"
+        marks: 3
+        topic: "Default Arguments"
+        question: "What are default arguments in C++? State the rules for declaring them in function prototypes."
+      - id: "2018-B-Q6"
+        section: "B"
+        q_no: "Q6"
+        marks: 7.5
+        topic: "Function Overloading"
+        question: "What is function overloading? Write a program to calculate the area of a circle, rectangle, and triangle using overloaded area() functions."
+      - id: "2018-B-Q7"
+        section: "B"
+        q_no: "Q7"
+        marks: 7.5
+        topic: "Unary Operator Overloading"
+        question: "Write a program to overload unary prefix and postfix increment operator (++) for a counter class."
+      - id: "2018-B-Q8"
+        section: "B"
+        q_no: "Q8"
+        marks: 7.5
+        topic: "Function Templates"
+        question: "What is a template? Write a function template to swap two values of any data type (int, float, char)."
+      - id: "2018-C-Q9"
+        section: "C"
+        q_no: "Q9"
+        marks: 15
+        topic: "Multiple Inheritance"
+        question: "Explain multiple inheritance with ambiguity resolution. Illustrate with a complete student academic and sports performance evaluation program."
+      - id: "2018-C-Q10"
+        section: "C"
+        q_no: "Q10"
+        marks: 15
+        topic: "Class Templates"
+        question: "Explain Generic Programming. Write a C++ class template to implement a Generic Stack with push, pop, and display operations."
+      - id: "2018-C-Q11"
+        section: "C"
+        q_no: "Q11"
+        marks: 15
+        topic: "File Pointer Manipulation"
+        question: "Explain file opening modes in C++. Discuss seekg(), seekp(), tellg(), and tellp() functions for random access with suitable diagrams."
+      - id: "2018-C-Q12"
+        section: "C"
+        q_no: "Q12"
+        marks: 15
+        topic: "Type Conversion"
+        question: "Explain user-defined type conversions in C++: Basic to Class type, Class to Basic type (operator function), and Class to another Class type with examples."
+      - id: "2018-C-Q13"
+        section: "C"
+        q_no: "Q13"
+        marks: 15
+        topic: "Constructors in Derived Classes"
+        question: "Explain the order of constructor and destructor invocation in multiple and multilevel inheritance with code."
+
+  - year: 2019
+    session: "December 2019"
+    max_marks: 75
+    time: "3 Hours"
+    questions:
+      - id: "2019-A-Q1"
+        section: "A"
+        q_no: "Q1"
+        marks: 3
+        topic: "OOP vs POP"
+        question: "State three key differences between Procedure Oriented Programming and Object Oriented Programming."
+      - id: "2019-A-Q2"
+        section: "A"
+        q_no: "Q2"
+        marks: 3
+        topic: "Dynamic Initialization"
+        question: "What is dynamic initialization of objects? Give an example."
+      - id: "2019-A-Q3"
+        section: "A"
+        q_no: "Q3"
+        marks: 3
+        topic: "Manipulators"
+        question: "What are I/O manipulators in C++? Explain the use of setw() and setprecision() from <iomanip>."
+      - id: "2019-A-Q4"
+        section: "A"
+        q_no: "Q4"
+        marks: 3
+        topic: "Pure Virtual Function"
+        question: "What is a pure virtual function? Why is an abstract class cannot be instantiated?"
+      - id: "2019-A-Q5"
+        section: "A"
+        q_no: "Q5"
+        marks: 3
+        topic: "Operator Overloading Limitations"
+        question: "List four operators in C++ that cannot be overloaded and state why."
+      - id: "2019-B-Q6"
+        section: "B"
+        q_no: "Q6"
+        marks: 7.5
+        topic: "Copy Constructor"
+        question: "What is a copy constructor? Explain shallow copy vs deep copy with dynamic memory allocation."
+      - id: "2019-B-Q7"
+        section: "B"
+        q_no: "Q7"
+        marks: 7.5
+        topic: "Friend Class"
+        question: "Explain the concept of friend class. Write a program where one class acts as a friend to another."
+      - id: "2019-B-Q8"
+        section: "B"
+        q_no: "Q8"
+        marks: 7.5
+        topic: "Catch All Exceptions"
+        question: "Explain how rethrowing an exception and the catch-all handler catch(...) work in C++."
+      - id: "2019-C-Q9"
+        section: "C"
+        q_no: "Q9"
+        marks: 15
+        topic: "Polymorphism & Virtual Functions"
+        question: "What is polymorphism? Differentiate compile-time vs run-time polymorphism. Demonstrate run-time polymorphism using base class pointers to derived class objects (Shape hierarchy with Circle & Rectangle)."
+      - id: "2019-C-Q10"
+        section: "C"
+        q_no: "Q10"
+        marks: 15
+        topic: "Binary Operator Overloading with Friend"
+        question: "Overload the binary '+' operator to add two complex numbers using a friend function. Explain why friend functions require two arguments for binary operator overloading."
+      - id: "2019-C-Q11"
+        section: "C"
+        q_no: "Q11"
+        marks: 15
+        topic: "Hybrid Inheritance & Diamond Problem"
+        question: "Explain hybrid inheritance. Draw the diamond diagram and demonstrate virtual base class resolution with full C++ program code."
+      - id: "2019-C-Q12"
+        section: "C"
+        q_no: "Q12"
+        marks: 15
+        topic: "File Streams & Character Counting"
+        question: "Write a program in C++ to open an existing text file, count total characters, words, and lines, and display the report."
+      - id: "2019-C-Q13"
+        section: "C"
+        q_no: "Q13"
+        marks: 15
+        topic: "Template Class with Multiple Parameters"
+        question: "Write a template class 'Pair' that accepts two different data types and provides methods to get and set values."
+
+  - year: 2020
+    session: "Special / Pandemic Session 2020"
+    max_marks: 75
+    time: "3 Hours"
+    questions:
+      - id: "2020-A-Q1"
+        section: "A"
+        q_no: "Q1"
+        marks: 3
+        topic: "Encapsulation"
+        question: "Define Encapsulation and Data Hiding. How does a C++ class achieve both?"
+      - id: "2020-A-Q2"
+        section: "A"
+        q_no: "Q2"
+        marks: 3
+        topic: "Static Functions"
+        question: "Can a static member function access non-static data members? Justify your answer."
+      - id: "2020-A-Q3"
+        section: "A"
+        q_no: "Q3"
+        marks: 3
+        topic: "Early vs Late Binding"
+        question: "Differentiate between early binding (static binding) and late binding (dynamic binding)."
+      - id: "2020-A-Q4"
+        section: "A"
+        q_no: "Q4"
+        marks: 3
+        topic: "File Modes"
+        question: "What is the difference between ios::app and ios::ate file opening modes?"
+      - id: "2020-A-Q5"
+        section: "A"
+        q_no: "Q5"
+        marks: 3
+        topic: "Dynamic Memory"
+        question: "What happens if 'delete' operator is applied to a NULL pointer in C++?"
+      - id: "2020-B-Q6"
+        section: "B"
+        q_no: "Q6"
+        marks: 7.5
+        topic: "Array of Objects"
+        question: "Write a C++ program using an array of 5 employee objects to input their id, name, and salary, and display the employee with the highest salary."
+      - id: "2020-B-Q7"
+        section: "B"
+        q_no: "Q7"
+        marks: 7.5
+        topic: "String Concatenation Overloading"
+        question: "Write a C++ program to overload the '+' operator to concatenate two string objects."
+      - id: "2020-B-Q8"
+        section: "B"
+        q_no: "Q8"
+        marks: 7.5
+        topic: "Exception Handling Divide by Zero"
+        question: "Write a program in C++ to illustrate divide by zero exception handling with custom error messages."
+      - id: "2020-C-Q9"
+        section: "C"
+        q_no: "Q9"
+        marks: 15
+        topic: "Inheritance Access Modes"
+        question: "Explain the difference in visibility when a derived class inherits a base class publicly, privately, and protectedly. Give a comparison matrix and illustrative code."
+      - id: "2020-C-Q10"
+        section: "C"
+        q_no: "Q10"
+        marks: 15
+        topic: "vtable Architecture"
+        question: "Explain the internal working of virtual functions using vtable (Virtual Table) and vptr (Virtual Pointer). Draw detailed memory diagrams."
+      - id: "2020-C-Q11"
+        section: "C"
+        q_no: "Q11"
+        marks: 15
+        topic: "Dynamic Constructors & Memory Leak"
+        question: "What is a dynamic constructor? Write a C++ class 'String' with dynamic memory allocation, deep copy constructor, and destructor to prevent memory leaks."
+      - id: "2020-C-Q12"
+        section: "C"
+        q_no: "Q12"
+        marks: 15
+        topic: "Binary File Read/Write"
+        question: "Write a complete C++ program to manage bank accounts using binary file handling: add account, search by account number, and update balance."
+      - id: "2020-C-Q13"
+        section: "C"
+        q_no: "Q13"
+        marks: 15
+        topic: "Overloading Stream Operators"
+        question: "Write a program to overload stream insertion (<<) and stream extraction (>>) operators for a user-defined Complex class."
+
+  - year: 2021
+    session: "December 2021"
+    max_marks: 75
+    time: "3 Hours"
+    questions:
+      - id: "2021-A-Q1"
+        section: "A"
+        q_no: "Q1"
+        marks: 3
+        topic: "Polymorphism"
+        question: "Define compile-time polymorphism vs runtime polymorphism with an example of each."
+      - id: "2021-A-Q2"
+        section: "A"
+        q_no: "Q2"
+        marks: 3
+        topic: "Inline Limitations"
+        question: "Why inline functions should not contain loops, static variables, or switch statements?"
+      - id: "2021-A-Q3"
+        section: "A"
+        q_no: "Q3"
+        marks: 3
+        topic: "Reference Passing"
+        question: "Explain pass by reference vs pass by pointer in C++ with syntax."
+      - id: "2021-A-Q4"
+        section: "A"
+        q_no: "Q4"
+        marks: 3
+        topic: "Default Constructor"
+        question: "What is the compiler-generated default constructor? When does the compiler NOT generate one?"
+      - id: "2021-A-Q5"
+        section: "A"
+        q_no: "Q5"
+        marks: 3
+        topic: "File Streams"
+        question: "What are the roles of ifstream, ofstream, and fstream classes?"
+      - id: "2021-B-Q6"
+        section: "B"
+        q_no: "Q6"
+        marks: 7.5
+        topic: "Matrix Class"
+        question: "Write a C++ program to create a Matrix class of size 2x2 and overload the '+' operator to add two matrices."
+      - id: "2021-B-Q7"
+        section: "B"
+        q_no: "Q7"
+        marks: 7.5
+        topic: "Multiple Catch Blocks"
+        question: "Write a program demonstrating multiple catch blocks with custom integer, character, and generic catch-all handlers."
+      - id: "2021-B-Q8"
+        section: "B"
+        q_no: "Q8"
+        marks: 7.5
+        topic: "Template Sorting"
+        question: "Write a C++ function template to sort an array of N elements using bubble sort for both integer and floating-point numbers."
+      - id: "2021-C-Q9"
+        section: "C"
+        q_no: "Q9"
+        marks: 15
+        topic: "Hierarchical & Multilevel Inheritance"
+        question: "Explain hierarchical and multilevel inheritance with real-world examples and full C++ implementation."
+      - id: "2021-C-Q10"
+        section: "C"
+        q_no: "Q10"
+        marks: 15
+        topic: "Pure Virtual Functions & Shape Interface"
+        question: "Define an abstract class 'Shape' with pure virtual functions area() and display(). Derive 'Circle', 'Rectangle', and 'Triangle'. Demonstrate dynamic binding using an array of base pointers."
+      - id: "2021-C-Q11"
+        section: "C"
+        q_no: "Q11"
+        marks: 15
+        topic: "Diamond Problem Complete Solution"
+        question: "What is multipath inheritance? Explain why virtual base class is necessary. Write a complete program simulating Student -> (Test, Sports) -> Result."
+      - id: "2021-C-Q12"
+        section: "C"
+        q_no: "Q12"
+        marks: 15
+        topic: "File Copy Utility"
+        question: "Write a complete C++ program to copy the content of one file to another, converting all lowercase characters to uppercase in the destination file."
+      - id: "2021-C-Q13"
+        section: "C"
+        q_no: "Q13"
+        marks: 15
+        topic: "Class to Basic Conversion"
+        question: "Explain type conversion from class type to basic type using conversion operator function. Demonstrate converting a Distance (feet, inches) object into meters (float)."
+
+  - year: 2022
+    session: "December 2022"
+    max_marks: 75
+    time: "3 Hours"
+    questions:
+      - id: "2022-A-Q1"
+        section: "A"
+        q_no: "Q1"
+        marks: 3
+        topic: "Dynamic Binding"
+        question: "What is dynamic binding and message passing in OOP?"
+      - id: "2022-A-Q2"
+        section: "A"
+        q_no: "Q2"
+        marks: 3
+        topic: "Const Member Function"
+        question: "What is a constant member function? How is it declared in C++?"
+      - id: "2022-A-Q3"
+        section: "A"
+        q_no: "Q3"
+        marks: 3
+        topic: "Friendship Rules"
+        question: "Is friendship inherited in C++? Is it mutual? State the rules."
+      - id: "2022-A-Q4"
+        section: "A"
+        q_no: "Q4"
+        marks: 3
+        topic: "Virtual Destructor"
+        question: "Why should a base class destructor always be declared virtual?"
+      - id: "2022-A-Q5"
+        section: "A"
+        q_no: "Q5"
+        marks: 3
+        topic: "Template vs Macro"
+        question: "Differentiate between C++ Function Templates and C Preprocessor Macros."
+      - id: "2022-B-Q6"
+        section: "B"
+        q_no: "Q6"
+        marks: 7.5
+        topic: "Static Counter"
+        question: "Write a C++ program to count total number of active objects created and destroyed using static variables."
+      - id: "2022-B-Q7"
+        section: "B"
+        q_no: "Q7"
+        marks: 7.5
+        topic: "Operator Overloading Comparison"
+        question: "Write a C++ program to overload the relational '==' operator to check equality of two time objects (hours, minutes, seconds)."
+      - id: "2022-B-Q8"
+        section: "B"
+        q_no: "Q8"
+        marks: 7.5
+        topic: "Standard Exception Classes"
+        question: "Discuss standard C++ exception classes (std::exception, runtime_error, out_of_range) and custom exception classes."
+      - id: "2022-C-Q9"
+        section: "C"
+        q_no: "Q9"
+        marks: 15
+        topic: "Master Inheritance Program"
+        question: "Design a hierarchy: Person -> Employee -> (Scientist, Manager). Demonstrate parameter passing to base class constructors from derived constructors."
+      - id: "2022-C-Q10"
+        section: "C"
+        q_no: "Q10"
+        marks: 15
+        topic: "Complex Arithmetic Overloading"
+        question: "Write a complete menu-driven C++ program to perform Complex number operations: addition (+), subtraction (-), multiplication (*), and input/output (<<, >>) using overloaded operators."
+      - id: "2022-C-Q11"
+        section: "C"
+        q_no: "Q11"
+        marks: 15
+        topic: "Runtime Polymorphism Employee Payroll"
+        question: "Develop an abstract class 'Employee' with pure virtual function calculatePay(). Derive 'SalariedEmployee' and 'HourlyEmployee'. Demonstrate polymorphism using base pointers."
+      - id: "2022-C-Q12"
+        section: "C"
+        q_no: "Q12"
+        marks: 15
+        topic: "File Record Indexing & Modification"
+        question: "Write a C++ program to modify a specific record at position N in a binary file using seekp() and write()."
+      - id: "2022-C-Q13"
+        section: "C"
+        q_no: "Q13"
+        marks: 15
+        topic: "Generic Queue Template"
+        question: "Implement a generic circular Queue class template with enqueue, dequeue, isEmpty, isFull, and display methods in C++."

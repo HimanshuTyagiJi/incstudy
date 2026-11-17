@@ -1,0 +1,66 @@
+{% assign h = site.data.homepage.hero %}
+<section class="hero-v2">
+  <div class="hero-v2-bg" aria-hidden="true"></div>
+
+  <div class="hero-v2-inner">
+    <!-- Left Content Column -->
+    <div class="hero-v2-copy">
+      <div class="hero-pill-badge">
+        {% include ui/icon.html name="grad" size=15 %}
+        <span>{{ h.badge }}</span>
+      </div>
+
+      <h1 class="hero-v2-title">
+        {{ h.title_line1 }}
+        <span class="hero-gradient-text">{{ h.title_highlight }}</span>
+      </h1>
+
+      <p class="hero-v2-desc">{{ h.description }}</p>
+
+      <!-- 5 Feature Chips Grid -->
+      <div class="hero-chip-grid">
+        {% for chip in h.chips %}
+        <a href="{{ chip.url | relative_url }}" class="hero-chip">
+          <span class="hero-chip-icon icon-theme-{{ chip.theme }}">
+            {% include ui/icon.html name=chip.icon size=14 %}
+          </span>
+          <span>{{ chip.label }}</span>
+        </a>
+        {% endfor %}
+      </div>
+
+      <div class="hero-v2-actions">
+        <a href="{{ h.primary_cta.url | relative_url }}" class="hero-primary-btn">
+          <span>{{ h.primary_cta.label }}</span>
+          {% include ui/icon.html name="arrow-right" size=16 %}
+        </a>
+      </div>
+    </div>
+
+    <!-- Right Visual Showcase Column -->
+    <div class="hero-v2-visual">
+      <div class="hero-portrait-stage">
+        <div class="hero-portrait-glow" aria-hidden="true"></div>
+        <div class="hero-portrait-frame">
+          <img src="{{ '/assets/images/hero-student.jpg' | relative_url }}" alt="BCA Student holding study notebooks" loading="eager">
+        </div>
+
+        <!-- 4 Floating Glass Icon Cards -->
+        {% for card in h.floating_cards %}
+        <a href="{{ card.url | relative_url }}" class="hero-float-card float-{{ card.position }}">
+          <span class="float-card-icon icon-theme-{{ card.theme }}">
+            {% include ui/icon.html name=card.icon size=18 %}
+          </span>
+          <span class="float-card-label">{{ card.title }}</span>
+        </a>
+        {% endfor %}
+
+        <!-- Warm Accent Tag -->
+        <div class="hero-partner-tag" aria-hidden="true">
+          <span>Your Study</span>
+          <strong>Partner Always!</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

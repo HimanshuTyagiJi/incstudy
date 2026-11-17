@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<div class="page-header exam-page-header">
+  {% if page.eyebrow %}
+    <p class="eyebrow exam-eyebrow">{{ page.eyebrow }}</p>
+  {% elsif page.course_name %}
+    <p class="eyebrow exam-eyebrow">{{ page.course_name }}</p>
+  {% endif %}
+
+  {% if page.title_subject %}
+    <h1 class="exam-title-styled">
+      <span class="exam-title-line-1">
+        <span class="exam-title-subject">{{ page.title_subject }}</span>
+        {% if page.title_code %}<span class="exam-title-code">{{ page.title_code }}</span>{% endif %}
+      </span>
+      {% if page.title_highlight %}
+        <span class="exam-title-line-2">{{ page.title_highlight }}</span>
+      {% endif %}
+    </h1>
+  {% else %}
+    <h1>{{ page.title }}</h1>
+  {% endif %}
+
+  {% if page.description %}
+    <p class="page-description">{{ page.description }}</p>
+  {% endif %}
+</div>
+<div class="exam-layout">{{ content }}</div>

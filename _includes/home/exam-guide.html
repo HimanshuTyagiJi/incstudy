@@ -1,0 +1,69 @@
+{% assign eg = site.data.homepage.exam_guide %}
+<section class="home-section" id="exam-strategy">
+  <div class="home-container">
+    <div class="section-header-stack">
+      <h2 class="section-heading-lg">{{ eg.title }}</h2>
+      <p class="section-subcopy">{{ eg.subtitle }}</p>
+    </div>
+
+    <div class="guide-split-layout">
+      <!-- Left Column: CCSU 75+25 Paper Pattern Breakdown -->
+      <div class="guide-panel guide-panel-blueprint">
+        <div class="guide-panel-header">
+          <span class="section-icon-box icon-theme-blue">
+            {% include ui/icon.html name="list" size=20 %}
+          </span>
+          <div>
+            <h3>{{ eg.blueprint_title }}</h3>
+            <span class="guide-badge">{{ eg.blueprint_badge }}</span>
+          </div>
+        </div>
+        <p class="guide-panel-intro">{{ eg.blueprint_intro }}</p>
+
+        <div class="blueprint-list">
+          {% for sec in eg.sections %}
+          <div class="blueprint-item blueprint-item-{{ sec.theme }}">
+            <div class="blueprint-item-head">
+              <strong>{{ sec.name }}</strong>
+              <span class="blueprint-marks">{{ sec.marks }}</span>
+            </div>
+            <p>{{ sec.rule }}</p>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+
+      <!-- Right Column: 4-Step Student Preparation Method -->
+      <div class="guide-panel guide-panel-strategy">
+        <div class="guide-panel-header">
+          <span class="section-icon-box icon-theme-green">
+            {% include ui/icon.html name="check" size=20 %}
+          </span>
+          <div>
+            <h3>{{ eg.strategy_title }}</h3>
+          </div>
+        </div>
+
+        <ol class="strategy-steps">
+          {% for s in eg.strategy_steps %}
+          <li class="strategy-step-item">
+            <span class="strategy-step-num">{{ s.step }}</span>
+            <div>
+              <h4>{{ s.title }}</h4>
+              <p>{{ s.desc }}</p>
+            </div>
+          </li>
+          {% endfor %}
+        </ol>
+      </div>
+    </div>
+
+    <!-- Editorial Quality & Transparency Bar -->
+    <div class="editorial-trust-bar">
+      <span class="editorial-trust-icon icon-theme-green" aria-hidden="true">
+        {% include ui/icon.html name="shield" size=18 %}
+      </span>
+      <p>{{ eg.editorial_note }}</p>
+    </div>
+  </div>
+</section>

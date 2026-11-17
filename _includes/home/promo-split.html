@@ -1,0 +1,84 @@
+{% assign sp = site.data.homepage.split_promo %}
+<section class="home-section home-section-tight">
+  <div class="home-container">
+    <div class="promo-split-grid">
+      <!-- Left Split Card: Blue Tint + Native Stacked Books SVG -->
+      <div class="promo-card promo-card-blue">
+        <div class="promo-graphic" aria-hidden="true">
+          <svg width="136" height="132" viewBox="0 0 140 135" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Stacked 5 Textbooks (BCA -> OS) -->
+            <rect x="8" y="102" width="124" height="22" rx="5" fill="#7c3aed"/>
+            <rect x="14" y="106" width="112" height="14" rx="2" fill="#8b5cf6"/>
+            <text x="70" y="117" text-anchor="middle" fill="#ffffff" font-size="9" font-weight="800" font-family="sans-serif">Operating System</text>
+
+            <rect x="12" y="80" width="116" height="22" rx="5" fill="#4f46e5"/>
+            <rect x="18" y="84" width="104" height="14" rx="2" fill="#6366f1"/>
+            <text x="70" y="95" text-anchor="middle" fill="#ffffff" font-size="9" font-weight="800" font-family="sans-serif">Computer Networks</text>
+
+            <rect x="6" y="58" width="122" height="22" rx="5" fill="#059669"/>
+            <rect x="12" y="62" width="110" height="14" rx="2" fill="#10b981"/>
+            <text x="67" y="73" text-anchor="middle" fill="#ffffff" font-size="9.5" font-weight="800" font-family="sans-serif">DBMS</text>
+
+            <rect x="14" y="36" width="114" height="22" rx="5" fill="#d97706"/>
+            <rect x="20" y="40" width="102" height="14" rx="2" fill="#f59e0b"/>
+            <text x="71" y="51" text-anchor="middle" fill="#ffffff" font-size="9.5" font-weight="800" font-family="sans-serif">Programming</text>
+
+            <rect x="10" y="13" width="118" height="23" rx="5" fill="#1d4ed8"/>
+            <rect x="16" y="17" width="106" height="15" rx="2" fill="#2563eb"/>
+            <text x="69" y="28" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="800" font-family="sans-serif">BCA</text>
+          </svg>
+        </div>
+
+        <div class="promo-copy">
+          <h3>{{ sp.left.title }}</h3>
+          <p>{{ sp.left.description }}</p>
+          <a href="{{ sp.left.cta_url | relative_url }}" class="promo-solid-btn">
+            <span>{{ sp.left.cta_label }}</span>
+            {% include ui/icon.html name="arrow-right" size=15 %}
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Split Card: Cream/Amber Tint + Lightbulb + Study Workspace Laptop SVG -->
+      <div class="promo-card promo-card-cream">
+        <div class="promo-copy">
+          <div class="promo-heading-with-icon">
+            <span class="promo-bulb-badge">
+              {% include ui/icon.html name="bulb" size=18 %}
+            </span>
+            <h3>{{ sp.right.title }}</h3>
+          </div>
+          <p>{{ sp.right.description }}</p>
+          <a href="{{ sp.right.cta_url | relative_url }}" class="outline-pill-btn">
+            <span>{{ sp.right.cta_label }}</span>
+            {% include ui/icon.html name="arrow-right" size=15 %}
+          </a>
+        </div>
+
+        <div class="promo-graphic promo-laptop-wrap" aria-hidden="true">
+          <svg width="150" height="122" viewBox="0 0 160 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Soft Desk Shadow -->
+            <ellipse cx="80" cy="116" rx="64" ry="8" fill="#d97706" fill-opacity="0.14"/>
+            <!-- Screen Frame -->
+            <g transform="rotate(-6 80 65)">
+              <rect x="24" y="14" width="112" height="74" rx="10" fill="#1e293b"/>
+              <rect x="29" y="19" width="102" height="64" rx="6" fill="#f8fafc"/>
+              <!-- 4 Study App Tiles inside Screen -->
+              <rect x="44" y="26" width="32" height="22" rx="5" fill="#fce7f3"/>
+              <circle cx="60" cy="37" r="5" fill="#ec4899"/>
+              <rect x="84" y="26" width="32" height="22" rx="5" fill="#e0f2fe"/>
+              <circle cx="100" cy="37" r="5" fill="#0284c7"/>
+              <rect x="44" y="54" width="32" height="22" rx="5" fill="#fef3c7"/>
+              <circle cx="60" cy="65" r="5" fill="#d97706"/>
+              <rect x="84" y="54" width="32" height="22" rx="5" fill="#dcfce7"/>
+              <circle cx="100" cy="65" r="5" fill="#16a34a"/>
+              <!-- Laptop Keyboard Base -->
+              <path d="M12 88 H148 L156 102 C157 104 155 106 152 106 H8 C5 106 3 104 4 102 L12 88 Z" fill="#cbd5e1"/>
+              <rect x="64" y="96" width="32" height="4" rx="2" fill="#94a3b8"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

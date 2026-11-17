@@ -1,0 +1,10 @@
+<!-- Desktop Header Navigation Menu Links (Data-driven for easy Phase 1 -> Phase 2 upgrade) -->
+{% for item in site.data.navigation.header_nav %}
+  {% assign is_active = false %}
+  {% if item.url == '/' and page.url == '/' %}
+    {% assign is_active = true %}
+  {% elsif item.url != '/' and page.url contains item.url %}
+    {% assign is_active = true %}
+  {% endif %}
+  <a href="{{ item.url | relative_url }}"{% if is_active %} aria-current="page"{% endif %}>{{ item.label }}</a>
+{% endfor %}

@@ -1,0 +1,1496 @@
+---
+layout: exam
+title: "CCSU BCA 3rd Sem Data Structure (BCA-302) Most Important Questions & Solved Exam Notebook"
+seo_title: "CCSU BCA 3rd Sem Data Structure (BCA-302) Important Questions & Solved Exam Notebook"
+breadcrumb_title: "Data Structure (BCA-302)"
+eyebrow: "⚡ CCSU Meerut · BCA 3rd Semester · Exam Preparation"
+title_subject: "Data Structure Using C & C++"
+title_code: "BCA-302"
+title_highlight: "Most Important Questions & Solved Exam Notebook"
+description: "Master chapter-wise solved notebook of recurring CCSU examination questions (2018–2021) for Data Structure Using C & C++ (BCA-302) with complete working C/C++ code, visual SVG diagrams (B-Tree, BST, Heap, Traversals), stack trace tables, and Big-O complexity analysis."
+permalink: /ccsu/bca/semester-3/data-structures-important-questions/
+course_name: "CCSU BCA Semester 3 · Data Structure Using C & C++ (BCA-302)"
+math: true
+---
+
+<!-- Navigation & Actions Bar -->
+<div class="exam-actions-bar">
+  <a href="{{ '/ccsu/bca/semester-3/' | relative_url }}" class="text-link">← Back to Semester 3 Hub</a>
+  <button class="print-btn" onclick="triggerMathPrint()">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+    Save as PDF / Print Solved Notebook
+  </button>
+</div>
+
+<script>
+function triggerMathPrint() {
+  if (typeof renderMathInElement === 'function' && document.body) {
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false},
+        {left: '\\(', right: '\\)', display: false},
+        {left: '\\[', right: '\\]', display: true}
+      ],
+      throwOnError: false
+    });
+  }
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(function() {
+      window.print();
+    });
+  } else {
+    window.print();
+  }
+}
+</script>
+
+<!-- Minimal Sleek Exam Strip -->
+<div class="exam-header-strip">
+  <span class="strip-pill">🏛️ CCSU Meerut</span>
+  <span class="strip-pill">⏱️ 75 Marks External (3 Hours)</span>
+  <span class="strip-pill">📄 3M, 7.5M &amp; 15M Exam Blueprint</span>
+  <span class="strip-pill">⭐ 2018–2021 Recurring University Exam Archive</span>
+</div>
+
+<!-- Quick Jump Nav -->
+<div class="exam-jump-nav">
+  <span class="exam-jump-label">⚡ Quick Jump:</span>
+  <a href="#section-a" class="jump-pill jump-pill-emerald">Section A (3 Marks · 17 Questions)</a>
+  <a href="#section-b" class="jump-pill jump-pill-cyan">Section B (7.5 Marks · 10 Questions)</a>
+  <a href="#section-c" class="jump-pill jump-pill-purple">⭐ Section C (15 Marks · 11 Solved Problems &amp; SVG Diagrams)</a>
+</div>
+
+<div class="notice-box" style="margin-bottom: 28px;">
+  <strong>Exam Scoring Architecture for BCA-302 (Data Structures):</strong>
+  The university theory examination carries <strong>75 Marks</strong> with a 3-hour duration, structured into 
+  <strong>Section A (5 questions &times; 3M = 15M compulsory)</strong>, 
+  <strong>Section B (attempt 2 of 3 questions &times; 7.5M = 15M)</strong>, and 
+  <strong>Section C (attempt 3 of 5 questions &times; 15M = 45M)</strong>.
+  In this master solved notebook, every recurring question from 2018, 2019, 2020, and 2021 is solved with step-by-step algorithms, complete C/C++ source code, trace tables, and genuine visual SVG diagrams.
+</div>
+
+
+
+<!-- =========================================================================
+     SECTION A : 3 MARKS VERY SHORT ANSWER QUESTIONS (COMPULSORY)
+     ========================================================================= -->
+<div class="exam-section-card" id="section-a">
+  <div class="exam-section-header exam-section-header-emerald">
+    <div class="exam-section-header-inner">
+      <span class="exam-section-badge badge-emerald">SECTION A &bull; 3 MARKS EACH</span>
+      <h3 class="exam-section-title">Very Short Answer Questions &amp; Core Definitions</h3>
+      <p class="exam-section-rule">CCSU Examination Blueprint: 5 Questions Compulsory &bull; Total 15 Marks</p>
+    </div>
+  </div>
+
+  <div class="exam-section-body">
+
+    <!-- Q1 -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q1.</span> What do you understand by Data Structure? State its classification.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2018, 2020</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive 3-Mark Solution:</div>
+        <p>A <strong>Data Structure</strong> is a programmatic way of storing, organizing, and managing data in computer memory so that operations (such as search, insertion, and deletion) can be performed efficiently.</p>
+        <p><strong>Classification:</strong></p>
+        <ul>
+          <li><strong>Primitive:</strong> Fundamental data types supported directly by hardware and compilers (e.g., <code>int</code>, <code>char</code>, <code>float</code>, <code>pointer</code>).</li>
+          <li><strong>Non-Primitive:</strong> Structured data collections derived from primitive types:
+            <ul>
+              <li><strong>Linear:</strong> Elements arranged sequentially in a 1-to-1 relationship (e.g., Arrays, Stacks, Queues, Linked Lists).</li>
+              <li><strong>Non-Linear:</strong> Elements arranged hierarchically or arbitrarily in a 1-to-many or many-to-many relationship (e.g., Trees, Graphs).</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Q2 -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q2.</span> What are AVL Trees? State the Balance Factor condition.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2018, 2021</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive 3-Mark Solution:</div>
+        <p>An <strong>AVL Tree</strong> (named after inventors <em>G.M. Adelson-Velsky</em> and <em>E.M. Landis</em>) is a height-balanced <strong>Binary Search Tree (BST)</strong> wherein the heights of the two child subtrees of any node differ by at most one.</p>
+        $$	ext{Balance Factor (BF)} = 	ext{Height}(	ext{Left Subtree}) - 	ext{Height}(	ext{Right Subtree})$$
+        <p>For an AVL tree to remain valid, every node must satisfy \(	ext{BF} \in \{-1, 0, +1\}\). If insertion or deletion causes \(	ext{BF} = \pm 2\), the tree is re-balanced via single rotations (LL, RR) or double rotations (LR, RL) to guarantee strictly \(O(\log n)\) search, insertion, and deletion times.</p>
+      </div>
+    </div>
+
+    <!-- Q3 -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q3.</span> What is an Array? Explain its major practical limitations.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2018, 2019</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive 3-Mark Solution:</div>
+        <p>An <strong>Array</strong> is a linear, sequential collection of homogeneous data elements stored in contiguous memory locations, allowing instant direct access using index arithmetic: \(	ext{Address}(A[i]) = 	ext{Base} + i 	imes w\).</p>
+        <p><strong>Limitations:</strong></p>
+        <ol>
+          <li><strong>Fixed Static Size:</strong> Array dimension must be fixed at compile-time and cannot dynamically expand or shrink according to runtime demand.</li>
+          <li><strong>Costly Insertion &amp; Deletion:</strong> Inserting or removing an element at position \(K\) requires shifting elements left or right, resulting in \(O(n)\) time overhead.</li>
+          <li><strong>Memory Fragmentation:</strong> Requires a single contiguous block of RAM, which may fail even if total free memory across fragments exceeds array size.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Q4 -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q4.</span> State four prominent real-world applications of Stacks.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2018, 2020, 2021</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive 3-Mark Solution:</div>
+        <ol>
+          <li><strong>Expression Parsing &amp; Evaluation:</strong> Converting Infix expressions to Postfix/Prefix and computing arithmetic expressions using a single-pass operand stack.</li>
+          <li><strong>Subroutine / Function Call Management:</strong> CPU call stack stores activation records (return address, local variables, parameters) for nested and recursive functions.</li>
+          <li><strong>Delimiters &amp; Parenthesis Matching:</strong> Compilers check balanced brackets <code>()</code>, <code>{}</code>, <code>[]</code> in programming source code.</li>
+          <li><strong>Undo / Redo &amp; Backtracking:</strong> Text editors use two stacks for Undo/Redo; web browsers maintain back/forward URL navigation stacks.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Q5 -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q5.</span> Define Circular Linked List and Chain.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2018 Examination</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive 3-Mark Solution:</div>
+        <ul>
+          <li><strong>Circular Linked List:</strong> A variation of a linked list in which the last node does not contain a <code>NULL</code> pointer; instead, its link field points back to the first node (head), forming a continuous circular loop. Traversal can begin from any node and loop infinitely.</li>
+          <li><strong>Chain:</strong> A formal term used in data structures for a singly linked linear list where each node consists of a data field and a pointer pointing strictly to its linear successor, with the terminal node pointing to <code>NULL</code>.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Q6 -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q6.</span> What is the advantage of a Header Node in a Linked List?</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2019 Examination</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive 3-Mark Solution:</div>
+        <p>A <strong>Header Node</strong> (or sentinel node) is a dummy node placed at the beginning of a linked list before the first actual data node.</p>
+        <ul>
+          <li><strong>Eliminates Edge Case Code:</strong> In standard lists, inserting or deleting the first node requires modifying the external <code>head</code> pointer. With a header node, the head pointer remains permanent, so insertion/deletion code at the beginning uses the exact same logic as at the middle.</li>
+          <li><strong>Metadata Storage:</strong> The header node's data field can store list-wide attributes, such as total count of nodes, sum of elements, or creation date.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Q7 -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q7.</span> Define Stacks and Queues with an example of each.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2019 Examination</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive 3-Mark Solution:</div>
+        <ul>
+          <li><strong>Stack:</strong> A linear data structure that adheres to the <strong>LIFO (Last In First Out)</strong> principle. Insertion and deletion occur only at a single end termed <code>TOP</code>. <em>Real-world example:</em> A stack of dinner plates in a cafeteria; the plate placed last is washed first.</li>
+          <li><strong>Queue:</strong> A linear data structure that follows the <strong>FIFO (First In First Out)</strong> rule. Elements are inserted at the <code>REAR</code> and deleted from the <code>FRONT</code>. <em>Real-world example:</em> People standing in line at a cinema ticket counter; the first person to arrive gets the ticket first.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Q8 -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q8.</span> How is a Binary Tree traversed in C language? State the three orders.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2019 Examination</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive 3-Mark Solution:</div>
+        <p>Binary tree traversal visits every node in the tree exactly once. In C, it is implemented cleanly via recursive pointer calls:</p>
+        <ol>
+          <li><strong>Inorder (LNR):</strong> Traverse Left Subtree &rarr; Visit Root Node &rarr; Traverse Right Subtree. (Produces elements in sorted order for a BST).</li>
+          <li><strong>Preorder (NLR):</strong> Visit Root Node &rarr; Traverse Left Subtree &rarr; Traverse Right Subtree. (Used to create copies or prefix expressions).</li>
+          <li><strong>Postorder (LRN):</strong> Traverse Left Subtree &rarr; Traverse Right Subtree &rarr; Visit Root Node. (Used to delete trees or evaluate postfix expressions).</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Q9 -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q9.</span> What is the basic concept of Insertion Sorting?</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2019 Examination</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive 3-Mark Solution:</div>
+        <p><strong>Insertion Sort</strong> works similarly to sorting playing cards in our hands. The array is virtually split into a <em>sorted part</em> and an <em>unsorted part</em>.</p>
+        <p>In each pass \(i\) (from \(1\) to \(n-1\)), the next element from the unsorted subarray is picked as <code>key</code> and compared backwards with elements in the sorted subarray. All elements greater than <code>key</code> are shifted right by one position, and <code>key</code> is placed into its correct sorted slot. Time Complexity: Best case \(O(n)\) (already sorted), Worst/Average case \(O(n^2)\).</p>
+      </div>
+    </div>
+
+    <!-- Q10 -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q10.</span> Explain the primary operations performed on Data Structures.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2020 Examination</span>
+          <span class="exam-tag-marks">4 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive 4-Mark Solution:</div>
+        <ol>
+          <li><strong>Traversing:</strong> Accessing each data element in the structure exactly once to process or display it.</li>
+          <li><strong>Insertion:</strong> Adding a new data element at a designated position in the structure.</li>
+          <li><strong>Deletion:</strong> Removing an existing element from the structure and freeing memory.</li>
+          <li><strong>Searching:</strong> Finding the location of a target element with a specified key value.</li>
+          <li><strong>Sorting:</strong> Arranging all elements in a logical ascending or descending sequence.</li>
+          <li><strong>Merging:</strong> Combining elements of two sorted structures into a single consolidated sorted structure.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Q11 -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q11.</span> How can we minimize Stack Overflow?</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2020 Examination</span>
+          <span class="exam-tag-marks">4 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive 4-Mark Solution:</div>
+        <p><strong>Stack Overflow</strong> occurs when an attempt is made to push an element onto a stack that has exhausted its memory capacity.</p>
+        <p><strong>Techniques to Minimize Overflow:</strong></p>
+        <ul>
+          <li><strong>Dynamic Linked List Implementation:</strong> Implement the stack using a linked list instead of a fixed array, allowing the stack to grow dynamically as long as system heap memory is available.</li>
+          <li><strong>Dynamic Array Resizing:</strong> In array implementations, dynamically double the array size (using <code>realloc</code> in C or <code>std::vector</code> in C++) whenever the stack becomes full.</li>
+          <li><strong>Avoid Unbounded Recursion:</strong> Convert deep recursion into iterative loops using explicit loops or guarantee strict termination base cases.</li>
+          <li><strong>Two Stacks in One Array:</strong> Grow two stacks from opposite ends (0 and \(N-1\)) of a single shared array, avoiding overflow until the total memory is exhausted.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Q12 -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q12.</span> Write Prefix and Postfix form for: \(A + B 	imes (C - D) / (E - F)\)</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2020 Examination</span>
+          <span class="exam-tag-marks">4 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Step-by-Step Conversion:</div>
+        <p><strong>1. Parentheses first:</strong> \((C - D)\) and \((E - F)\):</p>
+        <ul>
+          <li>Postfix: \(CD-\) &bull; Prefix: \(-CD\)</li>
+          <li>Postfix: \(EF-\) &bull; Prefix: \(-EF\)</li>
+        </ul>
+        <p><strong>2. Multiplication:</strong> \(B 	imes (C - D)\):</p>
+        <ul>
+          <li>Postfix: \(B(CD-)* \implies BCD-*\) &bull; Prefix: \(*B(-CD) \implies *B-CD\)</li>
+        </ul>
+        <p><strong>3. Division:</strong> \([B 	imes (C - D)] / (E - F)\):</p>
+        <ul>
+          <li>Postfix: \((BCD-*)(EF-)/ \implies BCD-*EF-/\) &bull; Prefix: \(/*B-CD-EF\)</li>
+        </ul>
+        <p><strong>4. Addition:</strong> \(A + 	ext{Result}\):</p>
+        <p><strong>Final Postfix:</strong> <code>ABCD-*EF-/+</code></p>
+        <p><strong>Final Prefix:</strong> <code>+A/*B-CD-EF</code></p>
+      </div>
+    </div>
+
+    <!-- Q13 -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q13.</span> Design a recursive factorial function using C/C++ language.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2020 Examination</span>
+          <span class="exam-tag-marks">4 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ C/C++ Source Code:</div>
+<pre><code class="language-cpp">// Recursive Factorial Function
+long long factorial(int n) {
+    // Base Case: 0! = 1 and 1! = 1
+    if (n <= 1) {
+        return 1;
+    }
+    // Recursive Step: n! = n * (n-1)!
+    return n * factorial(n - 1);
+}
+</code></pre>
+        <p>Time Complexity: \(O(n)\), Space Complexity: \(O(n)\) for call stack frames.</p>
+      </div>
+    </div>
+
+    <!-- Q14 -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q14.</span> Explain the term Hashing and state common Hash Functions.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2018, 2020, 2021</span>
+          <span class="exam-tag-marks">3 / 7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p><strong>Hashing</strong> is a technique to map key values to specific slots in an array (Hash Table) to achieve average \(O(1)\) search, insertion, and deletion time without comparison.</p>
+        <p><strong>Common Hash Functions:</strong></p>
+        <ol>
+          <li><strong>Division Method:</strong> \(h(k) = k \bmod m\), where \(m\) is table size (preferably prime).</li>
+          <li><strong>Mid-Square Method:</strong> Square the key \(k^2\) and extract the middle \(r\) digits.</li>
+          <li><strong>Folding Method:</strong> Divide the key into equal-sized pieces and sum them up.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Q15 -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q15.</span> What is a Deque? Distinguish Input-Restricted and Output-Restricted Deque.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2019, 2020, 2021</span>
+          <span class="exam-tag-marks">3 / 7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>A <strong>Deque</strong> (Double-Ended Queue) is a linear list allowing insertion and deletion at both ends (Front and Rear).</p>
+        <div style="overflow-x: auto; margin: 10px 0;">
+          <table style="width: 100%; border-collapse: collapse; font-size: 13px;">
+            <tr style="background: var(--surface);">
+              <th style="padding: 6px 10px; border: 1px solid var(--border);">Feature</th>
+              <th style="padding: 6px 10px; border: 1px solid var(--border);">Input-Restricted Deque</th>
+              <th style="padding: 6px 10px; border: 1px solid var(--border);">Output-Restricted Deque</th>
+            </tr>
+            <tr>
+              <td style="padding: 6px 10px; border: 1px solid var(--border); font-weight: 700;">Insertion</td>
+              <td style="padding: 6px 10px; border: 1px solid var(--border);">Only at one end (Rear)</td>
+              <td style="padding: 6px 10px; border: 1px solid var(--border);">At both ends (Front and Rear)</td>
+            </tr>
+            <tr>
+              <td style="padding: 6px 10px; border: 1px solid var(--border); font-weight: 700;">Deletion</td>
+              <td style="padding: 6px 10px; border: 1px solid var(--border);">At both ends (Front and Rear)</td>
+              <td style="padding: 6px 10px; border: 1px solid var(--border);">Only at one end (Front)</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q16 -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q16.</span> What is Analysis of Algorithm? Explain Time and Space Complexity.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2021 Examination</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p><strong>Analysis of Algorithm</strong> is the process of determining the amount of computational resources (time and storage) required by an algorithm to execute as a function of the input size \(n\).</p>
+        <ul>
+          <li><strong>Time Complexity:</strong> The total number of elementary operations or CPU cycles executed by the algorithm as input size increases, expressed using Asymptotic Notations: Big-O (\(O\)), Omega (\(\Omega\)), and Theta (\(\Theta\)).</li>
+          <li><strong>Space Complexity:</strong> The amount of primary memory (RAM) consumed by the program during execution, consisting of:
+            $$	ext{Total Space} = 	ext{Fixed Space (code + constants)} + 	ext{Variable Space (dynamic data + recursion stack)}$$
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Q17 -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q17.</span> Explain the Principle of Recursion with its two essential components.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2021 Examination</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p><strong>Recursion</strong> is a problem-solving technique wherein a function calls itself directly or indirectly to solve a smaller instance of the same problem.</p>
+        <p><strong>Two Mandatory Components:</strong></p>
+        <ol>
+          <li><strong>Base Case (Anchor Condition):</strong> A terminating condition for which the function produces a direct result without making any further recursive calls. Without this, the program encounters an infinite recursion loop and crashes with Stack Overflow.</li>
+          <li><strong>Recursive Step (Inductive Step):</strong> The instruction that breaks down the original input and invokes the function with a strictly smaller or simpler parameter (e.g., \(n-1\)), ensuring the execution moves closer to the base case at every step.</li>
+        </ol>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<!-- =========================================================================
+     SECTION B : 7.5 MARKS SHORT ANSWER QUESTIONS (ATTEMPT ANY 2)
+     ========================================================================= -->
+<div class="exam-section-card" id="section-b">
+  <div class="exam-section-header exam-section-header-cyan">
+    <div class="exam-section-header-inner">
+      <span class="exam-section-badge badge-cyan">SECTION B &bull; 7.5 MARKS EACH</span>
+      <h3 class="exam-section-title">Algorithmic Procedures &amp; Code Implementations</h3>
+      <p class="exam-section-rule">CCSU Examination Blueprint: Attempt Any 2 Out of 3 Questions &bull; Total 15 Marks</p>
+    </div>
+  </div>
+
+  <div class="exam-section-body">
+
+    <!-- B1: Array Deletion -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q1.</span> Write the step-by-step algorithm to delete an element from a linear array at index \(K\).</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2018 Examination</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Step-by-Step 7.5-Mark Algorithm:</div>
+        <p><strong>Algorithm: DELETE_ARRAY(LA, N, K, ITEM)</strong></p>
+        <ol>
+          <li><strong>[Check Underflow]:</strong> If \(N == 0\), Print <em>"Array Underflow: No element to delete"</em> and Exit.</li>
+          <li><strong>[Validate Range]:</strong> If \(K \lt 0\) or \(K \ge N\), Print <em>"Error: Index out of range"</em> and Exit.</li>
+          <li><strong>[Store Target Item]:</strong> Set <code>ITEM = LA[K]</code>.</li>
+          <li><strong>[Shift Leftward]:</strong> Repeat for \(I = K\) to \(N - 2\):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;Set <code>LA[I] = LA[I + 1]</code>.<br>
+            [End of loop]
+          </li>
+          <li><strong>[Update Size]:</strong> Set \(N = N - 1\).</li>
+          <li><strong>[Exit]:</strong> Return <code>ITEM</code>.</li>
+        </ol>
+        <p><strong>Complexity:</strong> Best case \(O(1)\) when deleting last element (\(K = N-1\)). Worst case \(O(n)\) when deleting first element (\(K = 0\)).</p>
+      </div>
+    </div>
+
+    <!-- B2: Array Insertion -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q2.</span> Write an algorithm and its C syntax to insert an element at the \(K\)th position into a linear array.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2019 Examination</span>
+          <span class="exam-tag-marks">7.5 / 15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Algorithm &amp; C Code:</div>
+        <p><strong>Algorithm: INSERT_ARRAY(LA, N, MAX, K, ITEM)</strong></p>
+        <ol>
+          <li><strong>[Check Overflow]:</strong> If \(N \ge \text{MAX}\), Print <em>"Array Overflow"</em> and Exit.</li>
+          <li><strong>[Shift Rightward]:</strong> Repeat for \(I = N - 1\) down to \(K\):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;Set <code>LA[I + 1] = LA[I]</code>.<br>
+            [End of loop]
+          </li>
+          <li><strong>[Insert]:</strong> Set <code>LA[K] = ITEM</code>.</li>
+          <li><strong>[Increment]:</strong> Set \(N = N + 1\).</li>
+        </ol>
+<pre><code class="language-c">// C Implementation
+void insertAtK(int arr[], int *n, int max_size, int k, int item) {
+    if (*n >= max_size) {
+        printf("Overflow!\\n");
+        return;
+    }
+    for (int i = *n - 1; i >= k; i--) {
+        arr[i + 1] = arr[i];
+    }
+    arr[k] = item;
+    (*n)++;
+}
+</code></pre>
+      </div>
+    </div>
+
+    <!-- B3: Count Leaf Nodes -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q3.</span> Write a recursive C/C++ function to count the number of leaves in a Binary Tree.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2018 Examination</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ C++ Recursive Solution:</div>
+<pre><code class="language-cpp">struct Node {
+    int data;
+    Node* left;
+    Node* right;
+};
+
+// Returns total leaf nodes in binary tree
+int countLeaves(Node* root) {
+    // Base Case 1: Empty tree
+    if (root == nullptr)
+        return 0;
+    
+    // Base Case 2: Node is a leaf
+    if (root->left == nullptr && root->right == nullptr)
+        return 1;
+        
+    // Recursive Step
+    return countLeaves(root->left) + countLeaves(root->right);
+}
+</code></pre>
+        <p>Time Complexity: \(O(n)\) visiting all nodes. Space Complexity: \(O(h)\) where \(h\) is tree height.</p>
+      </div>
+    </div>
+
+    <!-- B4: Reverse Stack using Push & Pop -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q4.</span> Write a function to reverse a stack using only standard Push and Pop operations (without auxiliary stack).</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2018 Examination</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Two Recursive Functions Solution:</div>
+<pre><code class="language-cpp">#include &lt;stack&gt;
+using namespace std;
+
+// Helper: Inserts an element at the bottom of a stack
+void insertAtBottom(stack&lt;int&gt;&amp; s, int item) {
+    if (s.empty()) {
+        s.push(item);
+        return;
+    }
+    int topItem = s.top();
+    s.pop();
+    insertAtBottom(s, item);
+    s.push(topItem);
+}
+
+// Function to reverse the stack recursively
+void reverseStack(stack&lt;int&gt;&amp; s) {
+    if (s.empty())
+        return;
+    int item = s.top();
+    s.pop();
+    reverseStack(s);
+    insertAtBottom(s, item);
+}
+</code></pre>
+        <p>This utilizes the implicit call stack to store popped elements and places them sequentially at the bottom.</p>
+      </div>
+    </div>
+
+    <!-- B5: Sparse Matrix Representation & Address Formula -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q5.</span> What is a Sparse Matrix? Explain its memory representation and derive the Lower Triangular 1D address formula.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2019, 2020</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Complete 7.5-Mark Derivation:</div>
+        <p>A matrix is <strong>Sparse</strong> if the number of zero elements is substantially greater than the number of non-zero elements. Storing it as a standard 2D array \(A[N][N]\) wastes memory.</p>
+        <p><strong>1. 3-Tuple Representation:</strong> Stored as a list of triplets: <code>[Row, Col, Value]</code>.</p>
+        <p><strong>2. Lower Triangular Matrix (LTM):</strong> \(A[i][j] = 0\) for \(i \lt j\). Total non-zero elements = \(\frac{N(N+1)}{2}\).</p>
+        <p>In Row-Major storage in a 1D array:</p>
+        <ul>
+          <li>Number of elements in rows preceding row \(i\): \(1 + 2 + 3 + \dots + i = \frac{i(i+1)}{2}\).</li>
+          <li>Within row \(i\), column offset is \(j\) (for \(0 \le j \le i\)).</li>
+        </ul>
+        $$\text{1D Index} = \frac{i(i + 1)}{2} + j$$
+        $$\text{Memory Address} = \text{Base} + w \cdot \left[ \frac{i(i + 1)}{2} + j \right]$$
+      </div>
+    </div>
+
+    <!-- B6: Deque Insertion & Deletion -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q6.</span> Explain Double-Ended Queue (Deque) operations with a suitable example.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2019, 2020, 2021</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Deque Operations &amp; Modulo Arithmetic:</div>
+        <p>Implemented circularly using an array of capacity \(M\):</p>
+        <ol>
+          <li><code>insertFront(item)</code>: <code>front = (front - 1 + M) % M</code>; <code>arr[front] = item;</code></li>
+          <li><code>insertRear(item)</code>: <code>rear = (rear + 1) % M</code>; <code>arr[rear] = item;</code></li>
+          <li><code>deleteFront()</code>: Retrieve <code>arr[front]</code>; <code>front = (front + 1) % M;</code></li>
+          <li><code>deleteRear()</code>: Retrieve <code>arr[rear]</code>; <code>rear = (rear - 1 + M) % M;</code></li>
+        </ol>
+        <p>All operations take strictly \(O(1)\) time without shifting elements.</p>
+      </div>
+    </div>
+
+    <!-- B7: Delete Last Node from Linked List -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q7.</span> Write an algorithm to delete the last node from a Singly Linked List.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2019 Examination</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Algorithm:</div>
+        <ol>
+          <li>If <code>HEAD == NULL</code>, Print <em>"Underflow: List Empty"</em> and Return.</li>
+          <li>If <code>HEAD->next == NULL</code>, Set <code>TEMP = HEAD</code>, <code>HEAD = NULL</code>, <code>free(TEMP)</code>, and Return.</li>
+          <li>Set <code>PTR = HEAD</code>.</li>
+          <li>While <code>PTR->next->next != NULL</code> do:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;Set <code>PTR = PTR->next</code>.<br>
+            [End While]
+          </li>
+          <li>Set <code>TEMP = PTR->next</code>.</li>
+          <li>Set <code>PTR->next = NULL</code>.</li>
+          <li>Call <code>free(TEMP)</code> to release memory.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- B8: Matrix Multiplication Program -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q8.</span> Write a C/C++ program to multiply two matrices \(A\) and \(B\).</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2020 Examination</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ C++ Working Source Code:</div>
+<pre><code class="language-cpp">#include &lt;iostream&gt;
+using namespace std;
+
+void multiplyMatrices(int A[10][10], int B[10][10], int C[10][10], int r1, int c1, int r2, int c2) {
+    if (c1 != r2) {
+        cout &lt;&lt; "Matrix multiplication not possible! Columns of A must equal rows of B.\\n";
+        return;
+    }
+    // Initialize resultant matrix to 0
+    for (int i = 0; i &lt; r1; i++) {
+        for (int j = 0; j &lt; c2; j++) {
+            C[i][j] = 0;
+            for (int k = 0; k &lt; c1; k++) {
+                C[i][j] += A[i][k] * B[k][j];
+            }
+        }
+    }
+}
+</code></pre>
+        <p>Three nested loops yield Time Complexity \(O(r_1 \times c_1 \times c_2) \implies O(n^3)\) for square matrices.</p>
+      </div>
+    </div>
+
+    <!-- B9: Priority Queue -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q9.</span> Explain Priority Queue with an example of real-life application.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2018, 2019, 2020</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive 7.5-Mark Solution:</div>
+        <p>A <strong>Priority Queue</strong> is an abstract data type where each element has an associated priority. Elements are served based on priority: an element with higher priority is processed before an element with lower priority, regardless of arrival order.</p>
+        <ul>
+          <li><strong>Ascending Priority Queue:</strong> Smallest key has the highest priority (e.g., Shortest Job First).</li>
+          <li><strong>Descending Priority Queue:</strong> Largest key has the highest priority.</li>
+        </ul>
+        <p><strong>Real-Life Applications:</strong> OS CPU Process Scheduling (higher priority system processes pre-empt lower priority background tasks), Hospital Emergency Rooms (triage priority for critical patients), Dijkstra's Shortest Path Algorithm, and Huffman Data Compression.</p>
+      </div>
+    </div>
+
+    <!-- B10: Delete from Linked Queue -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q10.</span> Write the procedure to delete an element from a Linked Queue.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2018 Examination</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Linked Queue Dequeue Algorithm:</div>
+        <ol>
+          <li><strong>[Check Underflow]:</strong> If <code>FRONT == NULL</code>, Print <em>"Queue Underflow"</em> and Return.</li>
+          <li><strong>[Point to Front Node]:</strong> Set <code>TEMP = FRONT</code>.</li>
+          <li><strong>[Retrieve Data]:</strong> Set <code>ITEM = TEMP->data</code>.</li>
+          <li><strong>[Advance Front]:</strong> Set <code>FRONT = FRONT->next</code>.</li>
+          <li><strong>[Check for Empty Queue]:</strong> If <code>FRONT == NULL</code>, then set <code>REAR = NULL</code>.</li>
+          <li><strong>[Free Memory]:</strong> Call <code>free(TEMP)</code>.</li>
+          <li><strong>[Return]:</strong> Return <code>ITEM</code>. Time Complexity is \(O(1)\).</li>
+        </ol>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<!-- =========================================================================
+     SECTION C : 15 MARKS DETAILED ANSWER QUESTIONS (ATTEMPT ANY 3)
+     ========================================================================= -->
+<div class="exam-section-card" id="section-c">
+  <div class="exam-section-header exam-section-header-purple">
+    <div class="exam-section-header-inner">
+      <span class="exam-section-badge badge-purple">SECTION C &bull; 15 MARKS EACH</span>
+      <h3 class="exam-section-title">Comprehensive Long Answer Solutions &amp; Visual Diagrams</h3>
+      <p class="exam-section-rule">CCSU Examination Blueprint: Attempt Any 3 Out of 5 Questions &bull; Total 45 Marks</p>
+    </div>
+  </div>
+
+  <div class="exam-section-body">
+
+    <!-- C1: Postfix Expression Evaluation (100% Guaranteed Repeat) -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q1.</span> Explain the Stack Evaluation Algorithm for Postfix expressions. Show the complete step-by-step stack status trace table for: <code>3, 1, +, 2, ^, 7, 4, -, 2, *, +, 5, -</code> and <code>ABC*DEF$/-G+H*-</code></h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Asked in 2018, 2019, 2020, 2021 (100% Guaranteed 15M)</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Full 15-Mark Solution &amp; Stack Trace:</div>
+        
+        <p><strong>Evaluation Algorithm:</strong></p>
+        <ol>
+          <li>Scan the Postfix string from left to right, one token at a time.</li>
+          <li>If the scanned token is an <strong>operand</strong> (number or letter), <code>PUSH</code> it onto the stack.</li>
+          <li>If the token is an <strong>operator \(\odot\)</strong>:
+            <ul>
+              <li><code>POP</code> the top element \(	o 	ext{Operand}_2\).</li>
+              <li><code>POP</code> the next top element \(	o 	ext{Operand}_1\).</li>
+              <li>Evaluate \(	ext{Result} = 	ext{Operand}_1 \odot 	ext{Operand}_2\).</li>
+              <li><code>PUSH</code> the \(	ext{Result}\) back onto the stack.</li>
+            </ul>
+          </li>
+          <li>When scanning completes, the value remaining in the stack is the final result.</li>
+        </ol>
+
+        <p><strong>Trace Table for: <code>3, 1, +, 2, ^, 7, 4, -, 2, *, +, 5, -</code></strong></p>
+        <div style="overflow-x: auto; margin: 14px 0;">
+          <table style="width: 100%; border-collapse: collapse; font-size: 13px;">
+            <thead>
+              <tr style="background: var(--surface); border-bottom: 2px solid var(--border);">
+                <th style="padding: 7px 10px; border: 1px solid var(--border);">Step</th>
+                <th style="padding: 7px 10px; border: 1px solid var(--border);">Token</th>
+                <th style="padding: 7px 10px; border: 1px solid var(--border);">Operation / Computation</th>
+                <th style="padding: 7px 10px; border: 1px solid var(--border);">Stack Status [Bottom &rarr; Top]</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td style="padding: 7px 10px; border: 1px solid var(--border);">1</td><td style="padding: 7px 10px; border: 1px solid var(--border);"><code>3</code></td><td style="padding: 7px 10px; border: 1px solid var(--border);">Push 3</td><td style="padding: 7px 10px; border: 1px solid var(--border);">[3]</td></tr>
+              <tr><td style="padding: 7px 10px; border: 1px solid var(--border);">2</td><td style="padding: 7px 10px; border: 1px solid var(--border);"><code>1</code></td><td style="padding: 7px 10px; border: 1px solid var(--border);">Push 1</td><td style="padding: 7px 10px; border: 1px solid var(--border);">[3, 1]</td></tr>
+              <tr><td style="padding: 7px 10px; border: 1px solid var(--border);">3</td><td style="padding: 7px 10px; border: 1px solid var(--border);"><code>+</code></td><td style="padding: 7px 10px; border: 1px solid var(--border);">Pop 1, 3 &rarr; 3 + 1 = 4 &rarr; Push 4</td><td style="padding: 7px 10px; border: 1px solid var(--border); font-weight: 700;">[4]</td></tr>
+              <tr><td style="padding: 7px 10px; border: 1px solid var(--border);">4</td><td style="padding: 7px 10px; border: 1px solid var(--border);"><code>2</code></td><td style="padding: 7px 10px; border: 1px solid var(--border);">Push 2</td><td style="padding: 7px 10px; border: 1px solid var(--border);">[4, 2]</td></tr>
+              <tr><td style="padding: 7px 10px; border: 1px solid var(--border);">5</td><td style="padding: 7px 10px; border: 1px solid var(--border);"><code>^</code></td><td style="padding: 7px 10px; border: 1px solid var(--border);">Pop 2, 4 &rarr; 4^2 = 16 &rarr; Push 16</td><td style="padding: 7px 10px; border: 1px solid var(--border); font-weight: 700;">[16]</td></tr>
+              <tr><td style="padding: 7px 10px; border: 1px solid var(--border);">6</td><td style="padding: 7px 10px; border: 1px solid var(--border);"><code>7</code></td><td style="padding: 7px 10px; border: 1px solid var(--border);">Push 7</td><td style="padding: 7px 10px; border: 1px solid var(--border);">[16, 7]</td></tr>
+              <tr><td style="padding: 7px 10px; border: 1px solid var(--border);">7</td><td style="padding: 7px 10px; border: 1px solid var(--border);"><code>4</code></td><td style="padding: 7px 10px; border: 1px solid var(--border);">Push 4</td><td style="padding: 7px 10px; border: 1px solid var(--border);">[16, 7, 4]</td></tr>
+              <tr><td style="padding: 7px 10px; border: 1px solid var(--border);">8</td><td style="padding: 7px 10px; border: 1px solid var(--border);"><code>-</code></td><td style="padding: 7px 10px; border: 1px solid var(--border);">Pop 4, 7 &rarr; 7 - 4 = 3 &rarr; Push 3</td><td style="padding: 7px 10px; border: 1px solid var(--border);">[16, 3]</td></tr>
+              <tr><td style="padding: 7px 10px; border: 1px solid var(--border);">9</td><td style="padding: 7px 10px; border: 1px solid var(--border);"><code>2</code></td><td style="padding: 7px 10px; border: 1px solid var(--border);">Push 2</td><td style="padding: 7px 10px; border: 1px solid var(--border);">[16, 3, 2]</td></tr>
+              <tr><td style="padding: 7px 10px; border: 1px solid var(--border);">10</td><td style="padding: 7px 10px; border: 1px solid var(--border);"><code>*</code></td><td style="padding: 7px 10px; border: 1px solid var(--border);">Pop 2, 3 &rarr; 3 * 2 = 6 &rarr; Push 6</td><td style="padding: 7px 10px; border: 1px solid var(--border);">[16, 6]</td></tr>
+              <tr><td style="padding: 7px 10px; border: 1px solid var(--border);">11</td><td style="padding: 7px 10px; border: 1px solid var(--border);"><code>+</code></td><td style="padding: 7px 10px; border: 1px solid var(--border);">Pop 6, 16 &rarr; 16 + 6 = 22 &rarr; Push 22</td><td style="padding: 7px 10px; border: 1px solid var(--border); font-weight: 700;">[22]</td></tr>
+              <tr><td style="padding: 7px 10px; border: 1px solid var(--border);">12</td><td style="padding: 7px 10px; border: 1px solid var(--border);"><code>5</code></td><td style="padding: 7px 10px; border: 1px solid var(--border);">Push 5</td><td style="padding: 7px 10px; border: 1px solid var(--border);">[22, 5]</td></tr>
+              <tr style="background: rgba(5, 150, 105, 0.08);"><td style="padding: 7px 10px; border: 1px solid var(--border);">13</td><td style="padding: 7px 10px; border: 1px solid var(--border);"><code>-</code></td><td style="padding: 7px 10px; border: 1px solid var(--border); font-weight: 700; color: #059669;">Pop 5, 22 &rarr; 22 - 5 = 17 &rarr; Push 17</td><td style="padding: 7px 10px; border: 1px solid var(--border); font-weight: 800; color: #059669;">[17] (Final Result)</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p><strong>Final Computed Value:</strong> \(\mathbf{17}\)</p>
+      </div>
+    </div>
+
+    <!-- C2: Singly Linked List + SVG Diagram 1 -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q2.</span> Write programming code in C/C++ to create, insert, delete, and print in reverse order for a Singly Linked List. Distinguish Singly vs Doubly Linked List with diagram.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2018, 2020, 2021 (Core 15M)</span>
+          <span class="exam-tag-marks">15 / 22.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Architectural Diagram &amp; C++ Code:</div>
+
+        <p><strong>Visual Diagram 1: Singly Linked List vs Doubly Linked List Architecture</strong></p>
+        <div style="background: #f8fafc; border: 1px solid var(--border); border-radius: 12px; padding: 16px; margin: 14px 0; overflow-x: auto;">
+          <svg viewBox="0 0 680 230" width="100%" height="auto" style="display:block; min-width: 580px; font-family: 'DM Sans', -apple-system, sans-serif;">
+            <!-- Singly Linked List Header -->
+            <text x="20" y="25" font-size="13" font-weight="800" fill="#0f172a">1. Singly Linked List (Uni-directional):</text>
+            <rect x="20" y="40" width="55" height="32" rx="6" fill="#0284c7" stroke="#0369a1"/>
+            <text x="35" y="61" font-size="12" font-weight="700" fill="#ffffff">HEAD</text>
+            <line x1="75" y1="56" x2="110" y2="56" stroke="#0284c7" stroke-width="2.5" marker-end="url(#arr-cyan)"/>
+            
+            <!-- Node 1 -->
+            <rect x="110" y="38" width="70" height="36" rx="6" fill="#ffffff" stroke="#0284c7" stroke-width="2"/>
+            <line x1="150" y1="38" x2="150" y2="74" stroke="#0284c7" stroke-width="1.5"/>
+            <text x="122" y="61" font-size="13" font-weight="700" fill="#0f172a">10</text>
+            <circle cx="165" cy="56" r="4" fill="#0284c7"/>
+            <line x1="165" y1="56" x2="225" y2="56" stroke="#0284c7" stroke-width="2" marker-end="url(#arr-cyan)"/>
+
+            <!-- Node 2 -->
+            <rect x="225" y="38" width="70" height="36" rx="6" fill="#ffffff" stroke="#0284c7" stroke-width="2"/>
+            <line x1="265" y1="38" x2="265" y2="74" stroke="#0284c7" stroke-width="1.5"/>
+            <text x="237" y="61" font-size="13" font-weight="700" fill="#0f172a">20</text>
+            <circle cx="280" cy="56" r="4" fill="#0284c7"/>
+            <line x1="280" y1="56" x2="340" y2="56" stroke="#0284c7" stroke-width="2" marker-end="url(#arr-cyan)"/>
+
+            <!-- Node 3 -->
+            <rect x="340" y="38" width="70" height="36" rx="6" fill="#ffffff" stroke="#0284c7" stroke-width="2"/>
+            <line x1="380" y1="38" x2="380" y2="74" stroke="#0284c7" stroke-width="1.5"/>
+            <text x="352" y="61" font-size="13" font-weight="700" fill="#0f172a">30</text>
+            <text x="388" y="61" font-size="11" font-weight="700" fill="#ef4444">NULL</text>
+
+            <!-- Doubly Linked List Header -->
+            <text x="20" y="125" font-size="13" font-weight="800" fill="#0f172a">2. Doubly Linked List (Bi-directional):</text>
+            <rect x="20" y="140" width="55" height="32" rx="6" fill="#7c3aed" stroke="#6d28d9"/>
+            <text x="35" y="161" font-size="12" font-weight="700" fill="#ffffff">HEAD</text>
+            <line x1="75" y1="156" x2="110" y2="156" stroke="#7c3aed" stroke-width="2.5"/>
+
+            <!-- DNode 1 -->
+            <rect x="110" y="136" width="95" height="40" rx="6" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/>
+            <line x1="135" y1="136" x2="135" y2="176" stroke="#7c3aed" stroke-width="1.5"/>
+            <line x1="175" y1="136" x2="175" y2="176" stroke="#7c3aed" stroke-width="1.5"/>
+            <text x="115" y="161" font-size="10" font-weight="700" fill="#ef4444">NULL</text>
+            <text x="148" y="161" font-size="13" font-weight="700" fill="#0f172a">10</text>
+            <circle cx="185" cy="156" r="3.5" fill="#7c3aed"/>
+            <line x1="185" y1="150" x2="245" y2="150" stroke="#7c3aed" stroke-width="2"/>
+            <line x1="245" y1="162" x2="185" y2="162" stroke="#7c3aed" stroke-width="2"/>
+
+            <!-- DNode 2 -->
+            <rect x="245" y="136" width="95" height="40" rx="6" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/>
+            <line x1="270" y1="136" x2="270" y2="176" stroke="#7c3aed" stroke-width="1.5"/>
+            <line x1="310" y1="136" x2="310" y2="176" stroke="#7c3aed" stroke-width="1.5"/>
+            <circle cx="258" cy="156" r="3.5" fill="#7c3aed"/>
+            <text x="283" y="161" font-size="13" font-weight="700" fill="#0f172a">20</text>
+            <circle cx="320" cy="156" r="3.5" fill="#7c3aed"/>
+            <line x1="320" y1="150" x2="380" y2="150" stroke="#7c3aed" stroke-width="2"/>
+            <line x1="380" y1="162" x2="320" y2="162" stroke="#7c3aed" stroke-width="2"/>
+
+            <!-- DNode 3 -->
+            <rect x="380" y="136" width="95" height="40" rx="6" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/>
+            <line x1="405" y1="136" x2="405" y2="176" stroke="#7c3aed" stroke-width="1.5"/>
+            <line x1="445" y1="136" x2="445" y2="176" stroke="#7c3aed" stroke-width="1.5"/>
+            <circle cx="393" cy="156" r="3.5" fill="#7c3aed"/>
+            <text x="418" y="161" font-size="13" font-weight="700" fill="#0f172a">30</text>
+            <text x="450" y="161" font-size="10" font-weight="700" fill="#ef4444">NULL</text>
+          </svg>
+        </div>
+
+<pre><code class="language-cpp">#include &lt;iostream&gt;
+using namespace std;
+
+struct Node {
+    int data;
+    Node* next;
+    Node(int val) : data(val), next(nullptr) {}
+};
+
+// Function to print a linked list in reverse order (Dec 2018 Q12)
+void printReverse(Node* head) {
+    if (head == nullptr) return;
+    printReverse(head->next); // Recurse on remaining list first
+    cout &lt;&lt; head->data &lt;&lt; " "; // Print node after returning
+}
+</code></pre>
+      </div>
+    </div>
+
+    <!-- C3: Binary Tree Reconstruction + SVG Diagram 2 -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q3.</span> Given Inorder = <code>ABCEDFGHI</code> and Preorder = <code>ICBADEFGH</code>. Reconstruct the unique Binary Tree, derive its Postorder Traversal, and state the algorithm.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2021 Examination</span>
+          <span class="exam-tag-marks">22.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Full 22.5-Mark Solution &amp; Vector Tree Diagram:</div>
+
+        <p><strong>Subtree Derivation:</strong></p>
+        <ol>
+          <li>Preorder[0] = <code>I</code> is the Root.</li>
+          <li>In Inorder <code>ABCEDFGHI</code>, <code>I</code> is at index 8 (the very end). Hence, the <strong>Right Subtree is EMPTY</strong>, and all 8 nodes <code>ABCEDFGH</code> form the <strong>Left Subtree</strong>.</li>
+          <li>Next Preorder symbol is <code>C</code> &rarr; Root of the left subtree. In Inorder, nodes left of <code>C</code> are <code>AB</code>, and right of <code>C</code> are <code>EDFGH</code>.</li>
+          <li>For <code>AB</code>: Preorder is <code>B, A</code> &rarr; <code>B</code> is root, <code>A</code> is its left child.</li>
+          <li>For <code>EDFGH</code>: Preorder is <code>D, E, F, G, H</code> &rarr; <code>D</code> is root, <code>E</code> is left child, <code>F</code> is right child; <code>G</code> is right child of <code>F</code>, and <code>H</code> is right child of <code>G</code>.</li>
+        </ol>
+
+        <p><strong>Visual Diagram 2: Reconstructed Binary Tree from Preorder &amp; Inorder</strong></p>
+        <div style="background: #f8fafc; border: 1px solid var(--border); border-radius: 12px; padding: 16px; margin: 14px 0; overflow-x: auto;">
+          <svg viewBox="0 0 560 380" width="100%" height="auto" style="display:block; min-width: 480px; font-family: 'DM Sans', -apple-system, sans-serif;">
+            <!-- Connector Lines -->
+            <line x1="300" y1="45" x2="210" y2="105" stroke="#64748b" stroke-width="2.5"/>
+            <line x1="210" y1="105" x2="130" y2="165" stroke="#64748b" stroke-width="2.5"/>
+            <line x1="130" y1="165" x2="70" y2="225" stroke="#64748b" stroke-width="2.5"/>
+            <line x1="210" y1="105" x2="290" y2="165" stroke="#64748b" stroke-width="2.5"/>
+            <line x1="290" y1="165" x2="230" y2="225" stroke="#64748b" stroke-width="2.5"/>
+            <line x1="290" y1="165" x2="350" y2="225" stroke="#64748b" stroke-width="2.5"/>
+            <line x1="350" y1="225" x2="410" y2="285" stroke="#64748b" stroke-width="2.5"/>
+            <line x1="410" y1="285" x2="470" y2="345" stroke="#64748b" stroke-width="2.5"/>
+
+            <!-- Node I (Root) -->
+            <circle cx="300" cy="45" r="22" fill="#059669" stroke="#047857" stroke-width="2"/>
+            <text x="295" y="52" font-size="16" font-weight="900" fill="#ffffff">I</text>
+
+            <!-- Node C -->
+            <circle cx="210" cy="105" r="20" fill="#0284c7" stroke="#0369a1" stroke-width="2"/>
+            <text x="204" y="112" font-size="15" font-weight="800" fill="#ffffff">C</text>
+
+            <!-- Node B -->
+            <circle cx="130" cy="165" r="19" fill="#0284c7" stroke="#0369a1" stroke-width="2"/>
+            <text x="124" y="171" font-size="15" font-weight="800" fill="#ffffff">B</text>
+
+            <!-- Node A -->
+            <circle cx="70" cy="225" r="18" fill="#38bdf8" stroke="#0284c7" stroke-width="2"/>
+            <text x="64" y="231" font-size="14" font-weight="800" fill="#ffffff">A</text>
+
+            <!-- Node D -->
+            <circle cx="290" cy="165" r="19" fill="#0284c7" stroke="#0369a1" stroke-width="2"/>
+            <text x="284" y="171" font-size="15" font-weight="800" fill="#ffffff">D</text>
+
+            <!-- Node E -->
+            <circle cx="230" cy="225" r="18" fill="#38bdf8" stroke="#0284c7" stroke-width="2"/>
+            <text x="225" y="231" font-size="14" font-weight="800" fill="#ffffff">E</text>
+
+            <!-- Node F -->
+            <circle cx="350" cy="225" r="18" fill="#0284c7" stroke="#0369a1" stroke-width="2"/>
+            <text x="345" y="231" font-size="14" font-weight="800" fill="#ffffff">F</text>
+
+            <!-- Node G -->
+            <circle cx="410" cy="285" r="18" fill="#0284c7" stroke="#0369a1" stroke-width="2"/>
+            <text x="404" y="291" font-size="14" font-weight="800" fill="#ffffff">G</text>
+
+            <!-- Node H -->
+            <circle cx="470" cy="345" r="18" fill="#38bdf8" stroke="#0284c7" stroke-width="2"/>
+            <text x="464" y="351" font-size="14" font-weight="800" fill="#ffffff">H</text>
+          </svg>
+        </div>
+
+        <p><strong>Derived Postorder Traversal (LRN):</strong></p>
+        <p style="font-size: 15px; font-weight: 800; color: #059669; letter-spacing: 2px;">A &rarr; B &rarr; E &rarr; H &rarr; G &rarr; F &rarr; D &rarr; C &rarr; I</p>
+      </div>
+    </div>
+
+    <!-- C4: Binary Search Tree Construction + SVG Diagram 3 -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q4.</span> Explain BST Insertion and Deletion algorithms. Construct a Binary Search Tree (BST) for the numbers: <code>14, 15, 4, 9, 7, 18, 3, 5, 16, 20, 17</code></h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2019, 2020 (Core 15M)</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Full 15-Mark Solution &amp; Vector BST Diagram:</div>
+
+        <p><strong>BST Property:</strong> For every node \(X\), all values in its left subtree are \(\lt X\), and all values in its right subtree are \(\gt X\).</p>
+
+        <p><strong>Visual Diagram 3: Constructed Binary Search Tree</strong></p>
+        <div style="background: #f8fafc; border: 1px solid var(--border); border-radius: 12px; padding: 16px; margin: 14px 0; overflow-x: auto;">
+          <svg viewBox="0 0 580 320" width="100%" height="auto" style="display:block; min-width: 480px; font-family: 'DM Sans', -apple-system, sans-serif;">
+            <!-- Tree Connectors -->
+            <line x1="300" y1="40" x2="160" y2="100" stroke="#64748b" stroke-width="2"/>
+            <line x1="300" y1="40" x2="440" y2="100" stroke="#64748b" stroke-width="2"/>
+            <line x1="160" y1="100" x2="100" y2="160" stroke="#64748b" stroke-width="2"/>
+            <line x1="160" y1="100" x2="220" y2="160" stroke="#64748b" stroke-width="2"/>
+            <line x1="220" y1="160" x2="170" y2="220" stroke="#64748b" stroke-width="2"/>
+            <line x1="170" y1="220" x2="140" y2="280" stroke="#64748b" stroke-width="2"/>
+            <line x1="440" y1="100" x2="500" y2="160" stroke="#64748b" stroke-width="2"/>
+            <line x1="500" y1="160" x2="450" y2="220" stroke="#64748b" stroke-width="2"/>
+            <line x1="450" y1="220" x2="480" y2="280" stroke="#64748b" stroke-width="2"/>
+            <line x1="500" y1="160" x2="550" y2="220" stroke="#64748b" stroke-width="2"/>
+
+            <!-- Root 14 -->
+            <circle cx="300" cy="40" r="20" fill="#7c3aed" stroke="#6d28d9" stroke-width="2"/>
+            <text x="291" y="46" font-size="14" font-weight="900" fill="#ffffff">14</text>
+
+            <!-- Node 4 -->
+            <circle cx="160" cy="100" r="19" fill="#0284c7" stroke="#0369a1" stroke-width="2"/>
+            <text x="155" y="106" font-size="14" font-weight="800" fill="#ffffff">4</text>
+
+            <!-- Node 15 -->
+            <circle cx="440" cy="100" r="19" fill="#059669" stroke="#047857" stroke-width="2"/>
+            <text x="432" y="106" font-size="14" font-weight="800" fill="#ffffff">15</text>
+
+            <!-- Left Subtree Nodes -->
+            <circle cx="100" cy="160" r="17" fill="#38bdf8" stroke="#0284c7" stroke-width="2"/>
+            <text x="96" y="165" font-size="13" font-weight="800" fill="#ffffff">3</text>
+
+            <circle cx="220" cy="160" r="17" fill="#0284c7" stroke="#0369a1" stroke-width="2"/>
+            <text x="216" y="165" font-size="13" font-weight="800" fill="#ffffff">9</text>
+
+            <circle cx="170" cy="220" r="17" fill="#0284c7" stroke="#0369a1" stroke-width="2"/>
+            <text x="166" y="225" font-size="13" font-weight="800" fill="#ffffff">7</text>
+
+            <circle cx="140" cy="280" r="16" fill="#38bdf8" stroke="#0284c7" stroke-width="2"/>
+            <text x="136" y="285" font-size="12" font-weight="800" fill="#ffffff">5</text>
+
+            <!-- Right Subtree Nodes -->
+            <circle cx="500" cy="160" r="17" fill="#059669" stroke="#047857" stroke-width="2"/>
+            <text x="492" y="165" font-size="13" font-weight="800" fill="#ffffff">18</text>
+
+            <circle cx="450" cy="220" r="17" fill="#059669" stroke="#047857" stroke-width="2"/>
+            <text x="442" y="225" font-size="13" font-weight="800" fill="#ffffff">16</text>
+
+            <circle cx="480" cy="280" r="16" fill="#34d399" stroke="#059669" stroke-width="2"/>
+            <text x="473" y="285" font-size="12" font-weight="800" fill="#ffffff">17</text>
+
+            <circle cx="550" cy="220" r="17" fill="#34d399" stroke="#059669" stroke-width="2"/>
+            <text x="542" y="225" font-size="13" font-weight="800" fill="#ffffff">20</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- C5: B-Tree Order 3 Construction + SVG Diagram 4 -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q5.</span> State properties of B-Trees. Construct a B-Tree of order 3 for following data: <code>Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec</code></h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2018, 2020 (Core 15M)</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Full 15-Mark Solution &amp; B-Tree Multi-Key Diagram:</div>
+
+        <p><strong>B-Tree of Order \(m = 3\) Rules:</strong></p>
+        <ul>
+          <li>Maximum keys per node = \(m - 1 = 2\). Maximum children = \(m = 3\).</li>
+          <li>Minimum keys per non-root node = \(\lceil m/2 
+ceil - 1 = 1\).</li>
+          <li>All leaves must be at the exact same level.</li>
+          <li>When inserting into a full 2-key node, it splits: the median (middle) key is promoted to the parent.</li>
+        </ul>
+
+        <p><strong>Visual Diagram 4: Final B-Tree of Order 3 for 12 Months</strong></p>
+        <div style="background: #f8fafc; border: 1px solid var(--border); border-radius: 12px; padding: 16px; margin: 14px 0; overflow-x: auto;">
+          <svg viewBox="0 0 620 250" width="100%" height="auto" style="display:block; min-width: 520px; font-family: 'DM Sans', -apple-system, sans-serif;">
+            <!-- Level 1 Connectors -->
+            <line x1="280" y1="52" x2="160" y2="105" stroke="#64748b" stroke-width="2"/>
+            <line x1="330" y1="52" x2="450" y2="105" stroke="#64748b" stroke-width="2"/>
+
+            <!-- Level 2 to Level 3 Connectors -->
+            <line x1="130" y1="135" x2="80" y2="185" stroke="#64748b" stroke-width="1.8"/>
+            <line x1="180" y1="135" x2="180" y2="185" stroke="#64748b" stroke-width="1.8"/>
+            <line x1="420" y1="135" x2="290" y2="185" stroke="#64748b" stroke-width="1.8"/>
+            <line x1="455" y1="135" x2="390" y2="185" stroke="#64748b" stroke-width="1.8"/>
+            <line x1="490" y1="135" x2="500" y2="185" stroke="#64748b" stroke-width="1.8"/>
+
+            <!-- Root: [Jan] -->
+            <rect x="260" y="20" width="90" height="34" rx="6" fill="#059669" stroke="#047857" stroke-width="2"/>
+            <text x="290" y="42" font-size="13" font-weight="900" fill="#ffffff">Jan</text>
+
+            <!-- Level 2: [Dec] and [Jun | Oct] -->
+            <rect x="120" y="105" width="80" height="32" rx="6" fill="#0284c7" stroke="#0369a1" stroke-width="2"/>
+            <text x="145" y="126" font-size="12" font-weight="800" fill="#ffffff">Dec</text>
+
+            <rect x="380" y="105" width="140" height="32" rx="6" fill="#0284c7" stroke="#0369a1" stroke-width="2"/>
+            <line x1="450" y1="105" x2="450" y2="137" stroke="#ffffff" stroke-width="1.5"/>
+            <text x="408" y="126" font-size="12" font-weight="800" fill="#ffffff">Jun</text>
+            <text x="475" y="126" font-size="12" font-weight="800" fill="#ffffff">Oct</text>
+
+            <!-- Level 3 Leaves -->
+            <rect x="30" y="185" width="100" height="32" rx="5" fill="#f1f5f9" stroke="#0284c7" stroke-width="1.8"/>
+            <line x1="80" y1="185" x2="80" y2="217" stroke="#0284c7" stroke-width="1"/>
+            <text x="45" y="206" font-size="11" font-weight="700" fill="#0f172a">Apr</text>
+            <text x="95" y="206" font-size="11" font-weight="700" fill="#0f172a">Aug</text>
+
+            <rect x="150" y="185" width="60" height="32" rx="5" fill="#f1f5f9" stroke="#0284c7" stroke-width="1.8"/>
+            <text x="168" y="206" font-size="11" font-weight="700" fill="#0f172a">Feb</text>
+
+            <rect x="240" y="185" width="100" height="32" rx="5" fill="#f1f5f9" stroke="#0284c7" stroke-width="1.8"/>
+            <line x1="290" y1="185" x2="290" y2="217" stroke="#0284c7" stroke-width="1"/>
+            <text x="255" y="206" font-size="11" font-weight="700" fill="#0f172a">Jul</text>
+            <text x="302" y="206" font-size="11" font-weight="700" fill="#0f172a">Mar</text>
+
+            <rect x="360" y="185" width="60" height="32" rx="5" fill="#f1f5f9" stroke="#0284c7" stroke-width="1.8"/>
+            <text x="375" y="206" font-size="11" font-weight="700" fill="#0f172a">May</text>
+
+            <rect x="450" y="185" width="100" height="32" rx="5" fill="#f1f5f9" stroke="#0284c7" stroke-width="1.8"/>
+            <line x1="500" y1="185" x2="500" y2="217" stroke="#0284c7" stroke-width="1"/>
+            <text x="465" y="206" font-size="11" font-weight="700" fill="#0f172a">Nov</text>
+            <text x="515" y="206" font-size="11" font-weight="700" fill="#0f172a">Sep</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- C6: Max-Heap Tree Construction + SVG Diagram 5 -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q6.</span> Construct a Max-Heap for the given data: <code>95, 13, 12, 71, 96, 10, 62, 43, 35, 38</code>. Show its 1D array representation and Heap Sort mechanism.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2019, 2020, 2021 (Core 15M)</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Full Max-Heap Solution &amp; Array Mapping:</div>
+
+        <p><strong>Max-Heap Property:</strong> \(	ext{A}[	ext{parent}(i)] \ge 	ext{A}[i]\) for all nodes \(i\).</p>
+
+        <p><strong>Visual Diagram 5: Final Max-Heap Tree &amp; 1D Sequential Array Mapping</strong></p>
+        <div style="background: #f8fafc; border: 1px solid var(--border); border-radius: 12px; padding: 16px; margin: 14px 0; overflow-x: auto;">
+          <svg viewBox="0 0 580 340" width="100%" height="auto" style="display:block; min-width: 480px; font-family: 'DM Sans', -apple-system, sans-serif;">
+            <!-- Tree Edges -->
+            <line x1="290" y1="35" x2="160" y2="90" stroke="#64748b" stroke-width="2"/>
+            <line x1="290" y1="35" x2="420" y2="90" stroke="#64748b" stroke-width="2"/>
+            <line x1="160" y1="90" x2="100" y2="150" stroke="#64748b" stroke-width="2"/>
+            <line x1="160" y1="90" x2="220" y2="150" stroke="#64748b" stroke-width="2"/>
+            <line x1="420" y1="90" x2="360" y2="150" stroke="#64748b" stroke-width="2"/>
+            <line x1="420" y1="90" x2="480" y2="150" stroke="#64748b" stroke-width="2"/>
+            <line x1="100" y1="150" x2="70" y2="210" stroke="#64748b" stroke-width="2"/>
+            <line x1="100" y1="150" x2="130" y2="210" stroke="#64748b" stroke-width="2"/>
+            <line x1="220" y1="150" x2="190" y2="210" stroke="#64748b" stroke-width="2"/>
+
+            <!-- Root: 96 -->
+            <circle cx="290" cy="35" r="19" fill="#dc2626" stroke="#b91c1c" stroke-width="2"/>
+            <text x="281" y="41" font-size="14" font-weight="900" fill="#ffffff">96</text>
+
+            <!-- Level 1 -->
+            <circle cx="160" cy="90" r="18" fill="#ea580c" stroke="#c2410c" stroke-width="2"/>
+            <text x="151" y="96" font-size="13" font-weight="800" fill="#ffffff">95</text>
+            <circle cx="420" cy="90" r="18" fill="#ea580c" stroke="#c2410c" stroke-width="2"/>
+            <text x="412" y="96" font-size="13" font-weight="800" fill="#ffffff">62</text>
+
+            <!-- Level 2 -->
+            <circle cx="100" cy="150" r="17" fill="#0284c7" stroke="#0369a1" stroke-width="2"/>
+            <text x="93" y="155" font-size="12" font-weight="800" fill="#ffffff">71</text>
+            <circle cx="220" cy="150" r="17" fill="#0284c7" stroke="#0369a1" stroke-width="2"/>
+            <text x="212" y="155" font-size="12" font-weight="800" fill="#ffffff">38</text>
+            <circle cx="360" cy="150" r="17" fill="#0284c7" stroke="#0369a1" stroke-width="2"/>
+            <text x="353" y="155" font-size="12" font-weight="800" fill="#ffffff">10</text>
+            <circle cx="480" cy="150" r="17" fill="#0284c7" stroke="#0369a1" stroke-width="2"/>
+            <text x="473" y="155" font-size="12" font-weight="800" fill="#ffffff">12</text>
+
+            <!-- Level 3 -->
+            <circle cx="70" cy="210" r="16" fill="#38bdf8" stroke="#0284c7" stroke-width="2"/>
+            <text x="62" y="215" font-size="12" font-weight="800" fill="#ffffff">43</text>
+            <circle cx="130" cy="210" r="16" fill="#38bdf8" stroke="#0284c7" stroke-width="2"/>
+            <text x="123" y="215" font-size="12" font-weight="800" fill="#ffffff">35</text>
+            <circle cx="190" cy="210" r="16" fill="#38bdf8" stroke="#0284c7" stroke-width="2"/>
+            <text x="183" y="215" font-size="12" font-weight="800" fill="#ffffff">13</text>
+
+            <!-- 1D Array Boxes -->
+            <text x="30" y="270" font-size="12" font-weight="800" fill="#0f172a">Corresponding 1D Array:</text>
+            <g transform="translate(30, 280)">
+              <rect x="0" y="0" width="50" height="30" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+              <text x="16" y="20" font-size="12" font-weight="800" fill="#b91c1c">96</text>
+              <rect x="50" y="0" width="50" height="30" fill="#ffedd5" stroke="#ea580c" stroke-width="1.5"/>
+              <text x="66" y="20" font-size="12" font-weight="800" fill="#c2410c">95</text>
+              <rect x="100" y="0" width="50" height="30" fill="#ffedd5" stroke="#ea580c" stroke-width="1.5"/>
+              <text x="116" y="20" font-size="12" font-weight="800" fill="#c2410c">62</text>
+              <rect x="150" y="0" width="50" height="30" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.5"/>
+              <text x="166" y="20" font-size="12" font-weight="800" fill="#0369a1">71</text>
+              <rect x="200" y="0" width="50" height="30" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.5"/>
+              <text x="216" y="20" font-size="12" font-weight="800" fill="#0369a1">38</text>
+              <rect x="250" y="0" width="50" height="30" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.5"/>
+              <text x="266" y="20" font-size="12" font-weight="800" fill="#0369a1">10</text>
+              <rect x="300" y="0" width="50" height="30" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.5"/>
+              <text x="316" y="20" font-size="12" font-weight="800" fill="#0369a1">12</text>
+              <rect x="350" y="0" width="50" height="30" fill="#f0f9ff" stroke="#38bdf8" stroke-width="1.5"/>
+              <text x="366" y="20" font-size="12" font-weight="800" fill="#0284c7">43</text>
+              <rect x="400" y="0" width="50" height="30" fill="#f0f9ff" stroke="#38bdf8" stroke-width="1.5"/>
+              <text x="416" y="20" font-size="12" font-weight="800" fill="#0284c7">35</text>
+              <rect x="450" y="0" width="50" height="30" fill="#f0f9ff" stroke="#38bdf8" stroke-width="1.5"/>
+              <text x="466" y="20" font-size="12" font-weight="800" fill="#0284c7">13</text>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- C7: Circular Queue Implementation + SVG Diagram 6 -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q7.</span> Design a function CINSERT and CDELETE for static implementation of a Circular Queue. Illustrate with a circular ring diagram.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2020 Examination</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Full C++ Code &amp; Circular Ring Architecture:</div>
+
+        <p><strong>Visual Diagram 6: Circular Queue Ring Architecture (Capacity = 8)</strong></p>
+        <div style="background: #f8fafc; border: 1px solid var(--border); border-radius: 12px; padding: 16px; margin: 14px 0; display: flex; justify-content: center;">
+          <svg viewBox="0 0 380 340" width="100%" height="auto" style="display:block; max-width: 360px; font-family: 'DM Sans', -apple-system, sans-serif;">
+            <!-- Outer and Inner Rings -->
+            <circle cx="190" cy="170" r="130" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+            <circle cx="190" cy="170" r="70" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+
+            <!-- Cells -->
+            <!-- Cell 0 (Top) -->
+            <text x="183" y="65" font-size="13" font-weight="700" fill="#94a3b8">[0] Empty</text>
+            <!-- Cell 1 -->
+            <text x="255" y="95" font-size="13" font-weight="700" fill="#94a3b8">[1] Empty</text>
+            <!-- Cell 2 (FRONT) -->
+            <circle cx="285" cy="170" r="22" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+            <text x="277" y="175" font-size="13" font-weight="900" fill="#047857">10</text>
+            <text x="315" y="175" font-size="12" font-weight="800" fill="#047857">&larr; FRONT (2)</text>
+            <!-- Cell 3 -->
+            <circle cx="255" cy="245" r="22" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+            <text x="247" y="250" font-size="13" font-weight="900" fill="#047857">20</text>
+            <!-- Cell 4 -->
+            <circle cx="190" cy="275" r="22" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+            <text x="182" y="280" font-size="13" font-weight="900" fill="#047857">30</text>
+            <!-- Cell 5 (REAR) -->
+            <circle cx="125" cy="245" r="22" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+            <text x="117" y="250" font-size="13" font-weight="900" fill="#1d4ed8">40</text>
+            <text x="15" y="250" font-size="12" font-weight="800" fill="#1d4ed8">REAR (5) &rarr;</text>
+            <!-- Cell 6 -->
+            <text x="85" y="175" font-size="13" font-weight="700" fill="#94a3b8">[6] Empty</text>
+            <!-- Cell 7 -->
+            <text x="115" y="95" font-size="13" font-weight="700" fill="#94a3b8">[7] Empty</text>
+
+            <text x="150" y="175" font-size="13" font-weight="800" fill="#475569">Modulo 8</text>
+          </svg>
+        </div>
+
+<pre><code class="language-cpp">#define MAX 8
+int cqueue[MAX];
+int front = -1, rear = -1;
+
+// Function CINSERT
+void cinsert(int val) {
+    if ((front == 0 &amp;&amp; rear == MAX - 1) || (front == (rear + 1) % MAX)) {
+        cout &lt;&lt; "Circular Queue Overflow!\n";
+        return;
+    }
+    if (front == -1) { // First element
+        front = rear = 0;
+    } else {
+        rear = (rear + 1) % MAX;
+    }
+    cqueue[rear] = val;
+}
+
+// Function CDELETE
+int cdelete() {
+    if (front == -1) {
+        cout &lt;&lt; "Circular Queue Underflow!\n";
+        return -1;
+    }
+    int item = cqueue[front];
+    if (front == rear) { // Last remaining element
+        front = rear = -1;
+    } else {
+        front = (front + 1) % MAX;
+    }
+    return item;
+}
+</code></pre>
+      </div>
+    </div>
+
+    <!-- C8: Hashing Techniques & Collision Handling -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q8.</span> Describe Hashing and various Hashing techniques in detail. Explain Open Addressing (Linear Probing) vs Separate Chaining with numeric example.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2018, 2019, 2020, 2021</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Full 15-Mark Solution:</div>
+
+        <p><strong>Collision:</strong> Occurs when two distinct keys \(k_1 
+eq k_2\) produce the same hash index: \(h(k_1) = h(k_2)\).</p>
+        <p><strong>1. Open Addressing (Closed Hashing):</strong> All elements are stored directly inside the hash table array slots. When a collision occurs, alternative slots are probed systematically:</p>
+        <ul>
+          <li><strong>Linear Probing:</strong> \(h(k, i) = (h'(k) + i) \bmod m\). Simple but suffers from <em>Primary Clustering</em>.</li>
+          <li><strong>Quadratic Probing:</strong> \(h(k, i) = (h'(k) + c_1 i + c_2 i^2) \bmod m\). Eliminates primary clustering.</li>
+          <li><strong>Double Hashing:</strong> \(h(k, i) = (h_1(k) + i \cdot h_2(k)) \bmod m\). Best open addressing scheme.</li>
+        </ul>
+
+        <p><strong>2. Separate Chaining (Open Hashing):</strong> Each table slot is a header pointer to a linked list of records that hash to the same index. Infinite keys can be accommodated as long as RAM allows, completely eliminating primary clustering.</p>
+      </div>
+    </div>
+
+    <!-- C9: Quick Sort & Bubble Sort Complexity -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q9.</span> (a) Perform Quick Sort on: <code>66, 35, 48, 55, 62, 77, 25, 38, 18, 40, 30, 20</code> (b) Derive Time Complexity of Bubble Sort.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2018, 2020</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Step-by-Step Solution:</div>
+
+        <p><strong>(a) Quick Sort Partition Trace:</strong> Pivot chosen as first element \(	ext{Pivot} = 66\). Pointers <code>low</code> scans right for element \(> 66\) (finds 77), and <code>high</code> scans left for element \(\le 66\) (finds 20). Swap 77 and 20. Continue until pointers cross, then swap pivot into place. Partition divides array into: \(\{	ext{Elements } \le 66\}\) &bull; \(\mathbf{66}\) &bull; \(\{	ext{Elements } > 66\}\).</p>
+
+        <p><strong>(b) Bubble Sort Time Complexity Derivation:</strong></p>
+        <ul>
+          <li>Pass 1: \(n - 1\) comparisons</li>
+          <li>Pass 2: \(n - 2\) comparisons</li>
+          <li>Pass \(n-1\): \(1\) comparison</li>
+        </ul>
+        $$	ext{Total Comparisons} = (n - 1) + (n - 2) + \dots + 1 = \frac{n(n - 1)}{2} = \frac{n^2 - n}{2} \implies \mathbf{O(n^2)}$$
+        <p>With an early termination flag checking if any swap occurred, Best-Case time complexity drops to \(\mathbf{O(n)}\).</p>
+      </div>
+    </div>
+
+    <!-- C10: Linear vs Binary Search -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q10.</span> Differentiate between Linear Search and Binary Search. Give complete code and comparative analysis.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2020, 2021</span>
+          <span class="exam-tag-marks">15 / 22.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comparison Table &amp; Code:</div>
+
+        <div style="overflow-x: auto; margin: 12px 0;">
+          <table style="width: 100%; border-collapse: collapse; font-size: 13px;">
+            <tr style="background: var(--surface);">
+              <th style="padding: 8px 12px; border: 1px solid var(--border);">Parameter</th>
+              <th style="padding: 8px 12px; border: 1px solid var(--border);">Linear Search</th>
+              <th style="padding: 8px 12px; border: 1px solid var(--border);">Binary Search</th>
+            </tr>
+            <tr>
+              <td style="padding: 8px 12px; border: 1px solid var(--border); font-weight: 700;">Pre-condition</td>
+              <td style="padding: 8px 12px; border: 1px solid var(--border);">None; works on unsorted arrays</td>
+              <td style="padding: 8px 12px; border: 1px solid var(--border); font-weight: 700; color: #dc2626;">Array MUST be sorted</td>
+            </tr>
+            <tr>
+              <td style="padding: 8px 12px; border: 1px solid var(--border); font-weight: 700;">Worst Time Complexity</td>
+              <td style="padding: 8px 12px; border: 1px solid var(--border);">\(O(n)\)</td>
+              <td style="padding: 8px 12px; border: 1px solid var(--border); font-weight: 700; color: #059669;">\(O(\log n)\)</td>
+            </tr>
+            <tr>
+              <td style="padding: 8px 12px; border: 1px solid var(--border); font-weight: 700;">Approach</td>
+              <td style="padding: 8px 12px; border: 1px solid var(--border);">Sequential element-by-element scan</td>
+              <td style="padding: 8px 12px; border: 1px solid var(--border);">Divide &amp; conquer (halving search interval)</td>
+            </tr>
+            <tr>
+              <td style="padding: 8px 12px; border: 1px solid var(--border); font-weight: 700;">Data Structure Support</td>
+              <td style="padding: 8px 12px; border: 1px solid var(--border);">Arrays and Linked Lists</td>
+              <td style="padding: 8px 12px; border: 1px solid var(--border);">Arrays only (requires \(O(1)\) random access)</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- C11: Threaded Binary Tree + SVG Diagram 7 -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q11.</span> What is a Threaded Binary Tree? Explain with a diagram how NULL pointers are utilized. Why is Doubly Linked List better than Singly Linked List?</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2021 Examination</span>
+          <span class="exam-tag-marks">22.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Full 22.5-Mark Solution &amp; Threaded Tree Diagram:</div>
+
+        <p>In a standard binary tree with \(n\) nodes, exactly \(n + 1\) child pointers are <code>NULL</code>, wasting more than half of the pointer storage. A <strong>Threaded Binary Tree</strong> reclaims these wasted NULL pointers to store direct links (threads) to the node's <strong>Inorder Predecessor</strong> and <strong>Inorder Successor</strong>, allowing stack-free, non-recursive tree traversals.</p>
+
+        <p><strong>Visual Diagram 7: Two-Way Threaded Binary Tree (Dashed Arrows = Threads)</strong></p>
+        <div style="background: #f8fafc; border: 1px solid var(--border); border-radius: 12px; padding: 16px; margin: 14px 0; overflow-x: auto;">
+          <svg viewBox="0 0 540 240" width="100%" height="auto" style="display:block; min-width: 460px; font-family: 'DM Sans', -apple-system, sans-serif;">
+            <!-- Solid Tree Edges -->
+            <line x1="270" y1="40" x2="160" y2="100" stroke="#0f172a" stroke-width="2.5"/>
+            <line x1="270" y1="40" x2="380" y2="100" stroke="#0f172a" stroke-width="2.5"/>
+            <line x1="160" y1="100" x2="100" y2="160" stroke="#0f172a" stroke-width="2.5"/>
+            <line x1="160" y1="100" x2="220" y2="160" stroke="#0f172a" stroke-width="2.5"/>
+
+            <!-- Dashed Threads (Inorder links) -->
+            <!-- From 100 right to 160 -->
+            <path d="M 115 150 Q 130 120 150 115" fill="none" stroke="#dc2626" stroke-width="2" stroke-dasharray="4,4"/>
+            <!-- From 220 left to 160 -->
+            <path d="M 210 150 Q 190 120 170 115" fill="none" stroke="#dc2626" stroke-width="2" stroke-dasharray="4,4"/>
+            <!-- From 220 right to 270 -->
+            <path d="M 230 150 Q 250 100 260 55" fill="none" stroke="#dc2626" stroke-width="2" stroke-dasharray="4,4"/>
+            <!-- From 380 left to 270 -->
+            <path d="M 370 90 Q 320 60 285 45" fill="none" stroke="#dc2626" stroke-width="2" stroke-dasharray="4,4"/>
+
+            <!-- Nodes -->
+            <circle cx="270" cy="40" r="20" fill="#0284c7" stroke="#0369a1" stroke-width="2"/>
+            <text x="261" y="46" font-size="14" font-weight="900" fill="#ffffff">30</text>
+
+            <circle cx="160" cy="100" r="19" fill="#0284c7" stroke="#0369a1" stroke-width="2"/>
+            <text x="152" y="106" font-size="14" font-weight="800" fill="#ffffff">20</text>
+
+            <circle cx="380" cy="100" r="19" fill="#0284c7" stroke="#0369a1" stroke-width="2"/>
+            <text x="372" y="106" font-size="14" font-weight="800" fill="#ffffff">40</text>
+
+            <circle cx="100" cy="160" r="17" fill="#38bdf8" stroke="#0284c7" stroke-width="2"/>
+            <text x="93" y="165" font-size="13" font-weight="800" fill="#ffffff">10</text>
+
+            <circle cx="220" cy="160" r="17" fill="#38bdf8" stroke="#0284c7" stroke-width="2"/>
+            <text x="212" y="165" font-size="13" font-weight="800" fill="#ffffff">25</text>
+          </svg>
+        </div>
+
+        <p><strong>Why Doubly Linked List is Superior to Singly Linked List:</strong></p>
+        <ol>
+          <li><strong>Bi-directional Traversal:</strong> Nodes can be traversed in both forward (Next) and backward (Prev) directions.</li>
+          <li><strong>Constant Time Deletion \(O(1)\):</strong> To delete a node given its pointer, a doubly linked list can immediately access its predecessor via <code>node->prev</code> without scanning from <code>head</code>, completing deletion in \(O(1)\) instead of \(O(n)\).</li>
+          <li><strong>Easier Node Insertion:</strong> Inserting before a given node is straightforward with <code>prev</code> pointer.</li>
+        </ol>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<!-- Bottom Navigation & Action Bar -->
+<div class="exam-actions-bar" style="margin-top: 36px; justify-content: space-between; flex-wrap: wrap; gap: 12px;">
+  <a href="{{ '/ccsu/bca/semester-3/' | relative_url }}" class="text-link">&larr; Back to BCA Semester 3 Hub</a>
+  <a href="{{ '/courses/bca/important-questions/' | relative_url }}" class="text-link">&uarr; Master Important Questions Index</a>
+  <button class="print-btn" onclick="triggerMathPrint()">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+    Save as PDF / Print Solved Notebook
+  </button>
+</div>

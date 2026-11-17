@@ -1,0 +1,36 @@
+{% assign sec = site.data.homepage.semesters_section %}
+<section class="home-section">
+  <div class="home-container">
+    <div class="section-header-row">
+      <div class="section-title-group">
+        <span class="section-icon-box icon-theme-blue">
+          {% include ui/icon.html name="book" size=22 %}
+        </span>
+        <div>
+          <h2 class="section-heading-lg">{{ sec.title }}</h2>
+          <p class="section-subcopy">{{ sec.subtitle }}</p>
+        </div>
+      </div>
+      <a href="{{ sec.cta_url | relative_url }}" class="outline-pill-btn">
+        <span>{{ sec.cta_label }}</span>
+        {% include ui/icon.html name="arrow-right" size=15 %}
+      </a>
+    </div>
+
+    <!-- Reusable Pastel Tile Grid (Phase 1: 6 Semesters | Phase 2: 12 Courses / 10 Subjects) -->
+    <div class="pastel-tile-grid">
+      {% for card in sec.cards %}
+      <a href="{{ card.url | relative_url }}" class="pastel-tile pastel-tile-{{ card.theme }}">
+        <span class="pastel-tile-icon">
+          {% include ui/icon.html name="book" size=22 %}
+        </span>
+        <strong class="pastel-tile-title">{{ card.number }}</strong>
+        <span class="pastel-tile-sub">{{ card.subtitle }}</span>
+        <span class="pastel-tile-arrow" aria-hidden="true">
+          {% include ui/icon.html name="arrow-right" size=15 %}
+        </span>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>

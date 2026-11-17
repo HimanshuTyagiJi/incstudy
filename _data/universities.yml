@@ -1,0 +1,16 @@
+- id: ccsu
+  name: CCSU
+  short: CCSU
+  full_name: Chaudhary Charan Singh University
+  state: Uttar Pradesh
+  url: /ccsu/
+  active: true
+
+# AKTU (Dr. A.P.J. Abdul Kalam Technical University) - Archived for Phase 2
+# - id: aktu
+#   name: AKTU
+#   short: AKTU
+#   full_name: Dr. A.P.J. Abdul Kalam Technical University
+#   state: Uttar Pradesh
+#   url: /aktu/
+#   active: false

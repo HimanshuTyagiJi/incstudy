@@ -1,0 +1,24 @@
+{% assign wg = site.data.homepage.what_you_get %}
+<section class="home-section home-section-tight">
+  <div class="home-container">
+    <div class="section-header-stack">
+      <h2 class="section-heading-lg">{{ wg.title }}</h2>
+      <p class="section-subcopy">{{ wg.subtitle }}</p>
+    </div>
+
+    <div class="feature-four-grid">
+      {% for card in wg.cards %}
+      <a href="{{ card.url | relative_url }}" class="feature-box-card feature-card-{{ card.theme }}">
+        <span class="feature-box-arrow" aria-hidden="true">
+          {% include ui/icon.html name="arrow-right" size=14 %}
+        </span>
+        <span class="feature-box-icon icon-theme-{{ card.theme }}">
+          {% include ui/icon.html name=card.icon size=20 %}
+        </span>
+        <h3 class="feature-box-title">{{ card.title }}</h3>
+        <p class="feature-box-desc">{{ card.description }}</p>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>

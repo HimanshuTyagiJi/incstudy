@@ -1,0 +1,46 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f7f9fc">
+{% assign page_title = page.seo_title | default: page.title | default: site.title %}
+<title>{{ page_title | escape }}{% unless page_title contains site.title %} | {{ site.title | escape }}{% endunless %}</title>
+<meta name="description" content="{{ page.description | default: site.description | strip_html | normalize_whitespace | escape }}">
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+<link rel="icon" href="{{ '/assets/images/favicon.svg' | relative_url }}" type="image/svg+xml">
+<script>document.documentElement.classList.add('js');</script>
+{% if page.math or page.url contains 'mathematics' or page.url contains 'previous-papers' %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
+<script>
+  (function() {
+    function initKaTeX() {
+      if (typeof renderMathInElement === 'function' && document.body) {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+            {left: '\\(', right: '\\)', display: false},
+            {left: '\\[', right: '\\]', display: true}
+          ],
+          ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+          throwOnError: false
+        });
+      } else {
+        setTimeout(initKaTeX, 25);
+      }
+    }
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initKaTeX);
+    } else {
+      initKaTeX();
+    }
+    window.addEventListener('beforeprint', initKaTeX);
+  })();
+</script>
+<style>
+  @media print {
+    .katex-display { overflow-x: visible !important; }
+  }
+</style>
+{% endif %}

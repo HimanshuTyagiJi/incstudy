@@ -1,0 +1,4 @@
+---
+layout: default
+---
+<div class="page-header"><p class="eyebrow">{{ page.university_name }} · {{ page.course_name | default: "BCA" }}</p><h1>{{ page.title }}</h1>{% if page.description %}<p class="page-description">{{ page.description }}</p>{% endif %}</div><div class="content-layout">{% include sidebar-left.html %}<article class="content-article">{% if page.notice %}<div class="notice-box">{{ page.notice }}</div>{% endif %}{{ content }}</article>{% include sidebar-right.html %}</div>

@@ -1,0 +1,2032 @@
+---
+layout: exam
+title: "CCSU BCA 3rd Sem Computer Architecture (BCA-303) Most Important Questions & Solved Exam Notebook"
+seo_title: "CCSU BCA 3rd Sem Computer Architecture & Assembly Language (BCA-303) Solved Exam Notebook"
+breadcrumb_title: "Computer Architecture (BCA-303)"
+eyebrow: "⚡ CCSU Meerut · BCA 3rd Semester · Exam Preparation"
+title_subject: "Computer Architecture & Assembly Language"
+title_code: "BCA-303"
+title_highlight: "Most Important Questions & Solved Exam Notebook"
+description: "Master chapter-wise solved notebook of recurring CCSU examination questions (2017–2021) for Computer Architecture and Assembly Language (BCA-303) with 8085 architecture, Booth's multiplication algorithm trace, DMA controller, instruction cycle RTL, and vector SVG diagrams."
+permalink: /ccsu/bca/semester-3/computer-architecture-important-questions/
+course_name: "CCSU BCA Semester 3 · Computer Architecture and Assembly Language (BCA-303)"
+math: true
+---
+
+<!-- Navigation & Actions Bar -->
+<div class="exam-actions-bar">
+  <a href="{{ '/ccsu/bca/semester-3/' | relative_url }}" class="text-link">&larr; Back to Semester 3 Hub</a>
+  <button class="print-btn" onclick="triggerMathPrint()">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+    Save as PDF / Print Solved Notebook
+  </button>
+</div>
+
+<script>
+function triggerMathPrint() {
+  if (typeof renderMathInElement === 'function' && document.body) {
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false},
+        {left: '\\(', right: '\\)', display: false},
+        {left: '\\[', right: '\\]', display: true}
+      ],
+      throwOnError: false
+    });
+  }
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(function() {
+      window.print();
+    });
+  } else {
+    window.print();
+  }
+}
+</script>
+
+<!-- Header Strip -->
+<div class="exam-header-strip">
+  <span class="strip-pill">📚 Subject Code: BCA-303</span>
+  <span class="strip-pill">🏛️ CCSU Meerut University Pattern</span>
+  <span class="strip-pill">📄 3M, 7.5M &amp; 15M Exam Blueprint</span>
+  <span class="strip-pill">⭐ 2017–2021 Recurring University Exam Archive</span>
+</div>
+
+<!-- Quick Jump Nav -->
+<div class="exam-jump-nav">
+  <span class="exam-jump-label">⚡ Quick Jump:</span>
+  <a href="#section-a" class="jump-pill jump-pill-emerald">Section A (3 Marks · 18 Questions)</a>
+  <a href="#section-b" class="jump-pill jump-pill-cyan">Section B (7.5 Marks · 10 Questions)</a>
+  <a href="#section-c" class="jump-pill jump-pill-purple">⭐ Section C (15 Marks · 12 Solved Master Problems &amp; SVG Diagrams)</a>
+</div>
+
+<div class="notice-box" style="margin-bottom: 28px;">
+  <strong>Exam Scoring Architecture for BCA-303 (Computer Architecture &amp; Assembly Language):</strong>
+  The university theory examination carries <strong>75 Marks</strong> with a 3-hour duration, structured into 
+  <strong>Section A (5 questions &times; 3M = 15M compulsory)</strong>, 
+  <strong>Section B (attempt 2 of 3 questions &times; 7.5M = 15M)</strong>, and 
+  <strong>Section C (attempt 3 of 5 questions &times; 15M = 45M)</strong>.
+  In this master solved notebook, every recurring question from 2017, 2018, 2019, 2020, and 2021 is fully solved with register transfer language (RTL), working 8085 assembly programs, step-by-step arithmetic traces, and genuine visual SVG diagrams.
+</div>
+
+
+
+<!-- =========================================================================
+     SECTION A : 3 MARKS VERY SHORT ANSWER QUESTIONS (COMPULSORY)
+     ========================================================================= -->
+<div class="exam-section-card" id="section-a">
+  <div class="exam-section-header exam-section-header-emerald">
+    <div class="exam-section-header-inner">
+      <span class="exam-section-badge badge-emerald">SECTION A &bull; 3 MARKS EACH</span>
+      <h3 class="exam-section-title">Very Short Answer Questions &amp; Core Architecture Definitions</h3>
+      <p class="exam-section-rule">CCSU Examination Blueprint: 5 Questions Compulsory &bull; Total 15 Marks (75 Words Limit)</p>
+    </div>
+  </div>
+
+  <div class="exam-section-body">
+
+    <!-- A1: Computer Registers -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q1.</span> What is the use of a register in a computer? Name any two processor registers and explain their roles.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2017, 2018, 2019, 2021</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>A <strong>processor register</strong> is an extremely fast, small, internal storage location built directly into the CPU chip using flip-flops. Registers provide temporary storage for data, memory addresses, and control instructions during instruction execution, eliminating slow memory bus latency.</p>
+        <p><strong>Two Core Processor Registers:</strong></p>
+        <ul>
+          <li><strong>Program Counter (PC):</strong> A 16-bit register that holds the memory address of the <em>next</em> instruction to be fetched and executed. It is automatically incremented after every fetch cycle.</li>
+          <li><strong>Accumulator (AC / A):</strong> An 8-bit or 16-bit operational register that holds one of the input operands and retains the final mathematical or logical result generated by the Arithmetic Logic Unit (ALU).</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- A2: Control Unit & Hardwired vs Microprogrammed -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q2.</span> What do you mean by Control Unit? Differentiate between Hardwired and Microprogrammed control.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2017, 2018, 2020</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>The <strong>Control Unit (CU)</strong> acts as the central coordinator of the computer. It fetches instructions from main memory, decodes their opcodes, and issues synchronized micro-operations (control signals) to the ALU, registers, and memory buses.</p>
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>Hardwired Control</th>
+                <th>Microprogrammed Control</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Implementation</strong></td>
+                <td>Fixed combinational logic circuits (gates, flip-flops, decoders).</td>
+                <td>Micro-instructions stored in a dedicated Control ROM (Control Memory).</td>
+              </tr>
+              <tr>
+                <td><strong>Operating Speed</strong></td>
+                <td>Extremely fast (direct hardware signal propagation).</td>
+                <td>Slower (requires memory fetch for each microinstruction).</td>
+              </tr>
+              <tr>
+                <td><strong>Flexibility &amp; Updates</strong></td>
+                <td>Rigid; modifying instructions requires total hardware redesign.</td>
+                <td>Highly flexible; new instructions added by updating microprogram in ROM.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- A3: Subroutine Call vs Software Interrupt -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q3.</span> Explain in brief, how a Subroutine Call is different from a Software Interrupt.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2017 Examination</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>Both mechanisms transfer program control to an out-of-sequence routine and return via a saved return address on the stack, but differ fundamentally in invocation and privilege:</p>
+        <ol>
+          <li><strong>Invocation Nature:</strong> A <strong>Subroutine Call</strong> (e.g., <code>CALL Addr</code>) is an explicit, synchronous programming instruction inserted by the developer to execute modular code. A <strong>Software Interrupt</strong> (e.g., <code>INT 21h</code> / <code>RST n</code>) is triggered by special trap instructions or system exceptions.</li>
+          <li><strong>Target Resolution:</strong> Subroutine calls jump to an explicit target address specified in the instruction. Software interrupts transfer execution through a fixed <strong>Interrupt Vector Table (IVT)</strong> index.</li>
+          <li><strong>CPU Privilege Level:</strong> Subroutines execute in standard User Mode with existing flags. Software interrupts switch the CPU into Supervisor/Kernel mode and automatically push the Processor Status Word (PSW/Flags) onto the stack.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- A4: Stack Organisation -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q4.</span> Discuss the Stack Organisation for a processor.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2017 Examination</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>A <strong>Stack</strong> is a Last-In, First-Out (LIFO) storage structure managed by a specialized register called the <strong>Stack Pointer (SP)</strong>, which always points to the top element of the stack. Stack organisation in processors is realized in two primary ways:</p>
+        <ul>
+          <li><strong>Register Stack:</strong> A standalone collection of high-speed internal CPU flip-flop registers organized as a hardware stack with a fixed depth (e.g., 64 words). Fast, but size-constrained.</li>
+          <li><strong>Memory Stack:</strong> A contiguous block allocated in random-access main memory (RAM). When an item is pushed (<code>PUSH</code>), SP is decremented (or incremented depending on architecture) and data is written: \(SP \leftarrow SP - 1, \; M[SP] \leftarrow DR\). On <code>POP</code>, data is read and SP is incremented: \(DR \leftarrow M[SP], \; SP \leftarrow SP + 1\).</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- A5: Three Major Phases of Instruction Cycle -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q5.</span> What are the three major phases through which the control unit passes in an instruction cycle?</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2018, 2019, 2020</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>An <strong>instruction cycle</strong> is the complete sequence of hardware operations required by the CPU to process a single machine language instruction. The three fundamental phases are:</p>
+        <ol>
+          <li><strong>Fetch Phase:</strong> The CPU loads the memory address from the Program Counter (PC) into the Address Register (AR), fetches the instruction code from memory into the Instruction Register (IR), and increments the PC:
+          \[T_0: AR \leftarrow PC, \quad T_1: IR \leftarrow M[AR], \; PC \leftarrow PC + 1\]</li>
+          <li><strong>Decode &amp; Effective Address Phase:</strong> The control unit decodes the operation code (opcode bits 12–14), inspects the addressing mode bit \(I\) (bit 15), and reads the effective memory address from RAM if indirect addressing is flagged:
+          \[T_2: \text{Decode } IR(12\text{--}14), \; AR \leftarrow IR(0\text{--}11), \; I \leftarrow IR(15)\]
+          \[T_3: AR \leftarrow M[AR] \quad (\text{if } I = 1)\]</li>
+          <li><strong>Execute Phase:</strong> The control unit generates micro-operation pulses to execute the decoded operation (e.g., arithmetic addition, logic AND, register transfer, or branch) and updates condition flags.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- A6: Interleaved DMA (Cycle Stealing) -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q6.</span> What do you understand by Interleaved DMA (Cycle Stealing)?</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2018 Examination</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p><strong>Interleaved DMA</strong> (commonly known as <strong>Cycle Stealing</strong>) is a high-efficiency Direct Memory Access data transfer technique where the DMA controller takes control of the system memory bus for exactly <strong>one bus cycle</strong> to transfer a single data word, and immediately returns the bus to the CPU.</p>
+        <p><strong>Operational Advantage:</strong> Unlike Burst (Block) Transfer DMA—which locks the CPU out of memory for the entire block duration—Cycle Stealing interleaves I/O transfers during CPU internal instruction decoding or ALU cycles when the CPU does not require the memory bus. This keeps CPU latency minimal while achieving high sustained peripheral throughput.</p>
+      </div>
+    </div>
+
+    <!-- A7: Asynchronous Data Transfer -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q7.</span> What is Asynchronous Data Transfer? How does handshaking remove the disadvantage of the strobe method?</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2017, 2018, 2019</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p><strong>Asynchronous data transfer</strong> occurs between two independent digital units that do not share a common system clock generator. Their internal operations run at different frequencies and timing states.</p>
+        <p><strong>Strobe Disadvantage:</strong> In the Strobe pulse method, the sender places data on the bus and sends a brief strobe pulse. However, there is <em>no acknowledgement</em> from the receiver. If the receiver is busy or slow, data is permanently lost without the transmitter's knowledge.</p>
+        <p><strong>Handshaking Solution:</strong> Handshaking uses a two-line two-way protocol: (1) <code>Data Valid</code> from transmitter, and (2) <code>Data Accepted</code> acknowledgement from receiver. The transmitter refuses to drop data or send the next byte until the receiver explicitly asserts <code>Data Accepted</code>, guaranteeing 100% error-free asynchronous delivery.</p>
+      </div>
+    </div>
+
+    <!-- A8: Fixed Point vs Floating Point -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q8.</span> Distinguish between Fixed Point and Floating Point representation of numbers.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2018, 2020</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Comparison Parameter</th>
+                <th>Fixed Point Representation</th>
+                <th>Floating Point Representation (IEEE 754)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Radix Point Position</strong></td>
+                <td>Fixed at a predefined bit boundary (e.g., integer or pure fraction).</td>
+                <td>Dynamic; the radix point floats according to the exponent value.</td>
+              </tr>
+              <tr>
+                <td><strong>Number Format</strong></td>
+                <td>Stored directly as Sign + Magnitude / 2's Complement.</td>
+                <td>Stored in three fields: Sign (\(S\)), Biased Exponent (\(E\)), and Mantissa (\(M\)): \((-1)^S \times 1.M \times 2^{E - \text{Bias}}\).</td>
+              </tr>
+              <tr>
+                <td><strong>Dynamic Range</strong></td>
+                <td>Severely limited range; prone to overflow with large values.</td>
+                <td>Extremely large dynamic range (e.g., \(10^{-38}\) to \(10^{+38}\) in 32-bit single precision).</td>
+              </tr>
+              <tr>
+                <td><strong>Hardware Complexity</strong></td>
+                <td>Simple, high-speed integer ALU circuits.</td>
+                <td>Requires dedicated Floating Point Unit (FPU) for exponent alignment and normalization.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- A9: Role of Assemblers -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q9.</span> What is the role of an Assembler in computer programming?</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2019 Examination</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>An <strong>Assembler</strong> is a system translation program that converts low-level symbolic assembly language code (mnemonics, symbolic labels, and pseudo-ops) into executable binary machine code (0s and 1s) for the target CPU.</p>
+        <p><strong>Key Roles in a Two-Pass Assembler:</strong></p>
+        <ol>
+          <li><strong>Pass 1 (Symbol Resolution):</strong> Scans the source file, increments the Location Counter (LC), and constructs a <strong>Symbol Table</strong> mapping every user-defined label to its absolute memory offset.</li>
+          <li><strong>Pass 2 (Code Generation):</strong> Replaces mnemonics (e.g., <code>MOV</code>, <code>ADD</code>) with binary opcodes, substitutes labels with resolved addresses from the symbol table, processes pseudo-instructions (<code>ORG</code>, <code>END</code>), and outputs the final object file.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- A10: Macros in Assembly -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q10.</span> What are Macros in assembly language? How do they differ from Subroutines?</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2018, 2019</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>A <strong>Macro</strong> is an open-subroutine programming construct defined with a name that represents a block of assembly statements. During assembly, whenever the macro name is invoked, the macro preprocessor performs <strong>inline macro expansion</strong>, copying the entire statement block directly into the source code at that location.</p>
+        <p><strong>Difference from Subroutine:</strong></p>
+        <ul>
+          <li><strong>Execution Speed:</strong> Macros execute faster because there is <em>zero</em> <code>CALL</code>/<code>RET</code> overhead or stack pointer pushing.</li>
+          <li><strong>Memory Footprint:</strong> Macros increase binary program size because code is duplicated at every call point. Subroutines exist in memory exactly once and save space.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- A11: Cache Memory Operations -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q11.</span> What is Cache Memory? Describe its operations in brief.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2019, 2020, 2021</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p><strong>Cache Memory</strong> is a small, ultra-fast Static RAM (SRAM) buffer positioned between the high-speed CPU core and the slower Dynamic RAM (DRAM) main memory. Its goal is to bridge the CPU-memory speed gap based on the <strong>Principle of Locality of Reference</strong> (Spatial and Temporal).</p>
+        <p><strong>Basic Operations:</strong></p>
+        <ul>
+          <li><strong>Cache Hit:</strong> When the CPU references a memory address, the cache controller checks if the requested block is present in cache. If found (Cache Hit), data is delivered to CPU registers in 1–2 clock cycles without accessing main memory.</li>
+          <li><strong>Cache Miss:</strong> If the block is not in cache (Cache Miss), the controller reads a fixed-size block (cache line) from main memory into cache and simultaneously forwards the word to the CPU, updating cache replacement lines (LRU/FIFO).</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- A12: Isolated I/O vs Memory Mapped I/O -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q12.</span> Differentiate between Isolated I/O and Memory-Mapped I/O.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2020 Examination</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Criterion</th>
+                <th>Isolated I/O (Port-Mapped I/O)</th>
+                <th>Memory-Mapped I/O</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Address Space</strong></td>
+                <td>Separate address spaces for Memory and I/O (e.g., 8-bit port addresses <code>00H–FFH</code> in 8085).</td>
+                <td>Shared single address space; I/O ports are assigned addresses from standard RAM space.</td>
+              </tr>
+              <tr>
+                <td><strong>CPU Instructions</strong></td>
+                <td>Requires dedicated I/O instructions (e.g., <code>IN</code> and <code>OUT</code>).</td>
+                <td>Standard memory access instructions (<code>MOV</code>, <code>LDA</code>, <code>STA</code>) work directly on I/O ports.</td>
+              </tr>
+              <tr>
+                <td><strong>Control Lines</strong></td>
+                <td>Requires separate control lines: \(\overline{IOR}\), \(\overline{IOW}\) vs \(\overline{MEMR}\), \(\overline{MEMW}\) (via \(IO/\overline{M}\) pin).</td>
+                <td>Uses existing memory control lines: \(\overline{MEMR}\) and \(\overline{MEMW}\).</td>
+              </tr>
+              <tr>
+                <td><strong>Available RAM Size</strong></td>
+                <td>Does not consume any system RAM address space.</td>
+                <td>Reduces available RAM space by consuming addresses for I/O ports.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- A13: Booth's Algorithm Advantage -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q13.</span> Define Booth's Algorithm and state its primary advantage in computer arithmetic.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2020, 2021</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p><strong>Booth's Multiplication Algorithm</strong> is a hardware-oriented algorithm that multiplies two signed binary numbers encoded in <strong>2's complement representation</strong> directly, without requiring sign-magnitude conversion or special sign correction at the end.</p>
+        <p><strong>Core Advantages:</strong></p>
+        <ol>
+          <li><strong>Uniform Signed Handling:</strong> Handles positive and negative numbers identically in 2's complement without extra logic.</li>
+          <li><strong>Multiplication Speedup:</strong> Replaces consecutive strings of 1s in the multiplier (e.g., \(011110_2 = 30\)) with a single subtraction at the first 1 and a single addition after the last 1: \(2^{n+m} - 2^n\). This reduces the total number of addition/subtraction ALU cycles significantly.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- A14: 8085 Flag Register -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q14.</span> Write a short note on the Flag Register of the 8085 Microprocessor.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2020 Examination</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>The 8085 has an 8-bit Flag Register containing <strong>5 active flip-flops</strong> that indicate the mathematical/logical status of the result generated in the Accumulator:</p>
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr><th>Bit</th><th>D7</th><th>D6</th><th>D5</th><th>D4</th><th>D3</th><th>D2</th><th>D1</th><th>D0</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>Flag</strong></td><td><strong>S</strong> (Sign)</td><td><strong>Z</strong> (Zero)</td><td>X (Undefined)</td><td><strong>AC</strong> (Aux Carry)</td><td>X</td><td><strong>P</strong> (Parity)</td><td>X</td><td><strong>CY</strong> (Carry)</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <ul>
+          <li><strong>Sign Flag (S):</strong> Set to 1 if bit D7 of the Accumulator is 1 (negative result); 0 if positive.</li>
+          <li><strong>Zero Flag (Z):</strong> Set to 1 if the ALU result is exactly zero (<code>00H</code>); otherwise 0.</li>
+          <li><strong>Auxiliary Carry (AC):</strong> Set to 1 if a carry occurs from bit D3 to bit D4 during BCD addition.</li>
+          <li><strong>Parity Flag (P):</strong> Set to 1 if the accumulator contains an <em>even</em> number of 1s (Even Parity); 0 for odd.</li>
+          <li><strong>Carry Flag (CY):</strong> Set to 1 if an arithmetic operation generates a carry out of bit D7 or requires a borrow during subtraction.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- A15: Assembly Program to Add Two Numbers -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q15.</span> Write an assembly language program for the 8085 microprocessor to add two 8-bit numbers.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2020 Examination</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ 8085 Assembly Code:</div>
+<pre><code>; Problem: Add two 8-bit numbers stored at memory locations 2050H and 2051H.
+; Store the sum at 2052H and carry at 2053H.
+
+        LXI H, 2050H    ; HL points to first operand address (2050H)
+        MVI C, 00H      ; Clear register C to store carry (C = 0)
+        MOV A, M        ; Load first number from memory into Accumulator
+        INX H           ; HL points to second operand address (2051H)
+        ADD M           ; Accumulator = A + M (Second number)
+        JNC SKIP_CARRY  ; If CY == 0, jump to SKIP_CARRY
+        INR C           ; Else, increment C to record carry
+
+SKIP_CARRY:
+        INX H           ; HL points to 2052H
+        MOV M, A        ; Store sum into 2052H
+        INX H           ; HL points to 2053H
+        MOV M, C        ; Store carry into 2053H
+        HLT             ; Terminate program execution</code></pre>
+      </div>
+    </div>
+
+    <!-- A16: Micro-instruction vs Micro-program -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q16.</span> Differentiate between a Micro-instruction and a Micro-program.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2021 Examination</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>In a microprogrammed control unit, control signals are generated by executing firmware stored in control memory:</p>
+        <ul>
+          <li><strong>Micro-instruction:</strong> A single word stored in control memory that specifies one or more basic hardware control signals (micro-operations) to be executed simultaneously during a single clock cycle, along with the address of the next microinstruction.</li>
+          <li><strong>Micro-program:</strong> A structured sequence of micro-instructions stored in control memory whose collective execution decodes and completely executes a single machine language macro-instruction (e.g., executing the <code>ADD R1, [R2]</code> instruction requires a microprogram of 4–5 microinstructions for fetch, memory read, ALU add, and writeback).</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- A17: Reverse Polish Notation Conversion -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q17.</span> Convert the following infix expression into Reverse Polish Notation (RPN): \(A \times B + C\)</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2021 Examination</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Step-by-Step Conversion:</div>
+        <p><strong>Reverse Polish Notation (RPN)</strong> is the postfix representation where operators appear immediately after their operands, removing the need for parentheses and precedence rules during stack evaluation.</p>
+        <p><strong>Step-by-step Operator Precedence parsing:</strong></p>
+        <ol>
+          <li>Given Infix Expression: \((A \times B) + C\)</li>
+          <li>Multiplication (\(\times\)) holds higher precedence than addition (\(+\)):
+          \[\text{Postfix of } (A \times B) \implies AB*\]</li>
+          <li>Substitute intermediate token \(T_1 = AB*\):
+          \[T_1 + C\]</li>
+          <li>Convert outer addition (\(+\)):
+          \[T_1 \, C + \implies AB*C+\]</li>
+        </ol>
+        <p><strong>Final Reverse Polish Notation:</strong> <code>A B * C +</code></p>
+      </div>
+    </div>
+
+    <!-- A18: Computer Organisation vs Computer Architecture -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q18.</span> Discuss Basic Computer Organisation. How is it different from Computer Architecture?</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2021 Examination</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>Although frequently used interchangeably, they represent two distinct layers of computer engineering:</p>
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>Computer Architecture</th>
+                <th>Computer Organisation</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Focus &amp; Definition</strong></td>
+                <td>Defines <em>what</em> the computer does from the programmer's perspective (conceptual structure and functional behavior).</td>
+                <td>Defines <em>how</em> the functional components are physically interconnected to implement the architecture.</td>
+              </tr>
+              <tr>
+                <td><strong>Visibility</strong></td>
+                <td>Directly visible to the machine/assembly programmer (instruction set, data bit formats, addressing modes).</td>
+                <td>Transparent to the programmer (internal clock signals, circuit design, memory physical interfacing, caching mechanisms).</td>
+              </tr>
+              <tr>
+                <td><strong>Example</strong></td>
+                <td>Intel x86-64 Instruction Set Architecture (ISA).</td>
+                <td>Intel Core i7 vs AMD Ryzen: both share the same x86 architecture, but feature completely different internal organisations (pipelining, branch predictors, cache layouts).</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<!-- =========================================================================
+     SECTION B : 7.5 MARKS SHORT ANSWER QUESTIONS (ATTEMPT ANY 2)
+     ========================================================================= -->
+<div class="exam-section-card" id="section-b">
+  <div class="exam-section-header exam-section-header-cyan">
+    <div class="exam-section-header-inner">
+      <span class="exam-section-badge badge-cyan">SECTION B &bull; 7.5 MARKS EACH</span>
+      <h3 class="exam-section-title">Algorithmic Procedures, Assembly Programs &amp; Logic Circuits</h3>
+      <p class="exam-section-rule">CCSU Examination Blueprint: Attempt Any 2 Out of 3 Questions &bull; Total 15 Marks (200 Words Limit)</p>
+    </div>
+  </div>
+
+  <div class="exam-section-body">
+
+    <!-- B1: Pipelining for (A + B * D) -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q1.</span> What are the steps required for a pipelined processor to process an instruction? Draw an arithmetic pipeline for the expression \(A + B \times D\).</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2017 Examination</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p><strong>Instruction Pipelining</strong> is an implementation technique where multiple instructions are overlapped in execution, dividing instruction processing into discrete sequential stages separated by high-speed interface registers.</p>
+        <p><strong>Standard Steps in an Instruction Pipeline:</strong></p>
+        <ol>
+          <li><strong>FI (Fetch Instruction):</strong> Read instruction from memory into IR using PC.</li>
+          <li><strong>DA (Decode Instruction &amp; Calculate Effective Address):</strong> Identify opcode and resolve memory operand address.</li>
+          <li><strong>FO (Fetch Operand):</strong> Retrieve operands from registers or cache memory.</li>
+          <li><strong>EX (Execute):</strong> Perform arithmetic/logical operation in ALU.</li>
+          <li><strong>WB (Write Back):</strong> Store result back into destination register or memory.</li>
+        </ol>
+
+        <p><strong>Arithmetic Pipeline for \(A + B \times D\):</strong></p>
+        <p>The expression requires two sequential arithmetic operations: first multiplication (\(B \times D\)), followed by addition of \(A\). We decompose this into three pipeline segments:</p>
+
+        <!-- SVG Diagram: Arithmetic Pipeline -->
+        <div class="svg-tree-container" style="background: #0f172a; padding: 20px; border-radius: 12px; margin: 18px 0; border: 1px solid #334155; text-align: center;">
+          <div style="font-weight: 700; color: #38bdf8; margin-bottom: 12px; font-size: 14px;">ARITHMETIC PIPELINE HARDWARE: A + B &times; D</div>
+          <svg viewBox="0 0 760 170" width="100%" height="170" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <marker id="pipeArr" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+                <path d="M0,1 L7,4 L0,7 Z" fill="#38bdf8"/>
+              </marker>
+            </defs>
+
+            <!-- Inputs B and D -->
+            <rect x="20" y="25" width="60" height="35" rx="5" fill="#1e293b" stroke="#64748b" stroke-width="1.5"/>
+            <text x="40" y="47" font-size="13" font-weight="700" fill="#f8fafc">B</text>
+            <rect x="20" y="75" width="60" height="35" rx="5" fill="#1e293b" stroke="#64748b" stroke-width="1.5"/>
+            <text x="40" y="97" font-size="13" font-weight="700" fill="#f8fafc">D</text>
+
+            <!-- Segment 1: Registers R1, R2 -->
+            <line x1="80" y1="42" x2="110" y2="42" stroke="#38bdf8" stroke-width="2" marker-end="url(#pipeArr)"/>
+            <line x1="80" y1="92" x2="110" y2="92" stroke="#38bdf8" stroke-width="2" marker-end="url(#pipeArr)"/>
+            <rect x="110" y="15" width="70" height="110" rx="6" fill="#0369a1" stroke="#38bdf8" stroke-width="2"/>
+            <text x="125" y="55" font-size="12" font-weight="800" fill="#ffffff">REG R1</text>
+            <text x="125" y="95" font-size="12" font-weight="800" fill="#ffffff">REG R2</text>
+            <text x="120" y="145" font-size="11" font-weight="700" fill="#94a3b8">SEGMENT 1</text>
+
+            <!-- Segment 2: Multiplier + Register R4 for A -->
+            <line x1="180" y1="65" x2="220" y2="65" stroke="#38bdf8" stroke-width="2" marker-end="url(#pipeArr)"/>
+            <rect x="220" y="35" width="90" height="60" rx="8" fill="#4338ca" stroke="#818cf8" stroke-width="2"/>
+            <text x="235" y="60" font-size="12" font-weight="800" fill="#ffffff">MULTIPLIER</text>
+            <text x="242" y="78" font-size="11" fill="#c7d2fe">R1 &times; R2</text>
+
+            <!-- A Input bypassed through Segment 1 -->
+            <rect x="20" y="125" width="60" height="30" rx="5" fill="#1e293b" stroke="#64748b" stroke-width="1.5"/>
+            <text x="40" y="145" font-size="13" font-weight="700" fill="#f8fafc">A</text>
+            <line x1="80" y1="140" x2="350" y2="140" stroke="#94a3b8" stroke-width="2" stroke-dasharray="4"/>
+
+            <!-- Segment 2 Intermediate Registers R3 (Product) and R4 (A) -->
+            <line x1="310" y1="65" x2="350" y2="65" stroke="#38bdf8" stroke-width="2" marker-end="url(#pipeArr)"/>
+            <line x1="350" y1="140" x2="350" y2="120" stroke="#94a3b8" stroke-width="2"/>
+            <rect x="350" y="20" width="80" height="110" rx="6" fill="#0369a1" stroke="#38bdf8" stroke-width="2"/>
+            <text x="365" y="55" font-size="12" font-weight="800" fill="#ffffff">REG R3</text>
+            <text x="360" y="72" font-size="10" fill="#bae6fd">(B &times; D)</text>
+            <text x="365" y="98" font-size="12" font-weight="800" fill="#ffffff">REG R4</text>
+            <text x="370" y="115" font-size="10" fill="#bae6fd">(A)</text>
+            <text x="360" y="148" font-size="11" font-weight="700" fill="#94a3b8">SEGMENT 2</text>
+
+            <!-- Segment 3: Adder Unit -->
+            <line x1="430" y1="50" x2="470" y2="65" stroke="#38bdf8" stroke-width="2" marker-end="url(#pipeArr)"/>
+            <line x1="430" y1="95" x2="470" y2="75" stroke="#38bdf8" stroke-width="2" marker-end="url(#pipeArr)"/>
+            <rect x="470" y="45" width="80" height="50" rx="8" fill="#15803d" stroke="#4ade80" stroke-width="2"/>
+            <text x="495" y="68" font-size="12" font-weight="800" fill="#ffffff">ADDER</text>
+            <text x="485" y="85" font-size="11" fill="#bbf7d0">R3 + R4</text>
+
+            <!-- Result Register R5 -->
+            <line x1="550" y1="70" x2="590" y2="70" stroke="#38bdf8" stroke-width="2" marker-end="url(#pipeArr)"/>
+            <rect x="590" y="35" width="80" height="70" rx="6" fill="#0369a1" stroke="#38bdf8" stroke-width="2"/>
+            <text x="605" y="68" font-size="12" font-weight="800" fill="#ffffff">REG R5</text>
+            <text x="597" y="86" font-size="10" fill="#bae6fd">Final Result</text>
+            <text x="600" y="125" font-size="11" font-weight="700" fill="#94a3b8">SEGMENT 3</text>
+
+            <!-- Output Arrow -->
+            <line x1="670" y1="70" x2="720" y2="70" stroke="#4ade80" stroke-width="2.5" marker-end="url(#pipeArr)"/>
+            <text x="680" y="60" font-size="12" font-weight="800" fill="#4ade80">OUT</text>
+          </svg>
+        </div>
+
+        <p><strong>Sub-operations performed per clock pulse:</strong></p>
+        <ul>
+          <li><strong>Clock 1:</strong> \(R1 \leftarrow B, \quad R2 \leftarrow D\)</li>
+          <li><strong>Clock 2:</strong> \(R3 \leftarrow R1 \times R2, \quad R4 \leftarrow A\)</li>
+          <li><strong>Clock 3:</strong> \(R5 \leftarrow R3 + R4\) (Final result ready in \(R5\))</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- B2: Assembly Program to Subtract Two Numbers -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q2.</span> Write an assembly language program for the 8085 microprocessor to subtract the number stored at memory location 2001H from the number stored at 2002H. Display the result at 2004H.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2017 Examination</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ 8085 Assembly Source Code:</div>
+<pre><code>; Problem: Result = [2002H] - [2001H], Store at 2004H.
+; If result is negative (borrow occurs), store borrow flag at 2005H.
+
+        ORG 0000H       ; Program origin
+
+        LDA 2002H       ; Load number from 2002H into Accumulator A
+        LXI H, 2001H    ; HL pair points to memory location 2001H
+        MVI C, 00H      ; Initialize register C = 00H (Borrow counter)
+
+        SUB M           ; Accumulator = A - M[HL] = [2002H] - [2001H]
+        JNC STORE_RES   ; If Carry/Borrow CY == 0, jump to STORE_RES
+
+        INR C           ; Else Borrow occurred, set C = 01H
+        CMA             ; Take 1's complement of Accumulator
+        ADI 01H         ; Add 1 to get true magnitude (2's complement)
+
+STORE_RES:
+        STA 2004H       ; Store magnitude of result at 2004H
+        MOV A, C        ; Move borrow flag to Accumulator
+        STA 2005H       ; Store borrow indicator at 2005H (00H=Pos, 01H=Neg)
+        HLT             ; Stop execution</code></pre>
+
+        <p><strong>Memory Trace Example:</strong></p>
+        <ul>
+          <li>At <code>2001H</code>: <code>25H</code> (\(37_{10}\))</li>
+          <li>At <code>2002H</code>: <code>68H</code> (\(104_{10}\))</li>
+          <li>Calculation: \(68H - 25H = 43H\) (\(67_{10}\)), No borrow (\(CY=0\)).</li>
+          <li>Result at <code>2004H</code>: <code>43H</code>, at <code>2005H</code>: <code>00H</code>.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- B3: Interrupts and Types -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q3.</span> Define Interrupt. Explain its various classifications in computer architecture.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2018, 2019 Examination</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>An <strong>Interrupt</strong> is an asynchronous signal sent to the processor by external hardware devices or internal software conditions that temporarily suspends the current program execution sequence, causing the CPU to execute an <strong>Interrupt Service Routine (ISR)</strong>.</p>
+        <p><strong>Major Classifications:</strong></p>
+        <ol>
+          <li><strong>Hardware vs Software Interrupts:</strong>
+            <ul>
+              <li><em>Hardware:</em> Initiated externally via physical CPU pins (e.g., keyboard keystroke, timer, disk read completion). Examples in 8085: TRAP, RST 7.5, RST 6.5, RST 5.5, INTR.</li>
+              <li><em>Software:</em> Triggered internally by program instructions to invoke operating system system calls or handle fatal exceptions (e.g., divide by zero, breakpoint trap). Examples: <code>INT 21H</code>, <code>RST 1</code> to <code>RST 7</code>.</li>
+            </ul>
+          </li>
+          <li><strong>Maskable vs Non-Maskable Interrupts (NMI):</strong>
+            <ul>
+              <li><em>Maskable:</em> Can be disabled or delayed by the programmer using instructions like <code>DI</code> (Disable Interrupt). Example: INTR, RST 7.5.</li>
+              <li><em>Non-Maskable:</em> Cannot be ignored or disabled by CPU software; reserved for catastrophic system emergencies (power failure, RAM parity error). Example: <strong>TRAP</strong> in 8085.</li>
+            </ul>
+          </li>
+          <li><strong>Vectored vs Non-Vectored Interrupts:</strong>
+            <ul>
+              <li><em>Vectored:</em> The interrupting device directly supplies the target memory vector address of its ISR (e.g., TRAP jumps to hardwired address \(0024H\)).</li>
+              <li><em>Non-Vectored:</em> The device does not supply an address; CPU must execute an external poll or acknowledge cycle to receive opcode from data bus (e.g., INTR in 8085).</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- B4: Direct vs Indirect Addressing -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q4.</span> Differentiate between Direct and Indirect Addressing with an example. How many references to memory are needed for each to bring an operand into a processor register?</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2018, 2019, 2021</span>
+          <span class="exam-tag-marks">7.5 / 15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>The <strong>Addressing Mode</strong> specifies how the effective address (EA) of an operand is calculated from the address field of an instruction.</p>
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>Direct Addressing Mode (\(I = 0\))</th>
+                <th>Indirect Addressing Mode (\(I = 1\))</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Definition</strong></td>
+                <td>The address field directly contains the <strong>Effective Address (EA)</strong> where the operand resides.</td>
+                <td>The address field contains a pointer to a memory cell that holds the actual <strong>Effective Address (EA)</strong>.</td>
+              </tr>
+              <tr>
+                <td><strong>Effective Address Formula</strong></td>
+                <td>\(\text{EA} = \text{Address Field}\)</td>
+                <td>\(\text{EA} = M[\text{Address Field}]\)</td>
+              </tr>
+              <tr>
+                <td><strong>Assembly Syntax Example</strong></td>
+                <td><code>LDA 2500H</code> (Loads data directly from RAM cell 2500H into AC).</td>
+                <td><code>ADD @500</code> or <code>MOV A, M</code> (HL pair holds the pointer).</td>
+              </tr>
+              <tr>
+                <td><strong>Memory References Required</strong></td>
+                <td><strong>2 Memory References:</strong><br>1. Fetch instruction from memory.<br>2. Read operand from address.</td>
+                <td><strong>3 Memory References:</strong><br>1. Fetch instruction from memory.<br>2. Read effective address pointer from memory.<br>3. Read actual operand from effective address.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- B5: Subroutines in Assembly Language -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q5.</span> Explain the concept and implementation of Subroutines in Assembly Language using CALL and RET instructions.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2017, 2019, 2021</span>
+          <span class="exam-tag-marks">7.5 / 15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>A <strong>Subroutine</strong> (procedure or function) is a self-contained block of assembly instructions written once in memory and invoked multiple times from different points in the main program. It facilitates code reuse, modularity, and memory conservation.</p>
+        <p><strong>Hardware Stack Mechanism:</strong></p>
+        <ol>
+          <li><strong>CALL Instruction (e.g., <code>CALL SubAddr</code>):</strong>
+            <ul>
+              <li>Saves the contents of the Program Counter (return address of the instruction following CALL) onto the stack:
+              \[SP \leftarrow SP - 1, \; M[SP] \leftarrow PC_H\]
+              \[SP \leftarrow SP - 1, \; M[SP] \leftarrow PC_L\]</li>
+              <li>Loads the target subroutine start address into PC: \(PC \leftarrow \text{SubAddr}\).</li>
+            </ul>
+          </li>
+          <li><strong>RET Instruction (e.g., <code>RET</code>):</strong>
+            <ul>
+              <li>Pops the 16-bit saved return address from the top of the stack back into the Program Counter:
+              \[PC_L \leftarrow M[SP], \; SP \leftarrow SP + 1\]
+              \[PC_H \leftarrow M[SP], \; SP \leftarrow SP + 1\]</li>
+              <li>The main program resumes execution exactly where it left off.</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- B6: RISC vs CISC Architecture -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q6.</span> Differentiate between RISC and CISC architectures. List five defining characteristics of RISC.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2017, 2018, 2019, 2020, 2021 (All 5 Years)</span>
+          <span class="exam-tag-marks">7.5 / 15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>RISC (Reduced Instruction Set Computer)</th>
+                <th>CISC (Complex Instruction Set Computer)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Instruction Size</strong></td>
+                <td>Fixed-length instructions (typically 32-bit standard).</td>
+                <td>Variable-length instructions (1 byte to 15 bytes in x86).</td>
+              </tr>
+              <tr>
+                <td><strong>Instruction Complexity</strong></td>
+                <td>Simple instructions executing in exactly <strong>one clock cycle</strong>.</td>
+                <td>Complex, multi-clock instructions executing high-level tasks.</td>
+              </tr>
+              <tr>
+                <td><strong>Memory Access Architecture</strong></td>
+                <td><strong>Load/Store Architecture:</strong> Only dedicated <code>LOAD</code> and <code>STORE</code> access RAM; all arithmetic is register-to-register.</td>
+                <td>Memory operands can be used directly in arithmetic instructions (e.g., <code>ADD EAX, [EBX]</code>).</td>
+              </tr>
+              <tr>
+                <td><strong>General Purpose Registers</strong></td>
+                <td>Large register file (typically 32 to 128 general registers).</td>
+                <td>Fewer general registers (e.g., 8 in original x86 architecture).</td>
+              </tr>
+              <tr>
+                <td><strong>Control Unit Type</strong></td>
+                <td>Fast, hardwired control logic.</td>
+                <td>Microprogrammed control memory (ROM).</td>
+              </tr>
+              <tr>
+                <td><strong>Pipelining Efficiency</strong></td>
+                <td>Highly optimized for instruction pipelining with zero pipeline stalls.</td>
+                <td>Difficult to pipeline efficiently due to variable instruction lengths.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- B7: 4-Bit Arithmetic Circuit -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q7.</span> Draw and explain a 4-bit Arithmetic Circuit capable of performing 7 arithmetic microoperations using Full Adders and Multiplexers.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2018 Examination</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Circuit Design &amp; Function Table:</div>
+        <p>A <strong>4-bit arithmetic circuit</strong> consists of 4 parallel Full Adders (FA) whose \(A\) inputs receive operand \(A_i\) directly, while the \(B\) inputs receive the output \(Y_i\) of a \(4 \times 1\) Multiplexer controlled by selection lines \(S_1, S_0\). By controlling \(Y_i\) and the input carry \(C_{in}\), the circuit generates 7 distinct arithmetic operations:</p>
+
+        <!-- Function Table -->
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>\(S_1\)</th>
+                <th>\(S_0\)</th>
+                <th>\(C_{in}\)</th>
+                <th>Input \(Y\) to Full Adder</th>
+                <th>Output Function \(D = A + Y + C_{in}\)</th>
+                <th>Microoperation Performed</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>0</td><td>0</td><td>0</td><td>\(B\)</td><td>\(D = A + B\)</td><td><strong>Add</strong></td></tr>
+              <tr><td>0</td><td>0</td><td>1</td><td>\(B\)</td><td>\(D = A + B + 1\)</td><td><strong>Add with Carry</strong></td></tr>
+              <tr><td>0</td><td>1</td><td>0</td><td>\(\overline{B}\)</td><td>\(D = A + \overline{B}\)</td><td><strong>Subtract with Borrow</strong></td></tr>
+              <tr><td>0</td><td>1</td><td>1</td><td>\(\overline{B}\)</td><td>\(D = A + \overline{B} + 1\)</td><td><strong>Subtract (2's Complement)</strong></td></tr>
+              <tr><td>1</td><td>0</td><td>0</td><td>0</td><td>\(D = A\)</td><td><strong>Transfer A</strong></td></tr>
+              <tr><td>1</td><td>0</td><td>1</td><td>0</td><td>\(D = A + 1\)</td><td><strong>Increment A</strong></td></tr>
+              <tr><td>1</td><td>1</td><td>0</td><td>1 (All 1s)</td><td>\(D = A - 1\)</td><td><strong>Decrement A</strong></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- B8: Assembly Program to Add N Numbers -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q8.</span> Write an assembly language program for the 8085 microprocessor to add 'n' numbers stored in consecutive memory locations and store the result in memory location SUM.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2018 Examination</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ 8085 Assembly Source Code:</div>
+<pre><code>; Problem: Count 'N' is stored at memory location 3000H.
+; Numbers start at 3001H (NUM), 3002H (NUM+1), ...
+; Store 16-bit total sum: Low byte at 4000H, High byte (carry) at 4001H.
+
+        ORG 0000H
+
+        LDA 3000H       ; Load count N into Accumulator
+        MOV C, A        ; Register C = Loop counter (N)
+        MVI B, 00H      ; Register B = Carry accumulator (High byte of sum)
+        XRA A           ; Clear Accumulator to 00H (Low byte of sum)
+        LXI H, 3001H    ; HL points to first array element (NUM)
+
+LOOP_ADD:
+        ADD M           ; Add memory element to Accumulator: A = A + M[HL]
+        JNC NEXT_ELEM   ; If no carry out, skip carry increment
+        INR B           ; Increment high-byte sum in B
+
+NEXT_ELEM:
+        INX H           ; Increment memory pointer to next array element
+        DCR C           ; Decrement loop counter C = C - 1
+        JNZ LOOP_ADD    ; If C != 0, repeat addition loop
+
+        ; Store the 16-bit accumulated result
+        STA 4000H       ; Store lower 8 bits of SUM at 4000H
+        MOV A, B        ; Move higher 8 bits of SUM to Accumulator
+        STA 4001H       ; Store higher 8 bits of SUM at 4001H
+        HLT             ; Terminate program</code></pre>
+      </div>
+    </div>
+
+    <!-- B9: Instruction Cycle Steps and RTL -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q9.</span> What are the steps for a simple instruction cycle? Explain the Fetch Cycle and Indirect Cycle using Register Transfer Language (RTL).</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2020 Examination</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Register Transfer Language (RTL) Formulation:</div>
+        <p>In Mano's Basic Computer architecture, timing signals \(T_0, T_1, T_2, \dots\) are generated by a 4-bit sequence counter (SC) connected to a \(4 \times 16\) decoder.</p>
+        <p><strong>1. Fetch Phase Micro-operations:</strong></p>
+        <div style="background: color-mix(in srgb, var(--surface) 95%, var(--border)); padding: 12px 18px; border-radius: 8px; font-family: monospace; font-size: 13.5px; border-left: 4px solid var(--emerald); margin-bottom: 14px;">
+          T0: AR &larr; PC<br>
+          T1: IR &larr; M[AR], PC &larr; PC + 1<br>
+          T2: Decode Opcode in IR(12-14), AR &larr; IR(0-11), I &larr; IR(15)
+        </div>
+        <p><strong>2. Indirect Phase Micro-operations:</strong></p>
+        <div style="background: color-mix(in srgb, var(--surface) 95%, var(--border)); padding: 12px 18px; border-radius: 8px; font-family: monospace; font-size: 13.5px; border-left: 4px solid var(--cyan);">
+          T3 (if I = 1 &amp; Memory-Reference): AR &larr; M[AR]<br>
+          T3 (if I = 0 &amp; Memory-Reference): Nothing (AR already holds Effective Address)
+        </div>
+        <p>During \(T_3\), if mode bit \(I = 1\), the CPU initiates a second read cycle into memory to resolve the pointer address and overwrites AR with the true Effective Address.</p>
+      </div>
+    </div>
+
+    <!-- B10: Programmed I/O -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q10.</span> Explain Programmed I/O with a flowchart and discuss its primary CPU performance drawback (Busy Waiting).</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2020 Examination</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p><strong>Programmed I/O</strong> is the simplest I/O control technique where all data movement between memory and external devices is executed entirely by CPU instructions.</p>
+        <p><strong>Operational Flow:</strong></p>
+        <ol>
+          <li>CPU issues an I/O command to the device interface.</li>
+          <li>The device interface sets a status flag bit (e.g., <code>BUSY = 1</code>) and begins mechanical preparation.</li>
+          <li>The CPU enters a tight <strong>polling loop</strong>, continually reading the status register of the interface to check if <code>READY == 1</code>.</li>
+          <li>Once ready, the CPU reads data into the Accumulator and writes it into RAM.</li>
+        </ol>
+        <p><strong>Critical Drawback (Busy-Waiting):</strong> Since mechanical I/O peripherals are thousands of times slower than electronic CPU clock speeds, the processor wastes millions of valuable clock cycles executing spin-loops doing nothing productive, completely degrading overall system throughput.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<!-- =========================================================================
+     SECTION C : 15 MARKS DETAILED ANSWER QUESTIONS (ATTEMPT ANY 3)
+     ========================================================================= -->
+<div class="exam-section-card" id="section-c">
+  <div class="exam-section-header exam-section-header-purple">
+    <div class="exam-section-header-inner">
+      <span class="exam-section-badge badge-purple">SECTION C &bull; 15 MARKS EACH</span>
+      <h3 class="exam-section-title">Comprehensive Long Answer Solutions &amp; Hardware Circuit Diagrams</h3>
+      <p class="exam-section-rule">CCSU Examination Blueprint: Attempt Any 3 Out of 5 Questions &bull; Total 45 Marks</p>
+    </div>
+  </div>
+
+  <div class="exam-section-body">
+
+    <!-- C1: Booth's Multiplication Algorithm -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q1.</span> What is Booth's Algorithm? Explain its mathematical principle and step-by-step procedure. Multiply \(24\) and \(-7\) using Booth's Algorithm with a complete register trace table.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2019, 2020, 2021 (Guaranteed 15M/22.5M)</span>
+          <span class="exam-tag-marks">15 / 22.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive 15-Mark Solution:</div>
+
+        <p><strong>1. Mathematical Principle of Booth's Algorithm:</strong></p>
+        <p>Booth's algorithm efficiently multiplies two signed binary integers in <strong>2's complement representation</strong>. In standard binary multiplication, every bit of the multiplier generates an addition of the multiplicand. Booth's algorithm recognizes that strings of consecutive 1s in the multiplier (such as \(011110_2 = 30_{10}\)) can be simplified:</p>
+        \[2^4 + 2^3 + 2^2 + 2^1 = 2^5 - 2^1 = 32 - 2 = 30\]
+        <p>Therefore, Booth's algorithm performs a <strong>subtraction</strong> when entering a run of 1s (transition \(10\)), does nothing during the run (\(11\)), and performs an <strong>addition</strong> when exiting the run (transition \(01\)).</p>
+
+        <!-- SVG Diagram: Booth's Algorithm Flowchart -->
+        <div class="svg-tree-container" style="background: #0f172a; padding: 22px; border-radius: 12px; margin: 18px 0; border: 1px solid #334155; text-align: center;">
+          <div style="font-weight: 700; color: #38bdf8; margin-bottom: 12px; font-size: 14px;">HARDWARE FLOWCHART: BOOTH'S MULTIPLICATION ALGORITHM</div>
+          <svg viewBox="0 0 680 340" width="100%" height="340" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <marker id="boothArr" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+                <path d="M0,1 L7,4 L0,7 Z" fill="#38bdf8"/>
+              </marker>
+            </defs>
+
+            <!-- Start & Init -->
+            <rect x="250" y="10" width="180" height="35" rx="18" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+            <text x="315" y="32" font-size="13" font-weight="800" fill="#38bdf8">START</text>
+
+            <line x1="340" y1="45" x2="340" y2="70" stroke="#38bdf8" stroke-width="2" marker-end="url(#boothArr)"/>
+
+            <rect x="200" y="70" width="280" height="42" rx="6" fill="#1e293b" stroke="#64748b" stroke-width="1.8"/>
+            <text x="220" y="96" font-size="12" font-weight="700" fill="#f8fafc">A &larr; 0,  Q-1 &larr; 0,  Count &larr; n</text>
+
+            <line x1="340" y1="112" x2="340" y2="140" stroke="#38bdf8" stroke-width="2" marker-end="url(#boothArr)"/>
+
+            <!-- Decision Diamond: Q0 Q-1 -->
+            <polygon points="340,140 430,175 340,210 250,175" fill="#312e81" stroke="#818cf8" stroke-width="2"/>
+            <text x="312" y="179" font-size="12" font-weight="800" fill="#ffffff">Q0 Q-1 ?</text>
+
+            <!-- Branch 10: A = A - M -->
+            <line x1="250" y1="175" x2="140" y2="175" stroke="#38bdf8" stroke-width="2" marker-end="url(#boothArr)"/>
+            <text x="180" y="168" font-size="11" font-weight="700" fill="#f43f5e">10 (Subtract)</text>
+            <rect x="70" y="155" width="100" height="40" rx="5" fill="#881337" stroke="#f43f5e" stroke-width="1.8"/>
+            <text x="80" y="180" font-size="11" font-weight="700" fill="#ffffff">A &larr; A - M</text>
+
+            <!-- Branch 01: A = A + M -->
+            <line x1="430" y1="175" x2="540" y2="175" stroke="#38bdf8" stroke-width="2" marker-end="url(#boothArr)"/>
+            <text x="455" y="168" font-size="11" font-weight="700" fill="#4ade80">01 (Add)</text>
+            <rect x="510" y="155" width="100" height="40" rx="5" fill="#064e3b" stroke="#4ade80" stroke-width="1.8"/>
+            <text x="520" y="180" font-size="11" font-weight="700" fill="#ffffff">A &larr; A + M</text>
+
+            <!-- Connect to ASHR -->
+            <line x1="120" y1="195" x2="120" y2="245" stroke="#38bdf8" stroke-width="2"/>
+            <line x1="120" y1="245" x2="210" y2="245" stroke="#38bdf8" stroke-width="2" marker-end="url(#boothArr)"/>
+
+            <line x1="340" y1="210" x2="340" y2="230" stroke="#38bdf8" stroke-width="2" marker-end="url(#boothArr)"/>
+            <text x="350" y="224" font-size="11" font-weight="700" fill="#94a3b8">00, 11 (No Op)</text>
+
+            <line x1="560" y1="195" x2="560" y2="245" stroke="#38bdf8" stroke-width="2"/>
+            <line x1="560" y1="245" x2="470" y2="245" stroke="#38bdf8" stroke-width="2" marker-end="url(#boothArr)"/>
+
+            <!-- ASHR and Count -->
+            <rect x="210" y="230" width="260" height="36" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="1.8"/>
+            <text x="225" y="253" font-size="11.5" font-weight="700" fill="#f8fafc">ASHR (A, Q, Q-1), Count &larr; Count - 1</text>
+
+            <!-- Check Count == 0 -->
+            <line x1="340" y1="266" x2="340" y2="285" stroke="#38bdf8" stroke-width="2" marker-end="url(#boothArr)"/>
+            <polygon points="340,285 410,305 340,325 270,305" fill="#312e81" stroke="#818cf8" stroke-width="1.8"/>
+            <text x="305" y="309" font-size="11" font-weight="800" fill="#ffffff">Count = 0?</text>
+
+            <!-- No loop back -->
+            <line x1="270" y1="305" x2="30" y2="305" stroke="#eab308" stroke-width="2"/>
+            <line x1="30" y1="305" x2="30" y2="175" stroke="#eab308" stroke-width="2"/>
+            <line x1="30" y1="175" x2="250" y2="175" stroke="#eab308" stroke-width="2" marker-end="url(#boothArr)"/>
+            <text x="35" y="250" font-size="11" font-weight="700" fill="#eab308">No</text>
+
+            <!-- Yes to End -->
+            <line x1="410" y1="305" x2="520" y2="305" stroke="#4ade80" stroke-width="2" marker-end="url(#boothArr)"/>
+            <text x="440" y="298" font-size="11" font-weight="700" fill="#4ade80">Yes</text>
+            <rect x="520" y="290" width="110" height="32" rx="16" fill="#064e3b" stroke="#4ade80" stroke-width="2"/>
+            <text x="560" y="311" font-size="12" font-weight="800" fill="#4ade80">END</text>
+          </svg>
+        </div>
+
+        <p><strong>2. Detailed Numerical Problem: Multiply \(24\) and \(-7\)</strong></p>
+        <ul>
+          <li><strong>Multiplicand \(M = +24_{10}\):</strong> In 6-bit binary = \(011000_2\)</li>
+          <li><strong>Negative Multiplicand \(-M = -24_{10}\):</strong> Take 2's complement of \(011000 \implies 100111 + 1 = 101000_2\)</li>
+          <li><strong>Multiplier \(Q = -7_{10}\):</strong> \(+7 = 000111_2\). 2's complement of \(7 \implies 111000 + 1 = 111001_2\)</li>
+          <li>Number of bits \(n = 6\). Registers: \(A = 000000_2\), \(Q = 111001_2\), \(Q_{-1} = 0\), \(\text{Count} = 6\).</li>
+        </ul>
+
+        <p><strong>Complete Step-by-Step Register Trace Table:</strong></p>
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Cycle</th>
+                <th>Operation</th>
+                <th>Accumulator (A)</th>
+                <th>Multiplier (Q)</th>
+                <th>\(Q_{-1}\)</th>
+                <th>Count</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Init</strong></td>
+                <td>Initial Values</td>
+                <td><code>000000</code></td>
+                <td><code>111001</code></td>
+                <td><code>0</code></td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td rowspan="2"><strong>1</strong></td>
+                <td>\(Q_0 Q_{-1} = 10 \implies A = A - M\) (\(+ 101000\))</td>
+                <td><code>101000</code></td>
+                <td><code>111001</code></td>
+                <td><code>0</code></td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td>Arithmetic Shift Right (ASHR)</td>
+                <td><code>110100</code></td>
+                <td><code>011100</code></td>
+                <td><code>1</code></td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td rowspan="2"><strong>2</strong></td>
+                <td>\(Q_0 Q_{-1} = 01 \implies A = A + M\) (\(+ 011000\))</td>
+                <td><code>001100</code></td>
+                <td><code>011100</code></td>
+                <td><code>1</code></td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>Arithmetic Shift Right (ASHR)</td>
+                <td><code>000110</code></td>
+                <td><code>001110</code></td>
+                <td><code>0</code></td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td><strong>3</strong></td>
+                <td>\(Q_0 Q_{-1} = 00 \implies\) No Op, only ASHR</td>
+                <td><code>000011</code></td>
+                <td><code>000111</code></td>
+                <td><code>0</code></td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td rowspan="2"><strong>4</strong></td>
+                <td>\(Q_0 Q_{-1} = 10 \implies A = A - M\) (\(+ 101000\))</td>
+                <td><code>101011</code></td>
+                <td><code>000111</code></td>
+                <td><code>0</code></td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>Arithmetic Shift Right (ASHR)</td>
+                <td><code>110101</code></td>
+                <td><code>100011</code></td>
+                <td><code>1</code></td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td><strong>5</strong></td>
+                <td>\(Q_0 Q_{-1} = 11 \implies\) No Op, only ASHR</td>
+                <td><code>111010</code></td>
+                <td><code>110001</code></td>
+                <td><code>1</code></td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td><strong>6</strong></td>
+                <td>\(Q_0 Q_{-1} = 11 \implies\) No Op, only ASHR</td>
+                <td><code>111101</code></td>
+                <td><code>011000</code></td>
+                <td><code>1</code></td>
+                <td><strong>0</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p><strong>Result Verification:</strong></p>
+        <p>Combine registers \(A\) and \(Q\): \([A, Q] = 111101 \; 011000_2\)</p>
+        <ul>
+          <li>The MSB is <strong>1</strong>, indicating a negative result.</li>
+          <li>Take the 2's complement of \([A, Q]\) to find its magnitude:
+          \[111101011000 \xrightarrow{\text{1's comp}} 000010100111 \xrightarrow{+1} 000010101000_2\]</li>
+          <li>Evaluate decimal value: \(2^7 + 2^5 + 2^3 = 128 + 32 + 8 = \mathbf{168_{10}}\)</li>
+          <li>Hence, \([A, Q] = \mathbf{-168_{10}}\). Exactly matches \(24 \times (-7) = -168\)!</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- C2: 8085 Microprocessor Architecture -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q2.</span> Draw the functional block diagram of the Intel 8085 Microprocessor architecture and explain all its functional units, internal registers, and flag register in detail.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2017, 2020 Examination</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Full 15-Mark Architectural Solution:</div>
+
+        <!-- SVG Diagram: 8085 Architecture -->
+        <div class="svg-tree-container" style="background: #0f172a; padding: 22px; border-radius: 12px; margin: 18px 0; border: 1px solid #334155; text-align: center;">
+          <div style="font-weight: 700; color: #38bdf8; margin-bottom: 12px; font-size: 14px;">INTEL 8085 MICROPROCESSOR FUNCTIONAL ARCHITECTURE</div>
+          <svg viewBox="0 0 780 430" width="100%" height="430" xmlns="http://www.w3.org/2000/svg">
+            <!-- Central Internal 8-Bit Data Bus -->
+            <rect x="280" y="30" width="22" height="360" rx="4" fill="#0284c7"/>
+            <text x="286" y="215" font-size="11" font-weight="800" fill="#ffffff" transform="rotate(-90 286 215)">8-BIT INTERNAL DATA BUS</text>
+
+            <!-- ALU Block -->
+            <polygon points="90,40 180,40 160,110 110,110" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+            <text x="125" y="75" font-size="13" font-weight="800" fill="#38bdf8">ALU</text>
+
+            <!-- Accumulator & Temp Reg -->
+            <rect x="30" y="35" width="50" height="35" rx="4" fill="#0369a1" stroke="#38bdf8" stroke-width="1.5"/>
+            <text x="36" y="58" font-size="11" font-weight="700" fill="#ffffff">ACC (A)</text>
+            <line x1="80" y1="52" x2="90" y2="52" stroke="#38bdf8" stroke-width="2"/>
+
+            <rect x="30" y="80" width="50" height="35" rx="4" fill="#1e293b" stroke="#64748b" stroke-width="1.5"/>
+            <text x="38" y="102" font-size="10" font-weight="700" fill="#94a3b8">TEMP</text>
+            <line x1="80" y1="95" x2="105" y2="95" stroke="#38bdf8" stroke-width="2"/>
+
+            <!-- Flag Register -->
+            <rect x="190" y="55" width="70" height="35" rx="4" fill="#701a75" stroke="#f472b6" stroke-width="1.8"/>
+            <text x="198" y="77" font-size="11" font-weight="800" fill="#ffffff">FLAGS (5)</text>
+            <line x1="165" y1="72" x2="190" y2="72" stroke="#f472b6" stroke-width="2"/>
+            <line x1="260" y1="72" x2="280" y2="72" stroke="#38bdf8" stroke-width="2"/>
+
+            <!-- Register Array -->
+            <g transform="translate(330, 30)">
+              <rect x="0" y="0" width="200" height="200" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+              <text x="35" y="20" font-size="12" font-weight="800" fill="#38bdf8">GENERAL REGISTERS</text>
+
+              <!-- B, C -->
+              <rect x="15" y="30" width="80" height="28" fill="#0f172a" stroke="#64748b"/>
+              <text x="45" y="49" font-size="12" font-weight="700" fill="#f8fafc">B (8)</text>
+              <rect x="105" y="30" width="80" height="28" fill="#0f172a" stroke="#64748b"/>
+              <text x="135" y="49" font-size="12" font-weight="700" fill="#f8fafc">C (8)</text>
+
+              <!-- D, E -->
+              <rect x="15" y="65" width="80" height="28" fill="#0f172a" stroke="#64748b"/>
+              <text x="45" y="84" font-size="12" font-weight="700" fill="#f8fafc">D (8)</text>
+              <rect x="105" y="65" width="80" height="28" fill="#0f172a" stroke="#64748b"/>
+              <text x="135" y="84" font-size="12" font-weight="700" fill="#f8fafc">E (8)</text>
+
+              <!-- H, L -->
+              <rect x="15" y="100" width="80" height="28" fill="#0f172a" stroke="#64748b"/>
+              <text x="45" y="119" font-size="12" font-weight="700" fill="#f8fafc">H (8)</text>
+              <rect x="105" y="100" width="80" height="28" fill="#0f172a" stroke="#64748b"/>
+              <text x="135" y="119" font-size="12" font-weight="700" fill="#f8fafc">L (8)</text>
+
+              <!-- SP, PC -->
+              <rect x="15" y="135" width="170" height="26" fill="#0369a1" stroke="#38bdf8"/>
+              <text x="40" y="153" font-size="11" font-weight="800" fill="#ffffff">STACK POINTER (SP - 16)</text>
+              <rect x="15" y="167" width="170" height="26" fill="#0369a1" stroke="#38bdf8"/>
+              <text x="30" y="184" font-size="11" font-weight="800" fill="#ffffff">PROGRAM COUNTER (PC - 16)</text>
+            </g>
+            <line x1="302" y1="120" x2="330" y2="120" stroke="#38bdf8" stroke-width="2"/>
+
+            <!-- Instruction Register & Decoder -->
+            <rect x="30" y="150" width="130" height="40" rx="5" fill="#1e293b" stroke="#64748b" stroke-width="1.8"/>
+            <text x="40" y="175" font-size="11" font-weight="700" fill="#f8fafc">INSTRUCTION REG</text>
+            <line x1="160" y1="170" x2="280" y2="170" stroke="#38bdf8" stroke-width="2"/>
+
+            <rect x="30" y="210" width="130" height="50" rx="5" fill="#4338ca" stroke="#818cf8" stroke-width="1.8"/>
+            <text x="40" y="235" font-size="11" font-weight="800" fill="#ffffff">DECODER &amp; MACHINE</text>
+            <text x="50" y="250" font-size="10" fill="#c7d2fe">CYCLE ENCODER</text>
+            <line x1="95" y1="190" x2="95" y2="210" stroke="#818cf8" stroke-width="2"/>
+
+            <!-- Timing and Control Unit -->
+            <rect x="30" y="280" width="220" height="120" rx="8" fill="#1e293b" stroke="#eab308" stroke-width="2"/>
+            <text x="50" y="305" font-size="12" font-weight="800" fill="#eab308">TIMING &amp; CONTROL UNIT</text>
+            <text x="40" y="330" font-size="11" fill="#fef08a">CLK (X1, X2, CLK OUT)</text>
+            <text x="40" y="350" font-size="11" fill="#fef08a">Control: RD, WR, ALE</text>
+            <text x="40" y="370" font-size="11" fill="#fef08a">Status: S0, S1, IO/M</text>
+            <text x="40" y="390" font-size="11" fill="#fef08a">Reset: RESET IN, RESET OUT</text>
+            <line x1="95" y1="260" x2="95" y2="280" stroke="#eab308" stroke-width="2"/>
+
+            <!-- Interrupt Control & Serial I/O -->
+            <rect x="560" y="30" width="190" height="90" rx="6" fill="#1e293b" stroke="#f43f5e" stroke-width="1.8"/>
+            <text x="580" y="55" font-size="12" font-weight="800" fill="#f43f5e">INTERRUPT CONTROL</text>
+            <text x="575" y="75" font-size="10" fill="#fecdd3">TRAP, RST 7.5, 6.5, 5.5</text>
+            <text x="575" y="95" font-size="10" fill="#fecdd3">INTR, INTA (Acknowledge)</text>
+
+            <rect x="560" y="140" width="190" height="60" rx="6" fill="#1e293b" stroke="#10b981" stroke-width="1.8"/>
+            <text x="590" y="165" font-size="12" font-weight="800" fill="#10b981">SERIAL I/O CONTROL</text>
+            <text x="610" y="185" font-size="11" fill="#a7f3d0">SID (In), SOD (Out)</text>
+
+            <!-- Address and Address/Data Buffers -->
+            <rect x="330" y="270" width="200" height="50" rx="6" fill="#047857" stroke="#34d399" stroke-width="1.8"/>
+            <text x="350" y="295" font-size="11" font-weight="800" fill="#ffffff">ADDRESS BUFFER (A8 - A15)</text>
+            <text x="375" y="312" font-size="10" fill="#a7f3d0">Unidirectional 8-bit</text>
+
+            <rect x="330" y="340" width="200" height="50" rx="6" fill="#047857" stroke="#34d399" stroke-width="1.8"/>
+            <text x="338" y="365" font-size="11" font-weight="800" fill="#ffffff">ADDR/DATA BUFFER (AD0 - AD7)</text>
+            <text x="375" y="382" font-size="10" fill="#a7f3d0">Bidirectional 8-bit</text>
+
+            <!-- Bus Demultiplexing ALE indicator -->
+            <line x1="250" y1="365" x2="330" y2="365" stroke="#38bdf8" stroke-width="2"/>
+            <text x="260" y="358" font-size="10" font-weight="800" fill="#38bdf8">ALE</text>
+          </svg>
+        </div>
+
+        <p><strong>Key Functional Blocks of 8085:</strong></p>
+        <ol>
+          <li><strong>Arithmetic and Logic Unit (ALU):</strong> An 8-bit processing core that executes arithmetic additions, subtractions, logical AND, OR, XOR, and rotates. Operates with the Accumulator and Temporary Register.</li>
+          <li><strong>General Purpose Register Array:</strong> Six 8-bit registers (<code>B, C, D, E, H, L</code>) that can function independently or as 16-bit register pairs (<code>BC, DE, HL</code>). The <strong>HL pair</strong> acts as the primary data memory pointer.</li>
+          <li><strong>Program Counter (PC):</strong> A 16-bit register tracking the address of the next byte to be fetched. Address range: <code>0000H to FFFFH</code> (64 KB).</li>
+          <li><strong>Stack Pointer (SP):</strong> A 16-bit register pointing to the top of the stack frame in read/write memory.</li>
+          <li><strong>Demultiplexing the Address/Data Bus (\(AD_0\text{--}AD_7\)):</strong> To minimize physical pin count (40 pins), the lower 8 address bits are time-multiplexed with the 8-bit data bus. The <strong>Address Latch Enable (ALE)</strong> pin outputs a high pulse during clock cycle \(T_1\) of each machine cycle to strobe \(A_0\text{--}A_7\) into an external latch (IC 74LS373), freeing the bus for data during \(T_2\) and \(T_3\).</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- C3: Direct Memory Access (DMA) -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q3.</span> Describe the concept of Direct Memory Access (DMA). Explain the hardware architecture and transfer mechanism of a DMA Controller with a block diagram.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2017, 2018, 2019, 2020, 2021 (All 5 Years)</span>
+          <span class="exam-tag-marks">15 / 22.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive 15-Mark Solution:</div>
+
+        <p><strong>1. Why DMA is Necessary:</strong></p>
+        <p>In programmed I/O and interrupt-driven I/O, every single data byte moved between a high-speed peripheral (hard disk, SSD, network card) and main memory must travel through CPU registers (such as the Accumulator). This creates a massive performance bottleneck. <strong>Direct Memory Access (DMA)</strong> bypasses the CPU entirely, granting a specialized hardware controller direct ownership of the system buses to stream data directly between I/O and RAM at full memory-bus speeds.</p>
+
+        <!-- SVG Diagram: DMA Hardware Architecture -->
+        <div class="svg-tree-container" style="background: #0f172a; padding: 22px; border-radius: 12px; margin: 18px 0; border: 1px solid #334155; text-align: center;">
+          <div style="font-weight: 700; color: #38bdf8; margin-bottom: 12px; font-size: 14px;">DIRECT MEMORY ACCESS (DMA) SYSTEM BUS ARCHITECTURE</div>
+          <svg viewBox="0 0 740 320" width="100%" height="320" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <marker id="dmaArr" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+                <path d="M0,1 L7,4 L0,7 Z" fill="#38bdf8"/>
+              </marker>
+            </defs>
+
+            <!-- CPU Block -->
+            <rect x="30" y="30" width="150" height="100" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+            <text x="80" y="65" font-size="14" font-weight="800" fill="#38bdf8">CPU</text>
+            <text x="50" y="90" font-size="11" fill="#94a3b8">HOLD, HLDA</text>
+            <text x="45" y="110" font-size="11" fill="#94a3b8">RD, WR Controls</text>
+
+            <!-- DMA Controller (8237) -->
+            <rect x="270" y="30" width="200" height="150" rx="8" fill="#1e293b" stroke="#eab308" stroke-width="2"/>
+            <text x="305" y="60" font-size="13" font-weight="800" fill="#eab308">DMA CONTROLLER</text>
+            <rect x="290" y="75" width="160" height="24" fill="#0f172a" stroke="#64748b"/>
+            <text x="305" y="91" font-size="11" fill="#fef08a">Address Register</text>
+            <rect x="290" y="105" width="160" height="24" fill="#0f172a" stroke="#64748b"/>
+            <text x="300" y="121" font-size="11" fill="#fef08a">Word Count Register</text>
+            <rect x="290" y="135" width="160" height="24" fill="#0f172a" stroke="#64748b"/>
+            <text x="305" y="151" font-size="11" fill="#fef08a">Control / Status Reg</text>
+
+            <!-- Memory (RAM) -->
+            <rect x="560" y="30" width="150" height="100" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+            <text x="585" y="65" font-size="14" font-weight="800" fill="#10b981">MAIN MEMORY</text>
+            <text x="615" y="85" font-size="12" fill="#a7f3d0">(RAM)</text>
+            <text x="585" y="110" font-size="11" fill="#64748b">MEMR, MEMW</text>
+
+            <!-- Peripheral Device (Disk Controller) -->
+            <rect x="270" y="240" width="200" height="60" rx="8" fill="#1e293b" stroke="#f43f5e" stroke-width="2"/>
+            <text x="295" y="268" font-size="12" font-weight="800" fill="#f43f5e">I/O DEVICE / DISK</text>
+            <text x="315" y="286" font-size="11" fill="#fecdd3">DREQ, DACK Lines</text>
+
+            <!-- HOLD and HLDA between CPU & DMA -->
+            <line x1="270" y1="60" x2="180" y2="60" stroke="#eab308" stroke-width="2" marker-end="url(#dmaArr)"/>
+            <text x="195" y="52" font-size="11" font-weight="800" fill="#eab308">HOLD (HRQ)</text>
+            <line x1="180" y1="90" x2="270" y2="90" stroke="#38bdf8" stroke-width="2" marker-end="url(#dmaArr)"/>
+            <text x="195" y="105" font-size="11" font-weight="800" fill="#38bdf8">HLDA (Grant)</text>
+
+            <!-- DREQ and DACK between I/O & DMA -->
+            <line x1="340" y1="240" x2="340" y2="180" stroke="#f43f5e" stroke-width="2" marker-end="url(#dmaArr)"/>
+            <text x="295" y="215" font-size="11" font-weight="800" fill="#f43f5e">DREQ</text>
+            <line x1="400" y1="180" x2="400" y2="240" stroke="#10b981" stroke-width="2" marker-end="url(#dmaArr)"/>
+            <text x="408" y="215" font-size="11" font-weight="800" fill="#10b981">DACK</text>
+
+            <!-- Shared Address & Data Buses -->
+            <line x1="370" y1="180" x2="370" y2="210" stroke="#38bdf8" stroke-width="1"/>
+            <line x1="470" y1="60" x2="560" y2="60" stroke="#38bdf8" stroke-width="2.5" marker-end="url(#dmaArr)"/>
+            <text x="480" y="52" font-size="11" font-weight="800" fill="#38bdf8">Address Bus</text>
+
+            <line x1="470" y1="95" x2="560" y2="95" stroke="#10b981" stroke-width="2.5" marker-end="url(#dmaArr)"/>
+            <text x="485" y="90" font-size="11" font-weight="800" fill="#10b981">Data Bus</text>
+          </svg>
+        </div>
+
+        <p><strong>2. Detailed DMA Transfer Sequence:</strong></p>
+        <ol>
+          <li><strong>Initialization:</strong> The CPU initializes the DMA controller by writing: (i) the starting RAM address into the Address Register, (ii) the total number of words into the Word Count Register, and (iii) the direction of transfer (Read/Write) into the Control Register.</li>
+          <li><strong>Bus Request:</strong> When the peripheral has data ready, it asserts <strong>DREQ</strong> (DMA Request) to the DMA controller.</li>
+          <li><strong>Hold Request:</strong> The DMAC asserts <strong>HOLD / HRQ</strong> to the CPU.</li>
+          <li><strong>Bus Grant:</strong> The CPU finishes its current machine cycle, floats its address, data, and control lines to high-impedance state (tristate), and replies with <strong>HLDA</strong> (Hold Acknowledge).</li>
+          <li><strong>Burst Transfer:</strong> The DMAC activates <strong>DACK</strong> to the peripheral, drives the RAM address onto the address bus, asserts \(\overline{IOR}\) and \(\overline{MEMW}\) simultaneously, transferring the byte directly from peripheral to RAM in a single bus cycle!</li>
+          <li><strong>Auto-Increment &amp; Termination:</strong> DMAC increments the Address Register and decrements the Word Count Register. When Count reaches zero, DMAC asserts <strong>EOT (End of Process) / Interrupt</strong> to notify the CPU that the transfer is complete.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- C4: Addressing Modes Comprehensive Guide -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q4.</span> What do you mean by Addressing Modes? Explain various addressing modes with syntax examples, effective address formulas, and memory references.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2017, 2018, 2020 Examination</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Full 15-Mark Addressing Modes Guide:</div>
+        <p>The <strong>Addressing Mode</strong> dictates how the control unit calculates the <strong>Effective Address (EA)</strong>—the physical location in memory or registers where the operand actually lives.</p>
+
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Addressing Mode</th>
+                <th>Effective Address (EA) Formula</th>
+                <th>Assembly Syntax</th>
+                <th>Mem Refs</th>
+                <th>Primary Use Case</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>1. Immediate</strong></td>
+                <td>Operand is inside instruction: \(\text{EA} = \text{PC}\)</td>
+                <td><code>MVI A, 25H</code> / <code>ADD #5</code></td>
+                <td><strong>0</strong> (operand fetched with opcode)</td>
+                <td>Initializing constant values and loop counters.</td>
+              </tr>
+              <tr>
+                <td><strong>2. Direct (Absolute)</strong></td>
+                <td>\(\text{EA} = \text{Address Field}\)</td>
+                <td><code>LDA 3000H</code></td>
+                <td><strong>1</strong> (Read operand from address)</td>
+                <td>Accessing fixed global variables.</td>
+              </tr>
+              <tr>
+                <td><strong>3. Indirect</strong></td>
+                <td>\(\text{EA} = M[\text{Address Field}]\)</td>
+                <td><code>ADD @500</code></td>
+                <td><strong>2</strong> (Read pointer + Read operand)</td>
+                <td>Passing parameters by reference and linked structures.</td>
+              </tr>
+              <tr>
+                <td><strong>4. Register Mode</strong></td>
+                <td>\(\text{EA} = \text{Register } R\)</td>
+                <td><code>MOV A, B</code></td>
+                <td><strong>0</strong> (Fastest; purely on-chip registers)</td>
+                <td>High-speed mathematical computations.</td>
+              </tr>
+              <tr>
+                <td><strong>5. Register Indirect</strong></td>
+                <td>\(\text{EA} = [R]\) (Register holds memory address)</td>
+                <td><code>MOV A, M</code> (HL holds address)</td>
+                <td><strong>1</strong> (Read operand from address in register)</td>
+                <td>Iterating through contiguous array buffers.</td>
+              </tr>
+              <tr>
+                <td><strong>6. Relative Addressing</strong></td>
+                <td>\(\text{EA} = \text{PC} + \text{Address Offset}\)</td>
+                <td><code>JMP $+15</code> / <code>BNE Loop</code></td>
+                <td><strong>0</strong> (Branching)</td>
+                <td>Relocatable position-independent code (PIC) loops.</td>
+              </tr>
+              <tr>
+                <td><strong>7. Indexed Addressing</strong></td>
+                <td>\(\text{EA} = \text{Index Register (XR)} + \text{Base Address}\)</td>
+                <td><code>MOV A, [XR + 1000H]</code></td>
+                <td><strong>1</strong></td>
+                <td>Scanning 1D arrays and lookup tables.</td>
+              </tr>
+              <tr>
+                <td><strong>8. Base Register Mode</strong></td>
+                <td>\(\text{EA} = \text{Base Register (BR)} + \text{Offset}\)</td>
+                <td><code>LDR R1, [R2, #4]</code></td>
+                <td><strong>1</strong></td>
+                <td>Virtual memory relocation and program segment swapping.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- C5: Input-Output Processor (IOP) -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q5.</span> What do you mean by Input-Output Processor (IOP)? Explain its hardware organization and CPU-IOP communication with a block diagram.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2017, 2021 Examination</span>
+          <span class="exam-tag-marks">15 / 22.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Full Architectural Solution:</div>
+
+        <p><strong>1. IOP Concept (I/O Channel):</strong></p>
+        <p>An <strong>Input-Output Processor (IOP)</strong> is an independent processor with its own specialized instruction set designed exclusively for managing I/O operations. While a DMA controller is purely hardware-driven, an IOP can execute its own software programs (known as <strong>Channel Programs</strong> or <strong>Channel Command Words - CCW</strong>), performing data formatting, character code translation (ASCII to EBCDIC), and error detection without interrupting the CPU.</p>
+
+        <!-- SVG Diagram: IOP Architecture -->
+        <div class="svg-tree-container" style="background: #0f172a; padding: 22px; border-radius: 12px; margin: 18px 0; border: 1px solid #334155; text-align: center;">
+          <div style="font-weight: 700; color: #38bdf8; margin-bottom: 12px; font-size: 14px;">INPUT-OUTPUT PROCESSOR (IOP) SYSTEM ARCHITECTURE</div>
+          <svg viewBox="0 0 740 300" width="100%" height="300" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <marker id="iopArr" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+                <path d="M0,1 L7,4 L0,7 Z" fill="#38bdf8"/>
+              </marker>
+            </defs>
+
+            <!-- Central Memory -->
+            <rect x="270" y="20" width="200" height="70" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+            <text x="320" y="50" font-size="14" font-weight="800" fill="#10b981">CENTRAL MEMORY</text>
+            <text x="345" y="70" font-size="11" fill="#a7f3d0">(Shared RAM)</text>
+
+            <!-- Memory Bus -->
+            <line x1="120" y1="120" x2="620" y2="120" stroke="#38bdf8" stroke-width="4"/>
+            <text x="320" y="113" font-size="11" font-weight="800" fill="#38bdf8">SYSTEM MEMORY BUS</text>
+            <line x1="370" y1="90" x2="370" y2="120" stroke="#38bdf8" stroke-width="3"/>
+
+            <!-- CPU Block -->
+            <rect x="50" y="150" width="170" height="90" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+            <text x="110" y="185" font-size="14" font-weight="800" fill="#38bdf8">CPU</text>
+            <text x="65" y="210" font-size="11" fill="#94a3b8">Main Program Execution</text>
+            <line x1="135" y1="120" x2="135" y2="150" stroke="#38bdf8" stroke-width="2.5" marker-end="url(#iopArr)"/>
+
+            <!-- IOP Block -->
+            <rect x="520" y="150" width="170" height="90" rx="8" fill="#1e293b" stroke="#eab308" stroke-width="2"/>
+            <text x="590" y="185" font-size="14" font-weight="800" fill="#eab308">IOP</text>
+            <text x="535" y="210" font-size="11" fill="#fef08a">I/O Instruction Decoder</text>
+            <line x1="605" y1="120" x2="605" y2="150" stroke="#eab308" stroke-width="2.5" marker-end="url(#iopArr)"/>
+
+            <!-- Peripheral Devices below IOP -->
+            <rect x="440" y="260" width="80" height="30" rx="4" fill="#0f172a" stroke="#f43f5e"/>
+            <text x="455" y="280" font-size="11" fill="#fecdd3">Disk Unit</text>
+
+            <rect x="535" y="260" width="80" height="30" rx="4" fill="#0f172a" stroke="#f43f5e"/>
+            <text x="550" y="280" font-size="11" fill="#fecdd3">Tape Unit</text>
+
+            <rect x="630" y="260" width="80" height="30" rx="4" fill="#0f172a" stroke="#f43f5e"/>
+            <text x="645" y="280" font-size="11" fill="#fecdd3">Printer</text>
+
+            <line x1="480" y1="240" x2="480" y2="260" stroke="#f43f5e" stroke-width="1.8"/>
+            <line x1="575" y1="240" x2="575" y2="260" stroke="#f43f5e" stroke-width="1.8"/>
+            <line x1="670" y1="240" x2="670" y2="260" stroke="#f43f5e" stroke-width="1.8"/>
+
+            <!-- CPU to IOP control link -->
+            <line x1="220" y1="195" x2="520" y2="195" stroke="#a855f7" stroke-width="2" stroke-dasharray="5" marker-end="url(#iopArr)"/>
+            <text x="310" y="190" font-size="11" font-weight="700" fill="#c084fc">Start I/O &amp; Status</text>
+          </svg>
+        </div>
+
+        <p><strong>CPU-IOP Communication Protocol:</strong></p>
+        <ol>
+          <li>The CPU constructs an <strong>I/O Channel Program</strong> in Central Memory containing sequences of Channel Command Words (CCWs).</li>
+          <li>The CPU issues a <code>START I/O</code> instruction addressed to the specific IOP, providing the starting memory address of the channel program.</li>
+          <li>The IOP accesses Central Memory via cycle-stealing, fetches and executes its channel commands, and streams data between peripherals and memory autonomously.</li>
+          <li>During this time, the CPU continues executing primary user applications at 100% capacity.</li>
+          <li>Upon finishing the channel program, the IOP issues an <strong>I/O Complete Interrupt</strong> to the CPU and writes its completion status into a Memory Status Word.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- C6: Instruction Cycle Flowchart & State Phases -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q6.</span> What do you understand by the Instruction Cycle? Explain all phases (Fetch, Decode, Effective Address, Execute, and Interrupt) with a complete state flowchart and RTL expressions.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2017, 2018, 2019 Examination</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Full 15-Mark Solution:</div>
+
+        <!-- SVG Diagram: Instruction Cycle State Flowchart -->
+        <div class="svg-tree-container" style="background: #0f172a; padding: 22px; border-radius: 12px; margin: 18px 0; border: 1px solid #334155; text-align: center;">
+          <div style="font-weight: 700; color: #38bdf8; margin-bottom: 12px; font-size: 14px;">INSTRUCTION CYCLE FLOWCHART &amp; TIMING STATES</div>
+          <svg viewBox="0 0 720 360" width="100%" height="360" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <marker id="icArr" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+                <path d="M0,1 L7,4 L0,7 Z" fill="#38bdf8"/>
+              </marker>
+            </defs>
+
+            <!-- State 0: Fetch -->
+            <rect x="250" y="15" width="220" height="50" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+            <text x="310" y="38" font-size="12" font-weight="800" fill="#38bdf8">FETCH PHASE</text>
+            <text x="260" y="55" font-size="10.5" fill="#bae6fd">T0: AR &larr; PC | T1: IR &larr; M[AR], PC++</text>
+
+            <line x1="360" y1="65" x2="360" y2="95" stroke="#38bdf8" stroke-width="2" marker-end="url(#icArr)"/>
+
+            <!-- State 1: Decode -->
+            <rect x="240" y="95" width="240" height="50" rx="8" fill="#1e293b" stroke="#818cf8" stroke-width="2"/>
+            <text x="305" y="118" font-size="12" font-weight="800" fill="#818cf8">DECODE PHASE</text>
+            <text x="250" y="135" font-size="10" fill="#c7d2fe">T2: Decode IR(12-14), AR &larr; IR(0-11), I &larr; IR(15)</text>
+
+            <line x1="360" y1="145" x2="360" y2="175" stroke="#38bdf8" stroke-width="2" marker-end="url(#icArr)"/>
+
+            <!-- State 2: Decision on Instruction Type -->
+            <polygon points="360,175 460,205 360,235 260,205" fill="#312e81" stroke="#818cf8" stroke-width="2"/>
+            <text x="325" y="210" font-size="11" font-weight="800" fill="#ffffff">Opcode Type?</text>
+
+            <!-- Path 1: Memory Reference -->
+            <line x1="360" y1="235" x2="360" y2="265" stroke="#38bdf8" stroke-width="2" marker-end="url(#icArr)"/>
+            <text x="370" y="252" font-size="10" font-weight="700" fill="#38bdf8">D7=0 (Memory Ref)</text>
+
+            <rect x="250" y="265" width="220" height="50" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+            <text x="290" y="288" font-size="12" font-weight="800" fill="#10b981">EXECUTE PHASE</text>
+            <text x="260" y="305" font-size="10" fill="#a7f3d0">T4..T6: ALU Operation / Memory Write</text>
+
+            <!-- Path 2: Register Ref (D7=1, I=0) -->
+            <line x1="260" y1="205" x2="130" y2="205" stroke="#f43f5e" stroke-width="2" marker-end="url(#icArr)"/>
+            <rect x="20" y="185" width="110" height="40" rx="6" fill="#1e293b" stroke="#f43f5e" stroke-width="1.8"/>
+            <text x="28" y="205" font-size="10" font-weight="800" fill="#f43f5e">REGISTER REF</text>
+            <text x="40" y="218" font-size="9" fill="#fecdd3">Execute at T3</text>
+
+            <!-- Path 3: I/O Ref (D7=1, I=1) -->
+            <line x1="460" y1="205" x2="590" y2="205" stroke="#eab308" stroke-width="2" marker-end="url(#icArr)"/>
+            <rect x="590" y="185" width="110" height="40" rx="6" fill="#1e293b" stroke="#eab308" stroke-width="1.8"/>
+            <text x="615" y="205" font-size="10" font-weight="800" fill="#eab308">I/O REF</text>
+            <text x="605" y="218" font-size="9" fill="#fef08a">Execute at T3</text>
+
+            <!-- Interrupt Check Loop Back -->
+            <line x1="360" y1="315" x2="360" y2="340" stroke="#94a3b8" stroke-width="2"/>
+            <line x1="360" y1="340" x2="680" y2="340" stroke="#94a3b8" stroke-width="2"/>
+            <line x1="680" y1="340" x2="680" y2="40" stroke="#94a3b8" stroke-width="2"/>
+            <line x1="680" y1="40" x2="470" y2="40" stroke="#94a3b8" stroke-width="2" marker-end="url(#icArr)"/>
+            <text x="500" y="335" font-size="10" font-weight="700" fill="#94a3b8">Interrupt Flip-Flop (R=1: Save PC &amp; Service ISR; R=0: Fetch Next)</text>
+          </svg>
+        </div>
+
+        <p><strong>Interrupt Cycle RTL Representation:</strong></p>
+        <p>If the Interrupt Enable flip-flop is set (\(IEN = 1\)) and an external interrupt line is asserted during execution, the hardware interrupt flip-flop \(R\) is set to 1, initiating the <strong>Interrupt Cycle</strong> instead of the Fetch Cycle:</p>
+        <div style="background: color-mix(in srgb, var(--surface) 95%, var(--border)); padding: 12px 18px; border-radius: 8px; font-family: monospace; font-size: 13.5px; border-left: 4px solid var(--purple); margin: 12px 0;">
+          T0': AR &larr; 0, TR &larr; PC<br>
+          T1': M[AR] &larr; TR, PC &larr; 0<br>
+          T2': PC &larr; PC + 1, IEN &larr; 0, R &larr; 0, SC &larr; 0
+        </div>
+        <p>This atomically saves the return address into memory location 0, loads address 1 (the pointer to the Interrupt Service Routine) into the Program Counter, disables interrupts, and clears the sequence counter to start processing the ISR.</p>
+      </div>
+    </div>
+
+    <!-- C7: Priority Interrupts (Daisy Chaining vs Polling) -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q7.</span> What is a Priority Interrupt? Explain Hardware Daisy-Chaining Priority and Software Polling with a detailed schematic diagram.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2018, 2021 Examination</span>
+          <span class="exam-tag-marks">15 / 22.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive 15-Mark Solution:</div>
+
+        <p><strong>1. Priority Interrupt Concept:</strong></p>
+        <p>When multiple peripheral devices request CPU service simultaneously, a <strong>Priority Interrupt System</strong> establishes an arbitration hierarchy, ensuring that high-speed or critical devices (e.g., power-failure monitor, hard drive) are serviced immediately before lower-priority devices (e.g., keyboard, printer).</p>
+
+        <!-- SVG Diagram: Daisy Chaining Priority -->
+        <div class="svg-tree-container" style="background: #0f172a; padding: 22px; border-radius: 12px; margin: 18px 0; border: 1px solid #334155; text-align: center;">
+          <div style="font-weight: 700; color: #38bdf8; margin-bottom: 12px; font-size: 14px;">HARDWARE DAISY-CHAINING PRIORITY ARBITRATION</div>
+          <svg viewBox="0 0 740 240" width="100%" height="240" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <marker id="daisyArr" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+                <path d="M0,1 L7,4 L0,7 Z" fill="#38bdf8"/>
+              </marker>
+            </defs>
+
+            <!-- CPU Block -->
+            <rect x="30" y="40" width="120" height="150" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+            <text x="70" y="85" font-size="14" font-weight="800" fill="#38bdf8">CPU</text>
+            <text x="45" y="125" font-size="11" fill="#94a3b8">INTA Output</text>
+            <text x="45" y="155" font-size="11" fill="#94a3b8">INTR Input</text>
+
+            <!-- Device 1 (Highest Priority) -->
+            <rect x="220" y="40" width="130" height="150" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+            <text x="245" y="70" font-size="12" font-weight="800" fill="#10b981">DEVICE 1</text>
+            <text x="235" y="90" font-size="10" fill="#a7f3d0">(Highest Priority)</text>
+            <text x="235" y="125" font-size="10" fill="#f8fafc">PI = 1 &rarr; PO = 0</text>
+            <text x="235" y="145" font-size="10" fill="#f8fafc">VAD Enabled</text>
+
+            <!-- Device 2 -->
+            <rect x="400" y="40" width="130" height="150" rx="8" fill="#1e293b" stroke="#eab308" stroke-width="2"/>
+            <text x="430" y="70" font-size="12" font-weight="800" fill="#eab308">DEVICE 2</text>
+            <text x="420" y="90" font-size="10" fill="#fef08a">(Medium Priority)</text>
+            <text x="420" y="125" font-size="10" fill="#f8fafc">PI &rarr; PO Pass</text>
+
+            <!-- Device 3 (Lowest Priority) -->
+            <rect x="580" y="40" width="130" height="150" rx="8" fill="#1e293b" stroke="#f43f5e" stroke-width="2"/>
+            <text x="610" y="70" font-size="12" font-weight="800" fill="#f43f5e">DEVICE 3</text>
+            <text x="600" y="90" font-size="10" fill="#fecdd3">(Lowest Priority)</text>
+            <text x="600" y="125" font-size="10" fill="#f8fafc">PI &rarr; PO Pass</text>
+
+            <!-- Serial INTA Line -->
+            <line x1="150" y1="120" x2="220" y2="120" stroke="#38bdf8" stroke-width="2.5" marker-end="url(#daisyArr)"/>
+            <text x="165" y="112" font-size="11" font-weight="800" fill="#38bdf8">INTA</text>
+
+            <line x1="350" y1="120" x2="400" y2="120" stroke="#38bdf8" stroke-width="2.5" marker-end="url(#daisyArr)"/>
+            <line x1="530" y1="120" x2="580" y2="120" stroke="#38bdf8" stroke-width="2.5" marker-end="url(#daisyArr)"/>
+
+            <!-- Shared Common INTR Line -->
+            <line x1="645" y1="190" x2="645" y2="220" stroke="#f43f5e" stroke-width="2"/>
+            <line x1="465" y1="190" x2="465" y2="220" stroke="#f43f5e" stroke-width="2"/>
+            <line x1="285" y1="190" x2="285" y2="220" stroke="#f43f5e" stroke-width="2"/>
+            <line x1="645" y1="220" x2="90" y2="220" stroke="#f43f5e" stroke-width="2"/>
+            <line x1="90" y1="220" x2="90" y2="190" stroke="#f43f5e" stroke-width="2" marker-end="url(#daisyArr)"/>
+            <text x="160" y="213" font-size="11" font-weight="800" fill="#f43f5e">COMMON INTERRUPT REQUEST LINE (INTR)</text>
+          </svg>
+        </div>
+
+        <p><strong>Comparison: Daisy-Chaining vs Software Polling:</strong></p>
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Criterion</th>
+                <th>Hardware Daisy-Chaining</th>
+                <th>Software Polling</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Arbitration Speed</strong></td>
+                <td>Extremely fast (signals propagate directly through gates in nanoseconds).</td>
+                <td>Slow (CPU executes an inspection loop polling device status registers sequentially).</td>
+              </tr>
+              <tr>
+                <td><strong>Hardware Cost</strong></td>
+                <td>Requires dedicated priority logic (PI/PO pins) built into each interface.</td>
+                <td>Zero extra hardware; implemented purely via software code loops.</td>
+              </tr>
+              <tr>
+                <td><strong>Flexibility</strong></td>
+                <td>Rigid; priority is physically fixed by wire connection order.</td>
+                <td>High; priority can be dynamically altered by changing the polling sequence order in code.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- C8: Hardwired vs Microprogrammed Control Unit -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q8.</span> Explain the architecture of a Microprogrammed Control Unit. Is it possible to have a hardwired control unit associated with a control memory?</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2017, 2018, 2019, 2020</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Full 15-Mark Solution:</div>
+
+        <p><strong>1. Architectural Principle of Microprogrammed Control:</strong></p>
+        <p>A microprogrammed control unit organizes control signals into structured micro-instructions stored inside a read-only <strong>Control Memory (ROM)</strong>. Its four core blocks are:</p>
+        <ol>
+          <li><strong>Control Address Register (CAR):</strong> Specifies the ROM address of the next micro-instruction to be read.</li>
+          <li><strong>Control Memory:</strong> High-speed internal ROM storing all microprograms.</li>
+          <li><strong>Control Data Register (CDR / Pipeline Register):</strong> Holds the currently fetched micro-instruction. The microinstruction is split into: (a) Control word fields (micro-operations) that drive the ALU and data paths, and (b) Next address fields that drive sequencing.</li>
+          <li><strong>Next Address Generator (Sequencer):</strong> Determines the next micro-address based on status flags, incrementer logic, or branch addresses.</li>
+        </ol>
+
+        <p><strong>2. Can Hardwired Control have a Control Memory?</strong></p>
+        <p style="background: color-mix(in srgb, var(--surface) 95%, var(--border)); padding: 14px 18px; border-radius: 8px; border-left: 4px solid var(--ruby);">
+          <strong>Answer: NO.</strong> By absolute computer engineering definition, a <strong>Hardwired Control Unit</strong> generates control signals directly using fixed combinational logic gates, decoders, multiplexers, and state flip-flops without storing instructions in memory.<br><br>
+          If a control unit stores control words in a memory matrix (ROM or PLA) and fetches them via an address register, it <strong>is</strong> a Microprogrammed Control Unit. Storing control signals in memory is the exact defining characteristic of microprogramming.
+        </p>
+      </div>
+    </div>
+
+    <!-- C9: One Stage of ALU with Shift Capability -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q9.</span> Draw and explain one stage of an Arithmetic Logic Unit (ALU) with shift capability along with the complete truth table of microoperations performed.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2018 Examination</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive 15-Mark Solution:</div>
+        <p>An ALU consists of \(n\) identical stages connected in parallel. One stage \(i\) consists of an <strong>Arithmetic Circuit</strong>, a <strong>Logic Circuit</strong>, and a \(4 \times 1\) <strong>Multiplexer</strong> with select inputs \(S_3, S_2\):</p>
+        <ul>
+          <li>When \(S_3 S_2 = 00\): Output of Arithmetic circuit is selected.</li>
+          <li>When \(S_3 S_2 = 01\): Output of Logic circuit is selected.</li>
+          <li>When \(S_3 S_2 = 10\): Shift Right operation is selected: \(G_i = A_{i+1}\).</li>
+          <li>When \(S_3 S_2 = 11\): Shift Left operation is selected: \(G_i = A_{i-1}\).</li>
+        </ul>
+
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>\(S_3\)</th><th>\(S_2\)</th><th>\(S_1\)</th><th>\(S_0\)</th><th>\(C_{in}\)</th>
+                <th>Operation Output \(G_i\)</th>
+                <th>Microoperation Function</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>\(A_i\)</td><td>Transfer A</td></tr>
+              <tr><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>\(A_i + 1\)</td><td>Increment A</td></tr>
+              <tr><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>\(A_i + B_i\)</td><td>Addition</td></tr>
+              <tr><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>\(A_i + B_i + 1\)</td><td>Add with Carry</td></tr>
+              <tr><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>\(A_i + \overline{B}_i\)</td><td>Subtract with Borrow</td></tr>
+              <tr><td>0</td><td>0</td><td>1</td><td>0</td><td>1</td><td>\(A_i + \overline{B}_i + 1\)</td><td>Subtract (2's Comp)</td></tr>
+              <tr><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>\(A_i - 1\)</td><td>Decrement A</td></tr>
+              <tr><td>0</td><td>1</td><td>0</td><td>0</td><td>X</td><td>\(A_i \land B_i\)</td><td>AND Logic</td></tr>
+              <tr><td>0</td><td>1</td><td>0</td><td>1</td><td>X</td><td>\(A_i \lor B_i\)</td><td>OR Logic</td></tr>
+              <tr><td>0</td><td>1</td><td>1</td><td>0</td><td>X</td><td>\(A_i \oplus B_i\)</td><td>XOR Logic</td></tr>
+              <tr><td>0</td><td>1</td><td>1</td><td>1</td><td>X</td><td>\(\overline{A}_i\)</td><td>NOT Logic (Complement A)</td></tr>
+              <tr><td>1</td><td>0</td><td>X</td><td>X</td><td>X</td><td>\(A_{i+1}\)</td><td>Shift Right A (shr)</td></tr>
+              <tr><td>1</td><td>1</td><td>X</td><td>X</td><td>X</td><td>\(A_{i-1}\)</td><td>Shift Left A (shl)</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- C10: Complements Subtraction (10's and 2's Complement) -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q10.</span> Perform the following subtraction operations using complement arithmetic: (i) \(7452 - 1243\) using 10's complement, (ii) \(11010 - 1101\) using 2's complement. Explain the use of Macros in I/O instructions.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2018 Examination</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Full Step-by-Step Mathematical Solution:</div>
+
+        <p><strong>Part (i): Decimal Subtraction \(7452 - 1243\) using 10's Complement</strong></p>
+        <ol>
+          <li>Find the 9's complement of the subtrahend (\(1243\)):
+          \[9999 - 1243 = 8756\]</li>
+          <li>Add 1 to obtain the <strong>10's complement</strong>:
+          \[8756 + 1 = 8757\]</li>
+          <li>Add the 10's complement to the minuend (\(7452\)):
+          \[7452 + 8757 = 16209\]</li>
+          <li>An <strong>end carry of 1</strong> is produced. Discard the end carry:
+          \[16209 \xrightarrow{\text{Discard Carry}} \mathbf{6209}\]</li>
+          <li>Verification: \(7452 - 1243 = 6209\). Correct!</li>
+        </ol>
+
+        <p><strong>Part (ii): Binary Subtraction \(11010_2 - 1101_2\) using 2's Complement</strong></p>
+        <ol>
+          <li>Equalize bit lengths (5 bits): Minuend = \(11010_2\), Subtrahend = \(01101_2\).</li>
+          <li>Find the 1's complement of \(01101_2 \implies 10010_2\).</li>
+          <li>Add 1 to obtain the <strong>2's complement</strong>:
+          \[10010_2 + 1 = 10011_2\]</li>
+          <li>Add the 2's complement to the minuend:
+          \[\begin{array}{rl}
+            11010_2 & (26_{10}) \\
+            + 10011_2 & (-13_{10}) \\
+            \hline
+            \mathbf{1}01101_2 &
+          \end{array}\]</li>
+          <li>An <strong>end carry of 1</strong> is produced. Discard the carry:
+          \[\mathbf{1}01101_2 \xrightarrow{\text{Discard Carry}} \mathbf{01101_2} \; (13_{10})\]</li>
+          <li>Verification: \(26 - 13 = 13\). Correct!</li>
+        </ol>
+
+        <p><strong>Part (iii): Use of Macros in I/O Instructions:</strong></p>
+        <p>In low-level programming, transferring data to peripherals involves repetitive sequences of instructions (checking status flags, masking ready bits, looping until ready, outputting data). Writing this boilerplate logic repeatedly bloats code readability. By encapsulating these steps into an <code>OUT_CHAR</code> or <code>IN_BLOCK</code> <strong>Macro</strong>, the developer invokes clean one-line statements while the assembler expands them inline for maximum I/O performance.</p>
+      </div>
+    </div>
+
+    <!-- C11: Asynchronous Two-Wire Handshaking -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q11.</span> Explain Asynchronous Data Transfer using the Two-Wire Handshaking method. Draw timing waveforms and state sequences for Source-Initiated and Destination-Initiated handshaking.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2017, 2018, 2019, 2020</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Full 15-Mark Solution:</div>
+
+        <!-- SVG Diagram: Handshaking Timing Waveforms -->
+        <div class="svg-tree-container" style="background: #0f172a; padding: 22px; border-radius: 12px; margin: 18px 0; border: 1px solid #334155; text-align: center;">
+          <div style="font-weight: 700; color: #38bdf8; margin-bottom: 12px; font-size: 14px;">SOURCE-INITIATED TWO-WIRE HANDSHAKING TIMING DIAGRAM</div>
+          <svg viewBox="0 0 700 200" width="100%" height="200" xmlns="http://www.w3.org/2000/svg">
+            <!-- Data Bus Waveform -->
+            <text x="30" y="45" font-size="12" font-weight="700" fill="#f8fafc">Data Bus</text>
+            <path d="M120,40 L160,40 L180,25 L460,25 L480,40 L650,40" fill="none" stroke="#38bdf8" stroke-width="2.5"/>
+            <path d="M120,40 L160,40 L180,55 L460,55 L480,40 L650,40" fill="none" stroke="#38bdf8" stroke-width="2.5"/>
+            <text x="280" y="45" font-size="11" font-weight="800" fill="#ffffff">VALID DATA PLACED ON BUS</text>
+
+            <!-- Data Valid Waveform -->
+            <text x="30" y="105" font-size="12" font-weight="700" fill="#eab308">Data Valid</text>
+            <polyline points="120,110 220,110 220,80 500,80 500,110 650,110" fill="none" stroke="#eab308" stroke-width="2.5"/>
+            <text x="240" y="98" font-size="10" font-weight="700" fill="#fef08a">High (Source Signals Data is Stable)</text>
+
+            <!-- Data Accepted Waveform -->
+            <text x="30" y="165" font-size="12" font-weight="700" fill="#10b981">Data Accepted</text>
+            <polyline points="120,170 340,170 340,140 580,140 580,170 650,170" fill="none" stroke="#10b981" stroke-width="2.5"/>
+            <text x="360" y="158" font-size="10" font-weight="700" fill="#a7f3d0">High (Destination Acknowledges Read)</text>
+
+            <!-- Sequence markers -->
+            <line x1="220" y1="80" x2="220" y2="180" stroke="#64748b" stroke-dasharray="3"/>
+            <line x1="340" y1="140" x2="340" y2="180" stroke="#64748b" stroke-dasharray="3"/>
+            <line x1="500" y1="80" x2="500" y2="180" stroke="#64748b" stroke-dasharray="3"/>
+            <line x1="580" y1="140" x2="580" y2="180" stroke="#64748b" stroke-dasharray="3"/>
+          </svg>
+        </div>
+
+        <p><strong>Sequence of Events in Source-Initiated Handshaking:</strong></p>
+        <ol>
+          <li><strong>Step 1:</strong> The Source unit places valid data onto the data bus.</li>
+          <li><strong>Step 2:</strong> After allowing bus signals to settle, the Source activates the <code>Data Valid</code> control line.</li>
+          <li><strong>Step 3:</strong> The Destination unit detects <code>Data Valid == 1</code>, reads the data from the bus into its internal buffer, and asserts the <code>Data Accepted</code> control line.</li>
+          <li><strong>Step 4:</strong> Detecting <code>Data Accepted == 1</code>, the Source unit deactivates <code>Data Valid</code> and removes the data from the bus.</li>
+          <li><strong>Step 5:</strong> Upon sensing <code>Data Valid == 0</code>, the Destination deactivates <code>Data Accepted</code>, completing the handshake cycle.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- C12: Parallel Processing, Array & Vector Processors -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q12.</span> Write comprehensive technical notes on: (a) Flynn's Classification of Computer Systems, (b) Array Processors, and (c) Vector Processors.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2017, 2018, 2021 Examination</span>
+          <span class="exam-tag-marks">15 / 22.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive 15-Mark Solution:</div>
+
+        <p><strong>1. Flynn's Classification of Parallel Architecture:</strong></p>
+        <p>Michael J. Flynn categorized computer architectures into four distinct classes based on the multiplicity of hardware instruction streams and data streams:</p>
+        <ul>
+          <li><strong>SISD (Single Instruction, Single Data):</strong> Traditional Von Neumann uniprocessor executing one instruction at a time on a single memory data item.</li>
+          <li><strong>SIMD (Single Instruction, Multiple Data):</strong> A single control unit broadcasts the same instruction to multiple Processing Elements (PEs), each executing it simultaneously on different data items (e.g., Vector processors, GPU matrix cores).</li>
+          <li><strong>MISD (Multiple Instruction, Single Data):</strong> Multiple processors execute different instructions concurrently on the same single data stream (rarely used; specialized fault-tolerant aerospace systems).</li>
+          <li><strong>MIMD (Multiple Instruction, Multiple Data):</strong> Multiple autonomous processors executing different instructions on completely independent data streams (modern multi-core CPUs and distributed compute clusters).</li>
+        </ul>
+
+        <p><strong>2. Array Processors:</strong></p>
+        <p>An <strong>Array Processor</strong> is an SIMD multiprocessor system consisting of a master Control Unit (CU) and a two-dimensional grid of identical Processing Elements (PEs), each equipped with its own local memory. The master CU broadcasts a single operation (such as vector addition \(C[i] = A[i] + B[i]\)), and all \(n\) PEs perform the calculation in parallel across all indices in exactly one clock cycle.</p>
+
+        <p><strong>3. Vector Processors:</strong></p>
+        <p>A <strong>Vector Processor</strong> processes entire 1D arrays of numbers (vectors) using a single specialized instruction (e.g., <code>VADD V1, V2, V3</code>). Unlike scalar processors that require an assembly loop with increment, compare, and branch instructions for every element, a vector processor features pipelined functional units that stream successive array elements continuously through deeply pipelined adders and multipliers, achieving maximum floating-point throughput (FLOPS).</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<!-- Bottom Navigation & Action Bar -->
+<div class="exam-actions-bar" style="margin-top: 36px; justify-content: space-between; flex-wrap: wrap; gap: 12px;">
+  <a href="{{ '/ccsu/bca/semester-3/' | relative_url }}" class="text-link">&larr; Back to BCA Semester 3 Hub</a>
+  <a href="{{ '/courses/bca/important-questions/' | relative_url }}" class="text-link">&uarr; Master Important Questions Index</a>
+  <button class="print-btn" onclick="triggerMathPrint()">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+    Save as PDF / Print Solved Notebook
+  </button>
+</div>

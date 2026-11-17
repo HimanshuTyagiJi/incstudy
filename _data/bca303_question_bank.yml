@@ -1,0 +1,467 @@
+# ==============================================================================
+# CCSU BCA-303 (Computer Architecture & Assembly Language) Question Bank Archive
+# Curated from authentic university examination papers (2017, 2018, 2019, 2020, 2021)
+# ==============================================================================
+
+course: "BCA"
+semester: 3
+subject_code: "BCA-303"
+subject_name: "Computer Architecture and Assembly Language"
+university: "CCSU Meerut"
+total_papers: 5
+total_questions: 65
+
+recurring_topics:
+  - name: "RISC vs CISC Architecture"
+    frequency: 5
+    appearances: [2017, 2018, 2019, 2020, 2021]
+  - name: "Direct Memory Access (DMA)"
+    frequency: 5
+    appearances: [2017, 2018, 2019, 2020, 2021]
+  - name: "Hardwired vs Microprogrammed Control Unit"
+    frequency: 5
+    appearances: [2017, 2018, 2019, 2020, 2021]
+  - name: "Booth Algorithm for Signed Multiplication"
+    frequency: 4
+    appearances: [2019, 2020, 2021]
+  - name: "Instruction Cycle & RTL Phases"
+    frequency: 4
+    appearances: [2017, 2018, 2019, 2020]
+  - name: "Addressing Modes & Memory References"
+    frequency: 4
+    appearances: [2017, 2018, 2019, 2021]
+  - name: "Subroutines vs Interrupts in Assembly"
+    frequency: 4
+    appearances: [2017, 2019, 2020, 2021]
+  - name: "Cache Memory Operations"
+    frequency: 3
+    appearances: [2019, 2020, 2021]
+  - name: "8085 Microprocessor Architecture & Flags"
+    frequency: 3
+    appearances: [2017, 2020]
+  - name: "Asynchronous Data Transfer & Handshaking"
+    frequency: 3
+    appearances: [2017, 2018, 2019]
+  - name: "Input-Output Processor (IOP)"
+    frequency: 2
+    appearances: [2017, 2021]
+  - name: "Priority Interrupt (Daisy Chaining vs Polling)"
+    frequency: 2
+    appearances: [2018, 2021]
+
+papers:
+  - year: 2017
+    session: "December 2017"
+    max_marks: 75
+    time: "3 Hours"
+    questions:
+      - id: "2017-A-Q1"
+        section: "A"
+        q_no: "Q1"
+        marks: 3
+        topic: "Registers"
+        question: "What is the use of register? Name any two registers."
+      - id: "2017-A-Q2"
+        section: "A"
+        q_no: "Q2"
+        marks: 3
+        topic: "Control Unit"
+        question: "What do you mean by control?"
+      - id: "2017-A-Q3"
+        section: "A"
+        q_no: "Q3"
+        marks: 3
+        topic: "Control Design"
+        question: "Differentiate between hardwired and microprogrammed controls."
+      - id: "2017-A-Q4"
+        section: "A"
+        q_no: "Q4"
+        marks: 3
+        topic: "Subroutine vs Interrupt"
+        question: "Explain in brief, how subroutine call is different from a software interrupt?"
+      - id: "2017-A-Q5"
+        section: "A"
+        q_no: "Q5"
+        marks: 3
+        topic: "Stack Organisation"
+        question: "Discuss the stack organisation for processor."
+      - id: "2017-B-Q6"
+        section: "B"
+        q_no: "Q6"
+        marks: 7.5
+        topic: "Pipelining"
+        question: "What are the steps required for a pipelined processor to process the instruction? Draw a pipeline for (A+B*D)."
+      - id: "2017-B-Q7"
+        section: "B"
+        q_no: "Q7"
+        marks: 7.5
+        topic: "Assembly Subtraction"
+        question: "Write a program in assembly to subtract number stored at memory location 2001 H from the number stored at 2002 H. Display the result at 2004 H."
+      - id: "2017-B-Q8"
+        section: "B"
+        q_no: "Q8"
+        marks: 7.5
+        topic: "Asynchronous Transfer"
+        question: "What is asynchronous data transfer? How handshaking removes the disadvantage of strobe method?"
+      - id: "2017-C-Q9"
+        section: "C"
+        q_no: "Q9"
+        marks: 15
+        topic: "8085 Architecture"
+        question: "Draw and explain the architecture of 8085 microprocessor along with all its registers and instruction set."
+      - id: "2017-C-Q10"
+        section: "C"
+        q_no: "Q10"
+        marks: 15
+        topic: "Addressing Modes"
+        question: "What do you mean by addressing modes? Explain various addressing modes with the help of examples."
+      - id: "2017-C-Q11"
+        section: "C"
+        q_no: "Q11"
+        marks: 15
+        topic: "IOP"
+        question: "What do you mean by Input-Output Processor (IOP)? Explain with the help of block diagram."
+      - id: "2017-C-Q12"
+        section: "C"
+        q_no: "Q12"
+        marks: 15
+        topic: "Instruction Cycle"
+        question: "What do you understand by instruction cycle? What are the different phases of instruction cycle?"
+      - id: "2017-C-Q13"
+        section: "C"
+        q_no: "Q13"
+        marks: 15
+        topic: "Processors & DMA"
+        question: "Write short note on: (i) RISC/CISC, (ii) Vector processor, (iii) Array processor, (iv) Parallel processor, (v) DMA."
+  - year: 2018
+    session: "December 2018"
+    max_marks: 75
+    time: "3 Hours"
+    questions:
+      - id: "2018-A-Q1"
+        section: "A"
+        q_no: "Q1"
+        marks: 3
+        topic: "Instruction Cycle Phases"
+        question: "What are the three major phases through which the control unit go through an instruction cycle?"
+      - id: "2018-A-Q2"
+        section: "A"
+        q_no: "Q2"
+        marks: 3
+        topic: "Computer Registers"
+        question: "Write a note on computer registers."
+      - id: "2018-A-Q3"
+        section: "A"
+        q_no: "Q3"
+        marks: 3
+        topic: "DMA Modes"
+        question: "What do you understand by interleaved DMA?"
+      - id: "2018-A-Q4"
+        section: "A"
+        q_no: "Q4"
+        marks: 3
+        topic: "Asynchronous Transfer"
+        question: "What is asynchronous data transfer?"
+      - id: "2018-A-Q5"
+        section: "A"
+        q_no: "Q5"
+        marks: 3
+        topic: "Fixed vs Floating Point"
+        question: "Distinguish between fixed point and floating point representation."
+      - id: "2018-B-Q6"
+        section: "B"
+        q_no: "Q6"
+        marks: 7.5
+        topic: "RISC/CISC & Control"
+        question: "(i) Differentiate between RISC and CISC. (ii) What is the difference between hardwired control and microprogrammed control?"
+      - id: "2018-B-Q7"
+        section: "B"
+        q_no: "Q7"
+        marks: 7.5
+        topic: "Arithmetic Circuit"
+        question: "Draw and explain a 4-bit arithmetic circuit which can perform: Add, Add with carry, Subtract with borrow, Subtract, Transfer of A, Increment, Decrement."
+      - id: "2018-B-Q8"
+        section: "B"
+        q_no: "Q8"
+        marks: 7.5
+        topic: "Assembly Array Sum"
+        question: "Write an assembly language program to add 'n' numbers where numbers are stored in 'n' consecutive locations and to store result in SUM."
+      - id: "2018-C-Q9"
+        section: "C"
+        q_no: "Q9"
+        marks: 15
+        topic: "Complements & Macros"
+        question: "(i) Subtract 7452 - 1243 using 10's complement. (ii) Subtract 11010 - 1101 using 2's complement. (iii) Use of macros in I/O instruction."
+      - id: "2018-C-Q10"
+        section: "C"
+        q_no: "Q10"
+        marks: 15
+        topic: "I/O Interface & Flag"
+        question: "Draw a block diagram for data transfer from CPU to an interface and then to an I/O device. Determine procedure for setting and clearing flag bit."
+      - id: "2018-C-Q11"
+        section: "C"
+        q_no: "Q11"
+        marks: 15
+        topic: "Direct vs Indirect Address"
+        question: "What is the difference between direct and indirect address instruction? How many references to memory are needed for each?"
+      - id: "2018-C-Q12"
+        section: "C"
+        q_no: "Q12"
+        marks: 15
+        topic: "ALU Stage Design"
+        question: "Draw and explain one stage of an ALU with shift capability along with microoperations performed."
+      - id: "2018-C-Q13"
+        section: "C"
+        q_no: "Q13"
+        marks: 15
+        topic: "Pipelining & Processors"
+        question: "Write short notes on: (i) Arithmetic pipelining, (ii) Instruction set, (iii) Interrupts improving efficiency, (iv) Array processor, (v) Serial communication."
+  - year: 2019
+    session: "November 2019"
+    max_marks: 75
+    time: "3 Hours"
+    questions:
+      - id: "2019-A-Q1"
+        section: "A"
+        q_no: "Q1"
+        marks: 3
+        topic: "Assemblers"
+        question: "What is the role of assemblers?"
+      - id: "2019-A-Q2"
+        section: "A"
+        q_no: "Q2"
+        marks: 3
+        topic: "Macros"
+        question: "What are macros?"
+      - id: "2019-A-Q3"
+        section: "A"
+        q_no: "Q3"
+        marks: 3
+        topic: "Registers"
+        question: "Define the computer registers."
+      - id: "2019-A-Q4"
+        section: "A"
+        q_no: "Q4"
+        marks: 3
+        topic: "Asynchronous Transfer"
+        question: "What is asynchronous data transfer?"
+      - id: "2019-A-Q5"
+        section: "A"
+        q_no: "Q5"
+        marks: 3
+        topic: "Cache Memory"
+        question: "What is cache memory? Describe its operations in brief."
+      - id: "2019-B-Q6"
+        section: "B"
+        q_no: "Q6"
+        marks: 7.5
+        topic: "Interrupt Types"
+        question: "Define interrupt. Explain its various types."
+      - id: "2019-B-Q7"
+        section: "B"
+        q_no: "Q7"
+        marks: 7.5
+        topic: "Addressing Modes"
+        question: "Differentiate between direct and indirect addressing with an example."
+      - id: "2019-B-Q8"
+        section: "B"
+        q_no: "Q8"
+        marks: 7.5
+        topic: "Subroutines"
+        question: "Explain subroutine in assembly language."
+      - id: "2019-C-Q9"
+        section: "C"
+        q_no: "Q9"
+        marks: 15
+        topic: "Booth Algorithm"
+        question: "What is Booth algorithm? Explain it in detail. Multiply 24 and -7 using Booth algorithm."
+      - id: "2019-C-Q10"
+        section: "C"
+        q_no: "Q10"
+        marks: 15
+        topic: "Communication"
+        question: "Write short note on: (i) Synchronous data transfer, (ii) Serial communication, (iii) Index register."
+      - id: "2019-C-Q11"
+        section: "C"
+        q_no: "Q11"
+        marks: 15
+        topic: "DMA"
+        question: "Describe the concept of DMA used in computer organisation."
+      - id: "2019-C-Q12"
+        section: "C"
+        q_no: "Q12"
+        marks: 15
+        topic: "RISC/CISC & Instruction Cycle"
+        question: "(i) A CISC chip is complex instruction set chip, alternative to RISC chips. How do they differ? (ii) Define instruction cycle. Explain each phase."
+      - id: "2019-C-Q13"
+        section: "C"
+        q_no: "Q13"
+        marks: 15
+        topic: "Control Unit Design"
+        question: "Explain difference between hardwired and microprogrammed control. Is it possible to have hardwired control with control memory?"
+  - year: 2020
+    session: "December 2020"
+    max_marks: 75
+    time: "3 Hours"
+    questions:
+      - id: "2020-A-Q1"
+        section: "A"
+        q_no: "Q1"
+        marks: 3
+        topic: "Cache Memory"
+        question: "Define and explain cache memory."
+      - id: "2020-A-Q2"
+        section: "A"
+        q_no: "Q2"
+        marks: 3
+        topic: "Isolated vs Mapped I/O"
+        question: "Differentiate between isolated I/O and memory mapped I/O."
+      - id: "2020-A-Q3"
+        section: "A"
+        q_no: "Q3"
+        marks: 3
+        topic: "Booth Algorithm"
+        question: "Define and explain Booth's algorithm."
+      - id: "2020-A-Q4"
+        section: "A"
+        q_no: "Q4"
+        marks: 3
+        topic: "8085 Flags"
+        question: "Write about Flag Register in 8085."
+      - id: "2020-A-Q5"
+        section: "A"
+        q_no: "Q5"
+        marks: 3
+        topic: "Assembly Addition"
+        question: "Write an assembly language program to add two numbers."
+      - id: "2020-B-Q6"
+        section: "B"
+        q_no: "Q6"
+        marks: 7.5
+        topic: "Instruction Cycle RTL"
+        question: "What are the steps for a simple instruction cycle? Explain fetch cycle and indirect cycle using register transfer language."
+      - id: "2020-B-Q7"
+        section: "B"
+        q_no: "Q7"
+        marks: 7.5
+        topic: "DMA"
+        question: "What do you understand by DMA? Explain giving a diagram."
+      - id: "2020-B-Q8"
+        section: "B"
+        q_no: "Q8"
+        marks: 7.5
+        topic: "Programmed I/O"
+        question: "Explain programmed I/O with a flow chart."
+      - id: "2020-C-Q9"
+        section: "C"
+        q_no: "Q9"
+        marks: 15
+        topic: "Instruction Groups"
+        question: "Discuss various logical instructions, machine control instructions and program control instructions in assembly language."
+      - id: "2020-C-Q10"
+        section: "C"
+        q_no: "Q10"
+        marks: 15
+        topic: "RISC & Interrupt I/O"
+        question: "(i) Five characteristics of RISC. (ii) Differentiate hardwired and microprogrammed control. (iii) Interrupt-driven I/O in detail."
+      - id: "2020-C-Q11"
+        section: "C"
+        q_no: "Q11"
+        marks: 15
+        topic: "Data Transfer & Addressing"
+        question: "(i) Data transfer schemes. (ii) Need of addressing modes with examples. (iii) Role of register transfer in architecture."
+      - id: "2020-C-Q12"
+        section: "C"
+        q_no: "Q12"
+        marks: 15
+        topic: "Microprocessors & Loops"
+        question: "(a) Program loops in assembly. (b) Operation code. (c) 8-bit microprocessor."
+      - id: "2020-C-Q13"
+        section: "C"
+        q_no: "Q13"
+        marks: 15
+        topic: "Interfacing & 8085"
+        question: "(a) Memory interfacing memory. (b) Floating point representation. (c) Architecture of 8085."
+  - year: 2021
+    session: "December 2021"
+    max_marks: 75
+    time: "1.5 Hours"
+    questions:
+      - id: "2021-A-Q1"
+        section: "A"
+        q_no: "Q1"
+        marks: 7.5
+        topic: "Registers"
+        question: "Define the computer registers."
+      - id: "2021-A-Q2"
+        section: "A"
+        q_no: "Q2"
+        marks: 7.5
+        topic: "Microinstructions"
+        question: "Differentiate between micro-instruction and micro program."
+      - id: "2021-A-Q3"
+        section: "A"
+        q_no: "Q3"
+        marks: 7.5
+        topic: "Booth Algorithm"
+        question: "What is the advantage of using Booth algorithm?"
+      - id: "2021-A-Q4"
+        section: "A"
+        q_no: "Q4"
+        marks: 7.5
+        topic: "Cache Memory"
+        question: "What is cache memory? Describe its operations in brief."
+      - id: "2021-A-Q5"
+        section: "A"
+        q_no: "Q5"
+        marks: 7.5
+        topic: "RPN Conversion"
+        question: "Convert the following into reverse polish notation: A * B + C"
+      - id: "2021-B-Q6"
+        section: "B"
+        q_no: "Q6"
+        marks: 15
+        topic: "Addressing Modes"
+        question: "Differentiate between direct and indirect addressing with an example."
+      - id: "2021-B-Q7"
+        section: "B"
+        q_no: "Q7"
+        marks: 15
+        topic: "Organisation vs Architecture"
+        question: "Discuss basic computer organisation. How is it different from computer architecture?"
+      - id: "2021-B-Q8"
+        section: "B"
+        q_no: "Q8"
+        marks: 15
+        topic: "Subroutines"
+        question: "Explain subroutine in assembly language."
+      - id: "2021-C-Q9"
+        section: "C"
+        q_no: "Q9"
+        marks: 22.5
+        topic: "Booth Multiplication"
+        question: "What is Booth algorithm? Explain it in detail. Multiply 24 and -7 using Booth algorithm."
+      - id: "2021-C-Q10"
+        section: "C"
+        q_no: "Q10"
+        marks: 22.5
+        topic: "DMA Transfer"
+        question: "Describe Direct Memory Access (DMA). Explain its functioning of DMA transfer with the help of diagram."
+      - id: "2021-C-Q11"
+        section: "C"
+        q_no: "Q11"
+        marks: 22.5
+        topic: "Priority Interrupt"
+        question: "What is priority interrupt? Explain polling and daisy chaining priority."
+      - id: "2021-C-Q12"
+        section: "C"
+        q_no: "Q12"
+        marks: 22.5
+        topic: "IOP"
+        question: "What do you mean by Input-Output Processor (IOP)? Explain with the help of block diagram."
+      - id: "2021-C-Q13"
+        section: "C"
+        q_no: "Q13"
+        marks: 22.5
+        topic: "Processors & Parallelism"
+        question: "Write short note on: (a) RISC/CISC, (b) Array processor, (c) Parallel processor."

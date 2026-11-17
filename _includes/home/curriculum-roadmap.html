@@ -1,0 +1,70 @@
+{% assign cr = site.data.homepage.curriculum_roadmap %}
+<section class="home-section home-section-tinted" id="bca-curriculum">
+  <div class="home-container">
+    <div class="section-header-row">
+      <div class="section-title-group">
+        <span class="section-icon-box icon-theme-purple">
+          {% include ui/icon.html name="grad" size=22 %}
+        </span>
+        <div>
+          <h2 class="section-heading-lg">{{ cr.title }}</h2>
+          <p class="section-subcopy">{{ cr.subtitle }}</p>
+        </div>
+      </div>
+      <a href="{{ cr.cta_url | relative_url }}" class="outline-pill-btn">
+        <span>{{ cr.cta_label }}</span>
+        {% include ui/icon.html name="arrow-right" size=15 %}
+      </a>
+    </div>
+
+    <div class="editorial-overview-card">
+      <p>{{ cr.overview }}</p>
+    </div>
+
+    <!-- 6-Semester Structured Subject Directory -->
+    <div class="roadmap-grid">
+      {% for item in cr.semesters %}
+      <article class="roadmap-card roadmap-card-{{ item.theme }}">
+        <div class="roadmap-card-head">
+          <span class="roadmap-sem-badge">{{ item.sem }}</span>
+          <span class="roadmap-year-tag">{{ item.year }}</span>
+        </div>
+        <h3 class="roadmap-card-title">{{ item.focus }}</h3>
+        <ul class="roadmap-subject-list">
+          {% for sub in item.subjects_list %}
+          <li>
+            <span class="roadmap-sub-code">{{ sub.code }}</span>
+            <span class="roadmap-sub-name">{{ sub.name }}</span>
+          </li>
+          {% endfor %}
+        </ul>
+        <a href="{{ item.url | relative_url }}" class="roadmap-link">
+          <span>Open {{ item.sem }} Hub</span>
+          <span class="roadmap-link-arrow" aria-hidden="true">
+            {% include ui/icon.html name="arrow-right" size=14 %}
+          </span>
+        </a>
+      </article>
+      {% endfor %}
+    </div>
+
+    <!-- Direct Live Study Notes & Solved Paper Guides -->
+    <div class="featured-topics-wrap">
+      <h3 class="featured-topics-heading">{{ cr.featured_topics_title }}</h3>
+      <div class="featured-topics-grid">
+        {% for topic in cr.featured_topics %}
+        <a href="{{ topic.url | relative_url }}" class="featured-topic-card featured-topic-{{ topic.theme }}">
+          <div class="featured-topic-top">
+            <span class="featured-topic-code icon-theme-{{ topic.theme }}">{{ topic.code }}</span>
+            <span class="featured-topic-arrow" aria-hidden="true">
+              {% include ui/icon.html name="arrow-right" size=14 %}
+            </span>
+          </div>
+          <strong class="featured-topic-title">{{ topic.title }}</strong>
+          <p class="featured-topic-summary">{{ topic.summary }}</p>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

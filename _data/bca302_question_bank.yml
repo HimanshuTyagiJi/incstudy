@@ -1,0 +1,371 @@
+# ==============================================================================
+# CCSU BCA-302 (Data Structure Using C & C++) Official Question Bank Archive
+# Curated from authentic university examination papers (2018, 2019, 2020, 2021)
+# ==============================================================================
+
+course: "BCA"
+semester: 3
+subject_code: "BCA-302"
+subject_name: "Data Structure Using C & C++"
+university: "CCSU Meerut"
+
+papers:
+  - year: 2018
+    session: "December 2018"
+    syllabus_version: "New"
+    max_marks: 75
+    time: "3 Hours"
+    questions:
+      # Section A (3 Marks Each · All 5 Compulsory)
+      - id: "2018-Q1"
+        section: "A"
+        marks: 3
+        unit: "Unit-IV (Trees)"
+        topic: "AVL Trees"
+        question: "What are AVL trees?"
+      - id: "2018-Q2"
+        section: "A"
+        marks: 3
+        unit: "Unit-I (Introduction)"
+        topic: "Data Structure Definition"
+        question: "What do you understand by data structure?"
+      - id: "2018-Q3"
+        section: "A"
+        marks: 3
+        unit: "Unit-I (Arrays)"
+        topic: "Array Definition"
+        question: "What is an array? Explain."
+      - id: "2018-Q4"
+        section: "A"
+        marks: 3
+        unit: "Unit-II (Stacks)"
+        topic: "Stack Applications"
+        question: "Give the application of stack."
+      - id: "2018-Q5"
+        section: "A"
+        marks: 3
+        unit: "Unit-III (Linked Lists)"
+        topic: "Circular List & Chain"
+        question: "Define circular list and chain."
+
+      # Section B (7.5 Marks Each · Attempt Any 2)
+      - id: "2018-Q6"
+        section: "B"
+        marks: 7.5
+        unit: "Unit-I (Arrays)"
+        topic: "Array Deletion Procedure"
+        question: "Write the procedure to delete an element from an array."
+      - id: "2018-Q7"
+        section: "B"
+        marks: 7.5
+        unit: "Unit-IV (Trees)"
+        topic: "Count Leaf Nodes"
+        question: "Write a recursive function to count the number of leaves in a binary tree."
+      - id: "2018-Q8"
+        section: "B"
+        marks: 7.5
+        unit: "Unit-II (Stacks)"
+        topic: "Reverse Stack Recursion"
+        question: "Write a function to reverse a stack using push and pop operation."
+
+      # Section C (15 Marks Each · Attempt Any 3)
+      - id: "2018-Q9"
+        section: "C"
+        marks: 15
+        unit: "Unit-II (Queues) & Unit-V (Sorting)"
+        topic: "Linked Queue Deletion & Bubble Sort Complexity"
+        question: "(i) How to delete an element from a linked queue? Write procedure. (ii) Find the time complexity of bubble sort algorithm."
+      - id: "2018-Q10"
+        section: "C"
+        marks: 15
+        unit: "Unit-IV (Trees)"
+        topic: "BST & B-Tree Concepts"
+        question: "(i) What is binary search tree? (ii) What is a B-tree?"
+      - id: "2018-Q11"
+        section: "C"
+        marks: 15
+        unit: "Unit-II (Stacks & Queues)"
+        topic: "Postfix Evaluation & Stack vs Queue"
+        question: "(i) Write a function to evaluate a postfix expression. Show status of stack for each scanned token if the postfix expression is: ABC*DEF$/-G+H*- (ii) Differentiate between stacks and queues."
+      - id: "2018-Q12"
+        section: "C"
+        marks: 15
+        unit: "Unit-III (Linked Lists)"
+        topic: "Print Linked List in Reverse"
+        question: "Write a program to print a given singly linked list in the reverse order."
+      - id: "2018-Q13"
+        section: "C"
+        marks: 15
+        unit: "Unit-II (Queues) & Unit-V (Hashing)"
+        topic: "Priority Queues & Hashing Techniques"
+        question: "Write short notes on the following: (i) Priority queues. (ii) Hashing techniques."
+
+  - year: 2019
+    session: "November 2019"
+    syllabus_version: "New"
+    max_marks: 75
+    time: "3 Hours"
+    questions:
+      # Section A (3 Marks Each · All 5 Compulsory)
+      - id: "2019-Q1"
+        section: "A"
+        marks: 3
+        unit: "Unit-I (Arrays)"
+        topic: "Array Limitations"
+        question: "Write the limitations of arrays."
+      - id: "2019-Q2"
+        section: "A"
+        marks: 3
+        unit: "Unit-II (Stacks & Queues)"
+        topic: "Stack & Queue Definitions"
+        question: "Define stacks and queues with an example."
+      - id: "2019-Q3"
+        section: "A"
+        marks: 3
+        unit: "Unit-III (Linked Lists)"
+        topic: "Header Node Advantage"
+        question: "What is the advantage of a header node in a linked list?"
+      - id: "2019-Q4"
+        section: "A"
+        marks: 3
+        unit: "Unit-IV (Trees)"
+        topic: "Binary Tree Traversal"
+        question: "How a binary tree is traversed in C language?"
+      - id: "2019-Q5"
+        section: "A"
+        marks: 3
+        unit: "Unit-V (Sorting)"
+        topic: "Insertion Sort Concept"
+        question: "What is the basic concept of insertion sorting?"
+
+      # Section B (7.5 Marks Each · Attempt Any 2)
+      - id: "2019-Q6"
+        section: "B"
+        marks: 7.5
+        unit: "Unit-I (Sparse Matrix)"
+        topic: "Sparse Matrix Memory Representation"
+        question: "What do you mean by sparse matrix? Explain how a sparse matrix is represented in memory."
+      - id: "2019-Q7"
+        section: "B"
+        marks: 7.5
+        unit: "Unit-II (Queues)"
+        topic: "Deque Operations"
+        question: "What is D-queue? Explain the insertion and deletion operations with the help of suitable example."
+      - id: "2019-Q8"
+        section: "B"
+        marks: 7.5
+        unit: "Unit-III (Linked Lists)"
+        topic: "Delete Last Node"
+        question: "Write an algorithm to delete last node from a linked list."
+
+      # Section C (15 Marks Each · Attempt Any 3)
+      - id: "2019-Q9"
+        section: "C"
+        marks: 15
+        unit: "Unit-I (Arrays)"
+        topic: "Array Insertion at Kth Position"
+        question: "Write algorithm and its C syntax to insert an element at the Kth position into the linear array."
+      - id: "2019-Q10"
+        section: "C"
+        marks: 15
+        unit: "Unit-II (Stacks)"
+        topic: "Postfix Evaluation with Stack Trace"
+        question: "Write an algorithm to evaluate postfix expression and also implement the algorithm to the following expression: 3, 1, +, 2, ^, 7, 4, -, 2, *, +, 5, -"
+      - id: "2019-Q11"
+        section: "C"
+        marks: 15
+        unit: "Unit-IV (Trees)"
+        topic: "BST Insertion & Deletion"
+        question: "Write algorithm to perform insertion and deletion operations on binary trees and explain them with an example."
+      - id: "2019-Q12"
+        section: "C"
+        marks: 15
+        unit: "Unit-V (Hashing)"
+        topic: "Hashing Techniques in Detail"
+        question: "Describe hashing and various hashing techniques in detail."
+      - id: "2019-Q13"
+        section: "C"
+        marks: 15
+        unit: "Unit-II, IV, V"
+        topic: "Priority Queues, Heap Sort, BST Applications"
+        question: "Explain the following: (i) Priority queues. (ii) Heap sort. (iii) Applications of binary search tree."
+
+  - year: 2020
+    session: "December 2020"
+    syllabus_version: "New"
+    max_marks: 75
+    time: "3 Hours"
+    questions:
+      # Section A (4 Marks Each · All 5 Compulsory)
+      - id: "2020-Q1"
+        section: "A"
+        marks: 4
+        unit: "Unit-I (Introduction)"
+        topic: "Data Structure Operations"
+        question: "Explain the data structure's operations."
+      - id: "2020-Q2"
+        section: "A"
+        marks: 4
+        unit: "Unit-II (Stacks)"
+        topic: "Minimize Stack Overflow"
+        question: "How can we minimise the stack overflow?"
+      - id: "2020-Q3"
+        section: "A"
+        marks: 4
+        unit: "Unit-II (Stacks)"
+        topic: "Prefix & Postfix Conversion"
+        question: "Write prefix and postfix form for A + B * (C - D) / (E - F)."
+      - id: "2020-Q4"
+        section: "A"
+        marks: 4
+        unit: "Unit-I (Recursion)"
+        topic: "Recursive Factorial C/C++"
+        question: "Design a recursive factorial function using C/C++ language."
+      - id: "2020-Q5"
+        section: "A"
+        marks: 4
+        unit: "Unit-V (Hashing)"
+        topic: "Hashing Definition"
+        question: "Explain the term hashing."
+
+      # Section B (7.5 Marks Each · Attempt Any 2)
+      - id: "2020-Q6"
+        section: "B"
+        marks: 7.5
+        unit: "Unit-I (Sparse Matrix)"
+        topic: "Sparse Matrix 1D Address Formula"
+        question: "Describe the types of sparse matrix. How can we store a 2D sparse matrix in a corresponding single dimensional array? Find the formula for address calculation."
+      - id: "2020-Q7"
+        section: "B"
+        marks: 7.5
+        unit: "Unit-II (Queues)"
+        topic: "Deque & Priority Queue"
+        question: "Explain D-queue and priority queue with a suitable example."
+      - id: "2020-Q8"
+        section: "B"
+        marks: 7.5
+        unit: "Unit-I (Arrays / Matrices)"
+        topic: "Matrix Multiplication C/C++"
+        question: "Write a program in C/C++ to multiply two matrices A and B."
+
+      # Section C (15 Marks Each · Attempt Any 3)
+      - id: "2020-Q9"
+        section: "C"
+        marks: 15
+        unit: "Unit-V (Sorting)"
+        topic: "Quick Sort & Bubble Sort"
+        question: "(a) Perform quick sort operation on given numbers: 66, 35, 48, 55, 62, 77, 25, 38, 18, 40, 30, 20 (b) Apply bubble sort on data structures."
+      - id: "2020-Q10"
+        section: "C"
+        marks: 15
+        unit: "Unit-III (Linked Lists)"
+        topic: "Singly Linked List Create, Insert, Delete Code"
+        question: "Discuss the programming code in C/C++ language to create, insert and delete the elements in a singly linked list."
+      - id: "2020-Q11"
+        section: "C"
+        marks: 15
+        unit: "Unit-IV (Trees)"
+        topic: "B-Tree Order 3 Construction"
+        question: "Explain the properties of B-trees. Also create a B-tree of order 3 for following data: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec"
+      - id: "2020-Q12"
+        section: "C"
+        marks: 15
+        unit: "Unit-IV (Trees) & Unit-V (Sorting)"
+        topic: "Heap Tree & BST Construction"
+        question: "(a) Create a Heap tree with the following element: 95, 13, 12, 71, 96, 10, 62, 43, 35, 38 (b) Make a binary search tree for given data: 14, 15, 4, 9, 7, 18, 3, 5, 16, 4, 20, 17, 9, 14, 5"
+      - id: "2020-Q13"
+        section: "C"
+        marks: 15
+        unit: "Unit-II (Queues) & Unit-V (Searching)"
+        topic: "Circular Queue CINSERT & Linear vs Binary Search"
+        question: "(a) Design a function CINSERT for static implementation of circular queue. (b) Differentiate linear and binary search with suitable example."
+
+  - year: 2021
+    session: "December 2021"
+    syllabus_version: "New"
+    max_marks: 75
+    time: "1.5 Hours"
+    questions:
+      # Section A (7.5 Marks Each · Attempt Any 2 · Total 15M)
+      - id: "2021-Q1"
+        section: "A"
+        marks: 7.5
+        unit: "Unit-V (Hashing)"
+        topic: "Hashing Concept"
+        question: "What is hashing?"
+      - id: "2021-Q2"
+        section: "A"
+        marks: 7.5
+        unit: "Unit-IV (Trees)"
+        topic: "Binary Tree Concept"
+        question: "What is binary tree?"
+      - id: "2021-Q3"
+        section: "A"
+        marks: 7.5
+        unit: "Unit-II (Queues)"
+        topic: "Deque Concept"
+        question: "What is deque?"
+      - id: "2021-Q4"
+        section: "A"
+        marks: 7.5
+        unit: "Unit-I (Algorithms)"
+        topic: "Algorithm Analysis"
+        question: "What is analysis of algorithm?"
+      - id: "2021-Q5"
+        section: "A"
+        marks: 7.5
+        unit: "Unit-I (Recursion)"
+        topic: "Principle of Recursion"
+        question: "Explain principle of recursion."
+
+      # Section B (15 Marks · Attempt Any 1 · Total 15M)
+      - id: "2021-Q6"
+        section: "B"
+        marks: 15
+        unit: "Unit-III (Linked Lists)"
+        topic: "Linked List Concept & Insertion Algorithm"
+        question: "What is linked list? Explain with suitable example and give an algorithm for insert an element."
+      - id: "2021-Q7"
+        section: "B"
+        marks: 15
+        unit: "Unit-V (Sorting)"
+        topic: "Heap Sort Algorithm"
+        question: "Explain heap sort with suitable example."
+      - id: "2021-Q8"
+        section: "B"
+        marks: 15
+        unit: "Unit-II (Stacks)"
+        topic: "Stack Data Structure"
+        question: "Define and explain the stack data structure with suitable example."
+
+      # Section C (22.5 Marks Each · Attempt Any 2 · Total 45M)
+      - id: "2021-Q9"
+        section: "C"
+        marks: 22.5
+        unit: "Unit-IV (Trees)"
+        topic: "Tree Reconstruction from Inorder & Preorder"
+        question: "What is binary tree? Explain it the following binary tree has the inorder and preorder traversal. Draw the tree and give the postorder traversal. Write algorithm for the same. Inorder: ABCEDFGHI, Preorder: ICBADEFGH"
+      - id: "2021-Q10"
+        section: "C"
+        marks: 22.5
+        unit: "Unit-V (Sorting)"
+        topic: "Merge Sort Algorithm & Step-by-Step Trace"
+        question: "Explain merge sort sorting algorithm and show step-by-step procedure to sort the data."
+      - id: "2021-Q11"
+        section: "C"
+        marks: 22.5
+        unit: "Unit-V (Searching)"
+        topic: "Binary Search vs Linear Search"
+        question: "Explain binary search and linear search. Give the supportive example for both."
+      - id: "2021-Q12"
+        section: "C"
+        marks: 22.5
+        unit: "Unit-I (Arrays) & Unit-II (Stacks)"
+        topic: "Multi-dimensional Array & Infix Evaluation"
+        question: "(a) What is multi dimensional array? Explain with example. (b) Write the step by step for following expression: R/D - X * (G/E) * (A+B) + D - E * (Y-F) + S*J"
+      - id: "2021-Q13"
+        section: "C"
+        marks: 22.5
+        unit: "Unit-III (Linked Lists) & Unit-IV (Trees)"
+        topic: "Doubly Linked List & Threaded Binary Tree"
+        question: "(a) Why doubly linked list is better than linked list? Justify it with example. (b) What is threaded binary tree? Explain it with suitable example."

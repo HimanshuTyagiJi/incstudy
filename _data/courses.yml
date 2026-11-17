@@ -1,0 +1,6 @@
+- id: bca
+  name: Bachelor of Computer Applications
+  short_name: BCA
+  description: BCA notes, syllabus, semester resources and practice material.
+  url: /courses/bca/
+  active: true

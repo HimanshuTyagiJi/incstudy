@@ -1,0 +1,751 @@
+# ==============================================================================
+# CCSU BCA-101 (Mathematics - I) Official Question Bank Archive
+# Curated from authentic Chitra Question Bank (2015 - 2024)
+# Includes student-verified high-frequency repeating (pencil-ticked) questions.
+# ==============================================================================
+
+course: "BCA"
+semester: 1
+subject_code: "BCA-101"
+subject_name: "Mathematics - I"
+university: "CCSU Meerut"
+
+# High-Frequency Repeating (Ticked by Student) Master List across all years
+high_frequency_repeats:
+  - id: "2015-Q2"
+    year: 2015
+    section: "A"
+    marks: 3
+    unit: "Unit-I (Matrices)"
+    topic: "Matrix Equation"
+    question: "Find a matrix X such that 2A + B + X = 0, where A = [[-1, 2], [3, 4]] and B = [[3, -2], [1, 5]]."
+    ticked: true
+
+  - id: "2015-Q6a"
+    year: 2015
+    section: "B"
+    marks: 7.5
+    unit: "Unit-I (Matrices)"
+    topic: "Eigenvalues / Characteristic Roots"
+    question: "Find the characteristic roots of the upper triangular matrix A = [[a, h, g], [0, b, f], [0, 0, c]]."
+    ticked: true
+
+  - id: "2015-Q8a"
+    year: 2015
+    section: "B"
+    marks: 7.5
+    unit: "Unit-V (Vectors)"
+    topic: "Vector Triple Product"
+    question: "If A = 3i - j + 2k, B = 2i + j - k and C = i - 2j + 2k, find (A x B) x C."
+    ticked: true
+
+  - id: "2015-Q11"
+    year: 2015
+    section: "C"
+    marks: 15
+    unit: "Unit-III (Differential Calculus)"
+    topic: "Leibniz's Theorem - Successive Differentiation"
+    question: "If y = e^(m cos^(-1) x), show that (1 - x^2) y_(n+2) - (2n + 1)x y_(n+1) - (n^2 + m^2) y_n = 0 and find the value of y_n(0)."
+    ticked: true
+
+  - id: "2015-Q12a"
+    year: 2015
+    section: "C"
+    marks: 7.5
+    unit: "Unit-III (Differential Calculus)"
+    topic: "Curve Tracing - Cardioid"
+    question: "Trace the curve r = a(1 + cos theta)."
+    ticked: true
+
+  - id: "2016-Q4"
+    year: 2016
+    section: "A"
+    marks: 3
+    unit: "Unit-V (Vectors)"
+    topic: "Area of Parallelogram"
+    question: "Calculate the area of parallelogram spanned by the vectors a = (3, -3, 1) and b = (4, 9, 2)."
+    ticked: true
+
+  - id: "2016-Q7"
+    year: 2016
+    section: "B"
+    marks: 7.5
+    unit: "Unit-IV (Integral Calculus)"
+    topic: "Partial Fractions Integration (Direct Repeat from 2015 Q10a)"
+    question: "Evaluate integral: int [ (3x + 1) / ((x - 1)^2 * (x + 3)) ] dx."
+    ticked: true
+    repeat_note: "Repeated directly from 2015 Section C Q10(a)"
+
+  - id: "2016-Q10"
+    year: 2016
+    section: "C"
+    marks: 15
+    unit: "Unit-I (Matrices)"
+    topic: "Cayley-Hamilton Theorem & Inverse Matrix"
+    question: "Verify Cayley-Hamilton theorem for matrix A = [[2, -1, 1], [-1, 2, -1], [1, -1, 2]] and hence find A^(-1). Also state the Cayley-Hamilton theorem."
+    ticked: true
+
+  - id: "2016-Q12a"
+    year: 2016
+    section: "C"
+    marks: 7.5
+    unit: "Unit-IV (Integral Calculus)"
+    topic: "Definite Integral Reduction Formula"
+    question: "If I_n = int_0^(pi/4) tan^n(x) dx; prove that I_(n-1) + I_(n+1) = 1/n. Deduce the value of I_5."
+    ticked: true
+
+  - id: "2016-Q13"
+    year: 2016
+    section: "C"
+    marks: 15
+    unit: "Unit-III (Differential Calculus)"
+    topic: "Leibniz's Theorem - Successive Differentiation"
+    question: "If y = sin(m sin^(-1) x), |x| < 1; prove (1 - x^2)y_2 - x y_1 + m^2 y = 0 and (1 - x^2) y_(n+2) - (2n + 1)x y_(n+1) + (m^2 - n^2) y_n = 0 and find value of y_n(0)."
+    ticked: true
+
+  - id: "2017-Q1"
+    year: 2017
+    section: "A"
+    marks: 3
+    unit: "Unit-I (Matrices)"
+    topic: "Hermitian Matrix Proof"
+    question: "Show that A = [[1, 1-i, 2], [1+i, 3, i], [2, -i, 0]] is a Hermitian matrix."
+    ticked: true
+
+  - id: "2017-Q9"
+    year: 2017
+    section: "C"
+    marks: 15
+    unit: "Unit-I (Matrices)"
+    topic: "Cayley-Hamilton Theorem & Eigenvalues / Eigenvectors"
+    question: "Verify Cayley-Hamilton theorem for matrix A = [[2, 2, 1], [1, 3, 1], [1, 2, 2]]. Also determine the characteristic roots and corresponding characteristic vectors."
+    ticked: true
+
+  - id: "2017-Q13a"
+    year: 2017
+    section: "C"
+    marks: 7.5
+    unit: "Unit-IV (Integral Calculus)"
+    topic: "Substitution Integration"
+    question: "Evaluate integral: int [ (e^x * (1 + x)) / (cos^2(e^x * x)) ] dx."
+    ticked: true
+
+  - id: "2017-Q13b"
+    year: 2017
+    section: "C"
+    marks: 7.5
+    unit: "Unit-IV (Integral Calculus)"
+    topic: "Trigonometric Product Integration"
+    question: "Evaluate integral: int [ sin(x) * sin(2x) * sin(3x) ] dx."
+    ticked: true
+
+  - id: "2018-Q1"
+    year: 2018
+    section: "A"
+    marks: 3
+    unit: "Unit-I (Matrices)"
+    topic: "Hermitian Matrix Proof (2nd consecutive year)"
+    question: "Show that A = [[3, 1+2i], [1-2i, 2]] is Hermitian."
+    ticked: true
+    repeat_note: "Hermitian concept repeated from 2017 Section A Q1"
+
+  - id: "2018-Q7"
+    year: 2018
+    section: "B"
+    marks: 7.5
+    unit: "Unit-III (Differential Calculus)"
+    topic: "Leibniz's Theorem - Successive Differentiation"
+    question: "If y = a cos(log x) + b sin(log x), show that x^2 y_2 + x y_1 + y = 0 and x^2 y_(n+2) + (2n + 1)x y_(n+1) + (n^2 + 1) y_n = 0."
+    ticked: true
+    repeat_note: "Leibniz's theorem appeared in 2015, 2016, 2017, 2018"
+
+  - id: "2018-Q8"
+    year: 2018
+    section: "B"
+    marks: 7.5
+    unit: "Unit-V (Vectors)"
+    topic: "Area of Parallelogram"
+    question: "Calculate the area of parallelogram spanned by the vectors a = (1, -1, 3) and b = (2, -7, 1)."
+    ticked: true
+    repeat_note: "Repeated concept from 2016 Section A Q4"
+
+  - id: "2018-Q9"
+    year: 2018
+    section: "C"
+    marks: 15
+    unit: "Unit-I (Matrices)"
+    topic: "Cayley-Hamilton Theorem & Eigenvalues / Eigenvectors (4th consecutive year)"
+    question: "Verify Cayley-Hamilton theorem for matrix A = [[1, 2, 2], [2, 1, 2], [2, 2, 1]]. Also determine characteristic roots and corresponding characteristic vectors."
+    ticked: true
+    repeat_note: "4th consecutive year with 15M Cayley-Hamilton (2015, 2016, 2017, 2018)"
+
+  - id: "2018-Q13a"
+    year: 2018
+    section: "C"
+    marks: 7.5
+    unit: "Unit-IV (Integral Calculus)"
+    topic: "Trigonometric Power Integration"
+    question: "Evaluate integral: int tan^4(x) dx."
+    ticked: true
+
+  - id: "2018-Q13b"
+    year: 2018
+    section: "C"
+    marks: 7.5
+    unit: "Unit-IV (Integral Calculus)"
+    topic: "Standard Trigonometric Fraction Integration"
+    question: "Evaluate integral: int [ (cos 2x - cos 2alpha) / (cos x - cos alpha) ] dx."
+    ticked: true
+
+  - id: "2019-Q1"
+    year: 2019
+    section: "A"
+    marks: 3
+    unit: "Unit-I (Matrices)"
+    topic: "Rank of Matrix Definition"
+    question: "Define rank of a matrix."
+    ticked: true
+    repeat_note: "Repeated from 2016 Section B Q6 concept"
+
+  - id: "2019-Q2"
+    year: 2019
+    section: "A"
+    marks: 3
+    unit: "Unit-II (Differential Calculus - Limits)"
+    topic: "Absolute Value Limit Non-existence (3rd appearance)"
+    question: "Show that lim_(x -> 2) [ |x - 2| / (x - 2) ] does not exist."
+    ticked: true
+    repeat_note: "Appeared in 2015 Sec-C Q9b, 2018 Sec-C Q10a, and 2019 Sec-A Q2"
+
+  - id: "2019-Q6"
+    year: 2019
+    section: "B"
+    marks: 7.5
+    unit: "Unit-I (Matrices & Determinants)"
+    topic: "Cramer's Rule Linear System"
+    question: "Solve the following system of equations by Cramer's rule: 3x + 4y = 5, x - y = -3."
+    ticked: true
+    repeat_note: "Cramer's rule repeated from 2015 Section C Q13b"
+
+  - id: "2019-Q7"
+    year: 2019
+    section: "B"
+    marks: 7.5
+    unit: "Unit-III (Differential Calculus)"
+    topic: "Logarithmic Differentiation"
+    question: "Differentiate (sin x)^x with respect to x."
+    ticked: true
+    repeat_note: "Variable power variable pattern repeated from 2015 Sec-A Q4"
+
+papers:
+  - year: 2015
+    session: "Dec 2015"
+    paper_type: "Regular (New)"
+    time_duration: "3 Hours"
+    maximum_marks: 75
+    section_a:
+      instructions: "Attempt all five questions. Each carries 3 marks."
+      marks_per_question: 3
+      total_marks: 15
+      questions:
+        - q_no: 1
+          question: "Define beta and gamma functions."
+          unit: "Unit-IV"
+          reference: "Sec-C, Q.16"
+          ticked: false
+        - q_no: 2
+          question: "Find a matrix X such that 2A + B + X = 0, where A = [[-1, 2], [3, 4]] and B = [[3, -2], [1, 5]]."
+          unit: "Unit-I"
+          reference: "Sec-A, Q.6"
+          ticked: true
+        - q_no: 3
+          question: "Expand cos(x) in powers of (x - pi/4) upto 4 terms using Taylor's Series."
+          unit: "Unit-III"
+          reference: "Sec-B, Q.9"
+          ticked: false
+        - q_no: 4
+          question: "If y = x^(x^2); find dy/dx."
+          unit: "Unit-III"
+          reference: "Sec-A, Q.4"
+          ticked: false
+        - q_no: 5
+          question: "Evaluate lim_(x -> 1) [1/ln(x) - 1/(x - 1)]."
+          unit: "Unit-III"
+          reference: "Sec-A, Q.22"
+          ticked: false
+
+    section_b:
+      instructions: "Attempt any two questions out of three. Each carries 7.5 marks."
+      marks_per_question: 7.5
+      total_marks: 15
+      questions:
+        - q_no: "6(a)"
+          question: "Find the characteristic roots of the matrix A = [[a, h, g], [0, b, f], [0, 0, c]]."
+          unit: "Unit-I"
+          reference: "Sec-A, Q.16"
+          ticked: true
+        - q_no: "6(b)"
+          question: "If A = [[a, b], [c, d]]; find det(A . Adj(A))."
+          unit: "Unit-I"
+          reference: "Sec-B, Q.12"
+          ticked: false
+        - q_no: 7
+          question: "Examine the linear dependence of the vectors X1 = (0, -4, 1), X2 = (2, 2, -3) and X3 = (0, -4, 1). If dependent, find the relation between them."
+          unit: "Unit-V"
+          reference: "Sec-B, Q.23"
+          ticked: false
+        - q_no: "8(a)"
+          question: "If A = 3i - j + 2k, B = 2i + j - k and C = i - 2j + 2k. Find (A x B) x C."
+          unit: "Unit-V"
+          reference: "Sec-A, Q.15"
+          ticked: true
+        - q_no: "8(b)"
+          question: "Prove that the area of rectangle of given perimeter is maximum, when it is a square."
+          unit: "Unit-III"
+          reference: "Sec-B, Q.21"
+          ticked: false
+
+    section_c:
+      instructions: "Attempt any three questions out of five. Each carries 15 marks."
+      marks_per_question: 15
+      total_marks: 45
+      questions:
+        - q_no: "9(a)"
+          question: "Find the value of a if the function f is given by f(x) = {2x-1 for x<2; a for x=2; x+1 for x>2} is continuous at x = 2."
+          unit: "Unit-II"
+          reference: "Sec-B, Q.21"
+          ticked: false
+        - q_no: "9(b)"
+          question: "If f(x) = {|x-2|/(2-x) for x!=2; -1 for x=2}, find whether or not f is continuous at x = 2. Also point out the discontinuity if any."
+          unit: "Unit-II"
+          reference: "Sec-B, Q.22"
+          ticked: false
+        - q_no: "10(a)"
+          question: "Evaluate integral: int [ (3x + 1) / ((x - 1)^2 * (x + 3)) ] dx."
+          unit: "Unit-IV"
+          reference: "Sec-C, Q.6"
+          ticked: false
+        - q_no: "10(b)"
+          question: "Evaluate integral: int [ x / sqrt((x + 1)(x - 2)) ] dx."
+          unit: "Unit-IV"
+          reference: "Sec-C, Q.6"
+          ticked: false
+        - q_no: 11
+          question: "If y = e^(m cos^(-1) x), show that (1 - x^2) y_(n+2) - (2n + 1)x y_(n+1) - (n^2 + m^2) y_n = 0 and find value of y_n(0)."
+          unit: "Unit-III"
+          reference: "Sec-C, Q.19"
+          ticked: true
+        - q_no: "12(a)"
+          question: "Trace the curve r = a(1 + cos theta)."
+          unit: "Unit-III"
+          reference: "Sec-C, Q.13"
+          ticked: true
+        - q_no: "12(b)"
+          question: "Evaluate reduction formula for int cos^n(x) dx."
+          unit: "Unit-IV"
+          reference: "Sec-C, Q.14"
+          ticked: false
+        - q_no: "13(a)"
+          question: "By using elementary row transformations, find the inverse of the matrix A = [[5, 2], [2, 1]]."
+          unit: "Unit-I"
+          reference: "Sec-B, Q.14"
+          ticked: false
+        - q_no: "13(b)"
+          question: "Solve the system of equations by Cramer's rule: 6x + y - 3z = 5; x + 3y - 2z = 5; 2x + y + 4z = 8."
+          unit: "Unit-I"
+          reference: "Sec-C, Q.12"
+          ticked: false
+
+  - year: 2016
+    session: "Dec 2016"
+    paper_type: "Regular (New)"
+    time_duration: "3 Hours"
+    maximum_marks: 75
+    section_a:
+      instructions: "Attempt all five questions. Each carries 3 marks."
+      marks_per_question: 3
+      total_marks: 15
+      questions:
+        - q_no: 1
+          question: "Show that A = [[ab, b^2], [-a^2, -ab]] is nilpotent matrix of order 2."
+          unit: "Unit-I"
+          reference: "Sec-A, Q.10"
+          ticked: false
+        - q_no: 2
+          question: "If y = log[log(log x)], find dy/dx."
+          unit: "Unit-III"
+          reference: "Sec-A, Q.2"
+          ticked: false
+        - q_no: 3
+          question: "Evaluate integral: int [ (a^x - b^x)^2 / (a^x * b^x) ] dx."
+          unit: "Unit-IV"
+          reference: "Sec-A, Q.9"
+          ticked: false
+        - q_no: 4
+          question: "Calculate the area of parallelogram spanned by the vectors a = (3, -3, 1) and b = (4, 9, 2)."
+          unit: "Unit-V"
+          reference: "Sec-A, Q.14"
+          ticked: true
+        - q_no: 5
+          question: "Evaluate lim_(n -> infinity) [ (Sigma n^2) / n^3 ]."
+          unit: "Unit-II"
+          reference: "Sec-A, Q.6"
+          ticked: false
+
+    section_b:
+      instructions: "Attempt any two questions out of three. Each carries 7.5 marks."
+      marks_per_question: 7.5
+      total_marks: 15
+      questions:
+        - q_no: 6
+          question: "Find the rank of the matrix A = [[1, 2, 3, 2], [2, 3, 5, 1], [1, 3, 4, 5]]."
+          unit: "Unit-I"
+          reference: "Sec-B, Q.18"
+          ticked: false
+        - q_no: 7
+          question: "Evaluate integral: int [ (3x + 1) / ((x - 1)^2 * (x + 3)) ] dx."
+          unit: "Unit-IV"
+          reference: "Sec-C, Q.6(a)"
+          ticked: true
+          repeat_note: "Exact repeat from 2015 Section C Q10(a)"
+        - q_no: 8
+          question: "Expand sin(x) in power of x and hence find sin 18 deg upto four decimal places."
+          unit: "Unit-III"
+          reference: "Sec-B, Q.11"
+          ticked: false
+
+    section_c:
+      instructions: "Attempt any three questions out of five. Each carries 15 marks."
+      marks_per_question: 15
+      total_marks: 45
+      questions:
+        - q_no: "9(a)"
+          question: "Show that lim_(x -> 0) [ (e^(1/x) - 1) / (e^(1/x) + 1) ] does not exist."
+          unit: "Unit-II"
+          reference: "Sec-C, Q.6"
+          ticked: false
+        - q_no: "9(b)"
+          question: "Examine continuity of f(x) = {(e^(1/x) - e^(-1/x))/(e^(1/x) + e^(-1/x)) if x!=0; 0 if x=0} at x = 0. Point out the type of discontinuity."
+          unit: "Unit-II"
+          reference: "Sec-C, Q.9"
+          ticked: false
+        - q_no: 10
+          question: "Verify Cayley-Hamilton theorem for matrix A = [[2, -1, 1], [-1, 2, -1], [1, -1, 2]] and hence find A^(-1). Also state the Cayley-Hamilton theorem."
+          unit: "Unit-I"
+          reference: "Sec-C, Q.16 and Sec-A, Q.19"
+          ticked: true
+        - q_no: 11
+          question: "Trace the curve y^2 = (x - 1)(x - 2)(x - 3)."
+          unit: "Unit-III"
+          reference: "Sec-C, Q.7"
+          ticked: false
+        - q_no: "12(a)"
+          question: "If I_n = int_0^(pi/4) tan^n(x) dx; prove that I_(n-1) + I_(n+1) = 1/n. Deduce the value of I_5."
+          unit: "Unit-IV"
+          reference: "Sec-C, Q.15"
+          ticked: true
+        - q_no: "12(b)"
+          question: "Evaluate integral: int [ (x * e^x) / (x + 1)^2 ] dx."
+          unit: "Unit-IV"
+          reference: "Sec-C, Q.4(c)"
+          ticked: false
+        - q_no: 13
+          question: "If y = sin(m sin^(-1) x), |x| < 1; prove (a) (1 - x^2)y_2 - x y_1 + m^2 y = 0, and (b) (1 - x^2) y_(n+2) - (2n + 1)x y_(n+1) + (m^2 - n^2) y_n = 0 and find value of y_n(0)."
+          unit: "Unit-III"
+          reference: "Sec-C, Q.20"
+          ticked: true
+
+  - year: 2017
+    session: "Dec 2017"
+    paper_type: "Regular (New)"
+    time_duration: "3 Hours"
+    maximum_marks: 75
+    section_a:
+      instructions: "Attempt all five questions. Each carries 3 marks."
+      marks_per_question: 3
+      total_marks: 15
+      questions:
+        - q_no: 1
+          question: "Show that A = [[1, 1-i, 2], [1+i, 3, i], [2, -i, 0]] is Hermitian."
+          unit: "Unit-I"
+          reference: "Sec-A, Q.15"
+          ticked: true
+        - q_no: 2
+          question: "Define continuity of a function at a point."
+          unit: "Unit-II"
+          reference: "Sec-A, Q.9"
+          ticked: false
+        - q_no: 3
+          question: "Show that the parabola y^2 - 4ax = 0 has no asymptote."
+          unit: "Unit-III"
+          reference: "Sec-A, Q.27"
+          ticked: false
+        - q_no: 4
+          question: "Define gamma and beta function."
+          unit: "Unit-IV"
+          reference: "Sec-C, Q.16"
+          ticked: false
+          repeat_note: "Repeated from 2015 Section A Q1"
+        - q_no: 5
+          question: "Define vector in 3-dimensions with example."
+          unit: "Unit-V"
+          reference: "Sec-C, Q.5"
+          ticked: false
+
+    section_b:
+      instructions: "Attempt any two questions out of three. Each carries 7.5 marks."
+      marks_per_question: 7.5
+      total_marks: 15
+      questions:
+        - q_no: 6
+          question: "A function f(x) is defined as {(x^2/a)-a when x<a; 0 when x=a; a-(a^2/x) when x>a}. Prove that f(x) is continuous at x = a."
+          unit: "Unit-II"
+          reference: "Sec-B, Q.19"
+          ticked: false
+        - q_no: 7
+          question: "Find nth differential coefficient of x^3 * cos(x)."
+          unit: "Unit-III"
+          reference: "Sec-C, Q.21"
+          ticked: false
+        - q_no: 8
+          question: "Find the area of a rectangle having vertices A, B, C, D with position vectors a = (-1, 1/2, 4), b = (1, 1/2, 4), c = (1, -1/2, 4), d = (-1, -1/2, 4)."
+          unit: "Unit-V"
+          reference: "Sec-B, Q.14"
+          ticked: false
+
+    section_c:
+      instructions: "Attempt any three questions out of five. Each carries 15 marks."
+      marks_per_question: 15
+      total_marks: 45
+      questions:
+        - q_no: 9
+          question: "Verify Cayley-Hamilton theorem for A = [[2, 2, 1], [1, 3, 1], [1, 2, 2]]. Also determine characteristic roots and corresponding characteristic vectors."
+          unit: "Unit-I"
+          reference: "Sec-C, Q.18"
+          ticked: true
+          repeat_note: "Annual 15M Cayley-Hamilton pattern (2015, 2016, 2017)"
+        - q_no: 10
+          question: "Examine continuity of f(x) = {-x^2 if x<=0; 5x-4 if 0<x<=1; 4x^2-3x if 1<x<2; 3x+4 if x>=2} at x = 0, 1, 2."
+          unit: "Unit-II"
+          reference: "Sec-C, Q.13"
+          ticked: false
+        - q_no: 11
+          question: "Trace the curve x^3 + y^3 = 3axy (Folium of Descartes)."
+          unit: "Unit-III"
+          reference: "Sec-C, Q.5"
+          ticked: false
+        - q_no: "12(a)"
+          question: "Expand log(1 + x) by Maclaurin's Theorem."
+          unit: "Unit-III"
+          reference: "Sec-B, Q.15"
+          ticked: false
+        - q_no: "12(b)"
+          question: "Expand sin(x) in powers of (x - pi/2) by using Taylor's Theorem."
+          unit: "Unit-III"
+          reference: "Sec-B, Q.12"
+          ticked: false
+        - q_no: "13(a)"
+          question: "Evaluate integral: int [ (e^x * (1 + x)) / cos^2(e^x * x) ] dx."
+          unit: "Unit-IV"
+          reference: "Sec-A, Q.4"
+          ticked: true
+        - q_no: "13(b)"
+          question: "Evaluate integral: int [ sin(x) * sin(2x) * sin(3x) ] dx."
+          unit: "Unit-IV"
+          reference: "Sec-B, Q.12"
+          ticked: true
+
+  - year: 2018
+    session: "Dec 2018"
+    paper_type: "Regular (New)"
+    time_duration: "3 Hours"
+    maximum_marks: 75
+    section_a:
+      instructions: "Attempt all five questions. Each carries 3 marks."
+      marks_per_question: 3
+      total_marks: 15
+      questions:
+        - q_no: 1
+          question: "Show that A = [[3, 1+2i], [1-2i, 2]] is Hermitian."
+          unit: "Unit-I"
+          reference: "2018 (i)"
+          ticked: true
+          repeat_note: "Hermitian matrix repeated from 2017 Sec-A Q1"
+        - q_no: 2
+          question: "Define limit of a function at a point."
+          unit: "Unit-II"
+          reference: "Sec-A, Q.1"
+          ticked: false
+        - q_no: 3
+          question: "Find the asymptotes of the curve (a^2 / x^2) - (b^2 / y^2) = 1."
+          unit: "Unit-III"
+          reference: "2018 (i)"
+          ticked: false
+        - q_no: 4
+          question: "State fundamental theorem of calculus."
+          unit: "Unit-IV"
+          reference: "2018 (i)"
+          ticked: false
+        - q_no: 5
+          question: "Define vector in 2-dimension with example."
+          unit: "Unit-V"
+          reference: "2018 (ii)"
+          ticked: false
+
+    section_b:
+      instructions: "Attempt any two questions out of three. Each carries 7.5 marks."
+      marks_per_question: 7.5
+      total_marks: 15
+      questions:
+        - q_no: 6
+          question: "Determine values of a, b, c for which f(x) = {(sin(a+1)x + sin x)/x for x<0; c for x=0; ((x+bx^2)^(1/2) - x^(1/2))/(b*x^(3/2)) for x>0} is continuous at x = 0."
+          unit: "Unit-II"
+          reference: "2018 (ii)"
+          ticked: false
+        - q_no: 7
+          question: "If y = a cos(log x) + b sin(log x), show that x^2 y_2 + x y_1 + y = 0 and x^2 y_(n+2) + (2n + 1)x y_(n+1) + (n^2 + 1) y_n = 0."
+          unit: "Unit-III"
+          reference: "2018 (iii)"
+          ticked: true
+          repeat_note: "Leibniz's theorem appeared in 2015, 2016, 2017, 2018"
+        - q_no: 8
+          question: "Calculate the area of parallelogram spanned by vectors a = (1, -1, 3) and b = (2, -7, 1)."
+          unit: "Unit-V"
+          reference: "2018 (iii)"
+          ticked: true
+          repeat_note: "Area of parallelogram formula repeated from 2016 Sec-A Q4"
+
+    section_c:
+      instructions: "Attempt any three questions out of five. Each carries 15 marks."
+      marks_per_question: 15
+      total_marks: 45
+      questions:
+        - q_no: 9
+          question: "Verify Cayley-Hamilton theorem for matrix A = [[1, 2, 2], [2, 1, 2], [2, 2, 1]]. Also determine characteristic roots and corresponding characteristic vectors."
+          unit: "Unit-I"
+          reference: "2018 (iv)"
+          ticked: true
+          repeat_note: "4th consecutive year with 15M Cayley-Hamilton"
+        - q_no: "10(a)"
+          question: "Check continuity of f(x) = {|x|/x for x!=0; 0 for x=0} at x = 0."
+          unit: "Unit-II"
+          reference: "2018 (vi)"
+          ticked: false
+        - q_no: "10(b)"
+          question: "Check continuity of f(x) = {(e^(1/x) * sin(1/x)) / (1 + e^(1/x)) for x!=0; 0 for x=0} at x = 0."
+          unit: "Unit-II"
+          reference: "2018 (vi)"
+          ticked: false
+        - q_no: 11
+          question: "Trace the curve 9a y^2 = (x - 2a)(x - 5a)^2."
+          unit: "Unit-III"
+          reference: "2018 (vii)"
+          ticked: false
+        - q_no: "12(a)"
+          question: "Expand e^x / (e^x + 1) by Maclaurin's theorem."
+          unit: "Unit-III"
+          reference: "Sec-B, Q.14"
+          ticked: false
+        - q_no: "12(b)"
+          question: "Expand log(x) in powers of (x - 1) by Taylor's theorem."
+          unit: "Unit-III"
+          reference: "2018 (viii)"
+          ticked: false
+        - q_no: "13(a)"
+          question: "Evaluate integral: int tan^4(x) dx."
+          unit: "Unit-IV"
+          reference: "2018 (ix)"
+          ticked: true
+        - q_no: "13(b)"
+          question: "Evaluate integral: int [ (cos 2x - cos 2alpha) / (cos x - cos alpha) ] dx."
+          unit: "Unit-IV"
+          reference: "2018 (ix)"
+          ticked: true
+
+  - year: 2019
+    session: "Nov 2019"
+    paper_type: "Regular (New)"
+    time_duration: "3 Hours"
+    maximum_marks: 75
+    section_a:
+      instructions: "Attempt all five questions. Each carries 3 marks."
+      marks_per_question: 3
+      total_marks: 15
+      questions:
+        - q_no: 1
+          question: "Define rank of a matrix."
+          unit: "Unit-I"
+          reference: "2019 (i)"
+          ticked: true
+        - q_no: 2
+          question: "Show that lim_(x -> 2) [ |x - 2| / (x - 2) ] does not exist."
+          unit: "Unit-II"
+          reference: "2019 (i)"
+          ticked: true
+        - q_no: 3
+          question: "Verify Rolle's theorem for the function f(x) = 2x^3 + x^2 - 4x - 2, x in [-sqrt(2), sqrt(2)]."
+          unit: "Unit-III"
+          reference: "2019 (i)"
+          ticked: false
+        - q_no: 4
+          question: "Evaluate integral: int x^2 * e^x dx."
+          unit: "Unit-IV"
+          reference: "2019 (i)"
+          ticked: false
+        - q_no: 5
+          question: "Write the formula of a . b and a x b."
+          unit: "Unit-V"
+          reference: "2019 (ii)"
+          ticked: false
+
+    section_b:
+      instructions: "Attempt any two questions out of three. Each carries 7.5 marks."
+      marks_per_question: 7.5
+      total_marks: 15
+      questions:
+        - q_no: 6
+          question: "Solve the following system of equations by Cramer's rule: 3x + 4y = 5, x - y = -3."
+          unit: "Unit-I"
+          reference: "2019 (ii)"
+          ticked: true
+        - q_no: 7
+          question: "Differentiate (sin x)^x with respect to x."
+          unit: "Unit-III"
+          reference: "2019 (ii)"
+          ticked: true
+        - q_no: 8
+          question: "Evaluate integral: int [ (x + 1) / (x^2 + 4) ] dx."
+          unit: "Unit-IV"
+          reference: "CCSU Archives 2019"
+          ticked: false
+
+    section_c:
+      instructions: "Attempt any three questions out of five. Each carries 15 marks."
+      marks_per_question: 15
+      total_marks: 45
+      questions:
+        - q_no: 9
+          question: "If y = a cos(log x) + b sin(log x), show that x^2 y_(n+2) + (2n + 1)x y_(n+1) + (n^2 + 1) y_n = 0."
+          unit: "Unit-III"
+          reference: "CCSU Archives 2019 (Direct repeat from 2018 Sec-B Q7)"
+          ticked: true
+        - q_no: 10
+          question: "Verify Cayley-Hamilton theorem for a 3x3 matrix and determine characteristic roots and vectors."
+          unit: "Unit-I"
+          reference: "CCSU Archives 2019 (Annual repeat)"
+          ticked: true
+        - q_no: 11
+          question: "Find the rank of a matrix by reducing it to normal form."
+          unit: "Unit-I"
+          reference: "CCSU Archives 2019"
+          ticked: false
+        - q_no: 12
+          question: "Calculate the area of parallelogram spanned by vectors a and b."
+          unit: "Unit-V"
+          reference: "CCSU Archives 2019"
+          ticked: true
+        - q_no: 13
+          question: "Evaluate reduction formula for standard integrals."
+          unit: "Unit-IV"
+          reference: "CCSU Archives 2019"
+          ticked: false

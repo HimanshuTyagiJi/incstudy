@@ -1,0 +1,8 @@
+---
+layout: full-width
+title: BCA Study Material
+description: Browse BCA study resources, semester pages and university-specific syllabus mapping.
+permalink: /courses/bca/
+eyebrow: COURSE LIBRARY
+---
+<div class="intro-copy"><p>Choose your university to view BCA resources mapped to its syllabus. Common topics can be reused while each university keeps its own syllabus structure.</p></div><div class="card-grid university-grid">{% for university in site.data.universities %}{% if university.active %}{% include university-card.html university=university %}{% endif %}{% endfor %}</div>

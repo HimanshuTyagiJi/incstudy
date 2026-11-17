@@ -1,0 +1,1954 @@
+---
+layout: exam
+title: "CCSU BCA 1st Sem C Programming (BCA-102) Most Important Questions & Solved Exam Notebook"
+seo_title: "CCSU BCA 1st Sem C Programming (BCA-102) Most Important Questions & Solved Exam Notebook"
+breadcrumb_title: "C Programming (BCA-102)"
+eyebrow: "⚡ CCSU Meerut · BCA 1st Semester · Exam Preparation"
+title_subject: "C Programming"
+title_code: "BCA-102"
+title_highlight: "Most Important Questions & Solved Exam Notebook"
+description: "Master solved question bank of recurring CCSU examination questions (2015–2023) for Programming Principle & Algorithm (BCA-102) with complete working C code, dry-run tables, flowcharts, and asymptotic complexity analysis."
+permalink: /ccsu/bca/semester-1/c-programming-important-questions/
+course_name: "CCSU BCA Semester 1 · Programming Principle & Algorithm (BCA-102)"
+math: true
+---
+
+<!-- Navigation & Actions Bar -->
+<div class="exam-actions-bar">
+  <a href="{{ '/ccsu/bca/semester-1/' | relative_url }}" class="text-link">← Back to Semester 1 Hub</a>
+  <button class="print-btn" onclick="window.print()">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+    Save as PDF / Print
+  </button>
+</div>
+
+<!-- Minimal Sleek Exam Strip -->
+<div class="exam-header-strip">
+  <span class="strip-pill">🏛️ CCSU Meerut</span>
+  <span class="strip-pill">⏱️ 75 Marks External (3 Hours)</span>
+  <span class="strip-pill">📄 3M, 7.5M &amp; 15M Exam Blueprint</span>
+  <span class="strip-pill">⭐ 2015–2023 Recurring Exam Question Bank</span>
+</div>
+
+<!-- Quick Jump Nav -->
+<div class="exam-jump-nav">
+  <span class="exam-jump-label">⚡ Quick Jump:</span>
+  <a href="#section-a" class="jump-pill jump-pill-emerald">Section A (3 Marks · 15M)</a>
+  <a href="#section-b" class="jump-pill jump-pill-cyan">Section B (7.5 Marks · 15M)</a>
+  <a href="#section-c" class="jump-pill jump-pill-purple">⭐ Section C (15 Marks · 45M)</a>
+</div>
+
+<!-- =========================================================================
+     SECTION A : 3 MARKS VERY SHORT ANSWER QUESTIONS (COMPULSORY)
+     ========================================================================= -->
+<div class="exam-section-card" id="section-a">
+  <div class="exam-section-header exam-section-header-emerald">
+    <div class="exam-section-header-inner">
+      <span class="exam-section-badge badge-emerald">SECTION A &bull; 3 MARKS EACH</span>
+      <h3 class="exam-section-title">Very Short Answer Questions &amp; Core Definitions</h3>
+      <p class="exam-section-rule">CCSU Examination Blueprint: 5 Questions Compulsory &bull; 15 Marks Total</p>
+    </div>
+  </div>
+
+  <div class="exam-section-body">
+
+    <!-- Q1: Identifiers -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q1.</span> What do you understand by Identifiers in C? State their naming rules.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2015, 2017, 2019</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Model Answer:</div>
+        <p>An <strong>Identifier</strong> is a user-defined name given to program elements such as variables, functions, arrays, and structures to uniquely identify them during program execution.</p>
+        <p><strong>Rules for Naming Identifiers in C:</strong></p>
+        <ul>
+          <li>Can contain letters (<code>a–z, A–Z</code>), digits (<code>0–9</code>), and underscore (<code>_</code>).</li>
+          <li><strong>Must begin</strong> with an alphabet letter or an underscore; it <em>cannot begin with a digit</em>.</li>
+          <li>Cannot be a reserved C keyword (e.g., <code>int</code>, <code>while</code>, <code>return</code>).</li>
+          <li>C is <strong>case-sensitive</strong>; <code>count</code>, <code>Count</code>, and <code>COUNT</code> are three distinct identifiers.</li>
+          <li>No special characters (like <code>@, $, #, space</code>) are permitted.</li>
+        </ul>
+        <pre><code class="language-c">// Valid: student_age, _totalMarks, marks1
+// Invalid: 1marks (starts with digit), total marks (space), float (keyword)</code></pre>
+      </div>
+    </div>
+
+    <!-- Q2: Variable vs Constant -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q2.</span> Differentiate between a Variable and a Constant in C.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2019, 2020, 2023</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Model Answer:</div>
+        <table class="data-table" style="width:100%; border-collapse:collapse; margin:10px 0;">
+          <tr style="border-bottom:1px solid var(--border);"><th>Feature</th><th>Variable</th><th>Constant</th></tr>
+          <tr style="border-bottom:1px solid var(--border);"><td><strong>Value Modification</strong></td><td>Can be modified anytime during program execution.</td><td>Fixed value; cannot be modified once initialized.</td></tr>
+          <tr style="border-bottom:1px solid var(--border);"><td><strong>Declaration Syntax</strong></td><td><code>int count = 10; count = 20;</code></td><td><code>const float PI = 3.14159;</code> or <code>#define PI 3.14</code></td></tr>
+          <tr><td><strong>Memory</strong></td><td>Allocated a dedicated read-write memory block in RAM.</td><td>Read-only memory or substituted at preprocess time.</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- Q3: C Tokens -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q3.</span> What do you understand by C Tokens? List all categories.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2016</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Model Answer:</div>
+        <p>A <strong>C Token</strong> is the smallest individual building block or basic grammatical unit of a C program that the compiler recognizes and parses.</p>
+        <p>There are <strong>6 categories of C Tokens:</strong></p>
+        <ol>
+          <li><strong>Keywords:</strong> 32 reserved words having predefined meaning (e.g., <code>int</code>, <code>if</code>, <code>return</code>).</li>
+          <li><strong>Identifiers:</strong> User-defined names for variables and functions (e.g., <code>total</code>, <code>calculateSum</code>).</li>
+          <li><strong>Constants:</strong> Fixed literal values (e.g., <code>100</code>, <code>3.14</code>, <code>'A'</code>).</li>
+          <li><strong>Strings:</strong> Sequence of characters enclosed in double quotes (e.g., <code>"CCSU BCA"</code>).</li>
+          <li><strong>Special Symbols:</strong> Punctuation characters with syntactical meaning (e.g., <code>[]</code>, <code>{}</code>, <code>;</code>, <code>,</code>).</li>
+          <li><strong>Operators:</strong> Symbols that perform mathematical or logical operations (e.g., <code>+</code>, <code>*</code>, <code>&&</code>, <code>==</code>).</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Q4: Time Complexity -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q4.</span> What do you understand by Time Complexity of an algorithm?</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2015, 2016, 2017, 2019</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Model Answer:</div>
+        <p><strong>Time Complexity</strong> is a measure of the computational time an algorithm takes to execute as a function of the input size $n$.</p>
+        <ul>
+          <li>It does <em>not</em> measure physical execution time in seconds (as clock time varies across CPU hardware), but counts the <strong>total number of elementary operations / steps</strong> performed.</li>
+          <li>It is mathematically represented using asymptotic notations: Big-Oh ($O$), Big-Omega ($\Omega$), and Big-Theta ($\Theta$).</li>
+          <li><strong>Example:</strong> Searching an element in an unsorted array of size $n$ takes $O(n)$ time in the worst case (Linear Search).</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Q5: Data Types -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q5.</span> Differentiate between Primitive and Non-Primitive Data Types in C.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2015, 2018</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Model Answer:</div>
+        <ul>
+          <li><strong>Primitive (Fundamental / Built-in) Data Types:</strong> Predefined basic types supported directly by the C compiler. They store a single value.
+            <br><em>Examples:</em> <code>int</code> (2/4 bytes), <code>char</code> (1 byte), <code>float</code> (4 bytes), <code>double</code> (8 bytes), <code>void</code>.
+          </li>
+          <li><strong>Non-Primitive (Derived &amp; User-Defined) Data Types:</strong> Constructed using fundamental types to store collections or structured data.
+            <br><em>Examples:</em> <strong>Arrays</strong> (homogeneous collection), <strong>Pointers</strong> (address holders), <strong>Structures</strong> (heterogeneous collection), <strong>Unions</strong>, <strong>Enums</strong>.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Q6: Preprocessor Directives -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q6.</span> What is a Preprocessor Directive? Write four preprocessor directives in C.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2016, 2019, 2020, 2023</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Model Answer:</div>
+        <p>A <strong>Preprocessor Directive</strong> is an instruction starting with a hash symbol (<code>#</code>) that directs the C preprocessor to transform or include source text before the compiler begins syntax analysis. They do not end with a semicolon (<code>;</code>).</p>
+        <p><strong>Four Common Preprocessor Directives:</strong></p>
+        <ol>
+          <li><code>#include &lt;header.h&gt;</code>: Copies the declarations of external header files into the current file.</li>
+          <li><code>#define MACRO value</code>: Defines a constant macro or inline macro function for textual substitution.</li>
+          <li><code>#undef MACRO</code>: Undefines an existing macro definition.</li>
+          <li><code>#ifdef / #ifndef / #endif</code>: Conditional compilation directives that compile code blocks conditionally.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Q7: Swapping Concept -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q7.</span> What do you understand by Swapping? Explain two approaches in C.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2015, 2016, 2017, 2019</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Model Answer:</div>
+        <p><strong>Swapping</strong> refers to interchanging the contents of two memory variables so that the first receives the second's value, and vice-versa.</p>
+        <p><strong>Approach 1: Using a third temporary variable:</strong></p>
+        <pre><code class="language-c">int temp = a; a = b; b = temp;</code></pre>
+        <p><strong>Approach 2: Without using a third variable (Arithmetic method):</strong></p>
+        <pre><code class="language-c">a = a + b; // Let a=5, b=10 => a becomes 15
+b = a - b; // b becomes 15 - 10 = 5
+a = a - b; // a becomes 15 - 5 = 10 (Swapped!)</code></pre>
+      </div>
+    </div>
+
+    <!-- Q8: Procedural Language -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q8.</span> Why is C language known as a Procedural Language?</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2016</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Model Answer:</div>
+        <p>C is known as a <strong>Procedural (or Procedure-Oriented) Language</strong> because:</p>
+        <ul>
+          <li>Programs are organized as a sequence of procedural steps, subroutines, or <strong>functions</strong> that perform operations on data.</li>
+          <li>It emphasizes <em>doing things</em> (algorithms and action sequences) rather than data encapsulation or objects.</li>
+          <li>It follows a <strong>top-down design approach</strong>, where execution starts in the <code>main()</code> function and breaks down into child functions sequentially.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Q9: Break vs Continue -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q9.</span> Differentiate between <code>break</code> and <code>continue</code> statements.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2017, 2018, 2023</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Model Answer:</div>
+        <table class="data-table" style="width:100%; border-collapse:collapse; margin:10px 0;">
+          <tr style="border-bottom:1px solid var(--border);"><th>Feature</th><th><code>break</code> statement</th><th><code>continue</code> statement</th></tr>
+          <tr style="border-bottom:1px solid var(--border);"><td><strong>Action</strong></td><td>Immediately terminates the loop or <code>switch</code> completely.</td><td>Skips the rest of current iteration and moves to next iteration.</td></tr>
+          <tr style="border-bottom:1px solid var(--border);"><td><strong>Control Flow</strong></td><td>Transfers execution to the first statement <em>outside</em> the loop block.</td><td>Transfers execution back to the loop's condition check/increment step.</td></tr>
+          <tr><td><strong>Usage Context</strong></td><td>Valid inside loops (<code>for, while, do-while</code>) and <code>switch</code>.</td><td>Valid <em>only</em> inside loops; invalid inside <code>switch</code> blocks.</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- Q10: Ternary Operator -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q10.</span> Write the syntax and usage of the Ternary (Conditional) Operator in C.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2020, 2023</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Model Answer:</div>
+        <p>The <strong>Ternary Operator (<code>? :</code>)</strong> is the only operator in C that takes three operands. It acts as an inline compact alternative to an <code>if-else</code> statement.</p>
+        <p><strong>Syntax:</strong> <code>variable = (condition) ? expression_if_true : expression_if_false;</code></p>
+        <pre><code class="language-c">int a = 15, b = 25;
+// Find maximum using ternary operator
+int max = (a &gt; b) ? a : b; // max receives 25</code></pre>
+      </div>
+    </div>
+
+    <!-- Q11: getch vs getchar -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q11.</span> What is the difference between <code>getch()</code> and <code>getchar()</code> in C?</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2018</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Model Answer:</div>
+        <ul>
+          <li><strong><code>getchar()</code>:</strong> Standard C library function in <code>&lt;stdio.h&gt;</code>. It is <strong>buffered and echoed</strong> — it waits for the user to type a character and press the <kbd>Enter</kbd> key, displaying the typed character on screen.</li>
+          <li><strong><code>getch()</code>:</strong> Non-standard console function in <code>&lt;conio.h&gt;</code>. It is <strong>unbuffered and non-echoed</strong> — it captures a single keypress instantly without waiting for <kbd>Enter</kbd> and does not display the pressed key on screen. Often used to pause the output console screen.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Q12: Interpreter vs Compiler -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q12.</span> What is an Interpreter? How does it differ from a Compiler?</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2020</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Model Answer:</div>
+        <p>An <strong>Interpreter</strong> translates high-level source code into machine code <strong>line-by-line</strong> and executes each statement immediately. If an error is encountered on line 4, execution stops right there.</p>
+        <table class="data-table" style="width:100%; border-collapse:collapse; margin:10px 0;">
+          <tr style="border-bottom:1px solid var(--border);"><th>Feature</th><th>Compiler (e.g., GCC in C)</th><th>Interpreter (e.g., Python)</th></tr>
+          <tr style="border-bottom:1px solid var(--border);"><td><strong>Translation</strong></td><td>Translates entire program at once into object code (<code>.obj/.exe</code>).</td><td>Translates and executes line-by-line in memory; no standalone <code>.exe</code>.</td></tr>
+          <tr><td><strong>Speed</strong></td><td>Faster execution once compiled.</td><td>Slower execution due to runtime line translation.</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- Q13: Structure Definition -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q13.</span> What is a Structure in C? Write its syntax.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2015</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Model Answer:</div>
+        <p>A <strong>Structure</strong> is a user-defined derived data type in C that allows grouping together variables of <em>different data types</em> under a single name, representing a real-world entity (e.g., Student, Employee, Book).</p>
+        <pre><code class="language-c">struct Student {
+    int roll_no;       // 4 bytes
+    char name[30];     // 30 bytes
+    float percentage;  // 4 bytes
+}; // Total size = 38 bytes (plus alignment padding)
+
+struct Student s1 = {101, "Rahul Sharma", 88.5};</code></pre>
+      </div>
+    </div>
+
+    <!-- Q14: Recursion Definition -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q14.</span> Define Recursion. What are its two essential components?</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2020</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Model Answer:</div>
+        <p><strong>Recursion</strong> is a programming technique where a function calls itself directly or indirectly to solve a smaller instance of the same problem.</p>
+        <ol>
+          <li><strong>Base Case (Terminating Condition):</strong> The condition that stops recursion and returns a fixed value without further calls. Prevents infinite looping and stack overflow.</li>
+          <li><strong>Recursive Step:</strong> The statement where the function invokes itself with modified parameters driving toward the base case.</li>
+        </ol>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- =========================================================================
+     SECTION B : 7.5 MARKS SHORT ANSWER QUESTIONS (ATTEMPT ANY 2)
+     ========================================================================= -->
+<div class="exam-section-card" id="section-b">
+  <div class="exam-section-header exam-section-header-cyan">
+    <div class="exam-section-header-inner">
+      <span class="exam-section-badge badge-cyan">SECTION B &bull; 7.5 MARKS EACH</span>
+      <h3 class="exam-section-title">Medium Descriptive Questions, Comparisons &amp; Flowcharts</h3>
+      <p class="exam-section-rule">CCSU Examination Blueprint: Attempt Any 2 out of 3 &bull; 15 Marks Total</p>
+    </div>
+  </div>
+
+  <div class="exam-section-body">
+
+    <!-- Q15: Flowcharts and Symbols -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q15.</span> What is a Flowchart? Explain standard symbols used and draw a flowchart to check if a number is positive, negative, or zero.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2015, 2016, 2017</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Model Answer:</div>
+        <p>A <strong>Flowchart</strong> is a standardized graphical / pictorial representation of a step-by-step algorithm showing the sequence of operations required to solve a computational problem.</p>
+
+        <p><strong>Standard Flowchart Symbols:</strong></p>
+        <table class="data-table" style="width:100%; border-collapse:collapse; margin:12px 0;">
+          <tr style="border-bottom:1px solid var(--border);"><th>Shape Preview</th><th>Symbol Name</th><th>Geometric Shape</th><th>Function / Meaning</th></tr>
+          <tr style="border-bottom:1px solid var(--border);">
+            <td style="text-align:center;"><svg width="50" height="26" viewBox="0 0 50 26"><rect x="3" y="3" width="44" height="20" rx="10" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/></svg></td>
+            <td><strong>Terminal</strong></td>
+            <td>Oval / Rounded Pill</td>
+            <td>Represents the <strong>START</strong> or <strong>STOP / END</strong> of program execution.</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--border);">
+            <td style="text-align:center;"><svg width="50" height="26" viewBox="0 0 50 26"><polygon points="12,3 47,3 38,23 3,23" fill="#f0f9ff" stroke="#0284c7" stroke-width="2"/></svg></td>
+            <td><strong>Input / Output</strong></td>
+            <td>Parallelogram (Slanted)</td>
+            <td>Reading input from user (e.g. <code>Read N</code>) or displaying output (e.g. <code>Print result</code>).</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--border);">
+            <td style="text-align:center;"><svg width="50" height="26" viewBox="0 0 50 26"><rect x="3" y="3" width="44" height="20" rx="4" fill="#f5f3ff" stroke="#8b5cf6" stroke-width="2"/></svg></td>
+            <td><strong>Process</strong></td>
+            <td>Rectangle</td>
+            <td>Data manipulation, variable assignments, and arithmetic computations (e.g. <code>sum = a + b</code>).</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--border);">
+            <td style="text-align:center;"><svg width="50" height="26" viewBox="0 0 50 26"><polygon points="25,2 47,13 25,24 3,13" fill="#fffbeb" stroke="#f59e0b" stroke-width="2"/></svg></td>
+            <td><strong>Decision</strong></td>
+            <td>Diamond (Rhombus)</td>
+            <td>Conditional branch check with two possible paths: <strong>True / YES</strong> or <strong>False / NO</strong>.</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--border);">
+            <td style="text-align:center;"><svg width="50" height="26" viewBox="0 0 50 26"><circle cx="25" cy="13" r="9" fill="#fef2f2" stroke="#ef4444" stroke-width="2"/></svg></td>
+            <td><strong>Connector</strong></td>
+            <td>Small Circle</td>
+            <td>Connects intersecting flow lines or links complex multi-page flowchart sections.</td>
+          </tr>
+          <tr>
+            <td style="text-align:center;"><svg width="50" height="26" viewBox="0 0 50 26"><defs><marker id="tbl-arr" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M 0 1 L 10 5 L 0 9 z" fill="#64748b"/></marker></defs><line x1="5" y1="13" x2="42" y2="13" stroke="#64748b" stroke-width="2.5" marker-end="url(#tbl-arr)"/></svg></td>
+            <td><strong>Flowlines</strong></td>
+            <td>Directional Arrows</td>
+            <td>Indicates the exact logical flow sequence from one operation to the next.</td>
+          </tr>
+        </table>
+
+        <!-- Diagram 1: Check Positive, Negative, or Zero -->
+        <div class="flowchart-box" style="margin: 22px 0; padding: 20px; background: color-mix(in srgb, var(--surface) 95%, var(--border)); border: 1.5px solid var(--border); border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom: 14px; flex-wrap:wrap; gap:8px;">
+            <span style="font-size: 13.5px; font-weight: 800; color: var(--primary); letter-spacing: 0.04em;">📊 FLOWCHART 1 : Check Positive, Negative, or Zero (CCSU Dec 2016)</span>
+            <span class="exam-section-badge badge-cyan" style="font-size: 11px;">Authentic Vector SVG Diagram</span>
+          </div>
+          
+          <div style="width: 100%; max-width: 620px; margin: auto; overflow-x: auto;">
+            <svg viewBox="0 0 620 560" width="100%" height="auto" style="display:block; min-width: 320px; font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+              <defs>
+                <marker id="fc-arrow" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+                  <path d="M 0 1 L 10 5 L 0 9 z" fill="#64748b"/>
+                </marker>
+                <linearGradient id="greenGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#ecfdf5"/><stop offset="100%" stop-color="#d1fae5"/></linearGradient>
+                <linearGradient id="redGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#fef2f2"/><stop offset="100%" stop-color="#fee2e2"/></linearGradient>
+                <linearGradient id="blueGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#f0f9ff"/><stop offset="100%" stop-color="#e0f2fe"/></linearGradient>
+                <linearGradient id="amberGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#fffbeb"/><stop offset="100%" stop-color="#fef3c7"/></linearGradient>
+              </defs>
+
+              <style>
+                .fc-text-start { fill: #065f46; font-weight: 800; font-size: 14px; }
+                .fc-text-stop { fill: #991b1b; font-weight: 800; font-size: 14px; }
+                .fc-text-io { fill: #0369a1; font-weight: 700; font-size: 13.5px; }
+                .fc-text-dec { fill: #b45309; font-weight: 800; font-size: 13px; }
+                .fc-line { stroke: #64748b; stroke-width: 2; fill: none; }
+                :root[data-theme=dark] .fc-text-start { fill: #a7f3d0; }
+                :root[data-theme=dark] .fc-text-stop { fill: #fecaca; }
+                :root[data-theme=dark] .fc-text-io { fill: #bae6fd; }
+                :root[data-theme=dark] .fc-text-dec { fill: #fde68a; }
+                :root[data-theme=dark] .fc-line { stroke: #94a3b8; }
+              </style>
+
+              <!-- Node 1: START -->
+              <rect x="225" y="16" width="150" height="40" rx="20" fill="url(#greenGrad)" stroke="#10b981" stroke-width="2.2"/>
+              <text x="300" y="41" text-anchor="middle" class="fc-text-start">START</text>
+
+              <!-- Arrow: START -> Read N -->
+              <line x1="300" y1="56" x2="300" y2="88" class="fc-line" marker-end="url(#fc-arrow)"/>
+
+              <!-- Node 2: Input / Read N -->
+              <polygon points="230,88 385,88 370,132 215,132" fill="url(#blueGrad)" stroke="#0284c7" stroke-width="2"/>
+              <text x="300" y="115" text-anchor="middle" class="fc-text-io">Read Number N</text>
+
+              <!-- Arrow: Read N -> Decision 1 -->
+              <line x1="300" y1="132" x2="300" y2="164" class="fc-line" marker-end="url(#fc-arrow)"/>
+
+              <!-- Node 3: Decision 1 (Is N == 0?) -->
+              <polygon points="300,164 380,208 300,252 220,208" fill="url(#amberGrad)" stroke="#f59e0b" stroke-width="2"/>
+              <text x="300" y="213" text-anchor="middle" class="fc-text-dec">Is N == 0 ?</text>
+
+              <!-- Branch YES (Right) to Print "Zero" -->
+              <line x1="380" y1="208" x2="445" y2="208" class="fc-line" marker-end="url(#fc-arrow)"/>
+              <text x="408" y="198" font-size="12" font-weight="800" fill="#10b981">YES</text>
+
+              <!-- Output Node: Print "Zero" -->
+              <polygon points="455,186 580,186 565,230 440,230" fill="url(#blueGrad)" stroke="#0284c7" stroke-width="2"/>
+              <text x="510" y="213" text-anchor="middle" class="fc-text-io">Print "Zero"</text>
+
+              <!-- Bus line from Print "Zero" down to STOP -->
+              <path d="M 575 208 L 600 208 L 600 515 L 385 515" class="fc-line" marker-end="url(#fc-arrow)"/>
+
+              <!-- Branch NO (Down) to Decision 2 -->
+              <line x1="300" y1="252" x2="300" y2="294" class="fc-line" marker-end="url(#fc-arrow)"/>
+              <text x="312" y="278" font-size="12" font-weight="800" fill="#ef4444">NO</text>
+
+              <!-- Node 4: Decision 2 (Is N > 0?) -->
+              <polygon points="300,294 380,338 300,382 220,338" fill="url(#amberGrad)" stroke="#f59e0b" stroke-width="2"/>
+              <text x="300" y="343" text-anchor="middle" class="fc-text-dec">Is N &gt; 0 ?</text>
+
+              <!-- Branch YES (Right) to Print "Positive" -->
+              <line x1="380" y1="338" x2="445" y2="338" class="fc-line" marker-end="url(#fc-arrow)"/>
+              <text x="408" y="328" font-size="12" font-weight="800" fill="#10b981">YES</text>
+
+              <!-- Output Node: Print "Positive" -->
+              <polygon points="455,316 580,316 565,360 440,360" fill="url(#blueGrad)" stroke="#0284c7" stroke-width="2"/>
+              <text x="510" y="343" text-anchor="middle" class="fc-text-io">Print "Positive"</text>
+
+              <!-- Bus line from Print "Positive" to common rail -->
+              <line x1="575" y1="338" x2="600" y2="338" class="fc-line"/>
+
+              <!-- Branch NO (Down) to Print "Negative" -->
+              <line x1="300" y1="382" x2="300" y2="420" class="fc-line" marker-end="url(#fc-arrow)"/>
+              <text x="312" y="405" font-size="12" font-weight="800" fill="#ef4444">NO</text>
+
+              <!-- Output Node: Print "Negative" -->
+              <polygon points="230,420 385,420 370,464 215,464" fill="url(#blueGrad)" stroke="#0284c7" stroke-width="2"/>
+              <text x="300" y="447" text-anchor="middle" class="fc-text-io">Print "Negative"</text>
+
+              <!-- Arrow: Print "Negative" -> STOP -->
+              <line x1="300" y1="464" x2="300" y2="495" class="fc-line" marker-end="url(#fc-arrow)"/>
+
+              <!-- Node 5: STOP -->
+              <rect x="225" y="495" width="150" height="40" rx="20" fill="url(#redGrad)" stroke="#ef4444" stroke-width="2.2"/>
+              <text x="300" y="520" text-anchor="middle" class="fc-text-stop">STOP</text>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Diagram 2: Average of 5 Subjects -->
+        <div class="flowchart-box" style="margin: 22px 0; padding: 20px; background: color-mix(in srgb, var(--surface) 95%, var(--border)); border: 1.5px solid var(--border); border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom: 14px; flex-wrap:wrap; gap:8px;">
+            <span style="font-size: 13.5px; font-weight: 800; color: #7c3aed; letter-spacing: 0.04em;">📊 FLOWCHART 2 : Find Average Marks in 5 Subjects (CCSU Dec 2017 Sec-B Q8)</span>
+            <span class="exam-section-badge badge-purple" style="font-size: 11px;">Process &amp; Math Computation</span>
+          </div>
+
+          <div style="width: 100%; max-width: 540px; margin: auto; overflow-x: auto;">
+            <svg viewBox="0 0 540 450" width="100%" height="auto" style="display:block; min-width: 300px; font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+              <defs>
+                <marker id="fc-arrow2" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+                  <path d="M 0 1 L 10 5 L 0 9 z" fill="#64748b"/>
+                </marker>
+                <linearGradient id="purpleGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#f5f3ff"/><stop offset="100%" stop-color="#ede9fe"/></linearGradient>
+              </defs>
+
+              <!-- Node 1: START -->
+              <rect x="195" y="16" width="150" height="40" rx="20" fill="url(#greenGrad)" stroke="#10b981" stroke-width="2.2"/>
+              <text x="270" y="41" text-anchor="middle" class="fc-text-start">START</text>
+
+              <!-- Arrow: START -> Input -->
+              <line x1="270" y1="56" x2="270" y2="86" class="fc-line" marker-end="url(#fc-arrow2)"/>
+
+              <!-- Node 2: Input / Read 5 Marks -->
+              <polygon points="170,86 385,86 365,130 150,130" fill="url(#blueGrad)" stroke="#0284c7" stroke-width="2"/>
+              <text x="268" y="113" text-anchor="middle" class="fc-text-io">Read m1, m2, m3, m4, m5</text>
+
+              <!-- Arrow: Input -> Process 1 -->
+              <line x1="270" y1="130" x2="270" y2="162" class="fc-line" marker-end="url(#fc-arrow2)"/>
+
+              <!-- Node 3: Process Total -->
+              <rect x="160" y="162" width="220" height="44" rx="6" fill="url(#purpleGrad)" stroke="#8b5cf6" stroke-width="2"/>
+              <text x="270" y="189" text-anchor="middle" font-size="13.5" font-weight="700" fill="#6d28d9">Total = m1 + m2 + m3 + m4 + m5</text>
+
+              <!-- Arrow: Process 1 -> Process 2 -->
+              <line x1="270" y1="206" x2="270" y2="238" class="fc-line" marker-end="url(#fc-arrow2)"/>
+
+              <!-- Node 4: Process Average -->
+              <rect x="180" y="238" width="180" height="44" rx="6" fill="url(#purpleGrad)" stroke="#8b5cf6" stroke-width="2"/>
+              <text x="270" y="265" text-anchor="middle" font-size="13.5" font-weight="700" fill="#6d28d9">Average = Total / 5.0</text>
+
+              <!-- Arrow: Process 2 -> Output -->
+              <line x1="270" y1="282" x2="270" y2="314" class="fc-line" marker-end="url(#fc-arrow2)"/>
+
+              <!-- Node 5: Output -->
+              <polygon points="175,314 380,314 360,358 155,358" fill="url(#blueGrad)" stroke="#0284c7" stroke-width="2"/>
+              <text x="268" y="341" text-anchor="middle" class="fc-text-io">Print Total, Average</text>
+
+              <!-- Arrow: Output -> STOP -->
+              <line x1="270" y1="358" x2="270" y2="390" class="fc-line" marker-end="url(#fc-arrow2)"/>
+
+              <!-- Node 6: STOP -->
+              <rect x="195" y="390" width="150" height="40" rx="20" fill="url(#redGrad)" stroke="#ef4444" stroke-width="2.2"/>
+              <text x="270" y="415" text-anchor="middle" class="fc-text-stop">STOP</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q16: While vs Do-While Loop -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q16.</span> Explain the difference between <code>while</code> and <code>do-while</code> loops with suitable code examples and dry runs.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2017, 2018</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Model Answer:</div>
+        <table class="data-table" style="width:100%; border-collapse:collapse; margin:12px 0;">
+          <tr style="border-bottom:1px solid var(--border);"><th>Parameter</th><th><code>while</code> loop</th><th><code>do-while</code> loop</th></tr>
+          <tr style="border-bottom:1px solid var(--border);"><td><strong>Loop Category</strong></td><td><strong>Entry-Controlled Loop</strong>: Condition is tested <em>before</em> entering the loop body.</td><td><strong>Exit-Controlled Loop</strong>: Condition is tested <em>after</em> executing loop body.</td></tr>
+          <tr style="border-bottom:1px solid var(--border);"><td><strong>Minimum Executions</strong></td><td><strong>0 times</strong> (if initial condition is false, body never executes).</td><td><strong>At least 1 time</strong> (even if initial condition is false).</td></tr>
+          <tr style="border-bottom:1px solid var(--border);"><td><strong>Syntax</strong></td><td><code>while (condition) { /* body */ }</code></td><td><code>do { /* body */ } while (condition);</code> (Ends with <code>;</code>)</td></tr>
+          <tr><td><strong>Use Case</strong></td><td>When number of iterations depends on prior validation.</td><td>Menu-driven console programs where options must be shown once.</td></tr>
+        </table>
+
+        <p><strong>Code Example Proving Difference:</strong></p>
+        <pre><code class="language-c">#include &lt;stdio.h&gt;
+int main() {
+    int i = 10;
+    
+    // while loop: condition (i < 5) is FALSE immediately
+    while (i &lt; 5) {
+        printf("While loop executed\n"); // NEVER PRINTS
+    }
+
+    // do-while loop: body executes FIRST, condition tested afterwards
+    do {
+        printf("Do-while executed once!\n"); // PRINTS ONCE
+    } while (i &lt; 5);
+
+    return 0;
+}</code></pre>
+      </div>
+    </div>
+
+    <!-- Q17: Call by Value vs Call by Reference -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q17.</span> Distinguish between Call by Value and Call by Reference. Write a C program to swap two numbers using Call by Reference.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2016, 2019, 2023</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Model Answer:</div>
+        <table class="data-table" style="width:100%; border-collapse:collapse; margin:12px 0;">
+          <tr style="border-bottom:1px solid var(--border);"><th>Feature</th><th>Call by Value</th><th>Call by Reference</th></tr>
+          <tr style="border-bottom:1px solid var(--border);"><td><strong>What is Passed</strong></td><td>A copy of the actual variable's value is passed.</td><td>The memory address (pointer) of variable is passed.</td></tr>
+          <tr style="border-bottom:1px solid var(--border);"><td><strong>Impact on Caller</strong></td><td>Changes made in formal parameters do <em>not</em> affect original variables.</td><td>Changes made inside function directly alter caller's variables.</td></tr>
+          <tr style="border-bottom:1px solid var(--border);"><td><strong>Syntax</strong></td><td><code>void swap(int x, int y);</code></td><td><code>void swap(int *x, int *y);</code></td></tr>
+          <tr><td><strong>Function Call</strong></td><td><code>swap(a, b);</code></td><td><code>swap(&amp;a, &amp;b);</code> (Address-of operator)</td></tr>
+        </table>
+
+        <p><strong>C Program: Swap Two Numbers Using Call by Reference:</strong></p>
+        <pre><code class="language-c">#include &lt;stdio.h&gt;
+
+// Function taking pointer arguments (Call by Reference)
+void swap(int *x, int *y) {
+    int temp = *x; // Dereference pointer to get value
+    *x = *y;
+    *y = temp;
+}
+
+int main() {
+    int a = 10, b = 20;
+    printf("Before Swap: a = %d, b = %d\n", a, b);
+
+    // Pass addresses of a and b
+    swap(&amp;a, &amp;b);
+
+    printf("After Swap:  a = %d, b = %d\n", a, b); // Outputs a=20, b=10
+    return 0;
+}</code></pre>
+      </div>
+    </div>
+
+    <!-- Q18: Tower of Hanoi -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q18.</span> Explain the Tower of Hanoi problem. Write down its recursive algorithm for $N$ disks.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2018</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Model Answer:</div>
+        <p><strong>Tower of Hanoi</strong> is a classic recursive puzzle consisting of three vertical pegs or towers: <strong>Source (A)</strong>, <strong>Auxiliary / Helper (B)</strong>, and <strong>Destination (C)</strong>, with $N$ disks of different diameters.</p>
+        <p><strong>Rules of the Puzzle:</strong></p>
+        <ol>
+          <li>Only one disk can be moved at a time.</li>
+          <li>A disk can only be taken from the top of one peg and placed on top of another.</li>
+          <li><strong>No larger disk can ever be placed on top of a smaller disk.</strong></li>
+        </ol>
+
+        <p><strong>Recursive Strategy for $N$ Disks:</strong></p>
+        <ul>
+          <li><strong>Step 1:</strong> Recursively move top $N-1$ disks from Source (A) to Auxiliary (B) using Destination (C).</li>
+          <li><strong>Step 2:</strong> Move the remaining $N$-th (largest) disk directly from Source (A) to Destination (C).</li>
+          <li><strong>Step 3:</strong> Recursively move $N-1$ disks from Auxiliary (B) to Destination (C) using Source (A).</li>
+        </ul>
+
+        <pre><code class="language-c">#include &lt;stdio.h&gt;
+
+void towerOfHanoi(int n, char from_peg, char to_peg, char aux_peg) {
+    if (n == 1) { // Base Case
+        printf("Move disk 1 from %c to %c\n", from_peg, to_peg);
+        return;
+    }
+    towerOfHanoi(n - 1, from_peg, aux_peg, to_peg);
+    printf("Move disk %d from %c to %c\n", n, from_peg, to_peg);
+    towerOfHanoi(n - 1, aux_peg, to_peg, from_peg);
+}
+
+int main() {
+    int n = 3; // 3 disks
+    printf("Steps for 3 disks:\n");
+    towerOfHanoi(n, 'A', 'C', 'B'); // Total steps = 2^3 - 1 = 7
+    return 0;
+}</code></pre>
+        <div class="exam-tip-box">
+          <strong>Mathematical Complexity:</strong> For $N$ disks, total moves required $= 2^N - 1$. Time Complexity is exponential: $O(2^N)$. Space Complexity is $O(N)$ for recursion call stack.
+        </div>
+      </div>
+    </div>
+
+    <!-- Q19: Functions in C -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q19.</span> What is a Function? Explain its types (Library vs User-Defined) and function anatomy.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2015, 2017, 2018</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Model Answer:</div>
+        <p>A <strong>Function</strong> is a self-contained, modular subprogram containing a block of code designed to perform a specific task, promoting code reusability and structured debugging.</p>
+        <p><strong>Two Types of Functions in C:</strong></p>
+        <ol>
+          <li><strong>Library (Built-in) Functions:</strong> Pre-compiled functions included in the standard C compiler library headers (e.g., <code>printf()</code>, <code>scanf()</code> in <code>&lt;stdio.h&gt;</code>; <code>sqrt()</code>, <code>pow()</code> in <code>&lt;math.h&gt;</code>).</li>
+          <li><strong>User-Defined Functions:</strong> Created by the programmer to solve custom application logic.</li>
+        </ol>
+
+        <p><strong>Three Elements of a User-Defined Function:</strong></p>
+        <pre><code class="language-c">// 1. Function Declaration (Prototype): Tells compiler name, return type & parameters
+int add(int a, int b);
+
+int main() {
+    // 2. Function Call: Transmits control and actual arguments
+    int result = add(15, 30);
+    printf("Sum = %d\n", result);
+    return 0;
+}
+
+// 3. Function Definition: Contains the actual executable body
+int add(int a, int b) {
+    return a + b;
+}</code></pre>
+      </div>
+    </div>
+
+    <!-- Q20: Decision Making & Switch -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q20.</span> Explain Decision Making structures in C with emphasis on <code>switch-case</code> vs <code>if-else-if</code> ladder.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2015, 2017, 2018</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Model Answer:</div>
+        <p>Decision making structures evaluate a boolean expression and alter the linear control flow based on whether the condition evaluates to True (non-zero) or False (zero).</p>
+        <table class="data-table" style="width:100%; border-collapse:collapse; margin:12px 0;">
+          <tr style="border-bottom:1px solid var(--border);"><th>Feature</th><th><code>switch-case</code> Statement</th><th><code>if-else-if</code> Ladder</th></tr>
+          <tr style="border-bottom:1px solid var(--border);"><td><strong>Test Expression</strong></td><td>Can only test for <strong>equality</strong> against fixed integer or character constants.</td><td>Can test relational expressions (<code>&gt;, &lt;, &gt;=</code>), logical conditions, and float values.</td></tr>
+          <tr style="border-bottom:1px solid var(--border);"><td><strong>Execution Speed</strong></td><td>Faster because compiler builds a jump/branch table.</td><td>Evaluates conditions sequentially from top to bottom.</td></tr>
+          <tr style="border-bottom:1px solid var(--border);"><td><strong>Break Statement</strong></td><td>Required after each case to prevent <em>fall-through</em>.</td><td>Not needed; once a block executes, ladder terminates.</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- Q21: Maximum of Three Numbers -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q21.</span> Write a complete C program to find the largest among three numbers using nested <code>if-else</code>.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2020</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Model Answer:</div>
+        <pre><code class="language-c">#include &lt;stdio.h&gt;
+
+int main() {
+    int a, b, c, largest;
+    printf("Enter three integer values: ");
+    scanf("%d %d %d", &amp;a, &amp;b, &amp;c);
+
+    // Nested if-else decision logic
+    if (a &gt;= b) {
+        if (a &gt;= c)
+            largest = a;
+        else
+            largest = c;
+    } else {
+        if (b &gt;= c)
+            largest = b;
+        else
+            largest = c;
+    }
+
+    printf("The largest number among %d, %d, and %d is: %d\n", a, b, c, largest);
+    return 0;
+}</code></pre>
+      </div>
+    </div>
+
+    <!-- Q22: Console I/O Functions -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q22.</span> Explain Console-based Input/Output functions in C (Formatted vs Unformatted).</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2019</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Model Answer:</div>
+        <ul>
+          <li><strong>Formatted I/O Functions:</strong> Format specifiers (<code>%d, %f, %c, %s</code>) control the layout, alignment, and data type representation.
+            <ul>
+              <li><code>printf("format string", arg1, arg2);</code>: Writes formatted output to standard display.</li>
+              <li><code>scanf("format string", &amp;var1, &amp;var2);</code>: Reads formatted input from standard keyboard into memory addresses.</li>
+            </ul>
+          </li>
+          <li><strong>Unformatted I/O Functions:</strong> Deal with raw character or string streams without format specifiers.
+            <ul>
+              <li><code>getchar()</code> / <code>putchar(ch)</code>: Reads / writes a single character.</li>
+              <li><code>gets(str)</code> / <code>puts(str)</code>: Reads / writes a full line of string until newline.</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- =========================================================================
+     SECTION C : 15 MARKS DETAILED ANSWER QUESTIONS (ATTEMPT ANY 3)
+     ========================================================================= -->
+<div class="exam-section-card" id="section-c">
+  <div class="exam-section-header exam-section-header-purple">
+    <div class="exam-section-header-inner">
+      <span class="exam-section-badge badge-purple">SECTION C &bull; 15 MARKS EACH</span>
+      <h3 class="exam-section-title">Long Descriptive Questions, Algorithms &amp; Complete Programs</h3>
+      <p class="exam-section-rule">CCSU Examination Blueprint: Attempt Any 3 out of 5 &bull; 45 Marks Total</p>
+    
+    <!-- Q23: Flowchart for Average Marks of 5 Subjects (CCSU Dec 2017 Sec B Q8) -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q23.</span> Write a flowchart to find the average of the marks obtained by a student in five subjects and determine whether the student has passed or failed.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2017</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Model Answer:</div>
+        <p>A flowchart provides a pictorial representation of the step-by-step logic to read five subject marks, compute their cumulative total and average, and branch conditionally based on a passing threshold (standard passing grade: $	ext{Average} \ge 40\%$).</p>
+
+        <!-- Real Vector SVG Flowchart -->
+        <div class="flowchart-box" style="margin: 22px 0; padding: 20px; background: color-mix(in srgb, var(--surface) 95%, var(--border)); border: 1.5px solid var(--border); border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom: 14px; flex-wrap:wrap; gap:8px;">
+            <span style="font-size: 13.5px; font-weight: 800; color: var(--primary); letter-spacing: 0.04em;">📊 FLOWCHART 3 : Student Average Marks in 5 Subjects (CCSU Dec 2017)</span>
+            <span class="exam-section-badge badge-emerald" style="font-size: 11px;">Authentic Vector SVG Diagram</span>
+          </div>
+          
+          <div style="width: 100%; max-width: 620px; margin: auto; overflow-x: auto;">
+            <svg viewBox="0 0 620 620" width="100%" height="auto" style="display:block; min-width: 320px; font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+              <defs>
+                <marker id="fc-arrow-m5" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+                  <path d="M 0 1 L 10 5 L 0 9 z" fill="#64748b"/>
+                </marker>
+                <linearGradient id="grad-start-m5" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#10b981" stop-opacity="0.2"/>
+                  <stop offset="100%" stop-color="#059669" stop-opacity="0.3"/>
+                </linearGradient>
+                <linearGradient id="grad-stop-m5" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#a855f7" stop-opacity="0.2"/>
+                  <stop offset="100%" stop-color="#7e22ce" stop-opacity="0.3"/>
+                </linearGradient>
+                <linearGradient id="grad-pass" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#22c55e" stop-opacity="0.18"/>
+                  <stop offset="100%" stop-color="#16a34a" stop-opacity="0.28"/>
+                </linearGradient>
+                <linearGradient id="grad-fail" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#ef4444" stop-opacity="0.18"/>
+                  <stop offset="100%" stop-color="#dc2626" stop-opacity="0.28"/>
+                </linearGradient>
+              </defs>
+
+              <!-- Node 1: START (Oval) -->
+              <rect x="240" y="20" width="140" height="42" rx="21" fill="url(#grad-start-m5)" stroke="#10b981" stroke-width="2"/>
+              <text x="310" y="46" text-anchor="middle" font-size="14" font-weight="700" fill="#047857">START</text>
+
+              <!-- Connector 1 -->
+              <line x1="310" y1="62" x2="310" y2="92" stroke="#64748b" stroke-width="2" marker-end="url(#fc-arrow-m5)"/>
+
+              <!-- Node 2: INPUT (Parallelogram) -->
+              <polygon points="170,95 470,95 430,150 130,150" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+              <text x="300" y="122" text-anchor="middle" font-size="13" font-weight="700" fill="#1e40af">Input Marks: M1, M2, M3, M4, M5</text>
+              <text x="300" y="140" text-anchor="middle" font-size="11" fill="#3b82f6">(Marks obtained in 5 subjects)</text>
+
+              <!-- Connector 2 -->
+              <line x1="300" y1="150" x2="300" y2="180" stroke="#64748b" stroke-width="2" marker-end="url(#fc-arrow-m5)"/>
+
+              <!-- Node 3: PROCESS 1 (Rectangle: Total Calculation) -->
+              <rect x="145" y="180" width="310" height="46" rx="8" fill="#f8fafc" stroke="#475569" stroke-width="2"/>
+              <text x="300" y="208" text-anchor="middle" font-size="13" font-weight="600" fill="#0f172a">Total = M1 + M2 + M3 + M4 + M5</text>
+
+              <!-- Connector 3 -->
+              <line x1="300" y1="226" x2="300" y2="256" stroke="#64748b" stroke-width="2" marker-end="url(#fc-arrow-m5)"/>
+
+              <!-- Node 4: PROCESS 2 (Rectangle: Average Calculation) -->
+              <rect x="155" y="256" width="290" height="46" rx="8" fill="#f8fafc" stroke="#475569" stroke-width="2"/>
+              <text x="300" y="284" text-anchor="middle" font-size="13" font-weight="600" fill="#0f172a">Average = Total / 5.0</text>
+
+              <!-- Connector 4 -->
+              <line x1="300" y1="302" x2="300" y2="332" stroke="#64748b" stroke-width="2" marker-end="url(#fc-arrow-m5)"/>
+
+              <!-- Node 5: DECISION (Diamond) -->
+              <polygon points="300,335 440,385 300,435 160,385" fill="#fffbeb" stroke="#f59e0b" stroke-width="2"/>
+              <text x="300" y="381" text-anchor="middle" font-size="13" font-weight="700" fill="#92400e">Is Average &gt;= 40?</text>
+              <text x="300" y="398" text-anchor="middle" font-size="11" fill="#b45309">(Passing Standard)</text>
+
+              <!-- Branch YES (Left: Pass) -->
+              <line x1="160" y1="385" x2="105" y2="385" stroke="#64748b" stroke-width="2"/>
+              <line x1="105" y1="385" x2="105" y2="455" stroke="#64748b" stroke-width="2" marker-end="url(#fc-arrow-m5)"/>
+              <rect x="110" y="365" width="40" height="18" rx="4" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+              <text x="130" y="378" text-anchor="middle" font-size="11" font-weight="800" fill="#15803d">YES</text>
+
+              <polygon points="25,455 195,455 170,510 5,510" fill="url(#grad-pass)" stroke="#22c55e" stroke-width="2"/>
+              <text x="100" y="480" text-anchor="middle" font-size="12" font-weight="700" fill="#15803d">Print "PASS"</text>
+              <text x="100" y="498" text-anchor="middle" font-size="11" fill="#16a34a">&amp; Print Average</text>
+
+              <!-- Branch NO (Right: Fail) -->
+              <line x1="440" y1="385" x2="495" y2="385" stroke="#64748b" stroke-width="2"/>
+              <line x1="495" y1="385" x2="495" y2="455" stroke="#64748b" stroke-width="2" marker-end="url(#fc-arrow-m5)"/>
+              <rect x="450" y="365" width="36" height="18" rx="4" fill="#fee2e2" stroke="#ef4444" stroke-width="1"/>
+              <text x="468" y="378" text-anchor="middle" font-size="11" font-weight="800" fill="#b91c1c">NO</text>
+
+              <polygon points="415,455 585,455 560,510 395,510" fill="url(#grad-fail)" stroke="#ef4444" stroke-width="2"/>
+              <text x="490" y="480" text-anchor="middle" font-size="12" font-weight="700" fill="#b91c1c">Print "FAIL"</text>
+              <text x="490" y="498" text-anchor="middle" font-size="11" fill="#dc2626">&amp; Print Average</text>
+
+              <!-- Convergence to STOP -->
+              <line x1="90" y1="510" x2="90" y2="550" stroke="#64748b" stroke-width="2"/>
+              <line x1="90" y1="550" x2="230" y2="550" stroke="#64748b" stroke-width="2"/>
+              <line x1="230" y1="550" x2="230" y2="570" stroke="#64748b" stroke-width="2" marker-end="url(#fc-arrow-m5)"/>
+
+              <line x1="480" y1="510" x2="480" y2="550" stroke="#64748b" stroke-width="2"/>
+              <line x1="480" y1="550" x2="370" y2="550" stroke="#64748b" stroke-width="2"/>
+              <line x1="370" y1="550" x2="370" y2="570" stroke="#64748b" stroke-width="2" marker-end="url(#fc-arrow-m5)"/>
+
+              <!-- Node 6: STOP (Oval) -->
+              <rect x="230" y="565" width="140" height="42" rx="21" fill="url(#grad-stop-m5)" stroke="#a855f7" stroke-width="2"/>
+              <text x="300" y="591" text-anchor="middle" font-size="14" font-weight="700" fill="#6b21a8">STOP</text>
+            </svg>
+          </div>
+          <div style="font-size: 12px; color: var(--text-muted); text-align: center; margin-top: 10px;">
+            <em>Visual Vector Flowchart: Illustrating 5-subject marks processing, arithmetic calculation, and conditional branching for Pass/Fail grade determination.</em>
+          </div>
+        </div>
+
+        <h5>Accompanying C Program Implementation:</h5>
+        <pre><code class="language-c">#include &lt;stdio.h&gt;
+
+int main() {
+    float m1, m2, m3, m4, m5;
+    float total, average;
+
+    // Step 1: Input marks for 5 subjects
+    printf("Enter marks obtained in 5 subjects (out of 100):
+");
+    scanf("%f %f %f %f %f", &amp;m1, &amp;m2, &amp;m3, &amp;m4, &amp;m5);
+
+    // Step 2 &amp; 3: Calculate Cumulative Total and Average
+    total = m1 + m2 + m3 + m4 + m5;
+    average = total / 5.0;
+
+    // Step 4: Display Computed Metrics &amp; Determine Status
+    printf("
+================ RESULT REPORT ================
+");
+    printf("Total Marks Obtained : %.2f / 500.00
+", total);
+    printf("Percentage / Average : %.2f%%
+", average);
+
+    if (average &gt;= 40.0) {
+        printf("Final Academic Result: PASSED (First Class / Good Standing)
+");
+    } else {
+        printf("Final Academic Result: FAILED (Supplementary Required)
+");
+    }
+    printf("===============================================
+");
+
+    return 0;
+}</code></pre>
+      </div>
+    </div>
+
+    <!-- Q24: Structure of a 'C' Program (CCSU Nov 2019 Sec B Q6) -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q24.</span> Explain the structure of a 'C' program with the help of a suitable diagram and complete example.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2019</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Model Answer:</div>
+        <p>A C program adheres to a well-defined modular structure consisting of six standard hierarchical sections. Knowing the exact sequence is essential for writing clean, error-free C applications that compile seamlessly.</p>
+
+        <!-- Structure Cards Grid -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; margin: 18px 0;">
+          <div style="padding: 14px; border-radius: 12px; background: color-mix(in srgb, var(--surface) 95%, var(--border)); border: 1.5px solid var(--border);">
+            <div style="font-weight: 800; color: var(--primary); font-size: 13.5px; margin-bottom: 6px;">1. Documentation Section</div>
+            <p style="font-size: 12.5px; margin: 0; color: var(--text-muted);">Contains comments specifying program name, author, purpose, and date using <code>/* ... */</code> or <code>//</code>. Ignored by compiler.</p>
+          </div>
+
+          <div style="padding: 14px; border-radius: 12px; background: color-mix(in srgb, var(--surface) 95%, var(--border)); border: 1.5px solid var(--border);">
+            <div style="font-weight: 800; color: var(--primary); font-size: 13.5px; margin-bottom: 6px;">2. Link / Preprocessor Section</div>
+            <p style="font-size: 12.5px; margin: 0; color: var(--text-muted);">Contains <code>#include</code> directives linking standard library header files (e.g., <code>&lt;stdio.h&gt;</code>, <code>&lt;math.h&gt;</code>) to provide required functions.</p>
+          </div>
+
+          <div style="padding: 14px; border-radius: 12px; background: color-mix(in srgb, var(--surface) 95%, var(--border)); border: 1.5px solid var(--border);">
+            <div style="font-weight: 800; color: var(--primary); font-size: 13.5px; margin-bottom: 6px;">3. Definition Section</div>
+            <p style="font-size: 12.5px; margin: 0; color: var(--text-muted);">Declares symbolic constants and macros using <code>#define</code>, e.g., <code>#define PI 3.14159</code> and <code>#define MAX 100</code>.</p>
+          </div>
+
+          <div style="padding: 14px; border-radius: 12px; background: color-mix(in srgb, var(--surface) 95%, var(--border)); border: 1.5px solid var(--border);">
+            <div style="font-weight: 800; color: var(--primary); font-size: 13.5px; margin-bottom: 6px;">4. Global Declaration Section</div>
+            <p style="font-size: 12.5px; margin: 0; color: var(--text-muted);">Declares global variables accessible across all functions, user-defined types (struct/union), and function prototypes.</p>
+          </div>
+
+          <div style="padding: 14px; border-radius: 12px; background: color-mix(in srgb, var(--surface) 95%, var(--border)); border: 1.5px solid var(--border);">
+            <div style="font-weight: 800; color: var(--primary); font-size: 13.5px; margin-bottom: 6px;">5. main() Function Section</div>
+            <p style="font-size: 12.5px; margin: 0; color: var(--text-muted);">The mandatory starting execution point. Divided into <strong>Declaration Part</strong> (local variables) and <strong>Executable Part</strong> (logic statements).</p>
+          </div>
+
+          <div style="padding: 14px; border-radius: 12px; background: color-mix(in srgb, var(--surface) 95%, var(--border)); border: 1.5px solid var(--border);">
+            <div style="font-weight: 800; color: var(--primary); font-size: 13.5px; margin-bottom: 6px;">6. Subprogram Section</div>
+            <p style="font-size: 12.5px; margin: 0; color: var(--text-muted);">Contains full definitions of all user-defined functions called from <code>main()</code>, promoting modular code organization.</p>
+          </div>
+        </div>
+
+        <h5>Comprehensive Code Example Illustrating All 6 Sections:</h5>
+        <pre><code class="language-c">/* ==============================================================
+ * SECTION 1: DOCUMENTATION SECTION
+ * Program: Circle Geometry Calculator
+ * Author : IncStudy CCSU Academic Team
+ * ============================================================== */
+
+// SECTION 2: LINK SECTION
+#include &lt;stdio.h&gt;
+
+// SECTION 3: DEFINITION SECTION
+#define PI 3.14159265359
+
+// SECTION 4: GLOBAL DECLARATION SECTION
+int calculationCount = 0;           // Global variable
+float calculateCircleArea(float r); // Function Prototype
+
+// SECTION 5: MAIN FUNCTION SECTION
+int main() {
+    // (a) Declaration Part (Local Variables)
+    float radius, area;
+
+    // (b) Executable Part
+    printf("Enter radius of the circle: ");
+    scanf("%f", &amp;radius);
+
+    area = calculateCircleArea(radius); // Function Call
+    calculationCount++;
+
+    printf("Radius: %.2f | Computed Area: %.4f sq units
+", radius, area);
+    printf("Total Calculations Performed: %d
+", calculationCount);
+
+    return 0; // Successful Termination
+}
+
+// SECTION 6: SUBPROGRAM / USER-DEFINED FUNCTION SECTION
+float calculateCircleArea(float r) {
+    return PI * r * r;
+}</code></pre>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+  <div class="exam-section-body">
+
+    <!-- Q25: Storage Classes in Detail -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q25.</span> What do you understand by Storage Classes in C? Explain <code>auto</code>, <code>static</code>, <code>extern</code>, and <code>register</code> with comparison table and code.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2015, 2017, 2019, 2023</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Model Answer:</div>
+        <p>A <strong>Storage Class</strong> in C determines four fundamental attributes of any variable:</p>
+        <ol>
+          <li><strong>Storage Location:</strong> Where the variable is physically placed in hardware (CPU Register, Stack RAM, or Data Segment RAM).</li>
+          <li><strong>Default Initial Value:</strong> What value it holds if uninitialized (Garbage vs Zero).</li>
+          <li><strong>Scope (Visibility):</strong> The region of the program where the variable can be referenced (Block scope vs File/Global scope).</li>
+          <li><strong>Lifetime (Longevity):</strong> The duration over which the variable retains its allocated memory.</li>
+        </ol>
+
+        <p><strong>Master Comparison Table:</strong></p>
+        <table class="data-table" style="width:100%; border-collapse:collapse; margin:14px 0;">
+          <tr style="border-bottom:1px solid var(--border);"><th>Storage Class</th><th>Storage Location</th><th>Default Value</th><th>Scope</th><th>Lifetime</th></tr>
+          <tr style="border-bottom:1px solid var(--border);"><td><strong><code>auto</code></strong></td><td>Stack Memory (RAM)</td><td>Garbage (unpredictable)</td><td>Local to enclosing block</td><td>Until block terminates</td></tr>
+          <tr style="border-bottom:1px solid var(--border);"><td><strong><code>register</code></strong></td><td>CPU Register (if available)</td><td>Garbage</td><td>Local to enclosing block</td><td>Until block terminates</td></tr>
+          <tr style="border-bottom:1px solid var(--border);"><td><strong><code>static</code></strong></td><td>Data Segment (RAM)</td><td><strong>Zero (0)</strong></td><td>Local to enclosing block</td><td><strong>Entire program execution</strong></td></tr>
+          <tr><td><strong><code>extern</code></strong></td><td>Data Segment (RAM)</td><td><strong>Zero (0)</strong></td><td>Global (across all linked files)</td><td><strong>Entire program execution</strong></td></tr>
+        </table>
+
+        <p><strong>Demonstrating Difference Between <code>auto</code> and <code>static</code>:</strong></p>
+        <pre><code class="language-c">#include &lt;stdio.h&gt;
+
+void demoFunction() {
+    auto int normalVar = 1;     // Re-created on each call
+    static int staticVar = 1;   // Initialized ONLY ONCE at program startup
+
+    normalVar++;
+    staticVar++;
+
+    printf("auto = %d | static = %d\n", normalVar, staticVar);
+}
+
+int main() {
+    printf("Call 1: "); demoFunction(); // Prints auto = 2 | static = 2
+    printf("Call 2: "); demoFunction(); // Prints auto = 2 | static = 3 (Retained!)
+    printf("Call 3: "); demoFunction(); // Prints auto = 2 | static = 4 (Retained!)
+    return 0;
+}</code></pre>
+        <div class="exam-tip-box">
+          <strong>Examiner Key Note:</strong> The <code>register</code> keyword is only a <em>hint</em> to the compiler; if CPU registers are full, it defaults to <code>auto</code>. You cannot apply the address-of operator (<code>&amp;regVar</code>) to a register variable because registers do not have a memory address!
+        </div>
+      </div>
+    </div>
+
+    <!-- Q26: Asymptotic Notations -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q26.</span> Define Asymptotic Notations: Big-Oh ($O$), Big-Omega ($\Omega$), and Big-Theta ($\Theta$). Explain best, average, and worst-case complexity analysis.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2017, 2018, 2019</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Model Answer:</div>
+        <p><strong>Asymptotic Notations</strong> are mathematical notations used to describe the limiting behavior and growth rate of an algorithm's execution time as the input size $n$ tends to infinity ($n \to \infty$).</p>
+
+        <p><strong>1. Big-Oh Notation ($O$) — Upper Bound (Worst-Case):</strong></p>
+        <p>Big-Oh defines the maximum time an algorithm can take for any input of size $n$. It represents the <em>worst-case ceiling</em>.</p>
+        <p><strong>Mathematical Definition:</strong> $f(n) = O(g(n))$ if there exist positive constants $c > 0$ and $n_0 \ge 1$ such that:
+        $$0 \le f(n) \le c \cdot g(n) \quad \forall \; n \ge n_0$$</p>
+
+        <p><strong>2. Big-Omega Notation ($\Omega$) — Lower Bound (Best-Case):</strong></p>
+        <p>Big-Omega defines the minimum execution time required by an algorithm. It represents the <em>best-case floor</em>.</p>
+        <p><strong>Mathematical Definition:</strong> $f(n) = \Omega(g(n))$ if there exist positive constants $c > 0$ and $n_0 \ge 1$ such that:
+        $$0 \le c \cdot g(n) \le f(n) \quad \forall \; n \ge n_0$$</p>
+
+        <p><strong>3. Big-Theta Notation ($\Theta$) — Tight Bound (Average-Case):</strong></p>
+        <p>Big-Theta defines both the lower and upper bounds simultaneously. It represents the exact asymptotic rate of growth.</p>
+        <p><strong>Mathematical Definition:</strong> $f(n) = \Theta(g(n))$ if there exist positive constants $c_1, c_2 > 0$ and $n_0 \ge 1$ such that:
+        $$0 \le c_1 \cdot g(n) \le f(n) \le c_2 \cdot g(n) \quad \forall \; n \ge n_0$$</p>
+
+        <!-- Visual Graphical Comparison of Asymptotic Curves -->
+        <div class="flowchart-box" style="margin: 20px 0; padding: 18px; background: color-mix(in srgb, var(--surface) 95%, var(--border)); border: 1.5px solid var(--border); border-radius: 16px;">
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom: 12px; flex-wrap:wrap; gap:8px;">
+            <span style="font-size: 13.5px; font-weight: 800; color: #7c3aed; letter-spacing: 0.04em;">📈 GRAPHICAL PROOF : Asymptotic Curves &amp; Threshold $n_0$</span>
+            <span class="exam-section-badge badge-purple" style="font-size: 11px;">Exam Answer Sheet Diagram</span>
+          </div>
+
+          <div style="width: 100%; max-width: 620px; margin: auto; overflow-x: auto;">
+            <svg viewBox="0 0 620 210" width="100%" height="auto" style="display:block; min-width: 320px; font-family: 'DM Sans', -apple-system, sans-serif;">
+              <style>
+                .graph-axis { stroke: #94a3b8; stroke-width: 1.8; marker-end: url(#axis-arr); }
+                .graph-text { font-size: 11px; fill: var(--muted); font-weight: 600; }
+                .graph-title { font-size: 12.5px; font-weight: 800; text-anchor: middle; }
+                .graph-n0 { stroke: #cbd5e1; stroke-dasharray: 4 3; stroke-width: 1.5; }
+              </style>
+              <defs>
+                <marker id="axis-arr" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M 0 2 L 8 5 L 0 8 z" fill="#94a3b8"/></marker>
+              </defs>
+
+              <!-- Panel 1: Big-Oh -->
+              <g transform="translate(10, 10)">
+                <text x="90" y="16" class="graph-title" fill="#0284c7">Big-Oh: f(n) &le; c&middot;g(n)</text>
+                <!-- Axes -->
+                <line x1="25" y1="170" x2="175" y2="170" class="graph-axis"/>
+                <line x1="25" y1="170" x2="25" y2="28" class="graph-axis"/>
+                <text x="175" y="184" class="graph-text">n</text>
+                <text x="10" y="34" class="graph-text">T(n)</text>
+                <!-- n0 line -->
+                <line x1="85" y1="35" x2="85" y2="170" class="graph-n0"/>
+                <text x="82" y="184" class="graph-text" fill="#ef4444" font-weight="700">n₀</text>
+                <!-- Curves -->
+                <!-- c.g(n) upper bound curve (blue) -->
+                <path d="M 30 150 Q 80 120 165 45" stroke="#0284c7" stroke-width="2.5" fill="none"/>
+                <text x="120" y="42" font-size="11" font-weight="700" fill="#0284c7">c&middot;g(n)</text>
+                <!-- f(n) curve (emerald) -->
+                <path d="M 30 160 Q 80 135 165 80" stroke="#10b981" stroke-width="2.2" fill="none"/>
+                <text x="140" y="95" font-size="11" font-weight="700" fill="#10b981">f(n)</text>
+              </g>
+
+              <!-- Panel 2: Big-Omega -->
+              <g transform="translate(215, 10)">
+                <text x="90" y="16" class="graph-title" fill="#b45309">Big-Omega: f(n) &ge; c&middot;g(n)</text>
+                <!-- Axes -->
+                <line x1="25" y1="170" x2="175" y2="170" class="graph-axis"/>
+                <line x1="25" y1="170" x2="25" y2="28" class="graph-axis"/>
+                <text x="175" y="184" class="graph-text">n</text>
+                <text x="10" y="34" class="graph-text">T(n)</text>
+                <!-- n0 line -->
+                <line x1="85" y1="35" x2="85" y2="170" class="graph-n0"/>
+                <text x="82" y="184" class="graph-text" fill="#ef4444" font-weight="700">n₀</text>
+                <!-- Curves -->
+                <!-- f(n) upper curve (emerald) -->
+                <path d="M 30 150 Q 80 115 165 42" stroke="#10b981" stroke-width="2.5" fill="none"/>
+                <text x="135" y="40" font-size="11" font-weight="700" fill="#10b981">f(n)</text>
+                <!-- c.g(n) lower bound curve (amber) -->
+                <path d="M 30 160 Q 80 140 165 85" stroke="#f59e0b" stroke-width="2.2" fill="none"/>
+                <text x="120" y="100" font-size="11" font-weight="700" fill="#b45309">c&middot;g(n)</text>
+              </g>
+
+              <!-- Panel 3: Big-Theta -->
+              <g transform="translate(420, 10)">
+                <text x="90" y="16" class="graph-title" fill="#7c3aed">Big-Theta: Sandwich Bound</text>
+                <!-- Axes -->
+                <line x1="25" y1="170" x2="175" y2="170" class="graph-axis"/>
+                <line x1="25" y1="170" x2="25" y2="28" class="graph-axis"/>
+                <text x="175" y="184" class="graph-text">n</text>
+                <text x="10" y="34" class="graph-text">T(n)</text>
+                <!-- n0 line -->
+                <line x1="85" y1="35" x2="85" y2="170" class="graph-n0"/>
+                <text x="82" y="184" class="graph-text" fill="#ef4444" font-weight="700">n₀</text>
+                <!-- Curves -->
+                <!-- c2.g(n) curve (top) -->
+                <path d="M 30 145 Q 80 105 165 38" stroke="#7c3aed" stroke-width="2" fill="none"/>
+                <text x="120" y="35" font-size="10.5" font-weight="700" fill="#7c3aed">c₂&middot;g(n)</text>
+                <!-- f(n) curve (middle) -->
+                <path d="M 30 155 Q 80 125 165 65" stroke="#10b981" stroke-width="2.2" fill="none"/>
+                <text x="135" y="75" font-size="10.5" font-weight="700" fill="#10b981">f(n)</text>
+                <!-- c1.g(n) curve (bottom) -->
+                <path d="M 30 165 Q 80 145 165 95" stroke="#0284c7" stroke-width="2" fill="none"/>
+                <text x="120" y="110" font-size="10.5" font-weight="700" fill="#0284c7">c₁&middot;g(n)</text>
+              </g>
+            </svg>
+          </div>
+        </div>
+
+        <p><strong>Algorithm: Finding Maximum Element of an Array with Complexity Analysis:</strong></p>
+        <pre><code class="language-c">int findMax(int arr[], int n) {
+    int max = arr[0];          // Step 1: 1 operation
+    for (int i = 1; i < n; i++) { // Loop runs (n - 1) times
+        if (arr[i] > max)      // Comparison: (n - 1) times
+            max = arr[i];
+    }
+    return max;                // 1 operation
+}</code></pre>
+        <ul>
+          <li><strong>Best Case:</strong> Elements in descending order (e.g., $[10, 8, 5, 2]$). Number of comparisons $= n - 1$. Complexity is $\Omega(n)$.</li>
+          <li><strong>Worst Case:</strong> Elements in ascending order (e.g., $[2, 5, 8, 10]$). Comparison and assignment occur every iteration. Complexity is $O(n)$.</li>
+          <li><strong>Average Case:</strong> Elements in random order. Still requires $(n-1)$ comparisons. Complexity is $\Theta(n)$.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Q27: Complete Operators Classification -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q27.</span> Explain all types of Operators in C with complete syntax, precedence, and associativity.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2017, 2018, 2023</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Model Answer:</div>
+        <p>An <strong>Operator</strong> is a special character or symbol that instructs the compiler to perform specific mathematical, relational, or logical manipulations on operands.</p>
+
+        <p><strong>Classification of Operators in C:</strong></p>
+        <ol>
+          <li><strong>Arithmetic Operators:</strong> <code>+</code> (Addition), <code>-</code> (Subtraction), <code>*</code> (Multiplication), <code>/</code> (Quotient division), <code>%</code> (Modulus remainder — operates only on integers).</li>
+          <li><strong>Relational Operators:</strong> Used for comparison; evaluate to 1 (True) or 0 (False): <code>==</code>, <code>!=</code>, <code>&gt;</code>, <code>&lt;</code>, <code>&gt;=</code>, <code>&lt;=</code>.</li>
+          <li><strong>Logical Operators:</strong> Combine conditions:
+            <ul>
+              <li><code>&amp;&amp;</code> (Logical AND): True only if both operands are non-zero.</li>
+              <li><code>||</code> (Logical OR): True if at least one operand is non-zero.</li>
+              <li><code>!</code> (Logical NOT): Inverts condition.</li>
+            </ul>
+          </li>
+          <li><strong>Bitwise Operators:</strong> Work at the binary bit level: <code>&amp;</code> (AND), <code>|</code> (OR), <code>^</code> (XOR), <code>~</code> (1's Complement), <code>&lt;&lt;</code> (Left shift), <code>&gt;&gt;</code> (Right shift).</li>
+          <li><strong>Increment &amp; Decrement Operators:</strong> 
+            <ul>
+              <li>Prefix (<code>++a</code>): Increments first, then evaluates in expression.</li>
+              <li>Postfix (<code>a++</code>): Evaluates in expression first, then increments.</li>
+            </ul>
+          </li>
+          <li><strong>Assignment Operators:</strong> Simple (<code>=</code>) and compound (<code>+=, -=, *=, /=, %=</code>).</li>
+          <li><strong>Conditional / Ternary Operator:</strong> <code>exp1 ? exp2 : exp3</code>.</li>
+          <li><strong>Special Operators:</strong> <code>sizeof</code> (memory size in bytes), comma operator <code>,</code> (links expressions), pointer dereference <code>*</code>, address-of <code>&amp;</code>.</li>
+        </ol>
+
+        <p><strong>Operator Precedence &amp; Associativity Table (Top Priority to Bottom):</strong></p>
+        <table class="data-table" style="width:100%; border-collapse:collapse; margin:12px 0;">
+          <tr style="border-bottom:1px solid var(--border);"><th>Priority Level</th><th>Operators</th><th>Associativity</th></tr>
+          <tr style="border-bottom:1px solid var(--border);"><td>1 (Highest)</td><td>Parentheses <code>()</code>, Array subscript <code>[]</code>, Dot <code>.</code>, Arrow <code>-&gt;</code></td><td>Left to Right</td></tr>
+          <tr style="border-bottom:1px solid var(--border);"><td>2 (Unary)</td><td>Unary <code>+</code>, <code>-</code>, <code>++</code>, <code>--</code>, <code>!</code>, <code>~</code>, <code>*</code> (pointer), <code>&amp;</code> (address), <code>sizeof</code></td><td><strong>Right to Left</strong></td></tr>
+          <tr style="border-bottom:1px solid var(--border);"><td>3 (Multiplicative)</td><td><code>*</code>, <code>/</code>, <code>%</code></td><td>Left to Right</td></tr>
+          <tr style="border-bottom:1px solid var(--border);"><td>4 (Additive)</td><td><code>+</code>, <code>-</code></td><td>Left to Right</td></tr>
+          <tr style="border-bottom:1px solid var(--border);"><td>5 (Shift)</td><td><code>&lt;&lt;</code>, <code>&gt;&gt;</code></td><td>Left to Right</td></tr>
+          <tr style="border-bottom:1px solid var(--border);"><td>6 (Relational)</td><td><code>&lt;</code>, <code>&lt;=</code>, <code>&gt;</code>, <code>&gt;=</code></td><td>Left to Right</td></tr>
+          <tr style="border-bottom:1px solid var(--border);"><td>7 (Equality)</td><td><code>==</code>, <code>!=</code></td><td>Left to Right</td></tr>
+          <tr style="border-bottom:1px solid var(--border);"><td>8 (Bitwise)</td><td><code>&amp;</code>, then <code>^</code>, then <code>|</code></td><td>Left to Right</td></tr>
+          <tr style="border-bottom:1px solid var(--border);"><td>9 (Logical)</td><td><code>&amp;&amp;</code>, then <code>||</code></td><td>Left to Right</td></tr>
+          <tr style="border-bottom:1px solid var(--border);"><td>10 (Conditional)</td><td><code>? :</code></td><td><strong>Right to Left</strong></td></tr>
+          <tr style="border-bottom:1px solid var(--border);"><td>11 (Assignment)</td><td><code>=</code>, <code>+=</code>, <code>-=</code>, <code>*=</code>, etc.</td><td><strong>Right to Left</strong></td></tr>
+          <tr><td>12 (Lowest)</td><td>Comma operator <code>,</code></td><td>Left to Right</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- Q28: Jump Statements -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q28.</span> Differentiate among <code>goto</code>, <code>continue</code>, <code>break</code>, and <code>exit()</code> statements with suitable code examples.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2019</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Model Answer:</div>
+        <table class="data-table" style="width:100%; border-collapse:collapse; margin:12px 0;">
+          <tr style="border-bottom:1px solid var(--border);"><th>Statement</th><th>Scope of Jump</th><th>Condition Requirement</th><th>Program Status</th></tr>
+          <tr style="border-bottom:1px solid var(--border);"><td><strong><code>break</code></strong></td><td>Exits innermost loop or <code>switch</code> immediately.</td><td>Usually placed inside an <code>if</code> block.</td><td>Program execution continues at the statement after loop.</td></tr>
+          <tr style="border-bottom:1px solid var(--border);"><td><strong><code>continue</code></strong></td><td>Skips current iteration of loop only.</td><td>Placed inside an <code>if</code> block in a loop.</td><td>Loop proceeds to next iteration condition check.</td></tr>
+          <tr style="border-bottom:1px solid var(--border);"><td><strong><code>goto</code></strong></td><td>Unconditional jump to any labeled statement in function.</td><td>Unconditional jump (discouraged in structured code).</td><td>Program jumps directly to <code>label:</code> location.</td></tr>
+          <tr><td><strong><code>exit()</code></strong></td><td>Terminates the <strong>entire program</strong> immediately.</td><td>Standard library function declared in <code>&lt;stdlib.h&gt;</code>.</td><td>Flushes all I/O buffers and returns exit status to OS.</td></tr>
+        </table>
+
+        <pre><code class="language-c">#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+
+int main() {
+    for (int i = 1; i &lt;= 5; i++) {
+        if (i == 2) continue; // Skips printing 2
+        if (i == 4) break;    // Stops loop before 4
+        printf("i = %d\n", i); // Prints 1 and 3
+    }
+
+    int error = 1;
+    if (error) {
+        printf("Fatal Error Encountered. Terminating Program.\n");
+        exit(0); // Closes entire application
+    }
+
+    printf("This will never print.\n");
+    return 0;
+}</code></pre>
+      </div>
+    </div>
+
+    <!-- Q29: Problem Solving Techniques -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q29.</span> Explain Problem Solving Techniques: Divide and Conquer, Brainstorming, and Trial &amp; Error.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2015, 2016, 2019</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Model Answer:</div>
+        <p>Problem-solving techniques are structured mental and algorithmic frameworks used by computer scientists to break down complex real-world requirements into computable software.</p>
+
+        <p><strong>1. Divide and Conquer:</strong></p>
+        <p>This technique breaks a large, complex problem down into multiple independent, smaller sub-problems of the same type, solves them recursively, and combines their solutions:</p>
+        <ul>
+          <li><strong>Divide:</strong> Partition problem $P$ into smaller subproblems $P_1, P_2, \dots, P_k$.</li>
+          <li><strong>Conquer:</strong> Solve subproblems recursively. If subproblems are small enough (base case), solve directly.</li>
+          <li><strong>Combine:</strong> Merge the solutions of subproblems into the solution for original problem $P$.</li>
+          <li><em>Real Programming Examples:</em> <strong>Binary Search</strong> ($O(\log n)$), <strong>Merge Sort</strong> ($O(n \log n)$), <strong>Quick Sort</strong>.</li>
+        </ul>
+
+        <p><strong>2. Brainstorming Technique:</strong></p>
+        <ul>
+          <li>A group creativity technique where developers collaborate to generate a large list of spontaneous ideas and architectural strategies to solve a problem without initial criticism.</li>
+          <li>It consists of two phases: <strong>Idea Generation Phase</strong> (quantity over quality) and <strong>Evaluation / Pruning Phase</strong> (analyzing feasibility, cost, algorithmic efficiency, and constraints).</li>
+        </ul>
+
+        <p><strong>3. Trial and Error (Heuristic Search):</strong></p>
+        <ul>
+          <li>A fundamental problem-solving method where multiple attempts/hypotheses are tried until a successful result is found or an error is detected.</li>
+          <li>Used in programming for debugging unknown edge cases and in artificial intelligence backtracking algorithms (e.g., solving Sudoku, N-Queens problem).</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Q30: C Programs Pack -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q30.</span> Core C Programs Pack: Prime Number Check, Factorial, Reverse &amp; Palindrome, and Fibonacci Series.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated Across All Years</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Model Answer:</div>
+
+        <p class="exam-ans-step"><strong>Program 1: Check Prime Number (2015):</strong></p>
+        <pre><code class="language-c">#include &lt;stdio.h&gt;
+
+int main() {
+    int n, isPrime = 1;
+    printf("Enter a positive integer: ");
+    scanf("%d", &amp;n);
+
+    if (n &lt;= 1) isPrime = 0; // 0 and 1 are not prime
+    for (int i = 2; i * i &lt;= n; i++) { // Optimized check up to sqrt(n)
+        if (n % i == 0) {
+            isPrime = 0;
+            break;
+        }
+    }
+
+    if (isPrime) printf("%d is a PRIME number.\n", n);
+    else printf("%d is NOT a prime number.\n", n);
+    return 0;
+}</code></pre>
+
+        <p class="exam-ans-step" style="margin-top:16px;"><strong>Program 2: Reverse of an $N$-Digit Number and Palindrome Check (2019):</strong></p>
+        <pre><code class="language-c">#include &lt;stdio.h&gt;
+
+int main() {
+    int num, original, rev = 0, rem;
+    printf("Enter an integer: ");
+    scanf("%d", &amp;num);
+
+    original = num;
+    while (num != 0) {
+        rem = num % 10;
+        rev = rev * 10 + rem;
+        num = num / 10;
+    }
+
+    printf("Reversed Number: %d\n", rev);
+    if (original == rev)
+        printf("%d is a PALINDROME number.\n", original);
+    else
+        printf("%d is NOT a palindrome.\n", original);
+
+    return 0;
+}</code></pre>
+
+        <p class="exam-ans-step" style="margin-top:16px;"><strong>Program 3: Fibonacci Series up to $N$ Terms (2018):</strong></p>
+        <pre><code class="language-c">#include &lt;stdio.h&gt;
+
+int main() {
+    int n, t1 = 0, t2 = 1, nextTerm;
+    printf("Enter number of terms: ");
+    scanf("%d", &amp;n);
+
+    printf("Fibonacci Series: ");
+    for (int i = 1; i &lt;= n; i++) {
+        printf("%d ", t1);
+        nextTerm = t1 + t2;
+        t1 = t2;
+        t2 = nextTerm;
+    }
+    printf("\n");
+    return 0;
+}</code></pre>
+      </div>
+    </div>
+
+    <!-- Q31: Matrix Multiplication -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q31.</span> Write a complete C program to multiply two $3 \times 3$ matrices. Explain the mathematical condition and analyze time complexity.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2023</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Model Answer:</div>
+        <p><strong>Condition for Matrix Multiplication:</strong> Multiplication between matrix $A_{m \times k}$ and matrix $B_{k \times n}$ is mathematically valid <strong>if and only if the number of columns in the first matrix equals the number of rows in the second matrix</strong>. The resulting matrix $C$ has dimensions $m \times n$.</p>
+
+        <pre><code class="language-c">#include &lt;stdio.h&gt;
+
+int main() {
+    int a[3][3], b[3][3], c[3][3];
+    int i, j, k;
+
+    printf("Enter 9 elements of Matrix A (3x3):\n");
+    for (i = 0; i &lt; 3; i++)
+        for (j = 0; j &lt; 3; j++)
+            scanf("%d", &amp;a[i][j]);
+
+    printf("Enter 9 elements of Matrix B (3x3):\n");
+    for (i = 0; i &lt; 3; i++)
+        for (j = 0; j &lt; 3; j++)
+            scanf("%d", &amp;b[i][j]);
+
+    // Matrix Multiplication logic using 3 nested loops
+    for (i = 0; i &lt; 3; i++) {
+        for (j = 0; j &lt; 3; j++) {
+            c[i][j] = 0;
+            for (k = 0; k &lt; 3; k++) {
+                c[i][j] += a[i][k] * b[k][j];
+            }
+        }
+    }
+
+    printf("\nResultant Product Matrix C (3x3):\n");
+    for (i = 0; i &lt; 3; i++) {
+        for (j = 0; j &lt; 3; j++) {
+            printf("%d\t", c[i][j]);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}</code></pre>
+        <div class="exam-tip-box">
+          <strong>Complexity Analysis:</strong>
+          <ul>
+            <li><strong>Time Complexity:</strong> $O(n^3)$ because there are three nested loops iterating from $0$ to $2$. For arbitrary $n \times n$ matrices, it requires $n^3$ multiplications.</li>
+            <li><strong>Space Complexity:</strong> $O(n^2)$ to store the matrices in two-dimensional contiguous memory arrays.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  
+    <!-- Q32: Maximum Element in Array with Asymptotic Analysis (CCSU Dec 2018 Sec C Q9) -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q32.</span> Write an algorithm for finding the maximum element of an array, and perform best, worst, and average case complexity analysis with appropriate order notations.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2018</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Model Answer:</div>
+        <p>Finding the maximum element among $n$ elements in an unsorted array is a fundamental computing problem. We examine both the formal algorithm, full C implementation, and rigorous asymptotic complexity derivations across all cases.</p>
+
+        <h5>1. Formal Step-by-Step Algorithm:</h5>
+        <div style="background: color-mix(in srgb, var(--surface) 95%, var(--border)); padding: 16px 20px; border-radius: 12px; border-left: 4px solid var(--primary); margin: 12px 0; font-family: monospace; font-size: 13.5px; line-height: 1.7;">
+          <strong>Step 1:</strong> START<br>
+          <strong>Step 2:</strong> Input array $A$ of size $n$, where $n \ge 1$.<br>
+          <strong>Step 3:</strong> Initialize <code>largest = A[0]</code> (assume 1st element is the largest).<br>
+          <strong>Step 4:</strong> Initialize loop counter <code>i = 1</code>.<br>
+          <strong>Step 5:</strong> Repeat Steps 6–7 while <code>i &lt; n</code>:<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Step 6:</strong> If <code>A[i] &gt; largest</code>, then assign <code>largest = A[i]</code>.<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Step 7:</strong> Increment <code>i = i + 1</code>.<br>
+          <strong>Step 8:</strong> Print "Maximum Element is: ", <code>largest</code>.<br>
+          <strong>Step 9:</strong> STOP.
+        </div>
+
+        <h5>2. Complete C Program:</h5>
+        <pre><code class="language-c">#include &lt;stdio.h&gt;
+
+int main() {
+    int n, i, largest;
+    printf("Enter number of elements in array: ");
+    scanf("%d", &amp;n);
+
+    int arr[n];
+    printf("Enter %d integers:
+", n);
+    for (i = 0; i &lt; n; i++) {
+        scanf("%d", &amp;arr[i]);
+    }
+
+    // Initialize largest with first element
+    largest = arr[0];
+
+    // Scan through remaining n - 1 elements
+    for (i = 1; i &lt; n; i++) {
+        if (arr[i] &gt; largest) {
+            largest = arr[i]; // Update largest
+        }
+    }
+
+    printf("
+--- Result ---
+");
+    printf("The Maximum Element in the array is: %d
+", largest);
+    return 0;
+}</code></pre>
+
+        <h5>3. Asymptotic Complexity Derivation (Best, Worst, Average Case):</h5>
+        <p>In this algorithm, the dominant basic operation is the <strong>comparison</strong> <code>arr[i] &gt; largest</code> and the secondary operation is the <strong>assignment</strong> <code>largest = arr[i]</code>.</p>
+
+        <div class="exam-table-responsive">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Analysis Case</th>
+                <th>Condition / Array Distribution</th>
+                <th>Comparisons</th>
+                <th>Assignments</th>
+                <th>Time Complexity</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Best Case ($\Omega$)</strong></td>
+                <td>Array is sorted in strictly <strong>descending order</strong> (e.g., <code>[99, 80, 65, 40, 10]</code>). The maximum element is already at index <code>0</code>.</td>
+                <td>$n - 1$</td>
+                <td>$0$ updates</td>
+                <td>$\mathbf{\Theta(n)}$ time, $\mathbf{\Omega(1)}$ assignments</td>
+              </tr>
+              <tr>
+                <td><strong>Worst Case ($O$)</strong></td>
+                <td>Array is sorted in strictly <strong>ascending order</strong> (e.g., <code>[10, 25, 40, 75, 99]</code>). Every new element is greater than all previous elements.</td>
+                <td>$n - 1$</td>
+                <td>$n - 1$ updates</td>
+                <td>$\mathbf{\Theta(n)}$ time, $\mathbf{O(n)}$ assignments</td>
+              </tr>
+              <tr>
+                <td><strong>Average Case ($\Theta$)</strong></td>
+                <td>Array elements are in random, uniform permutations. Probability that element at index $i$ is greater than all preceding $i$ elements is $1/(i+1)$.</td>
+                <td>$n - 1$</td>
+                <td>$\sum_{i=1}^{n-1} rac{1}{i+1} = H_n - 1 pprox \ln n$ updates</td>
+                <td>$\mathbf{\Theta(n)}$ comparisons, $\mathbf{\Theta(\log n)}$ assignments</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p><strong>Space Complexity:</strong> The algorithm requires only a fixed number of scalar variables (<code>largest</code>, <code>i</code>, <code>n</code>). Thus, the auxiliary space complexity is strictly $\mathbf{O(1)}$ (constant space).</p>
+      </div>
+    </div>
+
+    <!-- Q33: Algorithm vs Flowchart & Fibonacci Series (CCSU Dec 2018 Sec C Q10) -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q33.</span> Differentiate between a Flowchart and an Algorithm. Write an algorithm and complete C program to compute the Fibonacci series for 'n' terms.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2018</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Model Answer:</div>
+        
+        <h5>1. 6-Point Comparison Table: Algorithm vs Flowchart:</h5>
+        <div class="exam-table-responsive">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Comparison Parameter</th>
+                <th>Algorithm</th>
+                <th>Flowchart</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>1. Definition</strong></td>
+                <td>A finite sequence of well-defined, step-by-step written logical instructions to solve a given task.</td>
+                <td>A visual or diagrammatic representation of an algorithm using standardized geometrical shapes connected by arrows.</td>
+              </tr>
+              <tr>
+                <td><strong>2. Representation</strong></td>
+                <td>Textual format using structured natural language (English) or pseudocode.</td>
+                <td>Graphical / Pictorial format (Ovals, Rectangles, Diamonds, Parallelograms).</td>
+              </tr>
+              <tr>
+                <td><strong>3. Modification</strong></td>
+                <td>Very easy to modify; new steps can be inserted or re-ordered with simple text edits.</td>
+                <td>Difficult to modify; changing a single condition often requires erasing and redrawing branches and layout.</td>
+              </tr>
+              <tr>
+                <td><strong>4. Debugging &amp; Flow Analysis</strong></td>
+                <td>Harder to trace complex nested loops and multi-way branch conditions in large texts.</td>
+                <td>Extremely intuitive to visualize control flow, loop back-edges, and dead-end logic paths.</td>
+              </tr>
+              <tr>
+                <td><strong>5. Standard Rules</strong></td>
+                <td>No rigid graphical constraints; uses conventions like START, INPUT, IF-THEN, STOP.</td>
+                <td>Governed by strict ANSI/ISO graphic standards (e.g., arrows must point to next valid symbol).</td>
+              </tr>
+              <tr>
+                <td><strong>6. Target Audience</strong></td>
+                <td>Primarily used by software engineers and algorithms researchers for coding and complexity profiling.</td>
+                <td>Ideal for non-technical stakeholders, business analysts, systems documentation, and student learning.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h5>2. Fibonacci Series Algorithm ($F_n = F_{n-1} + F_{n-2}$ with $F_0=0, F_1=1$):</h5>
+        <div style="background: color-mix(in srgb, var(--surface) 95%, var(--border)); padding: 16px 20px; border-radius: 12px; border-left: 4px solid var(--primary); margin: 12px 0; font-family: monospace; font-size: 13.5px; line-height: 1.7;">
+          <strong>Step 1:</strong> START<br>
+          <strong>Step 2:</strong> Input number of terms $n$.<br>
+          <strong>Step 3:</strong> If $n \le 0$, print "Invalid term count" and jump to Step 9.<br>
+          <strong>Step 4:</strong> Initialize first two terms: <code>f1 = 0</code>, <code>f2 = 1</code>.<br>
+          <strong>Step 5:</strong> If $n = 1$, print <code>f1</code> and jump to Step 9.<br>
+          <strong>Step 6:</strong> Print <code>f1</code> and <code>f2</code>. Set term counter <code>count = 2</code>.<br>
+          <strong>Step 7:</strong> While <code>count &lt; n</code>, repeat:<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(a) <code>next = f1 + f2</code><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(b) Print <code>next</code><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(c) Update: <code>f1 = f2</code>, <code>f2 = next</code><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(d) <code>count = count + 1</code><br>
+          <strong>Step 8:</strong> Print newline.<br>
+          <strong>Step 9:</strong> STOP.
+        </div>
+
+        <h5>3. Complete C Program:</h5>
+        <pre><code class="language-c">#include &lt;stdio.h&gt;
+
+int main() {
+    int n, i;
+    long long f1 = 0, f2 = 1, next;
+
+    printf("Enter number of terms to generate in Fibonacci sequence: ");
+    scanf("%d", &amp;n);
+
+    if (n &lt;= 0) {
+        printf("Error: Number of terms must be a positive integer greater than 0.
+");
+        return 1;
+    }
+
+    printf("
+Fibonacci Series for first %d terms:
+", n);
+    if (n == 1) {
+        printf("%lld
+", f1);
+    } else {
+        printf("%lld, %lld", f1, f2);
+        for (i = 3; i &lt;= n; i++) {
+            next = f1 + f2;
+            printf(", %lld", next);
+            f1 = f2;
+            f2 = next;
+        }
+        printf("
+");
+    }
+
+    return 0;
+}</code></pre>
+        <p><strong>Dry Run Trace for $n = 7$:</strong> Generated sequence is <code>0, 1, 1, 2, 3, 5, 8</code>. Time complexity is $\Theta(n)$ and space complexity is $O(1)$.</p>
+      </div>
+    </div>
+
+    <!-- Q34: Header Files in C: Standard vs User-Defined (CCSU Dec 2016 Sec C Q12 & Nov 2019 Sec A Q2) -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q34.</span> What are Header Files in C? Explain Standard Library Headers vs User-Defined Header Files, the difference between <code>#include &lt;...&gt;</code> and <code>#include "..."</code>, and how Header Guards prevent multiple inclusion errors.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2016, 2019</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Model Answer:</div>
+        
+        <h5>1. Definition and Role of Header Files:</h5>
+        <p>A <strong>header file</strong> in C is a source file with the <code>.h</code> extension that contains function prototypes, macro definitions, data structure definitions (<code>struct</code>, <code>union</code>), and global variable declarations intended to be shared across multiple source (<code>.c</code>) files. They enable <strong>modular programming</strong>, information hiding, and clean separate compilation.</p>
+
+        <h5>2. Standard Library Headers vs User-Defined Headers:</h5>
+        <div class="exam-table-responsive">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Syntax</th>
+                <th>Search Directory Mechanism</th>
+                <th>Common Examples</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Standard Library Headers</strong></td>
+                <td><code>#include &lt;filename.h&gt;</code></td>
+                <td>Preprocessor searches exclusively in standard system/compiler include directories (e.g., <code>/usr/include</code> or MinGW include folder).</td>
+                <td>
+                  <code>&lt;stdio.h&gt;</code> (I/O: printf, scanf)<br>
+                  <code>&lt;stdlib.h&gt;</code> (malloc, exit, rand)<br>
+                  <code>&lt;string.h&gt;</code> (strlen, strcpy, strcmp)<br>
+                  <code>&lt;math.h&gt;</code> (sqrt, pow, sin, cos)
+                </td>
+              </tr>
+              <tr>
+                <td><strong>User-Defined Headers</strong></td>
+                <td><code>#include "filename.h"</code></td>
+                <td>Preprocessor searches first in the <strong>current directory</strong> where the source file resides; if not found, it falls back to standard system paths.</td>
+                <td>
+                  <code>"my_math.h"</code><br>
+                  <code>"student_records.h"</code><br>
+                  <code>"matrix_ops.h"</code>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h5>3. What Does a Header File Typically Contain?</h5>
+        <ul>
+          <li><strong>Function Prototypes:</strong> Informs the compiler of function names, return types, and parameter lists without providing implementation bodies (e.g., <code>int computeGCD(int a, int b);</code>).</li>
+          <li><strong>Macro &amp; Constant Definitions:</strong> Symbolic constants like <code>#define MAX_BUFFER 1024</code>.</li>
+          <li><strong>Type Definitions:</strong> Custom <code>typedef</code> and <code>struct</code> templates.</li>
+          <li><strong>External Variable Declarations:</strong> Using <code>extern int globalErrorCode;</code>.</li>
+        </ul>
+
+        <h5>4. The Multiple Inclusion Problem and Header Guards:</h5>
+        <p>When multiple <code>.c</code> or <code>.h</code> files include the same header file directly or indirectly, the compiler encounters duplicate structure or variable definitions, causing compilation failures. To prevent this, standard C employs <strong>Header Guards</strong> using preprocessor conditional directives:</p>
+
+        <pre><code class="language-c">/* File: my_math.h */
+#ifndef MY_MATH_H    /* If MY_MATH_H is not yet defined */
+#define MY_MATH_H    /* Define MY_MATH_H */
+
+// Function Prototypes
+int add(int a, int b);
+int multiply(int a, int b);
+double power(double base, int exp);
+
+#endif /* MY_MATH_H */</code></pre>
+        <p><em>How it works:</em> The first time the file is included, <code>MY_MATH_H</code> is undefined, so the preprocessor defines it and processes the contents. On any subsequent inclusion during the same compilation unit, <code>#ifndef</code> evaluates to false and the entire header body is skipped instantly!</p>
+      </div>
+    </div>
+
+    <!-- Q35: Local vs Global Variables, Scope & Lifetime (CCSU Dec 2017 Sec C Q12(a)) -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q35.</span> Explain Local and Global Variables with respect to scope, lifetime, memory allocation, and default initial values. Illustrate Variable Shadowing with a complete C demonstration program.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2017</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Model Answer:</div>
+        <p>In C programming, the accessibility and duration of any identifier are governed by two fundamental concepts: <strong>Scope</strong> (where the variable can be accessed) and <strong>Lifetime / Storage Duration</strong> (how long the variable occupies memory during execution).</p>
+
+        <h5>1. Detailed Comparison Table: Local vs Global Variables:</h5>
+        <div class="exam-table-responsive">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Feature / Metric</th>
+                <th>Local Variable</th>
+                <th>Global Variable</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Declaration Location</strong></td>
+                <td>Declared inside a function body or compound block enclosed by <code>{ ... }</code>.</td>
+                <td>Declared outside all functions, typically at the top of the C source file.</td>
+              </tr>
+              <tr>
+                <td><strong>Scope (Visibility)</strong></td>
+                <td><strong>Block Scope:</strong> Accessible only within the enclosing function or block where declared.</td>
+                <td><strong>File Scope:</strong> Accessible throughout the entire source file from the point of declaration.</td>
+              </tr>
+              <tr>
+                <td><strong>Lifetime</strong></td>
+                <td>Created when function/block execution begins and destroyed immediately when the block exits.</td>
+                <td>Retained in memory throughout the entire duration of the program execution from start to finish.</td>
+              </tr>
+              <tr>
+                <td><strong>Memory Segment</strong></td>
+                <td>Allocated dynamically on the <strong>Call Stack</strong>.</td>
+                <td>Allocated statically in the <strong>Data Segment</strong> (BSS if uninitialized, initialized data segment if initialized).</td>
+              </tr>
+              <tr>
+                <td><strong>Default Initial Value</strong></td>
+                <td>Contains unpredictable <strong>Garbage Values</strong> if not explicitly initialized by the programmer.</td>
+                <td>Automatically initialized to <strong>Zero</strong> (<code>0</code>, <code>0.0</code>, or <code>NULL</code>) by the runtime environment.</td>
+              </tr>
+              <tr>
+                <td><strong>Storage Class</strong></td>
+                <td>Default is <code>auto</code> (can also be <code>register</code> or <code>static</code>).</td>
+                <td>Default is external linkage (<code>extern</code>). Can be restricted to current file using <code>static</code>.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h5>2. Variable Shadowing (Name Precedence Rule):</h5>
+        <p>When a local variable within an inner block is declared with the exact same identifier name as a global variable, the local variable <strong>shadows (hides)</strong> the global variable within that scope. All read and write operations inside the block operate strictly on the local instance.</p>
+
+        <h5>3. Complete Demonstration C Program:</h5>
+        <pre><code class="language-c">#include &lt;stdio.h&gt;
+
+// GLOBAL VARIABLE (File Scope, Static Lifetime, Initialized to 0 by default)
+int counter = 100;
+
+void testFunction() {
+    // Accesses global variable counter
+    printf("[testFunction] Global counter value: %d
+", counter);
+    counter += 25; // Modifying global variable
+}
+
+int main() {
+    printf("[main: Start] Global counter value: %d
+", counter);
+
+    // LOCAL VARIABLE shadowing the global variable of identical name
+    int counter = 5; 
+    printf("[main: Local Scope] Shadowed local counter: %d
+", counter);
+
+    // Inner block demo
+    {
+        int counter = 999; // Inner block variable shadows main's local counter
+        printf("[main: Inner Block] Deeply nested counter: %d
+", counter);
+    }
+
+    printf("[main: Local Scope] Local counter restored: %d
+", counter);
+
+    // Calling external function that operates on global counter
+    testFunction();
+    printf("[main: End] Global counter after testFunction: %d
+", counter); // Still prints local!
+
+    return 0;
+}</code></pre>
+
+        <h5>4. Program Output and Analytical Walkthrough:</h5>
+        <div style="background: color-mix(in srgb, var(--surface) 95%, var(--border)); padding: 14px 18px; border-radius: 10px; font-family: monospace; font-size: 13px; line-height: 1.6; border-left: 4px solid var(--emerald);">
+          [main: Start] Global counter value: 100<br>
+          [main: Local Scope] Shadowed local counter: 5<br>
+          [main: Inner Block] Deeply nested counter: 999<br>
+          [main: Local Scope] Local counter restored: 5<br>
+          [testFunction] Global counter value: 100<br>
+          [main: End] Global counter after testFunction: 5
+        </div>
+      </div>
+    </div>
+
+    </div>
+</div>

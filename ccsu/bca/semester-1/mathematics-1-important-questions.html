@@ -1,0 +1,1343 @@
+---
+layout: exam
+title: "CCSU BCA 1st Sem Mathematics-I (BCA-101) Most Important Questions & Solved Exam Notebook"
+seo_title: "CCSU BCA 1st Sem Mathematics-I (BCA-101) Most Important Questions & Solved Exam Notebook"
+breadcrumb_title: "Mathematics-I (BCA-101)"
+eyebrow: "⚡ CCSU Meerut · BCA 1st Semester · Exam Preparation"
+title_subject: "Mathematics-I"
+title_code: "BCA-101"
+title_highlight: "Most Important Questions & Solved Exam Notebook"
+description: "Complete chapter-wise solved notebook of recurring CCSU examination questions (2015–2021) with detailed step-by-step solutions, categorized into Section A (3M), Section B (7.5M), and Section C (15M)."
+permalink: /ccsu/bca/semester-1/mathematics-1-important-questions/
+course_name: "CCSU BCA Semester 1 · Mathematics-I (BCA-101)"
+math: true
+---
+
+<!-- Navigation & Actions Bar -->
+<div class="exam-actions-bar">
+  <a href="{{ '/ccsu/bca/semester-1/' | relative_url }}" class="text-link">← Back to Semester 1 Hub</a>
+  <button class="print-btn" onclick="triggerMathPrint()">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+    Save as PDF / Print
+  </button>
+</div>
+
+<script>
+function triggerMathPrint() {
+  if (typeof renderMathInElement === 'function' && document.body) {
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false},
+        {left: '\(', right: '\)', display: false},
+        {left: '\[', right: '\]', display: true}
+      ],
+      throwOnError: false
+    });
+  }
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(function() {
+      window.print();
+    });
+  } else {
+    window.print();
+  }
+}
+</script>
+
+<!-- Minimal Sleek Exam Strip -->
+<div class="exam-header-strip">
+  <span class="strip-pill">🏛️ CCSU Meerut</span>
+  <span class="strip-pill">⏱️ 75 Marks External (3 Hours)</span>
+  <span class="strip-pill">📄 3M, 7.5M &amp; 15M Exam Pattern</span>
+  <span class="strip-pill">⭐ 2015–2021 Solved Coverage</span>
+</div>
+
+<!-- Quick Jump Nav -->
+<div class="exam-jump-nav">
+  <span class="exam-jump-label">⚡ Quick Jump:</span>
+  <a href="#section-a" class="jump-pill jump-pill-emerald">Section A (3 Marks · 15M)</a>
+  <a href="#section-b" class="jump-pill jump-pill-cyan">Section B (7.5 Marks · 15M)</a>
+  <a href="#section-c" class="jump-pill jump-pill-purple">⭐ Section C (15 Marks · 45M)</a>
+</div>
+
+<!-- =========================================================================
+     SECTION A : 3 MARKS VERY SHORT ANSWER QUESTIONS (COMPULSORY)
+     ========================================================================= -->
+<div class="exam-section-card" id="section-a">
+  <div class="exam-section-header exam-section-header-emerald">
+    <div class="exam-section-header-inner">
+      <span class="exam-section-badge badge-emerald">SECTION A &bull; 3 MARKS EACH</span>
+      <h3 class="exam-section-title">Very Short Answer Questions &amp; Definitions</h3>
+      <p class="exam-section-rule">CCSU Examination Blueprint: All 5 Questions Compulsory &bull; Total 15 Marks</p>
+    </div>
+  </div>
+
+  <div class="exam-section-body">
+
+    <!-- Q1: Hermitian Matrix Proof -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q1.</span> Prove that the given matrix $A$ is Hermitian ($A^\theta = A$):</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated in 2017 &amp; 2018</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <p class="exam-q-desc">Prove that $(\overline{A})^T = A$ for each of the following matrices:</p>
+      <div class="exam-subpart">
+        <span class="exam-subpart-title">Part (a) · Dec 2018 ($2 \times 2$ Matrix)</span>
+        $$A = \begin{bmatrix} 3 & 1+2i \\ 1-2i & 2 \end{bmatrix}$$
+      </div>
+      <div class="exam-subpart">
+        <span class="exam-subpart-title">Part (b) · Dec 2017 ($3 \times 3$ Matrix)</span>
+        $$A = \begin{bmatrix} 1 & 1-i & 2 \\ 1+i & 3 & i \\ 2 & -i & 0 \end{bmatrix}$$
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Step-by-Step Solution:</div>
+        <p><strong>Definition:</strong> A square matrix $A$ is called a <strong>Hermitian Matrix</strong> if its conjugate transpose equals the matrix itself, i.e., $A^\theta = (\overline{A})^T = A$.</p>
+        
+        <p class="exam-ans-step"><strong>Part (a) Solution ($2 \times 2$ Matrix):</strong></p>
+        <p>Given matrix $A$:</p>
+        $$A = \begin{bmatrix} 3 & 1+2i \\ 1-2i & 2 \end{bmatrix}$$
+        <p>1. Take complex conjugate $\overline{A}$ (replace $i$ with $-i$):</p>
+        $$\overline{A} = \begin{bmatrix} 3 & 1-2i \\ 1+2i & 2 \end{bmatrix}$$
+        <p>2. Take transpose $(\overline{A})^T$ (interchange rows and columns):</p>
+        $$A^\theta = (\overline{A})^T = \begin{bmatrix} 3 & 1+2i \\ 1-2i & 2 \end{bmatrix} = A$$
+        <p>Since $A^\theta = A$, matrix $A$ is <strong>Hermitian</strong>. Hence proved.</p>
+
+        <p class="exam-ans-step" style="margin-top: 14px;"><strong>Part (b) Solution ($3 \times 3$ Matrix):</strong></p>
+        <p>Given matrix $A$:</p>
+        $$A = \begin{bmatrix} 1 & 1-i & 2 \\ 1+i & 3 & i \\ 2 & -i & 0 \end{bmatrix}$$
+        <p>1. Take complex conjugate $\overline{A}$:</p>
+        $$\overline{A} = \begin{bmatrix} 1 & 1+i & 2 \\ 1-i & 3 & -i \\ 2 & i & 0 \end{bmatrix}$$
+        <p>2. Take transpose $(\overline{A})^T$:</p>
+        $$A^\theta = (\overline{A})^T = \begin{bmatrix} 1 & 1-i & 2 \\ 1+i & 3 & i \\ 2 & -i & 0 \end{bmatrix} = A$$
+        <p>Since $A^\theta = A$, matrix $A$ is <strong>Hermitian</strong>. Hence proved.</p>
+      </div>
+    </div>
+
+    <!-- Q2: Limit Non-existence with Modulus -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q2.</span> Show that $\lim_{x \to 2} \frac{|x - 2|}{x - 2}$ does not exist.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated in 2015, 2018, 2019 (3 Times)</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <p class="exam-q-desc">
+        Evaluate the Left Hand Limit (LHL) and Right Hand Limit (RHL) as $x \to 2$ to show that they are not equal.
+      </p>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Step-by-Step Solution:</div>
+        <p>By definition of absolute value function:</p>
+        $$|x - 2| = \begin{cases} +(x - 2), & \text{when } x \gt 2 \\ -(x - 2), & \text{when } x \lt 2 \end{cases}$$
+
+        <p class="exam-ans-step"><strong>1. Left Hand Limit (LHL) at $x = 2$:</strong></p>
+        <p>Substitute $x = 2 - h$, where $h > 0$ and $h \to 0$:</p>
+        $$\text{LHL} = \lim_{x \to 2^-} \frac{|x - 2|}{x - 2} = \lim_{h \to 0} \frac{|(2 - h) - 2|}{(2 - h) - 2} = \lim_{h \to 0} \frac{|-h|}{-h} = \lim_{h \to 0} \frac{h}{-h} = -1$$
+
+        <p class="exam-ans-step"><strong>2. Right Hand Limit (RHL) at $x = 2$:</strong></p>
+        <p>Substitute $x = 2 + h$, where $h > 0$ and $h \to 0$:</p>
+        $$\text{RHL} = \lim_{x \to 2^+} \frac{|x - 2|}{x - 2} = \lim_{h \to 0} \frac{|(2 + h) - 2|}{(2 + h) - 2} = \lim_{h \to 0} \frac{|h|}{h} = \lim_{h \to 0} \frac{h}{h} = +1$$
+
+        <p class="exam-ans-step"><strong>Conclusion:</strong></p>
+        <p>Since $\text{LHL} \neq \text{RHL}$ ($-1 \neq +1$), the limit does not exist:</p>
+        $$\lim_{x \to 2} \frac{|x - 2|}{x - 2} \quad \text{does not exist. Hence proved.}$$
+      </div>
+    </div>
+
+    <!-- Q3: Rank of Matrix Definition -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q3.</span> Define rank of a matrix with an example.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">Repeated in 2016 &amp; 2019</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <p class="exam-q-desc">
+        State the definition of matrix rank in terms of non-zero minors and linearly independent row vectors.
+      </p>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Step-by-Step Solution:</div>
+        <p><strong>Definition:</strong> The <strong>rank of a matrix</strong> $A$, denoted by $\rho(A)$, is defined as the maximum order of any non-zero minor of matrix $A$.</p>
+        <p>A matrix $A$ is of rank $r$ if:</p>
+        <ol>
+          <li>There exists at least one non-zero minor of order $r$.</li>
+          <li>Every minor of order $(r + 1)$ and higher (if any exists) is equal to zero.</li>
+        </ol>
+
+        <p class="exam-ans-step"><strong>Example:</strong></p>
+        <p>Consider the matrix $A$ of order $2 \times 3$:</p>
+        $$A = \begin{bmatrix} 1 & 2 & 3 \\ 2 & 4 & 6 \end{bmatrix}$$
+        <p>All possible $2 \times 2$ minors are:</p>
+        $$\begin{vmatrix} 1 & 2 \\ 2 & 4 \end{vmatrix} = 4 - 4 = 0, \quad \begin{vmatrix} 2 & 3 \\ 4 & 6 \end{vmatrix} = 12 - 12 = 0, \quad \begin{vmatrix} 1 & 3 \\ 2 & 6 \end{vmatrix} = 6 - 6 = 0$$
+        <p>Since all order 2 minors are zero, but there are non-zero order 1 minors (e.g. $|1| = 1 \neq 0$):</p>
+        $$\text{Rank}(A) = \rho(A) = 1$$
+      </div>
+    </div>
+
+    <!-- Q4: Beta and Gamma Functions -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q4.</span> Define Beta and Gamma functions and write their relation formula.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated in 2015 &amp; 2017</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <p class="exam-q-desc">
+        State the definite integral formulas for $\beta(m, n)$ and $\Gamma(n)$, and give their fundamental relationship:
+        $$\beta(m, n) = \frac{\Gamma(m)\,\Gamma(n)}{\Gamma(m+n)}$$
+      </p>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Step-by-Step Solution:</div>
+        <p class="exam-ans-step"><strong>1. Beta Function $\beta(m, n)$ (First Eulerian Integral):</strong></p>
+        <p>For $m > 0$ and $n > 0$, the Beta function is defined by the definite integral:</p>
+        $$\beta(m, n) = \int_0^1 x^{m-1} (1 - x)^{n-1} \, dx$$
+        <p><em>Symmetry:</em> $\beta(m, n) = \beta(n, m)$.</p>
+
+        <p class="exam-ans-step"><strong>2. Gamma Function $\Gamma(n)$ (Second Eulerian Integral):</strong></p>
+        <p>For $n > 0$, the Gamma function is defined by the improper integral:</p>
+        $$\Gamma(n) = \int_0^\infty e^{-x} x^{n-1} \, dx$$
+        <p><em>Key values:</em> $\Gamma(n+1) = n\,\Gamma(n) = n!$ (for integers $n \ge 0$) and $\Gamma\left(\frac{1}{2}\right) = \sqrt{\pi}$.</p>
+
+        <p class="exam-ans-step"><strong>3. Fundamental Relation Formula:</strong></p>
+        $$\beta(m, n) = \frac{\Gamma(m) \, \Gamma(n)}{\Gamma(m + n)}$$
+      </div>
+    </div>
+
+    <!-- Q5: Nilpotent Matrix -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q5.</span> Show that $A = \begin{bmatrix} ab & b^2 \\ -a^2 & -ab \end{bmatrix}$ is a nilpotent matrix of order 2.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">Dec 2016</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <p class="exam-q-desc">
+        Compute the matrix product $A^2 = A \cdot A$ and verify that $A^2 = O$.
+      </p>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Step-by-Step Solution:</div>
+        <p><strong>Definition:</strong> A square matrix $A$ is nilpotent of order 2 if $A^2 = O$ (null matrix) and $A \neq O$.</p>
+        <p>Given matrix $A$:</p>
+        $$A = \begin{bmatrix} ab & b^2 \\ -a^2 & -ab \end{bmatrix}$$
+
+        <p class="exam-ans-step"><strong>Compute $A^2 = A \cdot A$:</strong></p>
+        $$A^2 = \begin{bmatrix} ab & b^2 \\ -a^2 & -ab \end{bmatrix} \begin{bmatrix} ab & b^2 \\ -a^2 & -ab \end{bmatrix}$$
+        <p>Multiplying rows by columns:</p>
+        <ul>
+          <li>Row 1 $\times$ Col 1: $(ab)(ab) + (b^2)(-a^2) = a^2 b^2 - a^2 b^2 = 0$</li>
+          <li>Row 1 $\times$ Col 2: $(ab)(b^2) + (b^2)(-ab) = ab^3 - ab^3 = 0$</li>
+          <li>Row 2 $\times$ Col 1: $(-a^2)(ab) + (-ab)(-a^2) = -a^3 b + a^3 b = 0$</li>
+          <li>Row 2 $\times$ Col 2: $(-a^2)(b^2) + (-ab)(-ab) = -a^2 b^2 + a^2 b^2 = 0$</li>
+        </ul>
+        $$A^2 = \begin{bmatrix} 0 & 0 \\ 0 & 0 \end{bmatrix} = O$$
+        <p>Since $A^2 = O$, matrix $A$ is a <strong>nilpotent matrix of order 2</strong>. Hence proved.</p>
+      </div>
+    </div>
+
+    <!-- Q6: Matrix Equation -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q6.</span> Find a matrix $X$ such that $2A + B + X = 0$, where:</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">Dec 2015</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-subpart">
+        <span class="exam-subpart-title">Given Matrices</span>
+        $$A = \begin{bmatrix} -1 & 2 \\ 3 & 4 \end{bmatrix}, \quad B = \begin{bmatrix} 3 & -2 \\ 1 & 5 \end{bmatrix}$$
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Step-by-Step Solution:</div>
+        <p>From the given equation: $2A + B + X = O \implies X = -(2A + B)$</p>
+
+        <p class="exam-ans-step"><strong>Step 1: Compute scalar multiplication $2A$:</strong></p>
+        $$2A = 2 \begin{bmatrix} -1 & 2 \\ 3 & 4 \end{bmatrix} = \begin{bmatrix} -2 & 4 \\ 6 & 8 \end{bmatrix}$$
+
+        <p class="exam-ans-step"><strong>Step 2: Add matrix $B$ to $2A$:</strong></p>
+        $$2A + B = \begin{bmatrix} -2 & 4 \\ 6 & 8 \end{bmatrix} + \begin{bmatrix} 3 & -2 \\ 1 & 5 \end{bmatrix} = \begin{bmatrix} -2+3 & 4+(-2) \\ 6+1 & 8+5 \end{bmatrix} = \begin{bmatrix} 1 & 2 \\ 7 & 13 \end{bmatrix}$$
+
+        <p class="exam-ans-step"><strong>Step 3: Solve for $X$:</strong></p>
+        $$X = -(2A + B) = -\begin{bmatrix} 1 & 2 \\ 7 & 13 \end{bmatrix} = \begin{bmatrix} -1 & -2 \\ -7 & -13 \end{bmatrix}$$
+        <p><strong>Final Answer:</strong> $\mathbf{X = \begin{bmatrix} -1 & -2 \\ -7 & -13 \end{bmatrix}}$</p>
+      </div>
+    </div>
+
+    <!-- Q7: Logarithmic Differentiation -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q7.</span> Differentiate the variable-power functions with respect to $x$:</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated in 2015 &amp; 2019</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <p class="exam-q-desc">Find $\frac{dy}{dx}$ using logarithmic differentiation for each case:</p>
+      <div class="exam-subpart">
+        <span class="exam-subpart-title">Part (a) · Nov 2019</span>
+        $$y = (\sin x)^x$$
+      </div>
+      <div class="exam-subpart">
+        <span class="exam-subpart-title">Part (b) · Dec 2015</span>
+        $$y = x^{x^2}$$
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Step-by-Step Solution:</div>
+
+        <p class="exam-ans-step"><strong>Part (a) · Nov 2019: $y = (\sin x)^x$</strong></p>
+        <p>Taking natural logarithm ($\log$) on both sides:</p>
+        $$\log y = \log\left[(\sin x)^x\right] = x \log(\sin x)$$
+        <p>Differentiating both sides with respect to $x$ using the Product Rule:</p>
+        $$\frac{1}{y} \frac{dy}{dx} = \frac{d}{dx}(x) \cdot \log(\sin x) + x \cdot \frac{d}{dx}[\log(\sin x)]$$
+        $$\frac{1}{y} \frac{dy}{dx} = 1 \cdot \log(\sin x) + x \cdot \left(\frac{1}{\sin x} \cdot \cos x\right)$$
+        $$\frac{1}{y} \frac{dy}{dx} = \log(\sin x) + x \cot x$$
+        $$\frac{dy}{dx} = y \left[\log(\sin x) + x \cot x\right]$$
+        <p>Substituting $y = (\sin x)^x$:</p>
+        $$\mathbf{\frac{dy}{dx} = (\sin x)^x \left[\log(\sin x) + x \cot x\right]}$$
+
+        <p class="exam-ans-step" style="margin-top: 14px;"><strong>Part (b) · Dec 2015: $y = x^{x^2}$</strong></p>
+        <p>Taking natural logarithm ($\log$) on both sides:</p>
+        $$\log y = \log\left(x^{x^2}\right) = x^2 \log x$$
+        <p>Differentiating both sides with respect to $x$ using the Product Rule:</p>
+        $$\frac{1}{y} \frac{dy}{dx} = \frac{d}{dx}(x^2) \cdot \log x + x^2 \cdot \frac{d}{dx}(\log x)$$
+        $$\frac{1}{y} \frac{dy}{dx} = 2x \log x + x^2 \cdot \frac{1}{x} = 2x \log x + x = x(2\log x + 1)$$
+        $$\frac{dy}{dx} = y \cdot x(2\log x + 1)$$
+        <p>Substituting $y = x^{x^2}$:</p>
+        $$\mathbf{\frac{dy}{dx} = x^{x^2} \cdot x(2\log x + 1) = x^{x^2 + 1} (2\log x + 1)}$$
+      </div>
+    </div>
+
+    <!-- Q8: Rolle's Theorem -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q8.</span> Verify Rolle's theorem for $f(x) = 2x^3 + x^2 - 4x - 2$ on $[-\sqrt{2}, \sqrt{2}]$.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">Nov 2019</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <p class="exam-q-desc">
+        Verify that $f(x)$ is continuous on $[-\sqrt{2}, \sqrt{2}]$, differentiable on $(-\sqrt{2}, \sqrt{2})$, satisfies $f(-\sqrt{2}) = f(\sqrt{2})$, and find $c \in (-\sqrt{2}, \sqrt{2})$ such that $f'(c) = 0$.
+      </p>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Step-by-Step Solution:</div>
+        <p>Given polynomial: $f(x) = 2x^3 + x^2 - 4x - 2$ on $[-\sqrt{2}, \sqrt{2}]$.</p>
+
+        <p class="exam-ans-step"><strong>Step 1: Check the 3 Conditions of Rolle's Theorem:</strong></p>
+        <ol>
+          <li><strong>Continuity:</strong> Being a polynomial function, $f(x)$ is continuous on $[-\sqrt{2}, \sqrt{2}]$.</li>
+          <li><strong>Differentiability:</strong> Derivative $f'(x) = 6x^2 + 2x - 4$ exists for all $x \in (-\sqrt{2}, \sqrt{2})$, so $f(x)$ is differentiable on $(-\sqrt{2}, \sqrt{2})$.</li>
+          <li><strong>Equal Endpoint Values:</strong>
+            $$f(-\sqrt{2}) = 2(-\sqrt{2})^3 + (-\sqrt{2})^2 - 4(-\sqrt{2}) - 2 = -4\sqrt{2} + 2 + 4\sqrt{2} - 2 = 0$$
+            $$f(\sqrt{2}) = 2(\sqrt{2})^3 + (\sqrt{2})^2 - 4(\sqrt{2}) - 2 = 4\sqrt{2} + 2 - 4\sqrt{2} - 2 = 0$$
+            $$\implies f(-\sqrt{2}) = f(\sqrt{2}) = 0$$
+          </li>
+        </ol>
+
+        <p class="exam-ans-step"><strong>Step 2: Find $c \in (-\sqrt{2}, \sqrt{2})$ such that $f'(c) = 0$:</strong></p>
+        $$f'(c) = 6c^2 + 2c - 4 = 0$$
+        <p>Dividing by 2:</p>
+        $$3c^2 + c - 2 = 0 \implies 3c^2 + 3c - 2c - 2 = 0$$
+        $$(3c - 2)(c + 1) = 0 \implies c = \frac{2}{3} \quad \text{or} \quad c = -1$$
+
+        <p class="exam-ans-step"><strong>Conclusion:</strong></p>
+        <p>Both $c = -1$ and $c = \frac{2}{3} \approx 0.67$ lie strictly within the open interval $(-\sqrt{2}, \sqrt{2}) \approx (-1.414, 1.414)$. Hence, <strong>Rolle's theorem is verified</strong>.</p>
+      </div>
+    </div>
+
+    <!-- Q9: Asymptotes of Parabola -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q9.</span> Show that the parabola $y^2 - 4ax = 0$ has no asymptote.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">Dec 2017</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <p class="exam-q-desc">
+        Examine the highest degree terms to prove that no parallel or oblique asymptotes exist for $y^2 = 4ax$.
+      </p>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Step-by-Step Solution:</div>
+        <p>Given curve equation: $y^2 - 4ax = 0$ (Degree 2 curve).</p>
+
+        <p class="exam-ans-step"><strong>1. Asymptotes Parallel to Axes:</strong></p>
+        <ul>
+          <li><strong>Parallel to y-axis:</strong> The highest power of $y$ is $y^2$, and its coefficient is $1$ (a non-zero constant). Equating to zero yields $1 = 0$, which is impossible. Hence, <strong>no asymptote parallel to y-axis</strong>.</li>
+          <li><strong>Parallel to x-axis:</strong> The highest power of $x$ is $x^1$, and its coefficient is $-4a$. Equating to zero yields $-4a = 0$, which is impossible since $a \neq 0$ for a real parabola. Hence, <strong>no asymptote parallel to x-axis</strong>.</li>
+        </ul>
+
+        <p class="exam-ans-step"><strong>2. Oblique Asymptotes ($y = mx + c$):</strong></p>
+        <p>Substitute $y = mx + c$ into $y^2 - 4ax = 0$:</p>
+        $$(mx + c)^2 - 4ax = 0 \implies m^2 x^2 + (2mc - 4a)x + c^2 = 0$$
+        <p>For an oblique asymptote, the coefficients of the two highest powers of $x$ must vanish simultaneously:</p>
+        <ul>
+          <li>Coeff of $x^2 = 0 \implies m^2 = 0 \implies m = 0$.</li>
+          <li>With $m = 0$, the coeff of $x$ becomes $2(0)c - 4a = -4a \neq 0$ (does not vanish).</li>
+        </ul>
+        <p>Hence, no oblique asymptote exists.</p>
+        <p><strong>Conclusion:</strong> The parabola $y^2 = 4ax$ has <strong>no asymptotes</strong>. Hence proved.</p>
+      </div>
+    </div>
+
+    <!-- Q10: Dot and Cross Product Formulas -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q10.</span> Write the formulas for scalar dot product $\vec{a} \cdot \vec{b}$ and vector cross product $\vec{a} \times \vec{b}$.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated in 2017, 2018, 2019</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <p class="exam-q-desc">
+        State both geometric and coordinate component formulas along with definitions of $\theta$ and unit normal vector $\hat{n}$.
+      </p>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Step-by-Step Solution:</div>
+        <p>Let $\vec{a} = a_1\hat{i} + a_2\hat{j} + a_3\hat{k}$ and $\vec{b} = b_1\hat{i} + b_2\hat{j} + b_3\hat{k}$, with angle $\theta$ between them ($0 \le \theta \le \pi$).</p>
+
+        <p class="exam-ans-step"><strong>1. Scalar (Dot) Product $\vec{a} \cdot \vec{b}$ (Scalar Quantity):</strong></p>
+        <ul>
+          <li><strong>Geometric Formula:</strong>
+            $$\vec{a} \cdot \vec{b} = |\vec{a}| \, |\vec{b}| \cos\theta$$
+          </li>
+          <li><strong>Cartesian Component Form:</strong>
+            $$\vec{a} \cdot \vec{b} = a_1 b_1 + a_2 b_2 + a_3 b_3$$
+          </li>
+          <li><em>Perpendicular Condition:</em> $\vec{a} \cdot \vec{b} = 0 \iff \vec{a} \perp \vec{b}$ (for non-zero vectors).</li>
+        </ul>
+
+        <p class="exam-ans-step"><strong>2. Vector (Cross) Product $\vec{a} \times \vec{b}$ (Vector Quantity):</strong></p>
+        <ul>
+          <li><strong>Geometric Formula:</strong>
+            $$\vec{a} \times \vec{b} = |\vec{a}| \, |\vec{b}| \sin\theta \, \hat{n}$$
+            where $\hat{n}$ is a unit normal vector perpendicular to both $\vec{a}$ and $\vec{b}$ according to the right-hand thumb rule.
+          </li>
+          <li><strong>Determinant Form:</strong>
+            $$\vec{a} \times \vec{b} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ a_1 & a_2 & a_3 \\ b_1 & b_2 & b_3 \end{vmatrix} = \hat{i}(a_2 b_3 - a_3 b_2) - \hat{j}(a_1 b_3 - a_3 b_1) + \hat{k}(a_1 b_2 - a_2 b_1)$$
+          </li>
+          <li><em>Parallel Condition:</em> $\vec{a} \times \vec{b} = \vec{0} \iff \vec{a} \parallel \vec{b}$.</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- =========================================================================
+     SECTION B : 7.5 MARKS SHORT ANSWER QUESTIONS
+     ========================================================================= -->
+<div class="exam-section-card" id="section-b">
+  <div class="exam-section-header exam-section-header-cyan">
+    <div class="exam-section-header-inner">
+      <span class="exam-section-badge badge-cyan">SECTION B &bull; 7.5 MARKS EACH</span>
+      <h3 class="exam-section-title">Short Analytical &amp; Step-by-Step Problems</h3>
+      <p class="exam-section-rule">CCSU Examination Blueprint: Attempt Any 2 Out of 3 Questions &bull; Total 15 Marks</p>
+    </div>
+  </div>
+
+  <div class="exam-section-body">
+
+    <!-- Q11: Continuity & Unknown Parameters -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q11.</span> Determine the values of constants $a, b, c$ for which $f(x)$ is continuous at $x = 0$:</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated in 2015, 2017, 2018</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <p class="exam-q-desc">Given the piecewise function:</p>
+      <div class="exam-subpart">
+        $$f(x) = \begin{cases} \dfrac{\sin(a+1)x + \sin x}{x}, & x \lt 0 \\[8px] c, & x = 0 \\[8px] \dfrac{(x + b x^2)^{1/2} - x^{1/2}}{b x^{3/2}}, & x \gt 0 \end{cases}$$
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Step-by-Step Solution:</div>
+        <p>For $f(x)$ to be continuous at $x = 0$, we must have:</p>
+        $$\text{LHL} = \text{RHL} = f(0) = c$$
+
+        <p class="exam-ans-step"><strong>Step 1: Compute Left Hand Limit ($\text{LHL}$ as $x \to 0^-$):</strong></p>
+        $$\text{LHL} = \lim_{x \to 0^-} \frac{\sin(a+1)x + \sin x}{x} = \lim_{x \to 0^-} \left[\frac{\sin(a+1)x}{x} + \frac{\sin x}{x}\right]$$
+        <p>Using the standard limit $\lim_{\theta \to 0} \frac{\sin k\theta}{\theta} = k$:</p>
+        $$\text{LHL} = (a + 1) + 1 = a + 2$$
+
+        <p class="exam-ans-step"><strong>Step 2: Compute Right Hand Limit ($\text{RHL}$ as $x \to 0^+$):</strong></p>
+        $$\text{RHL} = \lim_{x \to 0^+} \frac{(x + b x^2)^{1/2} - x^{1/2}}{b x^{3/2}} = \lim_{x \to 0^+} \frac{\sqrt{x}\left(\sqrt{1 + bx} - 1\right)}{b x \sqrt{x}} = \lim_{x \to 0^+} \frac{\sqrt{1 + bx} - 1}{bx}$$
+        <p>Rationalize the numerator by multiplying and dividing by $(\sqrt{1 + bx} + 1)$:</p>
+        $$\text{RHL} = \lim_{x \to 0^+} \frac{(1 + bx) - 1}{bx(\sqrt{1 + bx} + 1)} = \lim_{x \to 0^+} \frac{bx}{bx(\sqrt{1 + bx} + 1)} = \lim_{x \to 0^+} \frac{1}{\sqrt{1 + bx} + 1}$$
+        $$\text{RHL} = \frac{1}{\sqrt{1 + 0} + 1} = \frac{1}{2}$$
+
+        <p class="exam-ans-step"><strong>Step 3: Equate Limits to $f(0)$:</strong></p>
+        <ul>
+          <li>From $f(0) = c = \text{RHL} \implies \mathbf{c = \frac{1}{2}}$</li>
+          <li>From $\text{LHL} = c \implies a + 2 = \frac{1}{2} \implies \mathbf{a = -\frac{3}{2}}$</li>
+          <li>Constant $b$ cancels out during simplification, so $\mathbf{b \in \mathbb{R} \setminus \{0\}}$ (any non-zero real number).</li>
+        </ul>
+        <p><strong>Final Answer:</strong> $\mathbf{a = -\frac{3}{2}, \quad c = \frac{1}{2}, \quad b \neq 0}$</p>
+      </div>
+    </div>
+
+    <!-- Q12: Cramer's Rule -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q12.</span> Solve the linear system of equations using Cramer's Rule:</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated in 2015 &amp; 2019</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <p class="exam-q-desc">Apply Cramer's determinant method ($x = D_1/D$, $y = D_2/D$, $z = D_3/D$):</p>
+      <div class="exam-subpart">
+        <span class="exam-subpart-title">Part (a) · Nov 2019 ($2 \times 2$ System)</span>
+        $$\begin{aligned} 3x + 4y &= 5 \\ x - y &= -3 \end{aligned}$$
+      </div>
+      <div class="exam-subpart">
+        <span class="exam-subpart-title">Part (b) · Dec 2015 ($3 \times 3$ System)</span>
+        $$\begin{aligned} 6x + y - 3z &= 5 \\ x + 3y - 2z &= 5 \\ 2x + y + 4z &= 8 \end{aligned}$$
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Step-by-Step Solution:</div>
+
+        <p class="exam-ans-step"><strong>Part (a) Solution ($2 \times 2$ System · Nov 2019):</strong></p>
+        <p>1. Coefficient determinant $D$:</p>
+        $$D = \begin{vmatrix} 3 & 4 \\ 1 & -1 \end{vmatrix} = 3(-1) - 4(1) = -3 - 4 = -7 \neq 0$$
+        <p>2. Determinants $D_1$ and $D_2$:</p>
+        $$D_1 = \begin{vmatrix} 5 & 4 \\ -3 & -1 \end{vmatrix} = 5(-1) - 4(-3) = -5 + 12 = 7$$
+        $$D_2 = \begin{vmatrix} 3 & 5 \\ 1 & -3 \end{vmatrix} = 3(-3) - 5(1) = -9 - 5 = -14$$
+        <p>3. By Cramer's Rule:</p>
+        $$x = \frac{D_1}{D} = \frac{7}{-7} = -1, \quad y = \frac{D_2}{D} = \frac{-14}{-7} = 2$$
+        <p><strong>Result:</strong> $\mathbf{x = -1, \quad y = 2}$</p>
+
+        <p class="exam-ans-step" style="margin-top: 14px;"><strong>Part (b) Solution ($3 \times 3$ System · Dec 2015):</strong></p>
+        <p>1. Coefficient determinant $D$:</p>
+        $$D = \begin{vmatrix} 6 & 1 & -3 \\ 1 & 3 & -2 \\ 2 & 1 & 4 \end{vmatrix} = 6(12 - (-2)) - 1(4 - (-4)) - 3(1 - 6) = 6(14) - 1(8) - 3(-5) = 84 - 8 + 15 = 91 \neq 0$$
+        <p>2. Compute $D_1, D_2, D_3$:</p>
+        $$D_1 = \begin{vmatrix} 5 & 1 & -3 \\ 5 & 3 & -2 \\ 8 & 1 & 4 \end{vmatrix} = 5(14) - 1(20+16) - 3(5-24) = 70 - 36 + 57 = 91$$
+        $$D_2 = \begin{vmatrix} 6 & 5 & -3 \\ 1 & 5 & -2 \\ 2 & 8 & 4 \end{vmatrix} = 6(20+16) - 5(4+4) - 3(8-10) = 216 - 40 + 6 = 182$$
+        $$D_3 = \begin{vmatrix} 6 & 1 & 5 \\ 1 & 3 & 5 \\ 2 & 1 & 8 \end{vmatrix} = 6(24-5) - 1(8-10) + 5(1-6) = 114 + 2 - 25 = 91$$
+        <p>3. By Cramer's Rule:</p>
+        $$x = \frac{D_1}{D} = \frac{91}{91} = 1, \quad y = \frac{D_2}{D} = \frac{182}{91} = 2, \quad z = \frac{D_3}{D} = \frac{91}{91} = 1$$
+        <p><strong>Result:</strong> $\mathbf{x = 1, \quad y = 2, \quad z = 1}$</p>
+      </div>
+    </div>
+
+    <!-- Q13: Rank of Matrix by Echelon Form -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q13.</span> Find the rank of the matrix $A$ by reducing it to Echelon form:</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">Repeated in 2016 &amp; 2019</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-subpart">
+        <span class="exam-subpart-title">Matrix $A$</span>
+        $$A = \begin{bmatrix} 1 & 2 & 3 & 2 \\ 2 & 3 & 5 & 1 \\ 1 & 3 & 4 & 5 \end{bmatrix}$$
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Step-by-Step Solution:</div>
+        <p class="exam-ans-step"><strong>Step 1: Make elements in Column 1 below $a_{11}$ equal to 0:</strong></p>
+        <p>Apply elementary row operations $R_2 \to R_2 - 2R_1$ and $R_3 \to R_3 - R_1$:</p>
+        $$A \sim \begin{bmatrix} 1 & 2 & 3 & 2 \\ 2 - 2(1) & 3 - 2(2) & 5 - 2(3) & 1 - 2(2) \\ 1 - 1 & 3 - 2 & 4 - 3 & 5 - 2 \end{bmatrix} = \begin{bmatrix} 1 & 2 & 3 & 2 \\ 0 & -1 & -1 & -3 \\ 0 & 1 & 1 & 3 \end{bmatrix}$$
+
+        <p class="exam-ans-step"><strong>Step 2: Make elements in Column 2 below $a_{22}$ equal to 0:</strong></p>
+        <p>Apply $R_3 \to R_3 + R_2$:</p>
+        $$A \sim \begin{bmatrix} 1 & 2 & 3 & 2 \\ 0 & -1 & -1 & -3 \\ 0 & 1+(-1) & 1+(-1) & 3+(-3) \end{bmatrix} = \begin{bmatrix} 1 & 2 & 3 & 2 \\ 0 & -1 & -1 & -3 \\ 0 & 0 & 0 & 0 \end{bmatrix}$$
+
+        <p class="exam-ans-step"><strong>Conclusion:</strong></p>
+        <p>The matrix is now in Row Echelon Form. The number of non-zero rows is $2$.</p>
+        <p><strong>Final Answer:</strong> $\mathbf{\text{Rank}(A) = \rho(A) = 2}$</p>
+      </div>
+    </div>
+
+    <!-- Q14: Inverse of Matrix by Row Operations -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q14.</span> Find the inverse of the matrix $A$ using elementary row transformations:</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">Dec 2015</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-subpart">
+        <span class="exam-subpart-title">Matrix $A$</span>
+        $$A = \begin{bmatrix} 5 & 2 \\ 2 & 1 \end{bmatrix}$$
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Step-by-Step Solution:</div>
+        <p>Write the matrix equation $A = I_2 A$:</p>
+        $$\begin{bmatrix} 5 & 2 \\ 2 & 1 \end{bmatrix} = \begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix} A$$
+
+        <p class="exam-ans-step"><strong>Step 1: Apply $R_1 \to R_1 - 2R_2$:</strong></p>
+        $$\begin{bmatrix} 5 - 2(2) & 2 - 2(1) \\ 2 & 1 \end{bmatrix} = \begin{bmatrix} 1 - 2(0) & 0 - 2(1) \\ 0 & 1 \end{bmatrix} A \implies \begin{bmatrix} 1 & 0 \\ 2 & 1 \end{bmatrix} = \begin{bmatrix} 1 & -2 \\ 0 & 1 \end{bmatrix} A$$
+
+        <p class="exam-ans-step"><strong>Step 2: Apply $R_2 \to R_2 - 2R_1$:</strong></p>
+        $$\begin{bmatrix} 1 & 0 \\ 2 - 2(1) & 1 - 2(0) \end{bmatrix} = \begin{bmatrix} 1 & -2 \\ 0 - 2(1) & 1 - 2(-2) \end{bmatrix} A \implies \begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix} = \begin{bmatrix} 1 & -2 \\ -2 & 5 \end{bmatrix} A$$
+
+        <p class="exam-ans-step"><strong>Conclusion:</strong></p>
+        <p>Since the left side has been reduced to the identity matrix $I$, the transformation yields $I = A^{-1} A$.</p>
+        <p><strong>Final Answer:</strong> $\mathbf{A^{-1} = \begin{bmatrix} 1 & -2 \\ -2 & 5 \end{bmatrix}}$</p>
+      </div>
+    </div>
+
+    <!-- Q15: Partial Fractions Integration -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q15.</span> Evaluate the partial fractions integral:</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Exact Repeat in 2015 &amp; 2016</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-subpart">
+        $$\int \frac{3x + 1}{(x - 1)^2 (x + 3)} \, dx$$
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Step-by-Step Solution:</div>
+        <p class="exam-ans-step"><strong>Step 1: Partial Fraction Decomposition:</strong></p>
+        $$\frac{3x + 1}{(x - 1)^2 (x + 3)} = \frac{A}{x - 1} + \frac{B}{(x - 1)^2} + \frac{C}{x + 3}$$
+        <p>Multiplying both sides by $(x - 1)^2 (x + 3)$:</p>
+        $$3x + 1 = A(x - 1)(x + 3) + B(x + 3) + C(x - 1)^2$$
+
+        <p class="exam-ans-step"><strong>Step 2: Find Constants $A, B, C$:</strong></p>
+        <ul>
+          <li>Put $x = 1$: $3(1) + 1 = B(1 + 3) \implies 4 = 4B \implies \mathbf{B = 1}$</li>
+          <li>Put $x = -3$: $3(-3) + 1 = C(-3 - 1)^2 \implies -8 = 16C \implies \mathbf{C = -\frac{1}{2}}$</li>
+          <li>Equating coefficients of $x^2$: $0 = A + C \implies A = -C \implies \mathbf{A = \frac{1}{2}}$</li>
+        </ul>
+
+        <p class="exam-ans-step"><strong>Step 3: Integrate term by term:</strong></p>
+        $$\int \frac{3x + 1}{(x - 1)^2 (x + 3)} \, dx = \frac{1}{2} \int \frac{dx}{x - 1} + \int (x - 1)^{-2} \, dx - \frac{1}{2} \int \frac{dx}{x + 3}$$
+        $$= \frac{1}{2} \log|x - 1| - \frac{1}{x - 1} - \frac{1}{2} \log|x + 3| + C$$
+        $$= \mathbf{\frac{1}{2} \log\left|\frac{x - 1}{x + 3}\right| - \frac{1}{x - 1} + C}$$
+      </div>
+    </div>
+
+    <!-- Q16: Reduction Formula -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q16.</span> Prove the reduction formula for $\tan^n x$ and deduce $I_5$:</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">Dec 2016</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <p class="exam-q-desc">
+        If $I_n = \int_0^{\pi/4} \tan^n x \, dx$, prove that $I_{n-1} + I_{n+1} = \frac{1}{n}$, and deduce the exact value of $I_5$.
+      </p>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Step-by-Step Solution:</div>
+        <p class="exam-ans-step"><strong>Step 1: Derivation of the Reduction Formula:</strong></p>
+        <p>Given $I_n = \int_0^{\pi/4} \tan^n x \, dx$. Write $\tan^n x = \tan^{n-2} x \cdot \tan^2 x = \tan^{n-2} x (\sec^2 x - 1)$:</p>
+        $$I_n = \int_0^{\pi/4} \tan^{n-2} x \sec^2 x \, dx - \int_0^{\pi/4} \tan^{n-2} x \, dx$$
+        <p>Notice that the second integral is $I_{n-2}$. For the first integral, let $u = \tan x \implies du = \sec^2 x \, dx$:</p>
+        $$\int_0^{\pi/4} \tan^{n-2} x \sec^2 x \, dx = \left[ \frac{\tan^{n-1} x}{n - 1} \right]_0^{\pi/4} = \frac{1^{n-1} - 0}{n - 1} = \frac{1}{n - 1}$$
+        <p>Therefore:</p>
+        $$I_n = \frac{1}{n - 1} - I_{n-2} \implies I_n + I_{n-2} = \frac{1}{n - 1}$$
+        <p>Replacing $n$ by $n + 1$:</p>
+        $$\mathbf{I_{n+1} + I_{n-1} = \frac{1}{n}} \quad \text{(Hence proved)}$$
+
+        <p class="exam-ans-step"><strong>Step 2: Deduce $I_5$:</strong></p>
+        <p>Using $I_n + I_{n-2} = \frac{1}{n-1}$:</p>
+        <ul>
+          <li>For $n = 5$: $I_5 + I_3 = \frac{1}{4} \implies I_5 = \frac{1}{4} - I_3$</li>
+          <li>For $n = 3$: $I_3 + I_1 = \frac{1}{2} \implies I_3 = \frac{1}{2} - I_1$</li>
+          <li>Now calculate $I_1$:
+            $$I_1 = \int_0^{\pi/4} \tan x \, dx = \left[ \log|\sec x| \right]_0^{\pi/4} = \log\sqrt{2} - \log 1 = \frac{1}{2}\log 2$$
+          </li>
+        </ul>
+        <p>Substitute back:</p>
+        $$I_3 = \frac{1}{2} - \frac{1}{2}\log 2$$
+        $$I_5 = \frac{1}{4} - \left(\frac{1}{2} - \frac{1}{2}\log 2\right) = \mathbf{\frac{1}{2}\log 2 - \frac{1}{4}}$$
+      </div>
+    </div>
+
+    <!-- Q17: Taylor's & Maclaurin's Expansion -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q17.</span> Expand the logarithmic functions using Taylor's and Maclaurin's theorems:</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">⭐ Repeated in 2017 &amp; 2018</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-subpart">
+        <span class="exam-subpart-title">Part (a) · Dec 2018 (Taylor's Theorem)</span>
+        <p class="exam-q-desc" style="margin: 0;">Expand $\log x$ in powers of $(x - 1)$ by Taylor's theorem.</p>
+      </div>
+      <div class="exam-subpart">
+        <span class="exam-subpart-title">Part (b) · Dec 2017 (Maclaurin's Theorem)</span>
+        <p class="exam-q-desc" style="margin: 0;">Expand $\log(1 + x)$ by Maclaurin's theorem.</p>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Step-by-Step Solution:</div>
+
+        <p class="exam-ans-step"><strong>Part (a) · Dec 2018 (Taylor's Theorem about $x = 1$):</strong></p>
+        <p>Taylor's formula: $f(x) = f(1) + (x - 1)f'(1) + \frac{(x - 1)^2}{2!}f''(1) + \frac{(x - 1)^3}{3!}f'''(1) + \dots$</p>
+        <ul>
+          <li>$f(x) = \log x \implies f(1) = \log 1 = 0$</li>
+          <li>$f'(x) = \frac{1}{x} \implies f'(1) = 1$</li>
+          <li>$f''(x) = -\frac{1}{x^2} \implies f''(1) = -1$</li>
+          <li>$f'''(x) = \frac{2}{x^3} \implies f'''(1) = 2$</li>
+          <li>$f^{(4)}(x) = -\frac{6}{x^4} \implies f^{(4)}(1) = -6$</li>
+        </ul>
+        $$\log x = (x - 1)(1) + \frac{(x - 1)^2}{2}(-1) + \frac{(x - 1)^3}{6}(2) + \frac{(x - 1)^4}{24}(-6) + \dots$$
+        $$\mathbf{\log x = (x - 1) - \frac{(x - 1)^2}{2} + \frac{(x - 1)^3}{3} - \frac{(x - 1)^4}{4} + \dots}$$
+
+        <p class="exam-ans-step" style="margin-top: 14px;"><strong>Part (b) · Dec 2017 (Maclaurin's Theorem about $x = 0$):</strong></p>
+        <p>Maclaurin's formula: $f(x) = f(0) + x f'(0) + \frac{x^2}{2!}f''(0) + \frac{x^3}{3!}f'''(0) + \dots$</p>
+        <ul>
+          <li>$f(x) = \log(1 + x) \implies f(0) = \log 1 = 0$</li>
+          <li>$f'(x) = \frac{1}{1+x} \implies f'(0) = 1$</li>
+          <li>$f''(x) = -\frac{1}{(1+x)^2} \implies f''(0) = -1$</li>
+          <li>$f'''(x) = \frac{2}{(1+x)^3} \implies f'''(0) = 2$</li>
+          <li>$f^{(4)}(x) = -\frac{6}{(1+x)^4} \implies f^{(4)}(0) = -6$</li>
+        </ul>
+        $$\mathbf{\log(1 + x) = x - \frac{x^2}{2} + \frac{x^3}{3} - \frac{x^4}{4} + \dots}$$
+      </div>
+    </div>
+
+    <!-- Q18: Area of Parallelogram via Vectors -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q18.</span> Calculate the area of the parallelogram spanned by vectors $\vec{a}$ and $\vec{b}$:</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated in 2016 &amp; 2018</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <p class="exam-q-desc">Compute $|\vec{a} \times \vec{b}|$ for each given pair of adjacent side vectors:</p>
+      <div class="exam-subpart">
+        <span class="exam-subpart-title">Part (a) · Dec 2018</span>
+        $$\vec{a} = \hat{i} - \hat{j} + 3\hat{k} \quad \text{and} \quad \vec{b} = 2\hat{i} - 7\hat{j} + \hat{k}$$
+      </div>
+      <div class="exam-subpart">
+        <span class="exam-subpart-title">Part (b) · Dec 2016</span>
+        $$\vec{a} = 3\hat{i} - 3\hat{j} + \hat{k} \quad \text{and} \quad \vec{b} = 4\hat{i} + 9\hat{j} + 2\hat{k}$$
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Step-by-Step Solution:</div>
+        <p>The area of a parallelogram with adjacent side vectors $\vec{a}$ and $\vec{b}$ is given by $\text{Area} = |\vec{a} \times \vec{b}|$.</p>
+
+        <p class="exam-ans-step"><strong>Part (a) · Dec 2018:</strong></p>
+        $$\vec{a} \times \vec{b} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ 1 & -1 & 3 \\ 2 & -7 & 1 \end{vmatrix} = \hat{i}(-1 - (-21)) - \hat{j}(1 - 6) + \hat{k}(-7 - (-2)) = 20\hat{i} + 5\hat{j} - 5\hat{k}$$
+        $$\text{Area} = |\vec{a} \times \vec{b}| = \sqrt{20^2 + 5^2 + (-5)^2} = \sqrt{400 + 25 + 25} = \sqrt{450} = \mathbf{15\sqrt{2} \text{ sq. units}}$$
+
+        <p class="exam-ans-step" style="margin-top: 14px;"><strong>Part (b) · Dec 2016:</strong></p>
+        $$\vec{a} \times \vec{b} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ 3 & -3 & 1 \\ 4 & 9 & 2 \end{vmatrix} = \hat{i}(-6 - 9) - \hat{j}(6 - 4) + \hat{k}(27 - (-12)) = -15\hat{i} - 2\hat{j} + 39\hat{k}$$
+        $$\text{Area} = |\vec{a} \times \vec{b}| = \sqrt{(-15)^2 + (-2)^2 + 39^2} = \sqrt{225 + 4 + 1521} = \sqrt{1750} = \mathbf{5\sqrt{70} \text{ sq. units}}$$
+      </div>
+    </div>
+
+    <!-- Q19: High-Yield Recurring Integrals -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q19.</span> Evaluate the following recurring standard integrals:</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated in 2017 &amp; 2018</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-subpart">
+        <span class="exam-subpart-title">Part (a) · Dec 2018</span>
+        $$\int \tan^4 x \, dx$$
+      </div>
+      <div class="exam-subpart">
+        <span class="exam-subpart-title">Part (b) · Dec 2018</span>
+        $$\int \frac{\cos 2x - \cos 2\alpha}{\cos x - \cos \alpha} \, dx$$
+      </div>
+      <div class="exam-subpart">
+        <span class="exam-subpart-title">Part (c) · Dec 2017</span>
+        $$\int \frac{e^x (1 + x)}{\cos^2(e^x x)} \, dx$$
+      </div>
+      <div class="exam-subpart">
+        <span class="exam-subpart-title">Part (d) · Dec 2017</span>
+        $$\int \sin x \cdot \sin 2x \cdot \sin 3x \, dx$$
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Step-by-Step Solution:</div>
+
+        <p class="exam-ans-step"><strong>Part (a) · Dec 2018: $\int \tan^4 x \, dx$</strong></p>
+        $$\int \tan^2 x (\sec^2 x - 1) \, dx = \int \tan^2 x \sec^2 x \, dx - \int (\sec^2 x - 1) \, dx = \mathbf{\frac{\tan^3 x}{3} - \tan x + x + C}$$
+
+        <p class="exam-ans-step"><strong>Part (b) · Dec 2018: $\int \frac{\cos 2x - \cos 2\alpha}{\cos x - \cos \alpha} \, dx$</strong></p>
+        <p>Using identity $\cos 2\theta = 2\cos^2\theta - 1$:</p>
+        $$\cos 2x - \cos 2\alpha = 2(\cos^2 x - \cos^2\alpha) = 2(\cos x - \cos\alpha)(\cos x + \cos\alpha)$$
+        $$\int 2(\cos x + \cos\alpha) \, dx = \mathbf{2\sin x + 2x\cos\alpha + C}$$
+
+        <p class="exam-ans-step"><strong>Part (c) · Dec 2017: $\int \frac{e^x (1 + x)}{\cos^2(e^x x)} \, dx$</strong></p>
+        <p>Substitute $u = x e^x \implies du = (e^x + x e^x)dx = e^x(1 + x)dx$:</p>
+        $$\int \frac{du}{\cos^2 u} = \int \sec^2 u \, du = \tan u + C = \mathbf{\tan(x e^x) + C}$$
+
+        <p class="exam-ans-step"><strong>Part (d) · Dec 2017: $\int \sin x \cdot \sin 2x \cdot \sin 3x \, dx$</strong></p>
+        <p>Using $2\sin A \sin B = \cos(A - B) - \cos(A + B)$:</p>
+        $$\sin 3x \sin x = \frac{1}{2}(\cos 2x - \cos 4x)$$
+        $$(\sin 3x \sin x)\sin 2x = \frac{1}{2}\sin 2x \cos 2x - \frac{1}{2}\sin 2x \cos 4x = \frac{1}{4}\sin 4x - \frac{1}{4}(\sin 6x - \sin 2x)$$
+        $$= \frac{1}{4}\sin 2x + \frac{1}{4}\sin 4x - \frac{1}{4}\sin 6x$$
+        $$\text{Integrating: } \mathbf{-\frac{\cos 2x}{8} - \frac{\cos 4x}{16} + \frac{\cos 6x}{24} + C}$$
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- =========================================================================
+     SECTION C : 15 MARKS LONG QUESTIONS (HIGH WEIGHTAGE)
+     ========================================================================= -->
+<div class="exam-section-card" id="section-c">
+  <div class="exam-section-header exam-section-header-purple">
+    <div class="exam-section-header-inner">
+      <span class="exam-section-badge badge-purple">⭐ SECTION C &bull; 15 MARKS EACH (HIGH WEIGHTAGE)</span>
+      <h3 class="exam-section-title">Detailed Long Answer Questions &amp; Proofs</h3>
+      <p class="exam-section-rule">CCSU Examination Blueprint: Attempt Any 3 Out of 5 Questions &bull; Total 45 Marks (60% Weightage)</p>
+    </div>
+  </div>
+
+  <div class="exam-section-body">
+
+    <!-- =========================================================================
+         Q20: CAYLEY-HAMILTON THEOREM (FULL 15-MARK DERIVATIONS)
+         ========================================================================= -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q20.</span> State and verify Cayley-Hamilton theorem for the $3 \times 3$ matrix $A$, determine its characteristic roots (eigenvalues), corresponding characteristic vectors (eigenvectors), and find $A^{-1}$:</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated in 2015, 2016, 2017, 2018, 2019 (All 5 Years)</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <p class="exam-q-desc">Master the complete step-by-step 15-mark university solutions for each of the 3 recurring examination matrices below:</p>
+
+      <!-- Matrix 1 · Dec 2018 -->
+      <div class="exam-subpart">
+        <span class="exam-subpart-title">Case 1 · Dec 2018 Examination Matrix</span>
+        $$A = \begin{bmatrix} 1 & 2 & 2 \\ 2 & 1 & 2 \\ 2 & 2 & 1 \end{bmatrix}$$
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Full 15-Mark Solution for Case 1 (Dec 2018 Matrix):</div>
+        
+        <p><strong>Statement of Cayley-Hamilton Theorem:</strong> Every square matrix satisfies its own characteristic equation. If $|A - \lambda I| = 0$ yields the polynomial equation $\lambda^3 - S_1 \lambda^2 + S_2 \lambda - |A| = 0$, then substituting $A$ for $\lambda$ gives $A^3 - S_1 A^2 + S_2 A - |A| I = O$.</p>
+
+        <p class="exam-ans-step"><strong>Step 1: Form the Characteristic Equation $|A - \lambda I| = 0$:</strong></p>
+        $$\begin{vmatrix} 1 - \lambda & 2 & 2 \\ 2 & 1 - \lambda & 2 \\ 2 & 2 & 1 - \lambda \end{vmatrix} = 0$$
+        <p>Using the shortcut formula $\lambda^3 - S_1 \lambda^2 + S_2 \lambda - |A| = 0$:</p>
+        <ul>
+          <li><strong>$S_1$ (Trace of $A$):</strong> $1 + 1 + 1 = 3$</li>
+          <li><strong>$S_2$ (Sum of Principal Minors):</strong>
+            $$S_2 = \begin{vmatrix} 1 & 2 \\ 2 & 1 \end{vmatrix} + \begin{vmatrix} 1 & 2 \\ 2 & 1 \end{vmatrix} + \begin{vmatrix} 1 & 2 \\ 2 & 1 \end{vmatrix} = (1 - 4) + (1 - 4) + (1 - 4) = -3 - 3 - 3 = -9$$
+          </li>
+          <li><strong>$|A|$ (Determinant of $A$):</strong>
+            $$|A| = 1(1 - 4) - 2(2 - 4) + 2(4 - 2) = 1(-3) - 2(-2) + 2(2) = -3 + 4 + 4 = 5$$
+          </li>
+        </ul>
+        <p>Substituting into the characteristic equation:</p>
+        $$\lambda^3 - 3\lambda^2 - 9\lambda - 5 = 0$$
+        <p>Factoring: Putting $\lambda = -1 \implies (-1)^3 - 3(-1)^2 - 9(-1) - 5 = -1 - 3 + 9 - 5 = 0$.</p>
+        <p>Dividing by $(\lambda + 1)$ gives $(\lambda + 1)(\lambda^2 - 4\lambda - 5) = (\lambda + 1)(\lambda + 1)(\lambda - 5) = (\lambda - 5)(\lambda + 1)^2 = 0$.</p>
+        <p><strong>Characteristic Roots (Eigenvalues):</strong> $\mathbf{\lambda = 5, \quad -1, \quad -1}$</p>
+
+        <p class="exam-ans-step"><strong>Step 2: Verification of Cayley-Hamilton Theorem ($A^3 - 3A^2 - 9A - 5I = O$):</strong></p>
+        <p>1. Compute $A^2 = A \cdot A$:</p>
+        $$A^2 = \begin{bmatrix} 1 & 2 & 2 \\ 2 & 1 & 2 \\ 2 & 2 & 1 \end{bmatrix} \begin{bmatrix} 1 & 2 & 2 \\ 2 & 1 & 2 \\ 2 & 2 & 1 \end{bmatrix} = \begin{bmatrix} 1+4+4 & 2+2+4 & 2+4+2 \\ 2+2+4 & 4+1+4 & 4+2+2 \\ 2+4+2 & 4+2+2 & 4+4+1 \end{bmatrix} = \begin{bmatrix} 9 & 8 & 8 \\ 8 & 9 & 8 \\ 8 & 8 & 9 \end{bmatrix}$$
+        <p>2. Compute $A^3 = A^2 \cdot A$:</p>
+        $$A^3 = \begin{bmatrix} 9 & 8 & 8 \\ 8 & 9 & 8 \\ 8 & 8 & 9 \end{bmatrix} \begin{bmatrix} 1 & 2 & 2 \\ 2 & 1 & 2 \\ 2 & 2 & 1 \end{bmatrix} = \begin{bmatrix} 9+16+16 & 18+8+16 & 18+16+8 \\ 8+18+16 & 16+9+16 & 16+18+8 \\ 8+16+18 & 16+8+18 & 16+16+9 \end{bmatrix} = \begin{bmatrix} 41 & 42 & 42 \\ 42 & 41 & 42 \\ 42 & 42 & 41 \end{bmatrix}$$
+        <p>3. Substitute $A^3, A^2, A, I$ into $A^3 - 3A^2 - 9A - 5I$:</p>
+        $$= \begin{bmatrix} 41 & 42 & 42 \\ 42 & 41 & 42 \\ 42 & 42 & 41 \end{bmatrix} - 3\begin{bmatrix} 9 & 8 & 8 \\ 8 & 9 & 8 \\ 8 & 8 & 9 \end{bmatrix} - 9\begin{bmatrix} 1 & 2 & 2 \\ 2 & 1 & 2 \\ 2 & 2 & 1 \end{bmatrix} - 5\begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix}$$
+        <ul>
+          <li><strong>Diagonal Entries:</strong> $41 - 3(9) - 9(1) - 5(1) = 41 - 27 - 9 - 5 = 41 - 41 = 0$</li>
+          <li><strong>Off-Diagonal Entries:</strong> $42 - 3(8) - 9(2) - 5(0) = 42 - 24 - 18 - 0 = 42 - 42 = 0$</li>
+        </ul>
+        $$A^3 - 3A^2 - 9A - 5I = \begin{bmatrix} 0 & 0 & 0 \\ 0 & 0 & 0 \\ 0 & 0 & 0 \end{bmatrix} = O$$
+        <p>Hence, the Cayley-Hamilton theorem is <strong>verified</strong>.</p>
+
+        <p class="exam-ans-step"><strong>Step 3: Determination of Matrix Inverse $A^{-1}$:</strong></p>
+        <p>Multiply the verified equation $A^3 - 3A^2 - 9A - 5I = O$ by $A^{-1}$:</p>
+        $$A^2 - 3A - 9I - 5A^{-1} = O \implies 5A^{-1} = A^2 - 3A - 9I$$
+        $$5A^{-1} = \begin{bmatrix} 9 & 8 & 8 \\ 8 & 9 & 8 \\ 8 & 8 & 9 \end{bmatrix} - \begin{bmatrix} 3 & 6 & 6 \\ 6 & 3 & 6 \\ 6 & 6 & 3 \end{bmatrix} - \begin{bmatrix} 9 & 0 & 0 \\ 0 & 9 & 0 \\ 0 & 0 & 9 \end{bmatrix} = \begin{bmatrix} 9-3-9 & 8-6-0 & 8-6-0 \\ 8-6-0 & 9-3-9 & 8-6-0 \\ 8-6-0 & 8-6-0 & 9-3-9 \end{bmatrix} = \begin{bmatrix} -3 & 2 & 2 \\ 2 & -3 & 2 \\ 2 & 2 & -3 \end{bmatrix}$$
+        $$\mathbf{A^{-1} = \frac{1}{5} \begin{bmatrix} -3 & 2 & 2 \\ 2 & -3 & 2 \\ 2 & 2 & -3 \end{bmatrix}}$$
+
+        <p class="exam-ans-step"><strong>Step 4: Determination of Characteristic Vectors (Eigenvectors):</strong></p>
+        <p>The characteristic vectors are determined by solving $[A - \lambda I]X = 0$, where $X = [x_1, x_2, x_3]^T$:</p>
+        <p><strong>Case (i): For $\lambda = 5$:</strong></p>
+        $$\begin{bmatrix} 1-5 & 2 & 2 \\ 2 & 1-5 & 2 \\ 2 & 2 & 1-5 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix} \implies \begin{bmatrix} -4 & 2 & 2 \\ 2 & -4 & 2 \\ 2 & 2 & -4 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}$$
+        <p>Dividing row 1 and row 2 by 2:</p>
+        $$-2x_1 + x_2 + x_3 = 0, \quad x_1 - 2x_2 + x_3 = 0$$
+        <p>Applying the method of cross-multiplication:</p>
+        $$\frac{x_1}{(1)(1) - (1)(-2)} = \frac{-x_2}{(-2)(1) - (1)(1)} = \frac{x_3}{(-2)(-2) - (1)(1)} \implies \frac{x_1}{3} = \frac{-x_2}{-3} = \frac{x_3}{3} \implies x_1 = x_2 = x_3 = 1$$
+        $$\mathbf{X_1 = \begin{bmatrix} 1 \\ 1 \\ 1 \end{bmatrix}}$$
+
+        <p><strong>Case (ii): For repeated root $\lambda = -1$:</strong></p>
+        $$\begin{bmatrix} 1 - (-1) & 2 & 2 \\ 2 & 1 - (-1) & 2 \\ 2 & 2 & 1 - (-1) \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix} \implies \begin{bmatrix} 2 & 2 & 2 \\ 2 & 2 & 2 \\ 2 & 2 & 2 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}$$
+        <p>All three rows are identical, yielding the single linear equation:</p>
+        $$2x_1 + 2x_2 + 2x_3 = 0 \implies x_1 + x_2 + x_3 = 0$$
+        <p>Since this has rank 1 and nullity $3 - 1 = 2$, there exist 2 linearly independent eigenvectors:</p>
+        <ul>
+          <li>Setting $x_2 = 1, x_3 = 0 \implies x_1 = -1 \implies \mathbf{X_2 = \begin{bmatrix} -1 \\ 1 \\ 0 \end{bmatrix}}$</li>
+          <li>Setting $x_2 = 0, x_3 = 1 \implies x_1 = -1 \implies \mathbf{X_3 = \begin{bmatrix} -1 \\ 0 \\ 1 \end{bmatrix}}$</li>
+        </ul>
+      </div>
+
+      <!-- Matrix 2 · Dec 2017 -->
+      <div class="exam-subpart" style="margin-top: 24px;">
+        <span class="exam-subpart-title">Case 2 · Dec 2017 Examination Matrix</span>
+        $$A = \begin{bmatrix} 2 & 2 & 1 \\ 1 & 3 & 1 \\ 1 & 2 & 2 \end{bmatrix}$$
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Full 15-Mark Solution for Case 2 (Dec 2017 Matrix):</div>
+
+        <p class="exam-ans-step"><strong>Step 1: Form the Characteristic Equation $|A - \lambda I| = 0$:</strong></p>
+        $$\begin{vmatrix} 2 - \lambda & 2 & 1 \\ 1 & 3 - \lambda & 1 \\ 1 & 2 & 2 - \lambda \end{vmatrix} = 0$$
+        <ul>
+          <li><strong>$S_1$ (Trace of $A$):</strong> $2 + 3 + 2 = 7$</li>
+          <li><strong>$S_2$ (Sum of Principal Minors):</strong>
+            $$\begin{vmatrix} 3 & 1 \\ 2 & 2 \end{vmatrix} + \begin{vmatrix} 2 & 1 \\ 1 & 2 \end{vmatrix} + \begin{vmatrix} 2 & 2 \\ 1 & 3 \end{vmatrix} = (6 - 2) + (4 - 1) + (6 - 2) = 4 + 3 + 4 = 11$$
+          </li>
+          <li><strong>$|A|$ (Determinant):</strong>
+            $$|A| = 2(6 - 2) - 2(2 - 1) + 1(2 - 3) = 2(4) - 2(1) + 1(-1) = 8 - 2 - 1 = 5$$
+          </li>
+        </ul>
+        <p>Characteristic polynomial equation:</p>
+        $$\lambda^3 - 7\lambda^2 + 11\lambda - 5 = 0$$
+        <p>Factoring: Putting $\lambda = 1 \implies 1 - 7 + 11 - 5 = 0$. Dividing gives $(\lambda - 1)^2 (\lambda - 5) = 0$.</p>
+        <p><strong>Characteristic Roots (Eigenvalues):</strong> $\mathbf{\lambda = 5, \quad 1, \quad 1}$</p>
+
+        <p class="exam-ans-step"><strong>Step 2: Verification of Cayley-Hamilton Theorem ($A^3 - 7A^2 + 11A - 5I = O$):</strong></p>
+        <p>1. Compute $A^2$:</p>
+        $$A^2 = \begin{bmatrix} 2 & 2 & 1 \\ 1 & 3 & 1 \\ 1 & 2 & 2 \end{bmatrix} \begin{bmatrix} 2 & 2 & 1 \\ 1 & 3 & 1 \\ 1 & 2 & 2 \end{bmatrix} = \begin{bmatrix} 4+2+1 & 4+6+2 & 2+2+2 \\ 2+3+1 & 2+9+2 & 1+3+2 \\ 2+2+2 & 2+6+4 & 1+2+4 \end{bmatrix} = \begin{bmatrix} 7 & 12 & 6 \\ 6 & 13 & 6 \\ 6 & 12 & 7 \end{bmatrix}$$
+        <p>2. Compute $A^3 = A^2 \cdot A$:</p>
+        $$A^3 = \begin{bmatrix} 7 & 12 & 6 \\ 6 & 13 & 6 \\ 6 & 12 & 7 \end{bmatrix} \begin{bmatrix} 2 & 2 & 1 \\ 1 & 3 & 1 \\ 1 & 2 & 2 \end{bmatrix} = \begin{bmatrix} 14+12+6 & 14+36+12 & 7+12+12 \\ 12+13+6 & 12+39+12 & 6+13+12 \\ 12+12+7 & 12+36+14 & 6+12+14 \end{bmatrix} = \begin{bmatrix} 32 & 62 & 31 \\ 31 & 63 & 31 \\ 31 & 62 & 32 \end{bmatrix}$$
+        <p>3. Substitute into $A^3 - 7A^2 + 11A - 5I$:</p>
+        $$= \begin{bmatrix} 32 & 62 & 31 \\ 31 & 63 & 31 \\ 31 & 62 & 32 \end{bmatrix} - 7\begin{bmatrix} 7 & 12 & 6 \\ 6 & 13 & 6 \\ 6 & 12 & 7 \end{bmatrix} + 11\begin{bmatrix} 2 & 2 & 1 \\ 1 & 3 & 1 \\ 1 & 2 & 2 \end{bmatrix} - 5\begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix}$$
+        <ul>
+          <li>Entry $(1,1)$: $32 - 7(7) + 11(2) - 5(1) = 32 - 49 + 22 - 5 = 54 - 54 = 0$</li>
+          <li>Entry $(1,2)$: $62 - 7(12) + 11(2) - 5(0) = 62 - 84 + 22 - 0 = 84 - 84 = 0$</li>
+          <li>Entry $(1,3)$: $31 - 7(6) + 11(1) - 5(0) = 31 - 42 + 11 - 0 = 42 - 42 = 0$</li>
+          <li>Entry $(2,2)$: $63 - 7(13) + 11(3) - 5(1) = 63 - 91 + 33 - 5 = 96 - 96 = 0$</li>
+        </ul>
+        <p>All 9 entries evaluate to $0$. Thus $A^3 - 7A^2 + 11A - 5I = O$. <strong>Verified.</strong></p>
+
+        <p class="exam-ans-step"><strong>Step 3: Determination of $A^{-1}$:</strong></p>
+        <p>Multiply $A^3 - 7A^2 + 11A - 5I = O$ by $A^{-1}$:</p>
+        $$A^2 - 7A + 11I - 5A^{-1} = O \implies 5A^{-1} = A^2 - 7A + 11I$$
+        $$5A^{-1} = \begin{bmatrix} 7 & 12 & 6 \\ 6 & 13 & 6 \\ 6 & 12 & 7 \end{bmatrix} - \begin{bmatrix} 14 & 14 & 7 \\ 7 & 21 & 7 \\ 7 & 14 & 14 \end{bmatrix} + \begin{bmatrix} 11 & 0 & 0 \\ 0 & 11 & 0 \\ 0 & 0 & 11 \end{bmatrix} = \begin{bmatrix} 4 & -2 & -1 \\ -1 & 3 & -1 \\ -1 & -2 & 4 \end{bmatrix}$$
+        $$\mathbf{A^{-1} = \frac{1}{5} \begin{bmatrix} 4 & -2 & -1 \\ -1 & 3 & -1 \\ -1 & -2 & 4 \end{bmatrix}}$$
+
+        <p class="exam-ans-step"><strong>Step 4: Eigenvectors:</strong></p>
+        <ul>
+          <li><strong>For $\lambda = 5$:</strong>
+            $$\begin{bmatrix} -3 & 2 & 1 \\ 1 & -2 & 1 \\ 1 & 2 & -3 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix} \implies \mathbf{X_1 = \begin{bmatrix} 1 \\ 1 \\ 1 \end{bmatrix}}$$
+          </li>
+          <li><strong>For repeated eigenvalue $\lambda = 1$:</strong>
+            $$\begin{bmatrix} 1 & 2 & 1 \\ 1 & 2 & 1 \\ 1 & 2 & 1 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix} \implies x_1 + 2x_2 + x_3 = 0$$
+            Two independent eigenvectors:
+            $$\mathbf{X_2 = \begin{bmatrix} -2 \\ 1 \\ 0 \end{bmatrix}}, \quad \mathbf{X_3 = \begin{bmatrix} -1 \\ 0 \\ 1 \end{bmatrix}}$$
+          </li>
+        </ul>
+      </div>
+
+      <!-- Matrix 3 · Dec 2016 -->
+      <div class="exam-subpart" style="margin-top: 24px;">
+        <span class="exam-subpart-title">Case 3 · Dec 2016 Examination Matrix</span>
+        $$A = \begin{bmatrix} 2 & -1 & 1 \\ -1 & 2 & -1 \\ 1 & -1 & 2 \end{bmatrix}$$
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Full 15-Mark Solution for Case 3 (Dec 2016 Matrix):</div>
+
+        <p class="exam-ans-step"><strong>Step 1: Form the Characteristic Equation $|A - \lambda I| = 0$:</strong></p>
+        $$\begin{vmatrix} 2 - \lambda & -1 & 1 \\ -1 & 2 - \lambda & -1 \\ 1 & -1 & 2 - \lambda \end{vmatrix} = 0$$
+        <ul>
+          <li><strong>$S_1$ (Trace):</strong> $2 + 2 + 2 = 6$</li>
+          <li><strong>$S_2$ (Sum of Principal Minors):</strong>
+            $$\begin{vmatrix} 2 & -1 \\ -1 & 2 \end{vmatrix} + \begin{vmatrix} 2 & 1 \\ 1 & 2 \end{vmatrix} + \begin{vmatrix} 2 & -1 \\ -1 & 2 \end{vmatrix} = (4 - 1) + (4 - 1) + (4 - 1) = 3 + 3 + 3 = 9$$
+          </li>
+          <li><strong>$|A|$ (Determinant):</strong>
+            $$|A| = 2(4 - 1) - (-1)(-2 + 1) + 1(1 - 2) = 6 - 1 - 1 = 4$$
+          </li>
+        </ul>
+        <p>Characteristic equation: $\lambda^3 - 6\lambda^2 + 9\lambda - 4 = 0 \implies (\lambda - 1)^2 (\lambda - 4) = 0$.</p>
+        <p><strong>Characteristic Roots (Eigenvalues):</strong> $\mathbf{\lambda = 4, \quad 1, \quad 1}$</p>
+
+        <p class="exam-ans-step"><strong>Step 2: Verification of $A^3 - 6A^2 + 9A - 4I = O$:</strong></p>
+        <p>1. Compute $A^2$:</p>
+        $$A^2 = \begin{bmatrix} 2 & -1 & 1 \\ -1 & 2 & -1 \\ 1 & -1 & 2 \end{bmatrix} \begin{bmatrix} 2 & -1 & 1 \\ -1 & 2 & -1 \\ 1 & -1 & 2 \end{bmatrix} = \begin{bmatrix} 6 & -5 & 5 \\ -5 & 6 & -5 \\ 5 & -5 & 6 \end{bmatrix}$$
+        <p>2. Compute $A^3 = A^2 \cdot A$:</p>
+        $$A^3 = \begin{bmatrix} 6 & -5 & 5 \\ -5 & 6 & -5 \\ 5 & -5 & 6 \end{bmatrix} \begin{bmatrix} 2 & -1 & 1 \\ -1 & 2 & -1 \\ 1 & -1 & 2 \end{bmatrix} = \begin{bmatrix} 22 & -21 & 21 \\ -21 & 22 & -21 \\ 21 & -21 & 22 \end{bmatrix}$$
+        <p>3. Substitute into $A^3 - 6A^2 + 9A - 4I$:</p>
+        $$= \begin{bmatrix} 22 & -21 & 21 \\ -21 & 22 & -21 \\ 21 & -21 & 22 \end{bmatrix} - 6\begin{bmatrix} 6 & -5 & 5 \\ -5 & 6 & -5 \\ 5 & -5 & 6 \end{bmatrix} + 9\begin{bmatrix} 2 & -1 & 1 \\ -1 & 2 & -1 \\ 1 & -1 & 2 \end{bmatrix} - 4\begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix}$$
+        <ul>
+          <li>Diagonal: $22 - 6(6) + 9(2) - 4(1) = 22 - 36 + 18 - 4 = 40 - 40 = 0$</li>
+          <li>Element $(1,2)$: $-21 - 6(-5) + 9(-1) - 0 = -21 + 30 - 9 = 0$</li>
+          <li>Element $(1,3)$: $21 - 6(5) + 9(1) - 0 = 21 - 30 + 9 = 0$</li>
+        </ul>
+        <p>All elements vanish $\implies A^3 - 6A^2 + 9A - 4I = O$. <strong>Verified.</strong></p>
+
+        <p class="exam-ans-step"><strong>Step 3: Determination of $A^{-1}$:</strong></p>
+        $$4A^{-1} = A^2 - 6A + 9I = \begin{bmatrix} 6 & -5 & 5 \\ -5 & 6 & -5 \\ 5 & -5 & 6 \end{bmatrix} - \begin{bmatrix} 12 & -6 & 6 \\ -6 & 12 & -6 \\ 6 & -6 & 12 \end{bmatrix} + \begin{bmatrix} 9 & 0 & 0 \\ 0 & 9 & 0 \\ 0 & 0 & 9 \end{bmatrix} = \begin{bmatrix} 3 & 1 & -1 \\ 1 & 3 & 1 \\ -1 & 1 & 3 \end{bmatrix}$$
+        $$\mathbf{A^{-1} = \frac{1}{4} \begin{bmatrix} 3 & 1 & -1 \\ 1 & 3 & 1 \\ -1 & 1 & 3 \end{bmatrix}}$$
+
+        <p class="exam-ans-step"><strong>Step 4: Eigenvectors:</strong></p>
+        <ul>
+          <li><strong>For $\lambda = 4$:</strong>
+            $$\begin{bmatrix} -2 & -1 & 1 \\ -1 & -2 & -1 \\ 1 & -1 & -2 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix} \implies \mathbf{X_1 = \begin{bmatrix} 1 \\ -1 \\ 1 \end{bmatrix}}$$
+          </li>
+          <li><strong>For repeated eigenvalue $\lambda = 1$:</strong>
+            $$\begin{bmatrix} 1 & -1 & 1 \\ -1 & 1 & -1 \\ 1 & -1 & 1 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix} \implies x_1 - x_2 + x_3 = 0$$
+            Two independent eigenvectors:
+            $$\mathbf{X_2 = \begin{bmatrix} 1 \\ 1 \\ 0 \end{bmatrix}}, \quad \mathbf{X_3 = \begin{bmatrix} -1 \\ 0 \\ 1 \end{bmatrix}}$$
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- =========================================================================
+         Q21: LEIBNIZ'S THEOREM (FULL 15-MARK DERIVATIONS)
+         ========================================================================= -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q21.</span> Apply Leibniz’s theorem on successive differentiation to prove the differential equation and determine $y_n(0)$:</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated in 2015, 2016, 2017, 2018, 2019 (All 5 Years)</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <p class="exam-q-desc">Master the complete step-by-step 15-mark university derivations for each of the 3 recurring function types:</p>
+
+      <!-- Part (a) · Dec 2015 -->
+      <div class="exam-subpart">
+        <span class="exam-subpart-title">Part (a) · Dec 2015 Examination Problem</span>
+        <p class="exam-q-desc" style="margin: 0 0 6px;">If $y = e^{m \cos^{-1} x}$, show that:</p>
+        $$(1 - x^2) y_{n+2} - (2n + 1)x y_{n+1} - (n^2 + m^2) y_n = 0$$
+        <p class="exam-q-desc" style="margin: 6px 0 0;">and determine the exact value of $y_n(0)$.</p>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Full 15-Mark Solution for Part (a):</div>
+
+        <p><strong>Statement of Leibniz’s Theorem:</strong> If $u$ and $v$ are functions of $x$ possessing derivatives of order $n$, then:</p>
+        $$(u \cdot v)_n = u_n v + \binom{n}{1} u_{n-1} v_1 + \binom{n}{2} u_{n-2} v_2 + \dots + \binom{n}{r} u_{n-r} v_r + \dots + u v_n$$
+
+        <p class="exam-ans-step"><strong>Step 1: Differentiate the given function:</strong></p>
+        <p>Given $y = e^{m \cos^{-1} x}$. Differentiating with respect to $x$ using chain rule:</p>
+        $$y_1 = \frac{dy}{dx} = e^{m \cos^{-1} x} \cdot \frac{d}{dx}(m \cos^{-1} x) = e^{m \cos^{-1} x} \cdot \left(\frac{-m}{\sqrt{1 - x^2}}\right)$$
+        <p>Since $y = e^{m \cos^{-1} x}$, substitute $y$ back:</p>
+        $$y_1 = \frac{-m y}{\sqrt{1 - x^2}}$$
+
+        <p class="exam-ans-step"><strong>Step 2: Cross-multiply and square both sides:</strong></p>
+        $$\sqrt{1 - x^2} \, y_1 = -m y$$
+        $$(1 - x^2) y_1^2 = m^2 y^2$$
+
+        <p class="exam-ans-step"><strong>Step 3: Differentiate again to establish the base 2nd-order equation:</strong></p>
+        $$\frac{d}{dx}\left[(1 - x^2) y_1^2\right] = \frac{d}{dx}\left[m^2 y^2\right]$$
+        $$(1 - x^2) \cdot (2 y_1 y_2) + y_1^2 \cdot (-2x) = m^2 (2 y y_1)$$
+        $$2 y_1 \left[(1 - x^2) y_2 - x y_1\right] = 2 y_1 (m^2 y)$$
+        <p>Dividing throughout by $2y_1$ (since $y_1 \neq 0$):</p>
+        $$(1 - x^2) y_2 - x y_1 - m^2 y = 0 \quad \text{--- (Equation 1)}$$
+
+        <p class="exam-ans-step"><strong>Step 4: Differentiate Equation (1) $n$ times using Leibniz’s Theorem:</strong></p>
+        <p>Applying Leibniz’s formula term by term:</p>
+        <ul>
+          <li><strong>Term 1: $[(1 - x^2) y_2]_n$</strong> (with $u = y_2, v = 1 - x^2$):
+            $$= (y_2)_n (1 - x^2) + \binom{n}{1} (y_2)_{n-1} \frac{d}{dx}(1 - x^2) + \binom{n}{2} (y_2)_{n-2} \frac{d^2}{dx^2}(1 - x^2) + 0$$
+            $$= y_{n+2}(1 - x^2) + n y_{n+1}(-2x) + \frac{n(n-1)}{2} y_n(-2)$$
+            $$= (1 - x^2) y_{n+2} - 2n x y_{n+1} - n(n-1) y_n$$
+          </li>
+          <li><strong>Term 2: $-[x y_1]_n$</strong> (with $u = y_1, v = x$):
+            $$= -[(y_1)_n x + \binom{n}{1} (y_1)_{n-1} (1) + 0] = -[y_{n+1} x + n y_n] = -x y_{n+1} - n y_n$$
+          </li>
+          <li><strong>Term 3: $-[m^2 y]_n$:</strong>
+            $$= -m^2 y_n$$
+          </li>
+        </ul>
+        <p>Adding all three expanded terms:</p>
+        $$(1 - x^2) y_{n+2} - 2n x y_{n+1} - n(n-1) y_n - x y_{n+1} - n y_n - m^2 y_n = 0$$
+        $$(1 - x^2) y_{n+2} - (2n + 1)x y_{n+1} - [n(n-1) + n + m^2] y_n = 0$$
+        <p>Notice that $n(n-1) + n = n^2 - n + n = n^2$. Therefore:</p>
+        $$\mathbf{(1 - x^2) y_{n+2} - (2n + 1)x y_{n+1} - (n^2 + m^2) y_n = 0} \quad \text{--- (Equation 2, Hence Proved)}$$
+
+        <p class="exam-ans-step"><strong>Step 5: Determination of $y_n(0)$:</strong></p>
+        <p>Substitute $x = 0$ in Equation (2):</p>
+        $$(1 - 0) y_{n+2}(0) - (2n + 1)(0) y_{n+1}(0) - (n^2 + m^2) y_n(0) = 0$$
+        $$\mathbf{y_{n+2}(0) = (n^2 + m^2) y_n(0)} \quad \text{--- (Recurrence Relation)}$$
+
+        <p>Now evaluate base values at $x = 0$:</p>
+        <ul>
+          <li>$y(0) = e^{m \cos^{-1}(0)} = e^{m \pi/2}$</li>
+          <li>$y_1(0) = \frac{-m y(0)}{\sqrt{1 - 0}} = -m e^{m \pi/2}$</li>
+          <li>From Equation (1) at $x = 0$: $y_2(0) = m^2 y(0) = m^2 e^{m \pi/2}$</li>
+        </ul>
+
+        <p>Using the recurrence relation $y_{n+2}(0) = (n^2 + m^2) y_n(0)$:</p>
+        <ul>
+          <li><strong>For odd values of $n$:</strong>
+            <ul>
+              <li>Put $n = 1 \implies y_3(0) = (1^2 + m^2) y_1(0) = -(1^2 + m^2) m e^{m \pi/2}$</li>
+              <li>Put $n = 3 \implies y_5(0) = (3^2 + m^2) y_3(0) = -(3^2 + m^2)(1^2 + m^2) m e^{m \pi/2}$</li>
+            </ul>
+            $$\mathbf{y_n(0) = -m (1^2 + m^2)(3^2 + m^2) \dots ((n-2)^2 + m^2) e^{m \pi/2} \quad \text{(when } n \text{ is odd)}}$$
+          </li>
+          <li><strong>For even values of $n$:</strong>
+            <ul>
+              <li>Put $n = 2 \implies y_4(0) = (2^2 + m^2) y_2(0) = (2^2 + m^2) m^2 e^{m \pi/2}$</li>
+              <li>Put $n = 4 \implies y_6(0) = (4^2 + m^2) y_4(0) = (4^2 + m^2)(2^2 + m^2) m^2 e^{m \pi/2}$</li>
+            </ul>
+            $$\mathbf{y_n(0) = m^2 (2^2 + m^2)(4^2 + m^2) \dots ((n-2)^2 + m^2) e^{m \pi/2} \quad \text{(when } n \text{ is even)}}$$
+          </li>
+        </ul>
+      </div>
+
+      <!-- Part (b) · Dec 2016 -->
+      <div class="exam-subpart" style="margin-top: 24px;">
+        <span class="exam-subpart-title">Part (b) · Dec 2016 Examination Problem</span>
+        <p class="exam-q-desc" style="margin: 0 0 6px;">If $y = \sin(m \sin^{-1} x)$ with $|x| \lt 1$, show that:</p>
+        $$(1 - x^2) y_2 - x y_1 + m^2 y = 0$$
+        $$(1 - x^2) y_{n+2} - (2n + 1)x y_{n+1} + (m^2 - n^2) y_n = 0$$
+        <p class="exam-q-desc" style="margin: 6px 0 0;">and find the value of $y_n(0)$.</p>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Full 15-Mark Solution for Part (b):</div>
+
+        <p class="exam-ans-step"><strong>Step 1: First Derivative:</strong></p>
+        <p>Given $y = \sin(m \sin^{-1} x)$. Differentiating with respect to $x$:</p>
+        $$y_1 = \cos(m \sin^{-1} x) \cdot \frac{d}{dx}(m \sin^{-1} x) = \frac{m \cos(m \sin^{-1} x)}{\sqrt{1 - x^2}}$$
+        $$\sqrt{1 - x^2} \, y_1 = m \cos(m \sin^{-1} x)$$
+
+        <p class="exam-ans-step"><strong>Step 2: Squaring both sides:</strong></p>
+        $$(1 - x^2) y_1^2 = m^2 \cos^2(m \sin^{-1} x) = m^2 [1 - \sin^2(m \sin^{-1} x)] = m^2 (1 - y^2)$$
+
+        <p class="exam-ans-step"><strong>Step 3: Differentiating again to obtain the 2nd-order ODE:</strong></p>
+        $$(1 - x^2) (2 y_1 y_2) + y_1^2 (-2x) = m^2 (-2y y_1)$$
+        $$2y_1 \left[(1 - x^2) y_2 - x y_1\right] = -2m^2 y y_1$$
+        $$\mathbf{(1 - x^2) y_2 - x y_1 + m^2 y = 0} \quad \text{--- (First Relation Proved)}$$
+
+        <p class="exam-ans-step"><strong>Step 4: Differentiate $n$ times using Leibniz’s Theorem:</strong></p>
+        $$[(1 - x^2) y_2]_n - [x y_1]_n + m^2 [y]_n = 0$$
+        $$[(1 - x^2) y_{n+2} + n(-2x) y_{n+1} + \frac{n(n-1)}{2}(-2) y_n] - [x y_{n+1} + n y_n] + m^2 y_n = 0$$
+        $$(1 - x^2) y_{n+2} - (2n + 1)x y_{n+1} - [n(n-1) + n - m^2] y_n = 0$$
+        <p>Since $n(n-1) + n - m^2 = n^2 - m^2 = -(m^2 - n^2)$:</p>
+        $$\mathbf{(1 - x^2) y_{n+2} - (2n + 1)x y_{n+1} + (m^2 - n^2) y_n = 0} \quad \text{--- (Second Relation Proved)}$$
+
+        <p class="exam-ans-step"><strong>Step 5: Determination of $y_n(0)$:</strong></p>
+        <p>Substitute $x = 0$ in the above relation:</p>
+        $$y_{n+2}(0) = -(m^2 - n^2) y_n(0) = (n^2 - m^2) y_n(0)$$
+        <p>Base values at $x = 0$:</p>
+        <ul>
+          <li>$y(0) = \sin(m \sin^{-1} 0) = \sin 0 = 0$</li>
+          <li>$y_1(0) = \frac{m \cos 0}{\sqrt{1 - 0}} = m$</li>
+          <li>$y_2(0) = -m^2 y(0) = 0$</li>
+        </ul>
+        <p>Since $y_2(0) = 0$, by the recurrence relation $y_4(0) = (2^2 - m^2) y_2(0) = 0$, all even derivatives vanish:</p>
+        $$\mathbf{y_n(0) = 0 \quad \text{(when } n \text{ is even)}}$$
+        <p>For odd values of $n$:</p>
+        <ul>
+          <li>$y_3(0) = -(m^2 - 1^2) y_1(0) = -m (m^2 - 1^2) = m(1^2 - m^2)$</li>
+          <li>$y_5(0) = -(m^2 - 3^2) y_3(0) = m(1^2 - m^2)(3^2 - m^2)$</li>
+        </ul>
+        $$\mathbf{y_n(0) = m(1^2 - m^2)(3^2 - m^2) \dots ((n-2)^2 - m^2) \quad \text{(when } n \text{ is odd)}}$$
+      </div>
+
+      <!-- Part (c) · Dec 2018 & Nov 2019 -->
+      <div class="exam-subpart" style="margin-top: 24px;">
+        <span class="exam-subpart-title">Part (c) · Dec 2018 &amp; Nov 2019 Examination Problem</span>
+        <p class="exam-q-desc" style="margin: 0 0 6px;">If $y = a \cos(\log x) + b \sin(\log x)$, show that:</p>
+        $$x^2 y_2 + x y_1 + y = 0$$
+        $$x^2 y_{n+2} + (2n + 1)x y_{n+1} + (n^2 + 1) y_n = 0$$
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Full 15-Mark Solution for Part (c):</div>
+
+        <p class="exam-ans-step"><strong>Step 1: First Derivative:</strong></p>
+        <p>Given $y = a \cos(\log x) + b \sin(\log x)$. Differentiating with respect to $x$:</p>
+        $$y_1 = -a \sin(\log x) \cdot \frac{1}{x} + b \cos(\log x) \cdot \frac{1}{x} = \frac{-a \sin(\log x) + b \cos(\log x)}{x}$$
+        $$x y_1 = -a \sin(\log x) + b \cos(\log x)$$
+
+        <p class="exam-ans-step"><strong>Step 2: Second Derivative:</strong></p>
+        <p>Differentiating both sides with respect to $x$ using Product Rule on the left side:</p>
+        $$x y_2 + y_1 \cdot (1) = -a \cos(\log x) \cdot \frac{1}{x} - b \sin(\log x) \cdot \frac{1}{x}$$
+        $$x y_2 + y_1 = -\frac{a \cos(\log x) + b \sin(\log x)}{x} = -\frac{y}{x}$$
+        <p>Multiplying both sides by $x$:</p>
+        $$x(x y_2 + y_1) = -y \implies x^2 y_2 + x y_1 = -y$$
+        $$\mathbf{x^2 y_2 + x y_1 + y = 0} \quad \text{--- (First Relation Proved)}$$
+
+        <p class="exam-ans-step"><strong>Step 3: Differentiate $n$ times using Leibniz’s Theorem:</strong></p>
+        $$[x^2 y_2]_n + [x y_1]_n + [y]_n = 0$$
+        <ul>
+          <li>$[x^2 y_2]_n = y_{n+2} x^2 + \binom{n}{1} y_{n+1}(2x) + \binom{n}{2} y_n(2) = x^2 y_{n+2} + 2nx y_{n+1} + n(n-1) y_n$</li>
+          <li>$[x y_1]_n = y_{n+1} x + \binom{n}{1} y_n(1) = x y_{n+1} + n y_n$</li>
+          <li>$[y]_n = y_n$</li>
+        </ul>
+        <p>Combining all three terms:</p>
+        $$[x^2 y_{n+2} + 2nx y_{n+1} + n(n-1) y_n] + [x y_{n+1} + n y_n] + y_n = 0$$
+        $$x^2 y_{n+2} + (2n + 1)x y_{n+1} + [n(n-1) + n + 1] y_n = 0$$
+        <p>Simplifying the coefficient of $y_n$:</p>
+        $$n^2 - n + n + 1 = n^2 + 1$$
+        $$\mathbf{x^2 y_{n+2} + (2n + 1)x y_{n+1} + (n^2 + 1) y_n = 0} \quad \text{--- (Second Relation Proved)}$$
+      </div>
+    </div>
+
+    <!-- =========================================================================
+         Q22: CURVE TRACING (FULL 15-MARK DERIVATIONS)
+         ========================================================================= -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q22.</span> Trace the given curves by finding symmetry, origin/pole, asymptotes, tangents, and regions of absence:</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">⭐ Repeated in 2015, 2016, 2017, 2018</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <p class="exam-q-desc">Master the complete step-by-step 15-mark curve tracing procedure for each of the 4 recurring university examination curves:</p>
+
+      <!-- Curve 1 · Cardioid -->
+      <div class="exam-subpart">
+        <span class="exam-subpart-title">Case 1 · Cardioid (Dec 2015)</span>
+        $$r = a(1 + \cos\theta) \quad (a > 0)$$
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Full 15-Mark Solution for Case 1 (Cardioid):</div>
+
+        <p class="exam-ans-step"><strong>1. Symmetry:</strong></p>
+        <p>Replacing $\theta$ by $-\theta$: Since $\cos(-\theta) = \cos\theta$, the equation remains unchanged:</p>
+        $$r = a[1 + \cos(-\theta)] = a(1 + \cos\theta)$$
+        <p>Therefore, the curve is <strong>symmetric about the initial line</strong> ($\theta = 0$, the polar x-axis). We only need to trace the upper half ($0 \le \theta \le \pi$).</p>
+
+        <p class="exam-ans-step"><strong>2. Pole &amp; Tangent at Pole:</strong></p>
+        <p>Put $r = 0 \implies a(1 + \cos\theta) = 0 \implies \cos\theta = -1 \implies \theta = \pi$.</p>
+        <p>Hence, the curve passes through the pole, and the line $\mathbf{\theta = \pi}$ is the tangent to the curve at the pole.</p>
+
+        <p class="exam-ans-step"><strong>3. Angle $\phi$ between Radius Vector and Tangent:</strong></p>
+        $$\frac{dr}{d\theta} = -a \sin\theta$$
+        $$\tan\phi = r \frac{d\theta}{dr} = \frac{a(1 + \cos\theta)}{-a \sin\theta} = \frac{2\cos^2(\theta/2)}{-2\sin(\theta/2)\cos(\theta/2)} = -\cot(\theta/2) = \tan\left(\frac{\pi}{2} + \frac{\theta}{2}\right)$$
+        $$\mathbf{\phi = \frac{\pi}{2} + \frac{\theta}{2}}$$
+        <ul>
+          <li>At $\theta = 0 \implies \phi = \pi/2$ (tangent is perpendicular to the initial line at the apex).</li>
+          <li>At $\theta = \pi \implies \phi = \pi$ (tangent coincides with the initial line, forming a sharp cusp).</li>
+        </ul>
+
+        <p class="exam-ans-step"><strong>4. Table of Values:</strong></p>
+        <ul>
+          <li>$\theta = 0 \implies r = a(1 + 1) = 2a$ (Maximum distance from pole)</li>
+          <li>$\theta = \pi/3 \implies r = a(1 + 0.5) = 1.5a$</li>
+          <li>$\theta = \pi/2 \implies r = a(1 + 0) = a$</li>
+          <li>$\theta = 2\pi/3 \implies r = a(1 - 0.5) = 0.5a$</li>
+          <li>$\theta = \pi \implies r = a(1 - 1) = 0$ (Cusp at pole)</li>
+        </ul>
+
+        <p class="exam-ans-step"><strong>5. Region of Existence:</strong></p>
+        <p>Since $-1 \le \cos\theta \le 1$, $r$ lies strictly between $0$ and $2a$ ($0 \le r \le 2a$). No part of the curve exists outside the circle $r = 2a$.</p>
+
+        <p class="exam-ans-step"><strong>6. Final Shape:</strong></p>
+        <p>A closed, heart-shaped curve with horizontal axis of symmetry, extending from the origin to $(2a, 0)$ with a sharp inward cusp at the pole.</p>
+      </div>
+
+      <!-- Curve 2 · Folium of Descartes -->
+      <div class="exam-subpart" style="margin-top: 24px;">
+        <span class="exam-subpart-title">Case 2 · Folium of Descartes (Dec 2017)</span>
+        $$x^3 + y^3 = 3axy \quad (a > 0)$$
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Full 15-Mark Solution for Case 2 (Folium of Descartes):</div>
+
+        <p class="exam-ans-step"><strong>1. Symmetry:</strong></p>
+        <p>Interchanging $x$ and $y$ gives $y^3 + x^3 = 3ayx$, which is identical to the original equation. Hence, the curve is <strong>symmetric about the line $y = x$</strong>.</p>
+
+        <p class="exam-ans-step"><strong>2. Origin &amp; Tangents at Origin:</strong></p>
+        <p>The equation contains no constant term, so the curve passes through the origin $(0, 0)$.</p>
+        <p>Equating the lowest degree terms to zero:</p>
+        $$3axy = 0 \implies x = 0 \quad \text{and} \quad y = 0$$
+        <p>Both axes ($x$-axis and $y$-axis) are tangents at $(0, 0)$. Since the tangents are real and distinct, $(0, 0)$ is a <strong>node</strong> (the curve crosses itself at the origin).</p>
+
+        <p class="exam-ans-step"><strong>3. Asymptotes:</strong></p>
+        <p>Since the curve is of degree 3, we search for oblique asymptotes of the form $y = mx + c$:</p>
+        <ul>
+          <li>Highest degree terms (degree 3): $\phi_3(m) = 1 + m^3 = 0 \implies m = -1$.</li>
+          <li>Degree 2 terms: $\phi_2(m) = -3am$.</li>
+          <li>Intercept $c = -\frac{\phi_2(m)}{\phi'_3(m)} = -\frac{-3am}{3m^2} = \frac{a}{m} = \frac{a}{-1} = -a$.</li>
+        </ul>
+        <p>The oblique asymptote is: $y = -x - a \implies \mathbf{x + y + a = 0}$.</p>
+
+        <p class="exam-ans-step"><strong>4. Loop in the First Quadrant:</strong></p>
+        <p>For $x > 0, y > 0$, the curve forms a single closed loop in the first quadrant.</p>
+        <p>Intersection with the line of symmetry $y = x$:</p>
+        $$x^3 + x^3 = 3ax(x) \implies 2x^3 = 3ax^2 \implies x = \frac{3a}{2}$$
+        <p>Thus, the vertex / apex of the loop is at the point $\mathbf{\left(\frac{3a}{2}, \frac{3a}{2}\right)}$.</p>
+
+        <p class="exam-ans-step"><strong>5. Asymptotic Branches:</strong></p>
+        <p>For $x \lt 0$ or $y \lt 0$, the curve has two infinite branches in the 2nd and 4th quadrants, both approaching the line $x + y + a = 0$ as $x \to -\infty$ or $y \to -\infty$.</p>
+      </div>
+
+      <!-- Curve 3 · Loop Curve -->
+      <div class="exam-subpart" style="margin-top: 24px;">
+        <span class="exam-subpart-title">Case 3 · Loop Curve (Dec 2018)</span>
+        $$9a y^2 = (x - 2a)(x - 5a)^2 \quad (a > 0)$$
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Full 15-Mark Solution for Case 3 (Loop Curve):</div>
+
+        <p class="exam-ans-step"><strong>1. Symmetry:</strong></p>
+        <p>The equation contains only even powers of $y$ ($y^2$). Replacing $y$ by $-y$ leaves the equation unchanged. Hence, the curve is <strong>symmetric about the x-axis</strong>.</p>
+
+        <p class="exam-ans-step"><strong>2. Origin &amp; Intersections with Axes:</strong></p>
+        <p>Putting $x = 0 \implies 9a y^2 = (-2a)(-5a)^2 = -50a^3 \lt 0$, which gives imaginary values for $y$. Thus, the curve does not cross the y-axis and does not pass through the origin.</p>
+        <p>Putting $y = 0$:</p>
+        $$(x - 2a)(x - 5a)^2 = 0 \implies x = 2a \quad \text{and} \quad x = 5a$$
+        <p>The curve intersects the x-axis at $\mathbf{(2a, 0)}$ and $\mathbf{(5a, 0)}$.</p>
+
+        <p class="exam-ans-step"><strong>3. Nature of the Node at $(5a, 0)$:</strong></p>
+        <p>Shift the origin to $(5a, 0)$ by substituting $x = 5a + X, y = Y$:</p>
+        $$9a Y^2 = (5a + X - 2a) X^2 = (3a + X) X^2 = 3a X^2 + X^3$$
+        <p>Equating the lowest degree terms to zero:</p>
+        $$9a Y^2 - 3a X^2 = 0 \implies 3Y^2 = X^2 \implies \mathbf{Y = \pm \frac{1}{\sqrt{3}} X}$$
+        <p>Since the tangents at $(5a, 0)$ are real and distinct, $\mathbf{(5a, 0)}$ is a <strong>node</strong> with tangents making angles of $30^\circ$ and $-30^\circ$ with the x-axis.</p>
+
+        <p class="exam-ans-step"><strong>4. Region of Absence:</strong></p>
+        $$y^2 = \frac{(x - 2a)(x - 5a)^2}{9a}$$
+        <p>Since $(x - 5a)^2 \ge 0$ for all real $x$, the sign of $y^2$ depends entirely on $(x - 2a)$:</p>
+        <ul>
+          <li>For $x \lt 2a$: $(x - 2a) \lt 0 \implies y^2 \lt 0$ (imaginary). <strong>No curve exists for $x \lt 2a$</strong>.</li>
+          <li>For $2a \le x \le 5a$: $(x - 2a) \ge 0 \implies y^2 \ge 0$. The curve forms a <strong>closed loop</strong> between $x = 2a$ and $x = 5a$.</li>
+          <li>For $x > 5a$: $(x - 2a) > 0 \implies y^2 > 0$. The curve extends to $+\infty$ in two open symmetrical branches.</li>
+        </ul>
+      </div>
+
+      <!-- Curve 4 · Cubic Curve -->
+      <div class="exam-subpart" style="margin-top: 24px;">
+        <span class="exam-subpart-title">Case 4 · Cubic Curve (Dec 2016)</span>
+        $$y^2 = (x - 1)(x - 2)(x - 3)$$
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Full 15-Mark Solution for Case 4 (Cubic Curve):</div>
+
+        <p class="exam-ans-step"><strong>1. Symmetry:</strong></p>
+        <p>The equation contains only even powers of $y$. Hence, the curve is <strong>symmetric about the x-axis</strong>.</p>
+
+        <p class="exam-ans-step"><strong>2. Intersections with the Axes:</strong></p>
+        <p>Putting $y = 0 \implies (x - 1)(x - 2)(x - 3) = 0 \implies x = 1, 2, 3$. The curve intersects the x-axis at three points: $\mathbf{(1, 0), (2, 0), (3, 0)}$.</p>
+        <p>Putting $x = 0 \implies y^2 = (-1)(-2)(-3) = -6 \lt 0$ (imaginary). The curve does not cross the y-axis.</p>
+
+        <p class="exam-ans-step"><strong>3. Tangents at the Points of Intersection:</strong></p>
+        <p>Differentiating $y^2 = (x - 1)(x - 2)(x - 3)$ implicitly with respect to $x$:</p>
+        $$2y \frac{dy}{dx} = (x - 2)(x - 3) + (x - 1)(x - 3) + (x - 1)(x - 2)$$
+        $$\frac{dy}{dx} = \frac{(x - 2)(x - 3) + (x - 1)(x - 3) + (x - 1)(x - 2)}{2y}$$
+        <p>At $x = 1, 2, 3$, $y = 0$, which makes $\frac{dy}{dx} = \infty$. Thus, the <strong>tangents are vertical (perpendicular to the x-axis) at $x = 1$, $x = 2$, and $x = 3$</strong>.</p>
+
+        <p class="exam-ans-step"><strong>4. Detailed Region of Existence / Absence Analysis:</strong></p>
+        <ul>
+          <li><strong>Region I ($x \lt 1$):</strong> All three factors $(x - 1), (x - 2), (x - 3)$ are negative. Negative $\times$ Negative $\times$ Negative = Negative $\implies y^2 \lt 0$. <strong>No curve exists for $x \lt 1$</strong>.</li>
+          <li><strong>Region II ($1 \le x \le 2$):</strong> $(x - 1) \ge 0$, while $(x - 2) \le 0$ and $(x - 3) \lt 0$. Positive $\times$ Negative $\times$ Negative = Positive $\implies y^2 \ge 0$. Hence, <strong>a closed oval loop exists between $x = 1$ and $x = 2$</strong>.</li>
+          <li><strong>Region III ($2 \lt x \lt 3$):</strong> $(x - 1) \gt 0$, $(x - 2) \gt 0$, and $(x - 3) \lt 0$. Positive $\times$ Positive $\times$ Negative = Negative $\implies y^2 \lt 0$. <strong>No curve exists between $x = 2$ and $x = 3$ (a blank gap)</strong>.</li>
+          <li><strong>Region IV ($x \ge 3$):</strong> All three factors are positive. Positive $\times$ Positive $\times$ Positive = Positive $\implies y^2 \ge 0$. As $x \to \infty$, $y \to \pm\infty$. Hence, <strong>two infinite open branches extend to $+\infty$</strong>.</li>
+        </ul>
+
+        <p class="exam-ans-step"><strong>5. Final Curve Description:</strong></p>
+        <p>The curve consists of two separate components: (i) an isolated closed oval loop lying between $x = 1$ and $x = 2$, and (ii) an open, parabolic-like branch starting at $x = 3$ with vertical tangent and extending to infinity on both sides of the x-axis.</p>
+      </div>
+    </div>
+
+  </div>
+</div>

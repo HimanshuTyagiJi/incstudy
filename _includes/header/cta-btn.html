@@ -1,0 +1,7 @@
+<!-- Header Right Primary CTA Pill Button (Phase 1: Start BCA / Phase 2: Login) -->
+{% assign cta = site.data.navigation.header_cta %}
+{% if cta %}
+<a href="{{ cta.url | relative_url }}" class="header-cta-pill">
+  {{ cta.label }}
+</a>
+{% endif %}
