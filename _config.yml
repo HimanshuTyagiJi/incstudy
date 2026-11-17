@@ -1,7 +1,7 @@
 title: IncStudy
 description: BCA notes, syllabus, previous year papers and study material organised by university, semester and subject.
-url: "https://incstudy.com"
-baseurl: ""
+url: "https://himanshutyagiji.github.io"
+baseurl: "/incstudy"
 lang: en-IN
 timezone: Asia/Kolkata
 markdown: kramdown
