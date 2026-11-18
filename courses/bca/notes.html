@@ -1,206 +1,812 @@
 ---
 layout: full-width
-title: BCA Semester Study Notes & Unit Guides
-description: Comprehensive semester-wise and subject-wise study notes, unit summaries, and key concepts mapped to CCSU Meerut university syllabus.
+title: BCA Semester Study Notes, Rapid Revision & Unit Guides
+description: Comprehensive semester-wise and topic-wise BCA study notes, quick revision cheat sheets, code blueprints, mathematical formulas, and data structures complexity tables for CCSU Meerut.
 permalink: /courses/bca/notes/
-eyebrow: COMPREHENSIVE STUDY NOTES
+eyebrow: COMPREHENSIVE STUDY NOTES & RAPID REVISION
 course_id: bca
 ---
 
-<div class="intro-copy" style="max-width: 850px; margin-bottom: 25px;">
-  <p style="font-size: 15px; line-height: 1.7; color: var(--muted);">
-    Access curated, easy-to-understand BCA study notes organized by semester and subject. Each notebook contains comprehensive unit summaries, detailed definitions, visual flowcharts, mathematical proofs, and model examination answers.
+<div class="intro-copy" style="max-width: 900px; margin-bottom: 25px;">
+  <p style="font-size: 16px; line-height: 1.8; color: var(--muted);">
+    Welcome to the <strong>IncStudy Master BCA Study Notes &amp; Rapid Revision Repository</strong>. Whether you need in-depth unit explanations, fast-revision formula sheets, language syntax blueprints, or algorithm complexity references, this page provides curated, classroom-tested academic resources organized systematically for your university semester examinations.
   </p>
 </div>
 
-<!-- Active Semester 1 Showcase -->
-<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; border-bottom: 2px solid var(--border); padding-bottom: 10px;">
-  <h2 style="margin: 0; font-size: 1.45rem;">BCA 1st Semester Subject Study Notes</h2>
-  <a href="{{ '/ccsu/bca/semester-1/' | relative_url }}" class="button button-primary" style="font-size: 12px; padding: 6px 14px;">Open 1st Sem Master Hub →</a>
+<!-- Fast Jump Hub Navigation -->
+<div style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 35px; position: sticky; top: 15px; z-index: 10; background: var(--surface); padding: 12px; border-radius: 12px; border: 1.5px solid var(--border); box-shadow: 0 4px 14px rgba(0,0,0,0.05);">
+  <a href="#featured-topic-notes" style="display: inline-flex; align-items: center; gap: 6px; padding: 7px 14px; border-radius: 8px; background: rgba(124,58,237,0.1); border: 1px solid rgba(124,58,237,0.25); font-size: 12.5px; font-weight: 700; color: #7c3aed; text-decoration: none;">Topic Deep-Dives &darr;</a>
+  <a href="#cheat-sheet-cpp" style="display: inline-flex; align-items: center; gap: 6px; padding: 7px 14px; border-radius: 8px; background: rgba(217,119,6,0.1); border: 1px solid rgba(217,119,6,0.25); font-size: 12.5px; font-weight: 700; color: #b45309; text-decoration: none;">C &amp; C++ Cheat Sheet &darr;</a>
+  <a href="#cheat-sheet-dsa" style="display: inline-flex; align-items: center; gap: 6px; padding: 7px 14px; border-radius: 8px; background: rgba(5,150,105,0.1); border: 1px solid rgba(5,150,105,0.25); font-size: 12.5px; font-weight: 700; color: #059669; text-decoration: none;">DSA Complexity Matrix &darr;</a>
+  <a href="#cheat-sheet-architecture" style="display: inline-flex; align-items: center; gap: 6px; padding: 7px 14px; border-radius: 8px; background: rgba(2,132,199,0.1); border: 1px solid rgba(2,132,199,0.25); font-size: 12.5px; font-weight: 700; color: #0284c7; text-decoration: none;">Architecture Reference &darr;</a>
+  <a href="#cheat-sheet-math" style="display: inline-flex; align-items: center; gap: 6px; padding: 7px 14px; border-radius: 8px; background: rgba(225,29,72,0.1); border: 1px solid rgba(225,29,72,0.25); font-size: 12.5px; font-weight: 700; color: #e11d48; text-decoration: none;">Math &amp; Stats Formulas &darr;</a>
+  <a href="#sem-subject-catalog" style="display: inline-flex; align-items: center; gap: 6px; padding: 7px 14px; border-radius: 8px; background: var(--surface); border: 1px solid var(--border); font-size: 12.5px; font-weight: 700; color: var(--text); text-decoration: none;">Semester Catalogs &darr;</a>
 </div>
 
-<div class="app-card-grid">
-
-  <!-- BCA-101: Mathematics-I -->
-  <a class="app-card app-card-amber" href="{{ '/ccsu/bca/semester-1/mathematics-1-important-questions/' | relative_url }}">
-    <div class="app-card-content">
-      <span class="app-card-badge">BCA-101 · Mathematics - I</span>
-      <h3 class="app-card-title">Mathematics - I Study Notes</h3>
-      <p class="app-card-desc">Unit 1–5: Matrices, Differential Calculus, Successive Differentiation, Integral Calculus &amp; Vector Algebra</p>
+<!-- ========================================================= -->
+<!-- FEATURED TOPIC DEEP-DIVES (LIVE CHAPTER STUDY NOTES) -->
+<!-- ========================================================= -->
+<div id="featured-topic-notes" style="margin-bottom: 50px;">
+  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; border-bottom: 2px solid var(--border); padding-bottom: 10px;">
+    <div>
+      <span class="eyebrow" style="color: var(--primary);">&#128214; Master Topic Modules</span>
+      <h2 style="margin: 4px 0 0; font-size: 1.5rem;">Standalone Topic Study Notes &amp; Theory Guides</h2>
     </div>
-    <div class="app-card-footer">
-      <span class="app-card-action">View Study Notes</span>
-      <span class="app-card-arrow">→</span>
-    </div>
-  </a>
-
-  <!-- BCA-102: C Programming -->
-  <a class="app-card app-card-purple" href="{{ '/ccsu/bca/semester-1/c-programming-important-questions/' | relative_url }}">
-    <div class="app-card-content">
-      <span class="app-card-badge">BCA-102 · Programming Principle &amp; Algorithm</span>
-      <h3 class="app-card-title">Programming Principle &amp; Algorithm (C)</h3>
-      <p class="app-card-desc">Unit 1–5: Problem Solving, C Syntax, Control Structures, Arrays, Functions, Recursion &amp; Storage Classes</p>
-    </div>
-    <div class="app-card-footer">
-      <span class="app-card-action">View Study Notes</span>
-      <span class="app-card-arrow">→</span>
-    </div>
-  </a>
-
-  <!-- BCA-103: Computer Fundamentals -->
-  <a class="app-card app-card-cyan" href="{{ '/ccsu/bca/semester-1/computer-fundamentals-important-questions/' | relative_url }}">
-    <div class="app-card-content">
-      <span class="app-card-badge">BCA-103 · Computer Fundamentals &amp; Office Automation</span>
-      <h3 class="app-card-title">Computer Fundamentals &amp; Office Automation</h3>
-      <p class="app-card-desc">Unit 1–5: Digital Architecture, Memory Organization, Operating Systems, MS-DOS, Word &amp; Excel</p>
-    </div>
-    <div class="app-card-footer">
-      <span class="app-card-action">View Study Notes</span>
-      <span class="app-card-arrow">→</span>
-    </div>
-  </a>
-
-  <!-- BCA-104: Management -->
-  <a class="app-card app-card-emerald" href="{{ '/ccsu/bca/semester-1/principles-of-management-important-questions/' | relative_url }}">
-    <div class="app-card-content">
-      <span class="app-card-badge">BCA-104 · Principles of Management</span>
-      <h3 class="app-card-title">Principles of Management Study Notes</h3>
-      <p class="app-card-desc">Unit 1–5: Nature of Management, Planning &amp; Decision Making, Organizing &amp; Staffing, Motivation &amp; Control</p>
-    </div>
-    <div class="app-card-footer">
-      <span class="app-card-action">View Study Notes</span>
-      <span class="app-card-arrow">→</span>
-    </div>
-  </a>
-
-  <!-- BCA-105: Communication -->
-  <a class="app-card app-card-pink" href="{{ '/ccsu/bca/semester-1/business-communication-important-questions/' | relative_url }}">
-    <div class="app-card-content">
-      <span class="app-card-badge">BCA-105 / BCA-106 · Business Communication</span>
-      <h3 class="app-card-title">Business Communication Study Notes</h3>
-      <p class="app-card-desc">Unit 1–5: Communication Process, 7 C's, Barriers, Business Correspondence, Report Writing &amp; Presentations</p>
-    </div>
-    <div class="app-card-footer">
-      <span class="app-card-action">View Study Notes</span>
-      <span class="app-card-arrow">→</span>
-    </div>
-  </a>
-
-</div>
-
-<!-- Active Semester 3 Showcase -->
-<div style="display: flex; justify-content: space-between; align-items: center; margin: 40px 0 18px; border-bottom: 2px solid var(--border); padding-bottom: 10px;">
-  <h2 style="margin: 0; font-size: 1.45rem;">BCA 3rd Semester Subject Notes &amp; Question Banks</h2>
-  <a href="{{ '/ccsu/bca/semester-3/' | relative_url }}" class="button button-primary" style="font-size: 12px; padding: 6px 14px;">Open 3rd Sem Master Hub →</a>
-</div>
-
-<div class="app-card-grid">
-
-  <!-- BCA-301: OOP with C++ -->
-  <a class="app-card app-card-pink" href="{{ '/ccsu/bca/semester-3/c-plus-plus-important-questions/' | relative_url }}">
-    <div class="app-card-content">
-      <span class="app-card-badge">BCA-301 &bull; OOP with C++</span>
-      <h3 class="app-card-title">Object Oriented Programming with C++ Notes &amp; Papers (2017–2022)</h3>
-      <p class="app-card-desc">Comprehensive question bank: Classes &amp; Objects, Diamond Problem Virtual Base Class, Operator Overloading, vtable/vptr Dynamic Polymorphism &amp; Binary Files</p>
-    </div>
-    <div class="app-card-footer">
-      <span class="app-card-action">Open C++ Notes &amp; Papers</span>
-      <span class="app-card-arrow">→</span>
-    </div>
-  </a>
-
-  <!-- BCA-302: Data Structures -->
-  <a class="app-card app-card-emerald" href="{{ '/ccsu/bca/semester-3/data-structures-important-questions/' | relative_url }}">
-    <div class="app-card-content">
-      <span class="app-card-badge">BCA-302 &bull; Data Structure Using C &amp; C++</span>
-      <h3 class="app-card-title">Data Structure Notes &amp; Exam Papers (2018–2021)</h3>
-      <p class="app-card-desc">Comprehensive question bank: Arrays &amp; Sparse Matrix, Stacks, Queues, Linked Lists, Binary Trees, B-Trees, Heap Sort &amp; Hashing</p>
-    </div>
-    <div class="app-card-footer">
-      <span class="app-card-action">Open DS Notes &amp; Papers</span>
-      <span class="app-card-arrow">→</span>
-    </div>
-  </a>
-
-  <!-- BCA-303: Computer Architecture & Assembly Language -->
-  <a class="app-card app-card-purple" href="{{ '/ccsu/bca/semester-3/computer-architecture-important-questions/' | relative_url }}">
-    <div class="app-card-content">
-      <span class="app-card-badge">BCA-303 &bull; Computer Architecture</span>
-      <h3 class="app-card-title">Computer Architecture &amp; Assembly Language Notes &amp; Papers (2017–2021)</h3>
-      <p class="app-card-desc">Comprehensive question bank: 8085 Microprocessor, Booth's Signed Multiplication, DMA Controller, Instruction Cycle RTL, Addressing Modes &amp; IOP</p>
-    </div>
-    <div class="app-card-footer">
-      <span class="app-card-action">Open Architecture Notes</span>
-      <span class="app-card-arrow">→</span>
-    </div>
-  </a>
-
-  <!-- BCA-304: Business Economics -->
-  <a class="app-card app-card-amber" href="{{ '/ccsu/bca/semester-3/business-economics-important-questions/' | relative_url }}">
-    <div class="app-card-content">
-      <span class="app-card-badge">BCA-304 &bull; Business Economics</span>
-      <h3 class="app-card-title">Business Economics Notes &amp; Papers (2017–2022)</h3>
-      <p class="app-card-desc">Comprehensive question bank: Demand Elasticity, Law of Variable Proportions, Cost Curves, Perfect Competition, Monopoly &amp; Sweezy's Oligopoly</p>
-    </div>
-    <div class="app-card-footer">
-      <span class="app-card-action">Open Economics Notes</span>
-      <span class="app-card-arrow">→</span>
-    </div>
-  </a>
-
-  <!-- BCA-305: Elements of Statistics -->
-  <a class="app-card app-card-cyan" href="{{ '/ccsu/bca/semester-3/elements-of-statistics-important-questions/' | relative_url }}">
-    <div class="app-card-content">
-      <span class="app-card-badge">BCA-305 &bull; Elements of Statistics</span>
-      <h3 class="app-card-title">Elements of Statistics Notes &amp; Papers (2017–2022)</h3>
-      <p class="app-card-desc">Comprehensive question bank: Central Tendency, Standard Deviation, Karl Pearson Correlation, Two Regression Equations, Bayes' Theorem, Normal Distribution &amp; SQC Charts</p>
-    </div>
-    <div class="app-card-footer">
-      <span class="app-card-action">Open Statistics Notes</span>
-      <span class="app-card-arrow">→</span>
-    </div>
-  </a>
-
-</div>
-
-<div class="prose" style="max-width: 900px; line-height: 1.8; font-size: 15px; margin-top: 45px;">
-
-  <h2>High-Scoring Study &amp; Answer-Writing Strategies for BCA</h2>
-  <p>
-    University semester examinations evaluate both your theoretical grasp and your ability to communicate complex algorithmic and mathematical concepts within the 3-hour exam limit. Follow these proven academic methods:
+    <a href="{{ '/bca/topics/' | relative_url }}" class="button button-outline" style="font-size: 12px; padding: 6px 14px;">Browse All Topics &rarr;</a>
+  </div>
+  <p style="font-size: 14px; color: var(--muted); margin-bottom: 20px;">
+    In-depth chapter guides covering detailed definitions, dry-run code blocks, memory diagrams, and typical recurring university theory questions:
   </p>
 
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin: 24px 0;">
+  <div class="app-card-grid">
 
-    <div style="background: var(--surface); border: 1.5px solid var(--border); border-radius: 12px; padding: 20px;">
-      <h3 style="margin-top: 0; font-size: 1.1rem; color: var(--text);">1. Programming Papers (C &amp; C++)</h3>
-      <p style="font-size: 13px; color: var(--muted); margin-bottom: 0;">
-        Never write raw code alone. Always precede your program with a short 2-line algorithm or flowchart, define your input and output variables, provide complete compilable syntax with proper curly braces and comments, and conclude with a step-by-step memory dry-run table showing sample terminal inputs and outputs.
-      </p>
+    <!-- Topic 1: C Programming Unit 1 -->
+    <a class="app-card app-card-purple" href="{{ '/bca/topics/c-programming-unit-1/' | relative_url }}">
+      <div class="app-card-content">
+        <span class="app-card-badge">BCA-102 &middot; 20 Min Read</span>
+        <h3 class="app-card-title">C Programming Unit 1: Fundamentals, Structure &amp; Operators</h3>
+        <p class="app-card-desc">Anatomy of a C program, C tokens, keywords, variables, format specifiers, prefix vs postfix operators dry run, and operator precedence hierarchy.</p>
+      </div>
+      <div class="app-card-footer">
+        <span class="app-card-action">Read Complete Notes</span>
+        <span class="app-card-arrow">&rarr;</span>
+      </div>
+    </a>
+
+    <!-- Topic 2: OOP with C++ Unit 1 -->
+    <a class="app-card app-card-pink" href="{{ '/bca/topics/cpp-unit-1/' | relative_url }}">
+      <div class="app-card-content">
+        <span class="app-card-badge">BCA-301 &middot; 25 Min Read</span>
+        <h3 class="app-card-title">OOP with C++ Unit 1: Paradigms, Classes &amp; Objects</h3>
+        <p class="app-card-desc">Procedural vs OOP limitations, 4 core OOP pillars, reference variables, inline functions, static members, friend functions, and object memory layout.</p>
+      </div>
+      <div class="app-card-footer">
+        <span class="app-card-action">Read Complete Notes</span>
+        <span class="app-card-arrow">&rarr;</span>
+      </div>
+    </a>
+
+    <!-- Topic 3: Data Structures Unit 1 -->
+    <a class="app-card app-card-emerald" href="{{ '/bca/topics/data-structures-unit-1/' | relative_url }}">
+      <div class="app-card-content">
+        <span class="app-card-badge">BCA-302 &middot; 20 Min Read</span>
+        <h3 class="app-card-title">Data Structures Unit 1: Arrays, Sparse Matrix &amp; Big-O</h3>
+        <p class="app-card-desc">Asymptotic complexity (Big-O, Omega, Theta), 1D &amp; 2D array row-major/column-major address calculation derivations, and 3-tuple sparse matrix representation.</p>
+      </div>
+      <div class="app-card-footer">
+        <span class="app-card-action">Read Complete Notes</span>
+        <span class="app-card-arrow">&rarr;</span>
+      </div>
+    </a>
+
+    <!-- Topic 4: Computer Fundamentals -->
+    <a class="app-card app-card-cyan" href="{{ '/bca/topics/computer-fundamentals/' | relative_url }}">
+      <div class="app-card-content">
+        <span class="app-card-badge">BCA-103 &middot; 18 Min Read</span>
+        <h3 class="app-card-title">Computer Fundamentals: Architecture, Memory &amp; OS</h3>
+        <p class="app-card-desc">Von Neumann computer architecture, CPU registers, primary vs secondary storage, memory hierarchy speed/cost pyramid, and OS roles.</p>
+      </div>
+      <div class="app-card-footer">
+        <span class="app-card-action">Read Complete Notes</span>
+        <span class="app-card-arrow">&rarr;</span>
+      </div>
+    </a>
+
+    <!-- Topic 5: Number Systems & Digital Logic -->
+    <a class="app-card app-card-amber" href="{{ '/bca/topics/number-system/' | relative_url }}">
+      <div class="app-card-content">
+        <span class="app-card-badge">BCA-103 / BCA-204 &middot; 22 Min Read</span>
+        <h3 class="app-card-title">Digital Number Systems, Conversions &amp; Complements</h3>
+        <p class="app-card-desc">Binary, Octal, Hexadecimal conversions, 1's and 2's complement signed arithmetic, overflow conditions, BCD, Gray code, and ASCII encoding.</p>
+      </div>
+      <div class="app-card-footer">
+        <span class="app-card-action">Read Complete Notes</span>
+        <span class="app-card-arrow">&rarr;</span>
+      </div>
+    </a>
+
+  </div>
+</div>
+
+<!-- ========================================================= -->
+<!-- CHEAT SHEET 1: C & C++ PROGRAMMING -->
+<!-- ========================================================= -->
+<div id="cheat-sheet-cpp" style="margin-bottom: 50px; padding-top: 15px; border-top: 2px solid var(--border);">
+  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+    <div>
+      <span class="eyebrow" style="color: #7c3aed;">&#128187; Rapid Revision Cheat Sheet 1</span>
+      <h2 style="margin: 4px 0 0; font-size: 1.45rem;">C &amp; C++ Programming Language Core Blueprint</h2>
+    </div>
+  </div>
+  <p style="font-size: 14px; color: var(--muted); margin-bottom: 18px; line-height: 1.6;">
+    Essential language mechanics, storage class lifetimes, memory layout, operator precedence, and object-oriented rules frequently tested in Section A (3M) and Section B (7.5M).
+  </p>
+
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 18px; margin-bottom: 20px;">
+    
+    <!-- Box 1: Storage Classes in C -->
+    <div style="background: var(--surface); border: 1.5px solid var(--border); border-radius: 12px; padding: 18px;">
+      <h3 style="margin-top: 0; font-size: 1.1rem; color: #7c3aed;">1. Storage Classes in C (Scope &amp; Lifetime)</h3>
+      <table style="width: 100%; border-collapse: collapse; font-size: 12px; text-align: left; margin-top: 10px;">
+        <thead>
+          <tr style="background: var(--tint);">
+            <th style="padding: 6px 8px; border: 1px solid var(--border);">Storage Class</th>
+            <th style="padding: 6px 8px; border: 1px solid var(--border);">Storage</th>
+            <th style="padding: 6px 8px; border: 1px solid var(--border);">Default</th>
+            <th style="padding: 6px 8px; border: 1px solid var(--border);">Scope</th>
+            <th style="padding: 6px 8px; border: 1px solid var(--border);">Lifetime</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding: 6px 8px; border: 1px solid var(--border); font-weight: 700;"><code>auto</code></td>
+            <td style="padding: 6px 8px; border: 1px solid var(--border);">Stack RAM</td>
+            <td style="padding: 6px 8px; border: 1px solid var(--border); color: #dc2626;">Garbage</td>
+            <td style="padding: 6px 8px; border: 1px solid var(--border);">Local block</td>
+            <td style="padding: 6px 8px; border: 1px solid var(--border);">End of block</td>
+          </tr>
+          <tr>
+            <td style="padding: 6px 8px; border: 1px solid var(--border); font-weight: 700;"><code>register</code></td>
+            <td style="padding: 6px 8px; border: 1px solid var(--border);">CPU Register</td>
+            <td style="padding: 6px 8px; border: 1px solid var(--border); color: #dc2626;">Garbage</td>
+            <td style="padding: 6px 8px; border: 1px solid var(--border);">Local block</td>
+            <td style="padding: 6px 8px; border: 1px solid var(--border);">End of block</td>
+          </tr>
+          <tr>
+            <td style="padding: 6px 8px; border: 1px solid var(--border); font-weight: 700;"><code>static</code></td>
+            <td style="padding: 6px 8px; border: 1px solid var(--border);">Data Segment</td>
+            <td style="padding: 6px 8px; border: 1px solid var(--border); color: #059669; font-weight: 700;">Zero (0)</td>
+            <td style="padding: 6px 8px; border: 1px solid var(--border);">Local / File</td>
+            <td style="padding: 6px 8px; border: 1px solid var(--border);">Entire program</td>
+          </tr>
+          <tr>
+            <td style="padding: 6px 8px; border: 1px solid var(--border); font-weight: 700;"><code>extern</code></td>
+            <td style="padding: 6px 8px; border: 1px solid var(--border);">Data Segment</td>
+            <td style="padding: 6px 8px; border: 1px solid var(--border); color: #059669; font-weight: 700;">Zero (0)</td>
+            <td style="padding: 6px 8px; border: 1px solid var(--border);">Global / Multi-file</td>
+            <td style="padding: 6px 8px; border: 1px solid var(--border);">Entire program</td>
+          </tr>
+        </tbody>
+      </table>
+      <p style="font-size: 11.5px; color: var(--muted); margin: 8px 0 0;"><em>Exam Keynote: Address-of operator (<code>&amp;</code>) cannot be applied to <code>register</code> variables because they reside in CPU registers, not main memory.</em></p>
     </div>
 
-    <div style="background: var(--surface); border: 1.5px solid var(--border); border-radius: 12px; padding: 20px;">
-      <h3 style="margin-top: 0; font-size: 1.1rem; color: var(--text);">2. Systems &amp; Hardware (Architecture &amp; Fundamentals)</h3>
-      <p style="font-size: 13px; color: var(--muted); margin-bottom: 0;">
-        Examiners award maximum marks for clear, labeled block diagrams. For CPU Architecture (BCA-303) and Computer Fundamentals (BCA-105), sketch the Common Bus Architecture, Register Transfer paths, Von Neumann bottlenecks, or Memory Hierarchies before writing descriptive paragraphs.
-      </p>
-    </div>
-
-    <div style="background: var(--surface); border: 1.5px solid var(--border); border-radius: 12px; padding: 20px;">
-      <h3 style="margin-top: 0; font-size: 1.1rem; color: var(--text);">3. Abstract Data Structures (DSA)</h3>
-      <p style="font-size: 13px; color: var(--muted); margin-bottom: 0;">
-        Illustrate operations visually. When explaining linked list deletion, stack pushes, queue wrap-arounds, or AVL tree rotations (LL, RR, LR, RL), sketch before-and-after pointer diagrams. Always state the Best, Average, and Worst-Case Big-O time and space complexities.
-      </p>
-    </div>
-
-    <div style="background: var(--surface); border: 1.5px solid var(--border); border-radius: 12px; padding: 20px;">
-      <h3 style="margin-top: 0; font-size: 1.1rem; color: var(--text);">4. Mathematical Papers (Math-I &amp; Statistics)</h3>
-      <p style="font-size: 13px; color: var(--muted); margin-bottom: 0;">
-        State the governing theorem or formula prominently at the top of your solution. Show each matrix row reduction operation explicitly, maintain equal-to signs in vertical alignment, state initial assumptions (e.g. sample size, population variance), and box your final numerical answers with appropriate units.
-      </p>
+    <!-- Box 2: C++ OOP Pillars & Dynamic Binding -->
+    <div style="background: var(--surface); border: 1.5px solid var(--border); border-radius: 12px; padding: 18px;">
+      <h3 style="margin-top: 0; font-size: 1.1rem; color: #db2777;">2. C++ Dynamic Polymorphism &amp; VTABLE Mechanism</h3>
+      <ul style="font-size: 13px; color: var(--muted); padding-left: 18px; margin: 0; line-height: 1.65;">
+        <li><strong>Early vs Late Binding:</strong> Normal functions bind at compile time (early). Declaring a base class function with <code>virtual</code> forces late (dynamic) binding at runtime via base pointer.</li>
+        <li><strong>VTABLE &amp; VPTR:</strong> When a class contains a <code>virtual</code> function, the compiler inserts a hidden Virtual Table Pointer (<code>_vptr</code>) inside each object pointing to a static array of function pointers (<code>VTABLE</code>).</li>
+        <li><strong>Pure Virtual Functions:</strong> <code>virtual void draw() = 0;</code> makes a class Abstract. Objects of abstract classes cannot be instantiated; derived classes must override all pure virtual functions.</li>
+        <li><strong>Diamond Problem Resolution:</strong> When Class D inherits from B and C, which both inherit from A, declare inheritance as <code>virtual public A</code> in B and C to maintain only one shared copy of A in D.</li>
+      </ul>
     </div>
 
   </div>
+
+  <!-- Box 3: Operator Precedence Quick Reference -->
+  <div style="background: var(--surface); border: 1.5px solid var(--border); border-radius: 12px; padding: 18px;">
+    <h3 style="margin-top: 0; font-size: 1.1rem; color: #b45309;">3. Operator Precedence &amp; Associativity Order (Highest to Lowest)</h3>
+    <div style="overflow-x: auto;">
+      <table style="width: 100%; border-collapse: collapse; font-size: 12px; text-align: left;">
+        <thead>
+          <tr style="background: var(--tint);">
+            <th style="padding: 6px 10px; border: 1px solid var(--border);">Tier</th>
+            <th style="padding: 6px 10px; border: 1px solid var(--border);">Operators</th>
+            <th style="padding: 6px 10px; border: 1px solid var(--border);">Description</th>
+            <th style="padding: 6px 10px; border: 1px solid var(--border);">Associativity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding: 6px 10px; border: 1px solid var(--border); font-weight: 700;">1 (Highest)</td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border);"><code>()</code>, <code>[]</code>, <code>-&gt;</code>, <code>.</code>, <code>::</code></td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border);">Parentheses, Subscript, Member access, Scope resolution</td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border);">Left to Right</td>
+          </tr>
+          <tr>
+            <td style="padding: 6px 10px; border: 1px solid var(--border); font-weight: 700;">2</td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border);"><code>!</code>, <code>~</code>, <code>++</code>, <code>--</code>, <code>+</code>, <code>-</code>, <code>*</code>, <code>&amp;</code>, <code>(type)</code>, <code>sizeof</code></td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border);">Unary operators, Indirection, Address-of, Cast</td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border); font-weight: 700; color: #dc2626;">Right to Left</td>
+          </tr>
+          <tr>
+            <td style="padding: 6px 10px; border: 1px solid var(--border); font-weight: 700;">3</td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border);"><code>*</code>, <code>/</code>, <code>%</code></td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border);">Multiplicative arithmetic</td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border);">Left to Right</td>
+          </tr>
+          <tr>
+            <td style="padding: 6px 10px; border: 1px solid var(--border); font-weight: 700;">4</td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border);"><code>+</code>, <code>-</code></td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border);">Additive arithmetic</td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border);">Left to Right</td>
+          </tr>
+          <tr>
+            <td style="padding: 6px 10px; border: 1px solid var(--border); font-weight: 700;">5</td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border);"><code>&lt;&lt;</code>, <code>&gt;&gt;</code></td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border);">Bitwise Left shift &amp; Right shift</td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border);">Left to Right</td>
+          </tr>
+          <tr>
+            <td style="padding: 6px 10px; border: 1px solid var(--border); font-weight: 700;">6</td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border);"><code>&lt;</code>, <code>&lt;=</code>, <code>&gt;</code>, <code>&gt;=</code></td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border);">Relational comparisons</td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border);">Left to Right</td>
+          </tr>
+          <tr>
+            <td style="padding: 6px 10px; border: 1px solid var(--border); font-weight: 700;">7</td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border);"><code>==</code>, <code>!=</code></td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border);">Equality comparisons</td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border);">Left to Right</td>
+          </tr>
+          <tr>
+            <td style="padding: 6px 10px; border: 1px solid var(--border); font-weight: 700;">8-10</td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border);"><code>&amp;</code>, <code>^</code>, <code>|</code></td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border);">Bitwise AND, Bitwise XOR, Bitwise OR</td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border);">Left to Right</td>
+          </tr>
+          <tr>
+            <td style="padding: 6px 10px; border: 1px solid var(--border); font-weight: 700;">11-12</td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border);"><code>&amp;&amp;</code>, <code>||</code></td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border);">Logical AND, Logical OR (Short-circuit evaluation)</td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border);">Left to Right</td>
+          </tr>
+          <tr>
+            <td style="padding: 6px 10px; border: 1px solid var(--border); font-weight: 700;">13</td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border);"><code>?:</code></td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border);">Ternary Conditional operator</td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border); font-weight: 700; color: #dc2626;">Right to Left</td>
+          </tr>
+          <tr>
+            <td style="padding: 6px 10px; border: 1px solid var(--border); font-weight: 700;">14</td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border);"><code>=</code>, <code>+=</code>, <code>-=</code>, <code>*=</code>, <code>/=</code>, <code>%=</code></td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border);">Assignment &amp; Compound Assignment</td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border); font-weight: 700; color: #dc2626;">Right to Left</td>
+          </tr>
+          <tr>
+            <td style="padding: 6px 10px; border: 1px solid var(--border); font-weight: 700;">15 (Lowest)</td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border);"><code>,</code></td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border);">Comma operator (Evaluates left-to-right, returns rightmost value)</td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border);">Left to Right</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- ========================================================= -->
+<!-- CHEAT SHEET 2: DATA STRUCTURES & ALGORITHMS (DSA) -->
+<!-- ========================================================= -->
+<div id="cheat-sheet-dsa" style="margin-bottom: 50px; padding-top: 15px; border-top: 2px solid var(--border);">
+  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+    <div>
+      <span class="eyebrow" style="color: #059669;">&#129513; Rapid Revision Cheat Sheet 2</span>
+      <h2 style="margin: 4px 0 0; font-size: 1.45rem;">Data Structures &amp; Algorithms (DSA) Complexity Matrix</h2>
+    </div>
+  </div>
+  <p style="font-size: 14px; color: var(--muted); margin-bottom: 18px; line-height: 1.6;">
+    Master asymptotic time and auxiliary space complexities across fundamental data structures and sorting algorithms required for BCA-302 examinations.
+  </p>
+
+  <!-- Big-O Data Structure Operations Matrix -->
+  <div style="overflow-x: auto; margin-bottom: 22px;">
+    <table style="width: 100%; border-collapse: collapse; font-size: 12.5px; text-align: left;">
+      <thead>
+        <tr style="background: var(--tint);">
+          <th style="padding: 8px 10px; border: 1px solid var(--border);">Data Structure</th>
+          <th style="padding: 8px 10px; border: 1px solid var(--border);">Access (Avg)</th>
+          <th style="padding: 8px 10px; border: 1px solid var(--border);">Search (Avg)</th>
+          <th style="padding: 8px 10px; border: 1px solid var(--border);">Insertion (Avg)</th>
+          <th style="padding: 8px 10px; border: 1px solid var(--border);">Deletion (Avg)</th>
+          <th style="padding: 8px 10px; border: 1px solid var(--border);">Space Complexity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="padding: 7px 10px; border: 1px solid var(--border); font-weight: 700;">Array (1D/2D)</td>
+          <td style="padding: 7px 10px; border: 1px solid var(--border); color: #059669; font-weight: 700;">O(1)</td>
+          <td style="padding: 7px 10px; border: 1px solid var(--border);">O(n)</td>
+          <td style="padding: 7px 10px; border: 1px solid var(--border);">O(n)</td>
+          <td style="padding: 7px 10px; border: 1px solid var(--border);">O(n)</td>
+          <td style="padding: 7px 10px; border: 1px solid var(--border);">O(n)</td>
+        </tr>
+        <tr>
+          <td style="padding: 7px 10px; border: 1px solid var(--border); font-weight: 700;">Singly Linked List</td>
+          <td style="padding: 7px 10px; border: 1px solid var(--border);">O(n)</td>
+          <td style="padding: 7px 10px; border: 1px solid var(--border);">O(n)</td>
+          <td style="padding: 7px 10px; border: 1px solid var(--border); color: #059669; font-weight: 700;">O(1) [at head]</td>
+          <td style="padding: 7px 10px; border: 1px solid var(--border); color: #059669; font-weight: 700;">O(1) [at head]</td>
+          <td style="padding: 7px 10px; border: 1px solid var(--border);">O(n)</td>
+        </tr>
+        <tr>
+          <td style="padding: 7px 10px; border: 1px solid var(--border); font-weight: 700;">Stack (LIFO)</td>
+          <td style="padding: 7px 10px; border: 1px solid var(--border);">O(n)</td>
+          <td style="padding: 7px 10px; border: 1px solid var(--border);">O(n)</td>
+          <td style="padding: 7px 10px; border: 1px solid var(--border); color: #059669; font-weight: 700;">O(1) [push]</td>
+          <td style="padding: 7px 10px; border: 1px solid var(--border); color: #059669; font-weight: 700;">O(1) [pop]</td>
+          <td style="padding: 7px 10px; border: 1px solid var(--border);">O(n)</td>
+        </tr>
+        <tr>
+          <td style="padding: 7px 10px; border: 1px solid var(--border); font-weight: 700;">Queue (FIFO)</td>
+          <td style="padding: 7px 10px; border: 1px solid var(--border);">O(n)</td>
+          <td style="padding: 7px 10px; border: 1px solid var(--border);">O(n)</td>
+          <td style="padding: 7px 10px; border: 1px solid var(--border); color: #059669; font-weight: 700;">O(1) [enqueue]</td>
+          <td style="padding: 7px 10px; border: 1px solid var(--border); color: #059669; font-weight: 700;">O(1) [dequeue]</td>
+          <td style="padding: 7px 10px; border: 1px solid var(--border);">O(n)</td>
+        </tr>
+        <tr>
+          <td style="padding: 7px 10px; border: 1px solid var(--border); font-weight: 700;">Binary Search Tree (BST)</td>
+          <td style="padding: 7px 10px; border: 1px solid var(--border);">O(log n)</td>
+          <td style="padding: 7px 10px; border: 1px solid var(--border);">O(log n) [Worst: O(n)]</td>
+          <td style="padding: 7px 10px; border: 1px solid var(--border);">O(log n) [Worst: O(n)]</td>
+          <td style="padding: 7px 10px; border: 1px solid var(--border);">O(log n) [Worst: O(n)]</td>
+          <td style="padding: 7px 10px; border: 1px solid var(--border);">O(n)</td>
+        </tr>
+        <tr>
+          <td style="padding: 7px 10px; border: 1px solid var(--border); font-weight: 700;">AVL Tree (Balanced)</td>
+          <td style="padding: 7px 10px; border: 1px solid var(--border); color: #059669; font-weight: 700;">O(log n)</td>
+          <td style="padding: 7px 10px; border: 1px solid var(--border); color: #059669; font-weight: 700;">O(log n)</td>
+          <td style="padding: 7px 10px; border: 1px solid var(--border); color: #059669; font-weight: 700;">O(log n)</td>
+          <td style="padding: 7px 10px; border: 1px solid var(--border); color: #059669; font-weight: 700;">O(log n)</td>
+          <td style="padding: 7px 10px; border: 1px solid var(--border);">O(n)</td>
+        </tr>
+        <tr>
+          <td style="padding: 7px 10px; border: 1px solid var(--border); font-weight: 700;">Hash Table</td>
+          <td style="padding: 7px 10px; border: 1px solid var(--border); color: var(--muted);">N/A</td>
+          <td style="padding: 7px 10px; border: 1px solid var(--border); color: #059669; font-weight: 700;">O(1) [Worst: O(n)]</td>
+          <td style="padding: 7px 10px; border: 1px solid var(--border); color: #059669; font-weight: 700;">O(1) [Worst: O(n)]</td>
+          <td style="padding: 7px 10px; border: 1px solid var(--border); color: #059669; font-weight: 700;">O(1) [Worst: O(n)]</td>
+          <td style="padding: 7px 10px; border: 1px solid var(--border);">O(n)</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Sorting Algorithms Benchmark Table -->
+  <div style="background: var(--surface); border: 1.5px solid var(--border); border-radius: 12px; padding: 18px;">
+    <h3 style="margin-top: 0; font-size: 1.1rem; color: #059669;">Sorting Algorithms Performance Comparison</h3>
+    <div style="overflow-x: auto;">
+      <table style="width: 100%; border-collapse: collapse; font-size: 12px; text-align: left;">
+        <thead>
+          <tr style="background: var(--tint);">
+            <th style="padding: 6px 10px; border: 1px solid var(--border);">Algorithm</th>
+            <th style="padding: 6px 10px; border: 1px solid var(--border);">Best Time</th>
+            <th style="padding: 6px 10px; border: 1px solid var(--border);">Average Time</th>
+            <th style="padding: 6px 10px; border: 1px solid var(--border);">Worst Time</th>
+            <th style="padding: 6px 10px; border: 1px solid var(--border);">Auxiliary Space</th>
+            <th style="padding: 6px 10px; border: 1px solid var(--border);">Stable?</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding: 6px 10px; border: 1px solid var(--border); font-weight: 700;">Bubble Sort</td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border); color: #059669;">O(n) [with flag]</td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border);">O(n²)</td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border);">O(n²)</td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border); color: #059669; font-weight: 700;">O(1)</td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border); color: #059669; font-weight: 700;">Yes</td>
+          </tr>
+          <tr>
+            <td style="padding: 6px 10px; border: 1px solid var(--border); font-weight: 700;">Selection Sort</td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border);">O(n²)</td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border);">O(n²)</td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border);">O(n²)</td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border); color: #059669; font-weight: 700;">O(1)</td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border); color: #dc2626;">No</td>
+          </tr>
+          <tr>
+            <td style="padding: 6px 10px; border: 1px solid var(--border); font-weight: 700;">Insertion Sort</td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border); color: #059669;">O(n)</td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border);">O(n²)</td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border);">O(n²)</td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border); color: #059669; font-weight: 700;">O(1)</td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border); color: #059669; font-weight: 700;">Yes</td>
+          </tr>
+          <tr>
+            <td style="padding: 6px 10px; border: 1px solid var(--border); font-weight: 700;">Quick Sort</td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border); color: #059669; font-weight: 700;">O(n log n)</td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border); color: #059669; font-weight: 700;">O(n log n)</td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border); color: #dc2626;">O(n²) [already sorted]</td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border);">O(log n)</td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border); color: #dc2626;">No</td>
+          </tr>
+          <tr>
+            <td style="padding: 6px 10px; border: 1px solid var(--border); font-weight: 700;">Merge Sort</td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border); color: #059669; font-weight: 700;">O(n log n)</td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border); color: #059669; font-weight: 700;">O(n log n)</td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border); color: #059669; font-weight: 700;">O(n log n)</td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border);">O(n)</td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border); color: #059669; font-weight: 700;">Yes</td>
+          </tr>
+          <tr>
+            <td style="padding: 6px 10px; border: 1px solid var(--border); font-weight: 700;">Heap Sort</td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border); color: #059669; font-weight: 700;">O(n log n)</td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border); color: #059669; font-weight: 700;">O(n log n)</td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border); color: #059669; font-weight: 700;">O(n log n)</td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border); color: #059669; font-weight: 700;">O(1)</td>
+            <td style="padding: 6px 10px; border: 1px solid var(--border); color: #dc2626;">No</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- ========================================================= -->
+<!-- CHEAT SHEET 3: COMPUTER ARCHITECTURE & 8085 MICROPROCESSOR -->
+<!-- ========================================================= -->
+<div id="cheat-sheet-architecture" style="margin-bottom: 50px; padding-top: 15px; border-top: 2px solid var(--border);">
+  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+    <div>
+      <span class="eyebrow" style="color: #0284c7;">&#9881; Rapid Revision Cheat Sheet 3</span>
+      <h2 style="margin: 4px 0 0; font-size: 1.45rem;">Computer Architecture &amp; 8085 Microprocessor Summary</h2>
+    </div>
+  </div>
+  <p style="font-size: 14px; color: var(--muted); margin-bottom: 18px; line-height: 1.6;">
+    Core CPU micro-operations, register transfers, addressing modes, and hardware control logic tested in BCA-303.
+  </p>
+
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 18px;">
+    
+    <!-- Box 1: 8085 CPU Architecture -->
+    <div style="background: var(--surface); border: 1.5px solid var(--border); border-radius: 12px; padding: 18px;">
+      <h3 style="margin-top: 0; font-size: 1.1rem; color: #0284c7;">1. Microprocessor 8085 Internal Register Map</h3>
+      <ul style="font-size: 13px; color: var(--muted); padding-left: 18px; margin: 0; line-height: 1.65;">
+        <li><strong>Accumulator (A - 8 bits):</strong> Primary register for all arithmetic and logical operations, stores the primary operand and computation result.</li>
+        <li><strong>General Purpose Registers (B, C, D, E, H, L):</strong> 6 registers of 8 bits each. Can be used individually or combined into 16-bit register pairs: <code>B-C</code>, <code>D-E</code>, and <code>H-L</code> (acts as memory pointer <code>M</code>).</li>
+        <li><strong>Program Counter (PC - 16 bits):</strong> Holds the memory address of the next instruction to be fetched and executed. Auto-increments after each fetch.</li>
+        <li><strong>Stack Pointer (SP - 16 bits):</strong> Holds the memory address of the current top of the stack located in RAM (decrements on <code>PUSH</code>, increments on <code>POP</code>).</li>
+        <li><strong>8-bit Flag Register:</strong> Contains 5 hardware status flip-flops:
+          <br><code>[ S | Z | X | AC | X | P | X | CY ]</code>
+          <br>&bull; <strong>S (Sign):</strong> 1 if MSB ($D_7$) is 1 (negative result).
+          <br>&bull; <strong>Z (Zero):</strong> 1 if ALU result is strictly zero.
+          <br>&bull; <strong>AC (Auxiliary Carry):</strong> 1 if carry generated from $D_3$ to $D_4$ (used in BCD).
+          <br>&bull; <strong>P (Parity):</strong> 1 if result has an even number of 1s.
+          <br>&bull; <strong>CY (Carry):</strong> 1 if addition/subtraction overflows 8 bits.
+        </li>
+      </ul>
+    </div>
+
+    <!-- Box 2: Instruction Cycle & Addressing Modes -->
+    <div style="background: var(--surface); border: 1.5px solid var(--border); border-radius: 12px; padding: 18px;">
+      <h3 style="margin-top: 0; font-size: 1.1rem; color: #7c3aed;">2. Instruction Cycle RTL &amp; Addressing Modes</h3>
+      <ul style="font-size: 13px; color: var(--muted); padding-left: 18px; margin: 0; line-height: 1.65;">
+        <li><strong>The 4 Stages of Instruction Cycle:</strong>
+          <br>&bull; <strong>Fetch ($T_0, T_1$):</strong> $AR \leftarrow PC$, then $IR \leftarrow M[AR], PC \leftarrow PC + 1$.
+          <br>&bull; <strong>Decode ($T_2$):</strong> Decode opcode in $IR(12-14)$, $AR \leftarrow IR(0-11)$, check mode bit $I = IR(15)$.
+          <br>&bull; <strong>Effective Address ($T_3$):</strong> If indirect ($I=1$), $AR \leftarrow M[AR]$.
+          <br>&bull; <strong>Execute ($T_4 \dots$):</strong> Perform operation according to decoded command.
+        </li>
+        <li><strong>Addressing Modes Quick Reference:</strong>
+          <br>&bull; <strong>Immediate:</strong> Operand is inside instruction (e.g. <code>MVI A, 32H</code>).
+          <br>&bull; <strong>Direct:</strong> Instruction contains memory address (e.g. <code>LDA 2050H</code>).
+          <br>&bull; <strong>Register:</strong> Operand resides in register (e.g. <code>MOV A, B</code>).
+          <br>&bull; <strong>Register Indirect:</strong> Address in register pair (e.g. <code>MOV A, M</code> via HL).
+          <br>&bull; <strong>Implied:</strong> Operand implied by opcode (e.g. <code>CMA</code>, <code>RAL</code>).
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+<!-- ========================================================= -->
+<!-- CHEAT SHEET 4: MATHEMATICS & STATISTICS FORMULAS -->
+<!-- ========================================================= -->
+<div id="cheat-sheet-math" style="margin-bottom: 50px; padding-top: 15px; border-top: 2px solid var(--border);">
+  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+    <div>
+      <span class="eyebrow" style="color: #e11d48;">&#128290; Rapid Revision Cheat Sheet 4</span>
+      <h2 style="margin: 4px 0 0; font-size: 1.45rem;">Mathematics &amp; Statistics University Formula Sheet</h2>
+    </div>
+  </div>
+  <p style="font-size: 14px; color: var(--muted); margin-bottom: 18px; line-height: 1.6;">
+    Core formulas for Calculus, Successive Differentiation, Matrices, Central Tendency, Correlation, and Regression tested in BCA-101 and BCA-305.
+  </p>
+
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 18px;">
+    
+    <!-- Box 1: Mathematics - I Formulas -->
+    <div style="background: var(--surface); border: 1.5px solid var(--border); border-radius: 12px; padding: 18px;">
+      <h3 style="margin-top: 0; font-size: 1.1rem; color: #b45309;">1. Mathematics - I (BCA-101) Core Formulas</h3>
+      <ul style="font-size: 13px; color: var(--muted); padding-left: 18px; margin: 0; line-height: 1.65;">
+        <li><strong>Leibnitz's Theorem ($n^{\text{th}}$ Derivative of Product $uv$):</strong>
+          <br><code>(uv)_n = u_n v + nC1 u_(n-1) v_1 + nC2 u_(n-2) v_2 + ... + u v_n</code>
+        </li>
+        <li><strong>Euler's Theorem for Homogeneous Functions of Degree $n$:</strong>
+          <br><code>x (∂u/∂x) + y (∂u/∂y) = n · u</code>
+        </li>
+        <li><strong>Cayley-Hamilton Theorem:</strong> Every square matrix $A$ satisfies its own characteristic equation:
+          <br><code>|A - λI| = 0  =>  A^n + c_(n-1) A^(n-1) + ... + c_0 I = 0</code>
+        </li>
+        <li><strong>Taylor's Expansion in Powers of $(x - a)$:</strong>
+          <br><code>f(x) = f(a) + (x-a) f'(a) + [(x-a)^2 / 2!] f''(a) + ...</code>
+        </li>
+        <li><strong>Standard Reduction Formula:</strong>
+          <br><code>∫ sin^n x dx = - (sin^(n-1) x cos x)/n + [(n-1)/n] ∫ sin^(n-2) x dx</code>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Box 2: Elements of Statistics Formulas -->
+    <div style="background: var(--surface); border: 1.5px solid var(--border); border-radius: 12px; padding: 18px;">
+      <h3 style="margin-top: 0; font-size: 1.1rem; color: #0284c7;">2. Elements of Statistics (BCA-305) Core Formulas</h3>
+      <ul style="font-size: 13px; color: var(--muted); padding-left: 18px; margin: 0; line-height: 1.65;">
+        <li><strong>Empirical Relationship:</strong>
+          <br><code>Mode = 3 · Median - 2 · Mean</code>
+        </li>
+        <li><strong>Continuous Median &amp; Mode:</strong>
+          <br><code>Median = L + [ (N/2 - c.f.) / f ] × h</code>
+          <br><code>Mode = L + [ (f1 - f0) / (2f1 - f0 - f2) ] × h</code>
+        </li>
+        <li><strong>Standard Deviation &amp; Coefficient of Variation:</strong>
+          <br><code>σ = √[ (Σfd² / N) - (Σfd / N)² ] × h</code>
+          <br><code>C.V. = (σ / X̄) × 100</code>
+        </li>
+        <li><strong>Karl Pearson's Correlation Coefficient ($r$):</strong>
+          <br><code>r = Σxy / √[ (Σx²) · (Σy²) ]</code> where <code>x = X - X̄</code>, <code>y = Y - Ȳ</code>
+        </li>
+        <li><strong>Two Linear Regression Equations:</strong>
+          <br><code>Y - Ȳ = b_yx (X - X̄)</code> where <code>b_yx = r (σ_y / σ_x)</code>
+          <br><code>X - X̄ = b_xy (Y - Ȳ)</code> where <code>b_xy = r (σ_x / σ_y)</code>
+          <br><em>Property: <code>r = ± √(b_yx · b_xy)</code></em>
+        </li>
+        <li><strong>Fisher's Ideal Index Number:</strong>
+          <br><code>P_01^F = √[ (Σp1 q0 / Σp0 q0) × (Σp1 q1 / Σp0 q1) ] × 100</code>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+<!-- ========================================================= -->
+<!-- COMPLETE 6-SEMESTER SUBJECT NOTES CATALOG -->
+<!-- ========================================================= -->
+<div id="sem-subject-catalog" style="margin-bottom: 50px; padding-top: 15px; border-top: 2px solid var(--border);">
+  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+    <div>
+      <span class="eyebrow" style="color: var(--primary);">&#128218; University Subject Catalog</span>
+      <h2 style="margin: 4px 0 0; font-size: 1.5rem;">Semester-Wise Study Notes &amp; Solved Notebooks</h2>
+    </div>
+  </div>
+  <p style="font-size: 14px; color: var(--muted); margin-bottom: 25px;">
+    Select any subject below to access the full solved examination question bank, unit breakdowns, and textbook references:
+  </p>
+
+  <!-- Semester 1 Grid -->
+  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; border-bottom: 1.5px solid var(--border); padding-bottom: 8px;">
+    <h3 style="margin: 0; font-size: 1.25rem; color: #b45309;">BCA 1st Semester Subject Notes</h3>
+    <a href="{{ '/ccsu/bca/semester-1/' | relative_url }}" class="button button-primary" style="font-size: 11px; padding: 5px 12px;">Open 1st Sem Hub &rarr;</a>
+  </div>
+
+  <div class="app-card-grid" style="margin-bottom: 35px;">
+    <!-- BCA-101 -->
+    <a class="app-card app-card-amber" href="{{ '/ccsu/bca/semester-1/mathematics-1-important-questions/' | relative_url }}">
+      <div class="app-card-content">
+        <span class="app-card-badge">BCA-101 &middot; Theory (75M)</span>
+        <h3 class="app-card-title">Mathematics - I</h3>
+        <p class="app-card-desc">Determinants, Row Echelon Rank, Cayley-Hamilton Theorem, Successive Differentiation, Leibnitz Rule, Jacobians &amp; Vector Algebra.</p>
+      </div>
+      <div class="app-card-footer">
+        <span class="app-card-action">Open Solved Notebook</span>
+        <span class="app-card-arrow">&rarr;</span>
+      </div>
+    </a>
+
+    <!-- BCA-102 -->
+    <a class="app-card app-card-purple" href="{{ '/ccsu/bca/semester-1/c-programming-important-questions/' | relative_url }}">
+      <div class="app-card-content">
+        <span class="app-card-badge">BCA-102 &middot; Theory (75M)</span>
+        <h3 class="app-card-title">Programming Principle &amp; Algorithm ('C')</h3>
+        <p class="app-card-desc">Algorithms, Flowcharts, C Tokens, Control Structures, Arrays, Recursion, Pointers, and Storage Classes with full code dry runs.</p>
+      </div>
+      <div class="app-card-footer">
+        <span class="app-card-action">Open Solved Notebook</span>
+        <span class="app-card-arrow">&rarr;</span>
+      </div>
+    </a>
+
+    <!-- BCA-103 -->
+    <a class="app-card app-card-cyan" href="{{ '/ccsu/bca/semester-1/computer-fundamentals-important-questions/' | relative_url }}">
+      <div class="app-card-content">
+        <span class="app-card-badge">BCA-103 &middot; Theory (75M)</span>
+        <h3 class="app-card-title">Computer Fundamentals &amp; Office Automation</h3>
+        <p class="app-card-desc">Von Neumann Architecture, Memory Hierarchy, Number Systems &amp; 2's Complement, Operating System Types, MS-Word, Excel &amp; Internet.</p>
+      </div>
+      <div class="app-card-footer">
+        <span class="app-card-action">Open Solved Notebook</span>
+        <span class="app-card-arrow">&rarr;</span>
+      </div>
+    </a>
+
+    <!-- BCA-104 -->
+    <a class="app-card app-card-emerald" href="{{ '/ccsu/bca/semester-1/principles-of-management-important-questions/' | relative_url }}">
+      <div class="app-card-content">
+        <span class="app-card-badge">BCA-104 &middot; Theory (75M)</span>
+        <h3 class="app-card-title">Principles of Management</h3>
+        <p class="app-card-desc">Evolution of Management Thought, Henri Fayol's 14 Principles, Planning, MBO, Leadership Styles, Motivation Theories &amp; PERT/CPM.</p>
+      </div>
+      <div class="app-card-footer">
+        <span class="app-card-action">Open Solved Notebook</span>
+        <span class="app-card-arrow">&rarr;</span>
+      </div>
+    </a>
+
+    <!-- BCA-105 -->
+    <a class="app-card app-card-pink" href="{{ '/ccsu/bca/semester-1/business-communication-important-questions/' | relative_url }}">
+      <div class="app-card-content">
+        <span class="app-card-badge">BCA-105/106 &middot; Theory (75M)</span>
+        <h3 class="app-card-title">Business Communication</h3>
+        <p class="app-card-desc">Communication Cycle, 7 C's of Communication, Non-verbal Kinesics, Formal Business Correspondence, Report Writing &amp; Professional Interviews.</p>
+      </div>
+      <div class="app-card-footer">
+        <span class="app-card-action">Open Solved Notebook</span>
+        <span class="app-card-arrow">&rarr;</span>
+      </div>
+    </a>
+  </div>
+
+  <!-- Semester 2 Grid -->
+  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; border-bottom: 1.5px solid var(--border); padding-bottom: 8px;">
+    <h3 style="margin: 0; font-size: 1.25rem; color: #7c3aed;">BCA 2nd Semester Subject Notes &amp; Guides</h3>
+    <a href="{{ '/ccsu/bca/semester-2/' | relative_url }}" class="button button-outline" style="font-size: 11px; padding: 5px 12px;">Open 2nd Sem Hub &rarr;</a>
+  </div>
+
+  <div class="app-card-grid" style="margin-bottom: 35px;">
+    <a class="app-card app-card-purple" href="{{ '/ccsu/bca/semester-2/#subjects' | relative_url }}">
+      <div class="app-card-content">
+        <span class="app-card-badge">BCA-201 &middot; Theory (75M)</span>
+        <h3 class="app-card-title">Mathematics - II (Discrete Mathematics)</h3>
+        <p class="app-card-desc">Sets, Relations, Equivalence Classes, Posets, Hasse Diagrams, Pigeonhole Principle, Predicate Logic &amp; Graph Spanning Trees.</p>
+      </div>
+      <div class="app-card-footer"><span class="app-card-action">View Subject Guide</span><span class="app-card-arrow">&rarr;</span></div>
+    </a>
+
+    <a class="app-card app-card-purple" href="{{ '/bca/topics/c-programming-unit-1/' | relative_url }}">
+      <div class="app-card-content">
+        <span class="app-card-badge">BCA-202 &middot; Theory (75M)</span>
+        <h3 class="app-card-title">C-Programming (Advanced Concepts)</h3>
+        <p class="app-card-desc">Pointer Arithmetic, Dynamic Memory (malloc/free), Nested Structures, File Streams (fopen/fread/fwrite) &amp; Preprocessor Directives.</p>
+      </div>
+      <div class="app-card-footer"><span class="app-card-action">View Subject Guide</span><span class="app-card-arrow">&rarr;</span></div>
+    </a>
+
+    <a class="app-card app-card-amber" href="{{ '/ccsu/bca/semester-2/#subjects' | relative_url }}">
+      <div class="app-card-content">
+        <span class="app-card-badge">BCA-203 &middot; Theory (75M)</span>
+        <h3 class="app-card-title">Organization Behavior</h3>
+        <p class="app-card-desc">Personality Big-Five, Perception Errors, Vroom's Expectancy Model, Group Dynamics (Tuckman's Stages) &amp; Lewin's Change Model.</p>
+      </div>
+      <div class="app-card-footer"><span class="app-card-action">View Subject Guide</span><span class="app-card-arrow">&rarr;</span></div>
+    </a>
+
+    <a class="app-card app-card-cyan" href="{{ '/ccsu/bca/semester-2/#subjects' | relative_url }}">
+      <div class="app-card-content">
+        <span class="app-card-badge">BCA-204 &middot; Theory (75M)</span>
+        <h3 class="app-card-title">Digital Electronics &amp; Computer Organization</h3>
+        <p class="app-card-desc">Logic Gates, De Morgan's Laws, K-Map Minimization, Adders, Multiplexers, Flip-Flops (SR, JK, D, T), Counters &amp; Memory Cells.</p>
+      </div>
+      <div class="app-card-footer"><span class="app-card-action">View Subject Guide</span><span class="app-card-arrow">&rarr;</span></div>
+    </a>
+
+    <a class="app-card app-card-pink" href="{{ '/ccsu/bca/semester-2/#subjects' | relative_url }}">
+      <div class="app-card-content">
+        <span class="app-card-badge">BCA-205 &middot; Theory (75M)</span>
+        <h3 class="app-card-title">Financial Accounting &amp; Management</h3>
+        <p class="app-card-desc">Double-Entry Rules, Journal, Ledger Posting, Trial Balance, Final Accounts with Adjustments &amp; Financial Ratio Analysis.</p>
+      </div>
+      <div class="app-card-footer"><span class="app-card-action">View Subject Guide</span><span class="app-card-arrow">&rarr;</span></div>
+    </a>
+  </div>
+
+  <!-- Semester 3 Grid -->
+  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; border-bottom: 1.5px solid var(--border); padding-bottom: 8px;">
+    <h3 style="margin: 0; font-size: 1.25rem; color: #0284c7;">BCA 3rd Semester Subject Notes</h3>
+    <a href="{{ '/ccsu/bca/semester-3/' | relative_url }}" class="button button-primary" style="font-size: 11px; padding: 5px 12px;">Open 3rd Sem Hub &rarr;</a>
+  </div>
+
+  <div class="app-card-grid" style="margin-bottom: 35px;">
+    <!-- BCA-301 -->
+    <a class="app-card app-card-pink" href="{{ '/ccsu/bca/semester-3/c-plus-plus-important-questions/' | relative_url }}">
+      <div class="app-card-content">
+        <span class="app-card-badge">BCA-301 &middot; Theory (75M)</span>
+        <h3 class="app-card-title">OOP with C++</h3>
+        <p class="app-card-desc">Classes, Objects, Static Members, Operator Overloading, Diamond Problem Virtual Base Classes, VTABLE/VPTR &amp; File Streams.</p>
+      </div>
+      <div class="app-card-footer">
+        <span class="app-card-action">Open Solved Notebook</span>
+        <span class="app-card-arrow">&rarr;</span>
+      </div>
+    </a>
+
+    <!-- BCA-302 -->
+    <a class="app-card app-card-emerald" href="{{ '/ccsu/bca/semester-3/data-structures-important-questions/' | relative_url }}">
+      <div class="app-card-content">
+        <span class="app-card-badge">BCA-302 &middot; Theory (75M)</span>
+        <h3 class="app-card-title">Data Structure Using C &amp; C++</h3>
+        <p class="app-card-desc">Row-Major Addressing, Stacks (Infix to Postfix), Queues, Singly/Doubly Linked Lists, BST Deletion, AVL Rotations &amp; Heap Sort.</p>
+      </div>
+      <div class="app-card-footer">
+        <span class="app-card-action">Open Solved Notebook</span>
+        <span class="app-card-arrow">&rarr;</span>
+      </div>
+    </a>
+
+    <!-- BCA-303 -->
+    <a class="app-card app-card-purple" href="{{ '/ccsu/bca/semester-3/computer-architecture-important-questions/' | relative_url }}">
+      <div class="app-card-content">
+        <span class="app-card-badge">BCA-303 &middot; Theory (75M)</span>
+        <h3 class="app-card-title">Computer Architecture &amp; Assembly Language</h3>
+        <p class="app-card-desc">Register Transfer Language, Common Bus System, Instruction Cycle RTL, 8085 Microprocessor, Booth's Algorithm &amp; DMA Transfer.</p>
+      </div>
+      <div class="app-card-footer">
+        <span class="app-card-action">Open Solved Notebook</span>
+        <span class="app-card-arrow">&rarr;</span>
+      </div>
+    </a>
+
+    <!-- BCA-304 -->
+    <a class="app-card app-card-amber" href="{{ '/ccsu/bca/semester-3/business-economics-important-questions/' | relative_url }}">
+      <div class="app-card-content">
+        <span class="app-card-badge">BCA-304 &middot; Theory (75M)</span>
+        <h3 class="app-card-title">Business Economics</h3>
+        <p class="app-card-desc">Law of Demand, Price Elasticity, Law of Variable Proportions, Perfect Competition, Monopoly Discrimination &amp; Sweezy's Oligopoly.</p>
+      </div>
+      <div class="app-card-footer">
+        <span class="app-card-action">Open Solved Notebook</span>
+        <span class="app-card-arrow">&rarr;</span>
+      </div>
+    </a>
+
+    <!-- BCA-305 -->
+    <a class="app-card app-card-cyan" href="{{ '/ccsu/bca/semester-3/elements-of-statistics-important-questions/' | relative_url }}">
+      <div class="app-card-content">
+        <span class="app-card-badge">BCA-305 &middot; Theory (75M)</span>
+        <h3 class="app-card-title">Elements of Statistics</h3>
+        <p class="app-card-desc">Mean, Median, Mode, Standard Deviation, Karl Pearson Correlation, Two Linear Regression Equations, Bayes' Theorem &amp; Fisher's Index.</p>
+      </div>
+      <div class="app-card-footer">
+        <span class="app-card-action">Open Solved Notebook</span>
+        <span class="app-card-arrow">&rarr;</span>
+      </div>
+    </a>
+  </div>
+
+  <!-- Semesters 4 to 6 Roadmap Summary -->
+  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; border-bottom: 1.5px solid var(--border); padding-bottom: 8px;">
+    <h3 style="margin: 0; font-size: 1.25rem; color: #059669;">BCA 4th to 6th Semester Course Roadmaps</h3>
+    <a href="{{ '/courses/bca/syllabus/' | relative_url }}" class="button button-outline" style="font-size: 11px; padding: 5px 12px;">Full 6-Sem Syllabus &rarr;</a>
+  </div>
+
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px;">
+    <div style="border: 1px solid var(--border); border-radius: 12px; padding: 18px; background: var(--surface);">
+      <h4 style="margin: 0 0 6px; color: #059669; font-size: 14px;">BCA 4th Semester (Year 2)</h4>
+      <p style="font-size: 12.5px; line-height: 1.6; color: var(--muted); margin: 0 0 10px;">Computer Graphics (BCA-401), Operating Systems (BCA-402), Software Engineering (BCA-403), Optimization Techniques (BCA-404), Mathematics-III (BCA-406).</p>
+      <a href="{{ '/ccsu/bca/semester-4/' | relative_url }}" style="font-size: 12px; font-weight: 700; color: var(--primary);">Explore 4th Sem Hub &rarr;</a>
+    </div>
+
+    <div style="border: 1px solid var(--border); border-radius: 12px; padding: 18px; background: var(--surface);">
+      <h4 style="margin: 0 0 6px; color: #e11d48; font-size: 14px;">BCA 5th Semester (Year 3)</h4>
+      <p style="font-size: 12.5px; line-height: 1.6; color: var(--muted); margin: 0 0 10px;">Introduction to DBMS (BCA-501), Java Programming &amp; Dynamic Web (BCA-502), Computer Networks (BCA-503), Numerical Methods (BCA-504).</p>
+      <a href="{{ '/ccsu/bca/semester-5/' | relative_url }}" style="font-size: 12px; font-weight: 700; color: var(--primary);">Explore 5th Sem Hub &rarr;</a>
+    </div>
+
+    <div style="border: 1px solid var(--border); border-radius: 12px; padding: 18px; background: var(--surface);">
+      <h4 style="margin: 0 0 6px; color: #6d28d9; font-size: 14px;">BCA 6th Semester (Year 3)</h4>
+      <p style="font-size: 12.5px; line-height: 1.6; color: var(--muted); margin: 0 0 10px;">Information System Analysis (BCA-601), E-Commerce (BCA-602), Network Security/Cloud (BCA-603), Major Capstone Project (BCA-604).</p>
+      <a href="{{ '/ccsu/bca/semester-6/' | relative_url }}" style="font-size: 12px; font-weight: 700; color: var(--primary);">Explore 6th Sem Hub &rarr;</a>
+    </div>
+  </div>
+
+</div>
+
+<!-- ========================================================= -->
+<!-- STANDARD TEXTBOOKS & EXAM STRATEGIES -->
+<!-- ========================================================= -->
+<div class="prose" style="max-width: 900px; line-height: 1.8; font-size: 15px; margin-top: 50px; border-top: 2px solid var(--border); padding-top: 30px;">
 
   <h2>Standard Recommended Textbooks for University Reference</h2>
   <div style="overflow-x: auto; margin: 20px 0;">
@@ -227,10 +833,22 @@ course_id: bca
           <td style="padding: 9px 12px; border: 1px solid var(--border);">E. Balagurusamy / Yashavant Kanetkar</td>
         </tr>
         <tr>
-          <td style="padding: 9px 12px; border: 1px solid var(--border); font-weight: 600;">BCA-105</td>
+          <td style="padding: 9px 12px; border: 1px solid var(--border); font-weight: 600;">BCA-103</td>
           <td style="padding: 9px 12px; border: 1px solid var(--border);">Computer Fundamentals</td>
           <td style="padding: 9px 12px; border: 1px solid var(--border);">Computer Fundamentals: Concepts &amp; Architecture</td>
           <td style="padding: 9px 12px; border: 1px solid var(--border);">Pradeep K. Sinha &amp; Priti Sinha (BPB)</td>
+        </tr>
+        <tr>
+          <td style="padding: 9px 12px; border: 1px solid var(--border); font-weight: 600;">BCA-201</td>
+          <td style="padding: 9px 12px; border: 1px solid var(--border);">Discrete Mathematics</td>
+          <td style="padding: 9px 12px; border: 1px solid var(--border);">Discrete Mathematics and Its Applications</td>
+          <td style="padding: 9px 12px; border: 1px solid var(--border);">Kenneth H. Rosen (McGraw Hill)</td>
+        </tr>
+        <tr>
+          <td style="padding: 9px 12px; border: 1px solid var(--border); font-weight: 600;">BCA-204</td>
+          <td style="padding: 9px 12px; border: 1px solid var(--border);">Digital Electronics &amp; Computer Org.</td>
+          <td style="padding: 9px 12px; border: 1px solid var(--border);">Digital Logic and Computer Design</td>
+          <td style="padding: 9px 12px; border: 1px solid var(--border);">M. Morris Mano (Pearson)</td>
         </tr>
         <tr>
           <td style="padding: 9px 12px; border: 1px solid var(--border); font-weight: 600;">BCA-301</td>
@@ -261,6 +879,24 @@ course_id: bca
           <td style="padding: 9px 12px; border: 1px solid var(--border);">Elements of Statistics</td>
           <td style="padding: 9px 12px; border: 1px solid var(--border);">Statistical Methods</td>
           <td style="padding: 9px 12px; border: 1px solid var(--border);">S.P. Gupta (Sultan Chand &amp; Sons)</td>
+        </tr>
+        <tr>
+          <td style="padding: 9px 12px; border: 1px solid var(--border); font-weight: 600;">BCA-501</td>
+          <td style="padding: 9px 12px; border: 1px solid var(--border);">Introduction to DBMS</td>
+          <td style="padding: 9px 12px; border: 1px solid var(--border);">Database System Concepts</td>
+          <td style="padding: 9px 12px; border: 1px solid var(--border);">Silberschatz, Korth &amp; Sudarshan</td>
+        </tr>
+        <tr>
+          <td style="padding: 9px 12px; border: 1px solid var(--border); font-weight: 600;">BCA-502</td>
+          <td style="padding: 9px 12px; border: 1px solid var(--border);">Java Programming</td>
+          <td style="padding: 9px 12px; border: 1px solid var(--border);">Java: The Complete Reference</td>
+          <td style="padding: 9px 12px; border: 1px solid var(--border);">Herbert Schildt (McGraw Hill)</td>
+        </tr>
+        <tr>
+          <td style="padding: 9px 12px; border: 1px solid var(--border); font-weight: 600;">BCA-503</td>
+          <td style="padding: 9px 12px; border: 1px solid var(--border);">Computer Network</td>
+          <td style="padding: 9px 12px; border: 1px solid var(--border);">Computer Networks</td>
+          <td style="padding: 9px 12px; border: 1px solid var(--border);">Andrew S. Tanenbaum (Pearson)</td>
         </tr>
       </tbody>
     </table>
