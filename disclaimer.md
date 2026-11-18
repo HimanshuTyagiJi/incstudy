@@ -11,7 +11,7 @@ eyebrow: LEGAL & PRIVACY
     This Academic Disclaimer governs the use of all study notes, solved question banks, mathematical derivations, code dry-runs, and syllabus outlines published on <strong>IncStudy</strong> (<a href="https://incstudy.com">https://incstudy.com</a>). Please read this page carefully before using any materials on this portal.
   </p>
   <p style="font-size: 13px; color: var(--muted); margin-top: 8px;">
-    <strong>Last Updated:</strong> January 2026 | <strong>Effective Date:</strong> January 1, 2026
+    <strong>Last Updated:</strong> November 2026 | <strong>Effective Date:</strong> November 18, 2026
   </p>
 </div>
 

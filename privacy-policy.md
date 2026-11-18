@@ -11,7 +11,7 @@ eyebrow: LEGAL & PRIVACY
     At <strong>IncStudy</strong> (accessible from <a href="https://incstudy.com">https://incstudy.com</a>), one of our main priorities is the privacy of our visitors. This Privacy Policy document outlines the types of information collected and recorded by IncStudy and how we use, safeguard, and protect it in compliance with global standards, including the General Data Protection Regulation (GDPR) and the California Consumer Privacy Act (CCPA).
   </p>
   <p style="font-size: 13px; color: var(--muted); margin-top: 8px;">
-    <strong>Last Updated:</strong> January 2026 | <strong>Effective Date:</strong> January 1, 2026
+    <strong>Last Updated:</strong> November 2026 | <strong>Effective Date:</strong> November 18, 2026
   </p>
 </div>
 

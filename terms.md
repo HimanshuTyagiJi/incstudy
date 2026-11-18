@@ -11,7 +11,7 @@ eyebrow: LEGAL & PRIVACY
     Welcome to <strong>IncStudy</strong> (<a href="https://incstudy.com">https://incstudy.com</a>). These Terms of Service ("Terms") govern your access to and use of IncStudy's website, study notes, solved question notebooks, syllabus guides, code examples, and related services.
   </p>
   <p style="font-size: 13px; color: var(--muted); margin-top: 8px;">
-    <strong>Last Updated:</strong> January 2026 | <strong>Effective Date:</strong> January 1, 2026
+    <strong>Last Updated:</strong> November 2026 | <strong>Effective Date:</strong> November 18, 2026
   </p>
 </div>
 
