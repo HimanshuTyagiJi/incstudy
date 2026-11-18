@@ -37,7 +37,7 @@ eyebrow: ABOUT OUR PLATFORM
       Himanshu is a computer science educator, developer, and academic writer based in Uttar Pradesh, India. Having experienced first-hand the challenges college students encounter during university semester examinations, he established IncStudy to curate textbook-grade study guides that bridge the gap between classroom theory and university scoring patterns.
     </p>
     <p style="font-size: 13px; color: var(--muted); margin-bottom: 0;">
-      <strong>Direct Email:</strong> <a href="mailto:golutyagi9710@gmail.com">golutyagi9710@gmail.com</a> | <strong>GitHub:</strong> <a href="https://github.com/HimanshuTyagiJi" target="_blank" rel="noopener noreferrer">@HimanshuTyagiJi</a>
+      <strong>Direct Email:</strong> <a href="mailto:golutyagi9710@gmail.com">golutyagi9710@gmail.com</a>
     </p>
   </div>
 

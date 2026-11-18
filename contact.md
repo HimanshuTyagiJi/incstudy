@@ -82,7 +82,7 @@ eyebrow: GET IN TOUCH
     <p style="font-size: 14px; line-height: 1.6; color: var(--muted); margin-bottom: 16px;">
       <strong>Region:</strong> Uttar Pradesh, India<br>
       <strong>Focus Curriculum:</strong> CCSU Meerut &amp; North Indian Universities<br>
-      <strong>GitHub Author:</strong> <a href="https://github.com/HimanshuTyagiJi" target="_blank" rel="noopener noreferrer">@HimanshuTyagiJi</a>
+      <strong>Author &amp; Lead:</strong> Himanshu Tyagi
     </p>
     <span style="margin-top: auto; font-size: 13px; color: var(--muted);">
       Active online academic support 7 days a week.
