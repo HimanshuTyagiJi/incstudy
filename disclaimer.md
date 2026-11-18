@@ -76,7 +76,7 @@ eyebrow: LEGAL & PRIVACY
     We strive for 100% academic accuracy. If you notice a typo in a mathematical proof, an issue in a C/C++ program snippet, or an outdated syllabus topic, please notify us immediately so we can inspect and update it:
   </p>
   <ul>
-    <li><strong>Email:</strong> <a href="mailto:officialhimanshutyagi@gmail.com">officialhimanshutyagi@gmail.com</a></li>
+    <li><strong>Email:</strong> <a href="mailto:golutyagi9710@gmail.com">golutyagi9710@gmail.com</a></li>
     <li><strong>Correction Subject Line:</strong> <code>[Academic Correction] Page Title / Subject Code</code></li>
     <li><strong>Contact Page:</strong> <a href="{{ '/contact/' | relative_url }}">https://incstudy.com/contact/</a></li>
   </ul>

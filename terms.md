@@ -85,7 +85,7 @@ eyebrow: LEGAL & PRIVACY
     If you have any questions or feedback regarding these Terms of Service, please reach out to us:
   </p>
   <ul>
-    <li><strong>Email:</strong> <a href="mailto:officialhimanshutyagi@gmail.com">officialhimanshutyagi@gmail.com</a></li>
+    <li><strong>Email:</strong> <a href="mailto:golutyagi9710@gmail.com">golutyagi9710@gmail.com</a></li>
     <li><strong>Contact Form:</strong> <a href="{{ '/contact/' | relative_url }}">https://incstudy.com/contact/</a></li>
   </ul>
 

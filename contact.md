@@ -34,8 +34,8 @@ eyebrow: GET IN TOUCH
     <p style="font-size: 14px; line-height: 1.6; color: var(--muted); margin-bottom: 16px;">
       For general inquiries, editorial corrections, collaboration proposals, or privacy-related requests:
     </p>
-    <a href="mailto:officialhimanshutyagi@gmail.com" style="margin-top: auto; font-weight: 600; color: #2563eb; text-decoration: none; word-break: break-all;">
-      officialhimanshutyagi@gmail.com &rarr;
+    <a href="mailto:golutyagi9710@gmail.com" style="margin-top: auto; font-weight: 600; color: #2563eb; text-decoration: none; word-break: break-all;">
+      golutyagi9710@gmail.com &rarr;
     </a>
   </div>
 
@@ -102,7 +102,7 @@ eyebrow: GET IN TOUCH
 
   <h3>2. How can I submit past year question papers?</h3>
   <p>
-    If you have clear scanned photos or PDFs of Chaudhary Charan Singh University or other university semester examination papers (especially recent papers from 2021 to 2025), please email them as attachments to <a href="mailto:officialhimanshutyagi@gmail.com">officialhimanshutyagi@gmail.com</a>. Our team will transcribe, verify, and solve them for everyone to benefit.
+    If you have clear scanned photos or PDFs of Chaudhary Charan Singh University or other university semester examination papers (especially recent papers from 2021 to 2025), please email them as attachments to <a href="mailto:golutyagi9710@gmail.com">golutyagi9710@gmail.com</a>. Our team will transcribe, verify, and solve them for everyone to benefit.
   </p>
 
   <h3>3. Are there any paid services or subscriptions on IncStudy?</h3>

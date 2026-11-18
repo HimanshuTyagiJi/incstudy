@@ -19,7 +19,7 @@ eyebrow: LEGAL & PRIVACY
 
   <h2>1. Consent</h2>
   <p>
-    By using our website, you hereby consent to our Privacy Policy and agree to its terms. If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us at <strong><a href="mailto:officialhimanshutyagi@gmail.com">officialhimanshutyagi@gmail.com</a></strong>.
+    By using our website, you hereby consent to our Privacy Policy and agree to its terms. If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us at <strong><a href="mailto:golutyagi9710@gmail.com">golutyagi9710@gmail.com</a></strong>.
   </p>
 
   <h2>2. Information We Collect</h2>
@@ -30,7 +30,7 @@ eyebrow: LEGAL & PRIVACY
     The personal information that you are asked to provide, and the reasons why you are asked to provide it, will be made clear to you at the point we ask you to provide your personal information:
   </p>
   <ul>
-    <li><strong>Direct Inquiries:</strong> If you contact us directly via email (<a href="mailto:officialhimanshutyagi@gmail.com">officialhimanshutyagi@gmail.com</a>) or our contact form, we may receive additional information about you such as your name, email address, the contents of the message and/or attachments you may send us, and any other information you may choose to provide.</li>
+    <li><strong>Direct Inquiries:</strong> If you contact us directly via email (<a href="mailto:golutyagi9710@gmail.com">golutyagi9710@gmail.com</a>) or our contact form, we may receive additional information about you such as your name, email address, the contents of the message and/or attachments you may send us, and any other information you may choose to provide.</li>
     <li><strong>Voluntary Academic Feedback:</strong> When you suggest syllabus corrections, report broken links, or submit model exam questions, your supplied email address is used solely to respond to your academic inquiry.</li>
   </ul>
 
@@ -87,7 +87,7 @@ eyebrow: LEGAL & PRIVACY
     <li>Request that a business delete any personal data about the consumer that a business has collected.</li>
     <li>Request that a business that sells a consumer's personal data, not sell the consumer's personal data. <em>IncStudy does not sell, rent, or trade any personal data of its users under any circumstances.</em></li>
   </ul>
-  <p>If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us at <a href="mailto:officialhimanshutyagi@gmail.com">officialhimanshutyagi@gmail.com</a>.</p>
+  <p>If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us at <a href="mailto:golutyagi9710@gmail.com">golutyagi9710@gmail.com</a>.</p>
 
   <h2>9. GDPR Data Protection Rights</h2>
   <p>We would like to make sure you are fully aware of all of your data protection rights under the General Data Protection Regulation (GDPR). Every user is entitled to the following:</p>
@@ -114,7 +114,7 @@ eyebrow: LEGAL & PRIVACY
   </p>
   <ul>
     <li><strong>Website:</strong> <a href="https://incstudy.com">https://incstudy.com</a></li>
-    <li><strong>Email:</strong> <a href="mailto:officialhimanshutyagi@gmail.com">officialhimanshutyagi@gmail.com</a></li>
+    <li><strong>Email:</strong> <a href="mailto:golutyagi9710@gmail.com">golutyagi9710@gmail.com</a></li>
     <li><strong>Contact Page:</strong> <a href="{{ '/contact/' | relative_url }}">https://incstudy.com/contact/</a></li>
     <li><strong>Operating Location:</strong> Uttar Pradesh, India</li>
   </ul>
