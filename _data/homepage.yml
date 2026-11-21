@@ -3,10 +3,10 @@
 mode: phase1_bca
 
 hero:
-  badge: "Free Academic Portal"
+  badge: "Free BCA Study Material & Academic Portal"
   title_line1: "BCA Semester-wise"
   title_highlight: "Complete Study Material"
-  description: "Get detailed subject study notes, official university syllabus, 10-year previous exam papers, and solved question notebooks for BCA – all in one place. Completely Free."
+  description: "Get detailed BCA study material, semester-wise study notes, official university syllabus, 10-year previous exam papers, and solved question notebooks for BCA students – all in one place. Completely Free."
   primary_cta:
     label: "Explore Solved Question Banks"
     url: "/courses/bca/important-questions/"

@@ -4,6 +4,11 @@
 {% assign page_title = page.seo_title | default: page.title | default: site.title %}
 <title>{{ page_title | escape }}{% unless page_title contains site.title %} | {{ site.title | escape }}{% endunless %}</title>
 <meta name="description" content="{{ page.description | default: site.description | strip_html | normalize_whitespace | escape }}">
+<meta name="keywords" content="{{ page.keywords | default: 'bca study material, bca study, bca notes, bca syllabus, bca previous year papers, ccsu bca study material, bca solved question papers, bca 1st sem study material, bca subjects, bca study hub' | escape }}">
+<meta property="og:title" content="{{ page_title | escape }}">
+<meta property="og:description" content="{{ page.description | default: site.description | strip_html | normalize_whitespace | escape }}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta property="og:type" content="website">
 <meta name="google-site-verification" content="z59dDXkuOEmjP0xaRnZ0ZUYZWZsM5HgfdF5qOEw2we0">
 <meta name="google-adsense-account" content="ca-pub-7067722696020503">
 <link rel="canonical" href="{{ page.url | absolute_url }}">
