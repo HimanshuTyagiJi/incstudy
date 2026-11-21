@@ -141,6 +141,8 @@
 .exam-q-desc{font-size:14.5px;line-height:1.65;color:var(--text);margin:6px 0 10px}
 .katex-display{overflow-x:auto;overflow-y:hidden;padding:6px 0;margin:10px 0!important;max-width:100%;-webkit-overflow-scrolling:touch}
 .exam-ans-card{padding:14px 18px;border-radius:12px;background:var(--soft);border-left:4px solid var(--primary);border-top:1px solid var(--border);border-right:1px solid var(--border);border-bottom:1px solid var(--border);margin-top:14px;overflow-x:auto;max-width:100%;-webkit-overflow-scrolling:touch}
+.flowchart-box{max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.exam-ans-card pre{overflow-x:auto!important;max-width:100%!important;-webkit-overflow-scrolling:touch!important}
 .exam-ans-title{font-size:12.5px;font-weight:800;color:var(--primary);text-transform:uppercase;letter-spacing:.04em;margin-bottom:10px;display:flex;align-items:center;gap:6px}
 .exam-ans-step{font-size:13.5px;font-weight:700;color:var(--text);margin:10px 0 4px}
 .exam-ans-card p{margin:0 0 8px;font-size:14px;line-height:1.65;color:var(--text)}

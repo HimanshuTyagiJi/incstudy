@@ -838,7 +838,11 @@ int main() {
       <span class="exam-section-badge badge-purple">SECTION C &bull; 15 MARKS EACH</span>
       <h3 class="exam-section-title">Long Descriptive Questions, Algorithms &amp; Complete Programs</h3>
       <p class="exam-section-rule">CCSU Examination Blueprint: Attempt Any 3 out of 5 &bull; 45 Marks Total</p>
-    
+    </div>
+  </div>
+
+  <div class="exam-section-body">
+
     <!-- Q23: Flowchart for Average Marks of 5 Subjects (CCSU Dec 2017 Sec B Q8) -->
     <div class="exam-q-item">
       <div class="exam-q-header">
@@ -859,8 +863,12 @@ int main() {
             <span class="exam-section-badge badge-emerald" style="font-size: 11px;">Authentic Vector SVG Diagram</span>
           </div>
           
-          <div style="width: 100%; max-width: 620px; margin: auto; overflow-x: auto;">
-            <svg viewBox="0 0 620 620" width="100%" height="auto" style="display:block; min-width: 320px; font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+          <div style="font-size: 11.5px; color: var(--primary); font-weight: 700; margin-bottom: 8px; display: flex; align-items: center; gap: 6px;">
+            <span>↔️ Swipe / Scroll horizontally (Left to Right) to inspect full diagram:</span>
+          </div>
+
+          <div style="width: 100%; max-width: 100%; margin: auto; overflow-x: auto; -webkit-overflow-scrolling: touch; padding-bottom: 10px;">
+            <svg viewBox="0 0 620 620" width="620" height="620" style="display:block; min-width: 520px; max-width: 100%; height: auto; margin: 0 auto; font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
               <defs>
                 <marker id="fc-arrow-m5" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto">
                   <path d="M 0 1 L 10 5 L 0 9 z" fill="#64748b"/>
@@ -1009,6 +1017,102 @@ int main() {
         <div class="exam-ans-title">✍️ Model Answer:</div>
         <p>A C program adheres to a well-defined modular structure consisting of six standard hierarchical sections. Knowing the exact sequence is essential for writing clean, error-free C applications that compile seamlessly.</p>
 
+        <!-- Real Vector Architecture Diagram for Structure of C Program -->
+        <div class="flowchart-box" style="margin: 22px 0; padding: 20px; background: color-mix(in srgb, var(--surface) 95%, var(--border)); border: 1.5px solid var(--border); border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom: 14px; flex-wrap:wrap; gap:8px;">
+            <span style="font-size: 13.5px; font-weight: 800; color: #7c3aed; letter-spacing: 0.04em;">📐 ARCHITECTURE DIAGRAM : Standard Structure of a C Program (6 Modular Sections)</span>
+            <span class="exam-section-badge badge-purple" style="font-size: 11px;">Standard ANSI / ISO C Layout</span>
+          </div>
+
+          <div style="font-size: 11.5px; color: #7c3aed; font-weight: 700; margin-bottom: 8px; display: flex; align-items: center; gap: 6px;">
+            <span>↔️ Swipe / Scroll horizontally (Left to Right) to inspect full diagram:</span>
+          </div>
+
+          <div style="width: 100%; max-width: 100%; margin: auto; overflow-x: auto; -webkit-overflow-scrolling: touch; padding-bottom: 10px;">
+            <svg viewBox="0 0 660 480" width="660" height="480" style="display:block; min-width: 540px; max-width: 100%; height: auto; margin: 0 auto; font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+              <defs>
+                <linearGradient id="grad-sec-doc" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#f8fafc"/>
+                  <stop offset="100%" stop-color="#e2e8f0"/>
+                </linearGradient>
+                <linearGradient id="grad-sec-link" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#eff6ff"/>
+                  <stop offset="100%" stop-color="#dbeafe"/>
+                </linearGradient>
+                <linearGradient id="grad-sec-def" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#f0fdf4"/>
+                  <stop offset="100%" stop-color="#dcfce7"/>
+                </linearGradient>
+                <linearGradient id="grad-sec-glob" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#fefce8"/>
+                  <stop offset="100%" stop-color="#fef9c3"/>
+                </linearGradient>
+                <linearGradient id="grad-sec-main" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#faf5ff"/>
+                  <stop offset="100%" stop-color="#f3e8ff"/>
+                </linearGradient>
+                <linearGradient id="grad-sec-sub" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#ecfeff"/>
+                  <stop offset="100%" stop-color="#cffafe"/>
+                </linearGradient>
+              </defs>
+
+              <!-- Section 1: Documentation -->
+              <rect x="30" y="20" width="600" height="52" rx="10" fill="url(#grad-sec-doc)" stroke="#94a3b8" stroke-width="2"/>
+              <text x="50" y="44" font-size="14" font-weight="800" fill="#334155">1. DOCUMENTATION SECTION</text>
+              <text x="50" y="62" font-size="11.5" fill="#64748b">Comments: Program Title, Author, Date, Purpose  /* ... */ or // (Optional)</text>
+              <rect x="530" y="32" width="85" height="26" rx="6" fill="#e2e8f0" stroke="#cbd5e1"/>
+              <text x="572" y="49" text-anchor="middle" font-size="10.5" font-weight="700" fill="#475569">OPTIONAL</text>
+
+              <!-- Section 2: Link Section -->
+              <rect x="30" y="84" width="600" height="52" rx="10" fill="url(#grad-sec-link)" stroke="#3b82f6" stroke-width="2"/>
+              <text x="50" y="108" font-size="14" font-weight="800" fill="#1e40af">2. LINK / PREPROCESSOR SECTION</text>
+              <text x="50" y="126" font-size="11.5" fill="#2563eb">Header file directives: #include &lt;stdio.h&gt;, #include &lt;conio.h&gt;, #include &lt;math.h&gt;</text>
+              <rect x="520" y="96" width="95" height="26" rx="6" fill="#dbeafe" stroke="#93c5fd"/>
+              <text x="567" y="113" text-anchor="middle" font-size="10.5" font-weight="800" fill="#1d4ed8">MANDATORY</text>
+
+              <!-- Section 3: Definition Section -->
+              <rect x="30" y="148" width="600" height="52" rx="10" fill="url(#grad-sec-def)" stroke="#10b981" stroke-width="2"/>
+              <text x="50" y="172" font-size="14" font-weight="800" fill="#065f46">3. DEFINITION SECTION</text>
+              <text x="50" y="190" font-size="11.5" fill="#059669">Macro &amp; symbolic constant definitions: #define PI 3.14159, #define MAX 100</text>
+              <rect x="530" y="160" width="85" height="26" rx="6" fill="#dcfce7" stroke="#86efac"/>
+              <text x="572" y="177" text-anchor="middle" font-size="10.5" font-weight="700" fill="#047857">OPTIONAL</text>
+
+              <!-- Section 4: Global Declaration Section -->
+              <rect x="30" y="212" width="600" height="52" rx="10" fill="url(#grad-sec-glob)" stroke="#eab308" stroke-width="2"/>
+              <text x="50" y="236" font-size="14" font-weight="800" fill="#854d0e">4. GLOBAL DECLARATION SECTION</text>
+              <text x="50" y="254" font-size="11.5" fill="#a16207">Global variables accessible across all functions, struct/union types &amp; function prototypes</text>
+              <rect x="530" y="224" width="85" height="26" rx="6" fill="#fef9c3" stroke="#fde047"/>
+              <text x="572" y="241" text-anchor="middle" font-size="10.5" font-weight="700" fill="#713f12">OPTIONAL</text>
+
+              <!-- Section 5: main() Function Section -->
+              <rect x="30" y="276" width="600" height="114" rx="10" fill="url(#grad-sec-main)" stroke="#a855f7" stroke-width="2.5"/>
+              <text x="50" y="300" font-size="14" font-weight="800" fill="#6b21a8">5. main() FUNCTION SECTION  -- int main() { ... }</text>
+              <rect x="520" y="286" width="95" height="26" rx="6" fill="#f3e8ff" stroke="#d8b4fe"/>
+              <text x="567" y="303" text-anchor="middle" font-size="10.5" font-weight="800" fill="#7e22ce">MANDATORY</text>
+
+              <!-- Nested Sub-boxes inside main -->
+              <rect x="50" y="316" width="560" height="30" rx="6" fill="#ffffff" stroke="#c084fc" stroke-dasharray="4 3"/>
+              <text x="65" y="336" font-size="11.5" font-weight="700" fill="#7c3aed">(a) Declaration Part:</text>
+              <text x="195" y="336" font-size="11.5" fill="#4b5563">Declares all local variables used inside main() (e.g., int a, b;)</text>
+
+              <rect x="50" y="352" width="560" height="30" rx="6" fill="#ffffff" stroke="#c084fc" stroke-dasharray="4 3"/>
+              <text x="65" y="372" font-size="11.5" font-weight="700" fill="#7c3aed">(b) Executable Part:</text>
+              <text x="195" y="372" font-size="11.5" fill="#4b5563">Logic statements, expressions, loops, function calls &amp; return 0;</text>
+
+              <!-- Section 6: Subprogram Section -->
+              <rect x="30" y="402" width="600" height="56" rx="10" fill="url(#grad-sec-sub)" stroke="#06b6d4" stroke-width="2"/>
+              <text x="50" y="426" font-size="14" font-weight="800" fill="#0e7490">6. SUBPROGRAM SECTION (User-Defined Functions)</text>
+              <text x="50" y="446" font-size="11.5" fill="#0891b2">Actual function definitions: float calculateCircleArea(float r) { ... }</text>
+              <rect x="530" y="416" width="85" height="26" rx="6" fill="#cffafe" stroke="#67e8f9"/>
+              <text x="572" y="433" text-anchor="middle" font-size="10.5" font-weight="700" fill="#155e75">OPTIONAL</text>
+            </svg>
+          </div>
+          <div style="font-size: 12px; color: var(--text-muted); text-align: center; margin-top: 8px;">
+            <em>Visual Architecture Blueprint: Illustrating the six sequential sections of a standardized C program.</em>
+          </div>
+        </div>
+
         <!-- Structure Cards Grid -->
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; margin: 18px 0;">
           <div style="padding: 14px; border-radius: 12px; background: color-mix(in srgb, var(--surface) 95%, var(--border)); border: 1.5px solid var(--border);">
@@ -1085,11 +1189,6 @@ float calculateCircleArea(float r) {
 }</code></pre>
       </div>
     </div>
-
-  </div>
-  </div>
-
-  <div class="exam-section-body">
 
     <!-- Q25: Storage Classes in Detail -->
     <div class="exam-q-item">
