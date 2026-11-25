@@ -1,0 +1,1630 @@
+---
+layout: exam
+title: "CCSU BCA 5th Sem Computer Network (BCA-503) Most Important Questions & Solved Exam Notebook"
+seo_title: "CCSU BCA 5th Sem Computer Network (BCA-503) Solved Exam Notebook"
+breadcrumb_title: "Computer Network (BCA-503)"
+eyebrow: "⚡ CCSU Meerut · BCA 5th Semester · Exam Preparation"
+title_subject: "Computer Network"
+title_code: "BCA-503"
+title_highlight: "Most Important Questions & Solved Exam Notebook"
+keywords: "ccsu bca 5th sem computer network, bca 503 important questions, bca computer network notes, bca 503 solved paper, osi model 7 layers notes, subnetting questions bca, rsa algorithm numerical bca, bca study material, bca study"
+description: "Master solved question bank of recurring CCSU examination questions (2014–2023) for Computer Network (BCA-503) with OSI 7 layers, TCP/IP, sliding window protocols, CSMA/CD, subnetting engineering, Dijkstra routing, RSA cryptography, and vector SVG diagrams."
+permalink: /ccsu/bca/semester-5/computer-network-important-questions/
+course_name: "CCSU BCA Semester 5 · Computer Network (BCA-503)"
+math: true
+---
+
+<!-- Navigation & Actions Bar -->
+<div class="exam-actions-bar">
+  <a href="{{ '/ccsu/bca/semester-5/' | relative_url }}" class="text-link">&larr; Back to Semester 5 Hub</a>
+</div>
+
+<!-- Header Strip -->
+<div class="exam-header-strip">
+  <span class="strip-pill">📚 Subject Code: BCA-503</span>
+  <span class="strip-pill">🏛️ CCSU Meerut University Pattern</span>
+  <span class="strip-pill">📄 3M, 7.5M &amp; 15M Exam Blueprint</span>
+  <span class="strip-pill">⭐ 2014–2023 Recurring University Exam Archive</span>
+</div>
+
+<!-- Quick Jump Nav -->
+<div class="exam-jump-nav">
+  <span class="exam-jump-label">⚡ Quick Jump:</span>
+  <a href="#section-a" class="jump-pill jump-pill-emerald">Section A (3 Marks · 15 Questions)</a>
+  <a href="#section-b" class="jump-pill jump-pill-cyan">Section B (7.5 Marks · 8 Questions)</a>
+  <a href="#section-c" class="jump-pill jump-pill-purple">⭐ Section C (15 Marks · 7 Solved Master Problems &amp; SVG Diagrams)</a>
+</div>
+
+<div class="notice-box" style="margin-bottom: 28px;">
+  <strong>Exam Scoring Architecture for BCA-503 (Computer Network):</strong>
+  The university theory examination carries <strong>75 Marks</strong> with a 3-hour duration, structured into 
+  <strong>Section A (5 questions &times; 3M = 15M compulsory)</strong>, 
+  <strong>Section B (attempt 2 of 3 questions &times; 7.5M = 15M)</strong>, and 
+  <strong>Section C (attempt 3 of 5 questions &times; 15M = 45M)</strong>.
+  In this master solved notebook, every recurring question from 2014 to 2023 is solved with complete protocol breakdowns, CRC polynomial calculations, subnetting masks, Dijkstra routing traces, RSA cryptography math, and custom vector SVG diagrams.
+</div>
+
+
+
+<!-- =========================================================================
+     SECTION A : 3 MARKS VERY SHORT ANSWER QUESTIONS (COMPULSORY)
+     ========================================================================= -->
+<div class="exam-section-card" id="section-a">
+  <div class="exam-section-header exam-section-header-emerald">
+    <div class="exam-section-header-inner">
+      <span class="exam-section-badge badge-emerald">SECTION A &bull; 3 MARKS EACH</span>
+      <h3 class="exam-section-title">Very Short Answer Questions &amp; Telecommunication Fundamentals</h3>
+      <p class="exam-section-rule">CCSU Examination Blueprint: 5 Questions Compulsory &bull; Total 15 Marks (75 Words Limit)</p>
+    </div>
+  </div>
+
+  <div class="exam-section-body">
+
+    <!-- A1: Transmission Modes -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q1.</span> Differentiate between Simplex, Half-Duplex, and Full-Duplex transmission modes with real-world examples.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2014, 2016, 2018, 2021, 2023</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Transmission Mode</th>
+                <th>Directionality of Data Flow</th>
+                <th>Channel Capacity Sharing</th>
+                <th>Real-World Example</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Simplex</strong></td>
+                <td>Strictly <strong>unidirectional</strong> (one-way). One device transmits only; the other receives only.</td>
+                <td>Entire bandwidth dedicated to single direction.</td>
+                <td>Keyboard to CPU, Television broadcast, FM radio.</td>
+              </tr>
+              <tr>
+                <td><strong>Half-Duplex</strong></td>
+                <td><strong>Bidirectional</strong>, but only <strong>one direction at a time</strong>. Both can transmit and receive, but not simultaneously.</td>
+                <td>Bandwidth shared in time slices.</td>
+                <td>Walkie-Talkie (user presses PTT button to speak: "Over").</td>
+              </tr>
+              <tr>
+                <td><strong>Full-Duplex</strong></td>
+                <td><strong>Simultaneous bidirectional</strong> transmission. Both parties can send and receive at the exact same instant.</td>
+                <td>Channel divided into two independent transmission paths.</td>
+                <td>Mobile telephone call, Ethernet network switches.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- A2: Guided vs Unguided Media -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q2.</span> Compare Guided Transmission Media and Unguided Transmission Media.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2015, 2017, 2019, 2022</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>Guided Media (Bounded / Wired)</th>
+                <th>Unguided Media (Unbounded / Wireless)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Physical Carrier</strong></td>
+                <td>Signals are guided along a physical solid metallic wire or glass conductor.</td>
+                <td>Electromagnetic waves propagate through open air, vacuum, or seawater.</td>
+              </tr>
+              <tr>
+                <td><strong>Types &amp; Examples</strong></td>
+                <td>Twisted Pair (Cat6 Ethernet), Coaxial Cable (Cable TV), Optical Fiber (Glass core).</td>
+                <td>Radio Waves (Wi-Fi, Bluetooth), Microwaves (Satellite, 5G towers), Infrared (TV Remote).</td>
+              </tr>
+              <tr>
+                <td><strong>Noise Immunity &amp; Speed</strong></td>
+                <td>High noise immunity, minimal attenuation, extremely high bandwidth (Gigabits/sec in Fiber).</td>
+                <td>Vulnerable to atmospheric interference, multipath fading, and lower transmission security.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- A3: LAN vs MAN vs WAN -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q3.</span> Differentiate between LAN, MAN, and WAN based on geographical span, ownership, and error rates.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2014, 2016, 2018, 2020, 2023</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Parameter</th>
+                <th>LAN (Local Area Network)</th>
+                <th>MAN (Metropolitan Area Network)</th>
+                <th>WAN (Wide Area Network)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Geographic Span</strong></td>
+                <td>Confined to a single room, building, or college campus ($&lt; 1	ext{ to }2	ext{ km}$).</td>
+                <td>Spans an entire city or large municipal territory ($10	ext{ to }50	ext{ km}$).</td>
+                <td>Spans entire countries, continents, or the entire globe (worldwide).</td>
+              </tr>
+              <tr>
+                <td><strong>Ownership</strong></td>
+                <td>Privately owned and managed by a single organization/individual.</td>
+                <td>Owned by consortia of organizations or regional telecom operators.</td>
+                <td>Multiple public and private telecommunication service providers.</td>
+              </tr>
+              <tr>
+                <td><strong>Data Rate &amp; Error Rate</strong></td>
+                <td>Very high speed ($100	ext{ Mbps to }10	ext{ Gbps}$); lowest bit error rate.</td>
+                <td>Moderate speed ($44	ext{ to }155	ext{ Mbps}$); moderate error rate.</td>
+                <td>Variable speeds; highest bit error rates due to lengthy terrestrial hops.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- A4: Star vs Mesh Topology -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q4.</span> Contrast Star Topology and Mesh Topology. What is the formula for physical links in a fully connected Mesh topology?</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2015, 2017, 2019, 2021, 2022</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <ul>
+          <li><strong>Star Topology:</strong> All network host nodes are connected directly to a central hub/switch via point-to-point links. Requires $N$ physical links for $N$ devices. If a single node cable fails, only that node goes down; but if the central hub fails, the entire network collapses.</li>
+          <li><strong>Fully Connected Mesh Topology:</strong> Every node has a dedicated point-to-point link to every other node in the network. Provides absolute fault tolerance and zero traffic congestion.</li>
+        </ul>
+        <div class="callout-box">
+          <strong>Mesh Network Formulas (for $N$ nodes):</strong><br>
+          &bull; Total physical duplex links required: $rac{N(N - 1)}{2}$<br>
+          &bull; Total I/O ports required per device: $N - 1$<br>
+          <em>Example:</em> For a 10-computer fully connected mesh network, links required = $rac{10 	imes 9}{2} = 45$ cables!
+        </div>
+      </div>
+    </div>
+
+    <!-- A5: 7 Layers of OSI -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q5.</span> List all 7 Layers of the ISO-OSI Reference Model in sequence from Layer 1 to Layer 7 with their Protocol Data Units (PDUs).</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2014, 2016, 2018, 2020, 2022, 2023</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <ol>
+          <li><strong>Layer 1 - Physical Layer:</strong> Transmits raw unstructured bitstreams over physical transmission medium. <em>(PDU: Bits)</em>.</li>
+          <li><strong>Layer 2 - Data Link Layer:</strong> Provides node-to-node error-free framing, MAC addressing, and flow control. <em>(PDU: Frames)</em>.</li>
+          <li><strong>Layer 3 - Network Layer:</strong> Handles end-to-end logical IP addressing and packet routing across intermediate subnets. <em>(PDU: Packets)</em>.</li>
+          <li><strong>Layer 4 - Transport Layer:</strong> Manages end-to-end process-to-process communication, port numbers, reliability, and segmentation. <em>(PDU: Segments / Datagrams)</em>.</li>
+          <li><strong>Layer 5 - Session Layer:</strong> Establishes, manages, synchronizes, and terminates inter-application dialog sessions. <em>(PDU: Data)</em>.</li>
+          <li><strong>Layer 6 - Presentation Layer:</strong> Handles character code translation (ASCII/EBCDIC), data compression, and TLS/SSL encryption. <em>(PDU: Data)</em>.</li>
+          <li><strong>Layer 7 - Application Layer:</strong> Provides network services directly to end-user software applications (HTTP, FTP, DNS, SMTP). <em>(PDU: Data)</em>.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- A6: Framing & Bit Stuffing -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q6.</span> What is Framing in Data Link Layer? Explain Bit Stuffing with a concrete example.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2015, 2018, 2020, 2022</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p><strong>Framing</strong> is the process of dividing the physical layer's incoming bitstream into discrete, manageable data units called <strong>Frames</strong> by inserting recognizable boundary delimiters.</p>
+        <p><strong>Bit Stuffing (HDLC Standard):</strong> Frames begin and end with a reserved flag byte <code>01111110</code> (six consecutive 1s). Whenever the transmitting hardware detects <strong>five consecutive '1' bits</strong> in the user payload data, it automatically injects ("stuffs") an extra <strong>'0' bit</strong> immediately after them. The receiver hardware strips every '0' appearing immediately after five consecutive '1's, guaranteeing the flag pattern never occurs inside payload data.</p>
+        <div class="callout-box">
+          <strong>Example:</strong><br>
+          User Data: <code>011111101111110</code><br>
+          Stuffed Stream: <code>011111<strong>0</strong>1011111<strong>0</strong>10</code>
+        </div>
+      </div>
+    </div>
+
+    <!-- A7: Cyclic Redundancy Check (CRC) -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q7.</span> Explain the principle of Cyclic Redundancy Check (CRC) for error detection.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2016, 2018, 2021, 2023</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p><strong>Cyclic Redundancy Check (CRC)</strong> is a powerful polynomial division-based error detection code operating on binary bitstrings using Modulo-2 arithmetic (XOR addition without carries):</p>
+        <ol>
+          <li>A predefined generator polynomial $G(x)$ of degree $r$ is agreed upon by both sender and receiver.</li>
+          <li>Sender appends $r$ zero bits to the original data bitstream $D$ and divides it by $G(x)$ using modulo-2 division.</li>
+          <li>The remainder of this division (the $r$-bit CRC Checksum) replaces the appended zeros, creating the transmitted frame.</li>
+          <li>The receiver divides the incoming frame by the identical $G(x)$. If the remainder is strictly <strong>zero</strong>, the frame is accepted as uncorrupted; otherwise, it is discarded.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- A8: Pure ALOHA vs Slotted ALOHA -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q8.</span> Contrast Pure ALOHA and Slotted ALOHA with their maximum theoretical throughput formulas.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2014, 2017, 2019, 2021, 2023</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>Pure ALOHA</th>
+                <th>Slotted ALOHA</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Transmission Timing</strong></td>
+                <td>Continuous. Any station transmits whenever it has data ready (uncoordinated).</td>
+                <td>Discrete. Time is divided into synchronized slots. Stations can only transmit at the <strong>beginning of a time slot</strong>.</td>
+              </tr>
+              <tr>
+                <td><strong>Vulnerable Collision Period</strong></td>
+                <td>$2 	imes T_{	ext{fr}}$ (Two complete frame transmission times).</td>
+                <td>$1 	imes T_{	ext{fr}}$ (Reduced by half).</td>
+              </tr>
+              <tr>
+                <td><strong>Throughput Formula</strong></td>
+                <td>$S = G \cdot e^{-2G}$</td>
+                <td>$S = G \cdot e^{-G}$</td>
+              </tr>
+              <tr>
+                <td><strong>Maximum Throughput ($S_{\max}$)</strong></td>
+                <td><strong>$18.4\%$</strong> (occurs at load $G = 0.5$).</td>
+                <td><strong>$36.8\%$</strong> (occurs at load $G = 1.0$). Exactly twice Pure ALOHA!</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- A9: CSMA/CD and Minimum Frame Size -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q9.</span> What is CSMA/CD? Why is there a minimum frame size restriction in Ethernet networks?</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2015, 2017, 2020, 2022</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p><strong>CSMA/CD (Carrier Sense Multiple Access with Collision Detection)</strong> is the media access control mechanism used in classic shared Ethernet (IEEE 802.3). A station listens to the channel before transmitting ("Listen Before Talk"). If the medium is busy, it waits; if idle, it transmits while continuously listening for collisions ("Listen While Talking"). If a collision occurs, it aborts transmission immediately, broadcasts a 32-bit jam signal, and executes Exponential Backoff.</p>
+        <p><strong>Minimum Frame Size Rule:</strong> For a sender to reliably detect that its own frame collided at the furthest end of the cable, the sender must still be actively transmitting when the reflected collision signal arrives back. Hence, <strong>Frame Transmission Time ($T_{	ext{trans}}$) must be at least twice the maximum Propagation Delay ($T_{	ext{prop}}$)</strong>:</p>
+        $$rac{	ext{Frame Size}}{	ext{Bandwidth}} \ge 2 	imes T_{	ext{prop}} \implies 	ext{Min Frame Size} = 2 	imes T_{	ext{prop}} 	imes 	ext{Bandwidth}$$
+        <p>In standard 10 Mbps Ethernet, this calculates to exactly <strong>64 bytes (512 bits)</strong>.</p>
+      </div>
+    </div>
+
+    <!-- A10: IPv4 vs IPv6 -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q10.</span> Differentiate between IPv4 and IPv6 addressing architectures.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2016, 2018, 2020, 2023</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>IPv4 (Internet Protocol v4)</th>
+                <th>IPv6 (Internet Protocol v6)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Address Length</strong></td>
+                <td><strong>32 bits</strong> (4 bytes). Yields $pprox 4.3 	imes 10^9$ addresses ($2^{32}$).</td>
+                <td><strong>128 bits</strong> (16 bytes). Yields $pprox 3.4 	imes 10^{38}$ addresses ($2^{128}$).</td>
+              </tr>
+              <tr>
+                <td><strong>Address Representation</strong></td>
+                <td>Dotted decimal notation: <code>192.168.1.1</code></td>
+                <td>Hexadecimal colon notation: <code>2001:0db8:85a3::8a2e:0370:7334</code></td>
+              </tr>
+              <tr>
+                <td><strong>Header Size</strong></td>
+                <td>Variable (20 to 60 bytes including options).</td>
+                <td>Fixed 40-byte base header (faster hardware routing).</td>
+              </tr>
+              <tr>
+                <td><strong>Security &amp; Configuration</strong></td>
+                <td>IPsec is optional; relies heavily on DHCP and NAT.</td>
+                <td>IPsec is natively mandated; supports Stateless Address Autoconfiguration (SLAAC).</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- A11: Subnet Mask & Default Gateway -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q11.</span> Explain the role of a Subnet Mask and Default Gateway in IP networking.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2015, 2017, 2019, 2021</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <ul>
+          <li><strong>Subnet Mask:</strong> A 32-bit bitmask of contiguous 1s followed by 0s that a host uses to perform a bitwise logical <code>AND</code> operation with its IP address. This partitions the IP address into two components: the <strong>Network ID (bits set to 1)</strong> and the <strong>Host ID (bits set to 0)</strong>. It informs the host whether a destination IP is on the local subnet or an outside remote network.</li>
+          <li><strong>Default Gateway:</strong> The local IP address of the router interface connected to the host's subnet. When a host determines that a destination IP is outside its local subnet, it encapsulates the packet in a frame addressed to the Default Gateway's MAC address for external routing.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- A12: ARP vs RARP -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q12.</span> Differentiate between ARP (Address Resolution Protocol) and RARP (Reverse ARP).</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2014, 2016, 2019, 2022</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Protocol</th>
+                <th>Known Input</th>
+                <th>Resolved Output</th>
+                <th>Operational Mechanism</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>ARP</strong></td>
+                <td>Logical IP Address (e.g. <code>192.168.1.50</code>)</td>
+                <td>Physical MAC Address (e.g. <code>00:1A:2B:3C:4D:5E</code>)</td>
+                <td>Broadcasts an ARP Request frame to local subnet: <em>"Who has IP X? Tell MAC Y."</em> Target replies with unicast ARP Reply.</td>
+              </tr>
+              <tr>
+                <td><strong>RARP</strong></td>
+                <td>Physical MAC Address</td>
+                <td>Logical IP Address</td>
+                <td>Used by diskless workstations during boot to discover their own assigned IP address from a centralized RARP/BOOTP/DHCP server.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- A13: TCP vs UDP -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q13.</span> Contrast TCP and UDP transport layer protocols in a structured comparison table.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2015, 2017, 2019, 2021, 2023</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>TCP (Transmission Control Protocol)</th>
+                <th>UDP (User Datagram Protocol)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Connection Type</strong></td>
+                <td><strong>Connection-oriented</strong> (Requires 3-way handshake prior to data transfer).</td>
+                <td><strong>Connectionless</strong> (Packets sent immediately without handshake).</td>
+              </tr>
+              <tr>
+                <td><strong>Reliability</strong></td>
+                <td>Guaranteed delivery with positive ACKs, checksums, sequencing, and automatic retransmissions.</td>
+                <td>Unreliable (Best-effort delivery). No ACKs; lost packets are not retransmitted.</td>
+              </tr>
+              <tr>
+                <td><strong>Header Size</strong></td>
+                <td>20 bytes minimum (up to 60 bytes with options).</td>
+                <td>Fixed lightweight <strong>8 bytes</strong> header.</td>
+              </tr>
+              <tr>
+                <td><strong>Flow &amp; Congestion Control</strong></td>
+                <td>Supports Sliding Window flow control and AIMD congestion control.</td>
+                <td>No flow control and no congestion control.</td>
+              </tr>
+              <tr>
+                <td><strong>Applications</strong></td>
+                <td>HTTP/HTTPS (Web), FTP (File transfer), SMTP (Email), SSH.</td>
+                <td>DNS queries, VoIP calls, Video streaming, Online gaming.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- A14: TCP 3-Way Handshake -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q14.</span> Describe the three steps of the TCP Three-Way Handshake for connection establishment.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2016, 2018, 2020, 2022</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <ol>
+          <li><strong>Step 1 (SYN):</strong> Client sends a TCP segment with the <code>SYN</code> flag set to 1 and an initial sequence number $ISN_c = x$ to the server: <code>SYN(Seq=x)</code>. Client enters <code>SYN-SENT</code> state.</li>
+          <li><strong>Step 2 (SYN-ACK):</strong> Server acknowledges the client's request with <code>ACK = x + 1</code>, sets its own sequence number $ISN_s = y$, and sets both <code>SYN</code> and <code>ACK</code> flags: <code>SYN-ACK(Seq=y, Ack=x+1)</code>. Server enters <code>SYN-RECEIVED</code> state.</li>
+          <li><strong>Step 3 (ACK):</strong> Client responds with an acknowledgment <code>ACK = y + 1</code> with <code>Seq = x + 1</code>: <code>ACK(Seq=x+1, Ack=y+1)</code>. Both client and server enter the <code>ESTABLISHED</code> state, ready for full-duplex data transfer.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- A15: Symmetric vs Asymmetric Cryptography -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q15.</span> Differentiate between Symmetric Key and Asymmetric Key Cryptography.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2015, 2017, 2020, 2023</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>Symmetric Key (Secret Key)</th>
+                <th>Asymmetric Key (Public Key)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Number of Keys</strong></td>
+                <td><strong>1 shared secret key</strong> used for both encryption and decryption.</td>
+                <td><strong>2 mathematically paired keys</strong>: A Public Key (known to everyone) and a Private Key (kept secret).</td>
+              </tr>
+              <tr>
+                <td><strong>Computation Speed</strong></td>
+                <td>Extremely fast. Optimized for encrypting gigabytes of streaming data.</td>
+                <td>Computationally slow (requires modular exponentiation of large primes).</td>
+              </tr>
+              <tr>
+                <td><strong>Key Distribution Problem</strong></td>
+                <td>Severe challenge: How to securely transmit the secret key between parties over an insecure network?</td>
+                <td>Zero key distribution risk: Public key can be freely shared on public directories.</td>
+              </tr>
+              <tr>
+                <td><strong>Standard Algorithms</strong></td>
+                <td>AES (Advanced Encryption Standard), DES, 3DES, Blowfish.</td>
+                <td>RSA, Diffie-Hellman Key Exchange, ECC (Elliptic Curve).</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<!-- =========================================================================
+     SECTION B : 7.5 MARKS SHORT ANSWER QUESTIONS (ATTEMPT 2 OF 3)
+     ========================================================================= -->
+<div class="exam-section-card" id="section-b">
+  <div class="exam-section-header exam-section-header-cyan">
+    <div class="exam-section-header-inner">
+      <span class="exam-section-badge badge-cyan">SECTION B &bull; 7.5 MARKS EACH</span>
+      <h3 class="exam-section-title">Analytical Protocols, CRC Math &amp; Cryptographic Algorithms</h3>
+      <p class="exam-section-rule">CCSU Examination Blueprint: Attempt Any 2 of 3 Questions &bull; Total 15 Marks (~200 Words + Derivations/Calculations)</p>
+    </div>
+  </div>
+
+  <div class="exam-section-body">
+
+    <!-- B16: OSI vs TCP/IP Architecture -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q16.</span> Compare the ISO-OSI 7-Layer Reference Model with the TCP/IP 4-Layer Reference Model with an architectural mapping diagram.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2014, 2017, 2019, 2021, 2023</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>The <strong>OSI Model</strong> was developed by the International Organization for Standardization (ISO) as a theoretical 7-layer framework, while the <strong>TCP/IP Model</strong> is the pragmatic 4-layer protocol suite powering the global Internet.</p>
+
+        <!-- OSI vs TCP/IP SVG -->
+        <div class="svg-tree-container" style="background: #0f172a; padding: 20px; border-radius: 12px; margin: 18px 0; border: 1px solid #334155; overflow-x: auto; -webkit-overflow-scrolling: touch;">
+          <div style="font-weight: 700; color: #38bdf8; margin-bottom: 12px; font-size: 14px; text-align: center;">ISO-OSI (7 LAYERS) VS TCP/IP (4 LAYERS) ARCHITECTURAL MAPPING</div>
+          <svg viewBox="0 0 740 300" width="100%" height="300" style="min-width: 660px;" xmlns="http://www.w3.org/2000/svg">
+            <!-- OSI Layers Box -->
+            <rect x="50" y="20" width="280" height="260" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+            <text x="190" y="45" fill="#38bdf8" font-size="13" font-weight="700" text-anchor="middle">ISO-OSI 7-Layer Model</text>
+
+            <rect x="65" y="55" width="250" height="28" rx="4" fill="#0f172a" stroke="#334155"/>
+            <text x="190" y="74" fill="#ffffff" font-size="11" text-anchor="middle">7. Application Layer</text>
+
+            <rect x="65" y="87" width="250" height="28" rx="4" fill="#0f172a" stroke="#334155"/>
+            <text x="190" y="106" fill="#ffffff" font-size="11" text-anchor="middle">6. Presentation Layer</text>
+
+            <rect x="65" y="119" width="250" height="28" rx="4" fill="#0f172a" stroke="#334155"/>
+            <text x="190" y="138" fill="#ffffff" font-size="11" text-anchor="middle">5. Session Layer</text>
+
+            <rect x="65" y="151" width="250" height="28" rx="4" fill="#0f172a" stroke="#10b981"/>
+            <text x="190" y="170" fill="#34d399" font-size="11" font-weight="700" text-anchor="middle">4. Transport Layer</text>
+
+            <rect x="65" y="183" width="250" height="28" rx="4" fill="#0f172a" stroke="#f59e0b"/>
+            <text x="190" y="202" fill="#fbbf24" font-size="11" font-weight="700" text-anchor="middle">3. Network Layer</text>
+
+            <rect x="65" y="215" width="250" height="28" rx="4" fill="#0f172a" stroke="#c084fc"/>
+            <text x="190" y="234" fill="#c084fc" font-size="11" text-anchor="middle">2. Data Link Layer</text>
+
+            <rect x="65" y="247" width="250" height="28" rx="4" fill="#0f172a" stroke="#c084fc"/>
+            <text x="190" y="266" fill="#c084fc" font-size="11" text-anchor="middle">1. Physical Layer</text>
+
+            <!-- Mapping Lines -->
+            <path d="M315 100 L 420 85" stroke="#38bdf8" stroke-width="2"/>
+            <path d="M315 165 L 420 145" stroke="#10b981" stroke-width="2"/>
+            <path d="M315 197 L 420 185" stroke="#f59e0b" stroke-width="2"/>
+            <path d="M315 245 L 420 235" stroke="#c084fc" stroke-width="2"/>
+
+            <!-- TCP/IP Layers Box -->
+            <rect x="420" y="20" width="270" height="260" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+            <text x="555" y="45" fill="#10b981" font-size="13" font-weight="700" text-anchor="middle">TCP/IP 4-Layer Model</text>
+
+            <rect x="435" y="55" width="240" height="65" rx="6" fill="#0f172a" stroke="#38bdf8"/>
+            <text x="555" y="85" fill="#38bdf8" font-size="12" font-weight="700" text-anchor="middle">Application Layer</text>
+            <text x="555" y="105" fill="#94a3b8" font-size="10" text-anchor="middle">HTTP, FTP, SMTP, DNS</text>
+
+            <rect x="435" y="125" width="240" height="42" rx="6" fill="#0f172a" stroke="#10b981"/>
+            <text x="555" y="145" fill="#34d399" font-size="12" font-weight="700" text-anchor="middle">Transport Layer (TCP / UDP)</text>
+
+            <rect x="435" y="172" width="240" height="42" rx="6" fill="#0f172a" stroke="#f59e0b"/>
+            <text x="555" y="192" fill="#fbbf24" font-size="12" font-weight="700" text-anchor="middle">Internet Layer (IP, ICMP, ARP)</text>
+
+            <rect x="435" y="219" width="240" height="52" rx="6" fill="#0f172a" stroke="#c084fc"/>
+            <text x="555" y="240" fill="#c084fc" font-size="12" font-weight="700" text-anchor="middle">Network Access (Link) Layer</text>
+            <text x="555" y="258" fill="#94a3b8" font-size="10" text-anchor="middle">Ethernet, Wi-Fi, MAC hardware</text>
+          </svg>
+        </div>
+
+        <h5>Key Differences:</h5>
+        <ul>
+          <li>OSI clearly distinguishes between services, interfaces, and protocols; TCP/IP originally did not clearly separate these concepts.</li>
+          <li>OSI supports both connectionless and connection-oriented communication in the network layer, but only connection-oriented in the transport layer. TCP/IP has only connectionless service in the Internet layer (IP), but supports both (TCP/UDP) in the transport layer.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- B17: Go-Back-N vs Selective Repeat -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q17.</span> Explain the Sliding Window Flow Control Protocol. Compare Go-Back-N ARQ and Selective Repeat ARQ with sender/receiver window sizes and retransmission strategies.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2015, 2018, 2020, 2022</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>In <strong>Sliding Window Protocols</strong>, multiple frames can be in transit simultaneously without waiting for an immediate individual acknowledgment for each frame, keeping the high-bandwidth link fully utilized.</p>
+
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>Go-Back-N (GBN) ARQ</th>
+                <th>Selective Repeat (SR) ARQ</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Sender Window Size ($W_s$)</strong></td>
+                <td>$W_s = 2^m - 1$ (where $m$ is the sequence number bits).</td>
+                <td>$W_s = 2^{m-1}$ (Half the sequence number space).</td>
+              </tr>
+              <tr>
+                <td><strong>Receiver Window Size ($W_r$)</strong></td>
+                <td>Strictly $W_r = 1$ (Accepts only the single expected frame in exact sequence).</td>
+                <td>$W_r = 2^{m-1}$ ($W_s = W_r$). Out-of-order frames within the window are buffered.</td>
+              </tr>
+              <tr>
+                <td><strong>Damaged / Lost Frame Reaction</strong></td>
+                <td><strong>Discards all subsequent frames</strong> even if received correctly. Sender must retransmit the damaged frame <em>plus all $N$ frames</em> sent after it!</td>
+                <td>Receiver buffers out-of-order frames and sends Negative Acknowledgment (NACK). <strong>Sender retransmits ONLY the specific damaged frame</strong>.</td>
+              </tr>
+              <tr>
+                <td><strong>Acknowledgment Type</strong></td>
+                <td><strong>Cumulative ACKs</strong> ($ACK(n)$ confirms all frames up to $n-1$).</td>
+                <td><strong>Individual / Selective ACKs</strong>.</td>
+              </tr>
+              <tr>
+                <td><strong>Buffer Complexity</strong></td>
+                <td>Minimal. Receiver requires only 1 frame buffer.</td>
+                <td>High. Receiver requires sorting and buffering logic.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- B18: CRC Calculation Problem -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q18.</span> Given a user data bitstream $D = 1010001101$ and the Generator Polynomial $G(x) = x^4 + x^2 + 1$. Show the complete binary polynomial division to generate the CRC checksum and state the final transmitted codeword.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2016, 2018, 2021, 2023</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        
+        <h5>1. Setup:</h5>
+        <ul>
+          <li>Data bitstream $D = 1010001101$ ($10$ bits).</li>
+          <li>Generator polynomial: $G(x) = x^4 + x^2 + 1 \implies 1\cdot x^4 + 0\cdot x^3 + 1\cdot x^2 + 0\cdot x^1 + 1\cdot x^0$.</li>
+          <li>Divisor in binary: <strong>$10101$</strong> (Degree $r = 4$).</li>
+          <li>Append $r = 4$ zeros to data: <strong>$10100011010000$</strong>.</li>
+        </ul>
+
+        <h5>2. Binary Modulo-2 Division (XOR Addition):</h5>
+        <pre><code class="language-plaintext">            1000100110  <-- Quotient
+10101 ) 10100011010000
+        10101
+        -----
+        000010110
+            10101
+            -----
+            00011100
+               10101
+               -----
+               010010
+                10101
+                -----
+                001110
+                  10101
+                  -----
+                  01001 <-- Remainder (4-bit CRC: 1001)</code></pre>
+
+        <h5>3. Result:</h5>
+        <ul>
+          <li><strong>CRC Checksum:</strong> $R = 1001$</li>
+          <li><strong>Transmitted Codeword ($T$):</strong> Append $R$ to original data:
+            $$\mathbf{T = 10100011011001}$$
+          </li>
+          <li><strong>Verification:</strong> If receiver divides $10100011011001$ by $10101$, the final remainder will be strictly $0000$, confirming zero transmission bit errors.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- B19: IPv4 Classful Addressing -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q19.</span> Explain IPv4 Classful Addressing (Classes A, B, C, D, E) detailing leading bit patterns, default subnet masks, and network/host boundary ranges.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2014, 2016, 2019, 2021, 2023</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>In original IPv4 architecture, the 32-bit address space ($2^{32} = 4,294,967,296$) was partitioned into five classes based on the high-order bits of the first octet:</p>
+
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Class</th>
+                <th>Leading Bits</th>
+                <th>First Octet Range</th>
+                <th>NetID / HostID Partition</th>
+                <th>Default Subnet Mask</th>
+                <th>Max Networks / Hosts per Net</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Class A</strong></td>
+                <td><code>0...</code></td>
+                <td>$1 - 126$</td>
+                <td>8 bits NetID / 24 bits HostID</td>
+                <td><code>255.0.0.0 (/8)</code></td>
+                <td>126 networks / $16,777,214$ hosts</td>
+              </tr>
+              <tr>
+                <td><strong>Class B</strong></td>
+                <td><code>10..</code></td>
+                <td>$128 - 191$</td>
+                <td>16 bits NetID / 16 bits HostID</td>
+                <td><code>255.255.0.0 (/16)</code></td>
+                <td>16,384 networks / $65,534$ hosts</td>
+              </tr>
+              <tr>
+                <td><strong>Class C</strong></td>
+                <td><code>110.</code></td>
+                <td>$192 - 223$</td>
+                <td>24 bits NetID / 8 bits HostID</td>
+                <td><code>255.255.255.0 (/24)</code></td>
+                <td>$2,097,152$ networks / 254 hosts</td>
+              </tr>
+              <tr>
+                <td><strong>Class D</strong></td>
+                <td><code>1110</code></td>
+                <td>$224 - 239$</td>
+                <td>N/A (Multicast Group ID)</td>
+                <td>None (Multicasting)</td>
+                <td>Reserved for Multicast Groups</td>
+              </tr>
+              <tr>
+                <td><strong>Class E</strong></td>
+                <td><code>1111</code></td>
+                <td>$240 - 255$</td>
+                <td>N/A</td>
+                <td>None (Experimental)</td>
+                <td>Reserved for Research / Future Use</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="callout-box">
+          <strong>Special Reserved Addresses:</strong> <code>127.0.0.1</code> to <code>127.255.255.255</code> is reserved for Loopback testing (Host localhost). Host ID with all 0s = Network Address; Host ID with all 1s = Directed Broadcast Address.
+        </div>
+      </div>
+    </div>
+
+    <!-- B20: Distance Vector Routing & Count-to-Infinity -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q20.</span> Discuss the Distance Vector Routing Algorithm. What is the Count-to-Infinity Problem? Explain how Split Horizon and Poison Reverse resolve it.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2015, 2017, 2020, 2022</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p><strong>Distance Vector Routing (RIP Protocol):</strong> An iterative, asynchronous routing algorithm based on the <strong>Bellman-Ford equation</strong>. Each router maintains a routing table containing the estimated shortest distance to every destination network and the next-hop router. Periodically, every router broadcasts its entire routing table only to its <em>immediate direct neighbors</em>.</p>
+        $$D_x(y) = \min_v \{ c(x, v) + D_v(y) \}$$
+
+        <h5>The Count-to-Infinity Problem:</h5>
+        <p>While good news (link cost reductions) travels fast, bad news (link failures) propagates very slowly. Consider a linear topology $A - B - C$. If the link between $B$ and $C$ fails, $B$ detects the failure. However, $A$ had previously advertised that it can reach $C$ with cost 2 (via $B$). $B$ mistakenly thinks $A$ has an alternative path to $C$, so $B$ updates its cost to $C$ as $2 + 1 = 3$ via $A$. In the next round, $A$ updates its cost to $3 + 1 = 4$ via $B$. The metric increments indefinitely ($16 = \infty$ in RIP) in a slow routing loop.</p>
+
+        <h5>Mitigation Techniques:</h5>
+        <ul>
+          <li><strong>Split Horizon:</strong> A router does not advertise routes back over the same interface from which it learned them. (If $A$ learns the route to $C$ through $B$, $A$ will never advertise a route to $C$ back to $B$).</li>
+          <li><strong>Poison Reverse:</strong> $A$ advertises the route back to $B$, but explicitly sets the metric to <strong>$\infty$ (16)</strong>: <em>"I can reach $C$ via you, so to me, reaching $C$ through anyone else is impossible."</em> This immediately terminates the circular dependency.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- B21: Link State Routing & Dijkstra Trace -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q21.</span> Explain Link State Routing (OSPF). Describe Dijkstra's Shortest Path Algorithm steps with a network graph.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2016, 2018, 2021, 2023</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>In <strong>Link State Routing (e.g. OSPF)</strong>, every router discovers its direct neighbors, learns their link costs, constructs a <strong>Link State Packet (LSP)</strong>, and floods it reliably to <em>all routers in the entire autonomous system</em>. Every router builds an identical global topology map of the network and independently runs <strong>Dijkstra's Shortest Path Algorithm</strong> with itself as the root to build its routing table.</p>
+
+        <h5>Dijkstra's Algorithm Steps:</h5>
+        <ol>
+          <li>Initialize set $N' = \{u\}$ (source node). For all other nodes $v$, set $D(v) = c(u, v)$ if directly connected, else $\infty$.</li>
+          <li>Find node $w 
+otin N'$ such that $D(w)$ is a minimum. Add $w$ to $N'$.</li>
+          <li>Update $D(v)$ for all neighbors $v 
+otin N'$ of $w$:
+            $$D(v) = \min(D(v), D(w) + c(w, v))$$
+          </li>
+          <li>Repeat steps 2 and 3 until all nodes are included in $N'$.</li>
+        </ol>
+        <div class="callout-box">
+          <strong>Advantage over Distance Vector:</strong> OSPF converges rapidly ($O(V^2)$ or $O(E \log V)$), produces zero routing loops, and generates minimal network overhead once converged.
+        </div>
+      </div>
+    </div>
+
+    <!-- B22: TCP Congestion Control AIMD -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q22.</span> Explain Congestion Control in TCP. Detail the four operational phases: Slow Start, Congestion Avoidance, Fast Retransmit, and Fast Recovery.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2015, 2017, 2019, 2022</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>TCP modulates its transmission rate using a dynamic variable called the <strong>Congestion Window (<code>cwnd</code>)</strong>. The actual window sent is $\min(	ext{cwnd}, 	ext{rwnd})$.</p>
+        <ol>
+          <li><strong>Slow Start Phase:</strong> Starts with $	ext{cwnd} = 1	ext{ MSS}$. For each ACK received, $	ext{cwnd}$ doubles every Round Trip Time (RTT) (exponential growth: $1 	o 2 	o 4 	o 8 \dots$) until reaching the <strong>Slow Start Threshold (<code>ssthresh</code>)</strong>.</li>
+          <li><strong>Congestion Avoidance (AIMD):</strong> When $	ext{cwnd} \ge 	ext{ssthresh}$, growth switches to linear: $	ext{cwnd}$ increases by exactly $1	ext{ MSS}$ per RTT (Additive Increase) to gently probe for available link bandwidth.</li>
+          <li><strong>Fast Retransmit:</strong> If the sender receives <strong>3 duplicate ACKs</strong> for a missing packet, it infers packet loss immediately without waiting for the retransmission timer to expire, and retransmits the missing segment at once.</li>
+          <li><strong>Fast Recovery (TCP Reno):</strong> After 3 duplicate ACKs, $	ext{ssthresh}$ is halved ($	ext{ssthresh} = 	ext{cwnd} / 2$) and $	ext{cwnd}$ is set to $	ext{ssthresh} + 3	ext{ MSS}$ (Multiplicative Decrease). It stays in Congestion Avoidance rather than collapsing back to 1 MSS.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- B23: RSA Algorithm Numerical Problem -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q23.</span> Explain the RSA Public-Key Cryptosystem. Given prime numbers $p = 3$ and $q = 11$, and encryption exponent $e = 7$. Compute the private decryption key $d$. Encrypt plaintext message $M = 5$ and verify decryption.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2014, 2016, 2018, 2021, 2023</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        
+        <h5>Step 1: Compute Modulus $n$ and Euler's Totient $\phi(n)$:</h5>
+        <ul>
+          <li>$n = p 	imes q = 3 	imes 11 = \mathbf{33}$</li>
+          <li>$\phi(n) = (p - 1)(q - 1) = (3 - 1)(11 - 1) = 2 	imes 10 = \mathbf{20}$</li>
+        </ul>
+
+        <h5>Step 2: Verify Encryption Key $e$ and Compute Decryption Key $d$:</h5>
+        <ul>
+          <li>Given $e = 7$. Check $\gcd(e, \phi(n)) = \gcd(7, 20) = 1$ (Valid).</li>
+          <li>Calculate private key $d$ such that $(d 	imes e) \equiv 1 \pmod{\phi(n)}$:
+            $$(d 	imes 7) \equiv 1 \pmod{20} \implies 7d = 20k + 1$$
+            For $k = 1$: $7d = 21 \implies d = \mathbf{3}$.
+          </li>
+          <li><strong>Public Key:</strong> $\{e, n\} = \{7, 33\}$ &bull; <strong>Private Key:</strong> $\{d, n\} = \{3, 33\}$.</li>
+        </ul>
+
+        <h5>Step 3: Encryption of Plaintext $M = 5$:</h5>
+        $$C = M^e \pmod n = 5^7 \pmod{33}$$
+        <ul>
+          <li>$5^2 = 25 \equiv -8 \pmod{33}$</li>
+          <li>$5^4 = (-8)^2 = 64 \equiv 31 \equiv -2 \pmod{33}$</li>
+          <li>$5^6 = 5^4 	imes 5^2 \equiv (-2) 	imes (-8) = 16 \pmod{33}$</li>
+          <li>$C = 5^7 = 5^6 	imes 5 \equiv 16 	imes 5 = 80 \pmod{33}$</li>
+          <li>$80 = (2 	imes 33) + 14 \implies \mathbf{C = 14}$ (Ciphertext).</li>
+        </ul>
+
+        <h5>Step 4: Decryption of Ciphertext $C = 14$:</h5>
+        $$M = C^d \pmod n = 14^3 \pmod{33}$$
+        <ul>
+          <li>$14^2 = 196 = (5 	imes 33) + 31 \equiv 31 \equiv -2 \pmod{33}$</li>
+          <li>$14^3 = 14^2 	imes 14 \equiv (-2) 	imes 14 = -28 \equiv \mathbf{5} \pmod{33}$</li>
+          <li><strong>Original Message Restored:</strong> $M = 5$. Proof verified!</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<!-- =========================================================================
+     SECTION C : 15 MARKS MASTER LONG ANSWER QUESTIONS (ATTEMPT 3 OF 5)
+     ========================================================================= -->
+<div class="exam-section-card" id="section-c">
+  <div class="exam-section-header exam-section-header-purple">
+    <div class="exam-section-header-inner">
+      <span class="exam-section-badge badge-purple">SECTION C &bull; 15 MARKS EACH</span>
+      <h3 class="exam-section-title">Master Long Answer Questions, Architectural Blueprints &amp; SVG Diagrams</h3>
+      <p class="exam-section-rule">CCSU Examination Blueprint: Attempt Any 3 of 5 Questions &bull; Total 45 Marks (~500+ Words + Protocol Schemas + Diagrams)</p>
+    </div>
+  </div>
+
+  <div class="exam-section-body">
+
+    <!-- C24: OSI 7-Layer Model Architecture -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q24.</span> Explain the ISO-OSI 7-Layer Reference Model in exhaustive detail. Discuss the primary functions, protocols, and Protocol Data Units (PDUs) of each layer. Draw an architectural diagram illustrating Data Encapsulation and Decapsulation as a packet travels between sender and receiver.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2014, 2016, 2018, 2020, 2022, 2023</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        
+        <h5>1. Principles of OSI Layering:</h5>
+        <p>The Open Systems Interconnection (OSI) model was created by ISO to provide an open, standardized framework for multi-vendor telecommunications without modifying underlying hardware architectures. Each layer performs a specialized set of functions, communicating only with its immediate peer layer via Protocol Data Units (PDUs).</p>
+
+        <!-- OSI Encapsulation SVG Diagram -->
+        <div class="svg-tree-container" style="background: #0f172a; padding: 22px; border-radius: 12px; margin: 18px 0; border: 1px solid #334155; overflow-x: auto; -webkit-overflow-scrolling: touch;">
+          <div style="font-weight: 700; color: #38bdf8; margin-bottom: 14px; font-size: 15px; text-align: center;">OSI 7-LAYER DATA ENCAPSULATION &amp; DECAPSULATION PIPELINE</div>
+          <svg viewBox="0 0 740 340" width="100%" height="340" style="min-width: 660px;" xmlns="http://www.w3.org/2000/svg">
+            <!-- Sender Side -->
+            <rect x="30" y="25" width="280" height="290" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+            <text x="170" y="52" fill="#38bdf8" font-size="14" font-weight="700" text-anchor="middle">SENDER (Encapsulation &darr;)</text>
+
+            <rect x="45" y="65" width="250" height="30" rx="4" fill="#0f172a" stroke="#475569"/>
+            <text x="170" y="85" fill="#ffffff" font-size="11" text-anchor="middle">7. Application (User Data: HTTP/FTP)</text>
+
+            <rect x="45" y="102" width="250" height="30" rx="4" fill="#0f172a" stroke="#475569"/>
+            <text x="170" y="122" fill="#ffffff" font-size="11" text-anchor="middle">6. Presentation (SSL/TLS Encryption)</text>
+
+            <rect x="45" y="139" width="250" height="30" rx="4" fill="#0f172a" stroke="#475569"/>
+            <text x="170" y="159" fill="#ffffff" font-size="11" text-anchor="middle">5. Session (Dialog Synchronization)</text>
+
+            <rect x="45" y="176" width="250" height="30" rx="4" fill="#0f172a" stroke="#10b981"/>
+            <text x="170" y="196" fill="#34d399" font-size="11" font-weight="700" text-anchor="middle">4. Transport (Adds TCP/UDP Port H4)</text>
+
+            <rect x="45" y="213" width="250" height="30" rx="4" fill="#0f172a" stroke="#f59e0b"/>
+            <text x="170" y="233" fill="#fbbf24" font-size="11" font-weight="700" text-anchor="middle">3. Network (Adds Source/Dest IP H3)</text>
+
+            <rect x="45" y="250" width="250" height="30" rx="4" fill="#0f172a" stroke="#a855f7"/>
+            <text x="170" y="270" fill="#c084fc" font-size="11" font-weight="700" text-anchor="middle">2. Data Link (Adds MAC H2 + CRC T2)</text>
+
+            <rect x="45" y="285" width="250" height="22" rx="4" fill="#0f172a" stroke="#ef4444"/>
+            <text x="170" y="300" fill="#f87171" font-size="10" font-weight="700" text-anchor="middle">1. Physical Layer (0110100101 Bits)</text>
+
+            <!-- Physical Medium Link in the Middle -->
+            <path d="M310 295 L 430 295" stroke="#ef4444" stroke-width="3" stroke-dasharray="4"/>
+            <text x="370" y="288" fill="#f59e0b" font-size="11" font-weight="700" text-anchor="middle">Cable / Fiber</text>
+
+            <!-- Receiver Side -->
+            <rect x="430" y="25" width="280" height="290" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+            <text x="570" y="52" fill="#10b981" font-size="14" font-weight="700" text-anchor="middle">RECEIVER (Decapsulation &uarr;)</text>
+
+            <rect x="445" y="65" width="250" height="30" rx="4" fill="#0f172a" stroke="#475569"/>
+            <text x="570" y="85" fill="#ffffff" font-size="11" text-anchor="middle">7. Application (Receives HTTP Content)</text>
+
+            <rect x="445" y="102" width="250" height="30" rx="4" fill="#0f172a" stroke="#475569"/>
+            <text x="570" y="122" fill="#ffffff" font-size="11" text-anchor="middle">6. Presentation (Decryption &amp; ASCII)</text>
+
+            <rect x="445" y="139" width="250" height="30" rx="4" fill="#0f172a" stroke="#475569"/>
+            <text x="570" y="159" fill="#ffffff" font-size="11" text-anchor="middle">5. Session (Session Teardown)</text>
+
+            <rect x="445" y="176" width="250" height="30" rx="4" fill="#0f172a" stroke="#10b981"/>
+            <text x="570" y="196" fill="#34d399" font-size="11" font-weight="700" text-anchor="middle">4. Transport (Reassembles Segments)</text>
+
+            <rect x="445" y="213" width="250" height="30" rx="4" fill="#0f172a" stroke="#f59e0b"/>
+            <text x="570" y="233" fill="#fbbf24" font-size="11" font-weight="700" text-anchor="middle">3. Network (Inspects IP &amp; Strips H3)</text>
+
+            <rect x="445" y="250" width="250" height="30" rx="4" fill="#0f172a" stroke="#a855f7"/>
+            <text x="570" y="270" fill="#c084fc" font-size="11" font-weight="700" text-anchor="middle">2. Data Link (Validates CRC &amp; MAC)</text>
+
+            <rect x="445" y="285" width="250" height="22" rx="4" fill="#0f172a" stroke="#ef4444"/>
+            <text x="570" y="300" fill="#f87171" font-size="10" font-weight="700" text-anchor="middle">1. Physical (Converts Voltage to Bits)</text>
+          </svg>
+        </div>
+
+        <h5>2. Detailed Layer-by-Layer Functionality:</h5>
+        <ul>
+          <li><strong>Layer 1 - Physical:</strong> Voltage levels, pinouts, timing, Manchester encoding, bit synchronization (RJ-45, Cat6, Fiber).</li>
+          <li><strong>Layer 2 - Data Link:</strong> Framing, physical 48-bit MAC addressing, error detection (CRC), flow control, media access (CSMA/CD). Divided into LLC (802.2) and MAC (802.3).</li>
+          <li><strong>Layer 3 - Network:</strong> Logical 32-bit IPv4/128-bit IPv6 addressing, routing (Dijkstra, Bellman-Ford), fragmentation &amp; reassembly, traffic accounting.</li>
+          <li><strong>Layer 4 - Transport:</strong> Process-to-process communication via 16-bit Port numbers, segmentation, multiplexing, reliable delivery (TCP with 3-way handshake) or fast delivery (UDP).</li>
+          <li><strong>Layer 5 - Session:</strong> Checkpointing and token management for lengthy transactions, recovery synchronization points.</li>
+          <li><strong>Layer 6 - Presentation:</strong> Syntax and semantics of transmitted data, data compression (JPEG, MP3), character conversions (EBCDIC to ASCII), cryptography (TLS/SSL).</li>
+          <li><strong>Layer 7 - Application:</strong> Network virtual terminal, distributed database access, HTTP, HTTPS, SMTP, DNS, DHCP.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- C25: Sliding Window Protocols & Channel Efficiency Math -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q25.</span> Detail the Sliding Window Flow Control Protocols (Stop-and-Wait, Go-Back-N, and Selective Repeat). Derive the mathematical channel utilization formula $\eta = rac{N}{1 + 2a}$. Solve a numerical problem calculating optimal sender window size for a high-bandwidth satellite link.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2015, 2017, 2019, 2021, 2023</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        
+        <h5>1. Derivation of Channel Utilization ($\eta$):</h5>
+        <p>Let:</p>
+        <ul>
+          <li>$T_t = rac{L}{B} =$ Transmission time of a frame ($L$ bits, Bandwidth $B$).</li>
+          <li>$T_p = rac{D}{V} =$ One-way propagation delay ($D$ distance, $V$ velocity of light in medium).</li>
+          <li>Total time elapsed for 1 frame in Stop-and-Wait: $T_{	ext{total}} = T_t + 2 	imes T_p$ (ignoring ACK transmission time and processing time).</li>
+          <li>Let parameter $a = rac{T_p}{T_t}$. Then $T_{	ext{total}} = T_t(1 + 2a)$.</li>
+        </ul>
+        <p><strong>Efficiency ($\eta$) of Stop-and-Wait:</strong></p>
+        $$\eta_{	ext{Stop-and-Wait}} = rac{	ext{Useful Time}}{	ext{Total Time}} = rac{T_t}{T_t + 2T_p} = rac{1}{1 + 2a}$$
+        <p><strong>Efficiency ($\eta$) of Pipelined Sliding Window (Window Size $N$):</strong></p>
+        $$\eta = rac{N 	imes T_t}{T_t + 2T_p} = rac{N}{1 + 2a} \quad (	ext{subject to } \eta \le 100\%)$$
+        <p>To achieve $100\%$ maximum channel utilization ($\eta = 1$), the optimal sender window size must be:</p>
+        $$\mathbf{N_{	ext{optimal}} = 1 + 2a = 1 + 2\left(rac{T_p}{T_t}
+ight)}$$
+
+        <h5>2. High-Yield University Numerical Problem:</h5>
+        <p><strong>Problem Statement:</strong> A satellite channel has a bandwidth of $B = 10	ext{ Mbps}$ and a one-way propagation delay of $T_p = 250	ext{ ms}$. Frame size is $L = 10,000	ext{ bits}$ (1.25 KB). Calculate: (a) Efficiency of Stop-and-Wait, (b) Optimal window size $N$ for $100\%$ efficiency, and (c) Minimum sequence number bits required for Selective Repeat ARQ.</p>
+
+        <p><strong>Step-by-Step Solution:</strong></p>
+        <ol>
+          <li><strong>Compute Transmission Time ($T_t$):</strong>
+            $$T_t = rac{L}{B} = rac{10,000	ext{ bits}}{10 	imes 10^6	ext{ bps}} = 10^{-3}	ext{ seconds} = 1	ext{ ms}$$
+          </li>
+          <li><strong>Compute Parameter $a$:</strong>
+            $$a = rac{T_p}{T_t} = rac{250	ext{ ms}}{1	ext{ ms}} = 250$$
+          </li>
+          <li><strong>(a) Efficiency of Stop-and-Wait:</strong>
+            $$\eta = rac{1}{1 + 2a} = rac{1}{1 + 2(250)} = rac{1}{501} pprox 0.00199 = \mathbf{0.2\%} \quad (	ext{Extremely poor utilization!})$$
+          </li>
+          <li><strong>(b) Optimal Window Size for $100\%$ Utilization:</strong>
+            $$N_{	ext{optimal}} = 1 + 2a = 1 + 2(250) = \mathbf{501	ext{ frames}}$$
+          </li>
+          <li><strong>(c) Sequence Number Bits for Selective Repeat:</strong>
+            <p>In Selective Repeat, sender window $W_s \le 2^{m-1} \implies 2^{m-1} \ge 501 \implies m - 1 \ge \lceil \log_2(501) 
+ceil = 9 \implies \mathbf{m = 10	ext{ bits}}$.</p>
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- C26: CSMA/CD & Ethernet Standard -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q26.</span> Discuss the Medium Access Control (MAC) protocols. Derive the throughput formulas for Pure ALOHA and Slotted ALOHA. Explain the CSMA/CD mechanism with Binary Exponential Backoff and prove why Ethernet requires a minimum frame size of 64 bytes.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2014, 2017, 2019, 2021, 2023</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        
+        <h5>1. Derivation of ALOHA Throughput:</h5>
+        <p>Assume frame arrival follows a Poisson distribution with average arrival rate $G$ frames per frame-time $T_{	ext{fr}}$:</p>
+        $$P(k) = rac{G^k e^{-G}}{k!}$$
+        <ul>
+          <li><strong>Pure ALOHA:</strong> A frame vulnerable period spans from $t_0 - T_{	ext{fr}}$ to $t_0 + T_{	ext{fr}}$, an interval of length $2 T_{	ext{fr}}$. The probability of zero other frames generated in this window is $P(0) = e^{-2G}$.
+            $$	ext{Throughput } S = G \cdot P(0) = \mathbf{G \cdot e^{-2G}}$$
+            Differentiating with respect to $G$ and setting to 0 ($rac{dS}{dG} = e^{-2G}(1 - 2G) = 0$) gives maximum at $G = 0.5$:
+            $$S_{\max} = 0.5 \cdot e^{-1} = rac{0.5}{2.718} pprox \mathbf{18.4\%}$$
+          </li>
+          <li><strong>Slotted ALOHA:</strong> Transmission occurs only at discrete slot boundaries. Vulnerable period is halved to $1 T_{	ext{fr}}$.
+            $$	ext{Throughput } S = G \cdot e^{-G}$$
+            Maximum occurs at $G = 1.0$:
+            $$S_{\max} = 1.0 \cdot e^{-1} = rac{1}{2.718} pprox \mathbf{36.8\%}$$
+          </li>
+        </ul>
+
+        <!-- CSMA/CD Flowchart SVG Diagram -->
+        <div class="svg-tree-container" style="background: #0f172a; padding: 22px; border-radius: 12px; margin: 18px 0; border: 1px solid #334155; overflow-x: auto; -webkit-overflow-scrolling: touch;">
+          <div style="font-weight: 700; color: #38bdf8; margin-bottom: 14px; font-size: 15px; text-align: center;">CSMA/CD PROTOCOL LOGIC &amp; EXPONENTIAL BACKOFF FLOWCHART</div>
+          <svg viewBox="0 0 740 240" width="100%" height="240" style="min-width: 660px;" xmlns="http://www.w3.org/2000/svg">
+            <!-- Start Block -->
+            <rect x="20" y="90" width="100" height="45" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+            <text x="70" y="117" fill="#38bdf8" font-size="11" font-weight="700" text-anchor="middle">Frame Ready</text>
+
+            <path d="M120 112 L 165 112" stroke="#94a3b8" stroke-width="2"/>
+
+            <!-- Sense Carrier -->
+            <polygon points="215,80 265,112 215,145 165,112" fill="#1e293b" stroke="#f59e0b" stroke-width="1.8"/>
+            <text x="215" y="116" fill="#fbbf24" font-size="10" font-weight="700" text-anchor="middle">Sense Channel</text>
+
+            <!-- Loop back if busy -->
+            <path d="M215 80 L 215 45 L 140 45 L 140 112" stroke="#94a3b8" stroke-width="1.5"/>
+            <text x="180" y="38" fill="#94a3b8" font-size="9">Busy (Wait)</text>
+
+            <path d="M265 112 L 310 112" stroke="#94a3b8" stroke-width="2"/>
+            <text x="287" y="105" fill="#10b981" font-size="9">Idle</text>
+
+            <!-- Transmit & Detect -->
+            <rect x="310" y="90" width="125" height="45" rx="6" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+            <text x="372" y="112" fill="#10b981" font-size="11" font-weight="700" text-anchor="middle">Transmit Frame</text>
+            <text x="372" y="126" fill="#94a3b8" font-size="9" text-anchor="middle">&amp; Listen Collision</text>
+
+            <path d="M435 112 L 485 112" stroke="#94a3b8" stroke-width="2"/>
+
+            <!-- Collision Decision -->
+            <polygon points="535,80 585,112 535,145 485,112" fill="#1e293b" stroke="#ef4444" stroke-width="1.8"/>
+            <text x="535" y="116" fill="#f87171" font-size="10" font-weight="700" text-anchor="middle">Collision?</text>
+
+            <!-- Success Exit -->
+            <path d="M535 145 L 535 200 L 630 200" stroke="#10b981" stroke-width="2"/>
+            <text x="555" y="175" fill="#10b981" font-size="9">No (Done)</text>
+            <rect x="630" y="178" width="90" height="40" rx="6" fill="#065f46" stroke="#34d399"/>
+            <text x="675" y="202" fill="#ffffff" font-size="10" font-weight="700" text-anchor="middle">Success ✅</text>
+
+            <!-- Backoff Loop -->
+            <path d="M585 112 L 625 112" stroke="#ef4444" stroke-width="2"/>
+            <text x="605" y="105" fill="#ef4444" font-size="9">Yes</text>
+            <rect x="625" y="85" width="105" height="55" rx="6" fill="#1e293b" stroke="#ec4899" stroke-width="1.8"/>
+            <text x="677" y="107" fill="#f472b6" font-size="10" font-weight="700" text-anchor="middle">Send Jam Signal</text>
+            <text x="677" y="123" fill="#94a3b8" font-size="9" text-anchor="middle">Backoff: $2^K 	imes 512$</text>
+          </svg>
+        </div>
+
+        <h5>2. Binary Exponential Backoff Algorithm:</h5>
+        <ul>
+          <li>After collision $n$ ($1 \le n \le 16$), set $k = \min(n, 10)$.</li>
+          <li>Choose a random integer $R$ uniformly from the range $[0, 2^k - 1]$.</li>
+          <li>Wait $R 	imes 	ext{Slot Time}$ ($512	ext{ bit times} = 51.2	ext{ }\mu	ext{s}$ in 10 Mbps Ethernet) before attempting retransmission.</li>
+          <li>If $n = 16$ collisions occur consecutively, the sender aborts transmission and reports a severe network error.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- C27: Subnetting & CIDR Network Engineering -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q27.</span> Given the Class C network block <code>192.168.10.0/24</code>. An enterprise requires 4 distinct subnets for Administration, Faculty, Labs, and Library, with up to 30 usable host IP addresses per subnet. Perform complete subnetting engineering, specifying Subnet Mask, Subnet IDs, Usable IP Ranges, and Broadcast Addresses in an exhaustive master table.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2014, 2016, 2018, 2020, 2022</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        
+        <h5>1. Mathematical Subnetting Formulation:</h5>
+        <ul>
+          <li>Original Network: <code>192.168.10.0/24</code> (Class C default mask: <code>255.255.255.0</code>).</li>
+          <li>Total host bits available originally = $32 - 24 = 8	ext{ bits}$ ($2^8 = 256$ total IPs).</li>
+          <li>Required subnets = 4. Number of subnet bits borrowed from host field:
+            $$2^s \ge 4 \implies s = \mathbf{2	ext{ bits}}$$
+          </li>
+          <li>Remaining host bits: $h = 8 - 2 = \mathbf{6	ext{ bits}}$.</li>
+          <li>Usable hosts per subnet: $2^h - 2 = 2^6 - 2 = 64 - 2 = \mathbf{62	ext{ hosts}}$ (Easily satisfies the 30-host requirement!).</li>
+          <li><strong>New CIDR Prefix:</strong> $/24 + 2 = \mathbf{/26}$.</li>
+          <li><strong>New Custom Subnet Mask:</strong>
+            $$	ext{Binary: } 11111111.11111111.11111111.\mathbf{11000000}_2$$
+            $$	ext{Decimal: } 255.255.255.(128 + 64) = \mathbf{255.255.255.192}$$
+          </li>
+          <li><strong>Block Size (Hop Interval):</strong> $256 - 192 = \mathbf{64}$.</li>
+        </ul>
+
+        <h5>2. Enterprise Subnet Allocation Master Table:</h5>
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Subnet Name &amp; Dept</th>
+                <th>Subnet ID (Network Address)</th>
+                <th>First Usable Host IP</th>
+                <th>Last Usable Host IP</th>
+                <th>Directed Broadcast Address</th>
+                <th>Custom Subnet Mask</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Subnet 1: Administration</strong></td>
+                <td><code>192.168.10.0</code></td>
+                <td><code>192.168.10.1</code></td>
+                <td><code>192.168.10.62</code></td>
+                <td><code>192.168.10.63</code></td>
+                <td><code>255.255.255.192</code></td>
+              </tr>
+              <tr>
+                <td><strong>Subnet 2: Faculty</strong></td>
+                <td><code>192.168.10.64</code></td>
+                <td><code>192.168.10.65</code></td>
+                <td><code>192.168.10.126</code></td>
+                <td><code>192.168.10.127</code></td>
+                <td><code>255.255.255.192</code></td>
+              </tr>
+              <tr>
+                <td><strong>Subnet 3: Computer Labs</strong></td>
+                <td><code>192.168.10.128</code></td>
+                <td><code>192.168.10.129</code></td>
+                <td><code>192.168.10.190</code></td>
+                <td><code>192.168.10.191</code></td>
+                <td><code>255.255.255.192</code></td>
+              </tr>
+              <tr>
+                <td><strong>Subnet 4: Central Library</strong></td>
+                <td><code>192.168.10.192</code></td>
+                <td><code>192.168.10.193</code></td>
+                <td><code>192.168.10.254</code></td>
+                <td><code>192.168.10.255</code></td>
+                <td><code>255.255.255.192</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- C28: Dijkstra's Shortest Path Routing Trace -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q28.</span> Trace Dijkstra's Shortest Path Algorithm on a 6-node network graph with Source node A. Compute shortest path costs and the complete Routing Table for Node A.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2015, 2017, 2019, 2021, 2023</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        
+        <h5>1. Network Graph Edge Cost Definitions:</h5>
+        <p>Consider 6 routers $\{A, B, C, D, E, F\}$ with undirected link weights:</p>
+        <p>$c(A, B) = 4, \quad c(A, C) = 2$</p>
+        <p>$c(B, C) = 1, \quad c(B, D) = 5$</p>
+        <p>$c(C, D) = 8, \quad c(C, E) = 10$</p>
+        <p>$c(D, E) = 2, \quad c(D, F) = 6$</p>
+        <p>$c(E, F) = 3$</p>
+
+        <h5>2. Step-by-Step Dijkstra Algorithm Iteration Trace:</h5>
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Step #</th>
+                <th>Set $N'$ (Visited)</th>
+                <th>$D(B), p(B)$</th>
+                <th>$D(C), p(C)$</th>
+                <th>$D(D), p(D)$</th>
+                <th>$D(E), p(E)$</th>
+                <th>$D(F), p(F)$</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>0</strong></td>
+                <td>$\{A\}$</td>
+                <td>$4, A$</td>
+                <td><strong>2, A</strong> &larr; Min</td>
+                <td>$\infty$</td>
+                <td>$\infty$</td>
+                <td>$\infty$</td>
+              </tr>
+              <tr>
+                <td><strong>1</strong></td>
+                <td>$\{A, C\}$</td>
+                <td><strong>3, C</strong> &larr; Min</td>
+                <td>$2, A$</td>
+                <td>$10, C$</td>
+                <td>$12, C$</td>
+                <td>$\infty$</td>
+              </tr>
+              <tr>
+                <td><strong>2</strong></td>
+                <td>$\{A, C, B\}$</td>
+                <td>$3, C$</td>
+                <td>$2, A$</td>
+                <td><strong>8, B</strong> &larr; Min</td>
+                <td>$12, C$</td>
+                <td>$\infty$</td>
+              </tr>
+              <tr>
+                <td><strong>3</strong></td>
+                <td>$\{A, C, B, D\}$</td>
+                <td>$3, C$</td>
+                <td>$2, A$</td>
+                <td>$8, B$</td>
+                <td><strong>10, D</strong> &larr; Min</td>
+                <td>$14, D$</td>
+              </tr>
+              <tr>
+                <td><strong>4</strong></td>
+                <td>$\{A, C, B, D, E\}$</td>
+                <td>$3, C$</td>
+                <td>$2, A$</td>
+                <td>$8, B$</td>
+                <td>$10, D$</td>
+                <td><strong>13, E</strong> &larr; Min</td>
+              </tr>
+              <tr>
+                <td><strong>5</strong></td>
+                <td>$\{A, C, B, D, E, F\}$</td>
+                <td>$3, C$</td>
+                <td>$2, A$</td>
+                <td>$8, B$</td>
+                <td>$10, D$</td>
+                <td>$13, E$</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h5>3. Final Shortest Paths &amp; Node A Routing Table:</h5>
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Destination Node</th>
+                <th>Shortest Path from A</th>
+                <th>Total Minimum Path Cost</th>
+                <th>Next Hop Router from A</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>B</strong></td>
+                <td>$A 	o C 	o B$</td>
+                <td>$2 + 1 = \mathbf{3}$</td>
+                <td><strong>C</strong></td>
+              </tr>
+              <tr>
+                <td><strong>C</strong></td>
+                <td>$A 	o C$</td>
+                <td>$\mathbf{2}$</td>
+                <td><strong>C</strong></td>
+              </tr>
+              <tr>
+                <td><strong>D</strong></td>
+                <td>$A 	o C 	o B 	o D$</td>
+                <td>$2 + 1 + 5 = \mathbf{8}$</td>
+                <td><strong>C</strong></td>
+              </tr>
+              <tr>
+                <td><strong>E</strong></td>
+                <td>$A 	o C 	o B 	o D 	o E$</td>
+                <td>$2 + 1 + 5 + 2 = \mathbf{10}$</td>
+                <td><strong>C</strong></td>
+              </tr>
+              <tr>
+                <td><strong>F</strong></td>
+                <td>$A 	o C 	o B 	o D 	o E 	o F$</td>
+                <td>$2 + 1 + 5 + 2 + 3 = \mathbf{13}$</td>
+                <td><strong>C</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- C29: TCP Architecture & Congestion Control Trace -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q29.</span> Explain the TCP Segment Header layout. Detail the TCP 3-Way Handshake and 4-Way Teardown. Graph and explain the dynamics of TCP Congestion Window (Slow Start, Additive Increase, Multiplicative Decrease, and Fast Recovery).</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2014, 2016, 2018, 2021, 2022</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        
+        <h5>1. TCP Handshake &amp; Teardown Blueprint:</h5>
+        <!-- TCP Handshake SVG -->
+        <div class="svg-tree-container" style="background: #0f172a; padding: 22px; border-radius: 12px; margin: 18px 0; border: 1px solid #334155; overflow-x: auto; -webkit-overflow-scrolling: touch;">
+          <div style="font-weight: 700; color: #38bdf8; margin-bottom: 14px; font-size: 15px; text-align: center;">TCP 3-WAY HANDSHAKE (CONNECT) &amp; 4-WAY WAVE (TEARDOWN)</div>
+          <svg viewBox="0 0 740 280" width="100%" height="280" style="min-width: 660px;" xmlns="http://www.w3.org/2000/svg">
+            <!-- Client Line -->
+            <line x1="120" y1="30" x2="120" y2="260" stroke="#38bdf8" stroke-width="3"/>
+            <rect x="70" y="10" width="100" height="30" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+            <text x="120" y="30" fill="#38bdf8" font-size="12" font-weight="700" text-anchor="middle">CLIENT</text>
+
+            <!-- Server Line -->
+            <line x1="620" y1="30" x2="620" y2="260" stroke="#10b981" stroke-width="3"/>
+            <rect x="570" y="10" width="100" height="30" rx="6" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+            <text x="620" y="30" fill="#10b981" font-size="12" font-weight="700" text-anchor="middle">SERVER</text>
+
+            <!-- Handshake 1: SYN -->
+            <path d="M120 60 L 620 90" stroke="#f59e0b" stroke-width="2"/>
+            <text x="370" y="70" fill="#fbbf24" font-size="11" font-weight="700" text-anchor="middle">1. SYN (Seq = x)</text>
+
+            <!-- Handshake 2: SYN-ACK -->
+            <path d="M620 100 L 120 130" stroke="#38bdf8" stroke-width="2"/>
+            <text x="370" y="110" fill="#38bdf8" font-size="11" font-weight="700" text-anchor="middle">2. SYN-ACK (Seq = y, Ack = x + 1)</text>
+
+            <!-- Handshake 3: ACK -->
+            <path d="M120 140 L 620 170" stroke="#10b981" stroke-width="2"/>
+            <text x="370" y="150" fill="#34d399" font-size="11" font-weight="700" text-anchor="middle">3. ACK (Seq = x + 1, Ack = y + 1) [ESTABLISHED]</text>
+
+            <!-- Teardown Divider -->
+            <line x1="50" y1="185" x2="690" y2="185" stroke="#475569" stroke-width="1.5" stroke-dasharray="4"/>
+            <text x="370" y="198" fill="#94a3b8" font-size="10" text-anchor="middle">DATA TRANSFER COMPLETE &bull; CONNECTION TERMINATION</text>
+
+            <!-- Teardown 1: FIN -->
+            <path d="M120 215 L 620 235" stroke="#ef4444" stroke-width="1.8"/>
+            <text x="280" y="222" fill="#f87171" font-size="10">1. FIN (Seq = u)</text>
+
+            <!-- Teardown 2: ACK -->
+            <path d="M620 240 L 120 255" stroke="#94a3b8" stroke-width="1.5"/>
+            <text x="460" y="244" fill="#94a3b8" font-size="10">2. ACK (Ack = u + 1)</text>
+          </svg>
+        </div>
+
+        <h5>2. TCP Congestion Window Dynamics (AIMD):</h5>
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Event / Trigger</th>
+                <th>Congestion Window (<code>cwnd</code>) Reaction</th>
+                <th>Threshold (<code>ssthresh</code>) Reaction</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Connection Start</strong></td>
+                <td>$	ext{cwnd} = 1	ext{ MSS}$</td>
+                <td>$	ext{ssthresh} = 64	ext{ KB}$ (Initial default)</td>
+              </tr>
+              <tr>
+                <td><strong>Each ACK in Slow Start</strong></td>
+                <td>$	ext{cwnd} \leftarrow 	ext{cwnd} + 1	ext{ MSS}$ (Doubles every RTT)</td>
+                <td>Unchanged</td>
+              </tr>
+              <tr>
+                <td><strong>$	ext{cwnd} \ge 	ext{ssthresh}$</strong></td>
+                <td>$	ext{cwnd} \leftarrow 	ext{cwnd} + rac{1}{	ext{cwnd}}$ per ACK ($+1	ext{ MSS}$ per RTT linear increase)</td>
+                <td>Unchanged</td>
+              </tr>
+              <tr>
+                <td><strong>3 Duplicate ACKs (Mild Congestion)</strong></td>
+                <td>Set to $	ext{ssthresh} + 3	ext{ MSS}$ (Fast Recovery in Reno)</td>
+                <td>$	ext{ssthresh} \leftarrow rac{	ext{cwnd}}{2}$ (Halved)</td>
+              </tr>
+              <tr>
+                <td><strong>Timeout (Severe Congestion)</strong></td>
+                <td><strong>Drops to $1	ext{ MSS}$</strong> immediately! (Restarts Slow Start)</td>
+                <td>$	ext{ssthresh} \leftarrow rac{	ext{cwnd}}{2}$</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- C30: RSA Cryptography & Digital Signatures -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q30.</span> Discuss Network Security Principles (Confidentiality, Integrity, Authentication, and Non-repudiation). Explain how Digital Signatures guarantee Authenticity and Non-Repudiation with an architectural diagram. Contrast Packet-Filtering, Application-Gateway, and Stateful-Inspection Firewalls.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2015, 2018, 2020, 2022, 2023</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        
+        <h5>1. The Four Pillars of Network Security:</h5>
+        <ul>
+          <li><strong>Confidentiality:</strong> Only authorized sender and receiver should understand the contents of the transmitted message (achieved via Encryption).</li>
+          <li><strong>Message Integrity:</strong> Ensures the message has not been altered, injected, or tampered with in transit (achieved via Cryptographic Hash Functions like SHA-256).</li>
+          <li><strong>Authentication:</strong> Sender and receiver can verify each other's legal identity (achieved via Digital Certificates and PKI).</li>
+          <li><strong>Non-Repudiation:</strong> The sender cannot falsely deny having sent the message once transmitted (achieved via Digital Signatures).</li>
+        </ul>
+
+        <!-- Digital Signature SVG Diagram -->
+        <div class="svg-tree-container" style="background: #0f172a; padding: 22px; border-radius: 12px; margin: 18px 0; border: 1px solid #334155; overflow-x: auto; -webkit-overflow-scrolling: touch;">
+          <div style="font-weight: 700; color: #38bdf8; margin-bottom: 14px; font-size: 15px; text-align: center;">DIGITAL SIGNATURE CREATION &amp; VERIFICATION ARCHITECTURE</div>
+          <svg viewBox="0 0 740 220" width="100%" height="220" style="min-width: 660px;" xmlns="http://www.w3.org/2000/svg">
+            <!-- Sender Side -->
+            <rect x="20" y="30" width="320" height="160" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+            <text x="180" y="55" fill="#38bdf8" font-size="12" font-weight="700" text-anchor="middle">SENDER: Signature Generation</text>
+
+            <rect x="35" y="70" width="110" height="35" rx="4" fill="#0f172a" stroke="#475569"/>
+            <text x="90" y="92" fill="#ffffff" font-size="11" text-anchor="middle">Original Message</text>
+
+            <path d="M145 87 L 175 87" stroke="#94a3b8" stroke-width="2"/>
+
+            <rect x="175" y="70" width="85" height="35" rx="4" fill="#0f172a" stroke="#10b981"/>
+            <text x="217" y="92" fill="#34d399" font-size="10" font-weight="700" text-anchor="middle">SHA-256 Hash</text>
+
+            <path d="M260 87 L 285 87" stroke="#94a3b8" stroke-width="2"/>
+
+            <!-- Encrypt with Private Key -->
+            <rect x="70" y="125" width="220" height="45" rx="6" fill="#312e81" stroke="#ec4899" stroke-width="1.5"/>
+            <text x="180" y="145" fill="#f472b6" font-size="10" font-weight="700" text-anchor="middle">Encrypt Hash with Sender's PRIVATE KEY</text>
+            <text x="180" y="160" fill="#ffffff" font-size="10" text-anchor="middle">= Digital Signature</text>
+
+            <!-- Arrow Across Network -->
+            <path d="M340 110 L 400 110" stroke="#f59e0b" stroke-width="3"/>
+
+            <!-- Receiver Side -->
+            <rect x="400" y="30" width="320" height="160" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+            <text x="560" y="55" fill="#10b981" font-size="12" font-weight="700" text-anchor="middle">RECEIVER: Signature Verification</text>
+
+            <rect x="420" y="75" width="280" height="45" rx="6" fill="#0f172a" stroke="#10b981"/>
+            <text x="560" y="95" fill="#34d399" font-size="10" font-weight="700" text-anchor="middle">Decrypt Signature with Sender's PUBLIC KEY</text>
+            <text x="560" y="110" fill="#94a3b8" font-size="9" text-anchor="middle">Restores original computed hash digest</text>
+
+            <rect x="440" y="135" width="240" height="35" rx="4" fill="#065f46" stroke="#34d399"/>
+            <text x="560" y="157" fill="#ffffff" font-size="10" font-weight="700" text-anchor="middle">Hashes Match? &rarr; Signature Verified! ✅</text>
+          </svg>
+        </div>
+
+        <h5>2. Comparison of Firewall Technologies:</h5>
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Firewall Type</th>
+                <th>OSI Layer</th>
+                <th>Inspection Criteria</th>
+                <th>Performance &amp; Security Level</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Packet-Filtering Firewall</strong></td>
+                <td>Network / Transport (L3/L4)</td>
+                <td>Inspects packet headers only: Source/Dest IP, Source/Dest Port, Protocol (TCP/UDP).</td>
+                <td>Extremely fast wire-speed filtering; low security (vulnerable to IP spoofing, cannot inspect payload).</td>
+              </tr>
+              <tr>
+                <td><strong>Stateful Inspection Firewall</strong></td>
+                <td>Network through Session (L3–L5)</td>
+                <td>Tracks the state of active TCP connections in a dynamic state table; ensures incoming packets match established sessions.</td>
+                <td>Industry standard enterprise boundary defense; robust against unauthorized unsolicited connections.</td>
+              </tr>
+              <tr>
+                <td><strong>Application-Gateway (Proxy)</strong></td>
+                <td>Application Layer (L7)</td>
+                <td>Acts as an intermediary; reconstructs application commands (HTTP GET, FTP commands) and inspects payload for viruses.</td>
+                <td>Highest level of security; computationally resource-heavy, introduces slight latency.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

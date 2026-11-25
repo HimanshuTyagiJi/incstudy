@@ -1,0 +1,1448 @@
+---
+layout: exam
+title: "CCSU BCA 5th Sem Introduction to DBMS (BCA-501) Most Important Questions & Solved Exam Notebook"
+seo_title: "CCSU BCA 5th Sem Introduction to DBMS (BCA-501) Solved Exam Notebook"
+breadcrumb_title: "DBMS (BCA-501)"
+eyebrow: "⚡ CCSU Meerut · BCA 5th Semester · Exam Preparation"
+title_subject: "Introduction to DBMS"
+title_code: "BCA-501"
+title_highlight: "Most Important Questions & Solved Exam Notebook"
+keywords: "ccsu bca 5th sem dbms, bca 501 important questions, bca dbms notes, bca 501 question paper, er model to relational schema, normalization solved questions bca, 2pl concurrency bca notes, bca study material, bca study"
+description: "Master solved question bank of recurring CCSU examination questions (2014–2023) for Introduction to DBMS (BCA-501) with ER modeling, relational algebra, SQL queries, normalization (1NF to BCNF proofs), 2PL concurrency, and vector SVG diagrams."
+permalink: /ccsu/bca/semester-5/dbms-important-questions/
+course_name: "CCSU BCA Semester 5 · Introduction to DBMS (BCA-501)"
+math: true
+---
+
+<!-- Navigation & Actions Bar -->
+<div class="exam-actions-bar">
+  <a href="{{ '/ccsu/bca/semester-5/' | relative_url }}" class="text-link">&larr; Back to Semester 5 Hub</a>
+</div>
+
+<!-- Header Strip -->
+<div class="exam-header-strip">
+  <span class="strip-pill">📚 Subject Code: BCA-501</span>
+  <span class="strip-pill">🏛️ CCSU Meerut University Pattern</span>
+  <span class="strip-pill">📄 3M, 7.5M &amp; 15M Exam Blueprint</span>
+  <span class="strip-pill">⭐ 2014–2023 Recurring University Exam Archive</span>
+</div>
+
+<!-- Quick Jump Nav -->
+<div class="exam-jump-nav">
+  <span class="exam-jump-label">⚡ Quick Jump:</span>
+  <a href="#section-a" class="jump-pill jump-pill-emerald">Section A (3 Marks · 15 Questions)</a>
+  <a href="#section-b" class="jump-pill jump-pill-cyan">Section B (7.5 Marks · 8 Questions)</a>
+  <a href="#section-c" class="jump-pill jump-pill-purple">⭐ Section C (15 Marks · 7 Solved Master Problems &amp; SVG Diagrams)</a>
+</div>
+
+<div class="notice-box" style="margin-bottom: 28px;">
+  <strong>Exam Scoring Architecture for BCA-501 (Introduction to DBMS):</strong>
+  The university theory examination carries <strong>75 Marks</strong> with a 3-hour duration, structured into 
+  <strong>Section A (5 questions &times; 3M = 15M compulsory)</strong>, 
+  <strong>Section B (attempt 2 of 3 questions &times; 7.5M = 15M)</strong>, and 
+  <strong>Section C (attempt 3 of 5 questions &times; 15M = 45M)</strong>.
+  In this master solved notebook, every recurring question from 2014 to 2023 is solved with complete relational algebra expressions, SQL queries, normalization proofs, ER conversion steps, and custom vector SVG diagrams.
+</div>
+
+
+
+<!-- =========================================================================
+     SECTION A : 3 MARKS VERY SHORT ANSWER QUESTIONS (COMPULSORY)
+     ========================================================================= -->
+<div class="exam-section-card" id="section-a">
+  <div class="exam-section-header exam-section-header-emerald">
+    <div class="exam-section-header-inner">
+      <span class="exam-section-badge badge-emerald">SECTION A &bull; 3 MARKS EACH</span>
+      <h3 class="exam-section-title">Very Short Answer Questions &amp; Core Database Concepts</h3>
+      <p class="exam-section-rule">CCSU Examination Blueprint: 5 Questions Compulsory &bull; Total 15 Marks (75 Words Limit)</p>
+    </div>
+  </div>
+
+  <div class="exam-section-body">
+
+    <!-- A1: DBMS vs File System -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q1.</span> What is a Database Management System (DBMS)? State three critical advantages of a DBMS over conventional File Processing Systems.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2014, 2016, 2018, 2021, 2023</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>A <strong>Database Management System (DBMS)</strong> is a specialized software suite designed to define, construct, manipulate, query, and maintain structured collections of interrelated data while enforcing access security and integrity constraints.</p>
+        <p><strong>Three Critical Advantages over File Systems:</strong></p>
+        <ol>
+          <li><strong>Minimization of Data Redundancy &amp; Inconsistency:</strong> In file systems, different departments duplicate identical student records, causing discrepancies when updated. DBMS centralizes data storage to eliminate uncontrolled duplication.</li>
+          <li><strong>Data Independence:</strong> Application programs are insulated from physical changes in storage layout or logical schema definitions.</li>
+          <li><strong>Transaction Support &amp; Concurrency Control:</strong> DBMS guarantees ACID properties, preventing race conditions, dirty reads, and partial updates when multiple users access records simultaneously.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- A2: Three Schema Architecture & Data Independence -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q2.</span> Explain the ANSI/SPARC Three-Schema Architecture. Differentiate between Physical and Logical Data Independence.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2015, 2017, 2019, 2022</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>The <strong>Three-Schema Architecture</strong> divides database design into three distinct abstraction tiers: <strong>External Level (Views)</strong>, <strong>Conceptual Level (Logical Structure/ER)</strong>, and <strong>Internal Level (Physical Storage/B-Trees)</strong>.</p>
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>Physical Data Independence</th>
+                <th>Logical Data Independence</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Definition</strong></td>
+                <td>The capacity to modify the <strong>internal schema</strong> without requiring changes to the conceptual or external schemas.</td>
+                <td>The capacity to modify the <strong>conceptual schema</strong> without requiring changes to external schemas or user applications.</td>
+              </tr>
+              <tr>
+                <td><strong>Example</strong></td>
+                <td>Switching disk storage hardware, changing compression algorithms, or adding B+ tree indexes.</td>
+                <td>Adding a new entity table, adding a new column to a relation, or splitting tables.</td>
+              </tr>
+              <tr>
+                <td><strong>Attainability</strong></td>
+                <td>Easier to achieve in relational systems.</td>
+                <td>Significantly harder to achieve because applications depend heavily on logical attributes.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- A3: Entity, Attribute, Relationship -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q3.</span> Define Entity, Attribute, Entity Set, and Relationship Set in an Entity-Relationship (ER) Model.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2014, 2017, 2019, 2021</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <ul>
+          <li><strong>Entity:</strong> A distinct real-world object or concept that is distinguishable from other objects (e.g. A specific student named "Rohit Sharma").</li>
+          <li><strong>Attribute:</strong> A descriptive property or characteristic that describes an entity (e.g. <code>RollNo</code>, <code>StudentName</code>, <code>Email</code>, <code>DOB</code>).</li>
+          <li><strong>Entity Set:</strong> A collection of all entities of the same type sharing common attributes (e.g. The set of all students in a college represented as <code>STUDENT</code>).</li>
+          <li><strong>Relationship Set:</strong> An association among two or more entities (e.g. Student Rohit <code>ENROLLED_IN</code> BCA Course). A mathematical relation on $E_1 	imes E_2 	imes \dots 	imes E_n$.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- A4: Weak Entity Set -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q4.</span> What is a Weak Entity Set? Explain Identifying Relationship and Partial Key (Discriminator) with an example.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2016, 2018, 2020, 2022</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>A <strong>Weak Entity Set</strong> is an entity set that does not possess sufficient attributes to form a primary key of its own. It depends on the existence of an <strong>Identifying (Strong) Entity Set</strong> for identification.</p>
+        <ul>
+          <li><strong>Identifying Relationship:</strong> The relationship connecting the weak entity set to its owner strong entity set (drawn with a double diamond in ER diagrams).</li>
+          <li><strong>Partial Key (Discriminator):</strong> A set of attributes that uniquely distinguishes weak entities belonging to the <em>same</em> strong entity (drawn with a dashed underline).</li>
+          <li><strong>Classic Example:</strong> In an employee database, <code>DEPENDENT</code> (child/spouse) is a weak entity set identified by <code>EmployeeID</code> of the strong entity <code>EMPLOYEE</code> combined with the partial key <code>Dependent_Name</code>.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- A5: Primary vs Candidate vs Super Key -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q5.</span> Differentiate between Super Key, Candidate Key, and Primary Key in Relational Database Theory.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2015, 2017, 2019, 2021, 2023</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <ul>
+          <li><strong>Super Key (SK):</strong> A single attribute or set of attributes that uniquely identifies every tuple within a relation. A super key may contain extraneous / redundant attributes (e.g. <code>{RollNo, PhoneNo, Email}</code>).</li>
+          <li><strong>Candidate Key (CK):</strong> A <strong>minimal super key</strong> having no proper subset that is itself a super key. Candidate keys have no redundant attributes (e.g. <code>{RollNo}</code> and <code>{Email}</code>).</li>
+          <li><strong>Primary Key (PK):</strong> The single candidate key selected by the database designer as the principal identification mechanism for the relation. It enforces uniqueness and <strong>never accepts NULL values</strong>.</li>
+        </ul>
+        <div class="callout-box">
+          <strong>Hierarchy Rule:</strong> <code>Primary Key &sube; Candidate Key &sube; Super Key</code>. All candidate keys are super keys, but not all super keys are candidate keys.
+        </div>
+      </div>
+    </div>
+
+    <!-- A6: Referential Integrity & Cascading -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q6.</span> Explain Referential Integrity Constraint. What is the effect of <code>ON DELETE CASCADE</code>?</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2016, 2018, 2020, 2022</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>A <strong>Referential Integrity Constraint</strong> dictates that a value appearing in the <strong>Foreign Key</strong> column of a referencing table must match an existing primary key value in the referenced parent table, or else be <code>NULL</code>.</p>
+        <p><strong>Action of <code>ON DELETE CASCADE</code>:</strong> If a record in the parent table is deleted, the DBMS automatically deletes all corresponding child records in the referencing table that reference that parent key, preventing "orphaned records" without triggering a foreign key violation error.</p>
+      </div>
+    </div>
+
+    <!-- A7: DDL vs DML -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q7.</span> Contrast Data Definition Language (DDL) and Data Manipulation Language (DML) with standard SQL statements.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2014, 2016, 2018, 2021</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>DDL (Data Definition Language)</th>
+                <th>DML (Data Manipulation Language)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Purpose</strong></td>
+                <td>Defines, creates, alters, or destroys the database structure/schema.</td>
+                <td>Manipulates, retrieves, inserts, modifies, or deletes row data.</td>
+              </tr>
+              <tr>
+                <td><strong>SQL Commands</strong></td>
+                <td><code>CREATE</code>, <code>ALTER</code>, <code>DROP</code>, <code>TRUNCATE</code>, <code>RENAME</code>.</td>
+                <td><code>SELECT</code>, <code>INSERT</code>, <code>UPDATE</code>, <code>DELETE</code>.</td>
+              </tr>
+              <tr>
+                <td><strong>Transaction Behavior</strong></td>
+                <td>Auto-committed permanently. Cannot be rolled back.</td>
+                <td>Can be rolled back using <code>ROLLBACK</code> before a <code>COMMIT</code>.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- A8: WHERE vs HAVING -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q8.</span> Differentiate between <code>WHERE</code> clause and <code>HAVING</code> clause in SQL.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2015, 2017, 2019, 2022</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Criteria</th>
+                <th><code>WHERE</code> Clause</th>
+                <th><code>HAVING</code> Clause</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Target Level</strong></td>
+                <td>Filters individual <strong>rows</strong> before grouping occurs.</td>
+                <td>Filters summarized <strong>groups</strong> produced by <code>GROUP BY</code>.</td>
+              </tr>
+              <tr>
+                <td><strong>Aggregate Functions</strong></td>
+                <td>Cannot contain aggregate functions (e.g. <code>WHERE SUM(sal) &gt; 5000</code> is INVALID).</td>
+                <td>Specifically designed to evaluate aggregate expressions (e.g. <code>HAVING COUNT(*) &gt; 5</code>).</td>
+              </tr>
+              <tr>
+                <td><strong>Position in Query</strong></td>
+                <td>Placed before the <code>GROUP BY</code> clause.</td>
+                <td>Placed strictly after the <code>GROUP BY</code> clause.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- A9: Views in SQL -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q9.</span> What is a View in SQL? State two major advantages and one limitation of Views.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2016, 2018, 2020, 2023</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>A <strong>View</strong> is a virtual table whose contents are defined by an underlying SQL query: <code>CREATE VIEW ViewName AS SELECT ...</code>. A view stores no physical records on disk; instead, the query is executed dynamically whenever the view is queried.</p>
+        <ul>
+          <li><strong>Advantage 1 (Data Security):</strong> Hides sensitive columns (e.g., hiding <code>Salary</code> or <code>PasswordHash</code> from junior HR staff by providing a filtered view).</li>
+          <li><strong>Advantage 2 (Query Simplification):</strong> Replaces complex multi-table joins with a simple <code>SELECT * FROM StudentCourseView</code>.</li>
+          <li><strong>Limitation:</strong> Views containing joins, aggregate functions, <code>DISTINCT</code>, or <code>GROUP BY</code> are read-only and <strong>cannot be updated directly via DML (<code>INSERT/UPDATE/DELETE</code>)</strong>.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- A10: Functional Dependency & Armstrong's Axioms -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q10.</span> Define Functional Dependency ($X 	o Y$). State Armstrong's three primary axioms.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2015, 2017, 2020, 2022</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>In relation schema $R$, attribute set $Y$ is <strong>Functionally Dependent</strong> on $X$ ($X 	o Y$) if and only if whenever two tuples $t_1, t_2 \in R$ agree on the values of $X$ ($t_1[X] = t_2[X]$), they must also agree on the values of $Y$ ($t_1[Y] = t_2[Y]$).</p>
+        <h5>Armstrong's Three Primary Axioms:</h5>
+        <ol>
+          <li><strong>Axiom of Reflexivity:</strong> If $Y \subseteq X$, then $X 	o Y$ (Trivial dependency).</li>
+          <li><strong>Axiom of Augmentation:</strong> If $X 	o Y$, then $XZ 	o YZ$ for any attribute set $Z$.</li>
+          <li><strong>Axiom of Transitivity:</strong> If $X 	o Y$ and $Y 	o Z$, then $X 	o Z$.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- A11: 1NF and 2NF -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q11.</span> Define First Normal Form (1NF) and Second Normal Form (2NF). What constitutes a Partial Dependency?</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2014, 2017, 2019, 2021, 2023</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <ul>
+          <li><strong>First Normal Form (1NF):</strong> A relation is in 1NF if all domain values are <strong>atomic (indivisible)</strong>, meaning no attribute contains multivalued lists, sets, or nested repeating groups.</li>
+          <li><strong>Second Normal Form (2NF):</strong> A relation is in 2NF if it is in 1NF and <strong>no non-prime attribute is partially dependent on any candidate key</strong>. Every non-prime attribute must be fully functionally dependent on the entire composite primary key.</li>
+          <li><strong>Partial Dependency:</strong> Occurs when a non-prime attribute depends on a <em>proper subset</em> of a composite candidate key rather than the complete key (e.g. In key $\{A, B\}$, dependency $A 	o C$ where $C$ is non-prime is a partial dependency).</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- A12: 3NF vs BCNF -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q12.</span> Differentiate between 3NF and BCNF (Boyce-Codd Normal Form) with formal mathematical conditions.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2016, 2018, 2020, 2022</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>For every non-trivial functional dependency $X 	o Y$ in relation $R$:</p>
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Normal Form</th>
+                <th>Mandatory Condition for $X 	o Y$</th>
+                <th>Rigidity Level</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Third Normal Form (3NF)</strong></td>
+                <td>Either $X$ is a <strong>Super Key</strong>, OR $Y$ is a <strong>Prime Attribute</strong> (member of some candidate key).</td>
+                <td>Relaxed (Allows functional dependencies where determinant $X$ is not a super key if $Y$ is prime). Always guarantees dependency preservation.</td>
+              </tr>
+              <tr>
+                <td><strong>Boyce-Codd Normal Form (BCNF)</strong></td>
+                <td>$X$ <strong>MUST BE A SUPER KEY</strong> (No exceptions allowed).</td>
+                <td>Strict. Eliminates all anomalies based on functional dependencies, but dependency preservation cannot always be guaranteed.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- A13: ACID Properties -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q13.</span> Explain the ACID Properties of a database transaction.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2014, 2016, 2018, 2021, 2023</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <ul>
+          <li><strong>Atomicity ("All or Nothing"):</strong> Guarantees that either all operations of a transaction execute to completion and commit, or the entire transaction is rolled back leaving no partial changes. Managed by the Recovery Manager.</li>
+          <li><strong>Consistency:</strong> Ensures that execution of a transaction preserves database invariants, taking the database from one valid consistent state to another.</li>
+          <li><strong>Isolation:</strong> Ensures that concurrently executing transactions are invisible to each other until committed, appearing as if executed serially. Managed by Concurrency Control Manager.</li>
+          <li><strong>Durability:</strong> Once a transaction commits, its updates persist permanently in non-volatile disk storage, surviving even system crashes. Managed by Log Manager.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- A14: Dirty Read Anomaly -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q14.</span> What is a Dirty Read anomaly (Temporary Update problem) in concurrent transaction processing?</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2015, 2017, 2019, 2022</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>A <strong>Dirty Read</strong> occurs when Transaction $T_2$ reads a data item that has been updated by Transaction $T_1$, but $T_1$ has <em>not yet committed</em>. If $T_1$ subsequently fails and is rolled back (aborted), the data value read by $T_2$ is invalid ("dirty" data that never legally existed in the database).</p>
+        <p><strong>Schedule Trace:</strong> $W_1(A=500) 	o R_2(A=500) 	o 	ext{Abort}_1 	o 	ext{Rollback}(A=100)$. Here $T_2$ computed actions based on phantom value 500.</p>
+      </div>
+    </div>
+
+    <!-- A15: Two-Phase Locking (2PL) -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q15.</span> What is the Two-Phase Locking (2PL) Protocol? Differentiate between the Growing Phase and Shrinking Phase.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2016, 2018, 2020, 2023</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>The <strong>Two-Phase Locking (2PL)</strong> protocol is a concurrency control mechanism guaranteeing <strong>conflict serializability</strong>. It mandates that every transaction acquire and release locks in two discrete phases:</p>
+        <ul>
+          <li><strong>1. Growing Phase (Expanding):</strong> The transaction may obtain new locks (Shared or Exclusive) but <strong>cannot release any lock</strong>.</li>
+          <li><strong>2. Shrinking Phase (Contracting):</strong> The transaction may release locks but <strong>cannot acquire any new locks</strong>.</li>
+        </ul>
+        <div class="callout-box">
+          <strong>The Lock Point:</strong> The exact moment when a transaction acquires its final lock marks the end of its growing phase and the beginning of its shrinking phase.
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<!-- =========================================================================
+     SECTION B : 7.5 MARKS SHORT ANSWER QUESTIONS (ATTEMPT 2 OF 3)
+     ========================================================================= -->
+<div class="exam-section-card" id="section-b">
+  <div class="exam-section-header exam-section-header-cyan">
+    <div class="exam-section-header-inner">
+      <span class="exam-section-badge badge-cyan">SECTION B &bull; 7.5 MARKS EACH</span>
+      <h3 class="exam-section-title">Analytical Architectures, Relational Algebra &amp; Schema Proofs</h3>
+      <p class="exam-section-rule">CCSU Examination Blueprint: Attempt Any 2 of 3 Questions &bull; Total 15 Marks (~200 Words + Schemas/Diagrams)</p>
+    </div>
+  </div>
+
+  <div class="exam-section-body">
+
+    <!-- B16: Three-Schema Architecture -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q16.</span> Explain the ANSI/SPARC Three-Level Database Architecture with a neat diagram. Discuss how it provides Physical and Logical Data Independence.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2014, 2017, 2019, 2021, 2023</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>The <strong>ANSI/SPARC Architecture</strong> separates the physical database storage from user application views through three distinct levels of abstraction:</p>
+
+        <!-- Three-Schema SVG -->
+        <div class="svg-tree-container" style="background: #0f172a; padding: 20px; border-radius: 12px; margin: 18px 0; border: 1px solid #334155; overflow-x: auto; -webkit-overflow-scrolling: touch;">
+          <div style="font-weight: 700; color: #38bdf8; margin-bottom: 12px; font-size: 14px; text-align: center;">ANSI/SPARC THREE-LEVEL ARCHITECTURE</div>
+          <svg viewBox="0 0 740 320" width="100%" height="320" style="min-width: 660px;" xmlns="http://www.w3.org/2000/svg">
+            <!-- 1. External Level -->
+            <rect x="50" y="20" width="180" height="45" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+            <text x="140" y="48" fill="#38bdf8" font-size="12" font-weight="700" text-anchor="middle">View 1 (Student)</text>
+
+            <rect x="280" y="20" width="180" height="45" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+            <text x="370" y="48" fill="#38bdf8" font-size="12" font-weight="700" text-anchor="middle">View 2 (Teacher)</text>
+
+            <rect x="510" y="20" width="180" height="45" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+            <text x="600" y="48" fill="#38bdf8" font-size="12" font-weight="700" text-anchor="middle">View 3 (Accounts)</text>
+
+            <text x="370" y="90" fill="#94a3b8" font-size="11" font-weight="700" text-anchor="middle">&uarr; External / Conceptual Mapping (Logical Data Independence) &darr;</text>
+
+            <!-- 2. Conceptual Level -->
+            <rect x="120" y="110" width="500" height="60" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+            <text x="370" y="137" fill="#10b981" font-size="14" font-weight="700" text-anchor="middle">CONCEPTUAL SCHEMA (Community View / ER Model)</text>
+            <text x="370" y="157" fill="#94a3b8" font-size="11" text-anchor="middle">Entities, Attributes, Relationships, Integrity Constraints, Security Rules</text>
+
+            <text x="370" y="195" fill="#94a3b8" font-size="11" font-weight="700" text-anchor="middle">&uarr; Conceptual / Internal Mapping (Physical Data Independence) &darr;</text>
+
+            <!-- 3. Internal Level -->
+            <rect x="120" y="215" width="500" height="60" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+            <text x="370" y="242" fill="#f59e0b" font-size="14" font-weight="700" text-anchor="middle">INTERNAL SCHEMA (Physical Storage View)</text>
+            <text x="370" y="262" fill="#94a3b8" font-size="11" text-anchor="middle">Data Allocation, File Organization (B+ Trees, Hashing), Indexes, Record Formats</text>
+          </svg>
+        </div>
+
+        <ol>
+          <li><strong>External Level (User Views):</strong> Tailored interfaces representing only relevant portions of the database for specific user roles while hiding irrelevant or confidential records.</li>
+          <li><strong>Conceptual Level:</strong> Defines the complete logical structure of the entire enterprise database (entities, relationships, data types, constraints). Independent of physical storage devices.</li>
+          <li><strong>Internal Level:</strong> Governs physical storage layouts on disk drives, block clustering, access paths, hashing schemes, and index structures.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- B17: Relational Algebra Operations -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q17.</span> Discuss the Fundamental and Join Operations in Relational Algebra. Write formal algebraic expressions with clear examples.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2015, 2018, 2020, 2022</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p><strong>Relational Algebra</strong> is a procedural query language consisting of a set of operations that take one or two relations as input and produce a new relation as output.</p>
+        
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Operation</th>
+                <th>Operator Symbol</th>
+                <th>Purpose &amp; Formal Syntax</th>
+                <th>Example Expression</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Selection</strong></td>
+                <td>$\sigma$ (Sigma)</td>
+                <td>Filters tuples (rows) satisfying a predicate $p$: $\sigma_p(R)$</td>
+                <td>$\sigma_{	ext{Age} &gt; 20 \land 	ext{City} = 	ext{'Delhi'}}(	ext{Student})$</td>
+              </tr>
+              <tr>
+                <td><strong>Projection</strong></td>
+                <td>$\pi$ (Pi)</td>
+                <td>Selects specified columns (attributes) and discards duplicates: $\pi_{A_1, \dots, A_k}(R)$</td>
+                <td>$\pi_{	ext{RollNo, Name}}(	ext{Student})$</td>
+              </tr>
+              <tr>
+                <td><strong>Cartesian Product</strong></td>
+                <td>$	imes$ (Cross)</td>
+                <td>Combines every tuple of $R$ with every tuple of $S$: $R 	imes S$</td>
+                <td>$	ext{Student} 	imes 	ext{Course}$ ($n_1 	imes n_2$ tuples)</td>
+              </tr>
+              <tr>
+                <td><strong>Union</strong></td>
+                <td>$\cup$ (Union)</td>
+                <td>Returns tuples in $R$, $S$, or both (requires union-compatibility): $R \cup S$</td>
+                <td>$\pi_{	ext{Name}}(	ext{BCA\_Stud}) \cup \pi_{	ext{Name}}(	ext{BBA\_Stud})$</td>
+              </tr>
+              <tr>
+                <td><strong>Set Difference</strong></td>
+                <td>$-$ (Minus)</td>
+                <td>Returns tuples present in $R$ but not in $S$: $R - S$</td>
+                <td>$	ext{Enrolled2022} - 	ext{Enrolled2023}$</td>
+              </tr>
+              <tr>
+                <td><strong>Natural Join</strong></td>
+                <td>$owtie$ (Bowtie)</td>
+                <td>Combines tuples of $R$ and $S$ having identical values on common attributes: $R owtie S$</td>
+                <td>$	ext{Student} owtie 	ext{Enrollment}$</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- B18: SQL Aggregate Functions & GROUP BY / HAVING -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q18.</span> Explain SQL Aggregate Functions. Given the relation <code>Employee(EmpID, EmpName, DeptName, Salary, City)</code>, write SQL queries to find departments with total payroll &gt; ₹5,00,000 and count of employees in each department located in 'Noida'.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2016, 2018, 2021, 2023</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p><strong>Aggregate Functions</strong> perform calculations on a set of column values and return a single scalar summary value: <code>COUNT()</code>, <code>SUM()</code>, <code>AVG()</code>, <code>MIN()</code>, <code>MAX()</code>. All aggregate functions (except <code>COUNT(*)</code>) automatically ignore <code>NULL</code> values.</p>
+
+        <h5>SQL Query 1: Departments with Total Payroll Exceeding ₹5,00,000</h5>
+        <pre><code class="language-sql">SELECT DeptName, SUM(Salary) AS TotalPayroll, COUNT(EmpID) AS HeadCount
+FROM Employee
+GROUP BY DeptName
+HAVING SUM(Salary) > 500000;</code></pre>
+
+        <h5>SQL Query 2: Count of Employees per Department located strictly in 'Noida'</h5>
+        <pre><code class="language-sql">SELECT DeptName, COUNT(*) AS TotalEmployees, AVG(Salary) AS AvgSalary
+FROM Employee
+WHERE City = 'Noida'
+GROUP BY DeptName;</code></pre>
+        <div class="callout-box">
+          <strong>Query Processing Pipeline:</strong> 
+          <code>FROM &rarr; WHERE (row filtering) &rarr; GROUP BY (bucketing) &rarr; HAVING (group filtering) &rarr; SELECT &rarr; ORDER BY</code>.
+        </div>
+      </div>
+    </div>
+
+    <!-- B19: ER to Relational Mapping Rules -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q19.</span> Describe the step-by-step algorithmic rules for converting an Entity-Relationship (ER) diagram into Relational Schema tables.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2015, 2017, 2019, 2021</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <ol>
+          <li><strong>Step 1 (Strong Entity Sets):</strong> Create a table for each strong entity. Include all simple attributes. Choose the primary key. For composite attributes, include only their simple component sub-attributes.</li>
+          <li><strong>Step 2 (Weak Entity Sets):</strong> Create a separate table. Primary key is formed by the <strong>Primary Key of the identifying strong entity + the Partial Key (Discriminator)</strong> of the weak entity.</li>
+          <li><strong>Step 3 (Multivalued Attributes):</strong> Create a distinct dedicated table containing the multivalued attribute plus the primary key of the parent entity as a foreign key. The composite of both columns forms the primary key.</li>
+          <li><strong>Step 4 (1:1 Relationships):</strong> Merge into a single table if total participation on both sides, or place the primary key of one entity as a Foreign Key (with <code>UNIQUE</code> constraint) in the other table.</li>
+          <li><strong>Step 5 (1:N Binary Relationships):</strong> Place the primary key of the "1" side as a <strong>Foreign Key</strong> in the table representing the "N" side entity.</li>
+          <li><strong>Step 6 (M:N Binary Relationships):</strong> Create a brand-new <strong>Junction / Relationship Table</strong>. Its primary key is the composite combination of primary keys from both participating entity sets. Any relationship descriptive attributes become columns in this junction table.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- B20: Attribute Closure & Candidate Key Derivation -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q20.</span> Given relation schema $R(A, B, C, D, E)$ and set of functional dependencies $F = \{A 	o B, BC 	o D, E 	o C\}$. Compute the attribute closures $(A)^+$ and $(AE)^+$. Determine all candidate keys of $R$.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2016, 2018, 2020, 2022</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        
+        <h5>1. Computing Attribute Closures:</h5>
+        <ul>
+          <li><strong>Closure of $A$, denoted $(A)^+$:</strong>
+            <ul>
+              <li>Initial set: $(A)^+ = \{A\}$</li>
+              <li>Apply $A 	o B$: $(A)^+ = \{A, B\}$</li>
+              <li>No other FD can be triggered ($BC 	o D$ needs $C$; $E 	o C$ needs $E$).</li>
+              <li><strong>Result:</strong> $(A)^+ = \{A, B\}$ (Cannot determine all attributes, so $A$ is not a key).</li>
+            </ul>
+          </li>
+          <li><strong>Closure of $AE$, denoted $(AE)^+$:</strong>
+            <ul>
+              <li>Initial set: $(AE)^+ = \{A, E\}$</li>
+              <li>Apply $A 	o B$: $(AE)^+ = \{A, B, E\}$</li>
+              <li>Apply $E 	o C$: $(AE)^+ = \{A, B, C, E\}$</li>
+              <li>Apply $BC 	o D$: $(AE)^+ = \{A, B, C, D, E\} = R$</li>
+              <li><strong>Result:</strong> $(AE)^+ = \{A, B, C, D, E\}$. Since $(AE)^+$ derives all attributes of $R$, $AE$ is a Super Key!</li>
+            </ul>
+          </li>
+        </ul>
+
+        <h5>2. Finding All Candidate Keys:</h5>
+        <ul>
+          <li>Examine the Right-Hand Side (RHS) of all FDs in $F$: Attributes $B, D, C$ appear on RHS. Attributes $A$ and $E$ <strong>never appear on the RHS of any FD</strong>.</li>
+          <li>Therefore, $A$ and $E$ must strictly be part of <strong>every candidate key</strong>.</li>
+          <li>Since $(AE)^+ = R$ and neither proper subset $(A)^+ = \{A,B\} 
+eq R$ nor $(E)^+ = \{E,C\} 
+eq R$ can determine $R$, $AE$ is strictly minimal.</li>
+          <li><strong>Conclusion:</strong> The relation has exactly <strong>one Candidate Key: $\{AE\}$</strong>.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- B21: Conflict vs View Serializability & Precedence Graph -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q21.</span> Differentiate between Conflict Serializability and View Serializability. How does a Precedence Graph test for conflict serializability?</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2015, 2017, 2020, 2023</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>Conflict Serializability</th>
+                <th>View Serializability</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Equivalence Basis</strong></td>
+                <td>Schedule $S$ is conflict serializable if it can be transformed into a serial schedule by swapping non-conflicting adjacent operations.</td>
+                <td>Schedule $S$ is view serializable if it is view equivalent to some serial schedule (preserves initial read, updated read, and final write).</td>
+              </tr>
+              <tr>
+                <td><strong>Computational Complexity</strong></td>
+                <td>Fast $O(V + E)$ cycle detection via <strong>Precedence Graph</strong>.</td>
+                <td>NP-Complete problem (computationally intractable for large schedules).</td>
+              </tr>
+              <tr>
+                <td><strong>Coverage</strong></td>
+                <td>Conflict Serializability &sub; View Serializability. Every conflict serializable schedule is view serializable, but not vice-versa (e.g. schedules with blind writes).</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h5>Precedence Graph (Serialization Graph) Algorithm:</h5>
+        <ol>
+          <li>Create a directed graph node for each committed transaction $T_i$.</li>
+          <li>Draw a directed edge $T_i 	o T_j$ if $T_i$ and $T_j$ execute conflicting operations on data item $Q$ ($R_i(Q)/W_j(Q)$, $W_i(Q)/R_j(Q)$, or $W_i(Q)/W_j(Q)$) and $T_i$'s operation precedes $T_j$'s operation.</li>
+          <li><strong>Theorem:</strong> A concurrent schedule is <strong>Conflict Serializable if and only if its Precedence Graph contains NO directed cycles</strong>. Topological sort of the acyclic graph gives the equivalent serial schedule.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- B22: Deadlock Prevention & Detection -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q22.</span> Explain Deadlock handling in DBMS. Compare the Wait-Die and Wound-Wait timestamp prevention schemes with a comparison table.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2016, 2018, 2021, 2022</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>A <strong>Deadlock</strong> is a state where two or more transactions are in a simultaneous circular wait, each holding a lock on a data item that another transaction requires.</p>
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Criteria</th>
+                <th>Wait-Die Scheme (Non-Preemptive)</th>
+                <th>Wound-Wait Scheme (Preemptive)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Older requests lock held by Younger</strong></td>
+                <td>Older transaction is allowed to <strong>WAIT</strong> ($TS(T_i) &lt; TS(T_j)$ &rarr; Wait).</td>
+                <td>Older transaction <strong>WOUNDS</strong> (preempts &amp; rolls back) younger transaction ($TS(T_i) &lt; TS(T_j)$ &rarr; Rollback $T_j$).</td>
+              </tr>
+              <tr>
+                <td><strong>Younger requests lock held by Older</strong></td>
+                <td>Younger transaction <strong>DIES</strong> (aborted and rolled back) ($TS(T_i) &gt; TS(T_j)$ &rarr; Abort $T_i$).</td>
+                <td>Younger transaction is allowed to <strong>WAIT</strong> until older transaction finishes ($TS(T_i) &gt; TS(T_j)$ &rarr; Wait).</td>
+              </tr>
+              <tr>
+                <td><strong>Starvation Avoidance</strong></td>
+                <td>When rolled back, aborted transaction restarts with its <strong>original timestamp</strong> so it eventually becomes oldest.</td>
+                <td>Minimizes rollbacks; tends to abort fewer transactions than Wait-Die.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- B23: Log-Based Recovery & Checkpointing -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q23.</span> Explain Log-Based Recovery in DBMS. Compare Deferred Database Modification vs Immediate Database Modification with Checkpointing.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2015, 2017, 2019, 2021</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>A <strong>System Log</strong> is an append-only sequential file on stable disk storage recording all database modifications: <code>&lt;T, start&gt;</code>, <code>&lt;T, X, old_val, new_val&gt;</code>, <code>&lt;T, commit&gt;</code>. Write-Ahead Logging (WAL) requires log records to flush to disk before actual data pages are written.</p>
+        
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>Deferred Modification</th>
+                <th>Immediate Modification</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Write to Disk</strong></td>
+                <td>Disk writes deferred until after transaction <strong>commits</strong>.</td>
+                <td>Updates may be written to disk while transaction is still <strong>active</strong>.</td>
+              </tr>
+              <tr>
+                <td><strong>Log Contents</strong></td>
+                <td>Records only new values: <code>&lt;T, X, new_val&gt;</code>.</td>
+                <td>Records both old and new values: <code>&lt;T, X, old_val, new_val&gt;</code>.</td>
+              </tr>
+              <tr>
+                <td><strong>Crash Recovery</strong></td>
+                <td>Requires only <strong>REDO</strong> operations. (No undo ever needed).</td>
+                <td>Requires both <strong>UNDO</strong> (for uncommitted transactions) and <strong>REDO</strong> (for committed transactions).</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="callout-box">
+          <strong>Checkpointing:</strong> The DBMS periodically flushes all log records and modified buffer pages to disk and writes a <code>&lt;checkpoint L&gt;</code> record. During crash recovery, the recovery manager does not need to scan the entire log from the beginning of time—only scanning back to the most recent checkpoint.
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<!-- =========================================================================
+     SECTION C : 15 MARKS MASTER LONG ANSWER QUESTIONS (ATTEMPT 3 OF 5)
+     ========================================================================= -->
+<div class="exam-section-card" id="section-c">
+  <div class="exam-section-header exam-section-header-purple">
+    <div class="exam-section-header-inner">
+      <span class="exam-section-badge badge-purple">SECTION C &bull; 15 MARKS EACH</span>
+      <h3 class="exam-section-title">Master Long Answer Questions, Architectural Blueprints &amp; SVG Diagrams</h3>
+      <p class="exam-section-rule">CCSU Examination Blueprint: Attempt Any 3 of 5 Questions &bull; Total 45 Marks (~500+ Words + Schemas + Diagrams)</p>
+    </div>
+  </div>
+
+  <div class="exam-section-body">
+
+    <!-- C24: University ER Model & Relational Conversion -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q24.</span> Design a comprehensive Entity-Relationship (ER) Model for a University Management System capturing Students, Courses, Instructors, Departments, and Enrollments. Explain ER notations and convert the design into normalized Relational Tables with DDL schemas and integrity constraints.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2014, 2016, 2018, 2020, 2022, 2023</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        
+        <h5>1. ER Modeling Symbols &amp; Notations:</h5>
+        <ul>
+          <li><strong>Entity (Rectangle):</strong> Represents real-world object sets (e.g., <code>STUDENT</code>, <code>COURSE</code>).</li>
+          <li><strong>Weak Entity (Double Rectangle):</strong> Entity dependent on strong owner (e.g., <code>DEPENDENT</code>).</li>
+          <li><strong>Attributes (Ovals):</strong> Key Attribute (Underlined text), Multivalued Attribute (Double Oval, e.g. <code>Phone_Numbers</code>), Composite Attribute (Tree of sub-ovals, e.g. <code>Name &rarr; First, Last</code>), Derived Attribute (Dashed Oval, e.g. <code>Age</code> derived from <code>DOB</code>).</li>
+          <li><strong>Relationship (Diamond):</strong> Association connecting entities (e.g., <code>ENROLLED_IN</code>). Identifying relationship for weak entities is drawn with a Double Diamond.</li>
+        </ul>
+
+        <!-- University ER SVG Diagram -->
+        <div class="svg-tree-container" style="background: #0f172a; padding: 22px; border-radius: 12px; margin: 18px 0; border: 1px solid #334155; overflow-x: auto; -webkit-overflow-scrolling: touch;">
+          <div style="font-weight: 700; color: #38bdf8; margin-bottom: 14px; font-size: 15px; text-align: center;">UNIVERSITY DATABASE ENTERPRISE ER ARCHITECTURE</div>
+          <svg viewBox="0 0 740 320" width="100%" height="320" style="min-width: 660px;" xmlns="http://www.w3.org/2000/svg">
+            <!-- Student Entity -->
+            <rect x="30" y="50" width="130" height="55" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+            <text x="95" y="82" fill="#38bdf8" font-size="13" font-weight="700" text-anchor="middle">STUDENT</text>
+
+            <!-- Relationship: Enrolled_In -->
+            <polygon points="260,77 310,47 360,77 310,107" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+            <text x="310" y="82" fill="#10b981" font-size="11" font-weight="700" text-anchor="middle">Enrolled_In</text>
+
+            <!-- Course Entity -->
+            <rect x="460" y="50" width="130" height="55" rx="6" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+            <text x="525" y="82" fill="#f59e0b" font-size="13" font-weight="700" text-anchor="middle">COURSE</text>
+
+            <!-- Lines connecting Student -> Enrolled_In -> Course -->
+            <line x1="160" y1="77" x2="260" y2="77" stroke="#94a3b8" stroke-width="2"/>
+            <text x="210" y="68" fill="#38bdf8" font-size="12" font-weight="700">M</text>
+
+            <line x1="360" y1="77" x2="460" y2="77" stroke="#94a3b8" stroke-width="2"/>
+            <text x="410" y="68" fill="#f59e0b" font-size="12" font-weight="700">N</text>
+
+            <!-- Department Entity -->
+            <rect x="245" y="220" width="130" height="55" rx="6" fill="#1e293b" stroke="#a855f7" stroke-width="2"/>
+            <text x="310" y="252" fill="#c084fc" font-size="13" font-weight="700" text-anchor="middle">DEPARTMENT</text>
+
+            <!-- Relationship: Belongs_To (Student -> Dept) -->
+            <polygon points="95,150 135,175 95,200 55,175" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+            <text x="95" y="179" fill="#38bdf8" font-size="9" text-anchor="middle">Belongs</text>
+            <line x1="95" y1="105" x2="95" y2="150" stroke="#94a3b8" stroke-width="1.5"/>
+            <line x1="95" y1="200" x2="95" y2="247" stroke="#94a3b8" stroke-width="1.5"/>
+            <line x1="95" y1="247" x2="245" y2="247" stroke="#94a3b8" stroke-width="1.5"/>
+
+            <!-- Relationship: Offers (Dept -> Course) -->
+            <polygon points="525,150 565,175 525,200 485,175" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5"/>
+            <text x="525" y="179" fill="#f59e0b" font-size="9" text-anchor="middle">Offers</text>
+            <line x1="525" y1="105" x2="525" y2="150" stroke="#94a3b8" stroke-width="1.5"/>
+            <line x1="525" y1="200" x2="525" y2="247" stroke="#94a3b8" stroke-width="1.5"/>
+            <line x1="525" y1="247" x2="375" y2="247" stroke="#94a3b8" stroke-width="1.5"/>
+
+            <!-- Attributes Pills around Student -->
+            <ellipse cx="60" cy="20" rx="35" ry="14" fill="#0f172a" stroke="#38bdf8"/>
+            <text x="60" y="24" fill="#ffffff" font-size="9" text-decoration="underline" text-anchor="middle">RollNo</text>
+            <line x1="60" y1="34" x2="70" y2="50" stroke="#475569"/>
+
+            <ellipse cx="140" cy="20" rx="35" ry="14" fill="#0f172a" stroke="#38bdf8"/>
+            <text x="140" y="24" fill="#ffffff" font-size="9" text-anchor="middle">Name</text>
+            <line x1="130" y1="34" x2="115" y2="50" stroke="#475569"/>
+
+            <!-- Attribute on M:N Relationship -->
+            <ellipse cx="310" cy="140" rx="35" ry="14" fill="#0f172a" stroke="#10b981"/>
+            <text x="310" y="144" fill="#ffffff" font-size="9" text-anchor="middle">Grade</text>
+            <line x1="310" y1="107" x2="310" y2="126" stroke="#475569"/>
+          </svg>
+        </div>
+
+        <h5>2. Converted Relational Tables &amp; SQL DDL Schemas:</h5>
+        <pre><code class="language-sql">-- 1. Department Table
+CREATE TABLE Department (
+    DeptID VARCHAR(10) PRIMARY KEY,
+    DeptName VARCHAR(50) NOT NULL,
+    Building VARCHAR(50)
+);
+
+-- 2. Student Table (1:N with Department)
+CREATE TABLE Student (
+    RollNo INT PRIMARY KEY,
+    FirstName VARCHAR(30) NOT NULL,
+    LastName VARCHAR(30),
+    Email VARCHAR(100) UNIQUE NOT NULL,
+    DOB DATE,
+    DeptID VARCHAR(10),
+    CONSTRAINT fk_stud_dept FOREIGN KEY (DeptID) 
+        REFERENCES Department(DeptID) ON DELETE SET NULL
+);
+
+-- 3. Course Table (1:N with Department)
+CREATE TABLE Course (
+    CourseID VARCHAR(15) PRIMARY KEY,
+    CourseTitle VARCHAR(100) NOT NULL,
+    Credits INT CHECK (Credits > 0),
+    DeptID VARCHAR(10),
+    CONSTRAINT fk_course_dept FOREIGN KEY (DeptID) 
+        REFERENCES Department(DeptID) ON DELETE CASCADE
+);
+
+-- 4. Junction Table for M:N Relationship: Enrolled_In
+CREATE TABLE Enrollment (
+    RollNo INT,
+    CourseID VARCHAR(15),
+    Semester INT NOT NULL,
+    AcademicYear INT NOT NULL,
+    Grade CHAR(2),
+    PRIMARY KEY (RollNo, CourseID, Semester, AcademicYear),
+    CONSTRAINT fk_enr_student FOREIGN KEY (RollNo) 
+        REFERENCES Student(RollNo) ON DELETE CASCADE,
+    CONSTRAINT fk_enr_course FOREIGN KEY (CourseID) 
+        REFERENCES Course(CourseID) ON DELETE CASCADE
+);</code></pre>
+      </div>
+    </div>
+
+    <!-- C25: Relational Algebra & Complex SQL Queries -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q25.</span> Express the following database retrieval problems in BOTH Relational Algebra and SQL using the schema: <code>Student(RollNo, Name, DeptID)</code>, <code>Course(CourseID, Title, Credits)</code>, and <code>Enrollment(RollNo, CourseID, Grade)</code>.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2015, 2017, 2019, 2021, 2023</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        
+        <h5>Query 1: Find names of all students who scored an 'A' grade in 'DBMS'</h5>
+        <ul>
+          <li><strong>Relational Algebra:</strong><br>
+            $$\pi_{	ext{Name}} \left( \sigma_{	ext{Title} = 	ext{'DBMS'} \land 	ext{Grade} = 	ext{'A'}} (	ext{Student} owtie 	ext{Enrollment} owtie 	ext{Course}) 
+ight)$$
+          </li>
+          <li><strong>SQL Formulation:</strong>
+            <pre><code class="language-sql">SELECT S.Name
+FROM Student S
+JOIN Enrollment E ON S.RollNo = E.RollNo
+JOIN Course C ON E.CourseID = C.CourseID
+WHERE C.Title = 'DBMS' AND E.Grade = 'A';</code></pre>
+          </li>
+        </ul>
+
+        <h5>Query 2: Find all students who have enrolled in EVERY course offered (Division Operation $R \div S$)</h5>
+        <ul>
+          <li><strong>Relational Algebra:</strong><br>
+            $$\pi_{	ext{RollNo, CourseID}}(	ext{Enrollment}) \div \pi_{	ext{CourseID}}(	ext{Course})$$
+          </li>
+          <li><strong>SQL Formulation (Correlated NOT EXISTS Subqueries):</strong>
+            <pre><code class="language-sql">SELECT S.RollNo, S.Name
+FROM Student S
+WHERE NOT EXISTS (
+    SELECT C.CourseID 
+    FROM Course C
+    WHERE NOT EXISTS (
+        SELECT E.CourseID 
+        FROM Enrollment E 
+        WHERE E.RollNo = S.RollNo AND E.CourseID = C.CourseID
+    )
+);</code></pre>
+          </li>
+        </ul>
+
+        <h5>Query 3: Find courses that have never been taken by any student (Outer Join / Set Difference)</h5>
+        <ul>
+          <li><strong>Relational Algebra:</strong><br>
+            $$\pi_{	ext{CourseID, Title}}(	ext{Course}) - \pi_{	ext{CourseID, Title}}(	ext{Course} owtie 	ext{Enrollment})$$
+          </li>
+          <li><strong>SQL Formulation:</strong>
+            <pre><code class="language-sql">SELECT C.CourseID, C.Title
+FROM Course C
+LEFT JOIN Enrollment E ON C.CourseID = E.CourseID
+WHERE E.RollNo IS NULL;</code></pre>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- C26: Normalization Master Class -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q26.</span> Explain Database Anomalies in unnormalized schemas. State the formal definition of 1NF, 2NF, 3NF, and BCNF. Given relation $R(A, B, C, D, E)$ with functional dependencies $F = \{A 	o B, BC 	o D, D 	o E, E 	o A\}$, decompose $R$ into BCNF and prove whether the decomposition is Lossless and Dependency Preserving.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2014, 2016, 2018, 2020, 2022, 2023</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        
+        <h5>1. Database Anomalies in Poor Schema Design:</h5>
+        <ul>
+          <li><strong>Insertion Anomaly:</strong> Cannot insert an independent fact without artificially creating unrelated entities (e.g., cannot add a new course without enrolling a student if course details reside in student table).</li>
+          <li><strong>Deletion Anomaly:</strong> Deleting one record inadvertently erases vital unrelated data (e.g., deleting the last student enrolled in a course erases all information about that course).</li>
+          <li><strong>Update Anomaly:</strong> Data redundancy forces identical values to be updated in thousands of rows. If one row is missed, data becomes inconsistent.</li>
+        </ul>
+
+        <!-- Normalization Pyramid SVG -->
+        <div class="svg-tree-container" style="background: #0f172a; padding: 22px; border-radius: 12px; margin: 18px 0; border: 1px solid #334155; overflow-x: auto; -webkit-overflow-scrolling: touch;">
+          <div style="font-weight: 700; color: #38bdf8; margin-bottom: 14px; font-size: 15px; text-align: center;">THE NORMALIZATION PROGRESSION PYRAMID</div>
+          <svg viewBox="0 0 740 240" width="100%" height="240" style="min-width: 660px;" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="370,20 180,220 560,220" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+            
+            <!-- Level 1: 1NF -->
+            <line x1="225" y1="170" x2="515" y2="170" stroke="#38bdf8" stroke-width="1.5"/>
+            <text x="370" y="200" fill="#ffffff" font-size="12" font-weight="700" text-anchor="middle">1NF: Atomic Attributes, No Repeating Groups</text>
+
+            <!-- Level 2: 2NF -->
+            <line x1="275" y1="120" x2="465" y2="120" stroke="#10b981" stroke-width="1.5"/>
+            <text x="370" y="150" fill="#34d399" font-size="12" font-weight="700" text-anchor="middle">2NF: 1NF + No Partial Dependencies</text>
+
+            <!-- Level 3: 3NF -->
+            <line x1="320" y1="70" x2="420" y2="70" stroke="#f59e0b" stroke-width="1.5"/>
+            <text x="370" y="100" fill="#fbbf24" font-size="11" font-weight="700" text-anchor="middle">3NF: 2NF + No Transitive Dependencies</text>
+
+            <!-- Level 4: BCNF -->
+            <text x="370" y="50" fill="#c084fc" font-size="11" font-weight="700" text-anchor="middle">BCNF: Determinant is Superkey</text>
+          </svg>
+        </div>
+
+        <h5>2. Normalization Analysis &amp; BCNF Decomposition:</h5>
+        <p>Given $R(A, B, C, D, E)$ with $F = \{A 	o B, BC 	o D, D 	o E, E 	o A\}$.</p>
+        <p><strong>Candidate Keys of $R$:</strong></p>
+        <ul>
+          <li>$(AC)^+ = \{A, C, B, D, E\} = R \implies AC$ is a Candidate Key.</li>
+          <li>$(EC)^+ = \{E, C, A, B, D\} = R \implies EC$ is a Candidate Key.</li>
+          <li>$(DC)^+ = \{D, C, E, A, B\} = R \implies DC$ is a Candidate Key.</li>
+          <li>$(BC)^+ = \{B, C, D, E, A\} = R \implies BC$ is a Candidate Key.</li>
+          <li><strong>Prime Attributes:</strong> $A, B, C, D, E$ (All attributes are prime!).</li>
+          <li><strong>3NF Check:</strong> Because all RHS attributes are prime, every FD trivially satisfies 3NF! Thus, <strong>$R$ is already in 3NF</strong>.</li>
+        </ul>
+
+        <p><strong>BCNF Violation Check:</strong></p>
+        <ul>
+          <li>FD $A 	o B$: Here determinant $A$ is NOT a superkey (only $AC, EC, DC, BC$ are keys). $A 	o B$ strictly violates BCNF!</li>
+          <li>FD $D 	o E$: Determinant $D$ is NOT a superkey. Violates BCNF.</li>
+          <li>FD $E 	o A$: Determinant $E$ is NOT a superkey. Violates BCNF.</li>
+        </ul>
+
+        <p><strong>BCNF Decomposition Steps:</strong></p>
+        <ol>
+          <li>Decompose $R$ using violating FD $A 	o B$:
+            <ul>
+              <li>$R_1(A, B)$ with key $A$. Since $A$ is key, $R_1$ is in BCNF.</li>
+              <li>$R_2(A, C, D, E) = R - \{B\}$.</li>
+            </ul>
+          </li>
+          <li>In $R_2$, test $D 	o E$: Determinant $D$ is not a key for $R_2$ (key is $AC, DC, EC$). Decompose $R_2$:
+            <ul>
+              <li>$R_{21}(D, E)$ with key $D$. (In BCNF).</li>
+              <li>$R_{22}(A, C, D) = R_2 - \{E\}$ with key $AC$. (In BCNF).</li>
+            </ul>
+          </li>
+        </ol>
+
+        <p><strong>Final BCNF Relations:</strong> $R_1(A, B)$, $R_{21}(D, E)$, $R_{22}(A, C, D)$.</p>
+
+        <h5>3. Verification of Lossless Join &amp; Dependency Preservation:</h5>
+        <ul>
+          <li><strong>Lossless Join Test:</strong><br>
+            $R_1 \cap R_2 = \{A\}$. Since $A$ is a candidate key for $R_1$ ($A 	o B$), the first split is lossless.<br>
+            $R_{21} \cap R_{22} = \{D\}$. Since $D$ is key for $R_{21}$ ($D 	o E$), the second split is lossless.<br>
+            <strong>Conclusion: The decomposition is strictly LOSSLESS.</strong>
+          </li>
+          <li><strong>Dependency Preservation Test:</strong><br>
+            $A 	o B$ is in $R_1$. $D 	o E$ is in $R_{21}$.<br>
+            However, $BC 	o D$ cannot be tested within any single decomposed table without joining $R_1$ and $R_{22}$.<br>
+            <strong>Conclusion: The decomposition is NOT Dependency Preserving.</strong> (This illustrates the classic trade-off: 3NF preserves all dependencies, whereas BCNF eliminates all anomalies but may sacrifice dependency preservation).
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- C27: Concurrency Control Anomalies & Transaction States -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q27.</span> Draw and explain the Transaction State Transition Diagram. Detail the four classic Concurrent Execution Anomalies (Dirty Read, Lost Update, Unrepeatable Read, and Phantom Read) with schedule execution traces.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2015, 2017, 2019, 2021, 2022</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        
+        <h5>1. Transaction State Transition Architecture:</h5>
+        <!-- Transaction State SVG -->
+        <div class="svg-tree-container" style="background: #0f172a; padding: 22px; border-radius: 12px; margin: 18px 0; border: 1px solid #334155; overflow-x: auto; -webkit-overflow-scrolling: touch;">
+          <div style="font-weight: 700; color: #38bdf8; margin-bottom: 14px; font-size: 15px; text-align: center;">DATABASE TRANSACTION STATE TRANSITION BLUEPRINT</div>
+          <svg viewBox="0 0 740 260" width="100%" height="260" style="min-width: 660px;" xmlns="http://www.w3.org/2000/svg">
+            <!-- Active State -->
+            <rect x="30" y="40" width="130" height="55" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+            <text x="95" y="72" fill="#38bdf8" font-size="13" font-weight="700" text-anchor="middle">ACTIVE</text>
+
+            <!-- Arrow Active -> Partially Committed -->
+            <path d="M160 67 L 270 67" stroke="#10b981" stroke-width="2"/>
+            <text x="215" y="58" fill="#10b981" font-size="10" text-anchor="middle">End of Tx</text>
+
+            <!-- Partially Committed -->
+            <rect x="270" y="40" width="180" height="55" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+            <text x="360" y="72" fill="#10b981" font-size="13" font-weight="700" text-anchor="middle">PARTIALLY COMMITTED</text>
+
+            <!-- Arrow Partially Committed -> Committed -->
+            <path d="M450 67 L 550 67" stroke="#10b981" stroke-width="2"/>
+            <text x="500" y="58" fill="#10b981" font-size="10" text-anchor="middle">Log flushed</text>
+
+            <!-- Committed State -->
+            <rect x="550" y="40" width="140" height="55" rx="8" fill="#1e293b" stroke="#34d399" stroke-width="2.5"/>
+            <text x="620" y="72" fill="#34d399" font-size="14" font-weight="700" text-anchor="middle">COMMITTED</text>
+
+            <!-- Arrow Active -> Failed -->
+            <path d="M95 95 L 95 180 L 270 180" stroke="#ef4444" stroke-width="2"/>
+            <text x="180" y="170" fill="#ef4444" font-size="10" text-anchor="middle">Hardware / Logic Error</text>
+
+            <!-- Arrow Partially Committed -> Failed -->
+            <path d="M360 95 L 360 150" stroke="#ef4444" stroke-width="2"/>
+            <text x="385" y="125" fill="#ef4444" font-size="9">Crash during flush</text>
+
+            <!-- Failed State -->
+            <rect x="270" y="150" width="180" height="55" rx="8" fill="#1e293b" stroke="#ef4444" stroke-width="2"/>
+            <text x="360" y="182" fill="#ef4444" font-size="13" font-weight="700" text-anchor="middle">FAILED</text>
+
+            <!-- Arrow Failed -> Terminated / Aborted -->
+            <path d="M450 177 L 550 177" stroke="#ef4444" stroke-width="2"/>
+            <text x="500" y="168" fill="#ef4444" font-size="10" text-anchor="middle">Rollback done</text>
+
+            <!-- Aborted State -->
+            <rect x="550" y="150" width="140" height="55" rx="8" fill="#1e293b" stroke="#f87171" stroke-width="2"/>
+            <text x="620" y="182" fill="#f87171" font-size="14" font-weight="700" text-anchor="middle">ABORTED</text>
+          </svg>
+        </div>
+
+        <h5>2. The Four Major Concurrency Anomalies:</h5>
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Anomaly</th>
+                <th>Operation Pattern</th>
+                <th>Harmful Impact / Real-World Scenario</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>1. Lost Update Problem</strong></td>
+                <td>$W_1(X) 	o W_2(X)$ overwrite</td>
+                <td>Two transactions read the same bank balance (₹1,000). $T_1$ adds ₹200 ($W_1(1200)$); concurrently $T_2$ withdraws ₹100 ($W_2(900)$). $T_2$'s write obliterates $T_1$'s deposit. ₹200 vanishes permanently!</td>
+              </tr>
+              <tr>
+                <td><strong>2. Dirty Read Problem (WR Conflict)</strong></td>
+                <td>$W_1(X) 	o R_2(X) 	o 	ext{Abort}_1$</td>
+                <td>$T_1$ updates balance to ₹5,000 but crashes and rolls back to ₹1,000. Meanwhile, $T_2$ read the uncommitted ₹5,000 value and dispatched goods to the customer based on a phantom balance.</td>
+              </tr>
+              <tr>
+                <td><strong>3. Unrepeatable Read Problem (RW Conflict)</strong></td>
+                <td>$R_1(X) 	o W_2(X) 	o R_1(X)$ mismatch</td>
+                <td>$T_1$ reads item price as ₹50. Before $T_1$ completes, $T_2$ updates price to ₹80 and commits. When $T_1$ re-reads price to generate customer invoice, the value has mysteriously altered mid-transaction!</td>
+              </tr>
+              <tr>
+                <td><strong>4. Phantom Read Problem</strong></td>
+                <td>$R_1(	ext{range}) 	o 	ext{Insert}_2(	ext{row}) 	o R_1(	ext{range})$</td>
+                <td>$T_1$ queries all students with GPA &gt; 9.0 (returns 4 rows). $T_2$ inserts a new genius student with GPA 9.8. When $T_1$ re-runs the identical query, 5 rows appear ("phantom record").</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- C28: Two-Phase Locking (2PL) Deep Dive -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q28.</span> Discuss the Two-Phase Locking (2PL) Protocol in detail. Explain Shared (S) vs Exclusive (X) locks, Strict 2PL, and Rigorous 2PL. Prove why 2PL guarantees Conflict Serializability, and discuss why basic 2PL is susceptible to deadlocks and cascading rollbacks.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2014, 2017, 2019, 2021, 2023</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        
+        <h5>1. Lock Modes &amp; Lock Compatibility Matrix:</h5>
+        <ul>
+          <li><strong>Shared Lock (S-Lock):</strong> Requested for read-only access ($R(Q)$). Multiple concurrent transactions can hold S-locks simultaneously on the same item.</li>
+          <li><strong>Exclusive Lock (X-Lock):</strong> Requested for write access ($W(Q)$). Only one transaction can hold an X-lock; all other requests are denied.</li>
+        </ul>
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Current Lock \ Requested Lock</th>
+                <th>Shared Lock (S)</th>
+                <th>Exclusive Lock (X)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Shared Lock (S)</strong></td>
+                <td>✅ Compatible (Granted)</td>
+                <td>❌ Incompatible (Must Wait)</td>
+              </tr>
+              <tr>
+                <td><strong>Exclusive Lock (X)</strong></td>
+                <td>❌ Incompatible (Must Wait)</td>
+                <td>❌ Incompatible (Must Wait)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h5>2. Variations of Two-Phase Locking:</h5>
+        <!-- 2PL Variations SVG -->
+        <div class="svg-tree-container" style="background: #0f172a; padding: 22px; border-radius: 12px; margin: 18px 0; border: 1px solid #334155; overflow-x: auto; -webkit-overflow-scrolling: touch;">
+          <div style="font-weight: 700; color: #38bdf8; margin-bottom: 14px; font-size: 15px; text-align: center;">2PL PHASES: GROWING VS SHRINKING TIMELINE</div>
+          <svg viewBox="0 0 740 220" width="100%" height="220" style="min-width: 660px;" xmlns="http://www.w3.org/2000/svg">
+            <!-- Axes -->
+            <line x1="50" y1="180" x2="680" y2="180" stroke="#94a3b8" stroke-width="2"/>
+            <text x="680" y="200" fill="#94a3b8" font-size="11">Time &rarr;</text>
+            <line x1="50" y1="180" x2="50" y2="30" stroke="#94a3b8" stroke-width="2"/>
+            <text x="15" y="30" fill="#94a3b8" font-size="11">Locks Held &uarr;</text>
+
+            <!-- Curve -->
+            <path d="M50 180 L 250 50 L 400 50 L 620 180" fill="none" stroke="#f59e0b" stroke-width="3"/>
+
+            <!-- Lock Point Mark -->
+            <circle cx="250" cy="50" r="6" fill="#38bdf8"/>
+            <text x="250" y="35" fill="#38bdf8" font-size="12" font-weight="700" text-anchor="middle">Lock Point (Max Locks)</text>
+
+            <!-- Growing Phase Area -->
+            <rect x="60" y="110" width="150" height="35" rx="6" fill="#0f172a" stroke="#10b981"/>
+            <text x="135" y="132" fill="#10b981" font-size="11" font-weight="700" text-anchor="middle">GROWING PHASE (Only Lock)</text>
+
+            <!-- Shrinking Phase Area -->
+            <rect x="420" y="110" width="170" height="35" rx="6" fill="#0f172a" stroke="#ef4444"/>
+            <text x="505" y="132" fill="#ef4444" font-size="11" font-weight="700" text-anchor="middle">SHRINKING PHASE (Only Unlock)</text>
+          </svg>
+        </div>
+
+        <ul>
+          <li><strong>Basic 2PL:</strong> Locks can be released incrementally during the shrinking phase. <em>Disadvantage:</em> Vulnerable to <strong>cascading aborts</strong> and deadlocks!</li>
+          <li><strong>Strict 2PL:</strong> Mandates that all <strong>Exclusive (X) locks</strong> held by a transaction must be retained until the transaction commits or aborts. <em>Benefit:</em> Completely prevents dirty reads and cascading rollbacks!</li>
+          <li><strong>Rigorous 2PL:</strong> Mandates that <strong>ALL locks (both Shared and Exclusive)</strong> must be held until transaction commit/abort. Transactions serialize strictly in the order of their commit points.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- C29: Deadlock Cycle Detection & Recovery Checkpoints -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q29.</span> Explain Deadlock Detection using Wait-For Graphs (WFG). How is a victim selected for rollback? Describe the complete ARIES / Log Checkpoint Crash Recovery Algorithm with UNDO and REDO lists.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2016, 2018, 2020, 2022</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        
+        <h5>1. Deadlock Detection via Wait-For Graph (WFG):</h5>
+        <p>A <strong>Wait-For Graph</strong> is a directed graph $G = (V, E)$ where vertices $V$ represent active transactions and edges $E$ represent dependencies. A directed edge $T_i 	o T_j$ exists if $T_i$ is waiting for $T_j$ to release a lock on a data item. <strong>Theorem: A deadlock exists if and only if the Wait-For Graph contains a directed cycle.</strong></p>
+
+        <!-- WFG SVG -->
+        <div class="svg-tree-container" style="background: #0f172a; padding: 22px; border-radius: 12px; margin: 18px 0; border: 1px solid #334155; overflow-x: auto; -webkit-overflow-scrolling: touch;">
+          <div style="font-weight: 700; color: #38bdf8; margin-bottom: 14px; font-size: 15px; text-align: center;">WAIT-FOR GRAPH (DEADLOCK CYCLE DETECTION)</div>
+          <svg viewBox="0 0 740 220" width="100%" height="220" style="min-width: 660px;" xmlns="http://www.w3.org/2000/svg">
+            <!-- Node T1 -->
+            <circle cx="150" cy="110" r="32" fill="#1e293b" stroke="#38bdf8" stroke-width="2.5"/>
+            <text x="150" y="116" fill="#38bdf8" font-size="15" font-weight="700" text-anchor="middle">T1</text>
+
+            <!-- Node T2 -->
+            <circle cx="370" cy="50" r="32" fill="#1e293b" stroke="#f59e0b" stroke-width="2.5"/>
+            <text x="370" y="56" fill="#f59e0b" font-size="15" font-weight="700" text-anchor="middle">T2</text>
+
+            <!-- Node T3 -->
+            <circle cx="370" cy="170" r="32" fill="#1e293b" stroke="#ef4444" stroke-width="2.5"/>
+            <text x="370" y="176" fill="#ef4444" font-size="15" font-weight="700" text-anchor="middle">T3</text>
+
+            <!-- Edge T1 -> T2 -->
+            <path d="M178 95 L 340 55" stroke="#38bdf8" stroke-width="2"/>
+            <text x="240" y="65" fill="#38bdf8" font-size="10">Waits for Lock X</text>
+
+            <!-- Edge T2 -> T3 -->
+            <path d="M370 82 L 370 138" stroke="#f59e0b" stroke-width="2"/>
+            <text x="395" y="115" fill="#f59e0b" font-size="10">Waits for Lock Y</text>
+
+            <!-- Edge T3 -> T1 (Cycle Closer!) -->
+            <path d="M340 160 L 178 120" stroke="#ef4444" stroke-width="2.5" stroke-dasharray="4"/>
+            <text x="240" y="155" fill="#ef4444" font-size="11" font-weight="700">DEADLOCK CYCLE!</text>
+
+            <!-- Victim Selection Info Box -->
+            <rect x="460" y="35" width="250" height="150" rx="8" fill="#1e293b" stroke="#8b5cf6" stroke-width="2"/>
+            <text x="585" y="62" fill="#c084fc" font-size="13" font-weight="700" text-anchor="middle">Victim Selection Criteria</text>
+            <text x="475" y="90" fill="#ffffff" font-size="11">&bull; Transaction with least CPU work</text>
+            <text x="475" y="115" fill="#ffffff" font-size="11">&bull; Transaction with fewest updates</text>
+            <text x="475" y="140" fill="#ffffff" font-size="11">&bull; Total cost of rollback</text>
+            <text x="475" y="165" fill="#ffffff" font-size="11">&bull; Starvation prevention counter</text>
+          </svg>
+        </div>
+
+        <h5>2. Crash Recovery Algorithm with Checkpointing:</h5>
+        <ol>
+          <li><strong>Step 1 (Initialize Lists):</strong> At the latest checkpoint, load the active transaction list $L$. Set $	ext{UNDO-LIST} = L$ and $	ext{REDO-LIST} = \emptyset$.</li>
+          <li><strong>Step 2 (Forward Scan from Checkpoint to Failure Point):</strong>
+            <ul>
+              <li>If log entry is <code>&lt;T, start&gt;</code>, add $T$ to $	ext{UNDO-LIST}$.</li>
+              <li>If log entry is <code>&lt;T, commit&gt;</code> or <code>&lt;T, abort&gt;</code>, move $T$ from $	ext{UNDO-LIST}$ to $	ext{REDO-LIST}$.</li>
+            </ul>
+          </li>
+          <li><strong>Step 3 (REDO Phase):</strong> Replay updates of all transactions in $	ext{REDO-LIST}$ forward from checkpoint using log new values to restore committed updates to disk.</li>
+          <li><strong>Step 4 (UNDO Phase):</strong> Scan backwards and undo all updates of transactions remaining in $	ext{UNDO-LIST}$ by restoring original old values, ensuring Atomicity.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- C30: Indexing Architectures (B-Trees & B+ Trees) -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q30.</span> Compare File Organization and Indexing techniques in DBMS. Explain Dense vs Sparse Indexing. Detail the internal node structure of B+ Trees with an architectural diagram and explain why B+ Trees are preferred over standard B-Trees for database disk storage.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2015, 2018, 2020, 2022</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        
+        <h5>1. Dense Index vs Sparse Index:</h5>
+        <ul>
+          <li><strong>Dense Index:</strong> Contains an index record for <strong>every single search-key value</strong> in the data file. Fast direct lookup, but consumes significant disk storage.</li>
+          <li><strong>Sparse Index:</strong> Contains an index record only for <strong>selected search-key values</strong> (typically one entry per disk block). Consumes minimal memory, but requires sequential scanning within the block. Can only be built if the data file is physically sorted on the search key.</li>
+        </ul>
+
+        <!-- B+ Tree SVG -->
+        <div class="svg-tree-container" style="background: #0f172a; padding: 22px; border-radius: 12px; margin: 18px 0; border: 1px solid #334155; overflow-x: auto; -webkit-overflow-scrolling: touch;">
+          <div style="font-weight: 700; color: #38bdf8; margin-bottom: 14px; font-size: 15px; text-align: center;">B+ TREE BALANCED DISK INDEX ARCHITECTURE</div>
+          <svg viewBox="0 0 740 240" width="100%" height="240" style="min-width: 660px;" xmlns="http://www.w3.org/2000/svg">
+            <!-- Root Node -->
+            <rect x="290" y="20" width="160" height="45" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+            <text x="370" y="48" fill="#38bdf8" font-size="13" font-weight="700" text-anchor="middle">[ P0 | Key: 50 | P1 ]</text>
+
+            <!-- Branches -->
+            <path d="M320 65 L 180 110" stroke="#94a3b8" stroke-width="1.8"/>
+            <path d="M420 65 L 560 110" stroke="#94a3b8" stroke-width="1.8"/>
+
+            <!-- Internal Node Left -->
+            <rect x="90" y="110" width="180" height="40" rx="6" fill="#1e293b" stroke="#10b981" stroke-width="1.5"/>
+            <text x="180" y="135" fill="#34d399" font-size="12" font-weight="700" text-anchor="middle">[ P0 | 20 | P1 | 35 | P2 ]</text>
+
+            <!-- Internal Node Right -->
+            <rect x="470" y="110" width="180" height="40" rx="6" fill="#1e293b" stroke="#10b981" stroke-width="1.5"/>
+            <text x="560" y="135" fill="#34d399" font-size="12" font-weight="700" text-anchor="middle">[ P0 | 65 | P1 | 80 | P2 ]</text>
+
+            <!-- Leaf Nodes Linked Horizon -->
+            <rect x="20" y="185" width="160" height="35" rx="4" fill="#0f172a" stroke="#f59e0b" stroke-width="1.5"/>
+            <text x="100" y="207" fill="#fbbf24" font-size="11" text-anchor="middle">Data: [10, 15, 20 &rarr;]</text>
+
+            <rect x="200" y="185" width="160" height="35" rx="4" fill="#0f172a" stroke="#f59e0b" stroke-width="1.5"/>
+            <text x="280" y="207" fill="#fbbf24" font-size="11" text-anchor="middle">Data: [25, 30, 35 &rarr;]</text>
+
+            <rect x="380" y="185" width="160" height="35" rx="4" fill="#0f172a" stroke="#f59e0b" stroke-width="1.5"/>
+            <text x="460" y="207" fill="#fbbf24" font-size="11" text-anchor="middle">Data: [50, 55, 65 &rarr;]</text>
+
+            <rect x="560" y="185" width="160" height="35" rx="4" fill="#0f172a" stroke="#f59e0b" stroke-width="1.5"/>
+            <text x="640" y="207" fill="#fbbf24" font-size="11" text-anchor="middle">Data: [70, 80, 95 &rarr;]</text>
+
+            <!-- Linked List Pointer Arrows connecting leaf nodes -->
+            <path d="M180 202 L 200 202" stroke="#ec4899" stroke-width="2"/>
+            <path d="M360 202 L 380 202" stroke="#ec4899" stroke-width="2"/>
+            <path d="M540 202 L 560 202" stroke="#ec4899" stroke-width="2"/>
+          </svg>
+        </div>
+
+        <h5>2. Why B+ Trees are Preferred over Standard B-Trees:</h5>
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Criteria</th>
+                <th>Standard B-Tree</th>
+                <th>B+ Tree (Industry Standard)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Data Pointer Storage</strong></td>
+                <td>Data record pointers stored in <strong>both internal nodes and leaf nodes</strong>.</td>
+                <td>Data pointers stored <strong>exclusively in leaf nodes</strong>. Internal nodes store only router keys.</td>
+              </tr>
+              <tr>
+                <td><strong>Node Fanout &amp; Tree Height</strong></td>
+                <td>Lower fanout because data pointers consume internal node block space. Result: <strong>Taller tree (more disk I/O)</strong>.</td>
+                <td>Much higher fanout. More keys fit in a single disk block. Result: <strong>Shorter tree (typically 3-4 levels for millions of records)</strong>.</td>
+              </tr>
+              <tr>
+                <td><strong>Range Queries (e.g. <code>WHERE Age BETWEEN 20 AND 30</code>)</strong></td>
+                <td>Requires expensive in-order tree traversal jumping up and down disk blocks.</td>
+                <td><strong>Extremely fast $O(K)$ sequential scan</strong> because all leaf nodes are connected via a contiguous doubly-linked list.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

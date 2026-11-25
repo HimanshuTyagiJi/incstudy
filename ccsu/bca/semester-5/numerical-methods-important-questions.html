@@ -1,0 +1,1437 @@
+---
+layout: exam
+title: "CCSU BCA 5th Sem Numerical Methods (BCA-504) Most Important Questions & Solved Exam Notebook"
+seo_title: "CCSU BCA 5th Sem Numerical Methods (BCA-504) Solved Exam Notebook"
+breadcrumb_title: "Numerical Methods (BCA-504)"
+eyebrow: "⚡ CCSU Meerut · BCA 5th Semester · Exam Preparation"
+title_subject: "Numerical Methods"
+title_code: "BCA-504"
+title_highlight: "Most Important Questions & Solved Exam Notebook"
+keywords: "ccsu bca 5th sem numerical methods, bca 504 important questions, bca numerical methods notes, bca 504 solved paper, newton raphson bca, simpson 1/3 rule numericals, runge kutta rk4 bca notes, bca study material, bca study"
+description: "Master solved question bank of recurring CCSU examination questions (2014–2023) for Numerical Methods (BCA-504) with Bisection, Newton-Raphson convergence, Gauss Elimination, Gauss-Seidel, Newton/Lagrange interpolation, Simpson's 1/3 rule, Runge-Kutta RK-4, and vector SVG diagrams."
+permalink: /ccsu/bca/semester-5/numerical-methods-important-questions/
+course_name: "CCSU BCA Semester 5 · Numerical Methods (BCA-504)"
+math: true
+---
+
+<!-- Navigation & Actions Bar -->
+<div class="exam-actions-bar">
+  <a href="{{ '/ccsu/bca/semester-5/' | relative_url }}" class="text-link">&larr; Back to Semester 5 Hub</a>
+</div>
+
+<!-- Header Strip -->
+<div class="exam-header-strip">
+  <span class="strip-pill">📚 Subject Code: BCA-504</span>
+  <span class="strip-pill">🏛️ CCSU Meerut University Pattern</span>
+  <span class="strip-pill">📄 3M, 7.5M &amp; 15M Exam Blueprint</span>
+  <span class="strip-pill">⭐ 2014–2023 Recurring University Exam Archive</span>
+</div>
+
+<!-- Quick Jump Nav -->
+<div class="exam-jump-nav">
+  <span class="exam-jump-label">⚡ Quick Jump:</span>
+  <a href="#section-a" class="jump-pill jump-pill-emerald">Section A (3 Marks · 15 Questions)</a>
+  <a href="#section-b" class="jump-pill jump-pill-cyan">Section B (7.5 Marks · 8 Questions)</a>
+  <a href="#section-c" class="jump-pill jump-pill-purple">⭐ Section C (15 Marks · 7 Solved Master Problems &amp; SVG Diagrams)</a>
+</div>
+
+<div class="notice-box" style="margin-bottom: 28px;">
+  <strong>Exam Scoring Architecture for BCA-504 (Numerical Methods):</strong>
+  The university theory examination carries <strong>75 Marks</strong> with a 3-hour duration, structured into 
+  <strong>Section A (5 questions &times; 3M = 15M compulsory)</strong>, 
+  <strong>Section B (attempt 2 of 3 questions &times; 7.5M = 15M)</strong>, and 
+  <strong>Section C (attempt 3 of 5 questions &times; 15M = 45M)</strong>.
+  In this master solved notebook, every recurring question from 2014 to 2023 is solved with exact mathematical derivations, complete step-by-step arithmetic, finite difference tables, error bounds, and custom vector SVG diagrams.
+</div>
+
+
+
+<!-- =========================================================================
+     SECTION A : 3 MARKS VERY SHORT ANSWER QUESTIONS (COMPULSORY)
+     ========================================================================= -->
+<div class="exam-section-card" id="section-a">
+  <div class="exam-section-header exam-section-header-emerald">
+    <div class="exam-section-header-inner">
+      <span class="exam-section-badge badge-emerald">SECTION A &bull; 3 MARKS EACH</span>
+      <h3 class="exam-section-title">Very Short Answer Questions &amp; Mathematical Definitions</h3>
+      <p class="exam-section-rule">CCSU Examination Blueprint: 5 Questions Compulsory &bull; Total 15 Marks (75 Words Limit)</p>
+    </div>
+  </div>
+
+  <div class="exam-section-body">
+
+    <!-- A1: Round-off vs Truncation Error -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q1.</span> Differentiate between Round-off Error and Truncation Error in numerical computation.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2014, 2016, 2018, 2021, 2023</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <ul>
+          <li><strong>Round-off Error:</strong> Arises because digital computers represent real numbers using a fixed finite number of digits (word length). When a fraction like $\frac{1}{3} = 0.333333\dots$ is stored as $0.3333$, the discarded trailing digits create round-off error.</li>
+          <li><strong>Truncation Error:</strong> Arises from replacing an infinite mathematical process (such as an infinite Taylor's series expansion) with a finite truncated approximation. For example, approximating $e^x = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \dots$ by just $1 + x + \frac{x^2}{2}$ introduces truncation error equal to the discarded remainder terms.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- A2: Absolute, Relative, and Percentage Error -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q2.</span> Define Absolute Error, Relative Error, and Percentage Error with mathematical formulas.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2015, 2017, 2019, 2022</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>Let $X$ be the true exact value and $X_a$ be its numerical approximation:</p>
+        <ol>
+          <li><strong>Absolute Error ($E_a$):</strong> The magnitude of difference between the true value and approximate value:
+            $$E_a = |X - X_a|$$
+          </li>
+          <li><strong>Relative Error ($E_r$):</strong> The ratio of the absolute error to the true value (dimensionless):
+            $$E_r = \frac{E_a}{|X|} = \frac{|X - X_a|}{|X|} \quad (X \neq 0)$$
+          </li>
+          <li><strong>Percentage Error ($E_p$):</strong> The relative error expressed as a percentage:
+            $$E_p = E_r \times 100\% = \frac{|X - X_a|}{|X|} \times 100\%$$
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- A3: Intermediate Value Theorem for Roots -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q3.</span> State the Intermediate Value Theorem condition for the existence of a real root of $f(x) = 0$.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2014, 2017, 2019, 2021, 2023</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>If a real-valued function $f(x)$ is continuous on a closed interval $[a, b]$, and $f(a)$ and $f(b)$ have <strong>opposite algebraic signs</strong>, that is:</p>
+        $$f(a) \cdot f(b) < 0$$
+        <p>then by Bolzano's Intermediate Value Theorem, there exists <strong>at least one real number $\xi \in (a, b)$ such that $f(\xi) = 0$</strong>. This root condition forms the foundational starting basis for bracketing methods including the Bisection and Regula-Falsi methods.</p>
+      </div>
+    </div>
+
+    <!-- A4: Bisection Method & Convergence -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q4.</span> State the iteration formula and Order of Convergence of the Bisection Method.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2016, 2018, 2020, 2022</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>For an interval $[a_n, b_n]$ with $f(a_n) \cdot f(b_n) < 0$, the Bisection iteration formula bisects the interval:</p>
+        $$x_{n+1} = \frac{a_n + b_n}{2}$$
+        <p>If $f(x_{n+1}) = 0$, $x_{n+1}$ is the exact root. If $f(a_n) \cdot f(x_{n+1}) < 0$, set $b_{n+1} = x_{n+1}$; otherwise set $a_{n+1} = x_{n+1}$.</p>
+        <p><strong>Order of Convergence:</strong> The Bisection method has <strong>Linear Convergence (Order $p = 1$)</strong> with asymptotic error constant $C = 0.5$, because the maximum error is halved at every single iteration ($\epsilon_{n+1} = 0.5 \epsilon_n$). It is guaranteed to converge, though comparatively slow.</p>
+      </div>
+    </div>
+
+    <!-- A5: Newton-Raphson Formula & Convergence -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q5.</span> State the Newton-Raphson iteration formula and its Order of Convergence.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2014, 2016, 2018, 2020, 2022, 2023</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>The <strong>Newton-Raphson (Newton's) iteration formula</strong> for finding a root of $f(x) = 0$ given an initial approximation $x_0$ is:</p>
+        $$x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)} \quad (\text{provided } f'(x_n) \neq 0)$$
+        <p><strong>Order of Convergence:</strong> The Newton-Raphson method has <strong>Quadratic Convergence (Order $p = 2$)</strong>. The error at step $n+1$ is proportional to the square of the error at step $n$ ($\epsilon_{n+1} \approx C \epsilon_n^2$). Consequently, the number of correct decimal places approximately <strong>doubles with each iteration</strong> once close to the root.</p>
+      </div>
+    </div>
+
+    <!-- A6: Failure of Newton-Raphson -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q6.</span> State the critical condition under which the Newton-Raphson method fails to converge.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2015, 2018, 2021</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>The Newton-Raphson method fails catastrophically when the first derivative at an iteration point vanishes:</p>
+        $$f'(x_n) = 0$$
+        <p><strong>Geometric Meaning:</strong> At a point where $f'(x_n) = 0$, the tangent line to the curve $y = f(x)$ becomes <strong>completely horizontal (parallel to the x-axis)</strong>. A horizontal tangent never intersects the x-axis, causing a division by zero error ($\frac{f(x_n)}{0}$) and producing an undefined or infinite next approximation $x_{n+1} \to \pm\infty$.</p>
+      </div>
+    </div>
+
+    <!-- A7: Direct vs Iterative Methods -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q7.</span> Differentiate between Direct Methods and Iterative Methods for solving simultaneous linear algebraic equations.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2016, 2018, 2020, 2022</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Criteria</th>
+                <th>Direct Methods</th>
+                <th>Iterative Methods</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Solution Nature</strong></td>
+                <td>Yields the <strong>exact solution</strong> in a predetermined finite number of mathematical steps (absent roundoff errors).</td>
+                <td>Yields an <strong>approximate solution</strong> by generating successive iterations converging toward the true solution.</td>
+              </tr>
+              <tr>
+                <td><strong>Error Accumulation</strong></td>
+                <td>Round-off errors accumulate progressively across elimination steps.</td>
+                <td>Self-correcting; round-off errors do not propagate catastrophically.</td>
+              </tr>
+              <tr>
+                <td><strong>Matrix Suitability</strong></td>
+                <td>Dense systems of moderate size ($N \le 100$).</td>
+                <td>Large, sparse systems ($N \ge 1000$) common in partial differential equations.</td>
+              </tr>
+              <tr>
+                <td><strong>Examples</strong></td>
+                <td>Gauss Elimination, Gauss-Jordan, LU Decomposition.</td>
+                <td>Gauss-Jacobi Method, Gauss-Seidel Method, Relaxation Method.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- A8: Diagonal Dominance Condition -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q8.</span> State the Sufficient Condition for the convergence of Gauss-Jacobi and Gauss-Seidel iteration methods.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2015, 2017, 2019, 2021, 2023</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>A system of linear equations $A X = B$ is guaranteed to converge for any arbitrary initial starting vector if the coefficient matrix $A$ is <strong>Strictly Diagonally Dominant</strong>.</p>
+        <p><strong>Formal Definition:</strong> In every row $i$, the absolute value of the diagonal entry must be strictly greater than the sum of the absolute values of all other non-diagonal entries in that same row:</p>
+        $$|a_{ii}| > \sum_{j=1, j \neq i}^{n} |a_{ij}| \quad \text{for all } i = 1, 2, \dots, n$$
+        <p>If a system does not naturally satisfy this condition, row permutations should be performed prior to beginning iterations.</p>
+      </div>
+    </div>
+
+    <!-- A9: Forward Difference and Shift Operator -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q9.</span> Define Forward Difference Operator ($\Delta$) and Shift Operator ($E$). Prove that $\Delta = E - 1$.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2014, 2016, 2018, 2021</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <ul>
+          <li><strong>Forward Difference Operator ($\Delta$):</strong> Defined as $\Delta f(x) = f(x + h) - f(x)$, where $h$ is the uniform interval of differencing.</li>
+          <li><strong>Shift Operator ($E$):</strong> Defined as $E f(x) = f(x + h)$, shifting the argument by one step $h$.</li>
+        </ul>
+        <p><strong>Mathematical Proof of $\Delta = E - 1$:</strong></p>
+        $$\Delta f(x) = f(x + h) - f(x) = E f(x) - 1 \cdot f(x) = (E - 1) f(x)$$
+        <p>Removing the operand function $f(x)$ yields the fundamental operator identity:</p>
+        $$\mathbf{\Delta = E - 1 \iff E = 1 + \Delta}$$
+      </div>
+    </div>
+
+    <!-- A10: Backward Difference Operator Proof -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q10.</span> Define Backward Difference Operator ($\nabla$). Prove that $\nabla = 1 - E^{-1}$.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2015, 2017, 2020, 2022</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p><strong>Backward Difference Operator ($\nabla$):</strong> Defined as $\nabla f(x) = f(x) - f(x - h)$.</p>
+        <p>By definition of the inverse shift operator, $E^{-1} f(x) = f(x - h)$. Therefore:</p>
+        $$\nabla f(x) = f(x) - f(x - h) = f(x) - E^{-1} f(x) = (1 - E^{-1}) f(x)$$
+        <p>Factoring out $f(x)$ gives:</p>
+        $$\mathbf{\nabla = 1 - E^{-1} \iff E^{-1} = 1 - \nabla}$$
+        <p>Furthermore, multiplying by $E$ yields $E \nabla = E(1 - E^{-1}) = E - 1 = \Delta$. Hence, $\mathbf{\Delta = E \nabla}$.</p>
+      </div>
+    </div>
+
+    <!-- A11: Newton Forward vs Backward Interpolation -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q11.</span> When should Newton's Forward Interpolation formula be used, and when should Newton's Backward Interpolation formula be used?</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2014, 2017, 2019, 2021, 2023</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <ul>
+          <li><strong>Newton's Forward Interpolation Formula:</strong> Used to interpolate the value of dependent variable $y$ when the query argument $x$ lies <strong>near the beginning (start)</strong> of a table of equidistant values ($u = \frac{x - x_0}{h}$ where $0 \le u \le 1$).</li>
+          <li><strong>Newton's Backward Interpolation Formula:</strong> Used to interpolate the value of $y$ when the query argument $x$ lies <strong>near the end (bottom)</strong> of a table of equidistant values, or for extrapolating values just beyond the terminal entry ($v = \frac{x - x_n}{h}$ where $-1 \le v \le 0$).</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- A12: Lagrange Interpolation Formula -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q12.</span> State Lagrange's Interpolation Formula for $n+1$ unequally spaced data points.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2016, 2018, 2020, 2022</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>For given data points $(x_0, y_0), (x_1, y_1), \dots, (x_n, y_n)$ where spacing $x_i - x_{i-1}$ need <strong>not be equal</strong>, the $n$-th degree Lagrange polynomial is:</p>
+        $$y = f(x) = \sum_{i=0}^{n} L_i(x) \cdot y_i$$
+        <p>where the Lagrange basis polynomials $L_i(x)$ are given by:</p>
+        $$L_i(x) = \frac{(x - x_0)(x - x_1)\dots(x - x_{i-1})(x - x_{i+1})\dots(x - x_n)}{(x_i - x_0)(x_i - x_1)\dots(x_i - x_{i-1})(x_i - x_{i+1})\dots(x_i - x_n)}$$
+        <p><strong>Major Advantage:</strong> It does not require calculating tabular difference columns and applies directly to arbitrary non-uniform intervals.</p>
+      </div>
+    </div>
+
+    <!-- A13: Trapezoidal Rule Formula -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q13.</span> State the Trapezoidal Rule formula for numerical integration and its error order.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2015, 2017, 2019, 2022</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>For evaluating $I = \int_{a}^{b} f(x) dx$ divided into $n$ subintervals of equal width $h = \frac{b - a}{n}$:</p>
+        $$\int_{a}^{b} f(x) dx = \frac{h}{2} \left[ (y_0 + y_n) + 2(y_1 + y_2 + \dots + y_{n-1}) \right]$$
+        <p><strong>Rule Phrasing:</strong> $\frac{h}{2} \left[ (\text{Sum of First and Last ordinates}) + 2 \times (\text{Sum of Remaining Intermediate ordinates}) \right]$.</p>
+        <p><strong>Local Truncation Error:</strong> $E_T = -\frac{(b - a)h^2}{12} f''(\xi) = \mathbf{O(h^2)}$. It is exact for polynomials of degree $\le 1$ (linear functions).</p>
+      </div>
+    </div>
+
+    <!-- A14: Simpson's 1/3 Rule & Condition -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q14.</span> State Simpson's 1/3 Rule formula. What is the mandatory condition on the number of subintervals ($n$)?</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2014, 2016, 2018, 2021, 2023</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p><strong>Mandatory Condition:</strong> The total number of subintervals $n$ <strong>MUST BE AN EVEN INTEGER</strong> (i.e. $n = 2, 4, 6, 8, \dots$, which implies an odd number of ordinates $n+1$).</p>
+        <p><strong>Formula:</strong></p>
+        $$\int_{a}^{b} f(x) dx = \frac{h}{3} \left[ (y_0 + y_n) + 4(y_1 + y_3 + y_5 + \dots) + 2(y_2 + y_4 + y_6 + \dots) \right]$$
+        <p><strong>Rule Phrasing:</strong> $\frac{h}{3} \left[ (\text{First} + \text{Last}) + 4 \times (\text{Sum of Odd Ordinates}) + 2 \times (\text{Sum of Even Ordinates}) \right]$.</p>
+        <p><strong>Truncation Error:</strong> $E_{S1/3} = -\frac{(b - a)h^4}{180} f^{(4)}(\xi) = \mathbf{O(h^4)}$. It is exact for polynomials up to degree 3 (cubic parabolas).</p>
+      </div>
+    </div>
+
+    <!-- A15: Euler's Method for ODEs -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q15.</span> State Euler's Formula for solving the first-order ordinary differential equation $\frac{dy}{dx} = f(x, y)$ with initial condition $y(x_0) = y_0$.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2015, 2018, 2020, 2022</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>Given the initial value problem $\frac{dy}{dx} = f(x, y)$ with $y(x_0) = y_0$ and step size $h$, Euler's forward recurrence formula is:</p>
+        $$y_{n+1} = y_n + h \cdot f(x_n, y_n) \quad \text{where } x_{n+1} = x_n + h$$
+        <p><strong>Geometric Meaning:</strong> Approximates the solution curve over each step $h$ by its tangent line evaluated at the starting point $(x_n, y_n)$. Has local truncation error $O(h^2)$ and cumulative global truncation error $O(h)$ (First-order accuracy).</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<!-- =========================================================================
+     SECTION B : 7.5 MARKS SHORT ANSWER QUESTIONS (ATTEMPT 2 OF 3)
+     ========================================================================= -->
+<div class="exam-section-card" id="section-b">
+  <div class="exam-section-header exam-section-header-cyan">
+    <div class="exam-section-header-inner">
+      <span class="exam-section-badge badge-cyan">SECTION B &bull; 7.5 MARKS EACH</span>
+      <h3 class="exam-section-title">Analytical Derivations &amp; Step-by-Step Numerical Solutions</h3>
+      <p class="exam-section-rule">CCSU Examination Blueprint: Attempt Any 2 of 3 Questions &bull; Total 15 Marks (~200 Words + Calculations)</p>
+    </div>
+  </div>
+
+  <div class="exam-section-body">
+
+    <!-- B16: Bisection Method Problem -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q16.</span> Find a real positive root of the algebraic equation $x^3 - 4x - 9 = 0$ using the Bisection Method correct to 3 decimal places. Present the complete iteration table.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2014, 2016, 2019, 2021, 2023</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        
+        <h5>1. Initial Interval Search:</h5>
+        <p>Let $f(x) = x^3 - 4x - 9$. Evaluating integer values:</p>
+        <ul>
+          <li>$f(2) = 2^3 - 4(2) - 9 = 8 - 8 - 9 = -9 < 0$</li>
+          <li>$f(3) = 3^3 - 4(3) - 9 = 27 - 12 - 9 = +6 > 0$</li>
+        </ul>
+        <p>Since $f(2) \cdot f(3) < 0$, a real root lies strictly in the interval $[a_0, b_0] = [2.0, 3.0]$.</p>
+
+        <h5>2. Bisection Iteration Table:</h5>
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Iteration ($n$)</th>
+                <th>$a_n$ (Negative)</th>
+                <th>$b_n$ (Positive)</th>
+                <th>Midpoint $m_n = \frac{a_n + b_n}{2}$</th>
+                <th>$f(m_n)$</th>
+                <th>Next Subinterval</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>1</strong></td>
+                <td>$2.0000$</td>
+                <td>$3.0000$</td>
+                <td><strong>$2.5000$</strong></td>
+                <td>$(2.5)^3 - 4(2.5) - 9 = \mathbf{-3.3750} < 0$</td>
+                <td>$[2.5000, 3.0000]$</td>
+              </tr>
+              <tr>
+                <td><strong>2</strong></td>
+                <td>$2.5000$</td>
+                <td>$3.0000$</td>
+                <td><strong>$2.7500$</strong></td>
+                <td>$(2.75)^3 - 4(2.75) - 9 = \mathbf{+0.7969} > 0$</td>
+                <td>$[2.5000, 2.7500]$</td>
+              </tr>
+              <tr>
+                <td><strong>3</strong></td>
+                <td>$2.5000$</td>
+                <td>$2.7500$</td>
+                <td><strong>$2.6250$</strong></td>
+                <td>$(2.625)^3 - 4(2.625) - 9 = \mathbf{-1.4121} < 0$</td>
+                <td>$[2.6250, 2.7500]$</td>
+              </tr>
+              <tr>
+                <td><strong>4</strong></td>
+                <td>$2.6250$</td>
+                <td>$2.7500$</td>
+                <td><strong>$2.6875$</strong></td>
+                <td>$(2.6875)^3 - 4(2.6875) - 9 = \mathbf{-0.3391} < 0$</td>
+                <td>$[2.6875, 2.7500]$</td>
+              </tr>
+              <tr>
+                <td><strong>5</strong></td>
+                <td>$2.6875$</td>
+                <td>$2.7500$</td>
+                <td><strong>$2.7188$</strong></td>
+                <td>$(2.7188)^3 - 4(2.7188) - 9 = \mathbf{+0.2209} > 0$</td>
+                <td>$[2.6875, 2.7188]$</td>
+              </tr>
+              <tr>
+                <td><strong>6</strong></td>
+                <td>$2.6875$</td>
+                <td>$2.7188$</td>
+                <td><strong>$2.7031$</strong></td>
+                <td>$(2.7031)^3 - 4(2.7031) - 9 = \mathbf{-0.0611} < 0$</td>
+                <td>$[2.7031, 2.7188]$</td>
+              </tr>
+              <tr>
+                <td><strong>7</strong></td>
+                <td>$2.7031$</td>
+                <td>$2.7188$</td>
+                <td><strong>$2.7109$</strong></td>
+                <td>$(2.7109)^3 - 4(2.7109) - 9 = \mathbf{+0.0794} > 0$</td>
+                <td>$[2.7031, 2.7109]$</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>Taking the midpoint of iteration 7: $m \approx 2.707$. Hence, the root of $x^3 - 4x - 9 = 0$ correct to 2–3 decimal places is:</p>
+        $$\mathbf{x \approx 2.706}$$
+      </div>
+    </div>
+
+    <!-- B17: Newton-Raphson Derivation & Quadratic Convergence -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q17.</span> Derive the Newton-Raphson formula using Taylor's Series expansion. Prove that the order of convergence of the Newton-Raphson method is 2 (Quadratic Convergence).</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2015, 2017, 2019, 2022</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        
+        <h5>1. Derivation from Taylor's Series:</h5>
+        <p>Let $x_0$ be an initial approximation to the exact root $\xi$ such that $\xi = x_0 + h$, where $h$ is a small correction. Since $\xi$ is the exact root, $f(\xi) = 0 \implies f(x_0 + h) = 0$. Expanding $f(x_0 + h)$ using Taylor's series:</p>
+        $$f(x_0 + h) = f(x_0) + h \cdot f'(x_0) + \frac{h^2}{2!} f''(x_0) + \dots = 0$$
+        <p>Neglecting second and higher-order terms of $h$ (since $h$ is small):</p>
+        $$f(x_0) + h \cdot f'(x_0) \approx 0 \implies h \approx -\frac{f(x_0)}{f'(x_0)}$$
+        <p>The next improved approximation is $x_1 = x_0 + h = x_0 - \frac{f(x_0)}{f'(x_0)}$. In general, the recurrence formula is:</p>
+        $$\mathbf{x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)}}$$
+
+        <h5>2. Proof of Quadratic Convergence (Order $p = 2$):</h5>
+        <p>Let $\xi$ be the true root such that $f(\xi) = 0$, and let $\epsilon_n = x_n - \xi$ be the error at the $n$-th step ($x_n = \xi + \epsilon_n$). Substituting into the formula:</p>
+        $$\xi + \epsilon_{n+1} = \xi + \epsilon_n - \frac{f(\xi + \epsilon_n)}{f'(\xi + \epsilon_n)}$$
+        $$\epsilon_{n+1} = \epsilon_n - \frac{f(\xi) + \epsilon_n f'(\xi) + \frac{\epsilon_n^2}{2} f''(\xi) + \dots}{f'(\xi) + \epsilon_n f''(\xi) + \dots}$$
+        <p>Since $f(\xi) = 0$, dividing numerator and denominator by $f'(\xi)$:</p>
+        $$\epsilon_{n+1} = \epsilon_n - \frac{\epsilon_n + \frac{\epsilon_n^2}{2}\frac{f''(\xi)}{f'(\xi)}}{1 + \epsilon_n \frac{f''(\xi)}{f'(\xi)}} = \epsilon_n - \left[ \epsilon_n + \frac{\epsilon_n^2}{2} \frac{f''(\xi)}{f'(\xi)} \right] \left[ 1 - \epsilon_n \frac{f''(\xi)}{f'(\xi)} + \dots \right]$$
+        $$\epsilon_{n+1} \approx \epsilon_n - \left[ \epsilon_n - \epsilon_n^2 \frac{f''(\xi)}{f'(\xi)} + \frac{\epsilon_n^2}{2} \frac{f''(\xi)}{f'(\xi)} \right] = \mathbf{\left[ \frac{f''(\xi)}{2 f'(\xi)} \right] \epsilon_n^2}$$
+        <p>Since $\epsilon_{n+1} \propto \epsilon_n^2$, the order of convergence is strictly <strong>2 (Quadratic)</strong>.</p>
+      </div>
+    </div>
+
+    <!-- B18: Newton-Raphson Numerical Problem -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q18.</span> Find a real positive root of $x^3 - 2x - 5 = 0$ using the Newton-Raphson Method correct to 3 decimal places, starting with initial guess $x_0 = 2$.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2014, 2016, 2018, 2020, 2022</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        
+        <h5>1. Setup Derivatives:</h5>
+        <ul>
+          <li>$f(x) = x^3 - 2x - 5$</li>
+          <li>$f'(x) = 3x^2 - 2$</li>
+          <li>Iteration formula: $x_{n+1} = x_n - \frac{x_n^3 - 2x_n - 5}{3x_n^2 - 2} = \frac{2x_n^3 + 5}{3x_n^2 - 2}$</li>
+        </ul>
+
+        <h5>2. Step-by-Step Iteration Calculations:</h5>
+        <ul>
+          <li><strong>Iteration 1 ($x_0 = 2$):</strong>
+            $$f(2) = 2^3 - 2(2) - 5 = 8 - 4 - 5 = -1$$
+            $$f'(2) = 3(2^2) - 2 = 12 - 2 = 10$$
+            $$x_1 = 2 - \frac{-1}{10} = 2 + 0.1 = \mathbf{2.1000}$$
+          </li>
+          <li><strong>Iteration 2 ($x_1 = 2.1$):</strong>
+            $$f(2.1) = (2.1)^3 - 2(2.1) - 5 = 9.261 - 4.2 - 5 = +0.061$$
+            $$f'(2.1) = 3(2.1)^2 - 2 = 3(4.41) - 2 = 13.23 - 2 = 11.23$$
+            $$x_2 = 2.1 - \frac{0.061}{11.23} = 2.1 - 0.005432 = \mathbf{2.094568}$$
+          </li>
+          <li><strong>Iteration 3 ($x_2 = 2.094568$):</strong>
+            $$f(2.094568) = (2.094568)^3 - 2(2.094568) - 5 \approx 0.000185$$
+            $$f'(2.094568) = 3(2.094568)^2 - 2 \approx 11.1620$$
+            $$x_3 = 2.094568 - \frac{0.000185}{11.1620} = \mathbf{2.094551}$$
+          </li>
+        </ul>
+
+        <p>Since $x_2$ and $x_3$ agree to 4 decimal places ($2.0945$), the required real root correct to 3 decimal places is:</p>
+        $$\mathbf{x = 2.095}$$
+      </div>
+    </div>
+
+    <!-- B19: Gauss Elimination Problem -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q19.</span> Solve the following system of linear equations using the Gauss Elimination Method with back-substitution:
+        $$2x + y + z = 10$$
+        $$3x + 2y + 3z = 18$$
+        $$x + 4y + 9z = 16$$</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2015, 2018, 2021, 2023</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        
+        <h5>1. Form the Augmented Matrix $[A | B]$:</h5>
+        $$\begin{bmatrix}
+        2 & 1 & 1 & | & 10 \\
+        3 & 2 & 3 & | & 18 \\
+        1 & 4 & 9 & | & 16
+        \end{bmatrix}$$
+
+        <h5>2. Forward Elimination to Upper Triangular Form:</h5>
+        <ul>
+          <li>Apply $R_2 \leftarrow 2R_2 - 3R_1$:
+            $$2(3, 2, 3 | 18) - 3(2, 1, 1 | 10) = (6-6, 4-3, 6-3 | 36-30) = (0, 1, 3 | 6)$$
+          </li>
+          <li>Apply $R_3 \leftarrow 2R_3 - R_1$:
+            $$2(1, 4, 9 | 16) - (2, 1, 1 | 10) = (2-2, 8-1, 18-1 | 32-10) = (0, 7, 17 | 22)$$
+          </li>
+          <li>Matrix after first column elimination:
+            $$\begin{bmatrix}
+            2 & 1 & 1 & | & 10 \\
+            0 & 1 & 3 & | & 6 \\
+            0 & 7 & 17 & | & 22
+            \end{bmatrix}$$
+          </li>
+          <li>Eliminate $y$ from $R_3$ by $R_3 \leftarrow R_3 - 7R_2$:
+            $$(0, 7, 17 | 22) - 7(0, 1, 3 | 6) = (0, 0, 17 - 21 | 22 - 42) = (0, 0, -4 | -20)$$
+          </li>
+        </ul>
+        <p>The resulting Upper Triangular Matrix is:</p>
+        $$\begin{bmatrix}
+        2 & 1 & 1 & | & 10 \\
+        0 & 1 & 3 & | & 6 \\
+        0 & 0 & -4 & | & -20
+        \end{bmatrix}$$
+
+        <h5>3. Back Substitution:</h5>
+        <ul>
+          <li>From Row 3: $-4z = -20 \implies \mathbf{z = 5}$</li>
+          <li>From Row 2: $y + 3z = 6 \implies y + 3(5) = 6 \implies y = 6 - 15 \implies \mathbf{y = -9}$</li>
+          <li>From Row 1: $2x + y + z = 10 \implies 2x + (-9) + 5 = 10 \implies 2x - 4 = 10 \implies 2x = 14 \implies \mathbf{x = 7}$</li>
+        </ul>
+        <div class="callout-box">
+          <strong>Final Solution:</strong> $\mathbf{x = 7, \quad y = -9, \quad z = 5}$.<br>
+          <em>Check:</em> $2(7) + (-9) + 5 = 14 - 9 + 5 = 10$ ✅ &bull; $3(7) + 2(-9) + 3(5) = 21 - 18 + 15 = 18$ ✅.
+        </div>
+      </div>
+    </div>
+
+    <!-- B20: Gauss-Seidel Method -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q20.</span> Solve the system of linear equations using the Gauss-Seidel Iteration Method starting with initial approximation $(0, 0, 0)$ (carry out 4 iterations):
+        $$10x + y + z = 12$$
+        $$2x + 10y + z = 13$$
+        $$2x + 2y + 10z = 14$$</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2014, 2017, 2019, 2021, 2023</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        
+        <h5>1. Test for Strict Diagonal Dominance:</h5>
+        <ul>
+          <li>Row 1: $|10| > |1| + |1| = 2$ (Dominant)</li>
+          <li>Row 2: $|10| > |2| + |1| = 3$ (Dominant)</li>
+          <li>Row 3: $|10| > |2| + |2| = 4$ (Dominant)</li>
+        </ul>
+        <p>The system is strictly diagonally dominant, guaranteeing convergence.</p>
+
+        <h5>2. Formulate Gauss-Seidel Recurrence Formulas:</h5>
+        $$x^{(k+1)} = \frac{12 - y^{(k)} - z^{(k)}}{10}$$
+        $$y^{(k+1)} = \frac{13 - 2x^{(k+1)} - z^{(k)}}{10}$$
+        $$z^{(k+1)} = \frac{14 - 2x^{(k+1)} - 2y^{(k+1)}}{10}$$
+
+        <h5>3. Step-by-Step Iteration Calculations:</h5>
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Iteration ($k$)</th>
+                <th>$x^{(k)}$</th>
+                <th>$y^{(k)}$</th>
+                <th>$z^{(k)}$</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>0 (Initial)</strong></td>
+                <td>$0.0000$</td>
+                <td>$0.0000$</td>
+                <td>$0.0000$</td>
+              </tr>
+              <tr>
+                <td><strong>1</strong></td>
+                <td>$\frac{12 - 0 - 0}{10} = \mathbf{1.2000}$</td>
+                <td>$\frac{13 - 2(1.2) - 0}{10} = \mathbf{1.0600}$</td>
+                <td>$\frac{14 - 2(1.2) - 2(1.06)}{10} = \mathbf{0.9480}$</td>
+              </tr>
+              <tr>
+                <td><strong>2</strong></td>
+                <td>$\frac{12 - 1.06 - 0.948}{10} = \mathbf{0.9992}$</td>
+                <td>$\frac{13 - 2(0.9992) - 0.948}{10} = \mathbf{1.0054}$</td>
+                <td>$\frac{14 - 2(0.9992) - 2(1.0054)}{10} = \mathbf{0.9991}$</td>
+              </tr>
+              <tr>
+                <td><strong>3</strong></td>
+                <td>$\frac{12 - 1.0054 - 0.9991}{10} = \mathbf{0.9996}$</td>
+                <td>$\frac{13 - 2(0.9996) - 0.9991}{10} = \mathbf{1.0002}$</td>
+                <td>$\frac{14 - 2(0.9996) - 2(1.0002)}{10} = \mathbf{1.0000}$</td>
+              </tr>
+              <tr>
+                <td><strong>4</strong></td>
+                <td>$\frac{12 - 1.0002 - 1.0000}{10} = \mathbf{1.0000}$</td>
+                <td>$\frac{13 - 2(1.0) - 1.0}{10} = \mathbf{1.0000}$</td>
+                <td>$\frac{14 - 2(1.0) - 2(1.0)}{10} = \mathbf{1.0000}$</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p><strong>Final Solution:</strong> $\mathbf{x = 1.000, \quad y = 1.000, \quad z = 1.000}$.</p>
+      </div>
+    </div>
+
+    <!-- B21: Newton's Forward Difference Table Problem -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q21.</span> The following table gives the values of $y = f(x)$:
+        <br>$x: 10, 20, 30, 40, 50$
+        <br>$y: 46, 66, 81, 93, 101$
+        <br>Construct the complete Forward Difference Table and find the value of $f(15)$ using Newton's Forward Interpolation Formula.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2015, 2017, 2020, 2022</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        
+        <h5>1. Forward Difference Table:</h5>
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>$x$</th>
+                <th>$y = f(x)$</th>
+                <th>$\Delta y$</th>
+                <th>$\Delta^2 y$</th>
+                <th>$\Delta^3 y$</th>
+                <th>$\Delta^4 y$</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>$10$ ($x_0$)</td>
+                <td>$\mathbf{46}$ ($y_0$)</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>$\mathbf{20}$ ($\Delta y_0$)</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>$20$</td>
+                <td>$66$</td>
+                <td></td>
+                <td>$\mathbf{-5}$ ($\Delta^2 y_0$)</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>$15$</td>
+                <td></td>
+                <td>$\mathbf{2}$ ($\Delta^3 y_0$)</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>$30$</td>
+                <td>$81$</td>
+                <td></td>
+                <td>$-3$</td>
+                <td></td>
+                <td>$\mathbf{-3}$ ($\Delta^4 y_0$)</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>$12$</td>
+                <td></td>
+                <td>$-1$</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>$40$</td>
+                <td>$93$</td>
+                <td></td>
+                <td>$-4$</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>$8$</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>$50$</td>
+                <td>$101$</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h5>2. Interpolation Calculation at $x = 15$:</h5>
+        <ul>
+          <li>$x_0 = 10, \quad h = 10, \quad x = 15$</li>
+          <li>$u = \frac{x - x_0}{h} = \frac{15 - 10}{10} = \mathbf{0.5}$</li>
+        </ul>
+        <p>Newton's Forward Interpolation Formula:</p>
+        $$f(x) = y_0 + u \Delta y_0 + \frac{u(u-1)}{2!} \Delta^2 y_0 + \frac{u(u-1)(u-2)}{3!} \Delta^3 y_0 + \frac{u(u-1)(u-2)(u-3)}{4!} \Delta^4 y_0$$
+        <p>Substituting values:</p>
+        $$f(15) = 46 + (0.5)(20) + \frac{(0.5)(-0.5)}{2} (-5) + \frac{(0.5)(-0.5)(-1.5)}{6} (2) + \frac{(0.5)(-0.5)(-1.5)(-2.5)}{24} (-3)$$
+        $$f(15) = 46 + 10 + \frac{-0.25}{2}(-5) + \frac{0.375}{6}(2) + \frac{-0.9375}{24}(-3)$$
+        $$f(15) = 46 + 10 + 0.625 + 0.125 + 0.1171875 = \mathbf{56.867}$$
+        <p><strong>Result:</strong> $\mathbf{f(15) \approx 56.87}$.</p>
+      </div>
+    </div>
+
+    <!-- B22: Lagrange Interpolation Problem -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q22.</span> Using Lagrange's Interpolation Formula, calculate the value of $f(3)$ for the following unequally spaced data points: $(0, 2)$, $(1, 3)$, $(2, 12)$, $(5, 147)$.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2016, 2018, 2021, 2023</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        
+        <h5>1. Given Data Points:</h5>
+        <ul>
+          <li>$x_0 = 0, y_0 = 2$</li>
+          <li>$x_1 = 1, y_1 = 3$</li>
+          <li>$x_2 = 2, y_2 = 12$</li>
+          <li>$x_3 = 5, y_3 = 147$</li>
+          <li>Query point: $x = 3$</li>
+        </ul>
+
+        <h5>2. Lagrange Polynomial Terms:</h5>
+        <ul>
+          <li><strong>Term 0 ($y_0 = 2$):</strong>
+            $$L_0(3) = \frac{(3 - 1)(3 - 2)(3 - 5)}{(0 - 1)(0 - 2)(0 - 5)} \times 2 = \frac{(2)(1)(-2)}{(-1)(-2)(-5)} \times 2 = \frac{-4}{-10} \times 2 = \mathbf{0.8}$$
+          </li>
+          <li><strong>Term 1 ($y_1 = 3$):</strong>
+            $$L_1(3) = \frac{(3 - 0)(3 - 2)(3 - 5)}{(1 - 0)(1 - 2)(1 - 5)} \times 3 = \frac{(3)(1)(-2)}{(1)(-1)(-4)} \times 3 = \frac{-6}{4} \times 3 = \mathbf{-4.5}$$
+          </li>
+          <li><strong>Term 2 ($y_2 = 12$):</strong>
+            $$L_2(3) = \frac{(3 - 0)(3 - 1)(3 - 5)}{(2 - 0)(2 - 1)(2 - 5)} \times 12 = \frac{(3)(2)(-2)}{(2)(1)(-3)} \times 12 = \frac{-12}{-6} \times 12 = \mathbf{24.0}$$
+          </li>
+          <li><strong>Term 3 ($y_3 = 147$):</strong>
+            $$L_3(3) = \frac{(3 - 0)(3 - 1)(3 - 2)}{(5 - 0)(5 - 1)(5 - 2)} \times 147 = \frac{(3)(2)(1)}{(5)(4)(3)} \times 147 = \frac{6}{60} \times 147 = \mathbf{14.7}$$
+          </li>
+        </ul>
+
+        <h5>3. Sum of Terms:</h5>
+        $$f(3) = 0.8 - 4.5 + 24.0 + 14.7 = \mathbf{35.0}$$
+        <p><strong>Result:</strong> $\mathbf{f(3) = 35}$.</p>
+      </div>
+    </div>
+
+    <!-- B23: Simpson's 1/3 Rule & Pi Calculation -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q23.</span> Evaluate the integral $\int_0^1 \frac{1}{1 + x^2} dx$ using Simpson's 1/3 Rule taking $h = 0.25$ ($n = 4$ intervals). Hence, compute an approximate value of $\pi$ correct to 4 decimal places.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2014, 2016, 2019, 2021, 2022</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        
+        <h5>1. Compute Table of Ordinates:</h5>
+        <p>Given $f(x) = \frac{1}{1 + x^2}$, interval $[a, b] = [0, 1]$, step size $h = 0.25$, so $n = \frac{1 - 0}{0.25} = 4$ (even integer):</p>
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>$i$</th>
+                <th>$x_i$</th>
+                <th>$y_i = \frac{1}{1 + x_i^2}$</th>
+                <th>Ordinate Type</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>$0$</td>
+                <td>$0.00$</td>
+                <td>$y_0 = \frac{1}{1 + 0} = \mathbf{1.000000}$</td>
+                <td>Boundary</td>
+              </tr>
+              <tr>
+                <td>$1$</td>
+                <td>$0.25$</td>
+                <td>$y_1 = \frac{1}{1 + 0.0625} = \frac{1}{1.0625} = \mathbf{0.941176}$</td>
+                <td>Odd</td>
+              </tr>
+              <tr>
+                <td>$2$</td>
+                <td>$0.50$</td>
+                <td>$y_2 = \frac{1}{1 + 0.25} = \frac{1}{1.25} = \mathbf{0.800000}$</td>
+                <td>Even</td>
+              </tr>
+              <tr>
+                <td>$3$</td>
+                <td>$0.75$</td>
+                <td>$y_3 = \frac{1}{1 + 0.5625} = \frac{1}{1.5625} = \mathbf{0.640000}$</td>
+                <td>Odd</td>
+              </tr>
+              <tr>
+                <td>$4$</td>
+                <td>$1.00$</td>
+                <td>$y_4 = \frac{1}{1 + 1} = \mathbf{0.500000}$</td>
+                <td>Boundary</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h5>2. Apply Simpson's 1/3 Formula:</h5>
+        $$I = \frac{h}{3} \left[ (y_0 + y_4) + 4(y_1 + y_3) + 2(y_2) \right]$$
+        $$I = \frac{0.25}{3} \left[ (1.000000 + 0.500000) + 4(0.941176 + 0.640000) + 2(0.800000) \right]$$
+        $$I = \frac{0.25}{3} \left[ 1.500000 + 4(1.581176) + 1.600000 \right]$$
+        $$I = \frac{0.25}{3} \left[ 1.500000 + 6.324704 + 1.600000 \right] = \frac{0.25}{3} [9.424704] = \mathbf{0.785392}$$
+
+        <h5>3. Deducing Value of $\pi$:</h5>
+        <p>Analytically, $\int_0^1 \frac{1}{1 + x^2} dx = \left[ \tan^{-1}(x) \right]_0^1 = \tan^{-1}(1) - \tan^{-1}(0) = \frac{\pi}{4}$.</p>
+        $$\frac{\pi}{4} \approx 0.785392 \implies \pi \approx 4 \times 0.785392 = \mathbf{3.141568}$$
+        <p><strong>Result:</strong> $\mathbf{\pi \approx 3.1416}$ (Accurate to 4 decimal places!).</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<!-- =========================================================================
+     SECTION C : 15 MARKS MASTER LONG ANSWER QUESTIONS (ATTEMPT 3 OF 5)
+     ========================================================================= -->
+<div class="exam-section-card" id="section-c">
+  <div class="exam-section-header exam-section-header-purple">
+    <div class="exam-section-header-inner">
+      <span class="exam-section-badge badge-purple">SECTION C &bull; 15 MARKS EACH</span>
+      <h3 class="exam-section-title">Master Long Answer Questions, Mathematical Proofs &amp; Precision Calculations</h3>
+      <p class="exam-section-rule">CCSU Examination Blueprint: Attempt Any 3 of 5 Questions &bull; Total 45 Marks (~500+ Words + Step-by-Step Derivations)</p>
+    </div>
+  </div>
+
+  <div class="exam-section-body">
+
+    <!-- C24: Root Finding Masterclass (Newton-Raphson Transcendental Problem) -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q24.</span> Contrast the Bisection, Regula-Falsi, and Newton-Raphson methods for finding roots of algebraic and transcendental equations. Draw a geometric convergence diagram. Find the real positive root of the transcendental equation $x \log_{10}(x) - 1.2 = 0$ using the Newton-Raphson method correct to 4 decimal places with a complete iteration table.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2014, 2016, 2018, 2020, 2022, 2023</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        
+        <h5>1. Comparative Evaluation of Root Finding Methods:</h5>
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Method</th>
+                <th>Type</th>
+                <th>Formula</th>
+                <th>Order of Convergence ($p$)</th>
+                <th>Guarantee of Convergence</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Bisection</strong></td>
+                <td>Bracketing (Interval halving)</td>
+                <td>$x_{n+1} = \frac{a_n + b_n}{2}$</td>
+                <td><strong>$p = 1$ (Linear)</strong></td>
+                <td>Always guaranteed if $f(a)f(b) < 0$. Slowest.</td>
+              </tr>
+              <tr>
+                <td><strong>Regula-Falsi (False Position)</strong></td>
+                <td>Bracketing (Chord interpolation)</td>
+                <td>$x_{n+1} = \frac{a f(b) - b f(a)}{f(b) - f(a)}$</td>
+                <td><strong>$p = 1$ to $1.618$ (Superlinear)</strong></td>
+                <td>Guaranteed, but can suffer from stagnant endpoints.</td>
+              </tr>
+              <tr>
+                <td><strong>Newton-Raphson</strong></td>
+                <td>Open (Tangent line)</td>
+                <td>$x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)}$</td>
+                <td><strong>$p = 2$ (Quadratic)</strong></td>
+                <td>Fastest; sensitive to initial guess $x_0$ and fails if $f'(x) = 0$.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Newton Raphson Geometric Tangent SVG -->
+        <div class="svg-tree-container" style="background: #0f172a; padding: 22px; border-radius: 12px; margin: 18px 0; border: 1px solid #334155; overflow-x: auto; -webkit-overflow-scrolling: touch;">
+          <div style="font-weight: 700; color: #38bdf8; margin-bottom: 14px; font-size: 15px; text-align: center;">NEWTON-RAPHSON GEOMETRIC TANGENT SLOPE CONVERGENCE</div>
+          <svg viewBox="0 0 740 240" width="100%" height="240" style="min-width: 660px;" xmlns="http://www.w3.org/2000/svg">
+            <!-- Axes -->
+            <line x1="50" y1="200" x2="680" y2="200" stroke="#94a3b8" stroke-width="2"/>
+            <text x="680" y="220" fill="#94a3b8" font-size="11">x-axis &rarr;</text>
+            <line x1="80" y1="220" x2="80" y2="30" stroke="#94a3b8" stroke-width="2"/>
+            <text x="45" y="30" fill="#94a3b8" font-size="11">y = f(x)</text>
+
+            <!-- Curve f(x) -->
+            <path d="M120 220 Q 300 180 580 40" fill="none" stroke="#38bdf8" stroke-width="3"/>
+            <text x="600" y="45" fill="#38bdf8" font-size="12" font-weight="700">y = f(x)</text>
+
+            <!-- Exact Root xi -->
+            <circle cx="340" cy="200" r="5" fill="#10b981"/>
+            <text x="340" y="225" fill="#10b981" font-size="12" font-weight="700" text-anchor="middle">Exact Root &xi;</text>
+
+            <!-- Point 1 (x0) -->
+            <line x1="520" y1="200" x2="520" y2="68" stroke="#94a3b8" stroke-dasharray="3"/>
+            <circle cx="520" cy="68" r="5" fill="#f59e0b"/>
+            <circle cx="520" cy="200" r="4" fill="#f59e0b"/>
+            <text x="520" y="220" fill="#fbbf24" font-size="11" text-anchor="middle">Initial Guess $x_0$</text>
+
+            <!-- Tangent 1 at x0 intersecting x-axis at x1 -->
+            <line x1="520" y1="68" x2="385" y2="200" stroke="#f59e0b" stroke-width="2"/>
+            <circle cx="385" cy="200" r="4" fill="#a855f7"/>
+            <text x="385" y="220" fill="#c084fc" font-size="11" text-anchor="middle">$x_1$</text>
+
+            <!-- Tangent 2 at x1 intersecting near xi -->
+            <line x1="385" y1="200" x2="385" y2="152" stroke="#94a3b8" stroke-dasharray="3"/>
+            <circle cx="385" cy="152" r="4" fill="#a855f7"/>
+            <line x1="385" y1="152" x2="345" y2="200" stroke="#a855f7" stroke-width="2"/>
+            <text x="345" y="185" fill="#c084fc" font-size="10" text-anchor="middle">$x_2 \approx \xi$</text>
+          </svg>
+        </div>
+
+        <h5>2. Precision Solution of $x \log_{10}(x) - 1.2 = 0$:</h5>
+        <p>Let $f(x) = x \log_{10}(x) - 1.2$. Note that $\log_{10}(x) = \frac{\ln x}{\ln 10}$.</p>
+        <p>Derivative: $f'(x) = \frac{d}{dx}[x \log_{10}(x)] - 0 = \log_{10}(x) + x \cdot \left(\frac{1}{x \ln 10}\right) = \log_{10}(x) + \frac{1}{\ln 10} = \mathbf{\log_{10}(x) + 0.43429448}$.</p>
+        <p>Finding root bounds: $f(2) = 2 \log_{10}(2) - 1.2 = 2(0.30103) - 1.2 = 0.60206 - 1.2 = -0.59794 < 0$.<br>
+        $f(3) = 3 \log_{10}(3) - 1.2 = 3(0.47712) - 1.2 = 1.43136 - 1.2 = +0.23136 > 0$.<br>
+        Root lies between $2$ and $3$. Choose $x_0 = 2.5$.</p>
+
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Iteration ($n$)</th>
+                <th>$x_n$</th>
+                <th>$f(x_n) = x_n \log_{10}(x_n) - 1.2$</th>
+                <th>$f'(x_n) = \log_{10}(x_n) + 0.434294$</th>
+                <th>$h_n = -\frac{f(x_n)}{f'(x_n)}$</th>
+                <th>$x_{n+1} = x_n + h_n$</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>1</strong></td>
+                <td>$2.500000$</td>
+                <td>$-0.205150$</td>
+                <td>$0.397940 + 0.434294 = 0.832234$</td>
+                <td>$-\frac{-0.205150}{0.832234} = +0.246505$</td>
+                <td>$\mathbf{2.746505}$</td>
+              </tr>
+              <tr>
+                <td><strong>2</strong></td>
+                <td>$2.746505$</td>
+                <td>$+0.005113$</td>
+                <td>$0.438780 + 0.434294 = 0.873074$</td>
+                <td>$-\frac{0.005113}{0.873074} = -0.005856$</td>
+                <td>$\mathbf{2.740649}$</td>
+              </tr>
+              <tr>
+                <td><strong>3</strong></td>
+                <td>$2.740649$</td>
+                <td>$+0.000003$</td>
+                <td>$0.437854 + 0.434294 = 0.872148$</td>
+                <td>$-\frac{0.000003}{0.872148} = -0.000003$</td>
+                <td>$\mathbf{2.740646}$</td>
+              </tr>
+              <tr>
+                <td><strong>4</strong></td>
+                <td>$2.740646$</td>
+                <td>$0.000000$</td>
+                <td>$0.872148$</td>
+                <td>$0.000000$</td>
+                <td>$\mathbf{2.740646}$</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p><strong>Final Real Root (correct to 4 decimal places):</strong> $\mathbf{x = 2.7406}$.</p>
+      </div>
+    </div>
+
+    <!-- C25: Gauss Elimination with Partial Pivoting & LU Decomposition -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q25.</span> Explain the principle of Partial Pivoting in Gauss Elimination and why it is mathematically indispensable. Detail Crout's / Doolittle's LU Decomposition Method ($A = L \cdot U$) and solve the $3 \times 3$ system of equations using LU Decomposition.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2015, 2017, 2019, 2021, 2023</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        
+        <h5>1. Why Partial Pivoting is Essential:</h5>
+        <p>In standard Gauss elimination, the multipliers are $m_{ik} = \frac{a_{ik}}{a_{kk}}$. If the pivot element $a_{kk} = 0$, division by zero causes complete mathematical breakdown. Even worse, if $a_{kk}$ is very small in magnitude compared to other row elements (e.g. $a_{11} = 0.0001$), dividing by it amplifies round-off errors exponentially, causing catastrophic numerical instability.</p>
+        <p><strong>Partial Pivoting Strategy:</strong> At the start of step $k$, scan column $k$ from row $k$ down to row $n$. Find the row $p$ possessing the largest absolute coefficient $|a_{pk}| = \max_{k \le i \le n} |a_{ik}|$, and interchange row $k$ with row $p$ before eliminating. This guarantees all multipliers satisfy $|m_{ik}| \le 1$, bounding round-off error growth.</p>
+
+        <h5>2. Doolittle's LU Decomposition Architecture ($A = L \cdot U$):</h5>
+        <p>Factor coefficient matrix $A$ into the product of a Unit Lower Triangular Matrix $L$ (diagonal elements all $1$) and an Upper Triangular Matrix $U$:</p>
+        $$\begin{bmatrix}
+        a_{11} & a_{12} & a_{13} \\
+        a_{21} & a_{22} & a_{23} \\
+        a_{31} & a_{32} & a_{33}
+        \end{bmatrix} =
+        \begin{bmatrix}
+        1 & 0 & 0 \\
+        l_{21} & 1 & 0 \\
+        l_{31} & l_{32} & 1
+        \end{bmatrix}
+        \begin{bmatrix}
+        u_{11} & u_{12} & u_{13} \\
+        0 & u_{22} & u_{23} \\
+        0 & 0 & u_{33}
+        \end{bmatrix}$$
+        <p>Then the system $A X = B$ becomes $L (U X) = B$. Solving proceeds in two rapid triangular steps:</p>
+        <ol>
+          <li>Solve $L Y = B$ using <strong>Forward Substitution</strong> to find vector $Y$.</li>
+          <li>Solve $U X = Y$ using <strong>Back Substitution</strong> to find final solution vector $X$.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- C26: Gauss-Jacobi vs Gauss-Seidel Masterclass -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q26.</span> Compare the mathematical formulations of Gauss-Jacobi and Gauss-Seidel iterative methods. Prove that Gauss-Seidel converges approximately twice as fast as Gauss-Jacobi. Draw a trajectory update diagram.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2014, 2016, 2018, 2021, 2022</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        
+        <h5>1. Matrix Formulation Comparison:</h5>
+        <p>Let $A = D - L - U$, where $D$ is the diagonal matrix, $-L$ is strictly lower triangular, and $-U$ is strictly upper triangular:</p>
+        <ul>
+          <li><strong>Gauss-Jacobi (Simultaneous Displacements):</strong> Updates all components in parallel using strictly old values from iteration $k$:
+            $$X^{(k+1)} = D^{-1}(L + U) X^{(k)} + D^{-1} B \implies \mathbf{X^{(k+1)} = T_J X^{(k)} + C_J}$$
+          </li>
+          <li><strong>Gauss-Seidel (Successive Displacements):</strong> Uses the freshly computed values from iteration $k+1$ immediately in subsequent equations of the same iteration:
+            $$(D - L) X^{(k+1)} = U X^{(k)} + B \implies \mathbf{X^{(k+1)} = (D - L)^{-1} U X^{(k)} + (D - L)^{-1} B = T_{GS} X^{(k)} + C_{GS}}$$
+          </li>
+        </ul>
+
+        <!-- Jacobi vs Seidel Update SVG -->
+        <div class="svg-tree-container" style="background: #0f172a; padding: 22px; border-radius: 12px; margin: 18px 0; border: 1px solid #334155; overflow-x: auto; -webkit-overflow-scrolling: touch;">
+          <div style="font-weight: 700; color: #38bdf8; margin-bottom: 14px; font-size: 15px; text-align: center;">JACOBI (PARALLEL BUFFER) VS SEIDEL (IMMEDIATE IN-PLACE) MEMORY UPDATE</div>
+          <svg viewBox="0 0 740 200" width="100%" height="200" style="min-width: 660px;" xmlns="http://www.w3.org/2000/svg">
+            <!-- Jacobi Box -->
+            <rect x="30" y="25" width="320" height="150" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+            <text x="190" y="52" fill="#38bdf8" font-size="13" font-weight="700" text-anchor="middle">Gauss-Jacobi: Parallel Update</text>
+            <rect x="50" y="70" width="280" height="35" rx="4" fill="#0f172a" stroke="#475569"/>
+            <text x="190" y="92" fill="#ffffff" font-size="11" text-anchor="middle">$x^{(k+1)}$ uses $y^{(k)}, z^{(k)}$</text>
+            <rect x="50" y="115" width="280" height="35" rx="4" fill="#0f172a" stroke="#475569"/>
+            <text x="190" y="137" fill="#ffffff" font-size="11" text-anchor="middle">$y^{(k+1)}$ uses $x^{(k)}, z^{(k)}$ &bull; Requires 2 Buffers</text>
+
+            <!-- Seidel Box -->
+            <rect x="390" y="25" width="320" height="150" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+            <text x="550" y="52" fill="#10b981" font-size="13" font-weight="700" text-anchor="middle">Gauss-Seidel: In-Place Update</text>
+            <rect x="410" y="70" width="280" height="35" rx="4" fill="#0f172a" stroke="#10b981"/>
+            <text x="550" y="92" fill="#34d399" font-size="11" font-weight="700" text-anchor="middle">$x^{(k+1)}$ computed immediately</text>
+            <rect x="410" y="115" width="280" height="35" rx="4" fill="#0f172a" stroke="#10b981"/>
+            <text x="550" y="137" fill="#34d399" font-size="11" font-weight="700" text-anchor="middle">$y^{(k+1)}$ uses fresh $x^{(k+1)}$ immediately! (2x Faster)</text>
+          </svg>
+        </div>
+
+        <h5>2. Asymptotic Rate of Convergence:</h5>
+        <p>By the Stein-Rosenberg Theorem, for a tridiagonal diagonally dominant system, the spectral radius of the iteration matrices satisfies:</p>
+        $$\rho(T_{GS}) = [\rho(T_J)]^2$$
+        <p>Since the asymptotic rate of convergence is $R = -\ln \rho(T)$, we have:</p>
+        $$R_{GS} = -\ln \rho(T_{GS}) = -\ln [\rho(T_J)^2] = -2 \ln \rho(T_J) = \mathbf{2 \cdot R_J}$$
+        <p>Thus, Gauss-Seidel converges <strong>twice as fast</strong> as Jacobi, requiring half the iterations to achieve the same precision.</p>
+      </div>
+    </div>
+
+    <!-- C27: Finite Difference Operator Algebra & Interpolation -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q27.</span> Prove the fundamental operator identities: (a) $\Delta = E - 1$, (b) $\nabla = 1 - E^{-1}$, (c) $E = e^{hD}$, and (d) $\mu = \cosh(hD/2)$. Derive Newton's Forward Difference Interpolation formula rigorously from binomial expansion.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2015, 2017, 2019, 2021, 2023</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        
+        <h5>1. Operator Proofs:</h5>
+        <ul>
+          <li><strong>Proof of (c) $E = e^{hD}$:</strong><br>
+            By Taylor's Series expansion:
+            $$f(x + h) = f(x) + h f'(x) + \frac{h^2}{2!} f''(x) + \frac{h^3}{3!} f'''(x) + \dots$$
+            Writing derivatives using operator $D = \frac{d}{dx}$:
+            $$E f(x) = \left[ 1 + hD + \frac{(hD)^2}{2!} + \frac{(hD)^3}{3!} + \dots \right] f(x) = e^{hD} f(x)$$
+            Removing operand $f(x)$ yields: $\mathbf{E = e^{hD} \iff hD = \ln E = \ln(1 + \Delta)}$.
+          </li>
+          <li><strong>Proof of (d) $\mu = \cosh(hD/2)$:</strong><br>
+            Averaging operator $\mu = \frac{1}{2}(E^{1/2} + E^{-1/2})$. Substituting $E = e^{hD}$:
+            $$\mu = \frac{e^{hD/2} + e^{-hD/2}}{2} = \mathbf{\cosh\left(\frac{hD}{2}\right)}$$
+          </li>
+        </ul>
+
+        <h5>2. Rigorous Derivation of Newton's Forward Interpolation:</h5>
+        <p>Let $x = x_0 + u h$, so $u = \frac{x - x_0}{h}$. The function value at $x$ is:</p>
+        $$f(x) = f(x_0 + u h) = E^u f(x_0)$$
+        <p>Since $E = 1 + \Delta$, substituting yields:</p>
+        $$E^u = (1 + \Delta)^u$$
+        <p>Expanding $(1 + \Delta)^u$ using the Binomial Theorem for any real exponent $u$:</p>
+        $$(1 + \Delta)^u = 1 + u \Delta + \frac{u(u-1)}{2!} \Delta^2 + \frac{u(u-1)(u-2)}{3!} \Delta^3 + \dots + \frac{u(u-1)\dots(u-n+1)}{n!} \Delta^n$$
+        <p>Applying this operator to $y_0 = f(x_0)$ derives Newton's Forward Difference formula:</p>
+        $$\mathbf{f(x) = y_0 + u \Delta y_0 + \frac{u(u-1)}{2!} \Delta^2 y_0 + \frac{u(u-1)(u-2)}{3!} \Delta^3 y_0 + \dots}$$
+      </div>
+    </div>
+
+    <!-- C28: Unequally Spaced Interpolation & Divided Differences -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q28.</span> Define Divided Differences and prove their symmetry property: $f[x_0, x_1] = f[x_1, x_0]$. Derive Newton's Divided Difference Interpolation Formula. Contrast it with Lagrange's Interpolation Formula.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2014, 2016, 2018, 2020, 2022</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        
+        <h5>1. Definition &amp; Symmetry Proof:</h5>
+        <p>The first divided difference for two arguments $x_0, x_1$ is defined as:</p>
+        $$f[x_0, x_1] = \frac{f(x_1) - f(x_0)}{x_1 - x_0} = \frac{f(x_0) - f(x_1)}{x_0 - x_1} = f[x_1, x_0]$$
+        <p>In general, divided differences are completely symmetric functions of their arguments—permuting the order of indices leaves the value invariant: $f[x_0, x_1, x_2] = f[x_1, x_0, x_2] = f[x_2, x_1, x_0]$.</p>
+
+        <h5>2. Derivation of Newton's Divided Difference Formula:</h5>
+        <p>From the recursive definitions:</p>
+        $$f[x, x_0] = \frac{f(x) - f(x_0)}{x - x_0} \implies f(x) = f(x_0) + (x - x_0) f[x, x_0]$$
+        <p>Similarly, $f[x, x_0, x_1] = \frac{f[x, x_0] - f[x_0, x_1]}{x - x_1} \implies f[x, x_0] = f[x_0, x_1] + (x - x_1) f[x, x_0, x_1]$. Substituting:</p>
+        $$f(x) = f(x_0) + (x - x_0) f[x_0, x_1] + (x - x_0)(x - x_1) f[x, x_0, x_1]$$
+        <p>Continuing recursively for $n$ data points yields the master interpolation formula:</p>
+        $$\mathbf{P_n(x) = f(x_0) + (x - x_0)f[x_0, x_1] + (x - x_0)(x - x_1)f[x_0, x_1, x_2] + \dots}$$
+      </div>
+    </div>
+
+    <!-- C29: General Quadrature Formula & Newton-Cotes Rules -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q29.</span> Derive the General Quadrature Formula for numerical integration from Newton's Forward Difference formula. Deduce: (a) Trapezoidal Rule ($n=1$), (b) Simpson's 1/3 Rule ($n=2$), and (c) Simpson's 3/8 Rule ($n=3$). Evaluate $\int_0^6 \frac{1}{1 + x} dx$ using all three rules and compare with the exact analytical value.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2014, 2016, 2018, 2021, 2023</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        
+        <h5>1. Derivation of General Quadrature Formula:</h5>
+        <p>Let $I = \int_{x_0}^{x_0 + nh} f(x) dx$. Set $x = x_0 + u h \implies dx = h du$. When $x = x_0, u = 0$; when $x = x_0 + nh, u = n$:</p>
+        $$I = h \int_0^n \left[ y_0 + u \Delta y_0 + \frac{u^2 - u}{2} \Delta^2 y_0 + \frac{u^3 - 3u^2 + 2u}{6} \Delta^3 y_0 + \dots \right] du$$
+        <p>Integrating term by term with respect to $u$:</p>
+        $$\mathbf{\int_{x_0}^{x_0 + nh} f(x) dx = nh \left[ y_0 + \frac{n}{2}\Delta y_0 + \frac{n(2n-3)}{12}\Delta^2 y_0 + \frac{n(n-1)^2}{24}\Delta^3 y_0 + \dots \right]}$$
+
+        <h5>2. Deductions of Standard Rules:</h5>
+        <ul>
+          <li><strong>Put $n = 1$ (Trapezoidal):</strong> Neglect differences of order $\ge 2$:
+            $$\int_{x_0}^{x_0 + h} y dx = h \left[ y_0 + \frac{1}{2}\Delta y_0 \right] = h \left[ y_0 + \frac{y_1 - y_0}{2} \right] = \mathbf{\frac{h}{2}(y_0 + y_1)}$$
+          </li>
+          <li><strong>Put $n = 2$ (Simpson's 1/3):</strong> Neglect differences of order $\ge 3$:
+            $$\int_{x_0}^{x_0 + 2h} y dx = 2h \left[ y_0 + \Delta y_0 + \frac{1}{6}\Delta^2 y_0 \right] = \mathbf{\frac{h}{3}(y_0 + 4y_1 + y_2)}$$
+          </li>
+          <li><strong>Put $n = 3$ (Simpson's 3/8):</strong> Neglect differences of order $\ge 4$:
+            $$\int_{x_0}^{x_0 + 3h} y dx = 3h \left[ y_0 + \frac{3}{2}\Delta y_0 + \frac{3}{4}\Delta^2 y_0 + \frac{1}{8}\Delta^3 y_0 \right] = \mathbf{\frac{3h}{8}(y_0 + 3y_1 + 3y_2 + y_3)}$$
+          </li>
+        </ul>
+
+        <h5>3. Comparative Evaluation of $\int_0^6 \frac{1}{1 + x} dx$ ($h = 1$):</h5>
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>$x$</th>
+                <th>$0$</th>
+                <th>$1$</th>
+                <th>$2$</th>
+                <th>$3$</th>
+                <th>$4$</th>
+                <th>$5$</th>
+                <th>$6$</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>$y = \frac{1}{1+x}$</td>
+                <td>$1.0000$ ($y_0$)</td>
+                <td>$0.5000$ ($y_1$)</td>
+                <td>$0.3333$ ($y_2$)</td>
+                <td>$0.2500$ ($y_3$)</td>
+                <td>$0.2000$ ($y_4$)</td>
+                <td>$0.1667$ ($y_5$)</td>
+                <td>$0.1429$ ($y_6$)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Method</th>
+                <th>Computed Value</th>
+                <th>Exact Value $\ln(7)$</th>
+                <th>Absolute Error</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Trapezoidal Rule</strong></td>
+                <td>$\frac{1}{2}[(1.0 + 0.1429) + 2(0.5 + 0.3333 + 0.25 + 0.2 + 0.1667)] = \mathbf{2.021429}$</td>
+                <td>$1.945910$</td>
+                <td>$0.075518$</td>
+              </tr>
+              <tr>
+                <td><strong>Simpson's 1/3 Rule</strong></td>
+                <td>$\frac{1}{3}[(1.0 + 0.1429) + 4(0.5 + 0.25 + 0.1667) + 2(0.3333 + 0.2000)] = \mathbf{1.958730}$</td>
+                <td>$1.945910$</td>
+                <td>$\mathbf{0.012820}$ (Most Accurate!)</td>
+              </tr>
+              <tr>
+                <td><strong>Simpson's 3/8 Rule</strong></td>
+                <td>$\frac{3(1)}{8}[(1.0 + 0.1429) + 3(0.5 + 0.3333 + 0.2 + 0.1667) + 2(0.25)] = \mathbf{1.966071}$</td>
+                <td>$1.945910$</td>
+                <td>$0.020161$</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- C30: Runge-Kutta 4th Order ODE Masterclass -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q30.</span> Explain the Runge-Kutta Fourth Order (RK-4) Method for solving initial value problems $\frac{dy}{dx} = f(x, y), y(x_0) = y_0$. State the formulas for slope increments $k_1, k_2, k_3, k_4$. Solve $\frac{dy}{dx} = x + y, y(0) = 1$ to calculate $y(0.1)$ and $y(0.2)$ with $h = 0.1$ and compare with the exact analytical solution.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2014, 2016, 2018, 2020, 2022, 2023</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        
+        <h5>1. RK-4 Working Formulas:</h5>
+        <p>Given $\frac{dy}{dx} = f(x, y)$ with $y(x_n) = y_n$ and step size $h$, RK-4 calculates a weighted average of four trial slopes:</p>
+        $$k_1 = h \cdot f(x_n, y_n)$$
+        $$k_2 = h \cdot f\left(x_n + \frac{h}{2}, y_n + \frac{k_1}{2}\right)$$
+        $$k_3 = h \cdot f\left(x_n + \frac{h}{2}, y_n + \frac{k_2}{2}\right)$$
+        $$k_4 = h \cdot f(x_n + h, y_n + k_3)$$
+        $$y_{n+1} = y_n + \frac{1}{6}(k_1 + 2k_2 + 2k_3 + k_4)$$
+        <p>Has local truncation error $O(h^5)$ and cumulative global error $O(h^4)$. It agrees with Taylor's series up to $h^4$ without requiring any higher derivative evaluations!</p>
+
+        <h5>2. Step 1: Compute $y(0.1)$ ($x_0 = 0, y_0 = 1, h = 0.1$):</h5>
+        <p>Here $f(x, y) = x + y$:</p>
+        <ul>
+          <li>$k_1 = (0.1)(0 + 1) = \mathbf{0.100000}$</li>
+          <li>$k_2 = (0.1)\left(0 + 0.05, 1 + 0.05\right) = (0.1)(0.05 + 1.05) = (0.1)(1.10) = \mathbf{0.110000}$</li>
+          <li>$k_3 = (0.1)\left(0 + 0.05, 1 + \frac{0.11}{2}\right) = (0.1)(0.05 + 1.055) = (0.1)(1.105) = \mathbf{0.110500}$</li>
+          <li>$k_4 = (0.1)(0 + 0.1, 1 + 0.1105) = (0.1)(0.1 + 1.1105) = (0.1)(1.2105) = \mathbf{0.121050}$</li>
+          <li>$y(0.1) = 1 + \frac{1}{6}[0.100000 + 2(0.110000) + 2(0.110500) + 0.121050]$
+            $$y(0.1) = 1 + \frac{1}{6}[0.100000 + 0.220000 + 0.221000 + 0.121050] = 1 + \frac{0.662050}{6} = \mathbf{1.110342}$$
+          </li>
+        </ul>
+
+        <h5>3. Step 2: Compute $y(0.2)$ ($x_1 = 0.1, y_1 = 1.110342, h = 0.1$):</h5>
+        <ul>
+          <li>$k_1 = (0.1)(0.1 + 1.110342) = (0.1)(1.210342) = \mathbf{0.121034}$</li>
+          <li>$k_2 = (0.1)\left(0.1 + 0.05, 1.110342 + \frac{0.121034}{2}\right) = (0.1)(0.15 + 1.170859) = \mathbf{0.132086}$</li>
+          <li>$k_3 = (0.1)\left(0.15, 1.110342 + \frac{0.132086}{2}\right) = (0.1)(0.15 + 1.176385) = \mathbf{0.132638}$</li>
+          <li>$k_4 = (0.1)(0.1 + 0.1, 1.110342 + 0.132638) = (0.1)(0.2 + 1.242980) = \mathbf{0.144298}$</li>
+          <li>$y(0.2) = 1.110342 + \frac{1}{6}[0.121034 + 2(0.132086) + 2(0.132638) + 0.144298]$
+            $$y(0.2) = 1.110342 + \frac{1}{6}[0.794780] = 1.110342 + 0.132463 = \mathbf{1.242805}$$
+          </li>
+        </ul>
+
+        <h5>4. Accuracy Comparison with Exact Analytical Solution:</h5>
+        <p>The differential equation $\frac{dy}{dx} - y = x$ has integrating factor $I.F. = e^{-x}$. Exact solution is $y(x) = 2e^x - x - 1$.</p>
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>$x$</th>
+                <th>RK-4 Approximation</th>
+                <th>Exact Value $y(x) = 2e^x - x - 1$</th>
+                <th>Error</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>$x = 0.1$</td>
+                <td>$\mathbf{1.110342}$</td>
+                <td>$2e^{0.1} - 0.1 - 1 = \mathbf{1.110342}$</td>
+                <td>$&lt; 0.000001$ (Exact to 6 decimal places!)</td>
+              </tr>
+              <tr>
+                <td>$x = 0.2$</td>
+                <td>$\mathbf{1.242805}$</td>
+                <td>$2e^{0.2} - 0.2 - 1 = \mathbf{1.242806}$</td>
+                <td>$0.000001$</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

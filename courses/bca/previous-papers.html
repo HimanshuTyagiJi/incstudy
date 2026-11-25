@@ -12,34 +12,7 @@ math: true
 <!-- Navigation & Actions Bar -->
 <div class="exam-actions-bar" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 20px;">
   <a href="{{ '/ccsu/bca/semester-1/' | relative_url }}" class="text-link" style="font-size: 13.5px; font-weight: 700; color: var(--primary); text-decoration: none;">← Back to Semester 1 Hub</a>
-  <button class="print-btn" onclick="triggerMathPrint()" style="display: inline-flex; align-items: center; gap: 8px; padding: 9px 16px; border-radius: 10px; background: var(--primary); color: #fff; font-size: 13px; font-weight: 700; cursor: pointer; border: 0;">
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
-    Save as PDF / Print All Papers
-  </button>
 </div>
-
-<script>
-function triggerMathPrint() {
-  if (typeof renderMathInElement === 'function' && document.body) {
-    renderMathInElement(document.body, {
-      delimiters: [
-        {left: '$$', right: '$$', display: true},
-        {left: '$', right: '$', display: false},
-        {left: '\(', right: '\)', display: false},
-        {left: '\[', right: '\]', display: true}
-      ],
-      throwOnError: false
-    });
-  }
-  if (document.fonts && document.fonts.ready) {
-    document.fonts.ready.then(function() {
-      window.print();
-    });
-  } else {
-    window.print();
-  }
-}
-</script>
 
 <div class="intro-copy" style="max-width: 850px; margin-bottom: 25px;">
   <p style="font-size: 15px; line-height: 1.7; color: var(--muted);">

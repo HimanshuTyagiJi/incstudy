@@ -16,34 +16,7 @@ math: true
 <!-- Navigation & Actions Bar -->
 <div class="exam-actions-bar">
   <a href="{{ '/ccsu/bca/semester-3/' | relative_url }}" class="text-link">&larr; Back to Semester 3 Hub</a>
-  <button class="print-btn" onclick="triggerMathPrint()">
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
-    Save as PDF / Print Solved Notebook
-  </button>
 </div>
-
-<script>
-function triggerMathPrint() {
-  if (typeof renderMathInElement === 'function' && document.body) {
-    renderMathInElement(document.body, {
-      delimiters: [
-        {left: '$$', right: '$$', display: true},
-        {left: '$', right: '$', display: false},
-        {left: '\\(', right: '\\)', display: false},
-        {left: '\\[', right: '\\]', display: true}
-      ],
-      throwOnError: false
-    });
-  }
-  if (document.fonts && document.fonts.ready) {
-    document.fonts.ready.then(function() {
-      window.print();
-    });
-  } else {
-    window.print();
-  }
-}
-</script>
 
 <!-- Header Strip -->
 <div class="exam-header-strip">

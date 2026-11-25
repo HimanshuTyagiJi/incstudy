@@ -1,0 +1,2005 @@
+---
+layout: exam
+title: "CCSU BCA 5th Sem Java Programming (BCA-502) Most Important Questions & Solved Exam Notebook"
+seo_title: "CCSU BCA 5th Sem Java Programming (BCA-502) Solved Exam Notebook"
+breadcrumb_title: "Java Programming (BCA-502)"
+eyebrow: "⚡ CCSU Meerut · BCA 5th Semester · Exam Preparation"
+title_subject: "Java Programming & Web Design"
+title_code: "BCA-502"
+title_highlight: "Most Important Questions & Solved Exam Notebook"
+keywords: "ccsu bca 5th sem java programming, bca 502 important questions, bca java notes, bca 502 solved paper, jvm architecture notes, java multithreading solved questions, bca 502 question paper, bca study material, bca study"
+description: "Master solved question bank of recurring CCSU examination questions (2014–2023) for Java Programming & Dynamic Webpage Design (BCA-502) with JVM architecture, multithreading, custom exceptions, Swing GUI calculator, and vector SVG diagrams."
+permalink: /ccsu/bca/semester-5/java-programming-important-questions/
+course_name: "CCSU BCA Semester 5 · Java Programming & Dynamic Webpage Design (BCA-502)"
+math: true
+---
+
+<!-- Navigation & Actions Bar -->
+<div class="exam-actions-bar">
+  <a href="{{ '/ccsu/bca/semester-5/' | relative_url }}" class="text-link">&larr; Back to Semester 5 Hub</a>
+</div>
+
+<!-- Header Strip -->
+<div class="exam-header-strip">
+  <span class="strip-pill">📚 Subject Code: BCA-502</span>
+  <span class="strip-pill">🏛️ CCSU Meerut University Pattern</span>
+  <span class="strip-pill">📄 3M, 7.5M &amp; 15M Exam Blueprint</span>
+  <span class="strip-pill">⭐ 2014–2023 Recurring University Exam Archive</span>
+</div>
+
+<!-- Quick Jump Nav -->
+<div class="exam-jump-nav">
+  <span class="exam-jump-label">⚡ Quick Jump:</span>
+  <a href="#section-a" class="jump-pill jump-pill-emerald">Section A (3 Marks · 15 Questions)</a>
+  <a href="#section-b" class="jump-pill jump-pill-cyan">Section B (7.5 Marks · 8 Questions)</a>
+  <a href="#section-c" class="jump-pill jump-pill-purple">⭐ Section C (15 Marks · 7 Solved Master Problems &amp; SVG Diagrams)</a>
+</div>
+
+<div class="notice-box" style="margin-bottom: 28px;">
+  <strong>Exam Scoring Architecture for BCA-502 (Java Programming &amp; Dynamic Webpage Design):</strong>
+  The university theory examination carries <strong>75 Marks</strong> with a 3-hour duration, structured into 
+  <strong>Section A (5 questions &times; 3M = 15M compulsory)</strong>, 
+  <strong>Section B (attempt 2 of 3 questions &times; 7.5M = 15M)</strong>, and 
+  <strong>Section C (attempt 3 of 5 questions &times; 15M = 45M)</strong>.
+  In this master solved notebook, every recurring question from 2014 to 2023 is solved with working compilable Java code, architecture breakdowns (JVM internal memory, thread lifecycle, exception hierarchy, event delegation), and custom vector SVG diagrams.
+</div>
+
+
+
+<!-- =========================================================================
+     SECTION A : 3 MARKS VERY SHORT ANSWER QUESTIONS (COMPULSORY)
+     ========================================================================= -->
+<div class="exam-section-card" id="section-a">
+  <div class="exam-section-header exam-section-header-emerald">
+    <div class="exam-section-header-inner">
+      <span class="exam-section-badge badge-emerald">SECTION A &bull; 3 MARKS EACH</span>
+      <h3 class="exam-section-title">Very Short Answer Questions &amp; Core Java Fundamentals</h3>
+      <p class="exam-section-rule">CCSU Examination Blueprint: 5 Questions Compulsory &bull; Total 15 Marks (75 Words Limit)</p>
+    </div>
+  </div>
+
+  <div class="exam-section-body">
+
+    <!-- A1: Platform Independence -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q1.</span> Why is Java called a "Platform Independent" language? Explain the WORA philosophy.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2015, 2017, 2019, 2021, 2023</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>Java is platform independent because its source code (<code>.java</code>) is not compiled directly into machine-specific native binary. Instead, the <strong>Java Compiler (<code>javac</code>)</strong> converts source code into an intermediate, architecture-neutral format called <strong>Bytecode (<code>.class</code> file)</strong>.</p>
+        <p>This bytecode cannot be run directly by the host operating system's CPU. Instead, any machine with a platform-specific <strong>Java Virtual Machine (JVM)</strong> can execute this bytecode. Hence, the philosophy: <em>"Write Once, Run Anywhere" (WORA)</em>. While the bytecode is platform-independent, the JVM itself is platform-dependent (different JVM binaries exist for Windows, Linux, and macOS).</p>
+      </div>
+    </div>
+
+    <!-- A2: JDK vs JRE vs JVM -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q2.</span> Differentiate between JDK, JRE, and JVM with their primary roles.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2016, 2018, 2020, 2022</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Component</th>
+                <th>Full Name</th>
+                <th>Definition &amp; Inclusions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>JVM</strong></td>
+                <td>Java Virtual Machine</td>
+                <td>Abstract computing machine that loads, verifies, and executes bytecode. Provides runtime environment and memory management (Garbage Collector).</td>
+              </tr>
+              <tr>
+                <td><strong>JRE</strong></td>
+                <td>Java Runtime Environment</td>
+                <td>Software package required to <em>run</em> already compiled Java programs. Contains <strong>JVM + Core Class Libraries (rt.jar)</strong>. Contains no compilers or debuggers.</td>
+              </tr>
+              <tr>
+                <td><strong>JDK</strong></td>
+                <td>Java Development Kit</td>
+                <td>Full-featured software development environment required to <em>develop and compile</em> Java applications. Contains <strong>JRE + Development Tools (<code>javac</code>, <code>java</code>, <code>javadoc</code>, <code>jdb</code>)</strong>.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="callout-box">
+          <strong>Mathematical Relationship:</strong> <code>JDK = JRE + Development Tools</code> &bull; <code>JRE = JVM + Class Libraries</code>.
+        </div>
+      </div>
+    </div>
+
+    <!-- A3: main method syntax -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q3.</span> Explain the significance of each keyword in: <code>public static void main(String[] args)</code>.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2014, 2017, 2019, 2022</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <ul>
+          <li><strong><code>public</code>:</strong> An access modifier making the main method globally accessible from anywhere, allowing the external JVM runtime to invoke it from outside its class/package.</li>
+          <li><strong><code>static</code>:</strong> Allows the JVM to invoke the method directly using the class name (<code>ClassName.main()</code>) without needing to instantiate an object of that class first.</li>
+          <li><strong><code>void</code>:</strong> Return type indicating the method does not return any exit status value to the caller upon completion.</li>
+          <li><strong><code>main</code>:</strong> The fixed identifier name searched by the JVM as the mandatory starting entry point of any standalone Java application.</li>
+          <li><strong><code>String[] args</code>:</strong> An array of <code>String</code> objects representing command-line arguments passed into the program during terminal execution (e.g. <code>java App file1 20</code>).</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- A4: Why no pointers in Java -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q4.</span> Why does Java not support explicit pointer arithmetic like C/C++?</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2015, 2018, 2021</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>Java deliberately omitted direct pointer manipulation for three vital engineering reasons:</p>
+        <ol>
+          <li><strong>Security:</strong> Direct pointer manipulation allows rogue code to inspect and corrupt arbitrary physical memory addresses, bypassing operating system firewalls and JVM sandboxing.</li>
+          <li><strong>Memory Safety &amp; Robustness:</strong> In C/C++, uninitialized pointers or dangling pointers cause catastrophic segmentation faults, buffer overflows, and memory leaks. Java replaces pointers with managed <strong>references</strong>.</li>
+          <li><strong>Automatic Garbage Collection:</strong> For Java's automatic Garbage Collector (GC) to safely relocate objects in heap memory during memory compaction, objects cannot be bound to fixed physical memory addresses through raw pointers.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- A5: Constructor Overloading -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q5.</span> What is Constructor Overloading in Java? Provide a concise code example.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2016, 2018, 2022</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p><strong>Constructor Overloading</strong> is a technique having multiple constructors within the same class, each having the same name (the class name) but differing in the <strong>number, type, or sequence of parameters</strong>. The compiler determines which constructor to invoke based on the arguments supplied during object instantiation.</p>
+        <pre><code class="language-java">class Box {
+    double width, height, depth;
+
+    // Default Constructor
+    Box() { width = height = depth = 10; }
+
+    // Parameterized Constructor (Cube)
+    Box(double len) { width = height = depth = len; }
+
+    // Parameterized Constructor (Cuboid)
+    Box(double w, double h, double d) {
+        width = w; height = h; depth = d;
+    }
+}</code></pre>
+      </div>
+    </div>
+
+    <!-- A6: this vs super -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q6.</span> Differentiate between <code>this</code> and <code>super</code> keywords in Java.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2015, 2017, 2020, 2023</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th><code>this</code> Keyword</th>
+                <th><code>super</code> Keyword</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Reference Target</strong></td>
+                <td>Refers to the <strong>current class</strong> object instance.</td>
+                <td>Refers to the <strong>immediate superclass</strong> (parent) object instance.</td>
+              </tr>
+              <tr>
+                <td><strong>Variable Access</strong></td>
+                <td>Resolves shadowing between instance variables and local parameters (e.g. <code>this.name = name;</code>).</td>
+                <td>Accesses hidden parent class fields when shadowed by child class fields (e.g. <code>super.salary;</code>).</td>
+              </tr>
+              <tr>
+                <td><strong>Constructor Call</strong></td>
+                <td><code>this(...)</code> invokes an overloaded constructor of the <em>same</em> class (constructor chaining).</td>
+                <td><code>super(...)</code> invokes the constructor of the <em>parent</em> class. Must be the first statement!</td>
+              </tr>
+              <tr>
+                <td><strong>Method Call</strong></td>
+                <td>Invokes current class instance methods.</td>
+                <td>Invokes overridden parent class methods (e.g. <code>super.display();</code>).</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- A7: Diamond Problem & Multiple Inheritance -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q7.</span> Why does Java not support Multiple Inheritance through classes? How does it resolve the issue?</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2016, 2018, 2019, 2021, 2023</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>Java forbids multiple inheritance through classes to prevent the notorious <strong>Diamond Problem (Ambiguity Error)</strong>. If class <code>C</code> extends both class <code>A</code> and class <code>B</code>, and both <code>A</code> and <code>B</code> define a method <code>display()</code> with different implementations, class <code>C</code> cannot resolve which version to execute, resulting in compile-time ambiguity.</p>
+        <p><strong>Java's Resolution:</strong> Java achieves multiple inheritance exclusively through <strong>Interfaces</strong>. Since interface methods are abstract contracts (they contain no instance variable state), a class implementing multiple interfaces provides its own single, concrete implementation, completely eradicating ambiguity.</p>
+      </div>
+    </div>
+
+    <!-- A8: Overloading vs Overriding -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q8.</span> Contrast Method Overloading and Method Overriding.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2014, 2016, 2018, 2020, 2022</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Criteria</th>
+                <th>Method Overloading (Compile-Time)</th>
+                <th>Method Overriding (Run-Time)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Scope</strong></td>
+                <td>Occurs within the <strong>same class</strong>.</td>
+                <td>Occurs across <strong>parent and child classes</strong> (Inheritance required).</td>
+              </tr>
+              <tr>
+                <td><strong>Method Signature</strong></td>
+                <td>Method name must be identical, but parameter list (count, type) <strong>must differ</strong>.</td>
+                <td>Method name, argument list, and return type <strong>must be strictly identical</strong>.</td>
+              </tr>
+              <tr>
+                <td><strong>Binding Time</strong></td>
+                <td>Static / Early binding resolved by compiler at compile-time.</td>
+                <td>Dynamic / Late binding resolved by JVM at runtime based on object instance.</td>
+              </tr>
+              <tr>
+                <td><strong>Private/Static/Final</strong></td>
+                <td>Can overload <code>private</code>, <code>static</code>, and <code>final</code> methods.</td>
+                <td>Cannot override <code>private</code>, <code>static</code>, or <code>final</code> methods.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- A9: final vs finally vs finalize -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q9.</span> Differentiate between <code>final</code>, <code>finally</code>, and <code>finalize()</code> in Java.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2015, 2017, 2019, 2021, 2022</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <ul>
+          <li><strong><code>final</code> (Keyword):</strong> Non-access modifier used to enforce immutability:
+            <ul>
+              <li>Final variable &rarr; Constant value that cannot be reassigned.</li>
+              <li>Final method &rarr; Method that cannot be overridden by subclasses.</li>
+              <li>Final class &rarr; Class that cannot be extended (subclassed, e.g. <code>java.lang.String</code>).</li>
+            </ul>
+          </li>
+          <li><strong><code>finally</code> (Block):</strong> Exception handling block placed after <code>try-catch</code> that <strong>always executes</strong> regardless of whether an exception is thrown or caught (ideal for closing resources, streams, and database connections).</li>
+          <li><strong><code>finalize()</code> (Method):</strong> Protected method defined in <code>java.lang.Object</code> invoked by the Garbage Collector just before an unreachable object is physically reclaimed from heap memory for resource cleanup.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- A10: throw vs throws -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q10.</span> Contrast <code>throw</code> and <code>throws</code> keywords in Java.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2016, 2018, 2020, 2023</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th><code>throw</code> Keyword</th>
+                <th><code>throws</code> Keyword</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Purpose</strong></td>
+                <td>Used to <strong>explicitly trigger/throw</strong> an exception object instance.</td>
+                <td>Used in method signatures to <strong>declare</strong> that a method may cause an exception.</td>
+              </tr>
+              <tr>
+                <td><strong>Location</strong></td>
+                <td>Used inside method bodies: <code>throw new ArithmeticException("Divide by zero");</code></td>
+                <td>Appended to method declarations: <code>void readFile() throws IOException</code></td>
+              </tr>
+              <tr>
+                <td><strong>Syntax</strong></td>
+                <td>Followed by an <strong>exception instance</strong> (object). Can throw only one exception at a time.</td>
+                <td>Followed by <strong>exception class names</strong> (comma-separated list for multiple checked exceptions).</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- A11: Checked vs Unchecked Exceptions -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q11.</span> Differentiate between Checked and Unchecked Exceptions in Java.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2017, 2019, 2021</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>Checked Exceptions</th>
+                <th>Unchecked Exceptions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Detection Time</strong></td>
+                <td>Checked by compiler at <strong>compile-time</strong>. Program will fail to compile if not caught or declared with <code>throws</code>.</td>
+                <td>Occur at <strong>runtime</strong>. Compiler does not force explicit handling.</td>
+              </tr>
+              <tr>
+                <td><strong>Inheritance</strong></td>
+                <td>Direct subclasses of <code>java.lang.Exception</code> (excluding <code>RuntimeException</code>).</td>
+                <td>Subclasses of <code>java.lang.RuntimeException</code> and <code>java.lang.Error</code>.</td>
+              </tr>
+              <tr>
+                <td><strong>Examples</strong></td>
+                <td><code>IOException</code>, <code>SQLException</code>, <code>ClassNotFoundException</code>, <code>FileNotFoundException</code>.</td>
+                <td><code>NullPointerException</code>, <code>ArithmeticException</code>, <code>ArrayIndexOutOfBoundsException</code>.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- A12: Thread vs Runnable -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q12.</span> What is the advantage of implementing <code>Runnable</code> interface over extending <code>Thread</code> class?</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2015, 2018, 2020, 2022</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>Implementing the <code>Runnable</code> interface is standard industry best practice for two fundamental reasons:</p>
+        <ol>
+          <li><strong>Preserves Single Inheritance:</strong> Java does not support multiple class inheritance. If a class extends <code>Thread</code>, it cannot inherit from any other base business class (e.g. <code>Employee</code>, <code>Applet</code>). Implementing <code>Runnable</code> leaves the class free to extend any other class.</li>
+          <li><strong>Separation of Task from Runner:</strong> <code>Runnable</code> represents the functional task/logic to execute, while <code>Thread</code> is the worker executing that task. This cleanly decouples business code and allows thread pooling via the <code>ExecutorService</code> framework.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- A13: Byte Streams vs Character Streams -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q13.</span> Differentiate between Byte Streams and Character Streams in Java I/O.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2016, 2019, 2021</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>Byte Stream Classes</th>
+                <th>Character Stream Classes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Data Unit</strong></td>
+                <td>Processes data <strong>byte by byte (8-bit bytes)</strong>.</td>
+                <td>Processes data <strong>character by character (16-bit Unicode)</strong>.</td>
+              </tr>
+              <tr>
+                <td><strong>Superclasses</strong></td>
+                <td><code>InputStream</code> and <code>OutputStream</code> (abstract roots).</td>
+                <td><code>Reader</code> and <code>Writer</code> (abstract roots).</td>
+              </tr>
+              <tr>
+                <td><strong>Best Suited For</strong></td>
+                <td>Binary files: images, audio, video, PDF, compiled <code>.class</code> files (e.g. <code>FileInputStream</code>, <code>FileOutputStream</code>).</td>
+                <td>Human-readable text files with diverse language character sets (e.g. <code>FileReader</code>, <code>FileWriter</code>).</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- A14: Applet Life Cycle -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q14.</span> State the five life-cycle callback methods of a Java Applet in sequence.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2014, 2017, 2019, 2022</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <ol>
+          <li><strong><code>init()</code>:</strong> Invoked once when the applet is first loaded into memory. Used for one-time component initialization and parameter reading.</li>
+          <li><strong><code>start()</code>:</strong> Invoked immediately after <code>init()</code> and each time the user navigates back to the browser page containing the applet. Resumes threads/animations.</li>
+          <li><strong><code>paint(Graphics g)</code>:</strong> Invoked whenever the applet's display surface must be rendered or repainted.</li>
+          <li><strong><code>stop()</code>:</strong> Invoked whenever the browser page is minimized or navigated away from. Suspends running threads and animations.</li>
+          <li><strong><code>destroy()</code>:</strong> Invoked once just before the applet is completely unloaded from browser memory. Frees allocated native resources.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- A15: Event Delegation Model -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q15.</span> What is the Event Delegation Model in Java GUI Programming? Name its three core components.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2015, 2018, 2020, 2023</span>
+          <span class="exam-tag-marks">3 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>The <strong>Event Delegation Model</strong> is a standard event-processing architecture introduced in Java 1.1 wherein a user interface component (Event Source) does not handle user actions directly. Instead, it delegates event processing to registered handler objects called <strong>Event Listeners</strong>.</p>
+        <ul>
+          <li><strong>1. Event Source:</strong> The GUI component that generates the event upon user interaction (e.g. <code>JButton</code>, <code>JTextField</code>, <code>JCheckBox</code>).</li>
+          <li><strong>2. Event Object:</strong> Encapsulates state information about the event that occurred (e.g. <code>ActionEvent</code>, <code>MouseEvent</code>, <code>KeyEvent</code>).</li>
+          <li><strong>3. Event Listener:</strong> An interface containing callback event-handler methods implemented by the listener class (e.g. <code>ActionListener</code> with <code>actionPerformed()</code>).</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<!-- =========================================================================
+     SECTION B : 7.5 MARKS SHORT ANSWER QUESTIONS (ATTEMPT 2 OF 3)
+     ========================================================================= -->
+<div class="exam-section-card" id="section-b">
+  <div class="exam-section-header exam-section-header-cyan">
+    <div class="exam-section-header-inner">
+      <span class="exam-section-badge badge-cyan">SECTION B &bull; 7.5 MARKS EACH</span>
+      <h3 class="exam-section-title">Analytical Questions, Architectures &amp; Core Implementations</h3>
+      <p class="exam-section-rule">CCSU Examination Blueprint: Attempt Any 2 of 3 Questions &bull; Total 15 Marks (~200 Words + Code/Diagrams)</p>
+    </div>
+  </div>
+
+  <div class="exam-section-body">
+
+    <!-- B16: JVM Architecture -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q16.</span> Explain the internal Architecture of the Java Virtual Machine (JVM) with a neat block diagram detailing its memory areas and execution engine.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2016, 2018, 2020, 2022</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>The <strong>Java Virtual Machine (JVM)</strong> is an abstract computing machine that provides a runtime environment in which Java bytecode can be executed. Its internal architecture consists of three primary subsystems:</p>
+
+        <!-- JVM Architecture SVG Diagram -->
+        <div class="svg-tree-container" style="background: #0f172a; padding: 20px; border-radius: 12px; margin: 18px 0; border: 1px solid #334155; overflow-x: auto; -webkit-overflow-scrolling: touch;">
+          <div style="font-weight: 700; color: #38bdf8; margin-bottom: 12px; font-size: 14px; text-align: center;">JVM INTERNAL ARCHITECTURE BLUEPRINT</div>
+          <svg viewBox="0 0 760 380" width="100%" height="380" style="min-width: 680px;" xmlns="http://www.w3.org/2000/svg">
+            <!-- 1. ClassLoader Box -->
+            <rect x="20" y="20" width="220" height="340" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+            <rect x="35" y="35" width="190" height="32" rx="6" fill="#0284c7"/>
+            <text x="130" y="56" fill="#ffffff" font-size="13" font-weight="700" text-anchor="middle">1. ClassLoader Subsystem</text>
+            <rect x="35" y="80" width="190" height="75" rx="6" fill="#0f172a" stroke="#475569"/>
+            <text x="130" y="102" fill="#38bdf8" font-size="12" font-weight="700" text-anchor="middle">Loading Phase</text>
+            <text x="130" y="122" fill="#94a3b8" font-size="11" text-anchor="middle">Bootstrap &bull; Extension</text>
+            <text x="130" y="140" fill="#94a3b8" font-size="11" text-anchor="middle">Application / System</text>
+            <rect x="35" y="170" width="190" height="75" rx="6" fill="#0f172a" stroke="#475569"/>
+            <text x="130" y="192" fill="#38bdf8" font-size="12" font-weight="700" text-anchor="middle">Linking Phase</text>
+            <text x="130" y="212" fill="#94a3b8" font-size="11" text-anchor="middle">Verify &bull; Prepare &bull; Resolve</text>
+            <rect x="35" y="260" width="190" height="75" rx="6" fill="#0f172a" stroke="#475569"/>
+            <text x="130" y="285" fill="#38bdf8" font-size="12" font-weight="700" text-anchor="middle">Initialization Phase</text>
+            <text x="130" y="305" fill="#94a3b8" font-size="11" text-anchor="middle">Static blocks &amp; variables</text>
+
+            <!-- Arrows to Memory -->
+            <path d="M240 190 L 270 190" stroke="#f59e0b" stroke-width="2" marker-end="url(#arrow)"/>
+
+            <!-- 2. Memory Area Box -->
+            <rect x="270" y="20" width="230" height="340" rx="10" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+            <rect x="285" y="35" width="200" height="32" rx="6" fill="#059669"/>
+            <text x="385" y="56" fill="#ffffff" font-size="13" font-weight="700" text-anchor="middle">2. JVM Memory Areas</text>
+            <rect x="285" y="80" width="200" height="45" rx="6" fill="#0f172a" stroke="#334155"/>
+            <text x="385" y="102" fill="#34d399" font-size="12" font-weight="700" text-anchor="middle">Method Area (Class Metadata)</text>
+            <rect x="285" y="135" width="200" height="45" rx="6" fill="#0f172a" stroke="#334155"/>
+            <text x="385" y="157" fill="#34d399" font-size="12" font-weight="700" text-anchor="middle">Heap Area (All Objects &amp; GC)</text>
+            <rect x="285" y="190" width="200" height="45" rx="6" fill="#0f172a" stroke="#334155"/>
+            <text x="385" y="212" fill="#34d399" font-size="12" font-weight="700" text-anchor="middle">Java Stack Area (Frames / Local)</text>
+            <rect x="285" y="245" width="200" height="45" rx="6" fill="#0f172a" stroke="#334155"/>
+            <text x="385" y="267" fill="#34d399" font-size="12" font-weight="700" text-anchor="middle">Program Counter (PC) Registers</text>
+            <rect x="285" y="300" width="200" height="45" rx="6" fill="#0f172a" stroke="#334155"/>
+            <text x="385" y="322" fill="#34d399" font-size="12" font-weight="700" text-anchor="middle">Native Method Stack</text>
+
+            <!-- Arrow to Execution Engine -->
+            <path d="M500 190 L 530 190" stroke="#f59e0b" stroke-width="2"/>
+
+            <!-- 3. Execution Engine Box -->
+            <rect x="530" y="20" width="210" height="340" rx="10" fill="#1e293b" stroke="#a855f7" stroke-width="2"/>
+            <rect x="545" y="35" width="180" height="32" rx="6" fill="#7e22ce"/>
+            <text x="635" y="56" fill="#ffffff" font-size="13" font-weight="700" text-anchor="middle">3. Execution Engine</text>
+            <rect x="545" y="85" width="180" height="55" rx="6" fill="#0f172a" stroke="#334155"/>
+            <text x="635" y="110" fill="#c084fc" font-size="12" font-weight="700" text-anchor="middle">Bytecode Interpreter</text>
+            <text x="635" y="128" fill="#94a3b8" font-size="10" text-anchor="middle">Line-by-line translator</text>
+            <rect x="545" y="150" width="180" height="55" rx="6" fill="#0f172a" stroke="#334155"/>
+            <text x="635" y="175" fill="#c084fc" font-size="12" font-weight="700" text-anchor="middle">JIT (Just-In-Time) Compiler</text>
+            <text x="635" y="193" fill="#94a3b8" font-size="10" text-anchor="middle">Compiles hot code to native</text>
+            <rect x="545" y="215" width="180" height="55" rx="6" fill="#0f172a" stroke="#334155"/>
+            <text x="635" y="240" fill="#c084fc" font-size="12" font-weight="700" text-anchor="middle">Garbage Collector (GC)</text>
+            <text x="635" y="258" fill="#94a3b8" font-size="10" text-anchor="middle">Reclaims unreachable heap</text>
+            <rect x="545" y="280" width="180" height="65" rx="6" fill="#0f172a" stroke="#334155"/>
+            <text x="635" y="305" fill="#c084fc" font-size="12" font-weight="700" text-anchor="middle">JNI &amp; Native Libs</text>
+            <text x="635" y="325" fill="#94a3b8" font-size="10" text-anchor="middle">C/C++ native method bridges</text>
+          </svg>
+        </div>
+
+        <h5>Detailed Memory Component Breakdown:</h5>
+        <ul>
+          <li><strong>Method Area:</strong> Shared memory storing per-class structures: bytecode instructions, static variables, runtime constant pool, and constructor code.</li>
+          <li><strong>Heap Area:</strong> Shared runtime memory where all object instances and arrays are allocated. Directly governed by the Garbage Collector.</li>
+          <li><strong>JVM Stack:</strong> Per-thread private memory holding stack frames created on each method invocation (stores local variables, operand stack, and partial results).</li>
+          <li><strong>PC Register:</strong> Per-thread register storing the memory address of the JVM bytecode instruction currently being executed.</li>
+          <li><strong>Native Method Stack:</strong> Holds native method invocation frames written in C/C++.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- B17: Multiple Inheritance with Interfaces -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q17.</span> What is an Interface in Java? Demonstrate with a complete program how an interface achieves multiple inheritance.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2015, 2017, 2019, 2021, 2023</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>An <strong>Interface</strong> is a pure abstract blueprint of a class containing constant fields (implicitly <code>public static final</code>) and abstract method declarations (implicitly <code>public abstract</code>). A class uses the <code>implements</code> keyword to inherit interface specifications.</p>
+        <p><strong>Achieving Multiple Inheritance:</strong> A class in Java can implement multiple interfaces simultaneously, separated by commas (<code>implements InterfaceA, InterfaceB</code>), thereby bypassing the single class inheritance restriction.</p>
+
+        <pre><code class="language-java">// Interface 1: Academic Examination
+interface Exam {
+    void showExamMarks();
+}
+
+// Interface 2: Extracurricular Sports
+interface Sports {
+    void showSportsScore();
+}
+
+// Base Student Class
+class Student {
+    int rollNo = 101;
+    String name = "Aman Kumar";
+}
+
+// Child class inheriting Student and implementing two interfaces
+class Result extends Student implements Exam, Sports {
+    int academicMarks = 88;
+    int sportsScore = 94;
+
+    @Override
+    public void showExamMarks() {
+        System.out.println("Academic Marks: " + academicMarks);
+    }
+
+    @Override
+    public void showSportsScore() {
+        System.out.println("Sports Score: " + sportsScore);
+    }
+
+    public void displayFullReport() {
+        System.out.println("Roll No: " + rollNo + " | Name: " + name);
+        showExamMarks();
+        showSportsScore();
+        int total = academicMarks + sportsScore;
+        System.out.println("Composite Total Score: " + total);
+    }
+}
+
+public class MultipleInheritanceDemo {
+    public static void main(String[] args) {
+        Result studentReport = new Result();
+        studentReport.displayFullReport();
+    }
+}</code></pre>
+        <div class="callout-box">
+          <strong>Program Output:</strong><br>
+          <code>Roll No: 101 | Name: Aman Kumar</code><br>
+          <code>Academic Marks: 88</code><br>
+          <code>Sports Score: 94</code><br>
+          <code>Composite Total Score: 182</code>
+        </div>
+      </div>
+    </div>
+
+    <!-- B18: Thread Life Cycle -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q18.</span> Explain the complete Life Cycle of a Thread in Java with state transitions and thread control methods.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2014, 2017, 2019, 2021, 2023</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>A Java thread is a lightweight subprocess that transitions through distinct operational states governed by the JVM and OS Thread Scheduler:</p>
+
+        <!-- Thread Lifecycle SVG -->
+        <div class="svg-tree-container" style="background: #0f172a; padding: 20px; border-radius: 12px; margin: 18px 0; border: 1px solid #334155; overflow-x: auto; -webkit-overflow-scrolling: touch;">
+          <div style="font-weight: 700; color: #38bdf8; margin-bottom: 12px; font-size: 14px; text-align: center;">JAVA THREAD LIFE CYCLE STATE TRANSITION DIAGRAM</div>
+          <svg viewBox="0 0 740 260" width="100%" height="260" style="min-width: 650px;" xmlns="http://www.w3.org/2000/svg">
+            <!-- 1. NEW -->
+            <rect x="20" y="95" width="105" height="60" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+            <text x="72" y="130" fill="#38bdf8" font-size="14" font-weight="700" text-anchor="middle">1. NEW</text>
+
+            <!-- Arrow New -> Runnable -->
+            <path d="M125 125 L 180 125" stroke="#f59e0b" stroke-width="2"/>
+            <text x="152" y="115" fill="#f59e0b" font-size="11" text-anchor="middle">start()</text>
+
+            <!-- 2. RUNNABLE -->
+            <rect x="180" y="95" width="130" height="60" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+            <text x="245" y="130" fill="#10b981" font-size="14" font-weight="700" text-anchor="middle">2. RUNNABLE</text>
+
+            <!-- Arrows Runnable <-> Running -->
+            <path d="M310 110 L 375 110" stroke="#f59e0b" stroke-width="2"/>
+            <text x="342" y="100" fill="#94a3b8" font-size="10" text-anchor="middle">Scheduler</text>
+            <path d="M375 140 L 310 140" stroke="#f59e0b" stroke-width="2"/>
+            <text x="342" y="155" fill="#94a3b8" font-size="10" text-anchor="middle">yield()</text>
+
+            <!-- 3. RUNNING -->
+            <rect x="375" y="95" width="125" height="60" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+            <text x="437" y="130" fill="#f59e0b" font-size="14" font-weight="700" text-anchor="middle">3. RUNNING</text>
+
+            <!-- Arrows Running <-> Blocked/Waiting -->
+            <path d="M437 95 L 437 55 L 290 55" stroke="#ec4899" stroke-width="2"/>
+            <text x="360" y="45" fill="#ec4899" font-size="11" text-anchor="middle">sleep() / wait() / I/O block</text>
+            <path d="M245 55 L 245 95" stroke="#ec4899" stroke-width="2"/>
+            <text x="210" y="75" fill="#ec4899" font-size="10" text-anchor="middle">notify()</text>
+
+            <!-- 4. BLOCKED / WAITING -->
+            <rect x="230" y="10" width="150" height="40" rx="6" fill="#312e81" stroke="#ec4899" stroke-width="1.5"/>
+            <text x="305" y="35" fill="#f472b6" font-size="12" font-weight="700" text-anchor="middle">4. WAITING / BLOCKED</text>
+
+            <!-- Arrow Running -> Terminated -->
+            <path d="M500 125 L 565 125" stroke="#f59e0b" stroke-width="2"/>
+            <text x="532" y="115" fill="#94a3b8" font-size="10" text-anchor="middle">run() exits</text>
+
+            <!-- 5. TERMINATED -->
+            <rect x="565" y="95" width="145" height="60" rx="8" fill="#1e293b" stroke="#ef4444" stroke-width="2"/>
+            <text x="637" y="130" fill="#ef4444" font-size="14" font-weight="700" text-anchor="middle">5. TERMINATED</text>
+          </svg>
+        </div>
+
+        <ol>
+          <li><strong>New State:</strong> Thread object is created (<code>Thread t = new Thread();</code>) but <code>t.start()</code> has not yet been called.</li>
+          <li><strong>Runnable State:</strong> After <code>t.start()</code> is invoked. The thread is ready and waiting in the CPU ready queue for thread scheduler assignment.</li>
+          <li><strong>Running State:</strong> Thread scheduler allocates a CPU time slice; the thread executes its <code>run()</code> method.</li>
+          <li><strong>Blocked / Waiting / Timed Waiting:</strong> Suspended from execution when waiting for a lock, asleep (<code>Thread.sleep(ms)</code>), or awaiting notification (<code>wait()</code>). Once the lock or event arrives, it returns to <em>Runnable</em>.</li>
+          <li><strong>Terminated (Dead) State:</strong> The thread completes execution of its <code>run()</code> method or terminates abruptly due to an uncaught fatal exception.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- B19: Exception Handling with Multiple Catch & Finally -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q19.</span> Explain Exception Handling with <code>try</code>, multiple <code>catch</code> blocks, and <code>finally</code>. In what specific circumstances will a <code>finally</code> block NOT execute?</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2015, 2018, 2020, 2022</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>In Java, a single <code>try</code> block can be followed by multiple <code>catch</code> blocks to handle distinct exception types independently. <strong>Rule of Order:</strong> Catch blocks must be arranged from <strong>most specific subclass to most general superclass</strong> (e.g. <code>ArithmeticException</code> before <code>Exception</code>); otherwise, a compile-time "unreachable code" error occurs.</p>
+        
+        <pre><code class="language-java">public class MultiCatchDemo {
+    public static void main(String[] args) {
+        try {
+            int[] arr = new int[5];
+            arr[10] = 50 / 0; // Triggers ArithmeticException or ArrayIndexOutOfBoundsException
+        } catch (ArithmeticException e) {
+            System.out.println("Handler 1: Math division error -> " + e.getMessage());
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Handler 2: Array indexing out of bounds -> " + e.getMessage());
+        } catch (Exception e) {
+            System.out.println("Handler 3: Generic fallback error -> " + e.getMessage());
+        } finally {
+            System.out.println("Finally block: Critical cleanup executed successfully.");
+        }
+    }
+}</code></pre>
+
+        <h5>Circumstances when the <code>finally</code> block does NOT execute:</h5>
+        <ul>
+          <li><strong>1. Explicit JVM Shutdown:</strong> If <code>System.exit(0)</code> or <code>Runtime.getRuntime().halt(0)</code> is called inside the <code>try</code> or <code>catch</code> block.</li>
+          <li><strong>2. Fatal OS / Hardware Crash:</strong> Power failure, OS process kill (<code>kill -9</code>), or severe hardware malfunction.</li>
+          <li><strong>3. Fatal JVM Error:</strong> If an unrecoverable <code>OutOfMemoryError</code>, <code>VirtualMachineError</code>, or native segmentation fault crashes the host JVM.</li>
+          <li><strong>4. Infinite Loop / Deadlock:</strong> If an infinite loop or indefinite deadlock freezes execution inside the <code>try</code> block before reaching <code>finally</code>.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- B20: Abstract Class vs Interface -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q20.</span> Differentiate between an Abstract Class and an Interface in Java with an exhaustive comparison table.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2016, 2018, 2021, 2023</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>Abstract Class</th>
+                <th>Interface</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Keyword</strong></td>
+                <td>Declared using <code>abstract class</code>; extended via <code>extends</code>.</td>
+                <td>Declared using <code>interface</code>; implemented via <code>implements</code>.</td>
+              </tr>
+              <tr>
+                <td><strong>Multiple Inheritance</strong></td>
+                <td>Does NOT support multiple inheritance (a class can extend only one abstract class).</td>
+                <td>Fully supports multiple inheritance (a class can implement multiple interfaces).</td>
+              </tr>
+              <tr>
+                <td><strong>Method Types</strong></td>
+                <td>Can contain both abstract (unimplemented) and concrete (fully implemented) methods.</td>
+                <td>Traditionally abstract only. (Java 8+ allows <code>default</code> and <code>static</code> methods; Java 9+ allows <code>private</code> methods).</td>
+              </tr>
+              <tr>
+                <td><strong>Variables / Fields</strong></td>
+                <td>Can have instance variables, final, non-final, static, and non-static variables.</td>
+                <td>Fields are strictly and implicitly <code>public static final</code> (constants only).</td>
+              </tr>
+              <tr>
+                <td><strong>Constructors</strong></td>
+                <td>Has constructors invoked during subclass constructor chaining (via <code>super()</code>).</td>
+                <td>Cannot have constructors because interfaces cannot maintain instance state.</td>
+              </tr>
+              <tr>
+                <td><strong>Access Modifiers</strong></td>
+                <td>Can have <code>private</code>, <code>protected</code>, default, and <code>public</code> members.</td>
+                <td>Interface members are implicitly <code>public</code> by default.</td>
+              </tr>
+              <tr>
+                <td><strong>Design Goal</strong></td>
+                <td>Defines an <em>"is-a"</em> identity relationship with shared code base.</td>
+                <td>Defines a <em>"can-do"</em> contract / capability without tying to class hierarchy.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- B21: Packages and Access Protection -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q21.</span> What are Packages in Java? How do they avoid naming conflicts? Explain Java's four Access Protection specifiers with an access matrix.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2015, 2017, 2020, 2022</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>A <strong>Package</strong> is a container / namespace that groups related classes, interfaces, and subpackages together. It maps directly to physical directory structures on disk.</p>
+        <p><strong>Preventing Naming Conflicts:</strong> Two classes with the identical name <code>Date</code> can coexist peacefully in the same application if isolated in separate packages: <code>java.util.Date</code> (represents timestamps) vs <code>java.sql.Date</code> (represents SQL database dates).</p>
+
+        <h5>The Java Access Protection Matrix:</h5>
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Access Specifier</th>
+                <th>Same Class</th>
+                <th>Same Package Subclass</th>
+                <th>Same Package Non-subclass</th>
+                <th>Different Package Subclass</th>
+                <th>Different Package Non-subclass (World)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong><code>private</code></strong></td>
+                <td>✅ Yes</td>
+                <td>❌ No</td>
+                <td>❌ No</td>
+                <td>❌ No</td>
+                <td>❌ No</td>
+              </tr>
+              <tr>
+                <td><strong><em>Default</em> (package-private)</strong></td>
+                <td>✅ Yes</td>
+                <td>✅ Yes</td>
+                <td>✅ Yes</td>
+                <td>❌ No</td>
+                <td>❌ No</td>
+              </tr>
+              <tr>
+                <td><strong><code>protected</code></strong></td>
+                <td>✅ Yes</td>
+                <td>✅ Yes</td>
+                <td>✅ Yes</td>
+                <td>✅ Yes (via inheritance)</td>
+                <td>❌ No</td>
+              </tr>
+              <tr>
+                <td><strong><code>public</code></strong></td>
+                <td>✅ Yes</td>
+                <td>✅ Yes</td>
+                <td>✅ Yes</td>
+                <td>✅ Yes</td>
+                <td>✅ Yes</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- B22: AWT vs Swing & Layout Managers -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q22.</span> Differentiate between AWT and Swing components. Explain the role of the three primary Layout Managers: FlowLayout, BorderLayout, and GridLayout.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2016, 2018, 2020, 2022</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Criteria</th>
+                <th>AWT (Abstract Window Toolkit)</th>
+                <th>Swing (Java Foundation Classes)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Component Weight</strong></td>
+                <td><strong>Heavyweight:</strong> Dependent on native OS GUI peers; consumes host OS resources.</td>
+                <td><strong>Lightweight:</strong> Written 100% in pure Java; drawn independently without native OS peers.</td>
+              </tr>
+              <tr>
+                <td><strong>Look &amp; Feel</strong></td>
+                <td>Platform-dependent appearance (looks like Windows on Windows, Mac on Mac).</td>
+                <td>Pluggable Look &amp; Feel (Metal, Nimbus, Windows, Motif) uniform across platforms.</td>
+              </tr>
+              <tr>
+                <td><strong>Package &amp; Prefix</strong></td>
+                <td><code>java.awt.*</code> (e.g. <code>Button</code>, <code>TextField</code>).</td>
+                <td><code>javax.swing.*</code> prefixed with 'J' (e.g. <code>JButton</code>, <code>JTextField</code>).</td>
+              </tr>
+              <tr>
+                <td><strong>Advanced Features</strong></td>
+                <td>Lacks tables, trees, tabbed panes, and tooltips.</td>
+                <td>Includes rich widgets: <code>JTable</code>, <code>JTree</code>, <code>JTabbedPane</code>, <code>JProgressBar</code>.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h5>Primary Layout Managers:</h5>
+        <ul>
+          <li><strong><code>FlowLayout</code>:</strong> Arranges components sequentially in a directional row (left-to-right). When a line fills, components wrap naturally to the next line. (Default for <code>JPanel</code>).</li>
+          <li><strong><code>BorderLayout</code>:</strong> Divides the container into five distinct geographical regions: <code>NORTH</code>, <code>SOUTH</code>, <code>EAST</code>, <code>WEST</code>, and <code>CENTER</code>. Components in <code>CENTER</code> stretch to fill remaining space. (Default for <code>JFrame</code>).</li>
+          <li><strong><code>GridLayout</code>:</strong> Arranges components in an equidistant, rectangular grid of user-defined rows and columns ($R 	imes C$). Every cell is forced to identical dimensions regardless of component contents. (Ideal for calculators and numeric keypads).</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- B23: File Copy using Streams -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q23.</span> Write a complete, compilable Java program to copy the contents of a source text file into a destination file using Byte Streams with robust exception handling.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2015, 2017, 2019, 2021</span>
+          <span class="exam-tag-marks">7.5 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        <p>The program uses <code>FileInputStream</code> to read 8-bit raw bytes from the source file and <code>FileOutputStream</code> to write bytes to the target file. It uses Java 7+ <strong>try-with-resources</strong> to guarantee streams close automatically without memory leaks even if an I/O error occurs.</p>
+
+        <pre><code class="language-java">import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+public class FileCopyProgram {
+    public static void main(String[] args) {
+        String sourcePath = "source.txt";
+        String destPath = "destination.txt";
+
+        // Try-with-resources guarantees automatic stream closure
+        try (FileInputStream inStream = new FileInputStream(sourcePath);
+             FileOutputStream outStream = new FileOutputStream(destPath)) {
+
+            byte[] buffer = new byte[1024]; // 1 KB buffer for high I/O throughput
+            int bytesRead;
+            int totalBytes = 0;
+
+            // read() returns -1 when end-of-file (EOF) is reached
+            while ((bytesRead = inStream.read(buffer)) != -1) {
+                outStream.write(buffer, 0, bytesRead);
+                totalBytes += bytesRead;
+            }
+
+            System.out.println("File copied successfully!");
+            System.out.println("Total bytes transferred: " + totalBytes + " bytes.");
+
+        } catch (IOException e) {
+            System.err.println("I/O Error during file transfer: " + e.getMessage());
+        }
+    }
+}</code></pre>
+        <div class="callout-box">
+          <strong>Key Engineering Concepts:</strong>
+          <ul>
+            <li><code>inStream.read(buffer)</code> reads up to 1024 bytes into memory at once, reducing expensive disk read hardware interrupts by 1000x compared to single-byte reading.</li>
+            <li><code>outStream.write(buffer, 0, bytesRead)</code> ensures that only actual bytes read are written out, preventing trailing garbage bytes in the target file.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<!-- =========================================================================
+     SECTION C : 15 MARKS MASTER LONG ANSWER QUESTIONS (ATTEMPT 3 OF 5)
+     ========================================================================= -->
+<div class="exam-section-card" id="section-c">
+  <div class="exam-section-header exam-section-header-purple">
+    <div class="exam-section-header-inner">
+      <span class="exam-section-badge badge-purple">SECTION C &bull; 15 MARKS EACH</span>
+      <h3 class="exam-section-title">Master Long Answer Questions, Architectural Blueprints &amp; SVG Diagrams</h3>
+      <p class="exam-section-rule">CCSU Examination Blueprint: Attempt Any 3 of 5 Questions &bull; Total 45 Marks (~500+ Words + Working Code + Diagrams)</p>
+    </div>
+  </div>
+
+  <div class="exam-section-body">
+
+    <!-- C24: Dynamic Method Dispatch & Runtime Polymorphism -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q24.</span> Explain the mechanism of Dynamic Method Dispatch (Runtime Polymorphism) in Java. How does the JVM resolve method calls dynamically? Illustrate with a complete compilable Shape hierarchy program, memory layout, and dry-run output.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2014, 2016, 2018, 2020, 2022, 2023</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        
+        <h5>1. Concept of Dynamic Method Dispatch</h5>
+        <p><strong>Dynamic Method Dispatch</strong> is the fundamental mechanism by which a call to an overridden method is resolved at <strong>runtime (dynamically)</strong> rather than at compile-time. It is the cornerstone of runtime polymorphism in Java.</p>
+        <p>The core rule of Dynamic Method Dispatch:</p>
+        <blockquote>
+          <em>"A superclass reference variable can refer to any subclass object instance. When an overridden method is called through a superclass reference, Java determines which version of the method to execute based on the <strong>actual type of the object being referred to at runtime</strong>, not the type of the reference variable."</em>
+        </blockquote>
+
+        <!-- Dynamic Method Dispatch SVG Diagram -->
+        <div class="svg-tree-container" style="background: #0f172a; padding: 22px; border-radius: 12px; margin: 18px 0; border: 1px solid #334155; overflow-x: auto; -webkit-overflow-scrolling: touch;">
+          <div style="font-weight: 700; color: #38bdf8; margin-bottom: 14px; font-size: 15px; text-align: center;">DYNAMIC METHOD DISPATCH (STACK VS HEAP VTABLE DISPATCH)</div>
+          <svg viewBox="0 0 740 280" width="100%" height="280" style="min-width: 660px;" xmlns="http://www.w3.org/2000/svg">
+            <!-- Stack Section -->
+            <rect x="30" y="25" width="220" height="230" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+            <text x="140" y="55" fill="#38bdf8" font-size="14" font-weight="700" text-anchor="middle">JVM Stack (Thread 1)</text>
+            <rect x="45" y="75" width="190" height="45" rx="6" fill="#0f172a" stroke="#475569"/>
+            <text x="140" y="98" fill="#ffffff" font-size="12" text-anchor="middle">Shape ref; (Base Ref)</text>
+            <text x="140" y="112" fill="#94a3b8" font-size="10" text-anchor="middle">Address: 0x4A20</text>
+            
+            <rect x="45" y="135" width="190" height="45" rx="6" fill="#0f172a" stroke="#475569"/>
+            <text x="140" y="158" fill="#ffffff" font-size="12" text-anchor="middle">ref = new Circle(7.0);</text>
+            <text x="140" y="172" fill="#94a3b8" font-size="10" text-anchor="middle">Points to Circle in Heap</text>
+
+            <rect x="45" y="195" width="190" height="45" rx="6" fill="#0f172a" stroke="#475569"/>
+            <text x="140" y="218" fill="#ffffff" font-size="12" text-anchor="middle">ref = new Rectangle(4, 5);</text>
+            <text x="140" y="232" fill="#94a3b8" font-size="10" text-anchor="middle">Points to Rect in Heap</text>
+
+            <!-- Arrows to Heap -->
+            <path d="M250 157 L 340 100" stroke="#f59e0b" stroke-width="2.5"/>
+            <path d="M250 218 L 340 200" stroke="#a855f7" stroke-width="2.5"/>
+
+            <!-- Heap Section -->
+            <rect x="340" y="25" width="370" height="230" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+            <text x="525" y="55" fill="#10b981" font-size="14" font-weight="700" text-anchor="middle">JVM Heap Memory (Object Instances &amp; Vtables)</text>
+
+            <!-- Heap Object 1: Circle -->
+            <rect x="360" y="75" width="330" height="70" rx="6" fill="#0f172a" stroke="#f59e0b" stroke-width="1.5"/>
+            <text x="375" y="98" fill="#f59e0b" font-size="12" font-weight="700">Circle Object Instance [0x4A20]</text>
+            <text x="375" y="118" fill="#94a3b8" font-size="11">Fields: radius = 7.0 | vptr &rarr; Circle::area()</text>
+            <text x="375" y="134" fill="#38bdf8" font-size="11">Invoked: &pi; &times; r&sup2; = 153.94 sq units</text>
+
+            <!-- Heap Object 2: Rectangle -->
+            <rect x="360" y="165" width="330" height="70" rx="6" fill="#0f172a" stroke="#a855f7" stroke-width="1.5"/>
+            <text x="375" y="188" fill="#c084fc" font-size="12" font-weight="700">Rectangle Object Instance [0x7B88]</text>
+            <text x="375" y="208" fill="#94a3b8" font-size="11">Fields: length = 4.0, width = 5.0 | vptr &rarr; Rect::area()</text>
+            <text x="375" y="224" fill="#38bdf8" font-size="11">Invoked: l &times; w = 20.0 sq units</text>
+          </svg>
+        </div>
+
+        <h5>2. Complete Compilable Java Implementation:</h5>
+        <pre><code class="language-java">// Abstract Base Superclass
+abstract class Shape {
+    String name;
+
+    Shape(String name) {
+        this.name = name;
+    }
+
+    // Abstract method to be overridden by all subclasses
+    abstract double calculateArea();
+
+    // Concrete method common to all shapes
+    void displayInfo() {
+        System.out.println("Processing Geometric Shape: " + name);
+    }
+}
+
+// Subclass 1: Circle
+class Circle extends Shape {
+    double radius;
+
+    Circle(double radius) {
+        super("Circle");
+        this.radius = radius;
+    }
+
+    @Override
+    double calculateArea() {
+        return Math.PI * radius * radius;
+    }
+}
+
+// Subclass 2: Rectangle
+class Rectangle extends Shape {
+    double length, width;
+
+    Rectangle(double length, double width) {
+        super("Rectangle");
+        this.length = length;
+        this.width = width;
+    }
+
+    @Override
+    double calculateArea() {
+        return length * width;
+    }
+}
+
+// Subclass 3: Triangle
+class Triangle extends Shape {
+    double base, height;
+
+    Triangle(double base, double height) {
+        super("Triangle");
+        this.base = base;
+        this.height = height;
+    }
+
+    @Override
+    double calculateArea() {
+        return 0.5 * base * height;
+    }
+}
+
+// Main Execution Class Demonstrating Polymorphism
+public class DynamicDispatchMasterDemo {
+    public static void main(String[] args) {
+        // Base class reference variable
+        Shape ref;
+
+        // Polymorphic Array of Base References
+        Shape[] shapeCollection = new Shape[3];
+        shapeCollection[0] = new Circle(7.0);
+        shapeCollection[1] = new Rectangle(5.0, 8.0);
+        shapeCollection[2] = new Triangle(6.0, 10.0);
+
+        // Dynamic binding in a loop
+        for (Shape s : shapeCollection) {
+            s.displayInfo();
+            // JVM resolves calculateArea() at runtime based on actual heap object
+            double area = s.calculateArea();
+            System.out.printf("Calculated Area: %.2f sq units\n", area);
+            System.out.println("----------------------------------------------");
+        }
+    }
+}</code></pre>
+
+        <h5>3. Execution Trace &amp; Dry-Run Output:</h5>
+        <div class="callout-box">
+          <code>Processing Geometric Shape: Circle</code><br>
+          <code>Calculated Area: 153.94 sq units</code><br>
+          <code>----------------------------------------------</code><br>
+          <code>Processing Geometric Shape: Rectangle</code><br>
+          <code>Calculated Area: 40.00 sq units</code><br>
+          <code>----------------------------------------------</code><br>
+          <code>Processing Geometric Shape: Triangle</code><br>
+          <code>Calculated Area: 30.00 sq units</code><br>
+          <code>----------------------------------------------</code>
+        </div>
+      </div>
+    </div>
+
+    <!-- C25: Multithreading & Producer-Consumer Problem -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q25.</span> Discuss Thread Synchronization and Inter-Thread Communication in Java. What are race conditions and object monitors? Solve the classic Producer-Consumer Problem using <code>wait()</code> and <code>notify()</code> with a complete runnable program and state diagram.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2015, 2017, 2019, 2021, 2022, 2023</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        
+        <h5>1. The Need for Synchronization &amp; Object Monitors</h5>
+        <p>When multiple concurrent threads attempt to access and modify a shared mutable resource (such as a shared bank balance or shared buffer) simultaneously, execution interleaving can cause <strong>race conditions</strong> where data becomes corrupted and inconsistent.</p>
+        <p>In Java, every single object has an implicit internal lock called an <strong>Intrinsic Lock (or Monitor)</strong>. A thread that enters a <code>synchronized</code> method or <code>synchronized</code> block automatically acquires that object's monitor. All other threads attempting to access synchronized code on the same object are blocked until the lock is released.</p>
+
+        <!-- Producer-Consumer Monitor Queue SVG Diagram -->
+        <div class="svg-tree-container" style="background: #0f172a; padding: 22px; border-radius: 12px; margin: 18px 0; border: 1px solid #334155; overflow-x: auto; -webkit-overflow-scrolling: touch;">
+          <div style="font-weight: 700; color: #38bdf8; margin-bottom: 14px; font-size: 15px; text-align: center;">INTER-THREAD COMMUNICATION: OBJECT MONITOR WAIT-SET ARCHITECTURE</div>
+          <svg viewBox="0 0 740 280" width="100%" height="280" style="min-width: 660px;" xmlns="http://www.w3.org/2000/svg">
+            <!-- Producer Thread -->
+            <rect x="25" y="40" width="160" height="70" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+            <text x="105" y="70" fill="#10b981" font-size="13" font-weight="700" text-anchor="middle">Producer Thread</text>
+            <text x="105" y="90" fill="#94a3b8" font-size="11" text-anchor="middle">Calls put(item)</text>
+
+            <!-- Consumer Thread -->
+            <rect x="25" y="160" width="160" height="70" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+            <text x="105" y="190" fill="#38bdf8" font-size="13" font-weight="700" text-anchor="middle">Consumer Thread</text>
+            <text x="105" y="210" fill="#94a3b8" font-size="11" text-anchor="middle">Calls get()</text>
+
+            <!-- Arrow into Central Monitor -->
+            <path d="M185 75 L 260 110" stroke="#10b981" stroke-width="2"/>
+            <path d="M185 195 L 260 160" stroke="#38bdf8" stroke-width="2"/>
+
+            <!-- Central Monitor Object -->
+            <rect x="260" y="30" width="220" height="210" rx="10" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+            <rect x="275" y="45" width="190" height="30" rx="6" fill="#d97706"/>
+            <text x="370" y="66" fill="#ffffff" font-size="12" font-weight="700" text-anchor="middle">Shared Buffer (Monitor Lock)</text>
+            
+            <rect x="275" y="90" width="190" height="60" rx="6" fill="#0f172a" stroke="#475569"/>
+            <text x="370" y="115" fill="#f59e0b" font-size="12" font-weight="700" text-anchor="middle">Active Lock Holder</text>
+            <text x="370" y="135" fill="#94a3b8" font-size="11" text-anchor="middle">1 Thread Active at a time</text>
+
+            <rect x="275" y="160" width="190" height="65" rx="6" fill="#0f172a" stroke="#475569"/>
+            <text x="370" y="185" fill="#ec4899" font-size="12" font-weight="700" text-anchor="middle">Wait-Set Queue</text>
+            <text x="370" y="205" fill="#94a3b8" font-size="10" text-anchor="middle">Suspended via wait()</text>
+
+            <!-- Arrow to Wait-Set and Notify -->
+            <path d="M480 100 L 550 75" stroke="#f59e0b" stroke-width="2"/>
+            <text x="515" y="80" fill="#f59e0b" font-size="10">notify()</text>
+
+            <path d="M480 180 L 550 195" stroke="#ec4899" stroke-width="2"/>
+            <text x="515" y="200" fill="#ec4899" font-size="10">wait()</text>
+
+            <!-- Actions Panel -->
+            <rect x="550" y="40" width="165" height="190" rx="8" fill="#1e293b" stroke="#8b5cf6" stroke-width="2"/>
+            <text x="632" y="65" fill="#c084fc" font-size="13" font-weight="700" text-anchor="middle">Inter-Thread Rules</text>
+            <text x="560" y="95" fill="#ffffff" font-size="11">&bull; wait() releases lock</text>
+            <text x="560" y="115" fill="#ffffff" font-size="11">&bull; Thread sleeps</text>
+            <text x="560" y="145" fill="#ffffff" font-size="11">&bull; notify() wakes up</text>
+            <text x="560" y="165" fill="#ffffff" font-size="11">   waiting thread</text>
+            <text x="560" y="195" fill="#ffffff" font-size="11">&bull; Lock re-acquired</text>
+          </svg>
+        </div>
+
+        <h5>2. Complete Compilable Producer-Consumer Solution:</h5>
+        <pre><code class="language-java">// Shared Bounded Buffer with Inter-Thread Synchronization
+class SharedBuffer {
+    private int data;
+    private boolean available = false; // Flag indicating if item is ready to consume
+
+    // Synchronized method called by Producer
+    public synchronized void produce(int value) {
+        // While buffer is full, producer must wait for consumer to empty it
+        while (available) {
+            try {
+                wait(); // Releases lock and goes to sleep in wait-set
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+            }
+        }
+        data = value;
+        available = true;
+        System.out.println("-> [PRODUCED] Data Item: " + data);
+        notify(); // Wakes up single waiting thread (Consumer)
+    }
+
+    // Synchronized method called by Consumer
+    public synchronized int consume() {
+        // While buffer is empty, consumer must wait for producer to fill it
+        while (!available) {
+            try {
+                wait(); // Releases lock and sleeps
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+            }
+        }
+        available = false;
+        System.out.println("&lt;- [CONSUMED] Data Item: " + data);
+        notify(); // Wakes up waiting Producer
+        return data;
+    }
+}
+
+// Producer Worker Thread
+class Producer extends Thread {
+    private SharedBuffer buffer;
+
+    Producer(SharedBuffer buffer) {
+        this.buffer = buffer;
+    }
+
+    @Override
+    public void run() {
+        for (int i = 1; i &lt;= 5; i++) {
+            buffer.produce(i * 10);
+            try {
+                Thread.sleep(400); // Simulate manufacturing work delay
+            } catch (InterruptedException e) {
+                break;
+            }
+        }
+    }
+}
+
+// Consumer Worker Thread
+class Consumer extends Thread {
+    private SharedBuffer buffer;
+
+    Consumer(SharedBuffer buffer) {
+        this.buffer = buffer;
+    }
+
+    @Override
+    public void run() {
+        for (int i = 1; i &lt;= 5; i++) {
+            buffer.consume();
+            try {
+                Thread.sleep(600); // Simulate processing work delay
+            } catch (InterruptedException e) {
+                break;
+            }
+        }
+    }
+}
+
+public class ProducerConsumerMasterDemo {
+    public static void main(String[] args) {
+        SharedBuffer buffer = new SharedBuffer();
+        Producer p = new Producer(buffer);
+        Consumer c = new Consumer(buffer);
+
+        System.out.println("Starting Producer-Consumer Execution Pipeline...");
+        p.start();
+        c.start();
+    }
+}</code></pre>
+
+        <h5>3. Execution Console Output Trace:</h5>
+        <div class="callout-box">
+          <code>Starting Producer-Consumer Execution Pipeline...</code><br>
+          <code>-&gt; [PRODUCED] Data Item: 10</code><br>
+          <code>&lt;- [CONSUMED] Data Item: 10</code><br>
+          <code>-&gt; [PRODUCED] Data Item: 20</code><br>
+          <code>&lt;- [CONSUMED] Data Item: 20</code><br>
+          <code>-&gt; [PRODUCED] Data Item: 30</code><br>
+          <code>&lt;- [CONSUMED] Data Item: 30</code><br>
+          <code>-&gt; [PRODUCED] Data Item: 40</code><br>
+          <code>&lt;- [CONSUMED] Data Item: 40</code><br>
+          <code>-&gt; [PRODUCED] Data Item: 50</code><br>
+          <code>&lt;- [CONSUMED] Data Item: 50</code>
+        </div>
+      </div>
+    </div>
+
+    <!-- C26: Custom User-Defined Exceptions & Exception Hierarchy -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q26.</span> Describe the complete Java Exception Hierarchy. Explain stack unwinding during exception propagation. Write a comprehensive Banking Application demonstrating custom user-defined checked exceptions (<code>InsufficientBalanceException</code>) with deposit and withdrawal validations.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2016, 2018, 2020, 2022, 2023</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        
+        <h5>1. Java Exception Hierarchy Blueprint:</h5>
+        <!-- Exception Hierarchy SVG -->
+        <div class="svg-tree-container" style="background: #0f172a; padding: 22px; border-radius: 12px; margin: 18px 0; border: 1px solid #334155; overflow-x: auto; -webkit-overflow-scrolling: touch;">
+          <div style="font-weight: 700; color: #38bdf8; margin-bottom: 14px; font-size: 15px; text-align: center;">JAVA THROWABLE EXCEPTION HIERARCHY</div>
+          <svg viewBox="0 0 740 280" width="100%" height="280" style="min-width: 660px;" xmlns="http://www.w3.org/2000/svg">
+            <!-- Root: Throwable -->
+            <rect x="270" y="20" width="200" height="40" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+            <text x="370" y="45" fill="#38bdf8" font-size="14" font-weight="700" text-anchor="middle">java.lang.Throwable</text>
+
+            <!-- Branch Lines -->
+            <path d="M320 60 L 160 100" stroke="#94a3b8" stroke-width="2"/>
+            <path d="M420 60 L 580 100" stroke="#94a3b8" stroke-width="2"/>
+
+            <!-- Left Child: Error -->
+            <rect x="70" y="100" width="180" height="40" rx="6" fill="#1e293b" stroke="#ef4444" stroke-width="1.8"/>
+            <text x="160" y="125" fill="#ef4444" font-size="13" font-weight="700" text-anchor="middle">Error (Unrecoverable)</text>
+            <rect x="70" y="150" width="180" height="90" rx="6" fill="#0f172a" stroke="#475569"/>
+            <text x="80" y="172" fill="#94a3b8" font-size="11">&bull; StackOverflowError</text>
+            <text x="80" y="195" fill="#94a3b8" font-size="11">&bull; OutOfMemoryError</text>
+            <text x="80" y="218" fill="#94a3b8" font-size="11">&bull; VirtualMachineError</text>
+
+            <!-- Right Child: Exception -->
+            <rect x="490" y="100" width="180" height="40" rx="6" fill="#1e293b" stroke="#10b981" stroke-width="1.8"/>
+            <text x="580" y="125" fill="#10b981" font-size="13" font-weight="700" text-anchor="middle">Exception (Catchable)</text>
+
+            <!-- Sub-branches under Exception -->
+            <path d="M530 140 L 410 170" stroke="#94a3b8" stroke-width="1.5"/>
+            <path d="M630 140 L 650 170" stroke="#94a3b8" stroke-width="1.5"/>
+
+            <!-- Checked Exceptions -->
+            <rect x="300" y="170" width="180" height="90" rx="6" fill="#0f172a" stroke="#10b981"/>
+            <text x="390" y="190" fill="#34d399" font-size="11" font-weight="700" text-anchor="middle">Checked Exceptions</text>
+            <text x="310" y="210" fill="#94a3b8" font-size="10">&bull; IOException / SQLException</text>
+            <text x="310" y="230" fill="#94a3b8" font-size="10">&bull; ClassNotFoundException</text>
+            <text x="310" y="250" fill="#38bdf8" font-size="10">&bull; Custom App Exceptions</text>
+
+            <!-- Unchecked Exceptions -->
+            <rect x="520" y="170" width="190" height="90" rx="6" fill="#0f172a" stroke="#f59e0b"/>
+            <text x="615" y="190" fill="#fbbf24" font-size="11" font-weight="700" text-anchor="middle">RuntimeException (Unchecked)</text>
+            <text x="530" y="210" fill="#94a3b8" font-size="10">&bull; NullPointerException</text>
+            <text x="530" y="230" fill="#94a3b8" font-size="10">&bull; ArithmeticException</text>
+            <text x="530" y="250" fill="#94a3b8" font-size="10">&bull; ArrayIndexOutOfBounds</text>
+          </svg>
+        </div>
+
+        <h5>2. Stack Unwinding &amp; Exception Propagation:</h5>
+        <p>When an exception is thrown inside a method and not caught locally, the JVM halts execution of that method, unwinds its stack frame from the Call Stack, and passes the exception up to the calling method. This repeats sequentially until a matching <code>catch</code> block is found or the program terminates at the JVM default handler.</p>
+
+        <h5>3. Complete Banking Application with Custom Exceptions:</h5>
+        <pre><code class="language-java">// Custom Checked Exception 1: Insufficient Balance
+class InsufficientBalanceException extends Exception {
+    private double balance;
+    private double requestedAmount;
+
+    public InsufficientBalanceException(double balance, double requestedAmount) {
+        super("Transaction Rejected: Available Balance is ₹" + balance + 
+              ", but withdrawal requested is ₹" + requestedAmount);
+        this.balance = balance;
+        this.requestedAmount = requestedAmount;
+    }
+}
+
+// Custom Checked Exception 2: Invalid Deposit Amount
+class InvalidAmountException extends Exception {
+    public InvalidAmountException(String message) {
+        super(message);
+    }
+}
+
+// Bank Account Class
+class BankAccount {
+    private String accountNumber;
+    private String holderName;
+    private double balance;
+
+    public BankAccount(String accNo, String name, double initialBalance) {
+        this.accountNumber = accNo;
+        this.holderName = name;
+        this.balance = initialBalance;
+    }
+
+    // Method declaring that it throws checked custom exceptions
+    public void deposit(double amount) throws InvalidAmountException {
+        if (amount &lt;= 0) {
+            throw new InvalidAmountException("Deposit amount must be strictly greater than zero! Given: ₹" + amount);
+        }
+        balance += amount;
+        System.out.printf("₹%.2f deposited successfully. Updated Balance: ₹%.2f\n", amount, balance);
+    }
+
+    public void withdraw(double amount) throws InsufficientBalanceException, InvalidAmountException {
+        if (amount &lt;= 0) {
+            throw new InvalidAmountException("Withdrawal amount must be greater than zero!");
+        }
+        if (amount &gt; balance) {
+            throw new InsufficientBalanceException(balance, amount);
+        }
+        balance -= amount;
+        System.out.printf("₹%.2f withdrawn successfully. Remaining Balance: ₹%.2f\n", amount, balance);
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+}
+
+// Main Driver Application
+public class BankingExceptionMasterDemo {
+    public static void main(String[] args) {
+        BankAccount acc = new BankAccount("CCSU-BCA-9810", "Vikram Rathore", 5000.0);
+
+        System.out.println("=== CCSU Banking System Transaction Processing ===");
+
+        // Transaction 1: Valid Deposit
+        try {
+            acc.deposit(2500.0);
+        } catch (InvalidAmountException e) {
+            System.err.println("Deposit Error: " + e.getMessage());
+        }
+
+        // Transaction 2: Invalid Withdrawal (Exceeding Balance)
+        try {
+            System.out.println("Attempting withdrawal of ₹9,000.00...");
+            acc.withdraw(9000.0);
+        } catch (InsufficientBalanceException e) {
+            System.err.println("ALARM: " + e.getMessage());
+        } catch (InvalidAmountException e) {
+            System.err.println("Error: " + e.getMessage());
+        } finally {
+            System.out.printf("Status: Account statement closed. Current Balance: ₹%.2f\n", acc.getBalance());
+        }
+    }
+}</code></pre>
+        <div class="callout-box">
+          <strong>Console Output Trace:</strong><br>
+          <code>=== CCSU Banking System Transaction Processing ===</code><br>
+          <code>₹2500.00 deposited successfully. Updated Balance: ₹7500.00</code><br>
+          <code>Attempting withdrawal of ₹9,000.00...</code><br>
+          <code>ALARM: Transaction Rejected: Available Balance is ₹7500.0, but withdrawal requested is ₹9000.0</code><br>
+          <code>Status: Account statement closed. Current Balance: ₹7500.00</code>
+        </div>
+      </div>
+    </div>
+
+    <!-- C27: Multiple Interface Inheritance & Diamond Problem -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q27.</span> Contrast Multiple Inheritance in C++ vs Java. How does Java eliminate the "Diamond Problem"? Discuss Java 8 Interface innovations (<code>default</code> and <code>static</code> methods) and how conflicting default methods are resolved with working code.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2015, 2018, 2020, 2022</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        
+        <h5>1. The Diamond Problem in C++ vs Java's Architectural Resolution</h5>
+        <p>In C++, if class <code>B</code> and class <code>C</code> inherit from class <code>A</code>, and class <code>D</code> inherits from both <code>B</code> and <code>C</code>, two duplicate copies of class <code>A</code>'s data members reside inside object <code>D</code>. Any invocation of <code>A</code>'s methods creates ambiguous conflicts unless complex <code>virtual</code> base classes are used.</p>
+        <p><strong>Java's Design:</strong> Java disallows multiple class inheritance entirely. Classes can only extend <em>one</em> base class, but can implement <em>multiple interfaces</em>. Because interfaces contain no instance state (fields are only constants), no duplicate variable state exists in memory.</p>
+
+        <!-- Multiple Interface Diagram -->
+        <div class="svg-tree-container" style="background: #0f172a; padding: 22px; border-radius: 12px; margin: 18px 0; border: 1px solid #334155; overflow-x: auto; -webkit-overflow-scrolling: touch;">
+          <div style="font-weight: 700; color: #38bdf8; margin-bottom: 14px; font-size: 15px; text-align: center;">JAVA MULTIPLE INTERFACE INHERITANCE ARCHITECTURE</div>
+          <svg viewBox="0 0 740 260" width="100%" height="260" style="min-width: 660px;" xmlns="http://www.w3.org/2000/svg">
+            <!-- Parent Class: Student -->
+            <rect x="270" y="20" width="200" height="50" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+            <text x="370" y="42" fill="#38bdf8" font-size="13" font-weight="700" text-anchor="middle">Superclass: Student</text>
+            <text x="370" y="58" fill="#94a3b8" font-size="10" text-anchor="middle">State: rollNo, studentName</text>
+
+            <!-- Interface 1: Exam -->
+            <rect x="70" y="105" width="200" height="50" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+            <text x="170" y="127" fill="#10b981" font-size="13" font-weight="700" text-anchor="middle">&laquo;interface&raquo; Exam</text>
+            <text x="170" y="143" fill="#94a3b8" font-size="10" text-anchor="middle">Method: getExamMarks()</text>
+
+            <!-- Interface 2: Sports -->
+            <rect x="470" y="105" width="200" height="50" rx="8" fill="#1e293b" stroke="#a855f7" stroke-width="2"/>
+            <text x="570" y="127" fill="#c084fc" font-size="13" font-weight="700" text-anchor="middle">&laquo;interface&raquo; Sports</text>
+            <text x="570" y="143" fill="#94a3b8" font-size="10" text-anchor="middle">Method: getSportsScore()</text>
+
+            <!-- Arrows to Child Class -->
+            <path d="M370 70 L 370 190" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4"/>
+            <path d="M170 155 L 300 195" stroke="#10b981" stroke-width="2"/>
+            <path d="M570 155 L 440 195" stroke="#a855f7" stroke-width="2"/>
+
+            <!-- Derived Class: Result -->
+            <rect x="230" y="195" width="280" height="55" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="2.5"/>
+            <text x="370" y="218" fill="#f59e0b" font-size="13" font-weight="700" text-anchor="middle">class Result extends Student</text>
+            <text x="370" y="235" fill="#ffffff" font-size="11" text-anchor="middle">implements Exam, Sports</text>
+          </svg>
+        </div>
+
+        <h5>2. Resolving Conflicting Default Methods (Java 8+):</h5>
+        <p>If two interfaces define the exact same <code>default</code> method signature, the implementing class <strong>must override the method</strong> and explicitly specify which interface version to invoke using <code>InterfaceName.super.methodName()</code>.</p>
+
+        <pre><code class="language-java">interface Printable {
+    default void logMessage() {
+        System.out.println("[Printable Default]: Output sent to physical printer.");
+    }
+}
+
+interface Exportable {
+    default void logMessage() {
+        System.out.println("[Exportable Default]: Output converted to PDF document.");
+    }
+}
+
+// Class implementing both interfaces must resolve ambiguity
+class DocumentHandler implements Printable, Exportable {
+    @Override
+    public void logMessage() {
+        // Explicit resolution using InterfaceName.super
+        System.out.println("--- DocumentHandler Resolving Interface Conflict ---");
+        Printable.super.logMessage();  // Invoke Printable version
+        Exportable.super.logMessage(); // Invoke Exportable version
+    }
+}
+
+public class InterfaceConflictDemo {
+    public static void main(String[] args) {
+        DocumentHandler doc = new DocumentHandler();
+        doc.logMessage();
+    }
+}</code></pre>
+      </div>
+    </div>
+
+    <!-- C28: Java Swing GUI Calculator & Event Delegation -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q28.</span> Explain the Event Delegation Model in Java GUI Programming. Write a complete, compilable Java Swing application implementing a Graphical User Interface (GUI) Arithmetic Calculator with buttons for Addition, Subtraction, Multiplication, Division, Clear, and Result display.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2014, 2017, 2019, 2021, 2023</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        
+        <h5>1. The Event Delegation Architecture:</h5>
+        <!-- Event Delegation SVG -->
+        <div class="svg-tree-container" style="background: #0f172a; padding: 22px; border-radius: 12px; margin: 18px 0; border: 1px solid #334155; overflow-x: auto; -webkit-overflow-scrolling: touch;">
+          <div style="font-weight: 700; color: #38bdf8; margin-bottom: 14px; font-size: 15px; text-align: center;">JAVA EVENT DELEGATION FLOW ARCHITECTURE</div>
+          <svg viewBox="0 0 740 200" width="100%" height="200" style="min-width: 660px;" xmlns="http://www.w3.org/2000/svg">
+            <!-- 1. User Action -->
+            <rect x="20" y="65" width="140" height="70" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+            <text x="90" y="95" fill="#38bdf8" font-size="12" font-weight="700" text-anchor="middle">User Action</text>
+            <text x="90" y="115" fill="#94a3b8" font-size="10" text-anchor="middle">(Clicks Button)</text>
+
+            <path d="M160 100 L 210 100" stroke="#f59e0b" stroke-width="2"/>
+
+            <!-- 2. Event Source -->
+            <rect x="210" y="65" width="150" height="70" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+            <text x="285" y="95" fill="#10b981" font-size="12" font-weight="700" text-anchor="middle">Event Source</text>
+            <text x="285" y="115" fill="#94a3b8" font-size="10" text-anchor="middle">JButton ("+")</text>
+
+            <path d="M360 100 L 410 100" stroke="#f59e0b" stroke-width="2"/>
+            <text x="385" y="90" fill="#f59e0b" font-size="9" text-anchor="middle">Generates</text>
+
+            <!-- 3. Event Object -->
+            <rect x="410" y="65" width="140" height="70" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+            <text x="480" y="95" fill="#f59e0b" font-size="12" font-weight="700" text-anchor="middle">Event Object</text>
+            <text x="480" y="115" fill="#94a3b8" font-size="10" text-anchor="middle">ActionEvent</text>
+
+            <path d="M550 100 L 600 100" stroke="#f59e0b" stroke-width="2"/>
+            <text x="575" y="90" fill="#f59e0b" font-size="9" text-anchor="middle">Delegates</text>
+
+            <!-- 4. Event Listener -->
+            <rect x="600" y="65" width="130" height="70" rx="8" fill="#1e293b" stroke="#ec4899" stroke-width="2"/>
+            <text x="665" y="95" fill="#f472b6" font-size="12" font-weight="700" text-anchor="middle">Event Listener</text>
+            <text x="665" y="115" fill="#94a3b8" font-size="10" text-anchor="middle">actionPerformed()</text>
+          </svg>
+        </div>
+
+        <h5>2. Complete Standalone Java Swing Calculator Program:</h5>
+        <pre><code class="language-java">import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+
+public class SwingCalculatorApp extends JFrame implements ActionListener {
+    // GUI Components
+    private JTextField numField1, numField2, resultField;
+    private JButton btnAdd, btnSub, btnMul, btnDiv, btnClear;
+
+    public SwingCalculatorApp() {
+        // Window Configuration
+        setTitle("CCSU BCA Swing Calculator");
+        setSize(420, 320);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLocationRelativeTo(null); // Center on screen
+        setLayout(new BorderLayout(10, 10));
+
+        // 1. Title Label (North)
+        JLabel titleLabel = new JLabel("BCA Arithmetic Calculator", JLabel.CENTER);
+        titleLabel.setFont(new Font("Arial", Font.BOLD, 18));
+        titleLabel.setForeground(new Color(2, 132, 199));
+        add(titleLabel, BorderLayout.NORTH);
+
+        // 2. Input Fields Grid (Center)
+        JPanel inputPanel = new JPanel(new GridLayout(3, 2, 8, 8));
+        inputPanel.setBorder(BorderFactory.createEmptyBorder(10, 20, 10, 20));
+
+        inputPanel.add(new JLabel("First Number:"));
+        numField1 = new JTextField();
+        inputPanel.add(numField1);
+
+        inputPanel.add(new JLabel("Second Number:"));
+        numField2 = new JTextField();
+        inputPanel.add(numField2);
+
+        inputPanel.add(new JLabel("Calculated Result:"));
+        resultField = new JTextField();
+        resultField.setEditable(false); // Read-only output
+        resultField.setBackground(new Color(241, 245, 249));
+        inputPanel.add(resultField);
+
+        add(inputPanel, BorderLayout.CENTER);
+
+        // 3. Action Buttons Panel (South)
+        JPanel buttonPanel = new JPanel(new FlowLayout(FlowLayout.CENTER, 10, 10));
+
+        btnAdd = new JButton("+");
+        btnSub = new JButton("-");
+        btnMul = new JButton("*");
+        btnDiv = new JButton("/");
+        btnClear = new JButton("Clear");
+
+        // Register Action Listeners
+        btnAdd.addActionListener(this);
+        btnSub.addActionListener(this);
+        btnMul.addActionListener(this);
+        btnDiv.addActionListener(this);
+        btnClear.addActionListener(this);
+
+        buttonPanel.add(btnAdd);
+        buttonPanel.add(btnSub);
+        buttonPanel.add(btnMul);
+        buttonPanel.add(btnDiv);
+        buttonPanel.add(btnClear);
+
+        add(buttonPanel, BorderLayout.SOUTH);
+    }
+
+    // Event Delegation Callback Handler
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        // Clear Button Action
+        if (e.getSource() == btnClear) {
+            numField1.setText("");
+            numField2.setText("");
+            resultField.setText("");
+            numField1.requestFocus();
+            return;
+        }
+
+        try {
+            double n1 = Double.parseDouble(numField1.getText().trim());
+            double n2 = Double.parseDouble(numField2.getText().trim());
+            double result = 0;
+
+            if (e.getSource() == btnAdd) {
+                result = n1 + n2;
+            } else if (e.getSource() == btnSub) {
+                result = n1 - n2;
+            } else if (e.getSource() == btnMul) {
+                result = n1 * n2;
+            } else if (e.getSource() == btnDiv) {
+                if (n2 == 0) {
+                    JOptionPane.showMessageDialog(this, "Arithmetic Error: Cannot divide by zero!", 
+                                                  "Division Error", JOptionPane.ERROR_MESSAGE);
+                    return;
+                }
+                result = n1 / n2;
+            }
+
+            resultField.setText(String.format("%.2f", result));
+
+        } catch (NumberFormatException ex) {
+            JOptionPane.showMessageDialog(this, "Invalid Input: Please enter valid numerical values!", 
+                                          "Input Error", JOptionPane.WARNING_MESSAGE);
+        }
+    }
+
+    public static void main(String[] args) {
+        // Run on Event Dispatch Thread (EDT) for thread safety
+        SwingUtilities.invokeLater(() -> {
+            new SwingCalculatorApp().setVisible(true);
+        });
+    }
+}</code></pre>
+      </div>
+    </div>
+
+    <!-- C29: Java Object Serialization & I/O Streams -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q29.</span> Explain the principles of Object Serialization and Deserialization in Java. What is the role of <code>Serializable</code> interface, <code>serialVersionUID</code>, and the <code>transient</code> keyword? Write a program that writes an object to disk and restores it.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2016, 2018, 2021, 2022</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        
+        <h5>1. Serialization Architecture &amp; Key Concepts</h5>
+        <ul>
+          <li><strong>Serialization:</strong> The process of converting the in-memory state of an active Java object into a byte stream, suitable for persisting to disk files or transmission across network sockets.</li>
+          <li><strong>Deserialization:</strong> The reverse process of reconstructing the live Java object instance in heap memory from the stored byte stream.</li>
+          <li><strong><code>Serializable</code> Interface:</strong> A <em>marker interface</em> (contains no methods) belonging to <code>java.io</code>. It signals to the JVM that instances of this class are legally serializable.</li>
+          <li><strong><code>transient</code> Keyword:</strong> Applied to instance variables that should <strong>never be serialized</strong> (e.g. passwords, encryption keys, credit card numbers, or temporary caching data). During deserialization, transient fields are reset to their default values (<code>null</code> for objects, <code>0</code> for numbers).</li>
+          <li><strong><code>serialVersionUID</code>:</strong> A unique 64-bit identifier used during deserialization to verify that the sender and receiver of a serialized object have loaded classes that are binary-compatible.</li>
+        </ul>
+
+        <h5>2. Complete Serialization &amp; Deserialization Program:</h5>
+        <pre><code class="language-java">import java.io.*;
+
+// Serializable Class
+class Employee implements Serializable {
+    private static final long serialVersionUID = 1L;
+
+    private int empId;
+    private String empName;
+    private double salary;
+
+    // Transient field: Will NOT be saved to disk for security reasons
+    private transient String confidentialPin;
+
+    public Employee(int id, String name, double salary, String pin) {
+        this.empId = id;
+        this.empName = name;
+        this.salary = salary;
+        this.confidentialPin = pin;
+    }
+
+    public void display() {
+        System.out.println("ID: " + empId + " | Name: " + empName + 
+                           " | Salary: ₹" + salary + " | PIN: " + confidentialPin);
+    }
+}
+
+public class SerializationMasterDemo {
+    public static void main(String[] args) {
+        String filename = "employee_record.ser";
+
+        // 1. Serialization: Writing Object to File
+        Employee emp1 = new Employee(501, "Amitabh Sharma", 75000.0, "SECURE_PIN_987");
+        System.out.println("Original Object Before Serialization:");
+        emp1.display();
+
+        try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(filename))) {
+            oos.writeObject(emp1);
+            System.out.println("-> Object successfully serialized to disk file: " + filename);
+        } catch (IOException e) {
+            System.err.println("Serialization Error: " + e.getMessage());
+        }
+
+        System.out.println("--------------------------------------------------");
+
+        // 2. Deserialization: Restoring Object from File
+        try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(filename))) {
+            Employee restoredEmp = (Employee) ois.readObject();
+            System.out.println("Reconstructed Object After Deserialization:");
+            restoredEmp.display(); // Notice confidentialPin will be null!
+        } catch (IOException | ClassNotFoundException e) {
+            System.err.println("Deserialization Error: " + e.getMessage());
+        }
+    }
+}</code></pre>
+        <div class="callout-box">
+          <strong>Console Output Trace:</strong><br>
+          <code>Original Object Before Serialization:</code><br>
+          <code>ID: 501 | Name: Amitabh Sharma | Salary: ₹75000.0 | PIN: SECURE_PIN_987</code><br>
+          <code>-> Object successfully serialized to disk file: employee_record.ser</code><br>
+          <code>--------------------------------------------------</code><br>
+          <code>Reconstructed Object After Deserialization:</code><br>
+          <code>ID: 501 | Name: Amitabh Sharma | Salary: ₹75000.0 | PIN: null</code><br>
+          <em>(Notice that the transient PIN field was safely dropped and initialized to null!)</em>
+        </div>
+      </div>
+    </div>
+
+    <!-- C30: Java Collections Framework Deep Dive -->
+    <div class="exam-q-item">
+      <div class="exam-q-header">
+        <h4 class="exam-q-title"><span class="q-num">Q30.</span> Discuss the architecture of the Java Collections Framework. Compare <code>ArrayList</code>, <code>LinkedList</code>, and <code>Vector</code> with Big-O complexity. Demonstrate sorting a custom object list using both <code>Comparable</code> and <code>Comparator</code> interfaces with working code.</h4>
+        <div class="exam-tag-group">
+          <span class="exam-tag-repeat">🔥 Repeated: 2017, 2019, 2021, 2023</span>
+          <span class="exam-tag-marks">15 Marks</span>
+        </div>
+      </div>
+      <div class="exam-ans-card">
+        <div class="exam-ans-title">✍️ Comprehensive Solution:</div>
+        
+        <h5>1. Collections Framework Architecture &amp; Big-O Complexity Comparison:</h5>
+        <div class="table-wrap">
+          <table class="exam-table">
+            <thead>
+              <tr>
+                <th>Collection Class</th>
+                <th>Underlying Data Structure</th>
+                <th>Random Access Get(i)</th>
+                <th>Insert / Delete</th>
+                <th>Thread Safety</th>
+                <th>Growth Factor</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong><code>ArrayList</code></strong></td>
+                <td>Dynamic Resizable Array</td>
+                <td>$O(1)$ fast</td>
+                <td>$O(N)$ (requires memory shift)</td>
+                <td>Not Thread-Safe (Fast)</td>
+                <td>Grows by 50% (1.5x)</td>
+              </tr>
+              <tr>
+                <td><strong><code>LinkedList</code></strong></td>
+                <td>Doubly Linked List</td>
+                <td>$O(N)$ sequential traverse</td>
+                <td>$O(1)$ at node pointer</td>
+                <td>Not Thread-Safe</td>
+                <td>No capacity preallocation</td>
+              </tr>
+              <tr>
+                <td><strong><code>Vector</code></strong></td>
+                <td>Synchronized Dynamic Array</td>
+                <td>$O(1)$</td>
+                <td>$O(N)$</td>
+                <td>Thread-Safe (Synchronized, slow)</td>
+                <td>Grows by 100% (2x)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h5>2. Sorting with <code>Comparable</code> vs <code>Comparator</code>:</h5>
+        <pre><code class="language-java">import java.util.*;
+
+// Comparable defines Natural Default Ordering (e.g. by Roll Number)
+class StudentRecord implements Comparable&lt;StudentRecord&gt; {
+    int rollNo;
+    String name;
+    double cgpa;
+
+    public StudentRecord(int rollNo, String name, double cgpa) {
+        this.rollNo = rollNo;
+        this.name = name;
+        this.cgpa = cgpa;
+    }
+
+    @Override
+    public int compareTo(StudentRecord other) {
+        return Integer.compare(this.rollNo, other.rollNo); // Ascending roll number
+    }
+
+    @Override
+    public String toString() {
+        return String.format("[Roll: %d | Name: %-12s | CGPA: %.2f]", rollNo, name, cgpa);
+    }
+}
+
+// Comparator defines Custom Alternative Ordering (e.g. Descending CGPA)
+class CgpaComparator implements Comparator&lt;StudentRecord&gt; {
+    @Override
+    public int compare(StudentRecord s1, StudentRecord s2) {
+        return Double.compare(s2.cgpa, s1.cgpa); // High to low CGPA
+    }
+}
+
+public class CollectionsSortingMasterDemo {
+    public static void main(String[] args) {
+        List&lt;StudentRecord&gt; students = new ArrayList&lt;&gt;();
+        students.add(new StudentRecord(105, "Priya Singh", 8.9));
+        students.add(new StudentRecord(101, "Rahul Verma", 9.4));
+        students.add(new StudentRecord(108, "Deepak Joshi", 7.8));
+        students.add(new StudentRecord(102, "Ananya Roy", 9.1));
+
+        System.out.println("1. Natural Sorting by Roll No (Comparable):");
+        Collections.sort(students);
+        for (StudentRecord s : students) System.out.println(s);
+
+        System.out.println("\n2. Merit Rank Sorting by CGPA Descending (Comparator):");
+        Collections.sort(students, new CgpaComparator());
+        for (StudentRecord s : students) System.out.println(s);
+    }
+}</code></pre>
+        <div class="callout-box">
+          <strong>Console Output Trace:</strong><br>
+          <code>1. Natural Sorting by Roll No (Comparable):</code><br>
+          <code>[Roll: 101 | Name: Rahul Verma  | CGPA: 9.40]</code><br>
+          <code>[Roll: 102 | Name: Ananya Roy   | CGPA: 9.10]</code><br>
+          <code>[Roll: 105 | Name: Priya Singh  | CGPA: 8.90]</code><br>
+          <code>[Roll: 108 | Name: Deepak Joshi | CGPA: 7.80]</code><br>
+          <br>
+          <code>2. Merit Rank Sorting by CGPA Descending (Comparator):</code><br>
+          <code>[Roll: 101 | Name: Rahul Verma  | CGPA: 9.40]</code><br>
+          <code>[Roll: 102 | Name: Ananya Roy   | CGPA: 9.10]</code><br>
+          <code>[Roll: 105 | Name: Priya Singh  | CGPA: 8.90]</code><br>
+          <code>[Roll: 108 | Name: Deepak Joshi | CGPA: 7.80]</code>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
