@@ -42,7 +42,10 @@
       <div class="hero-portrait-stage">
         <div class="hero-portrait-glow" aria-hidden="true"></div>
         <div class="hero-portrait-frame">
-          <img src="{{ '/assets/images/hero-student.jpg' | relative_url }}" alt="BCA Student holding study notebooks" loading="eager">
+          <picture>
+            <source srcset="{{ '/assets/images/hero-student.webp' | relative_url }}" type="image/webp">
+            <img src="{{ '/assets/images/hero-student.jpg' | relative_url }}" alt="BCA Student holding study notebooks" width="340" height="375" fetchpriority="high" loading="eager" decoding="async">
+          </picture>
         </div>
 
         <!-- 4 Floating Glass Icon Cards -->
